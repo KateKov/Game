@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStore", "GameStore\GameStore.csproj", "{2C2EB100-4588-4777-B9F4-5F002B2DF4C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStore.Tests", "GameStore.Tests\GameStore.Tests.csproj", "{54AB365E-EF53-4728-8947-EC871A22C30E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStore.DAL", "GameStore.DAL\GameStore.DAL.csproj", "{237FF755-78A1-4912-AFB4-73F09CC863D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStore.BLL", "GameStore.BLL\GameStore.BLL.csproj", "{88647B1A-E17A-4F58-93CB-6AECD2C006B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C2EB100-4588-4777-B9F4-5F002B2DF4C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C2EB100-4588-4777-B9F4-5F002B2DF4C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C2EB100-4588-4777-B9F4-5F002B2DF4C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C2EB100-4588-4777-B9F4-5F002B2DF4C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54AB365E-EF53-4728-8947-EC871A22C30E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54AB365E-EF53-4728-8947-EC871A22C30E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54AB365E-EF53-4728-8947-EC871A22C30E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54AB365E-EF53-4728-8947-EC871A22C30E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{237FF755-78A1-4912-AFB4-73F09CC863D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{237FF755-78A1-4912-AFB4-73F09CC863D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{237FF755-78A1-4912-AFB4-73F09CC863D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{237FF755-78A1-4912-AFB4-73F09CC863D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88647B1A-E17A-4F58-93CB-6AECD2C006B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88647B1A-E17A-4F58-93CB-6AECD2C006B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88647B1A-E17A-4F58-93CB-6AECD2C006B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88647B1A-E17A-4F58-93CB-6AECD2C006B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
