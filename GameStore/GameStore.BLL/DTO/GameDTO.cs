@@ -12,9 +12,9 @@ namespace GameStore.BLL.DTO
         public string Key { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public List<GenreDTO> Genres { get; set; }
-        public List<CommentDTO> Comments { get; set; }
-        public List<PlatformTypeDTO> PlatformTypes { get; set; }
+        public ICollection<GenreDTO> Genres { get; set; }
+        public ICollection<CommentDTO> Comments { get; set; }
+        public ICollection<PlatformTypeDTO> PlatformTypes { get; set; }
        
     }
 }

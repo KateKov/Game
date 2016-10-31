@@ -29,8 +29,8 @@ namespace GameStore.Util
         }
         private void AddBindings()
         {
-            kernel.Bind<ICommentService>().To<CommentService>();
-            kernel.Bind<IGameService>().To<GameService>();
+           
+            kernel.Bind<IService>().To<GameService>();
  
             kernel.Bind<ILogger>().ToMethod(p =>
             {

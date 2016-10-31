@@ -9,24 +9,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GameStore.DAL.Infrastracture.Validators;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GameStore.DAL.Entities
 {
-    [Validator(typeof(Infrastracture.Validators.GameValidator))]
+  //  [Validator(typeof(Infrastracture.Validators.GameValidator))]
     public class Game: IEntityBase
     {
-        [Required]
+        [Key]
         public int Id { get; set; }
         [Required]
+        [StringLength(65)]
+        [Index("IX_key", 1, IsUnique = true)]
         public string Key { get; set; }
+        [Required]
         [DisplayName("Название")]
         public string Name { get; set; }
         [DisplayName("Описание")]
         public string Description { get; set; }
-        public virtual List<Comment> Comments { get; set; }
-        public virtual List<Genre> Genres { get; set; }
+        public virtual ICollection<Comment> Comments { get; set; }
+        public virtual ICollection<Genre> Genres { get; set; }
  
-        public virtual List<PlatformType> PlatformTypes { get; set; }
+        public virtual ICollection<PlatformType> PlatformTypes { get; set; }
 
         public Game()
         {

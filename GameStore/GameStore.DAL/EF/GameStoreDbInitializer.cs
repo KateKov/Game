@@ -33,7 +33,7 @@ namespace GameStore.DAL.EF
                     Name = "GTA6",
                     Description = "It's amazing game",
                     Genres = new List<Genre>() {GetGenres()[0], GetGenres()[2]},
-                    Comments = GetComment(),
+                    
                     PlatformTypes = GetTypes()
                 },
                   new Game
@@ -43,7 +43,7 @@ namespace GameStore.DAL.EF
                     Name = "Sims3",
                     Description = "You'll spend on it a lot of time",
                     Genres = new List<Genre>() {GetGenres()[1], GetGenres()[2]},
-                    Comments =new List<Comment>(),
+              
                     PlatformTypes = GetTypes()
                 }
             };
@@ -77,24 +77,26 @@ namespace GameStore.DAL.EF
 
         private static List<Comment> GetComment()
         {
-           
+            Comment first = new Comment
+            {
+                Id = 1,
+                Name = "Marina",
+                Body = "This is first comment",
+                GameId = 1
+
+            };
             return new List<Comment>
             {
                
-                new Comment
-                {
-                    Id = 1,
-                    Name="Marina",
-                    Body="This is first comment"
-
-                },
-                 new Comment() {Id = 2, Name = "Artur", Body = "This is answer", ParentId = 1},
+               first,
+                 new Comment() {Id = 2, Name = "Artur", GameId = 1, Body = "This is answer", ParentComment = first},
                   new Comment
                 {
                     Id = 3,
                     Name="Nina",
 
-                    Body="This is second comment"
+                    Body="This is second comment",
+                    GameId = 1
                 }
             };
         }
@@ -153,52 +155,54 @@ namespace GameStore.DAL.EF
                 {
                     Id = 9,
                     Name = "RTS",
-                    ParentId = strategy.Id
+                    ParentGenre = strategy
                 },
                  new Genre
                 {
                      Id = 10,
                     Name = "TBS",
-                    ParentId = strategy.Id
+                    ParentGenre = strategy
                 },
                   new Genre
                 {
                       Id = 11,
                     Name = "Rally",
-                   ParentId = races.Id
+                   ParentGenre = races
                 },
                  new Genre
                 {
                      Id = 12,
                     Name= "Arcade",
-                     ParentId = races.Id
+                     ParentGenre = races
                 },
                     new Genre
                 {
                         Id = 13,
                    Name = "Formula",
-                     ParentId = races.Id
+                     ParentGenre = races
                 },
                  new Genre
                 {
                      Id = 14,
                     Name = "Off-road",
-                    ParentId = races.Id
+                    ParentGenre = races
                 },
                     new Genre
                 {
                         Id = 15,
                     Name = "FPS",
-                     ParentId = action.Id
+                     ParentGenre = action
                 },
                  new Genre
                 {
                      Id = 16,
                     Name = "TPS",
-                    ParentId = action.Id
+                    ParentGenre = action
                 }
 
             };
+
+
         }
     }
     

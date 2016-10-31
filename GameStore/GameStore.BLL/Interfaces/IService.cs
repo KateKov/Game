@@ -8,16 +8,19 @@ using GameStore.DAL.Entities;
 
 namespace GameStore.BLL.Interfaces
 {
-    public interface IGameService
+    public interface IService
     {
         void AddGame(GameDTO gameDto);
         void EditGame(GameDTO gameDto);
-        void DeleteGame(GameDTO gameDto);
+        void DeleteGame(int id);
         GameDTO GetGameById(int Id);
         DTO.GameDTO GetGameByKey(string Key);
         
-        List<GameDTO> GetGames();
-        List<GameDTO> GetGamesByGenres(int genreId);
-        List<GameDTO> GetGamesByPlatformType(int platformTypeId);
+        IEnumerable<GameDTO> GetGames();
+        IEnumerable<GameDTO> GetGamesByGenres(int genreId);
+        IEnumerable<GameDTO> GetGamesByPlatformType(int platformTypeId);
+        void AddComment(CommentDTO comment, string gameKey);
+        IEnumerable<CommentDTO> GetCommentsByGame(int gameId);
+
     }
 }

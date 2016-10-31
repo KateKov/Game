@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameStore.BLL.Infrastracture
+namespace GameStore.BLL.Infrastructure
 {
     public class ValidationException: Exception
     {

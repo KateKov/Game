@@ -23,7 +23,7 @@ namespace GameStore.Tests
     [TestFixture]
     public class ServicesTests
     {
-        IGameService _gameService;
+        IService _gameService;
         IRepository<Game> _gameRepository;
         IUnitOfWork _unitOfWork;
         List<Game> _randomGames;

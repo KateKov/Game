@@ -11,28 +11,26 @@ namespace GameStore.Infrastracture
 {
     public class AutoMapperConfiguration
     {
-        public static void Configure()
+        public static MapperConfiguration DtoToView()
         {
-
-            Mapper.Initialize(c => c.CreateMap<CommentDTO, CommentViewModel>());
-
-            Mapper.Initialize(c => c.CreateMap<GenreDTO, GenreViewModel>()
-            
-            );
-            Mapper.Initialize(c => c.CreateMap<PlatformTypeViewModel, PlatformTypeDTO>());
-            Mapper.Initialize(c => c.CreateMap<GameViewModel, GameDTO>()
-             .ForMember(x => x.Genres, map => map.MapFrom(m => Mapper.Map<List<GenreViewModel>, List<GenreDTO>>(m.Genres)))
-             .ForMember(x => x.Comments, map => map.MapFrom(m => Mapper.Map<List<CommentViewModel>, List<CommentDTO>>(m.Comments)))
-             .ForMember(x => x.PlatformTypes, map => map.MapFrom(m => Mapper.Map<List<PlatformTypeViewModel>, List<PlatformTypeDTO>>(m.PlatformTypes)))
-             );
-            Mapper.Initialize(c => c.CreateMap<CommentDTO, CommentViewModel>());
-            Mapper.Initialize(c => c.CreateMap<GenreDTO, GenreViewModel>());
-            Mapper.Initialize(c => c.CreateMap<PlatformTypeDTO, PlatformTypeViewModel>());
-            Mapper.Initialize(c => c.CreateMap<GameDTO, Game>()
-             .ForMember(x => x.Genres, map => map.MapFrom(m => Mapper.Map<List<GenreDTO>, List<Genre>>(m.Genres)))
-             .ForMember(x => x.Comments, map => map.MapFrom(m => Mapper.Map<List<CommentDTO>, List<Comment>>(m.Comments)))
-             .ForMember(x => x.PlatformTypes, map => map.MapFrom(m => Mapper.Map<List<PlatformTypeDTO>, List<PlatformType>>(m.PlatformTypes)))
-             );
+            return new MapperConfiguration(m =>
+            {
+                m.CreateMap<CommentDTO, CommentViewModel>();
+                
+                m.CreateMap<GenreDTO, GenreViewModel>();
+                m.CreateMap<GameDTO, GameViewModel>();
+                m.CreateMap<PlatformTypeDTO, PlatformTypeViewModel>();
+            });
+        }
+        public static MapperConfiguration ViewToDto()
+        {
+            return new MapperConfiguration(m =>
+            {
+                m.CreateMap<CommentViewModel, CommentDTO>();
+                m.CreateMap<GenreViewModel, GenreDTO>();
+                m.CreateMap<GameViewModel, GameDTO>();
+                m.CreateMap<PlatformTypeViewModel, PlatformTypeDTO>();
+            });
         }
     }
 }

@@ -10,67 +10,82 @@ using System.Web;
 using System.Web.Mvc;
 using NLog;
 using System.Web.UI;
+using GameStore.Filters;
+using GameStore.BLL.Infrastructure;
+using AutoMapperConfiguration = GameStore.Infrastracture.AutoMapperConfiguration;
+using System.Net;
 
 namespace GameStore.Controllers
 {
     [OutputCache(Duration = 60, Location = OutputCacheLocation.Server)]
     public class GameController : Controller
     {
-        private ICommentService commentService;
-        private IGameService gameService;
-        private ILogger logger;
+        private readonly IService _gameService;
+       
+        private readonly ILogger _logger;
         
-        public GameController(ILogger logger)
+        public GameController(IService service, ILogger logger)
         {
-            this.logger = logger;
-            commentService = new CommentService(logger);
-            gameService=new GameService();
+            this._logger = logger;  
+            _gameService=service;
         }
-        
-        public ActionResult Index(string Key)
+        [HttpGet]
+        [LoggingIpFilter]
+        [PerformanceFilter]    
+        public JsonResult Index(string Key)
         {
+            _logger.Info($"Request to GameController.Index. Parameters: Key = {Key}");
             GameViewModel game=new GameViewModel();
             try
             {
-                GameDTO gameDto = gameService.GetGameByKey(Key);
-               game = Mapper.Map<GameDTO, GameViewModel>(gameDto);
+                var automapper = Infrastracture.AutoMapperConfiguration.DtoToView().CreateMapper();
+                return Json(automapper.Map<GameViewModel>(_gameService.GetGameByKey(Key)), JsonRequestBehavior.AllowGet);
             }
             catch (Exception ex)
             {
-                logger.Error("The attempt to load game with Key {0} by gameService from GameController failed : {1}", Key, ex.StackTrace);
+                _logger.Error($"The attempt to load game with Key {0} by gameService from GameController failed : {1}", Key, ex.StackTrace);
+                return Json(null, JsonRequestBehavior.AllowGet);
             }
         
-            return View(game);
+            
         }
        
-        public ActionResult NewComment(CommentViewModel newComment, CommentViewModel parrentComment = null)
+       
+        [HttpPost]
+        [LoggingIpFilter]
+        [PerformanceFilter]
+        public ActionResult NewComment(CommentViewModel newComment, string gameKey)
         {
-            CommentDTO commentDto = new CommentDTO();
+            _logger.Info($"Request to GameController.NewComment");
+            CommentDTO commentDto=new CommentDTO();
+            var automapper = AutoMapperConfiguration.DtoToView().CreateMapper();
             try
             {
-               commentDto = Mapper.Map<CommentViewModel, CommentDTO>(newComment);
-                commentService.AddComment(commentDto);
+               commentDto = automapper.Map<CommentViewModel, CommentDTO>(newComment);
+               _gameService.AddComment(commentDto,gameKey );
             }
             catch (Exception ex)
             {
-                logger.Error("The attempt to add new comment to game with id {0} the gameService from GameController failed : {1}", newComment.GameId, ex.StackTrace);
+                _logger.Error($"The attempt to add new comment to game with id {0} the gameService from GameController failed : {1}", newComment.GameId, ex.StackTrace);
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             return RedirectToAction("Index", commentDto.GameId);
         }
-       
-        public ActionResult Comments(int id)
+        
+        public JsonResult Comments(int id)
         {
+            _logger.Info($"Request to CommentsController.GetGameComments. Parameters: gameId = {id}");
+            var automapper = AutoMapperConfiguration.DtoToView().CreateMapper();
             List<CommentViewModel> comments=new List<CommentViewModel>();
             try
             {
-                List<CommentDTO> commentsDto = commentService.GetCommentsByGame(id);
-                comments = Mapper.Map<List<CommentDTO>, List<CommentViewModel>>(commentsDto);
+                return Json(automapper.Map<IEnumerable<CommentViewModel>>(_gameService.GetCommentsByGame(id)), JsonRequestBehavior.AllowGet);
             }
             catch (Exception ex)
             {
-                logger.Error("The attempt to load  comments by id {0} from commentService from GameController failed : {1}", id, ex.StackTrace);
+                _logger.Error("The attempt to load  comments by id {0} from commentService from GameController failed : {1}", id, ex.StackTrace);
             }
-            return View(comments);
+            return Json(null, JsonRequestBehavior.AllowGet);
         }
     }
 }

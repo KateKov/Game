@@ -71,3 +71,6 @@ C:\Users\Kateryna_Kovalenko\Pictures\GameStore\GameStore.Tests\bin\Debug\tr\Flue
 C:\Users\Kateryna_Kovalenko\Pictures\GameStore\GameStore.Tests\bin\Debug\zh-CN\FluentValidation.resources.dll
 C:\Users\Kateryna_Kovalenko\Pictures\GameStore\GameStore.Tests\obj\Debug\GameStore.Tests.dll
 C:\Users\Kateryna_Kovalenko\Pictures\GameStore\GameStore.Tests\obj\Debug\GameStore.Tests.pdb
+C:\Users\kater_000\Documents\Game\Game\GameStore\GameStore.Tests\obj\Debug\GameStore.Tests.csprojResolveAssemblyReference.cache
+C:\Users\kater_000\Documents\Game\Game\GameStore\GameStore.Tests\obj\Debug\GameStore.Tests.dll
+C:\Users\kater_000\Documents\Game\Game\GameStore\GameStore.Tests\obj\Debug\GameStore.Tests.pdb

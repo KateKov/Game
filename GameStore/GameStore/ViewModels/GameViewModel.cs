@@ -8,12 +8,15 @@ namespace GameStore.ViewModels
 {
     public class GameViewModel
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
 
-        public List<CommentViewModel> Comments { get; set; }
-        public List<string> Genres { get; set; }
-        public List<string> PlatformTypes { get; set; }
+        public virtual ICollection<CommentViewModel> Comments { get; set; }
+        public virtual ICollection<GenreViewModel> Genres { get; set; }
+        public virtual ICollection<PlatformTypeViewModel> PlatformTypes { get; set; }
+        public string Key { get; set; }
+
     }
+
 }

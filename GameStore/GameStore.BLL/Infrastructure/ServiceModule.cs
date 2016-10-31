@@ -8,7 +8,7 @@ using GameStore.DAL.Interfaces;
 using GameStore.DAL.Infrastracture;
 using GameStore.DAL.Entities;
 
-namespace GameStore.BLL.Infrastracture
+namespace GameStore.BLL.Infrastructure
 {
     public class ServiceModule: NinjectModule
     {
