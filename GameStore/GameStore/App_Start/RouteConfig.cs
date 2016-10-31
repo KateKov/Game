@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace GameStore.WEB
+namespace GameStore
 {
     public class RouteConfig
     {

@@ -19,7 +19,7 @@ namespace GameStore
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             Database.SetInitializer(new GameStoreDbInitializer());
 
-            AutoMapperConfiguration.Configure();
+           
         }
     }
 }

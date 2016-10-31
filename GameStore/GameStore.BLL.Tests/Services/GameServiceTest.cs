@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using GameStore.BLL.DTO;
 using GameStore.BLL.Infrastructure;
 using GameStore.BLL.Services;
@@ -25,66 +26,66 @@ namespace GameStore.BLL.Tests.Services
 
         #region CreateGame
 
-        [Test, TestCaseSource(typeof(GameDataClass), nameof(GameDataClass.GameValidNoLists))]
+        [Test, TestCaseSource(typeof(TestData), nameof(TestData.GameValidNoLists))]
         public void CreateGame_ValidItemNoLists_ItemSentToDAL(GameDTO gameDTO)
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Games.Create(It.IsAny<Game>())).Verifiable();
-            mock.Setup(a => a.Genres.GetAll()).Returns(new List<Genre>());
-            mock.Setup(a => a.Platforms.GetAll()).Returns(new List<Platform>());
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            mock.Setup(a => a.Repository<Game>().Add(It.IsAny<Game>())).Verifiable();
+            mock.Setup(a => a.Repository<Genre>().GetAll()).Returns(new List<Genre>());
+            mock.Setup(a => a.Repository<PlatformType>().GetAll()).Returns(new List<PlatformType>());
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act
-            sut.CreateGame(gameDTO);
+            sut.AddGame(gameDTO);
 
             // Assert
             Mock.Verify(mock);
         }
 
-        [Test, TestCaseSource(typeof(GameDataClass), nameof(GameDataClass.GameValidWithLists))]
-        public void CreateGame_ValidItemWithLists_ItemSentToDAL(GameDTO gameDTO, List<Genre> genresFromDb, List<Platform> platformsFromDb)
+        [Test, TestCaseSource(typeof(TestData), nameof(TestData.GameValidWithLists))]
+        public void CreateGame_ValidItemWithLists_ItemSentToDAL(GameDTO gameDTO, List<Genre> genresFromDb, List<PlatformType> platformsFromDb)
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Games.Create(It.IsAny<Game>())).Verifiable();
-            mock.Setup(a => a.Genres.GetAll()).Returns(genresFromDb);
-            mock.Setup(a => a.Platforms.GetAll()).Returns(platformsFromDb);
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            mock.Setup(a => a.Repository<Game>().Add(It.IsAny<Game>())).Verifiable();
+            mock.Setup(a => a.Repository<Genre>().GetAll()).Returns(genresFromDb);
+            mock.Setup(a => a.Repository<PlatformType>().GetAll()).Returns(platformsFromDb);
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act
-            sut.CreateGame(gameDTO);
+            sut.AddGame(gameDTO);
 
             // Assert
             Mock.Verify(mock);
         }
 
-        [Test, TestCaseSource(typeof(GameDataClass), nameof(GameDataClass.GameInvalidNoLists))]
+        [Test, TestCaseSource(typeof(TestData), nameof(TestData.GameInvalidNoLists))]
         public void CreateGame_InvalidItemNoLists_ValidationExceptionThrown(GameDTO gameDTO)
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Games.Create(It.IsAny<Game>()));
-            mock.Setup(a => a.Genres.GetAll()).Returns(new List<Genre>());
-            mock.Setup(a => a.Platforms.GetAll()).Returns(new List<Platform>());
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            mock.Setup(a => a.Repository<Game>().Add(It.IsAny<Game>()));
+            mock.Setup(a => a.Repository<Genre>().GetAll()).Returns(new List<Genre>());
+            mock.Setup(a => a.Repository<PlatformType>().GetAll()).Returns(new List<PlatformType>());
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act & Assert
-            Assert.Throws<ValidationException>(() => sut.CreateGame(gameDTO));
+            Assert.Throws<ValidationException>(() => sut.AddGame(gameDTO));
         }
 
-        [Test, TestCaseSource(typeof(GameDataClass), nameof(GameDataClass.GameInvalidWithLists))]
-        public void CreateGame_InvalidItemWithLists_ValidationExceptionThrown(GameDTO gameDTO, List<Genre> genresFromDb, List<Platform> platformsFromDb)
+        [Test, TestCaseSource(typeof(TestData), nameof(TestData.GameInvalidWithLists))]
+        public void CreateGame_InvalidItemWithLists_ValidationExceptionThrown(GameDTO gameDTO, List<Genre> genresFromDb, List<PlatformType> platformsFromDb)
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Games.Create(It.IsAny<Game>()));
-            mock.Setup(a => a.Genres.GetAll()).Returns(genresFromDb);
-            mock.Setup(a => a.Platforms.GetAll()).Returns(platformsFromDb);
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            mock.Setup(a => a.Repository<Game>().Add(It.IsAny<Game>()));
+            mock.Setup(a => a.Repository<Genre>().GetAll()).Returns(new List<Genre>());
+            mock.Setup(a => a.Repository<PlatformType>().GetAll()).Returns(new List<PlatformType>());
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act & Assert
-            Assert.Throws<ValidationException>(() => sut.CreateGame(gameDTO));
+            Assert.Throws<ValidationException>(() => sut.AddGame(gameDTO));
         }
 
         [Test]
@@ -92,153 +93,153 @@ namespace GameStore.BLL.Tests.Services
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Games.Find(It.IsAny<Func<Game, bool>>())).Returns(new List<Game> { new Game(), new Game() });
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            mock.Setup(a => a.Repository<Game>().FindBy(It.IsAny<Expression<Func<Game, bool>>>())).Returns(new List<Game> { new Game(), new Game() });
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act & Assert
-            Assert.Throws<ValidationException>(() => sut.CreateGame(new GameDTO { Key = "stub-key", Name = "stub-name" }));
+            Assert.Throws<ValidationException>(() => sut.AddGame(new GameDTO { Key = "stub-key", Name = "stub-name" }));
         }
 
         #endregion
 
         #region CreateComment
 
-        [Test, TestCaseSource(typeof(CommentDataClass), nameof(CommentDataClass.CommentValidNoParent))]
+        [Test, TestCaseSource(typeof(TestData), nameof(TestData.CommentValidNoParent))]
         public void CreateComment_ValidItemNoParrent_ItemSentToDAL(CommentDTO commentDTO, Game game)
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Comments.Create(It.IsAny<Comment>())).Verifiable();
-            mock.Setup(a => a.Games.Find(It.IsAny<Func<Game, bool>>())).Returns(new List<Game> { game });
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            mock.Setup(a => a.Repository<Comment>().Add(It.IsAny<Comment>())).Verifiable();
+            mock.Setup(a => a.Repository<Game>().FindBy(It.IsAny<Expression<Func<Game, bool>>>())).Returns(new List<Game> { game });
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act
-            sut.CreateComment(commentDTO, game.Key);
+            sut.AddComment(commentDTO, game.Key);
 
             // Assert
             Mock.Verify(mock);
         }
 
-        [Test, TestCaseSource(typeof(CommentDataClass), nameof(CommentDataClass.CommentValidWithParent))]
+        [Test, TestCaseSource(typeof(TestData), nameof(TestData.CommentValidWithParent))]
         public void CreateComment_ValidItemWithParrent_ItemSentToDAL(CommentDTO commentDTO, Comment parentComment, Game game)
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Comments.Create(It.IsAny<Comment>())).Verifiable();
-            mock.Setup(a => a.Comments.Get(It.IsAny<int>())).Returns(parentComment);
-            mock.Setup(a => a.Games.Find(It.IsAny<Func<Game, bool>>())).Returns(new List<Game> { game });
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            mock.Setup(a => a.Repository<Comment>().Add(It.IsAny<Comment>())).Verifiable();
+            mock.Setup(a => a.Repository<Comment>().GetSingle(It.IsAny<int>())).Returns(parentComment);
+            mock.Setup(a => a.Repository<Game>().FindBy(It.IsAny<Expression<Func<Game, bool>>>())).Returns(new List<Game> { game });
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act
-            sut.CreateComment(commentDTO, game.Key);
+            sut.AddComment(commentDTO, game.Key);
 
             // Assert
             Mock.Verify(mock);
         }
 
-        [Test, TestCaseSource(typeof(CommentDataClass), nameof(CommentDataClass.CommentInvalidNoParrent))]
+        [Test, TestCaseSource(typeof(TestData), nameof(TestData.CommentInvalidNoParrent))]
         public void CreateComment_InvalidItemNoParrent_ValidationExceptionThrown(CommentDTO commentDTO, Game game)
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Comments.Create(It.IsAny<Comment>())).Verifiable();
+            mock.Setup(a => a.Repository<Comment>().Add(It.IsAny<Comment>())).Verifiable();
             if (commentDTO != null && commentDTO.GameId == game.Id)
-                mock.Setup(a => a.Games.Find(It.IsAny<Func<Game, bool>>())).Returns(new List<Game> { game });
+                mock.Setup(a => a.Repository<Game>().FindBy(It.IsAny<Expression<Func<Game, bool>>>())).Returns(new List<Game> { game });
             else
-                mock.Setup(a => a.Games.Find(It.IsAny<Func<Game, bool>>())).Returns(new List<Game>());
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+                mock.Setup(a => a.Repository<Game>().FindBy(It.IsAny<Expression<Func<Game, bool>>>())).Returns(new List<Game>());
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act & Assert
-            Assert.Throws<ValidationException>(() => sut.CreateComment(commentDTO, game.Key));
+            Assert.Throws<ValidationException>(() => sut.AddComment(commentDTO, game.Key));
         }
 
-        [Test, TestCaseSource(typeof(CommentDataClass), nameof(CommentDataClass.CommentInvalidWithParrent))]
+        [Test, TestCaseSource(typeof(TestData), nameof(TestData.CommentInvalidWithParrent))]
         public void CreateComment_InvalidItemWithParrent_ValidationExceptionThrown(CommentDTO commentDTO, Comment parentComment, Game game)
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Comments.Create(It.IsAny<Comment>())).Verifiable();
+            mock.Setup(a => a.Repository<Comment>().Add(It.IsAny<Comment>())).Verifiable();
             if (commentDTO != null && commentDTO.GameId == game.Id)
-                mock.Setup(a => a.Games.Find(It.IsAny<Func<Game, bool>>())).Returns(new List<Game> { game });
+                mock.Setup(a => a.Repository<Game>().FindBy(It.IsAny<Expression<Func<Game, bool>>>())).Returns(new List<Game> { game });
             else
-                mock.Setup(a => a.Games.Find(It.IsAny<Func<Game, bool>>())).Returns(new List<Game>());
-            if (commentDTO != null && commentDTO.ParentCommentId == parentComment.Id)
-                mock.Setup(a => a.Comments.Get(It.IsAny<int>())).Returns(parentComment);
+                mock.Setup(a => a.Repository<Game>().FindBy(It.IsAny<Expression<Func<Game, bool>>>())).Returns(new List<Game>());
+            if (commentDTO != null && commentDTO.ParentId == parentComment.Id)
+                mock.Setup(a => a.Repository<Comment>().GetSingle(It.IsAny<int>())).Returns(parentComment);
             else
-                mock.Setup(a => a.Comments.Get(It.IsAny<int>())).Returns((Comment)null);
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+                mock.Setup(a => a.Repository<Comment>().GetSingle(It.IsAny<int>())).Returns((Comment)null);
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act & Assert
-            Assert.Throws<ValidationException>(() => sut.CreateComment(commentDTO, game.Key));
+            Assert.Throws<ValidationException>(() => sut.AddComment(commentDTO, game.Key));
         }
 
         #endregion
 
         #region UpdateGame
 
-        [Test, TestCaseSource(typeof(GameDataClass), nameof(GameDataClass.GameValidNoLists))]
+        [Test, TestCaseSource(typeof(TestData), nameof(TestData.GameValidNoLists))]
         public void UpdateGame_ValidItemNoLists_ItemSentToDAL(GameDTO gameDTO)
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Games.Update(It.IsAny<Game>())).Verifiable();
-            mock.Setup(a => a.Games.Get(It.IsAny<int>())).Returns(new Game { Key = gameDTO.Key, Name = gameDTO.Name });
-            mock.Setup(a => a.Genres.GetAll()).Returns(new List<Genre>());
-            mock.Setup(a => a.Platforms.GetAll()).Returns(new List<Platform>());
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            mock.Setup(a => a.Repository<Game>().Edit(It.IsAny<Game>())).Verifiable();
+            mock.Setup(a => a.Repository<Game>().GetSingle(It.IsAny<int>())).Returns(new Game { Key = gameDTO.Key, Name = gameDTO.Name });
+            mock.Setup(a => a.Repository<Genre>().GetAll()).Returns(new List<Genre>());
+            mock.Setup(a => a.Repository<PlatformType>().GetAll()).Returns(new List<PlatformType>());
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act
-            sut.UpdateGame(gameDTO);
+            sut.EditGame(gameDTO);
 
             // Assert
             Mock.Verify(mock);
         }
 
-        [Test, TestCaseSource(typeof(GameDataClass), nameof(GameDataClass.GameValidWithLists))]
-        public void UpdateGame_ValidItemWithLists_ItemSentToDAL(GameDTO gameDTO, List<Genre> genresFromDb, List<Platform> platformsFromDb)
+        [Test, TestCaseSource(typeof(TestData), nameof(TestData.GameValidWithLists))]
+        public void UpdateGame_ValidItemWithLists_ItemSentToDAL(GameDTO gameDTO, List<Genre> genresFromDb, List<PlatformType> platformsFromDb)
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Games.Update(It.IsAny<Game>())).Verifiable();
-            mock.Setup(a => a.Games.Get(It.IsAny<int>())).Returns(new Game { Key = gameDTO.Key, Name = gameDTO.Name });
-            mock.Setup(a => a.Genres.GetAll()).Returns(genresFromDb);
-            mock.Setup(a => a.Platforms.GetAll()).Returns(platformsFromDb);
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            mock.Setup(a => a.Repository<Game>().Edit(It.IsAny<Game>())).Verifiable();
+            mock.Setup(a => a.Repository<Game>().GetSingle(It.IsAny<int>())).Returns(new Game { Key = gameDTO.Key, Name = gameDTO.Name });
+            mock.Setup(a => a.Repository<Genre>().GetAll()).Returns(genresFromDb);
+            mock.Setup(a => a.Repository<PlatformType>().GetAll()).Returns(platformsFromDb);
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act
-            sut.UpdateGame(gameDTO);
+            sut.EditGame(gameDTO);
 
             // Assert
             Mock.Verify(mock);
         }
 
-        [Test, TestCaseSource(typeof(GameDataClass), nameof(GameDataClass.GameInvalidNoLists))]
+        [Test, TestCaseSource(typeof(TestData), nameof(TestData.GameInvalidNoLists))]
         public void UpdateGame_InvalidItemNoLists_ValidationExceptionThrown(GameDTO gameDTO)
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Games.Update(It.IsAny<Game>()));
-            mock.Setup(a => a.Genres.GetAll()).Returns(new List<Genre>());
-            mock.Setup(a => a.Platforms.GetAll()).Returns(new List<Platform>());
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            mock.Setup(a => a.Repository<Game>().Edit(It.IsAny<Game>()));
+            mock.Setup(a => a.Repository<Genre>().GetAll()).Returns(new List<Genre>());
+            mock.Setup(a => a.Repository<PlatformType>().GetAll()).Returns(new List<PlatformType>());
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act & Assert
-            Assert.Throws<ValidationException>(() => sut.UpdateGame(gameDTO));
+            Assert.Throws<ValidationException>(() => sut.EditGame(gameDTO));
         }
 
-        [Test, TestCaseSource(typeof(GameDataClass), nameof(GameDataClass.GameInvalidWithLists))]
-        public void UpdateGame_InvalidItemWithLists_ValidationExceptionThrown(GameDTO gameDTO, List<Genre> genresFromDb, List<Platform> platformsFromDb)
+        [Test, TestCaseSource(typeof(TestData), nameof(TestData.GameInvalidWithLists))]
+        public void UpdateGame_InvalidItemWithLists_ValidationExceptionThrown(GameDTO gameDTO, List<Genre> genresFromDb, List<PlatformType> platformsFromDb)
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Games.Update(It.IsAny<Game>()));
-            mock.Setup(a => a.Games.Get(It.IsAny<int>())).Returns(new Game { Key = gameDTO.Key, Name = gameDTO.Name });
-            mock.Setup(a => a.Genres.GetAll()).Returns(genresFromDb);
-            mock.Setup(a => a.Platforms.GetAll()).Returns(platformsFromDb);
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            mock.Setup(a => a.Repository<Game>().Edit(It.IsAny<Game>()));
+            mock.Setup(a => a.Repository<Game>().GetSingle(It.IsAny<int>())).Returns(new Game { Key = gameDTO.Key, Name = gameDTO.Name });
+            mock.Setup(a => a.Repository<Genre>().GetAll()).Returns(genresFromDb);
+            mock.Setup(a => a.Repository<PlatformType>().GetAll()).Returns(platformsFromDb);
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act & Assert
-            Assert.Throws<ValidationException>(() => sut.UpdateGame(gameDTO));
+            Assert.Throws<ValidationException>(() => sut.EditGame(gameDTO));
         }
 
         [Test]
@@ -246,12 +247,12 @@ namespace GameStore.BLL.Tests.Services
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Games.Get(It.IsAny<int>())).Returns(new Game());
-            mock.Setup(a => a.Games.Find(It.IsAny<Func<Game, bool>>())).Returns(new List<Game> { new Game(), new Game() });
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            mock.Setup(a => a.Repository<Game>().GetSingle(It.IsAny<int>())).Returns(new Game());
+            mock.Setup(a => a.Repository<Game>().FindBy(It.IsAny<Expression<Func<Game, bool>>>())).Returns(new List<Game> { new Game(), new Game() });
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act & Assert
-            Assert.Throws<ValidationException>(() => sut.UpdateGame(new GameDTO { Key = "another-key-that-exists-in-db", Name = "stub-name" }));
+            Assert.Throws<ValidationException>(() => sut.EditGame(new GameDTO { Key = "another-key-that-exists-in-db", Name = "stub-name" }));
         }
 
 
@@ -266,9 +267,9 @@ namespace GameStore.BLL.Tests.Services
 
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Games.Delete(It.IsAny<int>())).Verifiable();
-            mock.Setup(a => a.Games.Get(It.IsAny<int>())).Returns(new Game());
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            mock.Setup(a => a.Repository<Game>().Delete(a.Repository<Game>().GetSingle((It.IsAny<int>())))).Verifiable();
+            mock.Setup(a => a.Repository<Game>().GetSingle(It.IsAny<int>())).Returns(new Game());
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act
             sut.DeleteGame(validId);
@@ -284,9 +285,9 @@ namespace GameStore.BLL.Tests.Services
 
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Games.Delete(It.IsAny<int>())).Verifiable();
-            mock.Setup(a => a.Games.Get(It.IsAny<int>())).Returns((Game)null);
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            mock.Setup(a => a.Repository<Game>().Delete(a.Repository<Game>().GetSingle((It.IsAny<int>())))).Verifiable();
+            mock.Setup(a => a.Repository<Game>().GetSingle(It.IsAny<int>())).Returns((Game)null);
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act & Assert
             Assert.Throws<ValidationException>(() => sut.DeleteGame(invalidId));
@@ -301,8 +302,8 @@ namespace GameStore.BLL.Tests.Services
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Games.GetAll()).Returns(new List<Game> { new Game(), new Game() });
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            mock.Setup(a => a.Repository<Game>().GetAll()).Returns(new List<Game> { new Game(), new Game() });
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act
             var res = sut.GetGames();
@@ -318,8 +319,8 @@ namespace GameStore.BLL.Tests.Services
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Games.GetAll()).Returns(new List<Game>());
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            mock.Setup(a => a.Repository<Game>().GetAll()).Returns(new List<Game>());
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act
             var res = sut.GetGames();
@@ -339,11 +340,11 @@ namespace GameStore.BLL.Tests.Services
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Games.Find(It.IsAny<Func<Game, bool>>())).Returns(new List<Game> { new Game(), new Game() });
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            mock.Setup(a => a.Repository<Game>().FindBy(It.IsAny<Expression<Func<Game, bool>>>())).Returns(new List<Game> { new Game(), new Game() });
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act
-            var res = sut.GetGamesByGenre("valid genre");
+            var res = sut.GetGamesByGenres(1);
 
             // Assert
             var gameDtos = res as IList<GameDTO> ?? res.ToList();
@@ -356,11 +357,11 @@ namespace GameStore.BLL.Tests.Services
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Games.Find(It.IsAny<Func<Game, bool>>())).Returns(new List<Game>());
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            mock.Setup(a => a.Repository<Game>().FindBy(It.IsAny<Expression<Func<Game, bool>>>())).Returns(new List<Game>());
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act
-            var res = sut.GetGamesByGenre("invalid genre");
+            var res = sut.GetGamesByGenres(1);
 
             // Assert
             var gameDtos = res as IList<GameDTO> ?? res.ToList();
@@ -377,11 +378,11 @@ namespace GameStore.BLL.Tests.Services
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Games.Find(It.IsAny<Func<Game, bool>>())).Returns(new List<Game> { new Game(), new Game() });
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            mock.Setup(a => a.Repository<Game>().FindBy(It.IsAny<Expression<Func<Game, bool>>>())).Returns(new List<Game> { new Game(), new Game() });
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act
-            var res = sut.GetGamesByPlatform("valid platform");
+            var res = sut.GetGamesByPlatformType(1);
 
             // Assert
             var gameDtos = res as IList<GameDTO> ?? res.ToList();
@@ -394,11 +395,11 @@ namespace GameStore.BLL.Tests.Services
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Games.Find(It.IsAny<Func<Game, bool>>())).Returns(new List<Game>());
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            mock.Setup(a => a.Repository<Game>().FindBy(It.IsAny<Expression<Func<Game, bool>>>())).Returns(new List<Game>());
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act
-            var res = sut.GetGamesByPlatform("invalid platform");
+            var res = sut.GetGamesByPlatformType(1);
 
             // Assert
             var gameDtos = res as IList<GameDTO> ?? res.ToList();
@@ -415,11 +416,11 @@ namespace GameStore.BLL.Tests.Services
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Games.Find(It.IsAny<Func<Game, bool>>())).Returns(new List<Game> { new Game() });
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            mock.Setup(a => a.Repository<Game>().FindBy(It.IsAny<Expression<Func<Game, bool>>>())).Returns(new List<Game> { new Game() });
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act
-            var res = sut.GetGame("valid key");
+            var res = sut.GetGameByKey("valid key");
 
             // Assert
             Assert.That(res, Is.Not.Null);
@@ -431,11 +432,11 @@ namespace GameStore.BLL.Tests.Services
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Games.Find(It.IsAny<Func<Game, bool>>())).Returns(new List<Game>());
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            mock.Setup(a => a.Repository<Game>().FindBy(It.IsAny<Expression<Func<Game, bool>>>())).Returns(new List<Game>());
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act & Assert
-            Assert.Throws<ValidationException>(() => sut.GetGame("invalid key"));
+            Assert.Throws<ValidationException>(() => sut.GetGameByKey("invalid key"));
         }
 
         #endregion
@@ -447,15 +448,15 @@ namespace GameStore.BLL.Tests.Services
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Comments.Find(It.IsAny<Func<Comment, bool>>())).Returns(new List<Comment>
+            mock.Setup(a => a.Repository<Comment>().FindBy(It.IsAny<Expression<Func<Comment, bool>>>())).Returns(new List<Comment>
             {
                 new Comment {Id = 1, Name = "stub-name", Body = "stub-name", Game = new Game {Id = 1} },
                 new Comment {Id = 2, Name = "stub-name", Body = "stub-name", Game = new Game {Id = 1} }
             });
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act
-            var res = sut.GetCommentsByGame("valid game key");
+            var res = sut.GetCommentsByGame(-5);
 
             // Assert
             var commentsDto = res as IList<CommentDTO> ?? res.ToList();
@@ -468,11 +469,11 @@ namespace GameStore.BLL.Tests.Services
         {
             // Arrange
             var mock = new Mock<IUnitOfWork>();
-            mock.Setup(a => a.Comments.Find(It.IsAny<Func<Comment, bool>>())).Returns(new List<Comment>());
-            var sut = new StoreService(mock.Object, _loggerMock.Object);
+            mock.Setup(a => a.Repository<Comment>().FindBy(It.IsAny<Expression<Func<Comment, bool>>>())).Returns(new List<Comment>());
+            var sut = new GameService(mock.Object, _loggerMock.Object);
 
             // Act
-            var res = sut.GetCommentsByGame("invalid game key");
+            var res = sut.GetCommentsByGame(-1);
 
             // Assert
             var commentsDto = res as IList<CommentDTO> ?? res.ToList();

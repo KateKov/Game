@@ -2,10 +2,11 @@
 using GameStore.BLL.DTO;
 using GameStore.DAL.Entities;
 using NUnit.Framework;
+using System.Collections.Generic;
 
 namespace GameStore.BLL.Tests.Services
 {
-    public class Test
+    public class TestData
     {
         public static IEnumerable CommentValidNoParent
         {
@@ -83,10 +84,10 @@ namespace GameStore.BLL.Tests.Services
                         new Genre {Name = "stub-genre-1"},
                         new Genre {Name = "stub-genre-2"}
                 },
-                new List<Platform>
+                new List<PlatformType>
                 {
-                    new Platform {PlatformType = "stub-platform-1"},
-                    new Platform {PlatformType = "stub-platform-2"}
+                    new PlatformType {Type = "stub-platform-1"},
+                    new PlatformType {Type = "stub-platform-2"}
                 });
 
                 yield return new TestCaseData(new GameDTO
@@ -103,24 +104,24 @@ namespace GameStore.BLL.Tests.Services
                 {
                     new Genre {Name = "stub-genre-1"},
                 },
-                new List<Platform>());
+                new List<PlatformType>());
 
                 yield return new TestCaseData(new GameDTO
                 {
                     Key = "stub-key",
                     Name = "stub-name",
                     Description = "stub-descr",
-                    Platforms = new List<PlatformDTO>
+                    PlatformTypes = new List<PlatformTypeDTO>
                     {
-                        new PlatformDTO {PlatformType = "stub-platform-1"},
-                        new PlatformDTO {PlatformType = "stub-platform-2"}
+                        new PlatformTypeDTO {Type = "stub-platform-1"},
+                        new PlatformTypeDTO {Type = "stub-platform-2"}
                     }
                 },
                 new List<Genre>(),
-                new List<Platform>
+                new List<PlatformType>
                 {
-                    new Platform {PlatformType = "stub-platform-1"},
-                    new Platform {PlatformType = "stub-platform-2"}
+                    new PlatformType {Type = "stub-platform-1"},
+                    new PlatformType {Type = "stub-platform-2"}
                 });
             }
         }
@@ -152,19 +153,19 @@ namespace GameStore.BLL.Tests.Services
                         new GenreDTO {Name = "in_db_1"},
                         new GenreDTO {Name = "not_in_db"}
                     },
-                    PlatformTypes = new List<PlatformDTO>
+                    PlatformTypes = new List<PlatformTypeDTO>
                     {
-                        new PlatformDTO {PlatformType = "in_db_1"},
-                        new PlatformDTO {PlatformType = "in_db_2"}
+                        new PlatformTypeDTO { Type = "in_db_1"},
+                        new PlatformTypeDTO {Type = "in_db_2"}
                     }
                 },
                 new List<Genre>{
                     new Genre {Name = "in_db_1"},
                 },
-                new List<Platform>
+                new List<PlatformType>
                 {
-                    new Platform {PlatformType = "in_db_1"},
-                    new Platform {PlatformType = "in_db_2"}
+                    new PlatformType {Type = "in_db_1"},
+                    new PlatformType {Type = "in_db_2"}
                 });
 
                 yield return new TestCaseData(new GameDTO
@@ -176,18 +177,18 @@ namespace GameStore.BLL.Tests.Services
                         new GenreDTO {Name = "in_db_1"},
                         new GenreDTO {Name = "not_in_db"}
                     },
-                    Platforms = new List<PlatformDTO>
+                    PlatformTypes = new List<PlatformTypeDTO>
                     {
-                        new PlatformDTO {PlatformType = "not_in_db"}
+                        new PlatformTypeDTO {Type = "not_in_db"}
                     }
                 },
                  new List<Genre>{
                     new Genre {Name = "in_db_1"},
                  },
-                 new List<Platform>
+                 new List<PlatformType>
                  {
-                    new Platform {PlatformType = "in_db_1"},
-                    new Platform {PlatformType = "not_in_db"}
+                    new PlatformType {Type = "in_db_1"},
+                    new PlatformType {Type = "not_in_db"}
                  });
 
                 yield return new TestCaseData(new GameDTO
@@ -198,9 +199,9 @@ namespace GameStore.BLL.Tests.Services
                     {
                         new GenreDTO {Name = "in_db_1"},
                     },
-                    Platforms = new List<PlatformDTO>
+                    PlatformTypes = new List<PlatformTypeDTO>
                     {
-                        new PlatformDTO {PlatformType = "not_in_db"}
+                        new PlatformTypeDTO {Type = "not_in_db"}
                     }
                 },
                 new List<Genre>{
