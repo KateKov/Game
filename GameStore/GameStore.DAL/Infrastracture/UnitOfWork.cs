@@ -1,28 +1,19 @@
-﻿using GameStore.DAL.EF;
-using GameStore.DAL.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using GameStore.DAL.EF;
+using GameStore.DAL.Interfaces;
 
 namespace GameStore.DAL.Infrastracture
 {
     public class UnitOfWork : IUnitOfWork, IDisposable
     {
-        private readonly GameStoreContext context;
-        private bool disposed;
+        private readonly GameStoreContext _context;
+        private bool _disposed;
         private Dictionary<string, object> repositories;
 
         public UnitOfWork(GameStoreContext context)
         {
-            this.context = context;
-        }
-
-        public UnitOfWork()
-        {
-            context = new GameStoreContext();
+            _context = context;
         }
 
         public void Dispose()
@@ -33,22 +24,23 @@ namespace GameStore.DAL.Infrastracture
 
         public void Save()
         {
-            context.SaveChanges();
+            _context.SaveChanges();
         }
 
-        public virtual void Dispose(bool disposing)
+        public void Dispose(bool disposing)
         {
-            if (!disposed)
+            if (!_disposed)
             {
                 if (disposing)
                 {
-                    context.Dispose();
+                    _context.Dispose();
                 }
             }
-            disposed = true;
+
+            _disposed = true;
         }
 
-        public Repository<T> Repository<T>() where T : class, IEntityBase, new()
+        public IRepository<T> Repository<T>() where T : class, IEntityBase, new()
         {
             if (repositories == null)
             {
@@ -60,12 +52,10 @@ namespace GameStore.DAL.Infrastracture
             if (!repositories.ContainsKey(type))
             {
                 var repositoryType = typeof(Repository<>);
-                var repositoryInstance = Activator.CreateInstance(repositoryType.MakeGenericType(typeof(T)), context);
+                var repositoryInstance = new Lazy<IRepository<T>>(() => (IRepository<T>)Activator.CreateInstance(repositoryType.MakeGenericType(typeof(T)), _context)).Value;
                 repositories.Add(type, repositoryInstance);
             }
-            return (Repository<T>)repositories[type];
+            return (IRepository<T>)repositories[type];
         }
-    }
-    
-    
+    }   
 }

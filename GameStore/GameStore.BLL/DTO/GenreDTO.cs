@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using GameStore.BLL.Interfaces;
 
 namespace GameStore.BLL.DTO
 {
-    public class GenreDTO
+    public class GenreDTO : IDtoBase
     {     
         public int Id { get; set; }
         public string Name { get; set; }

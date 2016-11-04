@@ -1,0 +1,430 @@
+|2016-11-03 13:15:35.0683|ERROR|GameStore.Web.Controllers.GameController|The attempt to load game with Key invalid-key by gameService from GameController failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.MethodCallReturn`2.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ObjectProxy.GetGameByKey(String key)
+   at GameStore.Web.Controllers.GameController.Index(String key) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GameController.cs:line 33
+|2016-11-03 13:15:35.4526|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 76
+|2016-11-03 13:15:35.4746|WARN|GameStore.Web.Controllers.GamesController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 13:15:35.4946|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 95
+|2016-11-03 13:21:02.1427|ERROR|GameStore.Web.Controllers.CommentsController|The attempt to load game with Key invalid-key by gameService from GameController failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.MethodCallReturn`2.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ObjectProxy.GetGameByKey(String key)
+   at GameStore.Web.Controllers.CommentsController.Index(String key) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\CommentsController.cs:line 31
+|2016-11-03 13:21:02.5020|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 74
+|2016-11-03 13:21:02.5320|WARN|GameStore.Web.Controllers.GamesController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 13:21:02.5410|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 93
+|2016-11-03 13:21:23.5171|ERROR|GameStore.Web.Controllers.CommentsController|The attempt to load game with Key invalid-key by gameService from GameController failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.MethodCallReturn`2.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ObjectProxy.GetGameByKey(String key)
+   at GameStore.Web.Controllers.CommentsController.Index(String key) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\CommentsController.cs:line 31
+|2016-11-03 13:21:24.0816|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ObjectProxy.AddGame(GameDTO gameDto)
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 74
+|2016-11-03 13:21:24.1576|WARN|GameStore.Web.Controllers.GamesController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 13:21:24.1756|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ObjectProxy.EditGame(GameDTO gameDto)
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 93
+|2016-11-03 15:01:00.9138|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 74
+|2016-11-03 15:01:00.9438|WARN|GameStore.Web.Controllers.GamesController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 15:01:00.9438|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 93
+|2016-11-03 18:14:51.2596|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 74
+|2016-11-03 18:14:51.2796|WARN|GameStore.Web.Controllers.GamesController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:14:51.2951|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 93
+|2016-11-03 18:16:32.5742|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 74
+|2016-11-03 18:16:32.5962|WARN|GameStore.Web.Controllers.GamesController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:16:32.6132|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 93
+|2016-11-03 18:18:15.1173|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 74
+|2016-11-03 18:18:15.1348|WARN|GameStore.Web.Controllers.GamesController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:18:15.1538|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 93
+|2016-11-03 18:19:13.1935|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 74
+|2016-11-03 18:19:13.2125|WARN|GameStore.Web.Controllers.GamesController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:19:13.2306|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 93
+|2016-11-03 18:22:58.1319|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 74
+|2016-11-03 18:22:58.1595|WARN|GameStore.Web.Controllers.GamesController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:22:58.1595|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 93
+|2016-11-03 18:25:04.6325|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 74
+|2016-11-03 18:25:04.6635|WARN|GameStore.Web.Controllers.GamesController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:25:04.6715|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 93
+|2016-11-03 18:26:37.2190|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 74
+|2016-11-03 18:26:37.2370|WARN|GameStore.Web.Controllers.GamesController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:26:37.2550|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 93
+|2016-11-03 18:27:52.0595|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 74
+|2016-11-03 18:27:52.0895|WARN|GameStore.Web.Controllers.GamesController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:27:52.1005|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 93
+|2016-11-03 18:28:21.7733|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 74
+|2016-11-03 18:28:21.8033|WARN|GameStore.Web.Controllers.GamesController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:28:21.8033|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 93
+|2016-11-03 18:29:38.5298|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 74
+|2016-11-03 18:29:38.5568|WARN|GameStore.Web.Controllers.GamesController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:29:38.5568|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 93
+|2016-11-03 18:30:25.0630|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 74
+|2016-11-03 18:30:25.0920|WARN|GameStore.Web.Controllers.GamesController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:30:25.1030|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 93
+|2016-11-03 18:31:35.8607|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 74
+|2016-11-03 18:31:35.8893|WARN|GameStore.Web.Controllers.GamesController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:31:35.9003|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 93
+|2016-11-03 18:32:15.2758|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 74
+|2016-11-03 18:32:15.3058|WARN|GameStore.Web.Controllers.GamesController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:32:15.3058|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 93
+|2016-11-03 18:35:04.8313|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 74
+|2016-11-03 18:35:04.8644|WARN|GameStore.Web.Controllers.GamesController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:35:04.8744|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 93
+|2016-11-03 18:37:15.9609|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 74
+|2016-11-03 18:37:15.9890|WARN|GameStore.Web.Controllers.GamesController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:37:15.9890|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 93
+|2016-11-03 18:38:24.7164|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 74
+|2016-11-03 18:38:24.7379|WARN|GameStore.Web.Controllers.GamesController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:38:24.7544|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 93
+|2016-11-03 18:42:41.0528|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:42:41.1404|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 48
+|2016-11-03 18:42:41.1719|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 67
+|2016-11-03 18:43:23.5042|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:43:23.5912|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 48
+|2016-11-03 18:43:23.6113|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 67
+|2016-11-03 18:43:43.2672|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:43:43.3493|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 48
+|2016-11-03 18:43:43.3753|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 67
+|2016-11-03 18:44:37.1768|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:44:37.2528|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 48
+|2016-11-03 18:44:37.2823|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 67
+|2016-11-03 18:47:58.8217|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:47:58.8993|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 48
+|2016-11-03 18:47:58.9263|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 67
+|2016-11-03 18:48:22.3985|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:48:22.4726|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 48
+|2016-11-03 18:48:22.4906|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 67
+|2016-11-03 18:48:50.7387|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:48:50.8178|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 48
+|2016-11-03 18:48:50.8478|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 67
+|2016-11-03 18:50:21.7734|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:50:21.8534|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 48
+|2016-11-03 18:50:21.8805|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 67
+|2016-11-03 18:50:42.8411|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:50:42.9192|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 48
+|2016-11-03 18:50:42.9459|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 67
+|2016-11-03 18:51:21.2595|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:51:21.3325|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 48
+|2016-11-03 18:51:21.3495|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 67
+|2016-11-03 18:52:33.0892|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-03 18:52:33.1718|ERROR|GameStore.Web.Controllers.GamesController|The attempt to add new game with failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.New(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 48
+|2016-11-03 18:52:33.2008|ERROR|GameStore.Web.Controllers.GamesController|The attempt to edit a game with Id 0 failed :    at Moq.MethodCall.Execute(ICallContext call)
+   at Moq.ExecuteCall.HandleIntercept(ICallContext invocation, InterceptorContext ctx, CurrentInterceptContext localctx)
+   at Moq.Interceptor.Intercept(ICallContext invocation)
+   at Moq.Proxy.CastleProxyFactory.Interceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at GameStore.Web.Controllers.GamesController.Update(GameViewModel game) in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 67
+|2016-11-03 19:00:32.9624|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 

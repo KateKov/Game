@@ -1,209 +1,231 @@
-﻿
-using GameStore.DAL.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using GameStore.DAL.Entities;
 
 namespace GameStore.DAL.EF
 {
-    public class GameStoreDbInitializer: DropCreateDatabaseAlways<GameStoreContext>
+    public class GameStoreDbInitializer : DropCreateDatabaseAlways<GameStoreContext>
     {
-        protected override void Seed(GameStoreContext context)
+        protected override void Seed(GameStoreContext db)
         {
-            
-                GetGenres().ForEach(c => context.Genres.Add(c));
-                GetComment().ForEach(c => context.Comments.Add(c));
-                GetTypes().ForEach(c => context.PlatformTypes.Add(c));
-                GetGames().ForEach(c => context.Games.Add(c));
-            context.SaveChanges();
-
-        }
-
-        public static List<Game> GetGames()
-        {
-            return new List<Game>
-            {
-                new Game
-                {
-                    Id = 1,
-                    Key="GTA6_NewEdition",
-                    Name = "GTA6",
-                    Description = "It's amazing game",
-                    Genres = new List<Genre>() {GetGenres()[0], GetGenres()[2]},
-                    
-                    PlatformTypes = GetTypes()
-                },
-                  new Game
-                {
-                    Id = 2,
-                    Key="Sims3_SecondEdition",
-                    Name = "Sims3",
-                    Description = "You'll spend on it a lot of time",
-                    Genres = new List<Genre>() {GetGenres()[1], GetGenres()[2]},
-              
-                    PlatformTypes = GetTypes()
-                }
-            };
-        }
-        private static List<PlatformType> GetTypes()
-        {
-            return new List<PlatformType>
+            var platforms = new List<PlatformType>
             {
                 new PlatformType
                 {
-                    Id = 1,
                     Type = "Mobile"
                 },
-                 new PlatformType
+                new PlatformType
                 {
-                     Id = 2,
-                    Type = "Browser"
-                },
-                  new PlatformType
-                {
-                      Id = 3,
                     Type = "Desktop"
                 },
-                   new PlatformType
+                new PlatformType
+                { 
+                    Type = "Browser"
+                },
+                new PlatformType
                 {
-                       Id = 4,
                     Type = "Console"
                 }
             };
-        }
-
-        private static List<Comment> GetComment()
-        {
-            Comment first = new Comment
+            db.PlatformTypes.AddRange(platforms);
+            var genres = new List<Genre>
             {
-                Id = 1,
-                Name = "Marina",
-                Body = "This is first comment",
-                GameId = 1
-
-            };
-            return new List<Comment>
-            {
-               
-               first,
-                 new Comment() {Id = 2, Name = "Artur", GameId = 1, Body = "This is answer", ParentComment = first},
-                  new Comment
-                {
-                    Id = 3,
-                    Name="Nina",
-
-                    Body="This is second comment",
-                    GameId = 1
-                }
-            };
-        }
-
-       
-        
-        private static List<Genre> GetGenres()
-        {
-            Genre strategy = new Genre
-            {
-                Id = 1,
-                Name = "Strategy"
-            };
-            Genre races = new Genre
-            {
-                Id = 2,
-                Name = "Races"
-            };
-            Genre action = new Genre
-            {
-                Id = 3,
-                Name = "Action"
-            };
-            return new List<Genre>
-            {
-
-                strategy,
                 new Genre
                 {
-                    Id = 4,
+                    Name = "Strategy"
+                },
+                new Genre
+                {
                     Name = "RPG"
                 },
                 new Genre
                 {
-                    Id = 5,
                     Name = "Sports"
                 },
-                races,
-               action,
                 new Genre
                 {
-                    Id = 6,
+                    Name = "Races"
+                },
+                new Genre
+                {
+                    Name = "Action"
+                },
+                new Genre
+                {
                     Name = "Adventure"
                 },
-                 new Genre
+                new Genre
                 {
-                     Id = 7,
                     Name = "Puzzle&Skill"
                 },
                 new Genre
                 {
-                    Id = 8,
                     Name = "Misc"
+                }
+            };
+            var subgenres = new List<Genre>
+            {
+                new Genre
+                {
+                    Name = "RTS",
+                    ParentGenre = genres[0]
                 },
                 new Genre
                 {
-                    Id = 9,
-                    Name = "RTS",
-                    ParentGenre = strategy
-                },
-                 new Genre
-                {
-                     Id = 10,
                     Name = "TBS",
-                    ParentGenre = strategy
+                    ParentGenre = genres[0]
                 },
-                  new Genre
+                new Genre
                 {
-                      Id = 11,
                     Name = "Rally",
-                   ParentGenre = races
+                    ParentGenre = genres[3]
                 },
-                 new Genre
+                new Genre
                 {
-                     Id = 12,
-                    Name= "Arcade",
-                     ParentGenre = races
+                    Name = "Arcade",
+                    ParentGenre = genres[3]
                 },
-                    new Genre
+                new Genre
                 {
-                        Id = 13,
-                   Name = "Formula",
-                     ParentGenre = races
+                    Name = "Formula",
+                    ParentGenre = genres[3]
                 },
-                 new Genre
+                new Genre
                 {
-                     Id = 14,
                     Name = "Off-road",
-                    ParentGenre = races
+                    ParentGenre = genres[3]
                 },
-                    new Genre
+                new Genre
                 {
-                        Id = 15,
                     Name = "FPS",
-                     ParentGenre = action
+                    ParentGenre = genres[4]
                 },
-                 new Genre
+                new Genre
                 {
-                     Id = 16,
                     Name = "TPS",
-                    ParentGenre = action
-                }
-
+                    ParentGenre = genres[4]
+                }          
             };
-
-
+            db.Genres.AddRange(genres);
+            db.Genres.AddRange(subgenres);
+            var firstLevelComments = new List<Comment>
+            {
+                new Comment
+                {
+                    Id = 1,
+                    Name = "Marina",
+                    Body = "First comment"
+                },
+                new Comment
+                {
+                    Id = 2,
+                    Name = "Artur",
+                    Body = "Second comment"
+                }
+            };
+            var secondLevelComments = new List<Comment>
+            {
+                new Comment
+                {
+                    Id = 3,
+                    Name = "Anna",
+                    Body = "Answer for the first comment",
+                    ParentComment = firstLevelComments[0]
+                },
+                new Comment
+                {
+                    Id = 4,
+                    Name = "Ivan",
+                    Body = "Some joke",
+                    ParentComment = firstLevelComments[0]
+                }
+            };
+            var thirdLevelComments = new List<Comment>
+            {
+                new Comment
+                {
+                    Id = 5,
+                    Name = "Dmitriy",
+                    Body = "Anna, i write you responce",
+                    ParentComment = secondLevelComments[0]
+                }
+            };
+            var comments = firstLevelComments;
+            comments.AddRange(secondLevelComments);
+            comments.AddRange(thirdLevelComments);
+            var orderDetails = new List<OrderDetail>
+            {
+                new OrderDetail
+                {
+                    Discount = 15,
+                    Quality = 4,
+                    Price = 15
+                },
+                new OrderDetail
+                {
+                    Discount = 20,
+                    Quality = 18,
+                    Price = 20
+                }
+            };
+            db.OrderDetails.AddRange(orderDetails);
+            var games = new List<Game>
+            {
+                new Game
+                {
+                    Key = "Gta6_ThirdEdition",
+                    Name = "Gta6",
+                    Description = "It's very interesting game",
+                    PlatformTypes = new List<PlatformType>
+                    {
+                        platforms[0],
+                        platforms[1]
+                    },
+                    Genres = new List<Genre>
+                    {
+                        subgenres[0],
+                        subgenres[1]
+                    },
+                    Comments = comments,
+                    Discountinues = false,
+                    Price=15,
+                    UnitsInStock = 20,
+                    OrderDetails = new List<OrderDetail> {orderDetails[0]}
+                },
+                new Game
+                {
+                    Key = "Sims3_16in1",
+                    Name = "Sims3",
+                    Description = "You'll spend a lot of time playing in this game",
+                    PlatformTypes = new List<PlatformType>
+                    {
+                        platforms[2],
+                        platforms[0]
+                    },
+                    Genres = new List<Genre>
+                    {
+                        genres[1],
+                        genres[4]
+                    },
+                    Discountinues = false,
+                    Price=15,
+                    UnitsInStock = 20,
+                    OrderDetails = new List<OrderDetail> {orderDetails[1]}
+                }
+            };
+            db.Games.AddRange(games);
+            var orders = new List<Order>
+            {
+                new Order
+                {
+                    CustomerId = 1,
+                    Date = DateTime.UtcNow,
+                    OrderDetails = new List<OrderDetail> {orderDetails[0], orderDetails[1]}
+                }
+            };
+            db.Orders.AddRange(orders);
+            db.SaveChanges();
         }
     }
-    
 }

@@ -1,0 +1,13 @@
+80000017-0000-f100-b63f-84710c7967bb|2016-11-03 10:24:33.3593|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.
+8000001a-0000-f100-b63f-84710c7967bb|2016-11-03 10:24:45.8260|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.
+80000023-0000-f100-b63f-84710c7967bb|2016-11-03 11:57:25.7713|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.
+80000031-0000-ed00-b63f-84710c7967bb|2016-11-03 12:02:35.2790|DEBUG|GameStore.Web.Filters.LoggingIpFilter|Client info: IP = ::1; URI = http://localhost:65078/
+80000031-0000-ed00-b63f-84710c7967bb|2016-11-03 12:02:37.9913|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.
+8000001a-0001-ee00-b63f-84710c7967bb|2016-11-03 12:28:11.0275|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.
+80000a0b-0001-eb00-b63f-84710c7967bb|2016-11-03 12:28:37.9881|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.
+80000a07-0000-e800-b63f-84710c7967bb|2016-11-03 12:28:56.4852|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.
+8000002b-0000-e500-b63f-84710c7967bb|2016-11-03 13:05:28.8258|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.
+80000018-0000-ef00-b63f-84710c7967bb|2016-11-03 13:15:59.6921|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.
+80000054-0000-ed00-b63f-84710c7967bb|2016-11-03 13:18:37.9545|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.
+80000847-0000-ea00-b63f-84710c7967bb|2016-11-03 13:20:46.6688|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.
+80000038-0000-fc00-b63f-84710c7967bb|2016-11-03 18:45:31.0521|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.

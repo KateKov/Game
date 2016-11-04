@@ -1,0 +1,247 @@
+|2016-11-04 13:52:30.9486|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-04 13:52:31.1127|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-04 13:52:31.1267|INFO|GameStore.Web.Controllers.CommentsController|Request to GamesController.Download. Parameters: gameKey = invalid-key
+|2016-11-04 13:52:31.1267|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-04 13:52:31.1427|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = invalid-key
+|2016-11-04 13:52:31.1517|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = valid-key
+|2016-11-04 13:52:31.2198|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 0 Key  
+|2016-11-04 13:52:31.2198|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Remove
+|2016-11-04 13:52:31.2298|INFO|GameStore.Web.Controllers.GamesController|Game is removed. Id: 0; Key: 
+|2016-11-04 13:52:31.2298|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 13:52:31.2298|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 13:52:31.2538|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 13:52:31.2968|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 13:55:04.7502|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-04 13:55:04.8963|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-04 13:55:04.9103|INFO|GameStore.Web.Controllers.CommentsController|Request to GamesController.Download. Parameters: gameKey = invalid-key
+|2016-11-04 13:55:04.9103|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-04 13:55:04.9223|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = invalid-key
+|2016-11-04 13:55:04.9223|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = valid-key
+|2016-11-04 13:55:04.9983|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 0 Key  
+|2016-11-04 13:55:04.9983|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Remove
+|2016-11-04 13:55:04.9983|INFO|GameStore.Web.Controllers.GamesController|Game is removed. Id: 0; Key: 
+|2016-11-04 13:55:05.0163|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 13:55:05.0163|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 13:55:05.0314|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 13:55:05.0794|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 13:57:22.8923|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-04 13:57:23.0464|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-04 13:57:23.0464|INFO|GameStore.Web.Controllers.CommentsController|Request to GamesController.Download. Parameters: gameKey = invalid-key
+|2016-11-04 13:57:23.0634|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-04 13:57:23.0634|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = invalid-key
+|2016-11-04 13:57:23.0784|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = valid-key
+|2016-11-04 13:57:23.1425|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 0 Key  
+|2016-11-04 13:57:23.1425|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Remove
+|2016-11-04 13:57:23.1425|INFO|GameStore.Web.Controllers.GamesController|Game is removed. Id: 0; Key: 
+|2016-11-04 13:57:23.1585|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 13:57:23.1585|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 13:57:23.1725|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 13:57:23.2195|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 14:01:19.2754|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-04 14:01:19.4245|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-04 14:01:19.4375|INFO|GameStore.Web.Controllers.CommentsController|Request to GamesController.Download. Parameters: gameKey = invalid-key
+|2016-11-04 14:01:19.4425|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-04 14:01:19.4425|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = invalid-key
+|2016-11-04 14:01:19.4595|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = valid-key
+|2016-11-04 14:01:19.5296|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 0 Key  
+|2016-11-04 14:01:19.5376|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Remove
+|2016-11-04 14:01:19.5376|INFO|GameStore.Web.Controllers.GamesController|Game is removed. Id: 0; Key: 
+|2016-11-04 14:01:19.5376|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 14:01:19.5556|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 14:01:19.5716|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 14:01:19.6096|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 14:07:28.8157|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-04 14:07:28.9678|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-04 14:07:28.9798|INFO|GameStore.Web.Controllers.CommentsController|Request to GamesController.Download. Parameters: gameKey = invalid-key
+|2016-11-04 14:07:28.9858|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-04 14:07:28.9858|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = invalid-key
+|2016-11-04 14:07:29.0038|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = valid-key
+|2016-11-04 14:07:29.0679|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 0 Key  
+|2016-11-04 14:07:29.0679|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Remove
+|2016-11-04 14:07:29.0679|INFO|GameStore.Web.Controllers.GamesController|Game is removed. Id: 0; Key: 
+|2016-11-04 14:07:29.0829|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 14:07:29.0829|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 14:07:29.0969|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 14:07:29.1419|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 14:13:52.6136|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-04 14:13:52.7537|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-04 14:13:52.7677|INFO|GameStore.Web.Controllers.CommentsController|Request to GamesController.Download. Parameters: gameKey = invalid-key
+|2016-11-04 14:13:52.7677|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-04 14:13:52.7677|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = invalid-key
+|2016-11-04 14:13:52.7887|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = valid-key
+|2016-11-04 14:13:52.8528|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 0 Key  
+|2016-11-04 14:13:52.8608|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Remove
+|2016-11-04 14:13:52.8608|INFO|GameStore.Web.Controllers.GamesController|Game is removed. Id: 0; Key: 
+|2016-11-04 14:13:52.8608|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 14:13:52.8778|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 14:13:52.8778|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 14:13:52.9348|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 14:15:10.0383|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-04 14:15:10.1744|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-04 14:15:10.1744|INFO|GameStore.Web.Controllers.CommentsController|Request to GamesController.Download. Parameters: gameKey = invalid-key
+|2016-11-04 14:15:10.1914|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-04 14:15:10.1914|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = invalid-key
+|2016-11-04 14:15:10.2094|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = valid-key
+|2016-11-04 14:15:10.2724|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 0 Key  
+|2016-11-04 14:15:10.2724|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Remove
+|2016-11-04 14:15:10.2824|INFO|GameStore.Web.Controllers.GamesController|Game is removed. Id: 0; Key: 
+|2016-11-04 14:15:10.2824|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 14:15:10.2824|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 14:15:10.3055|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 14:15:10.3515|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 14:18:15.8164|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-04 14:18:15.9575|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-04 14:18:15.9705|INFO|GameStore.Web.Controllers.CommentsController|Request to GamesController.Download. Parameters: gameKey = invalid-key
+|2016-11-04 14:18:15.9705|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-04 14:18:15.9705|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = invalid-key
+|2016-11-04 14:18:15.9915|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = valid-key
+|2016-11-04 14:18:16.0545|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 0 Key  
+|2016-11-04 14:18:16.0545|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Remove
+|2016-11-04 14:18:16.0645|INFO|GameStore.Web.Controllers.GamesController|Game is removed. Id: 0; Key: 
+|2016-11-04 14:18:16.0645|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 14:18:16.0795|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 14:18:16.0795|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 14:18:16.1356|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 14:18:34.2083|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-04 14:18:34.3484|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-04 14:18:34.3734|INFO|GameStore.Web.Controllers.CommentsController|Request to GamesController.Download. Parameters: gameKey = invalid-key
+|2016-11-04 14:18:34.3794|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-04 14:18:34.3964|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = invalid-key
+|2016-11-04 14:18:34.4134|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = valid-key
+|2016-11-04 14:18:34.5415|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 0 Key  
+|2016-11-04 14:18:34.5575|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Remove
+|2016-11-04 14:18:34.5575|INFO|GameStore.Web.Controllers.GamesController|Game is removed. Id: 0; Key: 
+|2016-11-04 14:18:34.5725|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 14:18:34.5845|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 14:18:34.5995|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 14:18:34.6436|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 15:10:28.7761|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-04 15:10:28.9192|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-04 15:10:28.9312|INFO|GameStore.Web.Controllers.CommentsController|Request to GamesController.Download. Parameters: gameKey = invalid-key
+|2016-11-04 15:10:28.9312|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-04 15:10:28.9312|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = invalid-key
+|2016-11-04 15:10:28.9522|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = valid-key
+|2016-11-04 15:10:29.0263|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 0 Key  
+|2016-11-04 15:10:29.0263|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Remove
+|2016-11-04 15:10:29.0263|INFO|GameStore.Web.Controllers.GamesController|Game is removed. Id: 0; Key: 
+|2016-11-04 15:10:29.0423|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 15:10:29.0423|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 15:10:29.0563|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 15:10:29.0933|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 15:13:12.4971|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-04 15:13:12.6492|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-04 15:13:12.6492|INFO|GameStore.Web.Controllers.CommentsController|Request to GamesController.Download. Parameters: gameKey = invalid-key
+|2016-11-04 15:13:12.6662|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-04 15:13:12.6662|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = invalid-key
+|2016-11-04 15:13:12.6842|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = valid-key
+|2016-11-04 15:13:12.7673|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 0 Key  
+|2016-11-04 15:13:12.7743|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Remove
+|2016-11-04 15:13:12.7743|INFO|GameStore.Web.Controllers.GamesController|Game is removed. Id: 0; Key: 
+|2016-11-04 15:13:12.7743|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 15:13:12.7903|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 15:13:12.7903|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 15:13:12.8383|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 15:38:05.8252|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-04 15:38:05.9644|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-04 15:38:05.9764|INFO|GameStore.Web.Controllers.CommentsController|Request to GamesController.Download. Parameters: gameKey = invalid-key
+|2016-11-04 15:38:05.9764|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-04 15:38:05.9764|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = invalid-key
+|2016-11-04 15:38:05.9974|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = valid-key
+|2016-11-04 15:38:06.0775|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 0 Key  
+|2016-11-04 15:38:06.0875|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Remove
+|2016-11-04 15:38:06.0875|INFO|GameStore.Web.Controllers.GamesController|Game is removed. Id: 0; Key: 
+|2016-11-04 15:38:06.0875|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 15:38:06.1035|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 15:38:06.1035|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 15:38:06.1516|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 18:43:19.3348|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-04 18:43:19.4939|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-04 18:43:19.5064|INFO|GameStore.Web.Controllers.CommentsController|Request to GamesController.Download. Parameters: gameKey = invalid-key
+|2016-11-04 18:43:19.5064|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-04 18:43:19.5199|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = invalid-key
+|2016-11-04 18:43:19.5199|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = valid-key
+|2016-11-04 18:43:19.5980|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 0 Key  
+|2016-11-04 18:43:19.5980|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Remove
+|2016-11-04 18:43:19.5980|INFO|GameStore.Web.Controllers.GamesController|Game is removed. Id: 0; Key: 
+|2016-11-04 18:43:19.6130|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 18:43:19.6130|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 18:43:19.6130|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 18:43:19.6670|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 18:47:48.8470|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-04 18:47:48.9881|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-04 18:47:48.9881|INFO|GameStore.Web.Controllers.CommentsController|Request to GamesController.Download. Parameters: gameKey = invalid-key
+|2016-11-04 18:47:49.0061|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-04 18:47:49.0061|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = invalid-key
+|2016-11-04 18:47:49.0211|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = valid-key
+|2016-11-04 18:47:49.0952|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 0 Key  
+|2016-11-04 18:47:49.0952|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Remove
+|2016-11-04 18:47:49.0952|INFO|GameStore.Web.Controllers.GamesController|Game is removed. Id: 0; Key: 
+|2016-11-04 18:47:49.1132|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 18:47:49.1132|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 18:47:49.1307|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 18:47:49.1752|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 18:49:08.4536|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-04 18:49:08.6038|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-04 18:49:08.6148|INFO|GameStore.Web.Controllers.CommentsController|Request to GamesController.Download. Parameters: gameKey = invalid-key
+|2016-11-04 18:49:08.6148|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-04 18:49:08.6268|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = invalid-key
+|2016-11-04 18:49:08.6268|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = valid-key
+|2016-11-04 18:49:08.7118|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 0 Key  
+|2016-11-04 18:49:08.7118|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Remove
+|2016-11-04 18:49:08.7229|INFO|GameStore.Web.Controllers.GamesController|Game is removed. Id: 0; Key: 
+|2016-11-04 18:49:08.7229|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 18:49:08.7349|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 18:49:08.7349|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 18:49:08.7839|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 18:49:58.2993|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-04 18:49:58.4429|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-04 18:49:58.4539|INFO|GameStore.Web.Controllers.CommentsController|Request to GamesController.Download. Parameters: gameKey = invalid-key
+|2016-11-04 18:49:58.4539|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-04 18:49:58.4539|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = invalid-key
+|2016-11-04 18:49:58.4764|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = valid-key
+|2016-11-04 18:49:58.5500|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 0 Key  
+|2016-11-04 18:49:58.5500|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Remove
+|2016-11-04 18:49:58.5500|INFO|GameStore.Web.Controllers.GamesController|Game is removed. Id: 0; Key: 
+|2016-11-04 18:49:58.5670|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 18:49:58.5670|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 18:49:58.5825|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 18:49:58.6280|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 18:53:16.2342|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-04 18:53:16.3818|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-04 18:53:16.3928|INFO|GameStore.Web.Controllers.CommentsController|Request to GamesController.Download. Parameters: gameKey = invalid-key
+|2016-11-04 18:53:16.3928|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-04 18:53:16.4058|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = invalid-key
+|2016-11-04 18:53:16.4058|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = valid-key
+|2016-11-04 18:53:16.4889|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 0 Key  
+|2016-11-04 18:53:16.4889|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Remove
+|2016-11-04 18:53:16.4989|INFO|GameStore.Web.Controllers.GamesController|Game is removed. Id: 0; Key: 
+|2016-11-04 18:53:16.4989|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 18:53:16.4989|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 18:53:16.5199|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 18:53:16.5579|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 18:54:01.0033|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-04 18:54:01.1354|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-04 18:54:01.1474|INFO|GameStore.Web.Controllers.CommentsController|Request to GamesController.Download. Parameters: gameKey = invalid-key
+|2016-11-04 18:54:01.1474|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-04 18:54:01.1574|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = invalid-key
+|2016-11-04 18:54:01.1574|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = valid-key
+|2016-11-04 18:54:01.2445|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 0 Key  
+|2016-11-04 18:54:01.2520|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Remove
+|2016-11-04 18:54:01.2520|INFO|GameStore.Web.Controllers.GamesController|Game is removed. Id: 0; Key: 
+|2016-11-04 18:54:01.2520|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 18:54:01.2660|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 18:54:01.2660|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 18:54:01.3121|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 18:54:58.7333|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-04 18:54:58.8813|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-04 18:54:58.8934|INFO|GameStore.Web.Controllers.CommentsController|Request to GamesController.Download. Parameters: gameKey = invalid-key
+|2016-11-04 18:54:58.8934|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
+|2016-11-04 18:54:58.9054|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = invalid-key
+|2016-11-04 18:54:58.9054|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = valid-key
+|2016-11-04 18:54:58.9870|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 0 Key  
+|2016-11-04 18:54:58.9870|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Remove
+|2016-11-04 18:54:58.9870|INFO|GameStore.Web.Controllers.GamesController|Game is removed. Id: 0; Key: 
+|2016-11-04 18:54:59.0025|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 18:54:59.0025|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-04 18:54:59.0175|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+|2016-11-04 18:54:59.0625|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get

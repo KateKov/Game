@@ -1,0 +1,4 @@
+8000000c-0001-ef00-b63f-84710c7967bb|2016-11-02 16:41:29.6731|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+8000000c-0001-ef00-b63f-84710c7967bb|2016-11-02 16:41:30.0973|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000000c-0001-ef00-b63f-84710c7967bb|2016-11-02 16:41:36.3007|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.
+8000000c-0001-ef00-b63f-84710c7967bb|2016-11-02 16:41:36.3248|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 6590

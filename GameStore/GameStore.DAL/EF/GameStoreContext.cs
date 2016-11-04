@@ -1,30 +1,25 @@
-﻿using GameStore.DAL.Entities;
-using GameStore.DAL.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Data.Entity.ModelConfiguration;
+﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FluentValidation;
+using GameStore.DAL.Entities;
 
 namespace GameStore.DAL.EF
 {
     public class GameStoreContext : DbContext
     {
-
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Game> Games { get; set; }
         public DbSet<Genre> Genres { get; set; }
         public DbSet<PlatformType> PlatformTypes { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
+        public DbSet<Order> Orders { get; set; }
 
-        public GameStoreContext() : base("GameStore")
+        public GameStoreContext(string connectionString) : base("GameStore") { }
+        static GameStoreContext()
         {
-
+            Database.SetInitializer(new GameStoreDbInitializer());
         }
 
+        public GameStoreContext() { }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
@@ -44,23 +39,13 @@ namespace GameStore.DAL.EF
                 .WithMany(a => a.ChildGenres)
                 .WillCascadeOnDelete(false);
 
-
             modelBuilder.Entity<Game>().HasMany(c => c.Genres)
                 .WithMany(s => s.Games)
-                .Map(t => t.MapLeftKey("GameId")
-                    .MapRightKey("GenreId")
-                    .ToTable("GamesGenres"));
+                    .Map(a => a.ToTable("GamesGenres"));
 
             modelBuilder.Entity<Game>().HasMany(c => c.PlatformTypes)
                 .WithMany(s => s.Games)
-                .Map(t => t.MapLeftKey("GameId")
-                    .MapRightKey("TypeId")
-                    .ToTable("GamesTypes"));
-
-
-
-
-
+                    .Map(a => a.ToTable("GamesTypes"));
         }
     }
 }

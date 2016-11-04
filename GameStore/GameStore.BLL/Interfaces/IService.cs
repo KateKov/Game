@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using GameStore.BLL.DTO;
-using GameStore.DAL.Entities;
 
 namespace GameStore.BLL.Interfaces
 {
@@ -13,14 +8,15 @@ namespace GameStore.BLL.Interfaces
         void AddGame(GameDTO gameDto);
         void EditGame(GameDTO gameDto);
         void DeleteGame(int id);
-        GameDTO GetGameById(int Id);
-        DTO.GameDTO GetGameByKey(string Key);
-        
+        void AddComment(CommentDTO comment, string gameKey);
+        GameDTO GetGameById(int id);
+        GameDTO GetGameByKey(string key);  
         IEnumerable<GameDTO> GetGames();
         IEnumerable<GameDTO> GetGamesByGenres(int genreId);
         IEnumerable<GameDTO> GetGamesByPlatformType(int platformTypeId);
-        void AddComment(CommentDTO comment, string gameKey);
         IEnumerable<CommentDTO> GetCommentsByGame(int gameId);
-
+        IEnumerable<CommentDTO> GetCommentsByGameKey(string gameKey);
+        IEnumerable<GameDTO> GetGamesByPlatformTypeName(string platformType);
+        IEnumerable<GameDTO> GetGamesByGenresName(string genreName);
     }
 }
