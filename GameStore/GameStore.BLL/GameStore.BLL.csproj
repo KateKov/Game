@@ -55,7 +55,8 @@
     <Compile Include="DTO\PublisherDTO.cs" />
     <Compile Include="Infrastructure\DomainToDtoMapping.cs" />
     <Compile Include="Infrastructure\ValidationException.cs" />
-    <Compile Include="Interfaces\IDto.cs" />
+    <Compile Include="Interfaces\IDtoNamed.cs" />
+    <Compile Include="Interfaces\IDtoWithKey.cs" />
     <Compile Include="Interfaces\IDtoBase.cs" />
     <Compile Include="Interfaces\IService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

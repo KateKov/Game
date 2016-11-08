@@ -1,0 +1,15 @@
+8000000c-0000-fb00-b63f-84710c7967bb|2016-11-08 13:21:10.6873|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.
+80000018-0001-f700-b63f-84710c7967bb|2016-11-08 13:23:02.9840|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.
+8000002a-0003-fd00-b63f-84710c7967bb|2016-11-08 13:27:26.5886|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.
+80000023-0001-f200-b63f-84710c7967bb|2016-11-08 13:31:01.9799|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.
+80000048-0002-f600-b63f-84710c7967bb|2016-11-08 13:37:07.2454|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.
+80000008-0003-ee00-b63f-84710c7967bb|2016-11-08 13:38:01.8978|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.
+8000002d-0001-fc00-b63f-84710c7967bb|2016-11-08 13:43:47.8750|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.
+80000070-0000-fb00-b63f-84710c7967bb|2016-11-08 13:46:42.5252|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.
+800001cb-0003-ec00-b63f-84710c7967bb|2016-11-08 13:47:56.2945|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.
+80000096-0000-f100-b63f-84710c7967bb|2016-11-08 13:55:11.9504|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.
+80000028-0000-e600-b63f-84710c7967bb|2016-11-08 13:57:05.8882|DEBUG|GameStore.BLL.Services.GameService|Getting all games. Returned 2 games.
+80000013-0000-e500-b63f-84710c7967bb|2016-11-08 17:50:29.4208|DEBUG|GameStore.BLL.Services.GameService|Getting all Publishers. Returned 0  Publishers.
+80000013-0000-e500-b63f-84710c7967bb|2016-11-08 17:50:29.5265|DEBUG|GameStore.BLL.Services.GameService|Getting all Genres. Returned 16  Genres.
+80000013-0000-e500-b63f-84710c7967bb|2016-11-08 17:50:29.5465|DEBUG|GameStore.BLL.Services.GameService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+8000007a-0000-e900-b63f-84710c7967bb|2016-11-08 17:50:29.6511|DEBUG|GameStore.BLL.Services.GameService|Getting all Games. Returned 2  Games.

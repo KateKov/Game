@@ -124,8 +124,8 @@ namespace GameStore.BLL.Tests.Services
                         },
                         PlatformTypes = new List<PlatformTypeDTO>
                         {
-                            new PlatformTypeDTO {Type = "stub-platform-1"},
-                            new PlatformTypeDTO {Type = "stub-platform-2"}
+                            new PlatformTypeDTO {Name = "stub-platform-1"},
+                            new PlatformTypeDTO {Name = "stub-platform-2"}
                         }
                     },
                     new List<Genre>
@@ -135,8 +135,8 @@ namespace GameStore.BLL.Tests.Services
                     },
                     new List<PlatformType>
                     {
-                        new PlatformType {Type = "stub-platform-1"},
-                        new PlatformType {Type = "stub-platform-2"}
+                        new PlatformType {Name = "stub-platform-1"},
+                        new PlatformType {Name = "stub-platform-2"}
                     });
                 yield return new TestCaseData(new GameDTO
                     {
@@ -160,15 +160,15 @@ namespace GameStore.BLL.Tests.Services
                         Description = "stub-descr",
                         PlatformTypes = new List<PlatformTypeDTO>
                         {
-                            new PlatformTypeDTO {Type = "stub-platform-1"},
-                            new PlatformTypeDTO {Type = "stub-platform-2"}
+                            new PlatformTypeDTO {Name = "stub-platform-1"},
+                            new PlatformTypeDTO {Name = "stub-platform-2"}
                         }
                     },
                     new List<Genre>(),
                     new List<PlatformType>
                     {
-                        new PlatformType {Type = "stub-platform-1"},
-                        new PlatformType {Type = "stub-platform-2"}
+                        new PlatformType {Name = "stub-platform-1"},
+                        new PlatformType {Name = "stub-platform-2"}
                     });
             }
         }
@@ -216,8 +216,8 @@ namespace GameStore.BLL.Tests.Services
                         },
                         PlatformTypes = new List<PlatformTypeDTO>
                         {
-                            new PlatformTypeDTO {Type = "in_db_1"},
-                            new PlatformTypeDTO {Type = "in_db_2"}
+                            new PlatformTypeDTO {Name = "in_db_1"},
+                            new PlatformTypeDTO {Name = "in_db_2"}
                         }
                     },
                     new List<Genre>
@@ -226,8 +226,8 @@ namespace GameStore.BLL.Tests.Services
                     },
                     new List<PlatformType>
                     {
-                        new PlatformType {Type = "in_db_1"},
-                        new PlatformType {Type = "in_db_2"}
+                        new PlatformType {Name = "in_db_1"},
+                        new PlatformType {Name = "in_db_2"}
                     });
                 yield return new TestCaseData(new GameDTO
                     {
@@ -240,7 +240,7 @@ namespace GameStore.BLL.Tests.Services
                         },
                         PlatformTypes = new List<PlatformTypeDTO>
                         {
-                            new PlatformTypeDTO {Type = "not_in_db"}
+                            new PlatformTypeDTO {Name = "not_in_db"}
                         }
                     },
                     new List<Genre>
@@ -249,8 +249,8 @@ namespace GameStore.BLL.Tests.Services
                     },
                     new List<PlatformType>
                     {
-                        new PlatformType {Type = "in_db_1"},
-                        new PlatformType {Type = "not_in_db"}
+                        new PlatformType {Name = "in_db_1"},
+                        new PlatformType {Name = "not_in_db"}
                     });
                 yield return new TestCaseData(new GameDTO
                     {
@@ -262,7 +262,7 @@ namespace GameStore.BLL.Tests.Services
                         },
                         PlatformTypes = new List<PlatformTypeDTO>
                         {
-                            new PlatformTypeDTO {Type = "not_in_db"}
+                            new PlatformTypeDTO {Name = "not_in_db"}
                         }
                     },
                     new List<Genre>
@@ -277,7 +277,7 @@ namespace GameStore.BLL.Tests.Services
                         Genres = new List<GenreDTO>(),
                         PlatformTypes = new List<PlatformTypeDTO>
                         {
-                            new PlatformTypeDTO {Type = "not_in_db"}
+                            new PlatformTypeDTO {Name = "not_in_db"}
                         }
                     },
                     new List<Genre>
@@ -286,7 +286,7 @@ namespace GameStore.BLL.Tests.Services
                     },
                     new List<PlatformType>
                     {
-                        new PlatformType {Type = "in_db_1"}
+                        new PlatformType {Name = "in_db_1"}
                     });
                 yield return new TestCaseData(new GameDTO
                     {
@@ -301,7 +301,7 @@ namespace GameStore.BLL.Tests.Services
                     new List<Genre>(),
                     new List<PlatformType>
                     {
-                        new PlatformType {Type = "in_db_1"}
+                        new PlatformType {Name = "in_db_1"}
                     });
             }
         }

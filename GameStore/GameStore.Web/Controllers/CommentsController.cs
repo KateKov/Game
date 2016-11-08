@@ -29,7 +29,7 @@ namespace GameStore.Web.Controllers
             _logger.Info("Request to GameController.Index. Parameters: Key = {0}", key);
             try
             {
-                return Json(Mapper.Map<GameDTO, GameViewModel>(_gameService.GetGameByKey(key)), JsonRequestBehavior.AllowGet);
+                return Json(Mapper.Map<GameDTO, GameViewModel>(_gameService.GetByKey<GameDTO>(key)), JsonRequestBehavior.AllowGet);
             }
             catch (Exception)
             {
@@ -43,7 +43,7 @@ namespace GameStore.Web.Controllers
             _logger.Info("Request to GamesController.Download. Parameters: gameKey = {0}", gameKey);
             try
             {
-                _gameService.GetGameByKey(gameKey);
+                _gameService.GetByKey<GameDTO>(gameKey);
                 string filePath = Server.MapPath("~/App_Data/Games/game.txt");
                 string fileType = "application/text/plain";
                 string fileName = "game.txt";

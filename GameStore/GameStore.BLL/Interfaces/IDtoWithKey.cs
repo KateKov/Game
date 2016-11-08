@@ -1,8 +1,7 @@
 ﻿namespace GameStore.BLL.Interfaces
 {
-    public interface IDto
+    public interface IDtoWithKey
     {
        string Key { get; set; }
-       string Name { get; set; }
     }
 }

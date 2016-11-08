@@ -5,7 +5,7 @@ using GameStore.DAL.Interfaces;
 
 namespace GameStore.DAL.Entities
 {
-    public class Game : IEntityBase
+    public class Game : IEntityBase, IEntityNamed, IEntityWithKey
     {
         [Key]
         public int Id { get; set; }

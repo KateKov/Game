@@ -13,19 +13,19 @@ namespace GameStore.DAL.EF
             {
                 new PlatformType
                 {
-                    Type = "Mobile"
+                    Name = "Mobile"
                 },
                 new PlatformType
                 {
-                    Type = "Desktop"
-                },
-                new PlatformType
-                { 
-                    Type = "Browser"
+                    Name = "Desktop"
                 },
                 new PlatformType
                 {
-                    Type = "Console"
+                    Name = "Browser"
+                },
+                new PlatformType
+                {
+                    Name = "Console"
                 }
             };
             db.PlatformTypes.AddRange(platforms);

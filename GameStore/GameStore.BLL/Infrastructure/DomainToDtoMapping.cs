@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using AutoMapper;
 using GameStore.BLL.DTO;
 using GameStore.DAL.Entities;
@@ -19,7 +20,8 @@ namespace GameStore.BLL.Infrastructure
                  .ForMember(dm => dm.GameId, map => map.MapFrom(dm => dm.Game.Id))
                  .ForMember(dm => dm.GameKey, map => map.MapFrom(dm => dm.Game.Key));
             CreateMap<Genre, GenreDTO>();
-            CreateMap<Game, GameDTO>();
+            CreateMap<Game, GameDTO>()
+                .ForMember(dm => dm.PublisherId, map => map.MapFrom(dm => dm.Publisher.Id));
             CreateMap<PlatformType, PlatformTypeDTO>();
             CreateMap<Publisher, PublisherDTO>();
             CreateMap<OrderDetail, OrderDetailDTO>();

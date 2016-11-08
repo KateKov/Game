@@ -15,7 +15,15 @@ namespace GameStore.Web.ViewModels
         public virtual ICollection<GenreViewModel> Genres { get; set; }
         [Required(ErrorMessage = "Game doesn't have platform type")]
         public virtual ICollection<PlatformTypeViewModel> PlatformTypes { get; set; }
-        [Required(ErrorMessage = "Game doesn't have Key")]
         public string Key { get; set; }
+        [Required(ErrorMessage = "Game doesn't have Price")]
+        public decimal Price { get; set; }
+        [Required(ErrorMessage = "Game doesn't have counts")]
+        public short UnitsInStock { get; set; }
+        public string PublisherName { get; set; }
+        public int PublisherId { get; set; }
+        [Required(ErrorMessage = "Not specified whether there is game available")]
+        public bool Discountinues { get; set; }
+        public ICollection<OrderDetailViewModel> OrderDetails { get; set; }
     }
 }

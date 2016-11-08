@@ -89,4 +89,3 @@ C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.DAL\bin\D
 C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.DAL\bin\Debug\zh-CN\FluentValidation.resources.dll
 C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.DAL\obj\Debug\GameStore.DAL.dll
 C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.DAL\obj\Debug\GameStore.DAL.pdb
-C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.DAL\obj\Debug\GameStore.DAL.csprojResolveAssemblyReference.cache

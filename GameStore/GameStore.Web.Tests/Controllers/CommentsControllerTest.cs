@@ -28,7 +28,7 @@ namespace GameStore.Web.Tests.Controllers
         {
             // Arrange
             var mock = new Mock<IService>();
-            mock.Setup(a => a.GetCommentsByGame(It.IsAny<int>())).Returns(new List<CommentDTO> { new CommentDTO(), new CommentDTO() });
+            mock.Setup(a => a.GetCommentsByGameId(It.IsAny<int>())).Returns(new List<CommentDTO> { new CommentDTO(), new CommentDTO() });
             var sut = new CommentsController(mock.Object);
 
             // Act
@@ -45,7 +45,7 @@ namespace GameStore.Web.Tests.Controllers
         {
             // Arrange
             var mock = new Mock<IService>();
-            mock.Setup(a => a.GetCommentsByGame(It.IsAny<int>())).Returns(new List<CommentDTO>());
+            mock.Setup(a => a.GetCommentsByGameId(It.IsAny<int>())).Returns(new List<CommentDTO>());
             var sut = new CommentsController(mock.Object);
 
             // Act
@@ -61,7 +61,7 @@ namespace GameStore.Web.Tests.Controllers
         {
             // Arrange
             var mock = new Mock<IService>();
-            mock.Setup(a => a.GetGameByKey(It.IsAny<string>())).Returns(new GameDTO());
+            mock.Setup(a => a.GetByKey<GameDTO>(It.IsAny<string>())).Returns(new GameDTO());
             var sut = new CommentsController(mock.Object);
 
             // Act
@@ -78,7 +78,7 @@ namespace GameStore.Web.Tests.Controllers
         {
             // Arrange
             var mock = new Mock<IService>();
-            mock.Setup(a => a.GetGameByKey(It.IsAny<string>())).Throws(new ValidationException(string.Empty, string.Empty));
+            mock.Setup(a => a.GetByKey<GameDTO>(It.IsAny<string>())).Throws(new ValidationException(string.Empty, string.Empty));
             var sut = new CommentsController(mock.Object);
 
             // Act
@@ -94,7 +94,7 @@ namespace GameStore.Web.Tests.Controllers
         {
             // Arrange
             var mock = new Mock<IService>();
-            mock.Setup(a => a.GetGameByKey(It.IsAny<string>())).Throws(new ValidationException(string.Empty, string.Empty));
+            mock.Setup(a => a.GetByKey<GameDTO>(It.IsAny<string>())).Throws(new ValidationException(string.Empty, string.Empty));
             var sut = new CommentsController(mock.Object);
 
             // Act

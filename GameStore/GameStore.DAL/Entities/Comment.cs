@@ -4,7 +4,7 @@ using GameStore.DAL.Interfaces;
 
 namespace GameStore.DAL.Entities
 {
-    public class Comment : IEntityBase
+    public class Comment : IEntityBase, IEntityNamed
     {
         [Key]     
         public int Id { get; set; }

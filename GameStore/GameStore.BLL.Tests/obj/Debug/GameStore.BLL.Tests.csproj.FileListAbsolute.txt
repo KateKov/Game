@@ -96,3 +96,4 @@ C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.BLL.Tests
 C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.BLL.Tests\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.BLL.Tests\bin\Debug\System.Web.WebPages.xml
 C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.BLL.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.BLL.Tests\bin\Debug\GameStore.BLL.Tests.dll.config

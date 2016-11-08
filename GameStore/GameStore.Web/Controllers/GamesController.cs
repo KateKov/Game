@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Web.Mvc;
 using System.Web.UI;
@@ -27,21 +28,38 @@ namespace GameStore.Web.Controllers
             try
             {           
                 _logger.Info("Request to GamesController.Get");
-                return Json(Mapper.Map<IEnumerable<GameViewModel>>(_gameService.GetGames()), JsonRequestBehavior.AllowGet);
+                return Json(Mapper.Map<IEnumerable<GameViewModel>>(_gameService.GetAll<GameDTO>()), JsonRequestBehavior.AllowGet);
             }
             catch (Exception ex)
             {
                 _logger.Error("The attempt to load the gameService from GamesController failed : {0}",  ex.StackTrace);
                 return new JsonResult();
             }
-        }   
-        
-        [HttpPost]
-        public HttpStatusCodeResult New(GameViewModel game)
+        }
+
+        [HttpGet]
+        public ActionResult New()
         {
+            UpdateGameViewModel game = new UpdateGameViewModel();
+            game.Publishers = Mapper.Map<IEnumerable<PublisherDTO>, IEnumerable<PublisherViewModel>>(_gameService.GetAll<PublisherDTO>()).ToList();
+            game.Genres =
+                Mapper.Map<IEnumerable<GenreDTO>, IEnumerable<GenreViewModel>>(_gameService.GetAll<GenreDTO>()).ToList();
+            game.Types =
+                Mapper.Map<IEnumerable<PlatformTypeDTO>, IEnumerable<PlatformTypeViewModel>>(
+                    _gameService.GetAll<PlatformTypeDTO>()).ToList();
+            game.Game = new GameViewModel();
+            return View(game);
+        }
+
+        [HttpPost]
+        public HttpStatusCodeResult New(UpdateGameViewModel game)
+        {
+            GameViewModel gameViewModel;
             try
             {
-                GameDTO gameDto = Mapper.Map<GameViewModel, GameDTO>(game);
+                gameViewModel = game.Game;
+                gameViewModel.Key = GenerateKey(gameViewModel.Name, gameViewModel.PublisherName);
+                GameDTO gameDto = Mapper.Map<GameViewModel, GameDTO>(gameViewModel);
                 _gameService.AddGame(gameDto);
             }
             catch (Exception)
@@ -49,10 +67,15 @@ namespace GameStore.Web.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
 
-            _logger.Info("Game is created. Id {0} Key {1} ", game.Id, game.Key);
+            _logger.Info("Game is created. Id {0} Key {1} ", gameViewModel.Id, gameViewModel.Key);
             return new HttpStatusCodeResult(HttpStatusCode.OK);
         }
-       
+
+        private string GenerateKey(string name, string publisherName)
+        {
+            return name + "_" + publisherName;
+        }
+
         [HttpPost]
         public HttpStatusCodeResult Update(GameViewModel game)
         {
@@ -76,7 +99,7 @@ namespace GameStore.Web.Controllers
             _logger.Info("Request to GamesController.Remove");
             try
             {
-                _gameService.DeleteGame(game.Id);
+                _gameService.DeleteById<GameDTO>(game.Id);
             }
             catch (Exception ex)
             {

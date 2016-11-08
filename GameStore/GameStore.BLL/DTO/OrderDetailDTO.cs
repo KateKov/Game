@@ -2,7 +2,7 @@
 
 namespace GameStore.BLL.DTO
 {
-    public class OrderDetailDTO : IDtoBase
+    public class OrderDetailDTO: IDtoBase
     {
         public int Id { get; set; }
         public decimal Price { get; set; }
