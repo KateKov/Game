@@ -8,6 +8,7 @@ namespace GameStore.Web.ViewModels
         [Required(ErrorMessage = "Genre doesn't have Id")]
         public int Id { get; set; }
         [Required(ErrorMessage = "Genre doesn't have Name")]
+        [Display(Name = "Name")]
         public string Name { get; set; }
         public int? ParentId { get; set; }
         public string ParentName { get; set; }

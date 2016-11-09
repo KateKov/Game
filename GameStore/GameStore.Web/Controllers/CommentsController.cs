@@ -24,17 +24,14 @@ namespace GameStore.Web.Controllers
         }
 
         [HttpGet]        
-        public JsonResult Index(string key)
+        public ActionResult Index(string key)
         {
             _logger.Info("Request to GameController.Index. Parameters: Key = {0}", key);
-            try
-            {
-                return Json(Mapper.Map<GameDTO, GameViewModel>(_gameService.GetByKey<GameDTO>(key)), JsonRequestBehavior.AllowGet);
-            }
-            catch (Exception)
-            {
-                return Json(null, JsonRequestBehavior.AllowGet);
-            }                
+
+            var gameDto = _gameService.GetByKey<GameDTO>(key);
+            if(gameDto==null)
+                throw  new Exception();
+            return View(Mapper.Map<GameDTO, GameViewModel>(gameDto));
         }
 
         [HttpGet]

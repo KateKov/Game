@@ -23,38 +23,38 @@ namespace GameStore.Web.Tests.Controllers
             AutoMapperConfiguration.Configure();
         }
         
-        [Test]
-        public void GetGames_BLLReturnsSomeData_ReturnsGamesJson()
-        {
-            // Arrange
-            var mock = new Mock<IService>();
-            mock.Setup(a => a.GetAll<GameDTO>()).Returns(new List<GameDTO> { new GameDTO(), new GameDTO() });
-            var sut = new GamesController(mock.Object);
+        //[Test]
+        //public void GetGames_BLLReturnsSomeData_ReturnsGamesJson()
+        //{
+        //    // Arrange
+        //    var mock = new Mock<IService>();
+        //    mock.Setup(a => a.GetAll<GameDTO>()).Returns(new List<GameDTO> { new GameDTO(), new GameDTO() });
+        //    var sut = new GamesController(mock.Object);
 
-            // Act
-            var res = sut.Index();
+        //    // Act
+        //    var res = sut.Index();
 
-            // Assert
-            Assert.That(res, Is.TypeOf(typeof(JsonResult)));
-            Assert.That(res.Data, Is.TypeOf(typeof(List<GameViewModel>)));
-            Assert.That(res.Data as List<GameViewModel>, Has.Count.EqualTo(2));
-        }
+        //    // Assert
+        //    Assert.That(res, Is.TypeOf(typeof(JsonResult)));
+        //    Assert.That(res.Data, Is.TypeOf(typeof(List<GameViewModel>)));
+        //    Assert.That(res.Data as List<GameViewModel>, Has.Count.EqualTo(2));
+        //}
 
-        [Test]
-        public void GetGames_BLLReturnsNothing_ReturnsEmptyJson()
-        {
-            // Arrange
-            var mock = new Mock<IService>();
-            mock.Setup(a => a.GetAll<GameDTO>()).Returns(new List<GameDTO>());
-            var sut = new GamesController(mock.Object);
+        //[Test]
+        //public void GetGames_BLLReturnsNothing_ReturnsEmptyJson()
+        //{
+        //    // Arrange
+        //    var mock = new Mock<IService>();
+        //    mock.Setup(a => a.GetAll<GameDTO>()).Returns(new List<GameDTO>());
+        //    var sut = new GamesController(mock.Object);
 
-            // Act
-            var res = sut.Index();
+        //    // Act
+        //    var res = sut.Index();
 
-            // Assert
-            Assert.That(res, Is.TypeOf(typeof(JsonResult)));
-            Assert.That(res.Data, Is.Empty);
-        }
+        //    // Assert
+        //    Assert.That(res, Is.TypeOf(typeof(JsonResult)));
+        //    Assert.That(res.Data, Is.Empty);
+        //}
 
         //[Test]
         //public void AddGame_GetsValidItem_ReturnsStatusCodeCreated()
@@ -98,7 +98,7 @@ namespace GameStore.Web.Tests.Controllers
         {
             // Arrange
             var mock = new Mock<IService>();
-            mock.Setup(a => a.EditGame(It.IsAny<GameDTO>())).Verifiable();
+            mock.Setup(a => a.Edit(It.IsAny<GameDTO>())).Verifiable();
             var sut = new GamesController(mock.Object);
 
             // Act
@@ -119,7 +119,7 @@ namespace GameStore.Web.Tests.Controllers
         {
             // Arrange
             var mock = new Mock<IService>();
-            mock.Setup(a => a.EditGame(It.IsAny<GameDTO>())).Throws(new ValidationException(string.Empty, string.Empty)).Verifiable();
+            mock.Setup(a => a.Edit(It.IsAny<GameDTO>())).Throws(new ValidationException(string.Empty, string.Empty)).Verifiable();
             var sut = new GamesController(mock.Object);
 
             // Act

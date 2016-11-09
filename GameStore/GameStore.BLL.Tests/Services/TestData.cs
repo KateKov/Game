@@ -46,27 +46,27 @@ namespace GameStore.BLL.Tests.Services
             get
             {
                 yield return
-                    new TestCaseData(new CommentDTO {Name = string.Empty, Body = "stub-body", GameId = 1},
-                        new Game {Id = 1, Key = "stub-key", Name = "stub-name"});
+                    new TestCaseData(new CommentDTO { Name = string.Empty, Body = "stub-body", GameId = 1 },
+                        new Game { Id = 1, Key = "stub-key", Name = "stub-name" });
                 yield return
-                    new TestCaseData(new CommentDTO {Name = "stub-name", Body = string.Empty, GameId = 1},
-                        new Game {Id = 1, Key = "stub-key", Name = "stub-name"});
+                    new TestCaseData(new CommentDTO { Name = "stub-name", Body = string.Empty, GameId = 1 },
+                        new Game { Id = 1, Key = "stub-key", Name = "stub-name" });
                 yield return
-                    new TestCaseData(new CommentDTO {Name = string.Empty, Body = string.Empty, GameId = 1},
-                        new Game {Id = 1, Key = "stub-key", Name = "stub-name"});
+                    new TestCaseData(new CommentDTO { Name = string.Empty, Body = string.Empty, GameId = 1 },
+                        new Game { Id = 1, Key = "stub-key", Name = "stub-name" });
                 yield return
-                    new TestCaseData(new CommentDTO {Name = null, Body = null, GameId = 1},
-                        new Game {Id = 1, Key = "stub-key", Name = "stub-name"});
+                    new TestCaseData(new CommentDTO { Name = null, Body = null, GameId = 1 },
+                        new Game { Id = 1, Key = "stub-key", Name = "stub-name" });
                 yield return
-                    new TestCaseData(new CommentDTO {Name = null, Body = "stub-body", GameId = 1},
-                        new Game {Id = 1, Key = "stub-key", Name = "stub-name"});
+                new TestCaseData(new CommentDTO { Name = null, Body = "stub-body", GameId = 1 },
+                    new Game { Id = 1, Key = "stub-key", Name = "stub-name" });
                 yield return
-                    new TestCaseData(new CommentDTO {Name = "stub-name", Body = null, GameId = 1},
-                        new Game {Id = 1, Key = "stub-key", Name = "stub-name"});
-                yield return new TestCaseData(null, new Game {Id = 1, Key = "stub-key", Name = "stub-name"});
+                new TestCaseData(new CommentDTO { Name = "stub-name", Body = null, GameId = 1 },
+                    new Game { Id = 1, Key = "stub-key", Name = "stub-name" });
+                yield return new TestCaseData(null, new Game { Id = 1, Key = "stub-key", Name = "stub-name" });
                 yield return
-                    new TestCaseData(new CommentDTO {Name = "stub-name", Body = "stub-body", GameId = 0},
-                        new Game {Id = 1, Key = "stub-key", Name = "stub-name"});
+                    new TestCaseData(new CommentDTO { Name = "stub-name", Body = "stub-body", GameId = 0 },
+                        new Game { Id = 1, Key = "stub-key", Name = "stub-name" });
             }
         }
 

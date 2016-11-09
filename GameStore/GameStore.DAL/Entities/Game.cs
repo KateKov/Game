@@ -22,6 +22,8 @@ namespace GameStore.DAL.Entities
         public decimal Price { get; set; }
         public short UnitsInStock { get; set; }
         public bool Discountinues { get; set; }
+        [ForeignKey("Publisher")]
+        public int? PublisherId { get; set; }
         public virtual Publisher Publisher { get; set; }
         public virtual ICollection<OrderDetail> OrderDetails { get; set; }
         public virtual ICollection<Comment> Comments { get; set; }

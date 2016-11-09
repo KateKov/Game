@@ -12,16 +12,16 @@ namespace GameStore.Web
                 name: "GamesDefault",
                 url: "games",
                 defaults: new { controller = "Games", action = "Index" });
-            routes.MapRoute(
-                name: "CommentsDefault",
-                url: "game/{id}/{action}",
-                defaults: new { controller = "Comments" },
-                constraints: new { id = @"^[A-Za-z0-9_-]{1,20}", action = @"\w+" });
-            routes.MapRoute(
-                name: "Comments",
-                url: "game/{id}/{action}",
-                defaults: new { controller = "Comments", action = @"Details"},
-                constraints: new { id = @"^[A-Za-z0-9_-]{1,20}"});
+            //routes.MapRoute(
+            //    name: "CommentsDefault",
+            //    url: "game/{id}/{action}",
+            //    defaults: new { controller = "Comments" },
+            //    constraints: new { id = @"^[A-Za-z0-9_-]{1,20}", action = @"\w+" });
+            //routes.MapRoute(
+            //    name: "Comments",
+            //    url: "game/{id}/{action}",
+            //    defaults: new { controller = "Comments", action = @"Details"},
+            //    constraints: new { id = @"^[A-Za-z0-9_-]{1,20}"});
             routes.MapRoute(
                 name: "Games",
                 url: "games/{action}",

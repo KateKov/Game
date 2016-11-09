@@ -1,0 +1,130 @@
+﻿@using GameStore.Web.ViewModels
+
+@model GameViewModel
+
+@{
+    ViewBag.Title = "Новая игра";
+}
+
+<div id="addGame">
+    <hr>
+    <div class="row">
+
+        <!-- edit form column -->
+        <div class="col-xs-9 personal-info">
+            <div class="alert alert-info alert-dismissable">
+                <a class="panel-close close" data-dismiss="alert">×</a>
+                <i class="fa fa-plus"></i>
+
+            
+            </div>
+
+                @Html.HiddenFor(m => m.Id)
+                <div class="form-horizontal">
+                    <h4>Игра</h4>
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group">
+                        @Html.NameFor(model => model.Name)
+
+                        @Html.LabelFor(a => a.Name, new { htmlAttributes = new { @class = "form-control" } })
+               
+
+                    </div>
+                    <div class="form-group">
+                        @Html.NameFor(model => model.Description)
+
+                        @Html.LabelFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                      
+
+                    </div>
+
+                    <div class="form-group">
+                        @Html.NameFor(model => model.Price)
+
+                        @Html.LabelFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+                  
+
+                    </div>
+                    <div class="form-group">
+                        @Html.NameFor(model => model.UnitsInStock)
+
+                        @Html.LabelFor(model => model.UnitsInStock, new { htmlAttributes = new { @class = "form-control" } })
+                
+
+
+                    </div>
+
+
+                    <div class="form-group">
+
+
+                        @Html.NameFor(model => model.PublisherName)
+
+
+                        @Html.LabelFor(model => model.PublisherName, new { htmlAttributes = new { @class = "form-control" } })
+                    
+
+
+                    </div>
+
+
+                    <div class="form-group">
+
+
+                        @Html.NameFor(model => model.Genres)
+
+
+                        @Html.DisplayFor(model => model.Genres, new { htmlAttributes = new { @class = "form-control" } })
+
+                     
+
+
+
+                    </div>
+                    <div class="form-group">
+
+
+                        @Html.NameFor(model => model.PlatformTypes)
+                       
+
+                            @Html.DisplayFor(model => model.PlatformTypes, new { htmlAttributes = new { @class = "form-control" } })
+                        
+                        </div>
+
+
+
+                    </div>
+                    <div class="form-group">
+
+
+                        @Html.NameFor(model => model.Discountinues)
+
+
+                        @Html.DisplayFor(model => model.Discountinues, new { htmlAttributes = new { @class = "form-control" } })
+
+
+
+
+                    </div>
+
+
+
+
+
+                    <div class="form-group">
+
+                        <div class="col-md-offset-2 col-md-10">
+
+                            <input type="submit" value="Создать" class="btn btn-default" />
+
+                        </div>
+
+                    </div>
+
+                </div>
+            
+
+        </div>
+    </div>
+    <hr>

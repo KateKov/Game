@@ -169,7 +169,18 @@ namespace GameStore.DAL.EF
                     Price = 20
                 }
             };
+           
             db.OrderDetails.AddRange(orderDetails);
+            var publishers = new List<Publisher>
+            {
+                new Publisher
+                {
+                    Description = "Cool publisher",
+                    HomePage = "www.tratratra.com",
+                    Name = "GamesCorporation"
+                }
+            };
+            db.Publishers.AddRange(publishers);
             var games = new List<Game>
             {
                 new Game

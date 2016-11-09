@@ -1,0 +1,29 @@
+﻿@using GameStore.Web.ViewModels
+
+@model IEnumerable<GameViewModel>
+
+@{
+    ViewBag.Title = "Games";
+}
+<div>
+    @foreach (var item in Model)
+    {
+        <div>
+            @Html.ActionLink(item.Name, "Index", "Comments",null, item.Key)
+            <div>
+                @Html.Label(item.Description)
+            </div>
+            <div>
+                @Html.LabelFor(model => item.Price)
+            </div>
+            <div>
+                @foreach (var x in item.Genres)
+                {
+                    @Html.Label(x.Name)
+                }
+            </div>
+            <hr/>
+            
+        </div>
+    }
+    </div>

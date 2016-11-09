@@ -12,6 +12,7 @@ namespace GameStore.DAL.EF
         public DbSet<PlatformType> PlatformTypes { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<Order> Orders { get; set; }
+        public DbSet<Publisher> Publishers { get; set; }
 
         public GameStoreContext(string connectionString) : base("GameStore") { }
         static GameStoreContext()

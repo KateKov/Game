@@ -7,8 +7,8 @@ namespace GameStore.BLL.Interfaces
     public interface IService
     {
         //Methods for games
-        void AddGame(GameDTO gameDto);
-        void EditGame(GameDTO gameDto);
+        //void AddGame(GameDTO gameDto);
+        //void EditGame(GameDTO gameDto);
         IEnumerable<GameDTO> GetGamesByGenreId(int genreId);
         IEnumerable<GameDTO> GetGamesByPlatformTypeId(int platformTypeId);
         IEnumerable<GameDTO> GetGamesByPlatformTypeName(string platformType);
@@ -18,7 +18,7 @@ namespace GameStore.BLL.Interfaces
         void AddComment(CommentDTO comment, string gameKey);
         IEnumerable<CommentDTO> GetCommentsByGameId(int gameId);
         IEnumerable<CommentDTO> GetCommentsByGameKey(string gameKey);
-
+        void Edit<T>(T entity) where T : class, IDtoBase, new();
         //Generic methods
         void Add<T>(T model) where T : class, IDtoBase, new();
         T GetByKey<T>(string key) where T : class, IDtoBase, IDtoWithKey, new();

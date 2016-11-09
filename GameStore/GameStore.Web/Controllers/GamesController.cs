@@ -23,18 +23,19 @@ namespace GameStore.Web.Controllers
         }
       
         [HttpGet]   
-        public JsonResult Index()
+        public ActionResult Index()
         {
             try
             {           
                 _logger.Info("Request to GamesController.Get");
-                return Json(Mapper.Map<IEnumerable<GameViewModel>>(_gameService.GetAll<GameDTO>()), JsonRequestBehavior.AllowGet);
+               
             }
             catch (Exception ex)
             {
                 _logger.Error("The attempt to load the gameService from GamesController failed : {0}",  ex.StackTrace);
-                return new JsonResult();
+               
             }
+            return View(Mapper.Map<IEnumerable<GameViewModel>>(_gameService.GetAll<GameDTO>()));
         }
 
         [HttpGet]
@@ -52,23 +53,26 @@ namespace GameStore.Web.Controllers
         }
 
         [HttpPost]
-        public HttpStatusCodeResult New(UpdateGameViewModel game)
+        public ActionResult New(GameViewModel game)
         {
-            GameViewModel gameViewModel;
-            try
+            if (ModelState.IsValid)
             {
-                gameViewModel = game.Game;
+                GameViewModel gameViewModel;
+                //try
+                //{
+                gameViewModel = game;
                 gameViewModel.Key = GenerateKey(gameViewModel.Name, gameViewModel.PublisherName);
                 GameDTO gameDto = Mapper.Map<GameViewModel, GameDTO>(gameViewModel);
-                _gameService.AddGame(gameDto);
-            }
-            catch (Exception)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
+                _gameService.Add<GameDTO>(gameDto);
+                //}
+                //catch (Exception)
+                //{
+                //    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                //}
 
-            _logger.Info("Game is created. Id {0} Key {1} ", gameViewModel.Id, gameViewModel.Key);
-            return new HttpStatusCodeResult(HttpStatusCode.OK);
+                _logger.Info("Game is created. Id {0} Key {1} ", gameViewModel.Id, gameViewModel.Key);
+            }
+            return RedirectToAction("Index");
         }
 
         private string GenerateKey(string name, string publisherName)
@@ -83,7 +87,7 @@ namespace GameStore.Web.Controllers
             try
             {
                 GameDTO gameDto = Mapper.Map<GameViewModel, GameDTO>(game);
-                _gameService.EditGame(gameDto);
+                _gameService.Edit(gameDto);
             }
             catch (Exception)
             {

@@ -1,0 +1,4 @@
+80000028-0001-f000-b63f-84710c7967bb|2016-11-09 12:55:11.2086|ERROR|GameStore.Web.Controllers.GamesController|The attempt to load the gameService from GamesController failed :    at lambda_method(Closure , Object , Object , ResolutionContext )
+   at GameStore.Web.Controllers.GamesController.Index() in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 31
+800000c1-0000-fd00-b63f-84710c7967bb|2016-11-09 13:49:46.7834|ERROR|GameStore.Web.Controllers.GamesController|The attempt to load the gameService from GamesController failed :    at lambda_method(Closure , Object , Object , ResolutionContext )
+   at GameStore.Web.Controllers.GamesController.Index() in C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\Controllers\GamesController.cs:line 31

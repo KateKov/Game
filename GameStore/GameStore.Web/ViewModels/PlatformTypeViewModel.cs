@@ -6,6 +6,7 @@ namespace GameStore.Web.ViewModels
     {
         [Required(ErrorMessage = "PlatformType doesn't have Id")]
         public int Id { get; set; }
+        [Display(Name = "Name")]
         [Required(ErrorMessage = "PlatformType doesn't have Name")]
         public string Name{ get; set; }
     }

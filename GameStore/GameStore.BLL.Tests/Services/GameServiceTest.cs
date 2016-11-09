@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using Castle.Core;
 using GameStore.BLL.DTO;
 using GameStore.BLL.Infrastructure;
 using GameStore.BLL.Services;
@@ -36,7 +37,7 @@ namespace GameStore.BLL.Tests.Services
             var sut = new GameService(mock.Object);
 
             // Act
-            sut.AddGame(gameDto);
+            sut.Add(gameDto);
 
             // Assert
             Mock.Verify(mock);
@@ -53,7 +54,7 @@ namespace GameStore.BLL.Tests.Services
             var sut = new GameService(mock.Object);
 
             // Act
-            sut.AddGame(gameDto);
+            sut.Add(gameDto);
 
             // Assert
             Mock.Verify(mock);
@@ -70,7 +71,7 @@ namespace GameStore.BLL.Tests.Services
             var sut = new GameService(mock.Object);
 
             // Act & Assert
-            Assert.Throws<ValidationException>(() => sut.AddGame(gameDto));
+            Assert.Throws<ValidationException>(() => sut.Add(gameDto));
         }
 
         [Test, TestCaseSource(typeof(TestData), nameof(TestData.GameInvalidWithLists))]
@@ -84,7 +85,7 @@ namespace GameStore.BLL.Tests.Services
             var sut = new GameService(mock.Object);
 
             // Act & Assert
-            Assert.Throws<ValidationException>(() => sut.AddGame(gameDto));
+            Assert.Throws<ValidationException>(() => sut.Add(gameDto));
         }
 
         [Test]
@@ -96,7 +97,7 @@ namespace GameStore.BLL.Tests.Services
             var sut = new GameService(mock.Object);
 
             // Act & Assert
-            Assert.Throws<ValidationException>(() => sut.AddGame(new GameDTO { Key = "stub-key", Name = "stub-name" }));
+            Assert.Throws<ValidationException>(() => sut.Add(new GameDTO { Key = "stub-key", Name = "stub-name" }));
         }
 
         [Test, TestCaseSource(typeof(TestData), nameof(TestData.CommentValidNoParent))]
@@ -177,7 +178,7 @@ namespace GameStore.BLL.Tests.Services
             var sut = new GameService(mock.Object);
 
             // Act
-            sut.EditGame(gameDto);
+            sut.Edit(gameDto);
 
             // Assert
             Mock.Verify(mock);
@@ -195,7 +196,7 @@ namespace GameStore.BLL.Tests.Services
             var sut = new GameService(mock.Object);
 
             // Act
-            sut.EditGame(gameDto);
+            sut.Edit(gameDto);
 
             // Assert
             Mock.Verify(mock);
@@ -212,7 +213,7 @@ namespace GameStore.BLL.Tests.Services
             var sut = new GameService(mock.Object);
 
             // Act & Assert
-            Assert.Throws<ValidationException>(() => sut.EditGame(gameDto));
+            Assert.Throws<ValidationException>(() => sut.Edit(gameDto));
         }
 
         [Test, TestCaseSource(typeof(TestData), nameof(TestData.GameInvalidWithLists))]
@@ -227,7 +228,7 @@ namespace GameStore.BLL.Tests.Services
             var sut = new GameService(mock.Object);
 
             // Act & Assert
-            Assert.Throws<ValidationException>(() => sut.EditGame(gameDto));
+            Assert.Throws<ValidationException>(() => sut.Edit(gameDto));
         }
 
         [Test]
@@ -240,7 +241,7 @@ namespace GameStore.BLL.Tests.Services
             var sut = new GameService(mock.Object);
 
             // Act & Assert
-            Assert.Throws<ValidationException>(() => sut.EditGame(new GameDTO { Key = "another-key-that-exists-in-db", Name = "stub-name" }));
+            Assert.Throws<System.Reflection.TargetInvocationException>(() => sut.Edit(new GameDTO { Key = "another-key-that-exists-in-db", Name = "stub-name" }));
         }
 
         //[Test]

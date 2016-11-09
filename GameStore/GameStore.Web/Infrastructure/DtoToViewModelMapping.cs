@@ -17,12 +17,18 @@ namespace GameStore.Web.Infrastructure
         {
             CreateMap<CommentDTO, CommentViewModel>();
             CreateMap<GenreDTO, GenreViewModel>();
-            CreateMap<GameDTO, GameViewModel>();
             CreateMap<PlatformTypeDTO, PlatformTypeViewModel>();
+            CreateMap<OrderDetailDTO, OrderDetailViewModel>();
+            CreateMap<OrderDetailViewModel, OrderDetailDTO>();
+            CreateMap<OrderDTO, OrderViewModel>();
+            CreateMap<OrderViewModel, OrderDTO>();
+            CreateMap<PublisherDTO, PublisherViewModel>();
+            CreateMap<PublisherViewModel, PublisherDTO>();
             CreateMap<CommentViewModel, CommentDTO>();
             CreateMap<GenreViewModel, GenreDTO>();
             CreateMap<GameViewModel, GameDTO>();
             CreateMap<PlatformTypeViewModel, PlatformTypeDTO>();
+            CreateMap<GameDTO, GameViewModel>();
         }
     }
 }
