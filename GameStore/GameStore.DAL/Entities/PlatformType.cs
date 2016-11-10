@@ -6,14 +6,14 @@ using GameStore.DAL.Interfaces;
 
 namespace GameStore.DAL.Entities
 {
-    public class PlatformType : IEntityBase, IEntityNamed
+    public class PlatformType : IEntityBase
     {
         [Key]
         public int Id { get; set; }
         [Required]
         [StringLength(65)]
         [Index("IZ_type", 1, IsUnique = true)]
-        public string Name { get; set; }
+        public string Type { get; set; }
         public virtual ICollection<Game> Games { get; set; }
     }
 }

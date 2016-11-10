@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
-using GameStore.BLL.Interfaces;
 
 namespace GameStore.BLL.DTO
 {
-    public class GenreDTO : IDtoBase, IDtoNamed
+    public class GenreDTO
     {     
         public int Id { get; set; }
         public string Name { get; set; }

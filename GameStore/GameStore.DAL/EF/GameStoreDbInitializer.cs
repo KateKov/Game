@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.Entity;
 using GameStore.DAL.Entities;
 
@@ -13,19 +12,19 @@ namespace GameStore.DAL.EF
             {
                 new PlatformType
                 {
-                    Name = "Mobile"
+                    Type = "Mobile"
                 },
                 new PlatformType
                 {
-                    Name = "Desktop"
+                    Type = "Desktop"
+                },
+                new PlatformType
+                { 
+                    Type = "Browser"
                 },
                 new PlatformType
                 {
-                    Name = "Browser"
-                },
-                new PlatformType
-                {
-                    Name = "Console"
+                    Type = "Console"
                 }
             };
             db.PlatformTypes.AddRange(platforms);
@@ -109,7 +108,7 @@ namespace GameStore.DAL.EF
             };
             db.Genres.AddRange(genres);
             db.Genres.AddRange(subgenres);
-            var firstLevelComments = new List<Comment>
+            var firstlevel_comments = new List<Comment>
             {
                 new Comment
                 {
@@ -124,63 +123,36 @@ namespace GameStore.DAL.EF
                     Body = "Second comment"
                 }
             };
-            var secondLevelComments = new List<Comment>
+            var secondlevel_comments = new List<Comment>
             {
                 new Comment
                 {
                     Id = 3,
                     Name = "Anna",
                     Body = "Answer for the first comment",
-                    ParentComment = firstLevelComments[0]
+                    ParentComment = firstlevel_comments[0]
                 },
                 new Comment
                 {
                     Id = 4,
                     Name = "Ivan",
                     Body = "Some joke",
-                    ParentComment = firstLevelComments[0]
+                    ParentComment = firstlevel_comments[0]
                 }
             };
-            var thirdLevelComments = new List<Comment>
+            var thirdlevel_comments = new List<Comment>
             {
                 new Comment
                 {
                     Id = 5,
                     Name = "Dmitriy",
                     Body = "Anna, i write you responce",
-                    ParentComment = secondLevelComments[0]
+                    ParentComment = secondlevel_comments[0]
                 }
             };
-            var comments = firstLevelComments;
-            comments.AddRange(secondLevelComments);
-            comments.AddRange(thirdLevelComments);
-            var orderDetails = new List<OrderDetail>
-            {
-                new OrderDetail
-                {
-                    Discount = 15,
-                    Quality = 4,
-                    Price = 15
-                },
-                new OrderDetail
-                {
-                    Discount = 20,
-                    Quality = 18,
-                    Price = 20
-                }
-            };
-           
-            db.OrderDetails.AddRange(orderDetails);
-            var publishers = new List<Publisher>
-            {
-                new Publisher
-                {
-                    Description = "Cool publisher",
-                    HomePage = "www.tratratra.com",
-                    Name = "GamesCorporation"
-                }
-            };
-            db.Publishers.AddRange(publishers);
+            var comments = firstlevel_comments;
+            comments.AddRange(secondlevel_comments);
+            comments.AddRange(thirdlevel_comments);
             var games = new List<Game>
             {
                 new Game
@@ -198,11 +170,7 @@ namespace GameStore.DAL.EF
                         subgenres[0],
                         subgenres[1]
                     },
-                    Comments = comments,
-                    Discountinues = false,
-                    Price=15,
-                    UnitsInStock = 20,
-                    OrderDetails = new List<OrderDetail> {orderDetails[0]}
+                    Comments = comments
                 },
                 new Game
                 {
@@ -218,24 +186,10 @@ namespace GameStore.DAL.EF
                     {
                         genres[1],
                         genres[4]
-                    },
-                    Discountinues = false,
-                    Price=15,
-                    UnitsInStock = 20,
-                    OrderDetails = new List<OrderDetail> {orderDetails[1]}
+                    }
                 }
             };
             db.Games.AddRange(games);
-            var orders = new List<Order>
-            {
-                new Order
-                {
-                    CustomerId = 1,
-                    Date = DateTime.UtcNow,
-                    OrderDetails = new List<OrderDetail> {orderDetails[0], orderDetails[1]}
-                }
-            };
-            db.Orders.AddRange(orders);
             db.SaveChanges();
         }
     }

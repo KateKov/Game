@@ -1,10 +1,8 @@
-﻿using GameStore.BLL.Interfaces;
-
-namespace GameStore.BLL.DTO
+﻿namespace GameStore.BLL.DTO
 {
-    public class PlatformTypeDTO : IDtoBase, IDtoNamed
+    public class PlatformTypeDTO
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string Type { get; set; }
     }
 }

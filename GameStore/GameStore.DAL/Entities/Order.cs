@@ -15,5 +15,4 @@ namespace GameStore.DAL.Entities
         public DateTime Date { get; set; }
         public ICollection<OrderDetail> OrderDetails { get; set; }
     }
-
 }

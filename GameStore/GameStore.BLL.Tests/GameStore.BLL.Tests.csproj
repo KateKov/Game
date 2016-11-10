@@ -75,13 +75,8 @@
       <Project>{237ff755-78a1-4912-afb4-73f09cc863d1}</Project>
       <Name>GameStore.DAL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GameStore.Web\GameStore.Web.csproj">
-      <Project>{2d23547b-39ac-4a15-8065-4b2feb156e50}</Project>
-      <Name>GameStore.Web</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <Choose>

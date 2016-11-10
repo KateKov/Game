@@ -1,331 +1,217 @@
-﻿using System;
-using System.CodeDom;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
-using System.Reflection.Emit;
-using System.Runtime.InteropServices;
 using AutoMapper;
-using AutoMapper.Mappers;
+
 using GameStore.BLL.DTO;
 using GameStore.BLL.Infrastructure;
 using GameStore.BLL.Interfaces;
 using GameStore.DAL.Entities;
 using GameStore.DAL.Interfaces;
 using NLog;
-using GameStore.DAL.Infrastracture;
-using Ninject.Infrastructure.Introspection;
-using NLog.LayoutRenderers.Wrappers;
-using System.Linq.Expressions;
-
 namespace GameStore.BLL.Services
 {
     public class GameService : IService
     {
+        private readonly ILogger _logger;
         private readonly IUnitOfWork _unitOfWork;
-        private readonly ILogger _logger = LogManager.GetCurrentClassLogger();
-
-        public GameService(IUnitOfWork unitOfWork)
+        public GameService(IUnitOfWork unitOfWork, ILogger logger)
         {
             _unitOfWork = unitOfWork;
+            _logger = logger;
         }
 
-        #region Methods for Entities
-
-        public void AddEntity<T, TD>(TD entity) where T : class, IEntityBase, new() where TD : class, IDtoBase, new()
+        private ICollection<Genre> GetAllGenres(ICollection<GenreDTO> genres)
         {
-            if (entity == null)
-                throw new ValidationException("Cannot find "+ typeof(T).Name, string.Empty);
-            _unitOfWork.Repository<T>().Add(Mapper.Map<TD, T>(entity));
-        }
-
-        public void EditEntity<T, TD>(TD entity) where T : class, IEntityBase, new() where TD : class, IDtoBase, new()
-        {
-            if (entity == null)
-                throw new ValidationException("Cannot find " + typeof(T).Name, string.Empty);
-            _unitOfWork.Repository<T>().Edit(Mapper.Map<TD, T>(entity));
-        }
-
-        public IEnumerable<T> GetAllEntities<T>() where T : class, IEntityBase, new()
-        {
-            return _unitOfWork.Repository<T>().GetAll().ToList();
-        }
-
-        public T GetEntityByKey<T>(string key) where T : class, IEntityBase, IEntityWithKey, new()
-        {
-            var entity = _unitOfWork.Repository<T>().FindBy(x => x.Key.Equals(key)).FirstOrDefault();
-            if (entity == null)
+            var allGenres = _unitOfWork.Repository<Genre>().GetAll().ToList();
+            var newGenres = new List<Genre>();
+            if (allGenres.Count > 0)
             {
-                throw new ValidationException(typeof(T).Name + " wasn't found", string.Empty);
+                newGenres = (from g in genres
+                    where allGenres.Exists(x => x.Name.Equals(g.Name))
+                    select allGenres.First(x => x.Name.Equals(g.Name))).ToList();
+                if (newGenres.Count != genres.Count)
+                    throw new ValidationException("Cannot find some genres", "");
             }
-            return entity;
+           else if (genres != null && genres.Count > 0)
+                throw new ValidationException("Cannot find some genres. There are no genres exists", "");
+            return newGenres;       
         }
 
-        public T GetEntityById<T>(string id) where T : class, IEntityBase, new()
+        private ICollection<PlatformType> GetAllTypes(ICollection<PlatformTypeDTO> types)
         {
-            var entity = _unitOfWork.Repository<T>().GetSingle(Convert.ToInt32(id));
-            if (entity == null)
+            var newPlatforms = new List<PlatformType>();
+            var allPlatforms = _unitOfWork.Repository<PlatformType>().GetAll().ToList();
+            if (allPlatforms.Count > 0)
             {
-                throw new ValidationException(typeof(T).Name + " wasn't found", string.Empty);
+                newPlatforms = (from g in types
+                                    where allPlatforms.Exists(x => x.Type.Equals(g.Type))
+                                    select allPlatforms.First(x => x.Type.Equals(g.Type))).ToList();
+                if (newPlatforms.Count != types.Count)
+                    throw new ValidationException("Cannot find some platforms", "");
             }
-            return entity;
+            else if (types != null && types.Count > 0)
+                throw new ValidationException("Cannot find some platforms. There are no platforms exists", "");
+            return newPlatforms;
         }
 
-        private T GetEntityByName<T>(string name) where T : class, IEntityBase, IEntityNamed, new()
+        public void AddGame(GameDTO gameDto)
         {
-            var entity = _unitOfWork.Repository<T>().FindBy(x => x.Name.Equals(name)).FirstOrDefault();
-            if (entity == null)
+            Validator.ValidateGameModel(gameDto);
+            if (_unitOfWork.Repository<Game>().FindBy(g => g.Key.Equals(gameDto.Key)).Any())
             {
-                throw new ValidationException(typeof(T).Name + " wasn't found", string.Empty);
+                throw new ValidationException("Game with such key is already exists", "");
             }
-            return entity;
+
+            var game = Mapper.Map<GameDTO, Game>(gameDto);
+            game.Comments.Clear();
+            game.Genres.Clear();
+            game.PlatformTypes.Clear();
+            game.Genres = GetAllGenres(gameDto.Genres);
+            game.PlatformTypes = GetAllTypes(gameDto.PlatformTypes);      
+            _unitOfWork.Repository<Game>().Add(game);
+            _logger.Debug("Adding game with Key={0}", gameDto.Key);
         }
 
-        public void DeleteEntityByName<T>(string name) where T : class, IEntityBase, IEntityNamed, new()
-        {
-            _unitOfWork.Repository<T>().Delete(GetEntityByName<T>(name));
-        }
-
-        public void DeleteEntityById<T>(int id) where T : class, IEntityBase, IEntityNamed, new()
-        {
-            _unitOfWork.Repository<T>().Delete(GetEntityById<T>(id.ToString()));
-        }
-        #endregion
-
-        #region Methods for Games
-
-        public IEnumerable<GameDTO> GetGamesByGenreId(int genreId)
-        {
-            var gamesDto = Mapper.Map<IEnumerable<GameDTO>>(_unitOfWork.Repository<Game>().FindBy(
-                game => game.Genres.Select(
-                    genre => genre.Id).ToList().Contains(genreId))).ToList();
-            _logger.Debug("Getting games by name of genre id {0}. Returned {1} games", genreId, gamesDto.Count);
-            return gamesDto;
-        }
-
-        public IEnumerable<GameDTO> GetGamesByGenreName(string genreName)
-        {
-            var gamesDto = Mapper.Map<IEnumerable<GameDTO>>(_unitOfWork.Repository<Game>().FindBy(
-                game => game.Genres.Select(
-                    genre => genre.Name).ToList().Contains(genreName))).ToList();
-            _logger.Debug("Getting games by name of genre {0}. Returned {1} games", genreName, gamesDto.Count);
-            return gamesDto;
-        }
-
-        public IEnumerable<GameDTO> GetGamesByPlatformTypeId(int platformType)
-        {
-            var gamesDto = Mapper.Map<IEnumerable<GameDTO>>(_unitOfWork.Repository<Game>().FindBy(
-                game => game.PlatformTypes.Select(
-                    platform => platform.Id).ToList().Contains(platformType))).ToList();
-            _logger.Debug("Getting games by platform id {0}. Returned {1} games", platformType, gamesDto.Count);
-            return gamesDto;
-        }
-
-        public IEnumerable<GameDTO> GetGamesByPlatformTypeName(string platformType)
-        {
-            var gamesDto = Mapper.Map<IEnumerable<GameDTO>>(_unitOfWork.Repository<Game>().FindBy(
-                game => game.PlatformTypes.Select(
-                    platform => platform.Name).ToList().Contains(platformType))).ToList();
-            _logger.Debug("Getting games by platform {0}. Returned {1} games", platformType, gamesDto.Count);
-            return gamesDto;
-        }
-        #endregion
-
-        #region Methods for Comments
         public void AddComment(CommentDTO commentDto, string gameKey)
         {
-            Validator<CommentDTO>.ValidateModel(commentDto);
-            if(String.IsNullOrEmpty(gameKey) || commentDto.GameId<1 || String.IsNullOrEmpty(commentDto.Body))
-                throw  new ValidationException("There is no game for comment", String.Empty);
-            var comment = Mapper.Map<CommentDTO, Comment>(commentDto);
+            Validator.ValidateCommentModel(commentDto);
+            var comment = Mapper.Map<Comment>(commentDto);
             var game = _unitOfWork.Repository<Game>().FindBy(g => g.Key.Equals(gameKey)).FirstOrDefault();
             if (game == null)
-                throw new ValidationException("Cannot find game for creating a comment", string.Empty);
+                throw new ValidationException("Cannot find game for creating a comment", "");
             comment.Game = game;
             if (commentDto.ParentId != null)
             {
                 var parentComment = _unitOfWork.Repository<Comment>().GetSingle((int)commentDto.ParentId);
                 if (parentComment == null)
-                    throw new ValidationException("Cannot find parent comment for creating a comment", string.Empty);
+                    throw new ValidationException("Cannot find parent comment for creating a comment", "");
                 comment.ParentComment = parentComment;
             }
+
             _unitOfWork.Repository<Comment>().Add(comment);
-            _logger.Debug("Adding new comment with Author={0}, Id={1} to game with Key={2}", commentDto.Name,
-                commentDto.Id, gameKey);
+            _logger.Debug("Adding new comment with Author={0}, Id={1} to game with Key={2}", commentDto.Name, commentDto.Id, gameKey);
         }
 
-        public IEnumerable<CommentDTO> GetCommentsByGameId(int gameId)
+        private Game GetGame(GameDTO gameDto)
         {
-            var commentsDto = Mapper.Map<IEnumerable<CommentDTO>>(_unitOfWork.Repository<Comment>().FindBy(
+            var updatingGame = _unitOfWork.Repository<Game>().GetSingle(gameDto.Id);
+            if (updatingGame == null)
+                throw new ValidationException("Game wasn't found", "");
+            if (!gameDto.Key.Equals(updatingGame.Key))
+                if (_unitOfWork.Repository<Game>().FindBy(g => g.Key.Equals(gameDto.Key)).Any())
+                    throw new ValidationException("Game with such key is already exists", "");
+            if (updatingGame.Comments == null)
+                updatingGame.Comments = new List<Comment>();
+            else
+                gameDto.Comments.Clear();
+            if (updatingGame.Genres == null)
+                updatingGame.Genres = new List<Genre>();
+            else
+                updatingGame.Genres.Clear();
+            if (updatingGame.PlatformTypes == null)
+                updatingGame.PlatformTypes = new List<PlatformType>();
+            else
+                updatingGame.PlatformTypes.Clear();
+            return updatingGame;
+        }
+
+        public void EditGame(GameDTO gameDto)
+        {
+            Validator.ValidateGameModel(gameDto);
+            var updatingGame = GetGame(gameDto);
+            Mapper.Map(gameDto, updatingGame);
+            updatingGame.Genres = GetAllGenres(gameDto.Genres);
+            updatingGame.PlatformTypes = GetAllTypes(gameDto.PlatformTypes);
+            _unitOfWork.Repository<Game>().Edit(updatingGame);
+            _logger.Debug("Game updating gameKey={0}, Id={1} ", gameDto.Key, gameDto.Key);
+        }
+       
+        public void DeleteGame(int id)
+        {
+            if (_unitOfWork.Repository<Game>().GetSingle(id) == null)
+                throw new ValidationException("Game wasn't found", "");
+            _unitOfWork.Repository<Game>().Delete(_unitOfWork.Repository<Game>().GetSingle(id));
+            _unitOfWork.Save();
+            _logger.Debug("Game deleting by id = {0} ", id);
+        }
+
+        public IEnumerable<GameDTO> GetGames()
+        {
+            var res = Mapper.Map<IEnumerable<GameDTO>>(_unitOfWork.Repository<Game>().GetAll()).ToList();
+            _logger.Debug("Getting all games. Returned {0} games.", res.Count);
+            return res;
+        }
+
+        public IEnumerable<GameDTO> GetGamesByGenres(int genreId)
+        {
+            var res = Mapper.Map<IEnumerable<GameDTO>>(_unitOfWork.Repository<Game>().FindBy(
+                game => game.Genres.Select(
+                    genre => genre.Id).ToList().Contains(genreId))).ToList();
+            _logger.Debug("Getting games by name of genre id {0}. Returned {1} games", genreId, res.Count);
+            return res;
+        }
+
+        public IEnumerable<GameDTO> GetGamesByGenresName(string genreName)
+        {
+            var res = Mapper.Map<IEnumerable<GameDTO>>(_unitOfWork.Repository<Game>().FindBy(
+                game => game.Genres.Select(
+                    genre => genre.Name).ToList().Contains(genreName))).ToList();
+            _logger.Debug("Getting games by name of genre {0}. Returned {1} games", genreName, res.Count);
+            return res;
+        }
+
+        public IEnumerable<GameDTO> GetGamesByPlatformType(int platformType)
+        {
+            var res = Mapper.Map<IEnumerable<GameDTO>>(_unitOfWork.Repository<Game>().FindBy(
+                game => game.PlatformTypes.Select(
+                    platform => platform.Id).ToList().Contains(platformType))).ToList();
+            _logger.Debug("Getting games by platform id {0}. Returned {1} games", platformType, res.Count);
+            return res;
+        }
+
+        public IEnumerable<GameDTO> GetGamesByPlatformTypeName(string platformType)
+        {
+            var res = Mapper.Map<IEnumerable<GameDTO>>(_unitOfWork.Repository<Game>().FindBy(
+                game => game.PlatformTypes.Select(
+                    platform => platform.Type).ToList().Contains(platformType))).ToList();
+            _logger.Debug("Getting games by platform {0}. Returned {1} games", platformType, res.Count);
+            return res;
+        }
+
+        public GameDTO GetGameByKey(string key)
+        {
+            var game = _unitOfWork.Repository<Game>().FindBy(g => g.Key.Equals(key)).FirstOrDefault();
+            if (game == null)
+                throw new ValidationException("Game wasn't found", "");
+            var res = Mapper.Map<GameDTO>(game);
+            _logger.Debug("Getting game by key={0} ", key);
+            return res;
+        }
+
+        public GameDTO GetGameById(int id)
+        {
+            var game = _unitOfWork.Repository<Game>().FindBy(g => g.Id.Equals(id)).FirstOrDefault();
+            if (game == null)
+                throw new ValidationException("Game wasn't found", "");
+            var res = Mapper.Map<GameDTO>(game);
+            _logger.Debug("Getting game by id={0}.", id);
+            return res;
+        }
+
+        public IEnumerable<CommentDTO> GetCommentsByGame(int gameId)
+        {
+            var res = Mapper.Map<IEnumerable<CommentDTO>>(_unitOfWork.Repository<Comment>().FindBy(
                 comment => comment.Game.Id.Equals(gameId))).ToList();
-            _logger.Debug("Getting comments by id = {0}. Retured {1} comments", gameId, commentsDto.Count);
-            return commentsDto;
+            _logger.Debug("Getting comments by id = {0}. Retured {1} comments", gameId, res.Count);
+            return res;
         }
 
         public IEnumerable<CommentDTO> GetCommentsByGameKey(string gameKey)
         {
-            var commentsDto = Mapper.Map<IEnumerable<CommentDTO>>(_unitOfWork.Repository<Comment>().FindBy(
+            var res = Mapper.Map<IEnumerable<CommentDTO>>(_unitOfWork.Repository<Comment>().FindBy(
                 comment => comment.Game.Key.Equals(gameKey))).ToList();
-            _logger.Debug("Getting comments by key = {0}. Retured {1} comments", gameKey, commentsDto.Count);
-            return commentsDto;
+            _logger.Debug("Getting comments by key = {0}. Retured {1} comments", gameKey, res.Count);
+            return res;
         }
-        #endregion
-
-        #region Generic Methods
-
-        public T GetByKey<T>(string key) where T : class, IDtoBase, IDtoWithKey, new()
-        {
-            var entityType = GetEntityByDto<T>();
-            var entity = Mapper.Map<T>(typeof(GameService).GetMethod("GetEntityByKey")
-                .MakeGenericMethod(entityType)
-                .Invoke(this, new object[] { key }));
-            if (entity == null)
-            {
-                throw new ValidationException(entityType.Name + " wasn't found", string.Empty);
-            }
-            _logger.Debug("Getting" + entityType.Name + "by key={0} ", key);
-            var gameDto = Mapper.Map<GameDTO>(entityType);
-            return entity;
-        }
-
-        public T GetById<T>(int id) where T : class, IDtoBase, new()
-        {
-            var entityType = GetEntityByDto<T>();
-            var entity = Mapper.Map<T>(typeof(GameService).GetMethod("GetEntityById")
-                .MakeGenericMethod(entityType)
-                .Invoke(this, new object[] { id }));
-            if (entity == null)
-            {
-                throw new ValidationException(entityType.Name + " wasn't found", string.Empty);
-            }
-            _logger.Debug("Getting" + entityType.Name + "by id={0} ", id);
-            var gameDto = Mapper.Map<GameDTO>(entityType);
-            return entity;
-        }
-
-        public T GetByName<T>(string name) where T : class, IDtoBase, IDtoNamed, new()
-        {
-            var entityType = GetEntityByDto<T>();
-            var entity = Mapper.Map<T>(typeof(GameService).GetMethod("GetEntityByName")
-                .MakeGenericMethod(entityType)
-                .Invoke(this, new object[] { name }));
-            if (entity == null)
-            {
-                throw new ValidationException(entityType.Name + " wasn't found", string.Empty);
-            }
-            _logger.Debug("Getting" + entityType.Name + "by name={0} ", name);
-            var gameDto = Mapper.Map<GameDTO>(entityType);
-            return entity;
-        }
-
-        public IEnumerable<T> GetAll<T>() where T : class, IDtoBase, new()
-        {
-            var entityType = GetEntityByDto<T>();
-            var allDto = Mapper.Map<IEnumerable<T>>(typeof(GameService).GetMethod("GetAllEntities")
-                .MakeGenericMethod(entityType)
-                .Invoke(this, null)).ToList();
-            _logger.Debug("Getting all " + entityType.Name + "s. Returned {0}  " + entityType.Name + "s.", allDto.Count);
-            return allDto;
-        }
-
-        public void Add<T>(T model) where T : class, IDtoBase, new()
-        {
-            Validator<T>.ValidateModel(model);
-
-            var entityType = GetEntityByDto<T>();
-            var nameParameter = (model is IDtoNamed).Equals(true) ? ((IDtoNamed)model).Name : "";
-            var keyParameter = (model is IDtoWithKey).Equals(true) ? ((IDtoWithKey)model).Key : "";
-            typeof(GameService).GetMethod("CheckEntityExisting")
-               .MakeGenericMethod(entityType)
-               .Invoke(this, new object[] { nameParameter, keyParameter, model.Id });
-            typeof(GameService).GetMethod("AddEntity")
-                .MakeGenericMethod(entityType, typeof(T))
-                .Invoke(this, new object[] { model });
-            _logger.Debug("Adding " + typeof(T).Name + " with Id: {0}", model.Id);
-        }
-
-        public void CheckGame(GameDTO game)
-        {
-            Validator<List<CommentDTO>>.ValidateModel(x));
-        }
-        public void DeleteByName<T>(string name) where T : class, IDtoBase, IDtoNamed, new()
-        {
-            var entityType = GetEntityByDto<T>();
-            typeof(GameService).GetMethod("DeleteEntityByName")
-                .MakeGenericMethod(entityType)
-                .Invoke(this, new object[] { name });
-            _logger.Debug("{0} deleting by Name = {1} ", typeof(T).Name, name);
-        }
-
-        public void DeleteById<T>(int id) where T : class, IDtoBase, IDtoNamed, new()
-        {
-            var entityType = GetEntityByDto<T>();
-            typeof(GameService).GetMethod("DeleteEntityById")
-                .MakeGenericMethod(entityType)
-                .Invoke(this, new object[] { id });
-            _logger.Debug("{0} deleting by Id = {1} ", typeof(T).Name, id);
-        }
-
-        public void Edit<T>(T entity) where T: class, IDtoBase, new()
-        {
-            Validator<T>.ValidateModel(entity);
-            var entityType = GetEntityByDto<T>();
-            var nameParameter = (entity is IDtoNamed).Equals(true) ? ((IDtoNamed)entity).Name : "";
-            var keyParameter = (entity is IDtoWithKey).Equals(true) ? ((IDtoWithKey)entity).Key : "";
-            typeof(GameService).GetMethod("CheckEntityExisting")
-               .MakeGenericMethod(entityType)
-               .Invoke(this, new object[] {  nameParameter, keyParameter, entity.Id });
-            typeof(GameService).GetMethod("EditEntity")
-                .MakeGenericMethod(entityType, typeof(T))
-                .Invoke(this, new object[] { entity });
-            _logger.Debug("{0} updating Id={1} ", typeof(T).Name, entity.Id);
-        }
-        #endregion
-
-        #region Generic Helpers
-        //Finding in namespace GameStore.DAL.Entities class that is entity type for dto 
-        private Type GetEntityByDto<T>() where T : class, IDtoBase, new()
-        {
-            var typeName = typeof(T).Name;
-            var assembly = typeof(PlatformType).Assembly;
-            var nameSpace = typeof(PlatformType).Namespace;
-            var entityType = assembly.GetType(nameSpace + "." + typeName.Substring(0, typeName.Length - 3));
-            return entityType;
-        }
-        //Checking name and key for unique
-        public void CheckEntityExisting<T>(string name = "", string key = "", int withoutId = 0) where T : class, IEntityBase, new()
-        {
-            if ((new T() is IEntityNamed).Equals(true) && _unitOfWork.Repository<T>().FindBy(g => (g as IEntityNamed).Name.Equals(name)&& g.Id!=withoutId).Any())
-            {
-                throw new ValidationException(typeof(T).Name + " with such name is already exists", string.Empty);
-            }
-            if ((new T() is IEntityWithKey).Equals(true) && _unitOfWork.Repository<T>().FindBy(g => (g as IEntityWithKey).Key.Equals(key) && g.Id != withoutId).Any())
-            {
-                throw new ValidationException(typeof(T).Name + " with such key is already exists", string.Empty);
-            }
-        }
-        //private ICollection<T> GetAllInstansesOfType<T, TD>(ICollection<TD> types) where TD : class, IDtoBase, new()
-        //  where T : class, IEntityBase, new()
-        //{
-        //    var type = typeof(T).Name;
-        //    var allTypes = _unitOfWork.Repository<T>().GetAll().ToList();
-        //    var newTypes = new List<T>();
-        //    if (allTypes.Count > 0)
-        //    {
-        //        newTypes = types
-        //            .Where(x => allTypes
-        //                .Exists(g => g.Id.Equals(x.Id)))
-        //            .Select(x => allTypes
-        //                .First(g => g.Id.Equals(x.Id))).ToList();
-        //        if (newTypes.Count != types.Count)
-        //            throw new ValidationException(@"Cannot find " + type, string.Empty);
-        //    }
-        //    else if (types != null && types.Count > 0)
-        //        throw new ValidationException("Cannot find " + type + ". There are no " + type + " exists", string.Empty);
-        //    return newTypes;
-        //}
-        #endregion
     }
 }

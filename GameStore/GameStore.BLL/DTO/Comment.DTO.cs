@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
-using GameStore.BLL.Interfaces;
 
 namespace GameStore.BLL.DTO
 {
-    public class CommentDTO : IDtoBase, IDtoNamed
+    public class CommentDTO
     {
         public int Id { get; set; }
         public string Name { get; set; }
