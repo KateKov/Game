@@ -27,9 +27,14 @@ namespace GameStore.Web
                 url: "games/{action}",
                 defaults: new { controller = "Games", action = @"\w+" });
             routes.MapRoute(
+               name: "Publishers",
+               url: "publisher/{action}",
+               defaults: new { controller = "Publishers", action = @"\w+" });
+            routes.MapRoute(
                 name: "Default",
                 url: string.Empty,
                 defaults: new { controller = "Games", action = "Index", id = string.Empty });
+
         }
     }
 }

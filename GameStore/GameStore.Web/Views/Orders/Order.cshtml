@@ -1,0 +1,199 @@
+﻿@using GameStore.Web.ViewModels
+
+
+
+@model OrderPaymentViewModel
+
+
+
+@{
+
+    ViewBag.Title = "Order";
+}
+
+
+<div>
+<div id="result">
+
+    @if (Model.Order!=null)
+
+    {
+
+        <div class="container">
+
+            <div class="check-out">
+
+                <div class="bs-example4" data-example-id="simple-responsive-table">
+
+                    <div class="table-responsive">
+
+                        <table class="table-heading simpleCart_shelfItem">
+
+                            <tr>
+
+                                <th class="table-grid">Товар</th>
+
+
+
+                                <th>@Html.DisplayNameFor(modelItem => Model.Order.CustomerId)</th>
+
+                                <th>@Html.DisplayNameFor(modelItem => Model.Order.Date)</th>
+
+                                <th>@Html.DisplayNameFor(modelItem => Model.Order.Sum)</th>
+
+                            </tr>
+
+
+                            </table>
+
+                                <table class="table">
+
+                                    <tr>
+                                        <th>
+
+
+                                            @Html.DisplayNameFor(model => model.Order.OrderDetails.First().GameKey)
+
+                                        </th>
+                                        <th>
+
+
+                                            @Html.DisplayNameFor(model => model.Order.OrderDetails.First().Discount)
+
+                                        </th>
+
+                                        <th>
+
+                                            @Html.DisplayNameFor(model => model.Order.OrderDetails.First().Price)
+
+                                        </th>
+
+                                        <th>
+
+
+                                            @Html.DisplayNameFor(model => model.Order.OrderDetails.First().Quantity)
+
+                                        </th>
+
+                                        <th></th>
+
+                                    </tr>
+
+
+
+                                    @foreach (var item in Model.Order.OrderDetails)
+                                    {
+
+                                        <tr>
+                                            <td>
+                                                @Html.HiddenFor(it=> item.Id)
+                                                @Html.HiddenFor(it => item.GameId)
+                                                @Html.DisplayFor(modelItem => item.GameKey)
+
+                                            </td>
+                                            <td>
+                                        
+                                                @Html.DisplayFor(modelItem => item.Discount)
+
+                                            </td>
+
+                                            <td>
+
+                                                @Html.DisplayFor(modelItem => item.Price)
+
+                                            </td>
+
+                                            <td>
+
+                                                @Html.DisplayFor(modelItem => item.Quantity)
+
+                                            </td>
+
+                                            <td>
+
+                                                @Html.ActionLink("Bank", "Pay", new { order= Model.Order, paymentName = "Bank"}) |
+
+                                                @Html.ActionLink("IBox", "Pay", new { order = Model.Order, paymentName = "IBox" }) |
+
+                                                @Html.ActionLink("Visa", "Pay", new { order = Model.Order, paymentName = "Visa" })
+
+                                            </td>
+
+                                        </tr>
+
+                                    }
+
+
+
+                                </table>
+
+                    
+
+
+
+
+
+
+
+                    
+
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+     
+
+    }
+
+    else
+
+    {
+
+        <div class="container">
+
+            <div class="check-out">
+
+                <div class="bs-example4" data-example-id="simple-responsive-table">
+
+                    <div class="content-mid">
+
+                        <h3>The basket is empty</h3>
+
+                        <label class="line"></label>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    }
+
+</div>
+
+
+
+
+
+<br />
+
+<br />
+
+<br />
+
+
+
+</div>

@@ -14,5 +14,8 @@ namespace GameStore.DAL.Entities
         public int CustomerId { get; set; }
         public DateTime Date { get; set; }
         public ICollection<OrderDetail> OrderDetails { get; set; }
+        public bool IsConfirmed { get; set; }
+        public decimal Sum { get; set; }
     }
+
 }

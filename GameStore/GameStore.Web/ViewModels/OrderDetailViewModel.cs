@@ -12,9 +12,13 @@ namespace GameStore.Web.ViewModels
         public int Id { get; set; }
         [Display(Name = "Name")]
         public decimal Price { get; set; }
-        [Display(Name = "Quality")]
-        public short Quality { get; set; }
+        [Display(Name = "Quantity")]
+        public short Quantity { get; set; }
         [Display(Name = "Discount")]
         public float Discount { get; set; }
+        public int OrderId { get; set; }
+        [Required]
+        public int GameId { get; set; }
+        public string GameKey { get; set; }
     }
 }

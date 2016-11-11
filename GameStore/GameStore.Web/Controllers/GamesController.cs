@@ -63,7 +63,7 @@ namespace GameStore.Web.Controllers
                 gameViewModel = game;
                 gameViewModel.Key = GenerateKey(gameViewModel.Name, gameViewModel.PublisherName);
                 GameDTO gameDto = Mapper.Map<GameViewModel, GameDTO>(gameViewModel);
-                _gameService.Add<GameDTO>(gameDto);
+                _gameService.AddOrUpdate<GameDTO>(gameDto, true);
                 //}
                 //catch (Exception)
                 //{
@@ -87,7 +87,7 @@ namespace GameStore.Web.Controllers
             try
             {
                 GameDTO gameDto = Mapper.Map<GameViewModel, GameDTO>(game);
-                _gameService.Edit(gameDto);
+                _gameService.AddOrUpdate(gameDto, false);
             }
             catch (Exception)
             {

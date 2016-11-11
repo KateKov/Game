@@ -64,3 +64,6 @@ C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\bin\S
 C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\obj\Debug\GameStore.Web.csprojResolveAssemblyReference.cache
 C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\obj\Debug\GameStore.Web.dll
 C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\obj\Debug\GameStore.Web.pdb
+C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\bin\EPPlus.dll
+C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\bin\Rotativa.dll
+C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web\bin\EPPlus.xml

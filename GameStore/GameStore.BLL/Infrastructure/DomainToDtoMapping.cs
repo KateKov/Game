@@ -24,7 +24,9 @@ namespace GameStore.BLL.Infrastructure
                 .ForMember(dm => dm.PublisherId, map => map.MapFrom(dm => dm.Publisher.Id));
             CreateMap<PlatformType, PlatformTypeDTO>();
             CreateMap<Publisher, PublisherDTO>();
-            CreateMap<OrderDetail, OrderDetailDTO>();
+            CreateMap<OrderDetail, OrderDetailDTO>()
+                .ForMember(dm => dm.GameId, map => map.MapFrom(dm => dm.Game.Id))
+                .ForMember(dm => dm.GameKey, map => map.MapFrom(dm => dm.Game.Key));
             CreateMap<Order, OrderDTO>();
             CreateMap<CommentDTO, Comment>();
             CreateMap<GenreDTO, Genre>();

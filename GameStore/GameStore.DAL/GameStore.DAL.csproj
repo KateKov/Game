@@ -60,6 +60,8 @@
     <Compile Include="Infrastracture\Repository.cs" />
     <Compile Include="Infrastracture\UnitOfWork.cs" />
     <Compile Include="Interfaces\IEntityBase.cs" />
+    <Compile Include="Interfaces\IEntityNamed.cs" />
+    <Compile Include="Interfaces\IEntityWithKey.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

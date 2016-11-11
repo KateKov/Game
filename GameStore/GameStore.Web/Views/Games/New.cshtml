@@ -18,7 +18,7 @@
                
                  Add @Model.Game.Name game. Make sure you fill all required fields.
             </div>
-            @using (Html.BeginForm("New", "Games", Model.Game, FormMethod.Post))
+            @using (Html.BeginForm("New", "Games", Model.Publishers, FormMethod.Post))
             {
                 @Html.ValidationSummary(true)
                 @Html.AntiForgeryToken()
@@ -80,7 +80,7 @@
                             @Html.NameFor(model => model.Game.Genres)
                             
 
-                                @Html.ListBoxFor(model => model.Genres, new MultiSelectList(new SelectList(Model.Genres, "Id", "Name"), "Value", "Text"))
+                                @Html.ListBoxFor(model => model.Game.Genres, new MultiSelectList(new SelectList(Model.Genres, "Id", "Name"), "Value", "Text"))
 
                                 @Html.ValidationMessageFor(model => model.Game.PlatformTypes, "", new { @class = "text-danger" })
                          

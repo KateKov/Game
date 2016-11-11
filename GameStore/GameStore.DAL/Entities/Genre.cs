@@ -6,7 +6,7 @@ using GameStore.DAL.Interfaces;
 
 namespace GameStore.DAL.Entities
 {
-    public class Genre : IEntityBase
+    public class Genre : IEntityBase, IEntityNamed
     {
         [Key]
         public int Id { get; set; }
@@ -15,6 +15,7 @@ namespace GameStore.DAL.Entities
         [Index("IY_name", 1, IsUnique = true)]
         [Required]
         public string Name { get; set; }
+        public int ParentId { get; set; }
         public virtual Genre ParentGenre { get; set; }
         public virtual ICollection<Genre> ChildGenres { get; set; }
         public virtual ICollection<Game> Games { get; set; }

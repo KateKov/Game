@@ -1,0 +1,51 @@
+﻿@using GameStore.Web.ViewModels;
+@model OrderViewModel
+
+@{
+    ViewBag.Title = "Bank";
+}
+
+<div class="container">
+    <div class="jumbotron">
+        <h3 class="media-heading">
+            Number of order: @Model.Id
+        </h3>
+        <h3 class="media-heading">
+            CustomerId: @Model.CustomerId
+        </h3>
+        <h3 class="media-heading">
+            Date of order: @Model.Date
+        </h3>
+        <h3 class="media-heading">
+            Sum of order: @Model.Sum
+        </h3>
+        <hr/>
+        <h3>Games</h3>
+        @foreach (var item in Model.OrderDetails)
+        {
+            <div class="panel-body">
+                <div class="media">
+                    <div class="media-body">
+                        <h3 class="media-heading">
+                            Number of game: @item.GameId
+                        </h3>
+                        <h3 class="media-heading">
+                            Discount: @item.Discount
+                        </h3>
+                        <h3 class="media-heading">
+                            Price: @item.Price
+                        </h3>
+                        <h3 class="media-heading">
+                            Quantity: @item.Quantity
+                        </h3>
+
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
+
+
+
