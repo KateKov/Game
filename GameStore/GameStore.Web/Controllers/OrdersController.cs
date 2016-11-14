@@ -24,7 +24,7 @@ namespace GameStore.Web.Controllers
         }
 
         [HttpGet]
-        public ActionResult Payment(int id)
+        public ActionResult Payment(string id ="")
         {
            var order = Mapper.Map<OrderViewModel>(_service.GetById<OrderDTO>(id));
            var bank = new Bank();
@@ -32,14 +32,14 @@ namespace GameStore.Web.Controllers
         }
 
         [HttpGet]
-        public ActionResult Basket(int customerId = 1)
+        public ActionResult Basket(string customerId ="")
         {
             var basket = _service.GetBusket(customerId);
             return View(Mapper.Map<OrderViewModel>(basket));
         }
 
         [HttpGet]
-        public ActionResult Order(int customerId = 1)
+        public ActionResult Order(string customerId ="")
         {
             var order = _service.GetOrders(customerId);
             return View(Mapper.Map<OrderViewModel>(order));
@@ -70,7 +70,7 @@ namespace GameStore.Web.Controllers
         }
 
         [HttpGet]
-        public ActionResult AddToBusket(int gameId, short quantity, int customerId = 1)
+        public ActionResult AddToBusket(string gameId, short quantity, string customerId ="")
         {
             var product = _service.GetOrderDetail(gameId, quantity, customerId);
             _service.AddToBusket(product, customerId);
@@ -78,7 +78,7 @@ namespace GameStore.Web.Controllers
         }
 
         [HttpGet]
-        public ActionResult DeleteBusket(int customerId)
+        public ActionResult DeleteBusket(string customerId)
         {
             _service.DeleteBusket(customerId);
             return RedirectToAction("Basket");

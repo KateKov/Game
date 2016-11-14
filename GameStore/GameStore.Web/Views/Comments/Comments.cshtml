@@ -1,0 +1,122 @@
+﻿
+@using GameStore.Web.ViewModels
+@model IEnumerable<CommentViewModel>
+
+@{
+    ViewBag.Title = "Comments";
+}
+
+
+
+<h2>Comments</h2>
+<ul class="menu">
+    @foreach (var mp in Model.Where(p => p.ParentCommentId == null))
+    {
+
+        <li>
+            @CreateCommentCard(mp)
+            @if (Model.Count(p => p.ParentCommentId == mp.Id) > 0)
+            {
+                @:<ul>
+        }
+
+            @RenderMenuItem(Model.ToList(), mp)
+
+            @if (Model.Count(p => p.ParentCommentId == mp.Id) > 0)
+            {
+                @:</ul>
+       }
+
+        </li>
+    }
+</ul>
+
+@helper RenderMenuItem(List<CommentViewModel> menuList, CommentViewModel mi)
+{
+foreach (var cp in menuList.Where(p => p.ParentCommentId == mi.Id))
+{
+
+
+        @:<li>
+
+
+
+
+            @CreateCommentCard(cp)
+    if (menuList.Count(p => p.ParentCommentId == mi.Id) > 0)
+    {
+            @:<ul>
+        }
+
+        @RenderMenuItem(menuList, cp)
+
+    if (menuList.Count(p => p.ParentCommentId == mi.Id) > 0)
+    {
+            @:</ul>
+      }
+    else
+    {
+            @:</li>
+      }
+    }
+}
+
+@helper GetCommentNameById(string id)
+{
+var comment = Model.FirstOrDefault(x => x.Id == id);
+
+if (comment != null)
+{
+        @:[@comment.Name]
+    }
+}
+
+@helper CreateCommentCard(CommentViewModel comment)
+{
+
+    <H3>@comment.Name</H3>
+    <hr />
+    <p>
+        @if (comment.Quote != null)
+        {
+            <blockquote>
+        <p>@comment.Quote</p> </blockquote>
+        }
+        @if (comment.ParentCommentId != null)
+        {
+            @GetCommentNameById(comment.ParentCommentId)
+        }
+        @comment.Body
+        </p>
+
+        <span>@Ajax.ActionLink("Answer", "NewCommentForParent", "Comments", new { keyOfGame = Model.First().GameKey, commentId = comment.Id }, new AjaxOptions { UpdateTargetId = "form" }, new { @class = "btn btn-info" })</span>
+        <span>@Ajax.ActionLink("Quote", "NewCommentWithQuote", "Comments", new { keyOfGame = Model.First().GameKey, commentId = comment.Id, body = comment.Body }, new AjaxOptions { UpdateTargetId = "form" }, new { @class = "btn btn-info" })</span>
+        <span>@Html.ActionLink("Ban", "Ban", "Comments", null, new { @class = "btn btn-info" })</span>
+        <span>@Html.ActionLink("Delete", "DeleteConfirmed", "Comments", new { keyOfGame = Model.First().GameKey, commentId = comment.Id }, new { @class = "btn btn-info", onclick = "return confirmDelete();" })</span>
+
+}
+<h3> @ViewBag.ErrorName  </h3>
+
+<div id="form">
+    @Html.Action("NewComment", new { key = Model.First().GameKey })
+</div>
+
+
+<script>
+    function confirmDelete() {
+
+        if (confirm("Вы подтверждаете удаление?")) {
+
+            return true;
+
+        } else {
+
+            return false;
+
+        }
+    }
+
+</script>
+<script src="../../scripts/jquery-1.10.2.min.js"> </script>
+@Scripts.Render("~/scripts/jquery-1.10.2.min.js")
+@Scripts.Render("~/scripts/jquery.unobtrusive-ajax.min.js")

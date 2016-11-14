@@ -6,7 +6,7 @@ namespace GameStore.Web.ViewModels
     public class PublisherViewModel
     {
         [Required]
-        public int Id { get; set; }
+        public string Id { get; set; }
         [Required]
         [Display(Name = "Name")]
         public string Name { get; set; }

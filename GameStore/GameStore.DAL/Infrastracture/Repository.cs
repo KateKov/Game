@@ -30,7 +30,7 @@ namespace GameStore.DAL.Infrastracture
             }
         }
 
-        public T GetSingle(int? id)
+        public T GetSingle(Guid id)
         {
             try
             {

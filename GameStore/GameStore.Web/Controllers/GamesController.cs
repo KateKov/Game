@@ -41,26 +41,25 @@ namespace GameStore.Web.Controllers
         [HttpGet]
         public ActionResult New()
         {
-            UpdateGameViewModel game = new UpdateGameViewModel();
+            var game = new UpdateGameViewModel();
+            game.Game = new GameViewModel();
             game.Publishers = Mapper.Map<IEnumerable<PublisherDTO>, IEnumerable<PublisherViewModel>>(_gameService.GetAll<PublisherDTO>()).ToList();
             game.Genres =
                 Mapper.Map<IEnumerable<GenreDTO>, IEnumerable<GenreViewModel>>(_gameService.GetAll<GenreDTO>()).ToList();
             game.Types =
                 Mapper.Map<IEnumerable<PlatformTypeDTO>, IEnumerable<PlatformTypeViewModel>>(
                     _gameService.GetAll<PlatformTypeDTO>()).ToList();
-            game.Game = new GameViewModel();
             return View(game);
         }
 
         [HttpPost]
-        public ActionResult New(GameViewModel game)
+        public ActionResult New(UpdateGameViewModel game)
         {
-            if (ModelState.IsValid)
-            {
+           
                 GameViewModel gameViewModel;
                 //try
                 //{
-                gameViewModel = game;
+                gameViewModel = game.Game;
                 gameViewModel.Key = GenerateKey(gameViewModel.Name, gameViewModel.PublisherName);
                 GameDTO gameDto = Mapper.Map<GameViewModel, GameDTO>(gameViewModel);
                 _gameService.AddOrUpdate<GameDTO>(gameDto, true);
@@ -71,7 +70,7 @@ namespace GameStore.Web.Controllers
                 //}
 
                 _logger.Info("Game is created. Id {0} Key {1} ", gameViewModel.Id, gameViewModel.Key);
-            }
+            
             return RedirectToAction("Index");
         }
 

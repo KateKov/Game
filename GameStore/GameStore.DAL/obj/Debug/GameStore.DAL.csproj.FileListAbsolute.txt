@@ -90,3 +90,33 @@ C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.DAL\bin\D
 C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.DAL\obj\Debug\GameStore.DAL.dll
 C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.DAL\obj\Debug\GameStore.DAL.pdb
 C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.DAL\obj\Debug\GameStore.DAL.csprojResolveAssemblyReference.cache
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\GameStore.DAL.dll.config
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\GameStore.DAL.dll
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\GameStore.DAL.pdb
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\EntityFramework.dll
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\FluentValidation.dll
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\NLog.dll
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\EntityFramework.xml
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\FluentValidation.pdb
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\FluentValidation.xml
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\NLog.xml
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\cs\FluentValidation.resources.dll
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\da\FluentValidation.resources.dll
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\de\FluentValidation.resources.dll
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\es\FluentValidation.resources.dll
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\fa\FluentValidation.resources.dll
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\fi\FluentValidation.resources.dll
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\fr\FluentValidation.resources.dll
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\it\FluentValidation.resources.dll
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\ko\FluentValidation.resources.dll
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\mk\FluentValidation.resources.dll
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\nl\FluentValidation.resources.dll
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\pl\FluentValidation.resources.dll
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\pt\FluentValidation.resources.dll
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\ru\FluentValidation.resources.dll
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\sv\FluentValidation.resources.dll
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\tr\FluentValidation.resources.dll
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\bin\Debug\zh-CN\FluentValidation.resources.dll
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\obj\Debug\GameStore.DAL.csprojResolveAssemblyReference.cache
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\obj\Debug\GameStore.DAL.dll
+C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.DAL\obj\Debug\GameStore.DAL.pdb

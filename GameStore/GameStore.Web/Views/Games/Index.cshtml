@@ -5,25 +5,85 @@
 @{
     ViewBag.Title = "Games";
 }
-<div>
+
+<p>
+    <span>@Html.ActionLink("Create New", "New", null, new { @class = "btn btn-info" }) </span>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Key)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UnitsInStock)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Discountinues)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Genres)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PlatformTypes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PublisherName)
+        </th>
+    </tr>
+
     @foreach (var item in Model)
     {
-        <div>
-            @Html.ActionLink(item.Name, "Index", "Comments",null, item.Key)
-            <div>
-                @Html.Label(item.Description)
-            </div>
-            <div>
-                @Html.LabelFor(model => item.Price)
-            </div>
-            <div>
-                @foreach (var x in item.Genres)
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Key)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitsInStock)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Discountinues)
+            </td>
+            <td>
+                @foreach (var i in item.Genres)
                 {
-                    @Html.Label(x.Name)
+                    <p>@i.Name</p>
                 }
-            </div>
-            <hr/>
-            
-        </div>
+            </td>
+            <td>
+                @foreach (var k in item.PlatformTypes)
+                {
+                    <p>@k.Name</p>
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PublisherName)
+            </td>
+            <td>
+                <span>@Html.ActionLink("Edit", "Update", new { key = item.Key }, new { @class = "btn btn-info" }) </span>
+                <p></p>
+                <span> @Html.ActionLink("Details", "Details", new { key = item.Key }, new { @class = "btn btn-info" }) </span>
+                <p></p>
+                <span>  @Html.ActionLink("Buy", "AddToBusket", "Orders", new {  gameId = item.Id, quantity = 6, customerId = 1 }, new { @class = "btn btn-info" })</span>
+            </td>
+        </tr>
     }
-    </div>
+
+</table>

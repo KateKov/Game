@@ -6,11 +6,11 @@ namespace GameStore.Web.ViewModels
     public class GenreViewModel
     {
         [Required(ErrorMessage = "Genre doesn't have Id")]
-        public int Id { get; set; }
+        public string Id { get; set; }
         [Required(ErrorMessage = "Genre doesn't have Name")]
         [Display(Name = "Name")]
         public string Name { get; set; }
-        public int? ParentId { get; set; }
+        public string ParentId { get; set; }
         public string ParentName { get; set; }
         public virtual ICollection<GenreViewModel> ChildGenres { get; set; }
     }

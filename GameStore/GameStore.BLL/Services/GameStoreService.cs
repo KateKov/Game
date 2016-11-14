@@ -60,7 +60,7 @@ namespace GameStore.BLL.Services
 
         public T GetEntityById<T>(string id) where T : class, IEntityBase, new()
         {
-            var entity = _unitOfWork.Repository<T>().GetSingle(Convert.ToInt32(id));
+            var entity = _unitOfWork.Repository<T>().GetSingle(Guid.Parse(id));
             if (entity == null)
             {
                 throw new ValidationException(typeof(T).Name + " wasn't found", string.Empty);
@@ -83,19 +83,19 @@ namespace GameStore.BLL.Services
             _unitOfWork.Repository<T>().Delete(GetEntityByName<T>(name));
         }
 
-        public void DeleteEntityById<T>(int id) where T : class, IEntityBase, IEntityNamed, new()
+        public void DeleteEntityById<T>(string id) where T : class, IEntityBase, IEntityNamed, new()
         {
-            _unitOfWork.Repository<T>().Delete(GetEntityById<T>(id.ToString()));
+            _unitOfWork.Repository<T>().Delete(GetEntityById<T>(id));
         }
         #endregion
 
         #region Methods for Games
 
-        public IEnumerable<GameDTO> GetGamesByGenreId(int genreId)
+        public IEnumerable<GameDTO> GetGamesByGenreId(string genreId)
         {
             var gamesDto = Mapper.Map<IEnumerable<GameDTO>>(_unitOfWork.Repository<Game>().FindBy(
                 game => game.Genres.Select(
-                    genre => genre.Id).ToList().Contains(genreId))).ToList();
+                    genre => genre.Id).ToList().Contains(Guid.Parse(genreId)))).ToList();
             _logger.Debug("Getting games by name of genre id {0}. Returned {1} games", genreId, gamesDto.Count);
             return gamesDto;
         }
@@ -109,11 +109,11 @@ namespace GameStore.BLL.Services
             return gamesDto;
         }
 
-        public IEnumerable<GameDTO> GetGamesByPlatformTypeId(int platformType)
+        public IEnumerable<GameDTO> GetGamesByPlatformTypeId(string platformType)
         {
             var gamesDto = Mapper.Map<IEnumerable<GameDTO>>(_unitOfWork.Repository<Game>().FindBy(
                 game => game.PlatformTypes.Select(
-                    platform => platform.Id).ToList().Contains(platformType))).ToList();
+                    platform => platform.Id).ToList().Contains(Guid.Parse(platformType)))).ToList();
             _logger.Debug("Getting games by platform id {0}. Returned {1} games", platformType, gamesDto.Count);
             return gamesDto;
         }
@@ -132,7 +132,7 @@ namespace GameStore.BLL.Services
         public void AddComment(CommentDTO commentDto, string gameKey)
         {
             Validator<CommentDTO>.ValidateModel(commentDto);
-            if(string.IsNullOrEmpty(gameKey) || commentDto.GameId<1 || String.IsNullOrEmpty(commentDto.Body))
+            if(string.IsNullOrEmpty(gameKey) || string.IsNullOrEmpty(commentDto.GameId) || String.IsNullOrEmpty(commentDto.Body))
                 throw  new ValidationException("There is no game for comment", String.Empty);
             var comment = Mapper.Map<CommentDTO, Comment>(commentDto);
             var game = _unitOfWork.Repository<Game>().FindBy(g => g.Key.Equals(gameKey)).FirstOrDefault();
@@ -141,7 +141,7 @@ namespace GameStore.BLL.Services
             comment.Game = game;
             if (commentDto.ParentId != null)
             {
-                var parentComment = _unitOfWork.Repository<Comment>().GetSingle((int)commentDto.ParentId);
+                var parentComment = _unitOfWork.Repository<Comment>().GetSingle(Guid.Parse(commentDto.ParentId));
                 if (parentComment == null)
                     throw new ValidationException("Cannot find parent comment for creating a comment", string.Empty);
                 comment.ParentComment = parentComment;
@@ -151,7 +151,7 @@ namespace GameStore.BLL.Services
                 commentDto.Id, gameKey);
         }
 
-        public IEnumerable<CommentDTO> GetCommentsByGameId(int gameId)
+        public IEnumerable<CommentDTO> GetCommentsByGameId(string gameId)
         {
             var commentsDto = Mapper.Map<IEnumerable<CommentDTO>>(_unitOfWork.Repository<Comment>().FindBy(
                 comment => comment.Game.Id.Equals(gameId))).ToList();
@@ -185,7 +185,7 @@ namespace GameStore.BLL.Services
             return entity;
         }
 
-        public T GetById<T>(int id) where T : class, IDtoBase, new()
+        public T GetById<T>(string id) where T : class, IDtoBase, new()
         {
             var entityType = GetEntityByDto<T>();
             var entity = Mapper.Map<T>(typeof(GameStoreService).GetMethod("GetEntityById")
@@ -245,7 +245,7 @@ namespace GameStore.BLL.Services
             _logger.Debug("{0} deleting by Name = {1} ", typeof(T).Name, name);
         }
 
-        public void DeleteById<T>(int id) where T : class, IDtoBase, IDtoNamed, new()
+        public void DeleteById<T>(string id) where T : class, IDtoBase, IDtoNamed, new()
         {
             var entityType = GetEntityByDto<T>();
             typeof(GameStoreService).GetMethod("DeleteEntityById")
@@ -267,18 +267,18 @@ namespace GameStore.BLL.Services
             return entityType;
         }
 
-        public void CheckName<T>(string name, int id) where T : class, IEntityBase, IEntityNamed, new()
+        public void CheckName<T>(string name, string id) where T : class, IEntityBase, IEntityNamed, new()
         {
 
-            if (!string.IsNullOrEmpty(name)&&_unitOfWork.Repository<T>().FindBy(g => g.Name.Equals(name) && g.Id != id).Any())
+            if (!string.IsNullOrEmpty(name)&&_unitOfWork.Repository<T>().FindBy(g => g.Name.Equals(name) && g.Id != Guid.Parse(id)).Any())
             {
                 throw new ValidationException(typeof(T).Name + " with such name is already exists", string.Empty);
             }
         }
 
-        public void CheckKey<T>(string key, int id) where T : class, IEntityBase, IEntityWithKey, new() 
+        public void CheckKey<T>(string key, string id) where T : class, IEntityBase, IEntityWithKey, new() 
         {
-            if (!string.IsNullOrEmpty(key) && _unitOfWork.Repository<T>().FindBy(g => g.Key.Equals(key) && g.Id != id).Any())
+            if (!string.IsNullOrEmpty(key) && _unitOfWork.Repository<T>().FindBy(g => g.Key.Equals(key) && g.Id != Guid.Parse(id)).Any())
             {
                 throw new ValidationException(typeof(T).Name + " with such key is already exists", string.Empty);
             }
@@ -290,10 +290,10 @@ namespace GameStore.BLL.Services
 
         #region Orders
 
-        public OrderDTO GetOrder(int id)
+        public OrderDTO GetOrder(string id)
         {
             decimal sum = 0;
-            var order = _unitOfWork.Repository<Order>().GetSingle(id);
+            var order = _unitOfWork.Repository<Order>().GetSingle(Guid.Parse(id));
             if (order == null)
             {
                 throw new ValidationException( "Order wasn't found", string.Empty);
@@ -304,7 +304,7 @@ namespace GameStore.BLL.Services
             return Mapper.Map<OrderDTO>(order);
         }
 
-        public OrderDetailDTO GetOrderDetail(int gameId, short quantity, int customerId = 1)
+        public OrderDetailDTO GetOrderDetail(string gameId, short quantity, string customerId = "")
         {
             var game = GetById<GameDTO>(gameId);
             var orderDetail = new OrderDetailDTO()
@@ -318,9 +318,9 @@ namespace GameStore.BLL.Services
             return orderDetail;
         }
 
-        public OrderDTO GetOrderByCustomer(int id)
+        public OrderDTO GetOrderByCustomer(string id)
         {
-            var order = _unitOfWork.Repository<Order>().FindBy(x => x.CustomerId == id).FirstOrDefault();
+            var order = _unitOfWork.Repository<Order>().FindBy(x => x.CustomerId == Guid.Parse(id)).FirstOrDefault();
             if (order == null)
             {
                 throw new ValidationException("Order wasn't found", string.Empty);
@@ -329,9 +329,9 @@ namespace GameStore.BLL.Services
             return Mapper.Map<OrderDTO>(order);
         }
 
-        public OrderDTO ConfirmeOrder(int id)
+        public OrderDTO ConfirmeOrder(string id)
         {
-            var order = _unitOfWork.Repository<Order>().GetSingle(id);
+            var order = _unitOfWork.Repository<Order>().GetSingle(Guid.Parse(id));
             if (order == null)
             {
                 throw new ValidationException("Order wasn't found", string.Empty);
@@ -342,9 +342,9 @@ namespace GameStore.BLL.Services
             return Mapper.Map<OrderDTO>(order);
         }
 
-        public OrderDTO GetBusket(int customerId)
+        public OrderDTO GetBusket(string customerId)
         {
-            var basket = _unitOfWork.Repository<Order>().FindBy(x => x.CustomerId == customerId && !x.IsConfirmed).FirstOrDefault();
+            var basket = _unitOfWork.Repository<Order>().FindBy(x => x.CustomerId == Guid.Parse(customerId) && !x.IsConfirmed).FirstOrDefault();
             if (basket == null)
             {
                 throw new ValidationException("Basket wasn't found", string.Empty);
@@ -353,9 +353,9 @@ namespace GameStore.BLL.Services
             return Mapper.Map<OrderDTO>(basket);
         }
 
-        public void DeleteBusket(int customerId)
+        public void DeleteBusket(string customerId)
         {
-            var busket = _unitOfWork.Repository<Order>().FindBy(x => x.CustomerId == customerId && !x.IsConfirmed).FirstOrDefault();
+            var busket = _unitOfWork.Repository<Order>().FindBy(x => x.CustomerId == Guid.Parse(customerId) && !x.IsConfirmed).FirstOrDefault();
             if (busket == null)
             {
                 throw new ValidationException("Busket wasn't found", string.Empty);
@@ -364,9 +364,9 @@ namespace GameStore.BLL.Services
             _logger.Debug("Deleting busket by Customer id={0} ", customerId);
         }
 
-        public IEnumerable<OrderDTO> GetOrders(int customerId)
+        public IEnumerable<OrderDTO> GetOrders(string customerId)
         {
-            var orders = _unitOfWork.Repository<Order>().FindBy(x => x.CustomerId == customerId && x.IsConfirmed).ToList();
+            var orders = _unitOfWork.Repository<Order>().FindBy(x => x.CustomerId == Guid.Parse(customerId) && x.IsConfirmed).ToList();
             if (orders == null)
             {
                 throw new ValidationException("Busket wasn't found", string.Empty);
@@ -375,14 +375,14 @@ namespace GameStore.BLL.Services
             return Mapper.Map<IEnumerable<OrderDTO>>(orders);
         }
 
-        public void AddToBusket(OrderDetailDTO product, int customerId)
+        public void AddToBusket(OrderDetailDTO product, string customerId)
         {
             Validator<OrderDetailDTO>.ValidateModel(product);
-            if (customerId < 1 )
+            if (string.IsNullOrEmpty(customerId))
             {
                 throw new ValidationException("CustomerId is not valid for adding to busket", string.Empty);
             }
-            var busket = _unitOfWork.Repository<Order>().FindBy(x => x.CustomerId == customerId && !x.IsConfirmed).FirstOrDefault();
+            var busket = _unitOfWork.Repository<Order>().FindBy(x => x.CustomerId == Guid.Parse(customerId) && !x.IsConfirmed).FirstOrDefault();
             if (busket == null)
             {
                 var order = new OrderDTO();

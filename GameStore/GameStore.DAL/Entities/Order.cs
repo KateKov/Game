@@ -10,8 +10,8 @@ namespace GameStore.DAL.Entities
 {
     public class Order: IEntityBase
     {
-        public int Id { get; set; }
-        public int CustomerId { get; set; }
+        public Guid Id { get; set; }
+        public Guid CustomerId { get; set; }
         public DateTime Date { get; set; }
         public ICollection<OrderDetail> OrderDetails { get; set; }
         public bool IsConfirmed { get; set; }

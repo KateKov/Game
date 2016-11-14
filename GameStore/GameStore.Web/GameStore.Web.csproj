@@ -232,11 +232,12 @@
     <Content Include="Views\Orders\Bank.cshtml" />
     <Content Include="Views\Orders\Basket.cshtml" />
     <Content Include="Views\Orders\Order.cshtml" />
-    <Content Include="Views\IBox\Pay.cshtml" />
+    <Content Include="Views\Orders\Pay.cshtml" />
     <Content Include="Views\Visa\Visa.cshtml" />
     <Content Include="Views\Publishers\Index.cshtml" />
     <Content Include="Views\Publishers\New.cshtml" />
     <Content Include="Views\Publishers\Details.cshtml" />
+    <Content Include="Views\Comments\Comments.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -246,6 +247,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\IBox\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GameStore.BLL\GameStore.BLL.csproj">

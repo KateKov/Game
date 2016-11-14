@@ -78,17 +78,11 @@ namespace GameStore.Web.Controllers
         }
 
         [HttpGet]
-        public JsonResult Comments(string key)
+        public ActionResult Comments(string key)
         {
             _logger.Info("Request to CommentsController.GetGameComments. Parameters: gameKey = {0}", key);
-            try
-            {
-                return Json(Mapper.Map<IEnumerable<CommentDTO>, IEnumerable<CommentViewModel>>(_gameService.GetCommentsByGameKey(key)), JsonRequestBehavior.AllowGet);
-            }
-            catch (Exception)
-            {
-                return Json(Mapper.Map<IEnumerable<CommentViewModel>>(_gameService.GetCommentsByGameKey(key)), JsonRequestBehavior.AllowGet);
-            }
+             return View(Mapper.Map<IEnumerable<CommentDTO>, IEnumerable<CommentViewModel>>(_gameService.GetCommentsByGameKey(key)));
+           
         }
     }
 }

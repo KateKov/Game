@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using GameStore.DAL.Interfaces;
@@ -7,7 +8,7 @@ namespace GameStore.DAL.Entities
 {
     public class Publisher : IEntityBase, IEntityNamed
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         [StringLength(65)]
         [Index("IP_name", 1, IsUnique = true)]
         public string Name { get; set; }

@@ -2,6 +2,6 @@
 {
     public interface IDtoBase
     {
-        int Id { get; set; }
+        string Id { get; set; }
     }
 }

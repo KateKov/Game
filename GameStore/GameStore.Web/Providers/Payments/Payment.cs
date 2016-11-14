@@ -13,10 +13,13 @@ namespace GameStore.Web.Providers.Payments
 
         public Payment()
         {
-            _dictionary = new Dictionary<string, IPaymentStrategy>();
-            _dictionary.Add("Bank", new Bank());
-            _dictionary.Add("IBox", new IBox());
-            _dictionary.Add("Visa", new Visa());
+            _dictionary = new Dictionary<string, IPaymentStrategy>()
+            {
+                {"Bank", new Bank() },
+                {"IBox", new IBox() },
+                {"Visa", new Visa() }
+            };
+          
         }
 
         public Payment(string paymentName)
@@ -26,9 +29,9 @@ namespace GameStore.Web.Providers.Payments
 
         private readonly Dictionary<string, IPaymentStrategy> _dictionary;
       
-        public ActionResult Pay(OrderViewModel order)
+        public ActionResult Pay(OrderViewModel order, Func<string, object, ViewResult> viewResult)
         {
-            return Payments.Pay(order);
+            return Payments.Pay(order, viewResult);
         }
     }
 }

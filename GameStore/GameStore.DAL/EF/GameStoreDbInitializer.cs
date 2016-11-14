@@ -13,18 +13,22 @@ namespace GameStore.DAL.EF
             {
                 new PlatformType
                 {
+                    Id = Guid.NewGuid(),
                     Name = "Mobile"
                 },
                 new PlatformType
                 {
+                    Id = Guid.NewGuid(),
                     Name = "Desktop"
                 },
                 new PlatformType
                 {
+                    Id = Guid.NewGuid(),
                     Name = "Browser"
                 },
                 new PlatformType
                 {
+                    Id = Guid.NewGuid(),
                     Name = "Console"
                 }
             };
@@ -33,34 +37,42 @@ namespace GameStore.DAL.EF
             {
                 new Genre
                 {
+                    Id = Guid.NewGuid(),
                     Name = "Strategy"
                 },
                 new Genre
                 {
+                    Id = Guid.NewGuid(),
                     Name = "RPG"
                 },
                 new Genre
                 {
+                    Id = Guid.NewGuid(),
                     Name = "Sports"
                 },
                 new Genre
                 {
+                    Id = Guid.NewGuid(),
                     Name = "Races"
                 },
                 new Genre
                 {
+                    Id = Guid.NewGuid(),
                     Name = "Action"
                 },
                 new Genre
                 {
+                    Id = Guid.NewGuid(),
                     Name = "Adventure"
                 },
                 new Genre
                 {
+                    Id = Guid.NewGuid(),
                     Name = "Puzzle&Skill"
                 },
                 new Genre
                 {
+                    Id = Guid.NewGuid(),
                     Name = "Misc"
                 }
             };
@@ -68,41 +80,49 @@ namespace GameStore.DAL.EF
             {
                 new Genre
                 {
+                    Id = Guid.NewGuid(),
                     Name = "RTS",
                     ParentGenre = genres[0]
                 },
                 new Genre
                 {
+                    Id = Guid.NewGuid(),
                     Name = "TBS",
                     ParentGenre = genres[0]
                 },
                 new Genre
                 {
+                    Id = Guid.NewGuid(),
                     Name = "Rally",
                     ParentGenre = genres[3]
                 },
                 new Genre
                 {
+                    Id = Guid.NewGuid(),
                     Name = "Arcade",
                     ParentGenre = genres[3]
                 },
                 new Genre
                 {
+                    Id = Guid.NewGuid(),
                     Name = "Formula",
                     ParentGenre = genres[3]
                 },
                 new Genre
                 {
+                    Id = Guid.NewGuid(),
                     Name = "Off-road",
                     ParentGenre = genres[3]
                 },
                 new Genre
                 {
+                    Id = Guid.NewGuid(),
                     Name = "FPS",
                     ParentGenre = genres[4]
                 },
                 new Genre
                 {
+                    Id = Guid.NewGuid(),
                     Name = "TPS",
                     ParentGenre = genres[4]
                 }          
@@ -113,13 +133,13 @@ namespace GameStore.DAL.EF
             {
                 new Comment
                 {
-                    Id = 1,
+                    Id = Guid.NewGuid(),
                     Name = "Marina",
                     Body = "First comment"
                 },
                 new Comment
                 {
-                    Id = 2,
+                    Id = Guid.NewGuid(),
                     Name = "Artur",
                     Body = "Second comment"
                 }
@@ -128,14 +148,14 @@ namespace GameStore.DAL.EF
             {
                 new Comment
                 {
-                    Id = 3,
+                    Id = Guid.NewGuid(),
                     Name = "Anna",
                     Body = "Answer for the first comment",
                     ParentComment = firstLevelComments[0]
                 },
                 new Comment
                 {
-                    Id = 4,
+                   Id = Guid.NewGuid(),
                     Name = "Ivan",
                     Body = "Some joke",
                     ParentComment = firstLevelComments[0]
@@ -145,7 +165,7 @@ namespace GameStore.DAL.EF
             {
                 new Comment
                 {
-                    Id = 5,
+                    Id = Guid.NewGuid(),
                     Name = "Dmitriy",
                     Body = "Anna, i write you responce",
                     ParentComment = secondLevelComments[0]
@@ -158,12 +178,14 @@ namespace GameStore.DAL.EF
             {
                 new OrderDetail
                 {
+                    Id = Guid.NewGuid(),
                     Discount = 15,
                     Quantity = 4,
                     Price = 15
                 },
                 new OrderDetail
                 {
+                    Id =Guid.NewGuid(),
                     Discount = 20,
                     Quantity = 18,
                     Price = 20
@@ -175,6 +197,7 @@ namespace GameStore.DAL.EF
             {
                 new Publisher
                 {
+                    Id = Guid.NewGuid(),
                     Description = "Cool publisher",
                     HomePage = "www.tratratra.com",
                     Name = "GamesCorporation"
@@ -185,6 +208,7 @@ namespace GameStore.DAL.EF
             {
                 new Game
                 {
+                    Id = Guid.NewGuid(),
                     Key = "Gta6_ThirdEdition",
                     Name = "Gta6",
                     Description = "It's very interesting game",
@@ -206,6 +230,7 @@ namespace GameStore.DAL.EF
                 },
                 new Game
                 {
+                    Id = Guid.NewGuid(),
                     Key = "Sims3_16in1",
                     Name = "Sims3",
                     Description = "You'll spend a lot of time playing in this game",
@@ -222,7 +247,8 @@ namespace GameStore.DAL.EF
                     Discountinues = false,
                     Price=15,
                     UnitsInStock = 20,
-                    OrderDetails = new List<OrderDetail> {orderDetails[1]}
+                    OrderDetails = new List<OrderDetail> {orderDetails[1]},
+                    Publisher = publishers[0]
                 }
             };
             db.Games.AddRange(games);
@@ -230,7 +256,8 @@ namespace GameStore.DAL.EF
             {
                 new Order
                 {
-                    CustomerId = 1,
+                    Id = Guid.NewGuid(),
+                    CustomerId = Guid.NewGuid(),
                     Date = DateTime.UtcNow,
                     OrderDetails = new List<OrderDetail> {orderDetails[0], orderDetails[1]}
                 }

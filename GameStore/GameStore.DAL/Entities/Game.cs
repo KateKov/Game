@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using GameStore.DAL.Interfaces;
@@ -8,7 +9,7 @@ namespace GameStore.DAL.Entities
     public class Game : IEntityBase, IEntityNamed, IEntityWithKey
     {
         [Key]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         [Required]
         [StringLength(65)]
@@ -22,8 +23,7 @@ namespace GameStore.DAL.Entities
         public decimal Price { get; set; }
         public short UnitsInStock { get; set; }
         public bool Discountinues { get; set; }
-        [ForeignKey("Publisher")]
-        public int? PublisherId { get; set; }
+        public Guid? PublisherId { get; set; }
         public virtual Publisher Publisher { get; set; }
         public virtual ICollection<OrderDetail> OrderDetails { get; set; }
         public virtual ICollection<Comment> Comments { get; set; }

@@ -7,7 +7,7 @@ namespace GameStore.DAL.Interfaces
     public interface IRepository<T> where T : class, IEntityBase, new()
     {   
         IEnumerable<T> GetAll();
-        T GetSingle(int? id);
+        T GetSingle(Guid id);
         IEnumerable<T> FindBy(Expression<Func<T, bool>> predicate);
         void Add(T entity);
         void Delete(T entity);

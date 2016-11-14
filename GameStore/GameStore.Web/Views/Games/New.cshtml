@@ -2,6 +2,8 @@
 
 @model UpdateGameViewModel
 
+
+
 @{
     ViewBag.Title = "Новая игра";
 }
@@ -18,7 +20,7 @@
                
                  Add @Model.Game.Name game. Make sure you fill all required fields.
             </div>
-            @using (Html.BeginForm("New", "Games", Model.Publishers, FormMethod.Post))
+            @using (Html.BeginForm("New", "Games", FormMethod.Post))
             {
                 @Html.ValidationSummary(true)
                 @Html.AntiForgeryToken()
@@ -77,12 +79,12 @@
                     <div class="form-group">
 
                      
-                            @Html.NameFor(model => model.Game.Genres)
+                            @Html.NameFor(model => model.Genres)
                             
 
-                                @Html.ListBoxFor(model => model.Game.Genres, new MultiSelectList(new SelectList(Model.Genres, "Id", "Name"), "Value", "Text"))
+                                @Html.ListBoxFor(model => model.Game.Genres, new MultiSelectList(Model.Genres, "Id", "Name"))
 
-                                @Html.ValidationMessageFor(model => model.Game.PlatformTypes, "", new { @class = "text-danger" })
+                                @Html.ValidationMessageFor(model => model.Game.Genres, "", new { @class = "text-danger" })
                          
 
                        
@@ -94,7 +96,7 @@
                             @Html.NameFor(model => model.Game.PlatformTypes)
                             <div class="col-md-10">
 
-                                @Html.ListBoxFor(model => model.Types, new MultiSelectList(new SelectList(Model.Types, "Id", "Name"), "Value", "Text"))
+                                @Html.ListBoxFor(model => model.Game.PlatformTypes, new MultiSelectList(Model.Types, "Id", "Name"))
 
                                 @Html.ValidationMessageFor(model => model.Game.PlatformTypes, "", new { @class = "text-danger" })
                             </div>

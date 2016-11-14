@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using GameStore.DAL.Interfaces;
@@ -9,7 +9,7 @@ namespace GameStore.DAL.Entities
     public class PlatformType : IEntityBase, IEntityNamed
     {
         [Key]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         [Required]
         [StringLength(65)]
         [Index("IZ_type", 1, IsUnique = true)]
