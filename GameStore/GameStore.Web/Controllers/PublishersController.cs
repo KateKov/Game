@@ -49,11 +49,6 @@ namespace GameStore.Web.Controllers
             var publisher = new PublisherViewModel() { Id = createPublisher.Id, Name=createPublisher.Name,  Description = createPublisher.Description, HomePage = createPublisher.HomePage };
             var publisherDto = Mapper.Map<PublisherDTO>(publisher);
             _service.AddOrUpdate(publisherDto, true);
-            //var games = _service.GetAll<GameDTO>().Where(x => createPublisher.SelectedGames != null && createPublisher.SelectedGames.Contains(x.Key)).ToList();
-            //games.ForEach(x => x.PublisherId = publisher.Id);
-            //games.ForEach(x => x.PublisherName = publisher.Name);
-            //games.ForEach(x => _service.AddOrUpdate(x, false));
-          
             return RedirectToAction("Index");
         }
     }

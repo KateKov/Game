@@ -238,6 +238,7 @@
     <Content Include="Views\Publishers\New.cshtml" />
     <Content Include="Views\Publishers\Details.cshtml" />
     <Content Include="Views\Comments\Comments.cshtml" />
+    <Content Include="Views\Games\Update.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

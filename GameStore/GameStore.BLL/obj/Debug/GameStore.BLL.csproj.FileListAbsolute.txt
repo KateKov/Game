@@ -104,3 +104,19 @@ C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.
 C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.BLL\obj\Debug\GameStore.BLL.csprojResolveAssemblyReference.cache
 C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.BLL\obj\Debug\GameStore.BLL.dll
 C:\Users\kater_000\Pictures\Новая папка\Game\Game\GameStore\GameStore.BLL\obj\Debug\GameStore.BLL.pdb
+C:\Users\Kateryna_Kovalenko\Downloads\gamestoreNEW\Game\GameStore\GameStore.BLL\bin\Debug\GameStore.BLL.dll.config
+C:\Users\Kateryna_Kovalenko\Downloads\gamestoreNEW\Game\GameStore\GameStore.BLL\bin\Debug\GameStore.BLL.dll
+C:\Users\Kateryna_Kovalenko\Downloads\gamestoreNEW\Game\GameStore\GameStore.BLL\bin\Debug\GameStore.BLL.pdb
+C:\Users\Kateryna_Kovalenko\Downloads\gamestoreNEW\Game\GameStore\GameStore.BLL\bin\Debug\AutoMapper.dll
+C:\Users\Kateryna_Kovalenko\Downloads\gamestoreNEW\Game\GameStore\GameStore.BLL\bin\Debug\GameStore.DAL.dll
+C:\Users\Kateryna_Kovalenko\Downloads\gamestoreNEW\Game\GameStore\GameStore.BLL\bin\Debug\Ninject.dll
+C:\Users\Kateryna_Kovalenko\Downloads\gamestoreNEW\Game\GameStore\GameStore.BLL\bin\Debug\NLog.dll
+C:\Users\Kateryna_Kovalenko\Downloads\gamestoreNEW\Game\GameStore\GameStore.BLL\bin\Debug\EntityFramework.dll
+C:\Users\Kateryna_Kovalenko\Downloads\gamestoreNEW\Game\GameStore\GameStore.BLL\bin\Debug\GameStore.DAL.pdb
+C:\Users\Kateryna_Kovalenko\Downloads\gamestoreNEW\Game\GameStore\GameStore.BLL\bin\Debug\AutoMapper.xml
+C:\Users\Kateryna_Kovalenko\Downloads\gamestoreNEW\Game\GameStore\GameStore.BLL\bin\Debug\Ninject.xml
+C:\Users\Kateryna_Kovalenko\Downloads\gamestoreNEW\Game\GameStore\GameStore.BLL\bin\Debug\NLog.xml
+C:\Users\Kateryna_Kovalenko\Downloads\gamestoreNEW\Game\GameStore\GameStore.BLL\bin\Debug\EntityFramework.xml
+C:\Users\Kateryna_Kovalenko\Downloads\gamestoreNEW\Game\GameStore\GameStore.BLL\obj\Debug\GameStore.BLL.csprojResolveAssemblyReference.cache
+C:\Users\Kateryna_Kovalenko\Downloads\gamestoreNEW\Game\GameStore\GameStore.BLL\obj\Debug\GameStore.BLL.dll
+C:\Users\Kateryna_Kovalenko\Downloads\gamestoreNEW\Game\GameStore\GameStore.BLL\obj\Debug\GameStore.BLL.pdb

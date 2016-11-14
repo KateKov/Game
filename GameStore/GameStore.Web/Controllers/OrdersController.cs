@@ -28,7 +28,7 @@ namespace GameStore.Web.Controllers
         {
            var order = Mapper.Map<OrderViewModel>(_service.GetById<OrderDTO>(id));
            var bank = new Bank();
-            return bank.Pay(order);
+            return bank.Pay(order, View);
         }
 
         [HttpGet]
@@ -42,7 +42,10 @@ namespace GameStore.Web.Controllers
         public ActionResult Order(string customerId ="")
         {
             var order = _service.GetOrders(customerId);
-            return View(Mapper.Map<OrderViewModel>(order));
+            var orderViewModel = Mapper.Map<OrderViewModel>(order);
+            var orderPayment = new OrderPaymentViewModel();
+            orderPayment.Order = orderViewModel;
+            return View(orderPayment);
         }
 
         [HttpGet]
@@ -57,7 +60,7 @@ namespace GameStore.Web.Controllers
         public ActionResult Pay(OrderViewModel order, string paymentName)
         {
             _pay = new Payment(paymentName);
-            return _pay.Pay(order);
+            return _pay.Pay(order, View);
         }
 
       
@@ -66,7 +69,7 @@ namespace GameStore.Web.Controllers
         public ActionResult IBoxPay(OrderPaymentViewModel order)
         {
             var pay = new Payment();
-            return pay.Pay(order.Order);
+            return pay.Pay(order.Order, View);
         }
 
         [HttpGet]

@@ -12,6 +12,5 @@ namespace GameStore.BLL.DTO
         public string GameKey { get; set; }
         public string ParentId { get; set; }
         public string ParrentComment { get; set; }
-        public virtual ICollection<CommentDTO> ChildComments { get; set; }  
     }
 }

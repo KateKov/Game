@@ -8,6 +8,13 @@ namespace GameStore.DAL.Entities
 {
     public class Game : IEntityBase, IEntityNamed, IEntityWithKey
     {
+        public Game()
+        {
+            OrderDetails=new List<OrderDetail>();
+            Comments=new List<Comment>();
+            Genres=new List<Genre>();
+            PlatformTypes=new List<PlatformType>();
+        }
         [Key]
         public Guid Id { get; set; }
 

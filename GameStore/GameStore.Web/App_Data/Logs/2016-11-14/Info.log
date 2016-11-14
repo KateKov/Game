@@ -34,3 +34,63 @@
 800000df-0002-f400-b63f-84710c7967bb|2016-11-14 08:25:50.8253|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
 80000ad5-0001-ed00-b63f-84710c7967bb|2016-11-14 08:32:32.0971|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
 800035ab-0003-ff00-b63f-84710c7967bb|2016-11-14 08:32:33.1480|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+8000000d-0003-f200-b63f-84710c7967bb|2016-11-14 10:42:23.9272|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000019-0001-f000-b63f-84710c7967bb|2016-11-14 12:33:33.4195|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000002a-0000-ef00-b63f-84710c7967bb|2016-11-14 12:34:32.2446|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000031-0000-ef00-b63f-84710c7967bb|2016-11-14 12:34:47.0303|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000003a-0000-ef00-b63f-84710c7967bb|2016-11-14 12:36:37.8188|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000028-0000-fa00-b63f-84710c7967bb|2016-11-14 12:39:56.3443|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000036-0000-fa00-b63f-84710c7967bb|2016-11-14 12:42:19.4685|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000003a-0000-f700-b63f-84710c7967bb|2016-11-14 12:44:03.1003|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000001b-0001-ed00-b63f-84710c7967bb|2016-11-14 12:44:12.0294|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000014-0001-eb00-b63f-84710c7967bb|2016-11-14 13:07:17.0897|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800026eb-0002-f000-b63f-84710c7967bb|2016-11-14 13:07:17.8737|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000044-0002-fe00-b63f-84710c7967bb|2016-11-14 13:13:50.8363|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800000cf-0002-ee00-b63f-84710c7967bb|2016-11-14 13:16:15.1562|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000041-0001-ed00-b63f-84710c7967bb|2016-11-14 13:17:07.2517|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000172-0000-f900-b63f-84710c7967bb|2016-11-14 13:18:34.7119|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000180-0000-ef00-b63f-84710c7967bb|2016-11-14 13:20:08.1453|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000004d-0003-ec00-b63f-84710c7967bb|2016-11-14 13:29:11.3680|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000065-0002-ef00-b63f-84710c7967bb|2016-11-14 13:31:43.6300|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000003b-0001-e700-b63f-84710c7967bb|2016-11-14 13:33:27.6931|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000193-0000-f900-b63f-84710c7967bb|2016-11-14 13:36:01.6773|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000b77-0003-f500-b63f-84710c7967bb|2016-11-14 13:38:09.7237|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000b7c-0003-f500-b63f-84710c7967bb|2016-11-14 13:38:24.5285|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000244-0000-ef00-b63f-84710c7967bb|2016-11-14 13:38:56.5789|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000249-0000-ef00-b63f-84710c7967bb|2016-11-14 13:40:07.2431|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000004a-0000-e700-b63f-84710c7967bb|2016-11-14 13:45:36.9125|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000319-0003-ee00-b63f-84710c7967bb|2016-11-14 13:47:29.6599|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000006e-0003-ec00-b63f-84710c7967bb|2016-11-14 13:47:57.9845|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800000d9-0000-e600-b63f-84710c7967bb|2016-11-14 13:48:15.4752|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000b9d-0003-f500-b63f-84710c7967bb|2016-11-14 13:51:01.7802|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800001de-0000-f400-b63f-84710c7967bb|2016-11-14 14:21:49.5075|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800000cd-0000-e300-b63f-84710c7967bb|2016-11-14 15:14:22.8354|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800001a7-0001-e400-b63f-84710c7967bb|2016-11-14 15:46:20.7772|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800001a8-0001-e400-b63f-84710c7967bb|2016-11-14 15:47:57.7415|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800001ad-0001-e400-b63f-84710c7967bb|2016-11-14 15:49:41.5450|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 9dbbe0a6-3d93-4ca5-81ed-921412856fe9 Key fdg 
+800001ae-0001-e400-b63f-84710c7967bb|2016-11-14 15:49:41.5450|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000005e-0000-ea00-b63f-84710c7967bb|2016-11-14 15:57:44.5711|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000074b-0003-ea00-b63f-84710c7967bb|2016-11-14 15:58:08.3955|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id df7307dd-10a8-4e80-942a-f28ce53fc0c2 Key dfgdf_GamesCorporation 
+8000074c-0003-ea00-b63f-84710c7967bb|2016-11-14 15:58:08.4145|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000122-0000-ee00-b63f-84710c7967bb|2016-11-14 16:01:32.5219|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000029-0000-ec00-b63f-84710c7967bb|2016-11-14 16:41:31.7303|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000002f-0000-ec00-b63f-84710c7967bb|2016-11-14 16:41:53.3288|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id e9e0a63c-28ce-45e4-b023-c8475ec1508a Key fdg_GamesCorporation 
+80000030-0000-ec00-b63f-84710c7967bb|2016-11-14 16:41:53.3418|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000274-0000-f100-b63f-84710c7967bb|2016-11-14 16:43:53.0954|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000000b-0003-f000-b63f-84710c7967bb|2016-11-14 16:44:03.7457|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id bd6ace0a-6eac-4d6b-8bad-c4a5b8e889bd Key dfgdf_GamesCorporation 
+8000000c-0003-f000-b63f-84710c7967bb|2016-11-14 16:44:03.7627|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000089-0000-e700-b63f-84710c7967bb|2016-11-14 16:44:36.1496|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800003d5-0000-f900-b63f-84710c7967bb|2016-11-14 16:44:46.4534|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id a73e79da-814d-4c55-8f62-bad182085f6e Key fdg_GamesCorporation 
+800003d6-0000-f900-b63f-84710c7967bb|2016-11-14 16:44:46.4684|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000519-0001-f600-b63f-84710c7967bb|2016-11-14 16:50:20.7096|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000051d-0001-f600-b63f-84710c7967bb|2016-11-14 16:50:35.1511|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 04af3793-b0ac-4e28-b547-7afb893e3761 Key dfg_GamesCorporation 
+8000051e-0001-f600-b63f-84710c7967bb|2016-11-14 16:50:35.1771|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000002-0000-e100-b63f-84710c7967bb|2016-11-14 16:51:17.2699|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000006-0000-e100-b63f-84710c7967bb|2016-11-14 16:51:31.0897|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id c3c0a3d5-7def-487a-9bc4-2287cc448701 Key cvbcv_GamesCorporation 
+80000007-0000-e100-b63f-84710c7967bb|2016-11-14 16:51:31.1067|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000052b-0001-f600-b63f-84710c7967bb|2016-11-14 16:54:17.2914|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id fa33c1b1-cf4d-48da-b0c1-4fcfa664fc1a Key dsfs_GamesCorporation 
+8000052c-0001-f600-b63f-84710c7967bb|2016-11-14 16:54:17.2914|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800003bd-0001-e100-b63f-84710c7967bb|2016-11-14 17:00:12.2962|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 78433350-19f3-4553-94b4-3ec5589bdde0 Key fg_GamesCorporation 
+800003be-0001-e100-b63f-84710c7967bb|2016-11-14 17:00:12.3112|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000033-0000-ed00-b63f-84710c7967bb|2016-11-14 17:01:12.7779|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id c29a8aae-5422-4a64-94df-dc03f5d9520a Key gfh_GamesCorporation 
+80000034-0000-ed00-b63f-84710c7967bb|2016-11-14 17:01:12.7940|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get

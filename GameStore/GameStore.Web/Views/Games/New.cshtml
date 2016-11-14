@@ -18,44 +18,46 @@
                 <a class="panel-close close" data-dismiss="alert">×</a>
                 <i class="fa fa-plus"></i>
                
-                 Add @Model.Game.Name game. Make sure you fill all required fields.
+                 Add game. Make sure you fill all required fields.
             </div>
             @using (Html.BeginForm("New", "Games", FormMethod.Post))
             {
-                @Html.ValidationSummary(true)
+               
                 @Html.AntiForgeryToken()
-                @Html.HiddenFor(m=>m.Game.Id)
+
+                @Html.ValidationSummary(true)
+                @Html.HiddenFor(m => m.Id)
                 <div class="form-horizontal">
-                    <h4>Игра</h4>
+                    <h4>Game</h4>
                     <hr />
                     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                     <div class="form-group">
-                        @Html.NameFor(model => model.Game.Name)
+                        @Html.NameFor(model => model.Name)
 
-                            @Html.EditorFor(a => a.Game.Name,  new { htmlAttributes = new {  @class = "form-control" }})
-                            @Html.ValidationMessageFor(model => model.Game.Name, "", new { @class = "text-danger" })
+                            @Html.EditorFor(a => a.Name,  new { htmlAttributes = new {  @class = "form-control" }})
+                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
             
                     </div>
                     <div class="form-group">
-                        @Html.NameFor(model => model.Game.Description)
+                        @Html.NameFor(model => model.Description)
              
-                            @Html.EditorFor(model => model.Game.Description, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.Game.Description, "", new { @class = "text-danger" })
+                            @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
                     
                     </div>
                    
                     <div class="form-group">
-                        @Html.NameFor(model => model.Game.Price)
+                        @Html.NameFor(model => model.Price)
                       
-                            @Html.EditorFor(model => model.Game.Price, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.Game.Price, "", new { @class = "text-danger" })
+                            @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
                     
                     </div>
                     <div class="form-group">
-                        @Html.NameFor(model => model.Game.UnitsInStock)
+                        @Html.NameFor(model => model.UnitsInStock)
                    
-                            @Html.EditorFor(model => model.Game.UnitsInStock, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.Game.UnitsInStock, "", new { @class = "text-danger" })
+                            @Html.EditorFor(model => model.UnitsInStock, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.UnitsInStock, "", new { @class = "text-danger" })
                       
 
                     </div>
@@ -64,11 +66,11 @@
                     <div class="form-group">
 
                    
-                            @Html.NameFor(model => model.Game.PublisherId)
+                            @Html.NameFor(model => model.PublisherName)
                           
                              
-                                @Html.DropDownListFor(model => model.Game.PublisherId, new SelectList(Model.Publishers, "Id", "Name"))
-                                @Html.ValidationMessageFor(model => model.Game.PlatformTypes, "", new { @class = "text-danger" })
+                                @Html.DropDownListFor(model => model.PublisherName, new SelectList(Model.AllPublishers, "Name", "Name"))
+                                @Html.ValidationMessageFor(model => model.PublisherName, "", new { @class = "text-danger" })
                          
 
                     
@@ -79,12 +81,9 @@
                     <div class="form-group">
 
                      
-                            @Html.NameFor(model => model.Genres)
-                            
-
-                                @Html.ListBoxFor(model => model.Game.Genres, new MultiSelectList(Model.Genres, "Id", "Name"))
-
-                                @Html.ValidationMessageFor(model => model.Game.Genres, "", new { @class = "text-danger" })
+                            @Html.NameFor(model => model.GenresName)
+                            @Html.ListBoxFor(model => model.GenresName, new MultiSelectList(Model.AllGenres, "Name", "Name" ), htmlAttributes: new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.GenresName, "", new { @class = "text-danger" })
                          
 
                        
@@ -93,13 +92,14 @@
                     <div class="form-group">
 
                        
-                            @Html.NameFor(model => model.Game.PlatformTypes)
-                            <div class="col-md-10">
+                            @Html.NameFor(model => model.TypesName)
+                        <div class="col-md-10">
+                            @Html.ListBoxFor(model => model.TypesName, new MultiSelectList(Model.AllTypes, "Name", "Name"), htmlAttributes: new { @class = "form-control" })
 
-                                @Html.ListBoxFor(model => model.Game.PlatformTypes, new MultiSelectList(Model.Types, "Id", "Name"))
+                      
 
-                                @Html.ValidationMessageFor(model => model.Game.PlatformTypes, "", new { @class = "text-danger" })
-                            </div>
+                            @Html.ValidationMessageFor(model => model.TypesName, "", new { @class = "text-danger" })
+                        </div>
 
                        
 
@@ -107,12 +107,12 @@
                     <div class="form-group">
 
                        
-                            @Html.NameFor(model => model.Game.Discountinues)
+                            @Html.NameFor(model => model.Discountinues)
                           
 
-                                @Html.EditorFor(model => model.Game.Discountinues, new { htmlAttributes = new { @class = "form-control" }} )
+                                @Html.EditorFor(model => model.Discountinues, new { htmlAttributes = new { @class = "form-control" }} )
 
-                               @Html.ValidationMessageFor(model => model.Game.Discountinues, "", new { @class = "text-danger" })
+                               @Html.ValidationMessageFor(model => model.Discountinues, "", new { @class = "text-danger" })
                           
 
                     </div>
@@ -125,7 +125,7 @@
 
                         <div class="col-md-offset-2 col-md-10">
 
-                            <input type="submit" value="Создать" class="btn btn-default" />
+                            <input type="submit" value="Create" class="btn btn-default" />
 
                         </div>
 

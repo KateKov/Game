@@ -16,9 +16,10 @@ namespace GameStore.BLL.DTO
         public bool Discountinues { get; set; }
         public string PublisherName { get; set; }
         public string PublisherId { get; set; }
-        public ICollection<OrderDetailDTO> OrderDetails { get; set; }
-        public ICollection<GenreDTO> Genres { get; set; }
-        public ICollection<CommentDTO> Comments { get; set; }
-        public ICollection<PlatformTypeDTO> PlatformTypes { get; set; }
+        public ICollection<string> GenresId { get; set; }
+        public ICollection<string> GenresName { get; set; }
+        public ICollection<string> TypesId { get; set; }
+        public ICollection<string> TypesName { get; set; }
+        public ICollection<string> Comments { get; set; }
     }
 }

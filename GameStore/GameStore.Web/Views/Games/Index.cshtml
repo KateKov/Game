@@ -30,10 +30,10 @@
             @Html.DisplayNameFor(model => model.Discountinues)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Genres)
+            @Html.DisplayNameFor(model => model.GenresName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.PlatformTypes)
+            @Html.DisplayNameFor(model => model.TypesName)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.PublisherName)
@@ -62,15 +62,15 @@
                 @Html.DisplayFor(modelItem => item.Discountinues)
             </td>
             <td>
-                @foreach (var i in item.Genres)
+                @foreach (var i in item.GenresName)
                 {
-                    <p>@i.Name</p>
+                    <p>@i</p>
                 }
             </td>
             <td>
-                @foreach (var k in item.PlatformTypes)
+                @foreach (var i in item.TypesName)
                 {
-                    <p>@k.Name</p>
+                    <p>@i</p>
                 }
             </td>
             <td>
@@ -79,7 +79,7 @@
             <td>
                 <span>@Html.ActionLink("Edit", "Update", new { key = item.Key }, new { @class = "btn btn-info" }) </span>
                 <p></p>
-                <span> @Html.ActionLink("Details", "Details", new { key = item.Key }, new { @class = "btn btn-info" }) </span>
+                <span> @Html.ActionLink("Details", "Index", "Comments",  new { key = item.Key }, new { @class = "btn btn-info" }) </span>
                 <p></p>
                 <span>  @Html.ActionLink("Buy", "AddToBusket", "Orders", new {  gameId = item.Id, quantity = 6, customerId = 1 }, new { @class = "btn btn-info" })</span>
             </td>

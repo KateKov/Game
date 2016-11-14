@@ -9,6 +9,5 @@ namespace GameStore.BLL.DTO
         public string Name { get; set; }
         public string Description { get; set; }
         public string HomePage { get; set; }
-        public virtual ICollection<GameDTO> Games { get; set; }
     }
 }

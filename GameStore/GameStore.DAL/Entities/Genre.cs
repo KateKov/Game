@@ -9,6 +9,11 @@ namespace GameStore.DAL.Entities
 {
     public class Genre : IEntityBase, IEntityNamed
     {
+        public Genre()
+        {
+            ChildGenres=new List<Genre>();
+            Games =new List<Game>();
+        }
         [Key]
         public Guid Id { get; set; }
         [DisplayName("Жанр")]

@@ -24,16 +24,68 @@ namespace GameStore.BLL.Services
 
         #region Methods for Entities
 
+        private object AddEntities<T, TD>(T model, TD dtoModel) where T : class, IEntityBase, new() where TD: class, IDtoBase, new()
+        {
+            if (model != null && (model is Game).Equals(true))
+            {
+                var objGame =  (object) model;
+                var objGameDto = (object) dtoModel;
+                var game = (Game) objGame;
+                var gameDto = (GameDTO) objGameDto;
+                game.Comments =
+                    _unitOfWork.Repository<Comment>().FindBy(x => gameDto.Comments.Contains(x.Id.ToString())).ToList();
+                game.PlatformTypes =
+                    _unitOfWork.Repository<PlatformType>().FindBy(x => gameDto.TypesName.Contains(x.Name)).ToList();
+                game.Genres =
+                    _unitOfWork.Repository<Genre>().FindBy(x => gameDto.GenresName.Contains(x.Name)).ToList();
+                game.Publisher =
+                    _unitOfWork.Repository<Publisher>().FindBy(x => gameDto.PublisherName==x.Name).FirstOrDefault();
+                return game;
+            }
+            if (model != null && (model is Genre).Equals(true))
+            {
+                var objGenre = (object)model;
+                var objGenreDto = (object)dtoModel;
+                var genre = (Genre) objGenre;
+                var genreDto = (GenreDTO)objGenreDto;
+                genre.Games =
+                    _unitOfWork.Repository<Game>().FindBy(x => genreDto.GamesKey.Contains(x.Key)).ToList();
+                return genre;
+            }
+            if (model != null && (model is Comment).Equals(true))
+            {
+                var objComment = (object)model;
+                var objCommentDto = (object)dtoModel;
+                var comment = (Comment) objComment;
+                var commentDto = (CommentDTO)objCommentDto;
+                comment.Game =
+                    _unitOfWork.Repository<Game>().FindBy(x => x.Key == commentDto.GameKey).FirstOrDefault();
+                return comment;
+            }
+            if (model != null && (model is PlatformType).Equals(true))
+            {
+                var objType = (object)model;
+                var objTypeDto = (object)dtoModel;
+                var type = (PlatformType)objType;
+                var typeDto = (PlatformTypeDTO)objTypeDto;
+                type.Games =
+                    _unitOfWork.Repository<Game>().FindBy(x => typeDto.GameKey.Contains(x.Key)).ToList();
+                return type;
+            }
+            return null;
+        }
+
         public void AddEntity<T, TD>(TD model) where T : class, IEntityBase, new() where TD : class, IDtoBase, new()
         {
             if (model == null)
                 throw new ValidationException("Cannot find "+ typeof(T).Name, string.Empty);
             var entity = Mapper.Map<TD, T>(model);
+            var result = (T) AddEntities(entity, model);
             //var name = (model is IDtoNamed).Equals(true) ? ((IDtoNamed)model).Name : "";
             //var key = (model is IDtoWithKey).Equals(true) ? ((IDtoWithKey)model).Key : "";
             //CheckName(key);
 
-            _unitOfWork.Repository<T>().Add(entity);
+            _unitOfWork.Repository<T>().Add(result);
         }
 
         public void EditEntity<T, TD>(TD entity) where T : class, IEntityBase, new() where TD : class, IDtoBase, new()
@@ -385,16 +437,21 @@ namespace GameStore.BLL.Services
             var busket = _unitOfWork.Repository<Order>().FindBy(x => x.CustomerId == Guid.Parse(customerId) && !x.IsConfirmed).FirstOrDefault();
             if (busket == null)
             {
-                var order = new OrderDTO();
-                order.OrderDetails = new List<OrderDetailDTO>() {product};
+                var order = new OrderDTO() {Id =Guid.NewGuid().ToString()};
+                var productOrder = product;
+                productOrder.OrderId = order.Id;
+                var orderDetail = productOrder;
+   
                 var orderEntity = Mapper.Map<Order>(order);
                 _unitOfWork.Repository<Order>().Add(orderEntity);
+                var orderDetailEntity = Mapper.Map<OrderDetail>(orderDetail);
+                _unitOfWork.Repository<OrderDetail>().Add(orderDetailEntity);
             }
             else
             {
                 var productEntity = Mapper.Map<OrderDetail>(product);
+                productEntity.OrderId = busket.Id;
                 busket.OrderDetails.Add(productEntity);
-                _unitOfWork.Repository<Order>().Edit(busket);
             }
             _logger.Debug("Adding product with Game {0} to the busket of Customer {1} ", product.GameId, customerId);
            

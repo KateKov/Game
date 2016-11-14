@@ -10,10 +10,14 @@ namespace GameStore.DAL.Entities
 {
     public class Order: IEntityBase
     {
+        public Order()
+        {
+            OrderDetails =new List<OrderDetail>();
+        }
         public Guid Id { get; set; }
         public Guid CustomerId { get; set; }
         public DateTime Date { get; set; }
-        public ICollection<OrderDetail> OrderDetails { get; set; }
+        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
         public bool IsConfirmed { get; set; }
         public decimal Sum { get; set; }
     }

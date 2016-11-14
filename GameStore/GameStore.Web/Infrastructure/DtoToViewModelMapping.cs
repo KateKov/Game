@@ -16,6 +16,10 @@ namespace GameStore.Web.Infrastructure
         protected override void Configure()
         {
             CreateMap<CommentDTO, CommentViewModel>();
+            CreateMap<GameDTO, UpdateGameViewModel>();
+             
+             
+            CreateMap<UpdateGameViewModel, GameDTO>();
             CreateMap<GenreDTO, GenreViewModel>();
             CreateMap<PlatformTypeDTO, PlatformTypeViewModel>();
             CreateMap<OrderDetailDTO, OrderDetailViewModel>();

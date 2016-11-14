@@ -7,6 +7,7 @@ using System.Web.UI;
 using AutoMapper;
 using GameStore.BLL.DTO;
 using GameStore.BLL.Interfaces;
+using GameStore.DAL.Entities;
 using GameStore.Web.ViewModels;
 using NLog;
 
@@ -41,59 +42,60 @@ namespace GameStore.Web.Controllers
         [HttpGet]
         public ActionResult New()
         {
-            var game = new UpdateGameViewModel();
-            game.Game = new GameViewModel();
-            game.Publishers = Mapper.Map<IEnumerable<PublisherDTO>, IEnumerable<PublisherViewModel>>(_gameService.GetAll<PublisherDTO>()).ToList();
-            game.Genres =
-                Mapper.Map<IEnumerable<GenreDTO>, IEnumerable<GenreViewModel>>(_gameService.GetAll<GenreDTO>()).ToList();
-            game.Types =
-                Mapper.Map<IEnumerable<PlatformTypeDTO>, IEnumerable<PlatformTypeViewModel>>(
-                    _gameService.GetAll<PlatformTypeDTO>()).ToList();
+            var game = new UpdateGameViewModel()
+            {
+                Id = Guid.NewGuid().ToString(),
+                AllPublishers = Mapper.Map<IEnumerable<PublisherDTO>, IEnumerable<PublisherViewModel>>(_gameService.GetAll<PublisherDTO>()).ToList(),
+                AllTypes = Mapper.Map<IEnumerable<PlatformTypeDTO>, IEnumerable<PlatformTypeViewModel>>(_gameService.GetAll<PlatformTypeDTO>()).ToList(),
+                AllGenres = Mapper.Map<IEnumerable<GenreDTO>, IEnumerable<GenreViewModel>>(_gameService.GetAll<GenreDTO>()).ToList()
+            };
             return View(game);
         }
 
         [HttpPost]
         public ActionResult New(UpdateGameViewModel game)
         {
-           
-                GameViewModel gameViewModel;
-                //try
-                //{
-                gameViewModel = game.Game;
-                gameViewModel.Key = GenerateKey(gameViewModel.Name, gameViewModel.PublisherName);
-                GameDTO gameDto = Mapper.Map<GameViewModel, GameDTO>(gameViewModel);
-                _gameService.AddOrUpdate<GameDTO>(gameDto, true);
-                //}
-                //catch (Exception)
-                //{
-                //    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-                //}
-
-                _logger.Info("Game is created. Id {0} Key {1} ", gameViewModel.Id, gameViewModel.Key);
-            
+            var gameViewModel = game;
+            gameViewModel.Key = GenerateKey(game.Name, game.PublisherName);
+            var gameDto = Mapper.Map<GameDTO>(gameViewModel);     
+            _gameService.AddOrUpdate(gameDto, true);
+             _logger.Info("Game is created. Id {0} Key {1} ", gameViewModel.Id, gameViewModel.Key);                          
             return RedirectToAction("Index");
         }
 
         private string GenerateKey(string name, string publisherName)
         {
-            return name + "_" + publisherName;
+            return name+"_"+publisherName;
+        }
+
+        [HttpGet]
+        public ActionResult Update(string key)
+        {
+            var game = _gameService.GetByKey<GameDTO>(key);
+            var gameUpdate = Mapper.Map<GameDTO, UpdateGameViewModel>(game);
+            gameUpdate.AllTypes = Mapper.Map<IEnumerable<PlatformTypeDTO>, IEnumerable<PlatformTypeViewModel>>(
+                    _gameService.GetAll<PlatformTypeDTO>()).ToList();
+            gameUpdate.AllGenres = Mapper.Map<IEnumerable<GenreDTO>, IEnumerable<GenreViewModel>>(_gameService.GetAll<GenreDTO>()).ToList();
+            gameUpdate.AllPublishers =
+                Mapper.Map<IEnumerable<PublisherDTO>, IEnumerable<PublisherViewModel>>(_gameService.GetAll<PublisherDTO>()).ToList();
+            return View(gameUpdate);
         }
 
         [HttpPost]
-        public HttpStatusCodeResult Update(GameViewModel game)
+        public ActionResult Update(GameViewModel game)
         {
             _logger.Info("Request to GamesController.Update");
             try
             {
                 GameDTO gameDto = Mapper.Map<GameViewModel, GameDTO>(game);
                 _gameService.AddOrUpdate(gameDto, false);
+                return RedirectToAction("Index");
             }
             catch (Exception)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
 
-            return new HttpStatusCodeResult(HttpStatusCode.OK);
         }
               
         [HttpPost] 

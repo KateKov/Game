@@ -8,6 +8,10 @@ namespace GameStore.DAL.Entities
 {
     public class PlatformType : IEntityBase, IEntityNamed
     {
+        public PlatformType()
+        {
+            Games = new List<Game>();
+        }
         [Key]
         public Guid Id { get; set; }
         [Required]

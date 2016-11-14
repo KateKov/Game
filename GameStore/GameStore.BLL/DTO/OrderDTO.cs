@@ -11,6 +11,5 @@ namespace GameStore.BLL.DTO
         public DateTime Date { get; set; }
         public decimal Sum { get; set; }
         public bool IsConfirmed { get; set; }
-        public ICollection<OrderDetailDTO> OrderDetails { get; set; }
     }
 }

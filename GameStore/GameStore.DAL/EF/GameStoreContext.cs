@@ -25,6 +25,7 @@ namespace GameStore.DAL.EF
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
+
             modelBuilder.Entity<Game>()
                 .HasMany(g => g.Comments)
                 .WithRequired(c => c.Game)
