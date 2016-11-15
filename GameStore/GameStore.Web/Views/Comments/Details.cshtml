@@ -1,0 +1,130 @@
+﻿@using GameStore.Web.ViewModels
+
+@model GameViewModel
+
+@{
+    ViewBag.Title = "Новая игра";
+}
+
+<div id="addGame">
+    <hr>
+    <div class="row">
+
+        <!-- edit form column -->
+        <div class="col-xs-9 personal-info">
+            <div class="alert alert-info alert-dismissable">
+                <a class="panel-close close" data-dismiss="alert">×</a>
+                <i class="fa fa-plus"></i>
+
+            
+            </div>
+
+                @Html.HiddenFor(m => m.Id)
+            @Html.HiddenFor(m => m.Key)
+                <div class="form-horizontal">
+                    <h4>Игра</h4>
+                    <hr />
+               
+                    <div class="form-group">
+                        @Html.NameFor(model => model.Name)
+
+                        @Html.LabelFor(a => a.Name, new { htmlAttributes = new { @class = "form-control" } })
+               
+
+                    </div>
+                    <div class="form-group">
+                        @Html.NameFor(model => model.Description)
+
+                        @Html.LabelFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                      
+
+                    </div>
+
+                    <div class="form-group">
+                        @Html.NameFor(model => model.Price)
+
+                        @Html.LabelFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+                  
+
+                    </div>
+                    <div class="form-group">
+                        @Html.NameFor(model => model.UnitsInStock)
+
+                        @Html.LabelFor(model => model.UnitsInStock, new { htmlAttributes = new { @class = "form-control" } })
+                
+
+
+                    </div>
+
+
+                    <div class="form-group">
+
+
+                        @Html.NameFor(model => model.PublisherName)
+
+
+                        @Html.LabelFor(model => model.PublisherName, new { htmlAttributes = new { @class = "form-control" } })
+                    
+
+
+                    </div>
+
+
+                    <div class="form-group">
+
+
+                        @Html.NameFor(model => model.GenresName)
+
+
+                        @foreach (var item in Model.GenresName)
+                        {
+                            <span>@item</span>
+                        }
+
+                     
+
+
+
+                    </div>
+                    <div class="form-group">
+
+
+                        @Html.NameFor(model => model.TypesName)
+                       @foreach(var item in Model.TypesName)
+                       {
+                           <span>@item</span>
+                       }
+
+                          
+                        
+                        </div>
+
+
+
+                    </div>
+                    <div class="form-group">
+
+
+                        @Html.NameFor(model => model.Discountinues)
+
+
+                        @Html.DisplayFor(model => model.Discountinues, new { htmlAttributes = new { @class = "form-control" } })
+
+
+
+
+                    </div>
+
+
+
+
+
+            @Html.ActionLink("Download", "Download", new { key = Model.Key })
+            @Html.ActionLink("Comments", "Comments", new {  key = Model.Key })
+
+                </div>
+            
+
+        </div>
+    </div>
+    <hr>

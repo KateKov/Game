@@ -79,11 +79,28 @@
             <td>
                 <span>@Html.ActionLink("Edit", "Update", new { key = item.Key }, new { @class = "btn btn-info" }) </span>
                 <p></p>
-                <span> @Html.ActionLink("Details", "Index", "Comments",  new { key = item.Key }, new { @class = "btn btn-info" }) </span>
+                <span> @Html.ActionLink("Details", "Details", "Comments",  new { key = item.Key }, new { @class = "btn btn-info" }) </span>
                 <p></p>
-                <span>  @Html.ActionLink("Buy", "AddToBusket", "Orders", new {  gameId = item.Id, quantity = 6, customerId = 1 }, new { @class = "btn btn-info" })</span>
+              
+                @using (Html.BeginForm("AddToBusket", "Orders", FormMethod.Get))
+                {
+                    <input type="text" name="gameId" value="@item.Id" hidden="hidden"/>
+                    <input type="text" name="quanity" min="1" max="@item.UnitsInStock" onchange = "isright(this);" style="width: 50px" />
+                    <input type="text" name="customerId" value="1" hidden="hidden"/>
+                    <input type="submit" value="Buy" class = "btn btn-info"/>
+                }
+                          
             </td>
         </tr>
     }
 
 </table>
+<script>
+function isright(obj)
+ {
+ var value= +obj.value.replace(/\D/g,'')||0;
+ var min = +obj.getAttribute('min');
+ var max = +obj.getAttribute('max');
+ obj.value = Math.min(max, Math.max(min, value));
+ }
+</script>

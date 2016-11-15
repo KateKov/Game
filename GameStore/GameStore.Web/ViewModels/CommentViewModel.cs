@@ -21,7 +21,6 @@ namespace GameStore.Web.ViewModels
         public string ParentCommentName { get; set; }
         [Display(Name = "Parent")]
         public string ParentCommentId { get; set; }
-        public virtual ICollection<CommentViewModel> ChildComments { get; set; }
         public string Quote { get; set; }
         public bool IsDeleted { get; set; }
     }

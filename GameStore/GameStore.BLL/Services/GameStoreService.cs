@@ -38,8 +38,8 @@ namespace GameStore.BLL.Services
                     _unitOfWork.Repository<PlatformType>().FindBy(x => gameDto.TypesName.Contains(x.Name)).ToList();
                 game.Genres =
                     _unitOfWork.Repository<Genre>().FindBy(x => gameDto.GenresName.Contains(x.Name)).ToList();
-                game.Publisher =
-                    _unitOfWork.Repository<Publisher>().FindBy(x => gameDto.PublisherName==x.Name).FirstOrDefault();
+                game.PublisherId =
+                    _unitOfWork.Repository<Publisher>().FindBy(x => gameDto.PublisherName==x.Name).FirstOrDefault().Id;
                 return game;
             }
             if (model != null && (model is Genre).Equals(true))
@@ -72,7 +72,19 @@ namespace GameStore.BLL.Services
                     _unitOfWork.Repository<Game>().FindBy(x => typeDto.GameKey.Contains(x.Key)).ToList();
                 return type;
             }
-            return null;
+            if (model != null && (model is OrderDetail).Equals(true))
+            {
+                var objOrderDetail = (object)model;
+                var objOrderDetailDto = (object)dtoModel;
+                var orderDetail = (OrderDetail)objOrderDetail;
+                var orderDetailDto = (OrderDetailDTO)objOrderDetailDto;
+                orderDetail.Game =
+                    _unitOfWork.Repository<Game>().GetSingle(Guid.Parse(orderDetailDto.GameId));
+                orderDetail.Order =
+                    _unitOfWork.Repository<Order>().GetSingle(Guid.Parse(orderDetailDto.OrderId));
+                return orderDetail;
+            }
+            return model;
         }
 
         public void AddEntity<T, TD>(TD model) where T : class, IEntityBase, new() where TD : class, IDtoBase, new()
@@ -88,11 +100,13 @@ namespace GameStore.BLL.Services
             _unitOfWork.Repository<T>().Add(result);
         }
 
-        public void EditEntity<T, TD>(TD entity) where T : class, IEntityBase, new() where TD : class, IDtoBase, new()
+        public void EditEntity<T, TD>(TD model) where T : class, IEntityBase, new() where TD : class, IDtoBase, new()
         {
-            if (entity == null)
+            if (model == null)
                 throw new ValidationException("Cannot find " + typeof(T).Name, string.Empty);
-            _unitOfWork.Repository<T>().Edit(Mapper.Map<TD, T>(entity));
+            var entity = Mapper.Map<TD, T>(model);
+            var result = (T)AddEntities(entity, model);
+            _unitOfWork.Repository<T>().Edit(result);
         }
 
         public IEnumerable<T> GetAllEntities<T>() where T : class, IEntityBase, new()
@@ -233,7 +247,6 @@ namespace GameStore.BLL.Services
                 throw new ValidationException(entityType.Name + " wasn't found", string.Empty);
             }
             _logger.Debug("Getting" + entityType.Name + "by key={0} ", key);
-            var gameDto = Mapper.Map<GameDTO>(entityType);
             return entity;
         }
 
@@ -248,7 +261,6 @@ namespace GameStore.BLL.Services
                 throw new ValidationException(entityType.Name + " wasn't found", string.Empty);
             }
             _logger.Debug("Getting" + entityType.Name + "by id={0} ", id);
-            var gameDto = Mapper.Map<GameDTO>(entityType);
             return entity;
         }
 
@@ -263,7 +275,6 @@ namespace GameStore.BLL.Services
                 throw new ValidationException(entityType.Name + " wasn't found", string.Empty);
             }
             _logger.Debug("Getting" + entityType.Name + "by name={0} ", name);
-            var gameDto = Mapper.Map<GameDTO>(entityType);
             return entity;
         }
 
@@ -356,18 +367,18 @@ namespace GameStore.BLL.Services
             return Mapper.Map<OrderDTO>(order);
         }
 
-        public OrderDetailDTO GetOrderDetail(string gameId, short quantity, string customerId = "")
+        public void GetOrderDetail(string gameId, short quantity, string customerId = "")
         {
             var game = GetById<GameDTO>(gameId);
             var orderDetail = new OrderDetailDTO()
             {
+                Id=Guid.NewGuid().ToString(),
                 Discount = 0,
                 GameId = gameId,
                 Price = game.Price,
                 Quantity = quantity
             };
-            AddOrUpdate<OrderDetailDTO>(orderDetail, true);
-            return orderDetail;
+            AddToBusket(orderDetail, customerId);
         }
 
         public OrderDTO GetOrderByCustomer(string id)
@@ -434,17 +445,17 @@ namespace GameStore.BLL.Services
             {
                 throw new ValidationException("CustomerId is not valid for adding to busket", string.Empty);
             }
-            var busket = _unitOfWork.Repository<Order>().FindBy(x => x.CustomerId == Guid.Parse(customerId) && !x.IsConfirmed).FirstOrDefault();
+            //var busket = _unitOfWork.Repository<Order>().FindBy(x => x.CustomerId == Guid.Parse(customerId) && !x.IsConfirmed).FirstOrDefault();
+            var busket = _unitOfWork.Repository<Order>().GetAll().FirstOrDefault();
             if (busket == null)
             {
                 var order = new OrderDTO() {Id =Guid.NewGuid().ToString()};
                 var productOrder = product;
                 productOrder.OrderId = order.Id;
-                var orderDetail = productOrder;
-   
                 var orderEntity = Mapper.Map<Order>(order);
                 _unitOfWork.Repository<Order>().Add(orderEntity);
-                var orderDetailEntity = Mapper.Map<OrderDetail>(orderDetail);
+                var orderDetailEntity = Mapper.Map<OrderDetail>(productOrder);
+                orderDetailEntity = (OrderDetail)AddEntities(orderDetailEntity, productOrder);
                 _unitOfWork.Repository<OrderDetail>().Add(orderDetailEntity);
             }
             else

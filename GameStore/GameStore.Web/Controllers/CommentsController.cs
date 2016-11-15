@@ -24,7 +24,7 @@ namespace GameStore.Web.Controllers
         }
 
         [HttpGet]        
-        public ActionResult Index(string key)
+        public ActionResult Details(string key)
         {
             _logger.Info("Request to GameController.Index. Parameters: Key = {0}", key);
 

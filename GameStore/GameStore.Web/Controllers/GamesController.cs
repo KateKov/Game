@@ -55,12 +55,16 @@ namespace GameStore.Web.Controllers
         [HttpPost]
         public ActionResult New(UpdateGameViewModel game)
         {
-            var gameViewModel = game;
-            gameViewModel.Key = GenerateKey(game.Name, game.PublisherName);
-            var gameDto = Mapper.Map<GameDTO>(gameViewModel);     
-            _gameService.AddOrUpdate(gameDto, true);
-             _logger.Info("Game is created. Id {0} Key {1} ", gameViewModel.Id, gameViewModel.Key);                          
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                var gameViewModel = game;
+                gameViewModel.Key = GenerateKey(game.Name, game.PublisherName);
+                var gameDto = Mapper.Map<GameDTO>(gameViewModel);
+                _gameService.AddOrUpdate(gameDto, true);
+                _logger.Info("Game is created. Id {0} Key {1} ", gameViewModel.Id, gameViewModel.Key);
+                return RedirectToAction("Index");
+            }
+            return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
         }
 
         private string GenerateKey(string name, string publisherName)
@@ -82,20 +86,15 @@ namespace GameStore.Web.Controllers
         }
 
         [HttpPost]
-        public ActionResult Update(GameViewModel game)
+        public ActionResult Update(UpdateGameViewModel game)
         {
             _logger.Info("Request to GamesController.Update");
-            try
-            {
-                GameDTO gameDto = Mapper.Map<GameViewModel, GameDTO>(game);
+            if(ModelState.IsValid)
+            { GameDTO gameDto = Mapper.Map<UpdateGameViewModel, GameDTO>(game);
                 _gameService.AddOrUpdate(gameDto, false);
                 return RedirectToAction("Index");
             }
-            catch (Exception)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-
+            return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
         }
               
         [HttpPost] 

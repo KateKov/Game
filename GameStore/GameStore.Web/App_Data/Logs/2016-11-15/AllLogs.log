@@ -1,0 +1,270 @@
+80000009-0000-fa00-b63f-84710c7967bb|2016-11-15 02:30:04.1475|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800013ec-0002-ee00-b63f-84710c7967bb|2016-11-15 02:31:13.2059|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+800013ec-0002-ee00-b63f-84710c7967bb|2016-11-15 02:31:14.1400|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800013ec-0002-ee00-b63f-84710c7967bb|2016-11-15 02:31:15.3752|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+80000009-0000-fa00-b63f-84710c7967bb|2016-11-15 02:31:15.3752|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80002e33-0001-e800-b63f-84710c7967bb|2016-11-15 02:31:54.4769|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+80002e33-0001-e800-b63f-84710c7967bb|2016-11-15 02:31:54.4949|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80002e33-0001-e800-b63f-84710c7967bb|2016-11-15 02:31:54.5378|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+800013f9-0002-ee00-b63f-84710c7967bb|2016-11-15 02:42:50.2855|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80006bff-0002-f200-b63f-84710c7967bb|2016-11-15 02:42:50.2855|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80006bff-0002-f200-b63f-84710c7967bb|2016-11-15 02:44:21.1965|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800013f9-0002-ee00-b63f-84710c7967bb|2016-11-15 02:44:21.1965|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800023f6-0003-fb00-b63f-84710c7967bb|2016-11-15 02:44:40.5380|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+800023f6-0003-fb00-b63f-84710c7967bb|2016-11-15 02:44:40.6273|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800023f6-0003-fb00-b63f-84710c7967bb|2016-11-15 02:44:40.7463|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+800023f9-0003-fb00-b63f-84710c7967bb|2016-11-15 02:45:01.2914|DEBUG|GameStore.BLL.Services.GameStoreService|Add GameDTO with Id: bcb8cba6-d485-45f7-935c-5c18f7567f84
+800023f9-0003-fb00-b63f-84710c7967bb|2016-11-15 02:45:01.2914|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id bcb8cba6-d485-45f7-935c-5c18f7567f84 Key safassd_GamesCorporation 
+800023fa-0003-fb00-b63f-84710c7967bb|2016-11-15 02:45:01.4315|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800023fa-0003-fb00-b63f-84710c7967bb|2016-11-15 02:45:01.4745|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 3  Games.
+80000ff9-0002-e900-b63f-84710c7967bb|2016-11-15 02:48:08.8762|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+80000ff9-0002-e900-b63f-84710c7967bb|2016-11-15 02:48:08.8932|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000ff9-0002-e900-b63f-84710c7967bb|2016-11-15 02:48:08.9412|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+80000051-0002-fd00-b63f-84710c7967bb|2016-11-15 02:51:44.4249|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+80000051-0002-fd00-b63f-84710c7967bb|2016-11-15 02:51:44.4439|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000051-0002-fd00-b63f-84710c7967bb|2016-11-15 02:51:44.4891|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+80001003-0002-e900-b63f-84710c7967bb|2016-11-15 02:53:16.0912|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001003-0002-e900-b63f-84710c7967bb|2016-11-15 02:53:16.1402|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 3  Games.
+80000021-0000-fa00-b63f-84710c7967bb|2016-11-15 02:53:21.7845|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000021-0000-fa00-b63f-84710c7967bb|2016-11-15 02:53:21.9156|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 3  Games.
+80002408-0003-fb00-b63f-84710c7967bb|2016-11-15 02:53:48.3477|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+8000057d-0001-f900-b63f-84710c7967bb|2016-11-15 02:56:15.8553|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000057d-0001-f900-b63f-84710c7967bb|2016-11-15 02:56:23.5269|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+8000057f-0001-f900-b63f-84710c7967bb|2016-11-15 02:56:38.4539|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+8000058d-0001-f900-b63f-84710c7967bb|2016-11-15 02:58:00.1261|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000058d-0001-f900-b63f-84710c7967bb|2016-11-15 02:58:05.9111|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000a46-0000-ee00-b63f-84710c7967bb|2016-11-15 02:58:23.2026|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Sims3_16in1 
+80000a46-0000-ee00-b63f-84710c7967bb|2016-11-15 02:58:23.2496|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000a46-0000-ee00-b63f-84710c7967bb|2016-11-15 02:58:23.4077|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+80000a46-0000-ee00-b63f-84710c7967bb|2016-11-15 02:58:23.4338|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+80006c28-0002-f200-b63f-84710c7967bb|2016-11-15 02:58:36.8442|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+8000130f-0002-ff00-b63f-84710c7967bb|2016-11-15 02:59:24.0969|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+800011b9-0001-e600-b63f-84710c7967bb|2016-11-15 02:59:45.1097|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+8000159d-0000-e500-b63f-84710c7967bb|2016-11-15 03:00:54.2821|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000159d-0000-e500-b63f-84710c7967bb|2016-11-15 03:01:05.6073|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+8000519c-0002-ed00-b63f-84710c7967bb|2016-11-15 03:01:33.5789|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+8000519c-0002-ed00-b63f-84710c7967bb|2016-11-15 03:01:33.6299|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+8000519c-0002-ed00-b63f-84710c7967bb|2016-11-15 03:01:33.7740|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+8000519c-0002-ed00-b63f-84710c7967bb|2016-11-15 03:01:33.8111|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+8000519e-0002-ed00-b63f-84710c7967bb|2016-11-15 03:01:37.6505|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+8000031c-0000-f000-b63f-84710c7967bb|2016-11-15 03:02:45.9270|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000031c-0000-f000-b63f-84710c7967bb|2016-11-15 03:02:45.9590|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+8000031e-0000-f000-b63f-84710c7967bb|2016-11-15 03:02:57.3341|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+8000031e-0000-f000-b63f-84710c7967bb|2016-11-15 03:02:57.3511|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+8000031e-0000-f000-b63f-84710c7967bb|2016-11-15 03:02:57.3991|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+8000031e-0000-f000-b63f-84710c7967bb|2016-11-15 03:02:57.4051|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+80000321-0000-f000-b63f-84710c7967bb|2016-11-15 03:02:59.9828|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+80000321-0000-f000-b63f-84710c7967bb|2016-11-15 03:03:00.1757|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: ed8bc220-68a0-41c4-8e1b-6fe377f327a3
+80000322-0000-f000-b63f-84710c7967bb|2016-11-15 03:03:00.1927|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000322-0000-f000-b63f-84710c7967bb|2016-11-15 03:03:00.2208|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+8000008c-0002-fd00-b63f-84710c7967bb|2016-11-15 03:03:10.1130|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+8000008c-0002-fd00-b63f-84710c7967bb|2016-11-15 03:03:10.1871|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: ed8bc220-68a0-41c4-8e1b-6fe377f327a3
+80001121-0001-eb00-b63f-84710c7967bb|2016-11-15 03:05:12.0865|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000001d-0001-e400-b63f-84710c7967bb|2016-11-15 03:05:12.0865|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000001d-0001-e400-b63f-84710c7967bb|2016-11-15 03:05:35.4203|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80001121-0001-eb00-b63f-84710c7967bb|2016-11-15 03:05:35.4203|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000018-0003-ed00-b63f-84710c7967bb|2016-11-15 03:05:58.1148|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80000018-0003-ed00-b63f-84710c7967bb|2016-11-15 03:05:58.1588|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000018-0003-ed00-b63f-84710c7967bb|2016-11-15 03:05:58.2549|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+80000018-0003-ed00-b63f-84710c7967bb|2016-11-15 03:05:58.2779|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+8000001b-0003-ed00-b63f-84710c7967bb|2016-11-15 03:06:04.8240|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+8000001b-0003-ed00-b63f-84710c7967bb|2016-11-15 03:06:04.8960|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: 1089477c-ab7a-4532-8ecb-addcfa9724c8
+8000001c-0003-ed00-b63f-84710c7967bb|2016-11-15 03:06:04.9080|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000001c-0003-ed00-b63f-84710c7967bb|2016-11-15 03:06:04.9368|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800051ab-0002-ed00-b63f-84710c7967bb|2016-11-15 03:07:10.1920|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+800051ab-0002-ed00-b63f-84710c7967bb|2016-11-15 03:07:10.2050|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: 1089477c-ab7a-4532-8ecb-addcfa9724c8
+800051ac-0002-ed00-b63f-84710c7967bb|2016-11-15 03:07:10.2050|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800051ac-0002-ed00-b63f-84710c7967bb|2016-11-15 03:07:10.2470|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80003e16-0002-f400-b63f-84710c7967bb|2016-11-15 03:08:23.1523|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+80003e16-0002-f400-b63f-84710c7967bb|2016-11-15 03:08:23.1774|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80003e16-0002-f400-b63f-84710c7967bb|2016-11-15 03:08:23.2284|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+800001d0-0000-f500-b63f-84710c7967bb|2016-11-15 03:08:36.3248|DEBUG|GameStore.BLL.Services.GameStoreService|Add GameDTO with Id: 592532e7-0308-49be-814c-540b5b065602
+800001d0-0000-f500-b63f-84710c7967bb|2016-11-15 03:08:36.3258|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 592532e7-0308-49be-814c-540b5b065602 Key fgs_GamesCorporation 
+800001d1-0000-f500-b63f-84710c7967bb|2016-11-15 03:08:36.3258|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800001d1-0000-f500-b63f-84710c7967bb|2016-11-15 03:08:36.3718|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 3  Games.
+800001d4-0000-f500-b63f-84710c7967bb|2016-11-15 03:08:44.4200|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=fgs_GamesCorporation 
+800001d4-0000-f500-b63f-84710c7967bb|2016-11-15 03:08:44.4440|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800001d4-0000-f500-b63f-84710c7967bb|2016-11-15 03:08:44.5001|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+800001d4-0000-f500-b63f-84710c7967bb|2016-11-15 03:08:44.5001|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+800001d6-0000-f500-b63f-84710c7967bb|2016-11-15 03:08:48.3884|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+800001d6-0000-f500-b63f-84710c7967bb|2016-11-15 03:08:48.3884|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: 592532e7-0308-49be-814c-540b5b065602
+80001db8-0000-e700-b63f-84710c7967bb|2016-11-15 03:12:27.3278|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001db8-0000-e700-b63f-84710c7967bb|2016-11-15 03:12:41.8647|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800000ad-0000-f800-b63f-84710c7967bb|2016-11-15 03:13:00.4907|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+800000ad-0000-f800-b63f-84710c7967bb|2016-11-15 03:13:00.5427|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800000ad-0000-f800-b63f-84710c7967bb|2016-11-15 03:13:00.6408|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+80000a47-0001-ea00-b63f-84710c7967bb|2016-11-15 03:13:55.0003|DEBUG|GameStore.BLL.Services.GameStoreService|Add GameDTO with Id: 
+80000a47-0001-ea00-b63f-84710c7967bb|2016-11-15 03:13:55.0003|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id  Key fssdfs_GamesCorporation 
+80000a48-0001-ea00-b63f-84710c7967bb|2016-11-15 03:13:55.0233|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000a48-0001-ea00-b63f-84710c7967bb|2016-11-15 03:13:55.0813|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 3  Games.
+80000a4a-0001-ea00-b63f-84710c7967bb|2016-11-15 03:14:07.8290|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=fssdfs_GamesCorporation 
+80000a4a-0001-ea00-b63f-84710c7967bb|2016-11-15 03:14:07.8590|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000a4a-0001-ea00-b63f-84710c7967bb|2016-11-15 03:14:07.9100|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+80000a4a-0001-ea00-b63f-84710c7967bb|2016-11-15 03:14:07.9100|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+80000a6b-0000-ee00-b63f-84710c7967bb|2016-11-15 03:14:12.8171|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+80000a4d-0001-ea00-b63f-84710c7967bb|2016-11-15 03:15:10.6206|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+80000a4e-0001-ea00-b63f-84710c7967bb|2016-11-15 03:15:59.3886|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000a4e-0001-ea00-b63f-84710c7967bb|2016-11-15 03:15:59.4797|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 3  Games.
+800000bc-0000-f800-b63f-84710c7967bb|2016-11-15 03:16:01.1651|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=fssdfs_GamesCorporation 
+800000bc-0000-f800-b63f-84710c7967bb|2016-11-15 03:16:01.1831|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800000bc-0000-f800-b63f-84710c7967bb|2016-11-15 03:16:01.2257|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+800000bc-0000-f800-b63f-84710c7967bb|2016-11-15 03:16:01.2257|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+800012c5-0003-f500-b63f-84710c7967bb|2016-11-15 03:16:11.3662|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+800000c1-0000-f800-b63f-84710c7967bb|2016-11-15 03:18:57.1548|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800000c1-0000-f800-b63f-84710c7967bb|2016-11-15 03:19:10.7633|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000a71-0000-ee00-b63f-84710c7967bb|2016-11-15 03:19:27.4298|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000a5e-0001-ea00-b63f-84710c7967bb|2016-11-15 03:19:27.4298|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000a71-0000-ee00-b63f-84710c7967bb|2016-11-15 03:19:33.7367|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000a5e-0001-ea00-b63f-84710c7967bb|2016-11-15 03:19:33.7367|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+8000140e-0002-ee00-b63f-84710c7967bb|2016-11-15 03:20:12.3928|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Sims3_16in1 
+8000140e-0002-ee00-b63f-84710c7967bb|2016-11-15 03:20:12.4409|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+8000140e-0002-ee00-b63f-84710c7967bb|2016-11-15 03:20:12.5109|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+8000140e-0002-ee00-b63f-84710c7967bb|2016-11-15 03:20:12.5329|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+80006c32-0002-f200-b63f-84710c7967bb|2016-11-15 03:20:16.7777|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+80006c32-0002-f200-b63f-84710c7967bb|2016-11-15 03:20:16.9558|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: 4af7feb8-afdb-4ee9-a9cc-3fe3236bfd0d
+80006c33-0002-f200-b63f-84710c7967bb|2016-11-15 03:20:16.9898|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80006c33-0002-f200-b63f-84710c7967bb|2016-11-15 03:20:17.1039|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80001e68-0003-fc00-b63f-84710c7967bb|2016-11-15 03:20:24.6495|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+80001e68-0003-fc00-b63f-84710c7967bb|2016-11-15 03:20:24.6935|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: 4af7feb8-afdb-4ee9-a9cc-3fe3236bfd0d
+80000a69-0001-ea00-b63f-84710c7967bb|2016-11-15 03:20:38.8496|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+80000a69-0001-ea00-b63f-84710c7967bb|2016-11-15 03:20:38.9587|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: 4af7feb8-afdb-4ee9-a9cc-3fe3236bfd0d
+800012d9-0003-f500-b63f-84710c7967bb|2016-11-15 03:21:14.8170|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+800012d9-0003-f500-b63f-84710c7967bb|2016-11-15 03:21:14.8531|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: 4af7feb8-afdb-4ee9-a9cc-3fe3236bfd0d
+800012db-0003-f500-b63f-84710c7967bb|2016-11-15 03:21:17.4357|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Sims3_16in1 
+800012db-0003-f500-b63f-84710c7967bb|2016-11-15 03:21:17.4657|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800012db-0003-f500-b63f-84710c7967bb|2016-11-15 03:21:17.5427|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+800012db-0003-f500-b63f-84710c7967bb|2016-11-15 03:21:17.5468|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+80001dc7-0000-e700-b63f-84710c7967bb|2016-11-15 03:21:21.3865|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+80001dc7-0000-e700-b63f-84710c7967bb|2016-11-15 03:21:21.4936|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: 4af7feb8-afdb-4ee9-a9cc-3fe3236bfd0d
+80001dc8-0000-e700-b63f-84710c7967bb|2016-11-15 03:21:21.5206|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001dc8-0000-e700-b63f-84710c7967bb|2016-11-15 03:21:21.5737|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80001dcb-0000-e700-b63f-84710c7967bb|2016-11-15 03:21:29.5448|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+80001dcb-0000-e700-b63f-84710c7967bb|2016-11-15 03:21:29.5948|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: 4af7feb8-afdb-4ee9-a9cc-3fe3236bfd0d
+80000045-0003-ee00-b63f-84710c7967bb|2016-11-15 03:21:37.1059|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+80000045-0003-ee00-b63f-84710c7967bb|2016-11-15 03:21:37.1612|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: 4af7feb8-afdb-4ee9-a9cc-3fe3236bfd0d
+800015c6-0000-e500-b63f-84710c7967bb|2016-11-15 03:23:22.4002|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800015c6-0000-e500-b63f-84710c7967bb|2016-11-15 03:23:40.3626|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000cc4-0001-e400-b63f-84710c7967bb|2016-11-15 03:23:57.4604|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000cc4-0001-e400-b63f-84710c7967bb|2016-11-15 03:23:57.6045|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000cc6-0001-e400-b63f-84710c7967bb|2016-11-15 03:24:00.3612|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80000cc6-0001-e400-b63f-84710c7967bb|2016-11-15 03:24:00.4122|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000cc6-0001-e400-b63f-84710c7967bb|2016-11-15 03:24:00.4913|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+80000cc6-0001-e400-b63f-84710c7967bb|2016-11-15 03:24:00.5253|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+80000cc8-0001-e400-b63f-84710c7967bb|2016-11-15 03:24:05.2967|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+80001e02-0001-f100-b63f-84710c7967bb|2016-11-15 03:25:43.1704|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001e02-0001-f100-b63f-84710c7967bb|2016-11-15 03:26:00.3011|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80001b15-0002-f600-b63f-84710c7967bb|2016-11-15 03:26:49.6105|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80001b15-0002-f600-b63f-84710c7967bb|2016-11-15 03:26:49.7245|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80001b15-0002-f600-b63f-84710c7967bb|2016-11-15 03:26:49.9017|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+80001b15-0002-f600-b63f-84710c7967bb|2016-11-15 03:26:49.9537|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+80001b17-0002-f600-b63f-84710c7967bb|2016-11-15 03:26:56.2158|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+80001b17-0002-f600-b63f-84710c7967bb|2016-11-15 03:26:57.1143|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: 55754bc2-90a1-4ef7-b6ee-8970557263b2
+80001b18-0002-f600-b63f-84710c7967bb|2016-11-15 03:26:57.1513|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001b18-0002-f600-b63f-84710c7967bb|2016-11-15 03:26:57.4275|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000e98-0000-ef00-b63f-84710c7967bb|2016-11-15 03:27:02.8049|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+80000e98-0000-ef00-b63f-84710c7967bb|2016-11-15 03:27:03.7525|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: 55754bc2-90a1-4ef7-b6ee-8970557263b2
+80000a76-0001-ea00-b63f-84710c7967bb|2016-11-15 03:27:14.7836|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+80000a76-0001-ea00-b63f-84710c7967bb|2016-11-15 03:27:15.8705|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: 55754bc2-90a1-4ef7-b6ee-8970557263b2
+80000a7a-0001-ea00-b63f-84710c7967bb|2016-11-15 03:27:31.4006|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+80000a7a-0001-ea00-b63f-84710c7967bb|2016-11-15 03:27:34.0692|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: 55754bc2-90a1-4ef7-b6ee-8970557263b2
+80002339-0000-f600-b63f-84710c7967bb|2016-11-15 03:27:40.9765|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+80002339-0000-f600-b63f-84710c7967bb|2016-11-15 03:27:41.4929|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80002339-0000-f600-b63f-84710c7967bb|2016-11-15 03:27:43.6236|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+800011b2-0000-fa00-b63f-84710c7967bb|2016-11-15 03:28:04.7244|DEBUG|GameStore.BLL.Services.GameStoreService|Add GameDTO with Id: 
+800011b2-0000-fa00-b63f-84710c7967bb|2016-11-15 03:28:04.7244|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id  Key df_GamesCorporation 
+800011b3-0000-fa00-b63f-84710c7967bb|2016-11-15 03:28:04.7364|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800011b3-0000-fa00-b63f-84710c7967bb|2016-11-15 03:28:09.4922|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 3  Games.
+80000a7f-0001-ea00-b63f-84710c7967bb|2016-11-15 03:28:15.7736|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=df_GamesCorporation 
+80000a7f-0001-ea00-b63f-84710c7967bb|2016-11-15 03:28:16.2099|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000a7f-0001-ea00-b63f-84710c7967bb|2016-11-15 03:28:21.1710|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+80000a7f-0001-ea00-b63f-84710c7967bb|2016-11-15 03:28:21.1860|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+80001e76-0003-fc00-b63f-84710c7967bb|2016-11-15 03:28:30.9480|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+80001e76-0003-fc00-b63f-84710c7967bb|2016-11-15 03:28:32.4791|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: 00000000-0000-0000-0000-000000000000
+8000233e-0000-f600-b63f-84710c7967bb|2016-11-15 03:29:40.5962|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+8000233e-0000-f600-b63f-84710c7967bb|2016-11-15 03:29:41.6214|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+8000233e-0000-f600-b63f-84710c7967bb|2016-11-15 03:29:42.1782|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+8000233e-0000-f600-b63f-84710c7967bb|2016-11-15 03:29:42.2127|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+800004d5-0002-fa00-b63f-84710c7967bb|2016-11-15 03:29:47.8509|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+800004d5-0002-fa00-b63f-84710c7967bb|2016-11-15 03:29:49.1629|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: 55754bc2-90a1-4ef7-b6ee-8970557263b2
+800004d6-0002-fa00-b63f-84710c7967bb|2016-11-15 03:29:49.1990|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800004d6-0002-fa00-b63f-84710c7967bb|2016-11-15 03:29:52.6070|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 3  Games.
+80002341-0000-f600-b63f-84710c7967bb|2016-11-15 03:30:00.6726|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=df_GamesCorporation 
+80002341-0000-f600-b63f-84710c7967bb|2016-11-15 03:30:01.8566|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80002341-0000-f600-b63f-84710c7967bb|2016-11-15 03:30:02.3608|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+80002341-0000-f600-b63f-84710c7967bb|2016-11-15 03:30:02.4133|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+80001e79-0003-fc00-b63f-84710c7967bb|2016-11-15 03:30:05.9037|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+80001e79-0003-fc00-b63f-84710c7967bb|2016-11-15 03:30:06.0328|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: 00000000-0000-0000-0000-000000000000
+80000215-0000-f500-b63f-84710c7967bb|2016-11-15 03:30:19.5335|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+80000215-0000-f500-b63f-84710c7967bb|2016-11-15 03:30:19.7767|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: 55754bc2-90a1-4ef7-b6ee-8970557263b2
+800004de-0002-fa00-b63f-84710c7967bb|2016-11-15 03:30:34.9582|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+800004de-0002-fa00-b63f-84710c7967bb|2016-11-15 03:30:35.0183|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800004de-0002-fa00-b63f-84710c7967bb|2016-11-15 03:30:35.0693|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+80001890-0003-f300-b63f-84710c7967bb|2016-11-15 03:45:48.0105|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001890-0003-f300-b63f-84710c7967bb|2016-11-15 03:46:15.5490|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80001cdf-0003-fd00-b63f-84710c7967bb|2016-11-15 03:50:31.2610|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000014-0002-ea00-b63f-84710c7967bb|2016-11-15 03:50:31.2610|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001cdf-0003-fd00-b63f-84710c7967bb|2016-11-15 03:50:45.6375|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000014-0002-ea00-b63f-84710c7967bb|2016-11-15 03:50:45.7939|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000021-0001-e500-b63f-84710c7967bb|2016-11-15 03:53:27.2140|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800000da-0000-f200-b63f-84710c7967bb|2016-11-15 03:53:27.2140|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000021-0001-e500-b63f-84710c7967bb|2016-11-15 03:53:40.0047|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800000da-0000-f200-b63f-84710c7967bb|2016-11-15 03:53:40.0357|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80001b3b-0002-f600-b63f-84710c7967bb|2016-11-15 03:55:25.8242|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000080f-0002-ef00-b63f-84710c7967bb|2016-11-15 03:55:25.8242|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001b3b-0002-f600-b63f-84710c7967bb|2016-11-15 03:55:35.8343|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+8000080f-0002-ef00-b63f-84710c7967bb|2016-11-15 03:55:35.8343|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000811-0002-ef00-b63f-84710c7967bb|2016-11-15 03:55:47.1152|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby id=677fee09-476c-4765-9d4e-2eda867c328e 
+800015ea-0000-e500-b63f-84710c7967bb|2016-11-15 03:56:57.5261|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000245-0000-f500-b63f-84710c7967bb|2016-11-15 03:56:57.5261|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000245-0000-f500-b63f-84710c7967bb|2016-11-15 03:57:10.4986|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800015ea-0000-e500-b63f-84710c7967bb|2016-11-15 03:57:10.4986|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000a91-0001-ea00-b63f-84710c7967bb|2016-11-15 03:57:21.6326|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby id=abf86921-6842-420c-93c0-6bf914a13063 
+8000270a-0003-f600-b63f-84710c7967bb|2016-11-15 04:23:42.4777|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000270a-0003-f600-b63f-84710c7967bb|2016-11-15 04:24:42.7307|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80002ad8-0001-e200-b63f-84710c7967bb|2016-11-15 04:27:31.3576|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800012f9-0003-f500-b63f-84710c7967bb|2016-11-15 04:27:31.3576|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800012f9-0003-f500-b63f-84710c7967bb|2016-11-15 04:27:46.3030|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80002ad8-0001-e200-b63f-84710c7967bb|2016-11-15 04:27:46.3120|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800012fc-0003-f500-b63f-84710c7967bb|2016-11-15 04:28:01.1774|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby id=0bc2786f-5795-48fd-a035-a1610a3721f5 
+80006991-0002-ed00-b63f-84710c7967bb|2016-11-15 04:29:00.8323|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80006991-0002-ed00-b63f-84710c7967bb|2016-11-15 04:29:12.4951|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000100-0002-fd00-b63f-84710c7967bb|2016-11-15 04:29:29.2719|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby id=c662f742-01ac-4020-8ef3-2486924f710f 
+8000010d-0000-f800-b63f-84710c7967bb|2016-11-15 04:30:39.4760|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000010d-0000-f800-b63f-84710c7967bb|2016-11-15 04:30:39.5090|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800023af-0000-f600-b63f-84710c7967bb|2016-11-15 04:31:47.2581|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800023af-0000-f600-b63f-84710c7967bb|2016-11-15 04:31:47.3222|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800000fd-0000-f200-b63f-84710c7967bb|2016-11-15 04:32:55.0146|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800000fd-0000-f200-b63f-84710c7967bb|2016-11-15 04:32:55.0796|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80001d4e-0000-ee00-b63f-84710c7967bb|2016-11-15 04:41:37.2432|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001d26-0003-fd00-b63f-84710c7967bb|2016-11-15 04:41:37.2432|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001d4e-0000-ee00-b63f-84710c7967bb|2016-11-15 04:42:15.2723|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80001d26-0003-fd00-b63f-84710c7967bb|2016-11-15 04:42:15.2723|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800012ce-0001-e600-b63f-84710c7967bb|2016-11-15 04:42:34.1446|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby id=26b9ee22-f152-4d52-b487-a2516e1da2c8 
+80001eb6-0003-fc00-b63f-84710c7967bb|2016-11-15 04:46:16.3663|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001eb6-0003-fc00-b63f-84710c7967bb|2016-11-15 04:46:25.3851|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+8000024e-0000-f500-b63f-84710c7967bb|2016-11-15 04:46:39.5745|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby id=76bb1fa0-8dae-4673-9839-d452bfd9006a 
+8000285d-0001-e900-b63f-84710c7967bb|2016-11-15 04:56:24.4935|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000e56-0001-f900-b63f-84710c7967bb|2016-11-15 04:56:24.4935|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000285d-0001-e900-b63f-84710c7967bb|2016-11-15 04:56:51.7835|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000e56-0001-f900-b63f-84710c7967bb|2016-11-15 04:56:51.7835|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80002860-0001-e900-b63f-84710c7967bb|2016-11-15 04:57:16.3893|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby id=55f8f8aa-7448-4609-9913-6233a10f37d1 
+80001e83-0002-fe00-b63f-84710c7967bb|2016-11-15 04:59:49.8860|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001a2f-0003-f200-b63f-84710c7967bb|2016-11-15 04:59:49.8860|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001e83-0002-fe00-b63f-84710c7967bb|2016-11-15 05:00:08.9165|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80001a2f-0003-f200-b63f-84710c7967bb|2016-11-15 05:00:08.9165|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80003372-0000-e800-b63f-84710c7967bb|2016-11-15 05:00:23.9122|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby id=ed11156b-6d37-4929-9254-7ba6f88e87ef 
+80003372-0000-e800-b63f-84710c7967bb|2016-11-15 05:00:24.0603|DEBUG|GameStore.BLL.Services.GameStoreService|Adding product with Game ed11156b-6d37-4929-9254-7ba6f88e87ef to the busket of Customer 1 
+80001a3f-0003-f200-b63f-84710c7967bb|2016-11-15 05:08:13.2703|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001a3f-0003-f200-b63f-84710c7967bb|2016-11-15 05:08:41.6643|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800012ed-0001-e600-b63f-84710c7967bb|2016-11-15 05:13:51.0192|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001ecb-0003-fc00-b63f-84710c7967bb|2016-11-15 05:13:51.0192|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001ecb-0003-fc00-b63f-84710c7967bb|2016-11-15 05:14:18.8524|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800012ed-0001-e600-b63f-84710c7967bb|2016-11-15 05:14:18.8524|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80002056-0001-eb00-b63f-84710c7967bb|2016-11-15 05:14:36.7919|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+80002056-0001-eb00-b63f-84710c7967bb|2016-11-15 05:14:37.8780|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+8000273a-0003-f600-b63f-84710c7967bb|2016-11-15 05:16:47.0227|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000273a-0003-f600-b63f-84710c7967bb|2016-11-15 05:17:31.3156|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80001989-0002-ee00-b63f-84710c7967bb|2016-11-15 05:17:58.1168|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+80001989-0002-ee00-b63f-84710c7967bb|2016-11-15 05:17:59.3097|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+8000109d-0002-e900-b63f-84710c7967bb|2016-11-15 05:18:08.0236|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000109d-0002-e900-b63f-84710c7967bb|2016-11-15 05:18:08.4875|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments

@@ -14,14 +14,14 @@ namespace GameStore.Web
                 defaults: new { controller = "Games", action = "Index" });
             routes.MapRoute(
                 name: "CommentsDefault",
-                url: "game/{id}/{action}",
+                url: "game/{key}/{action}",
                 defaults: new { controller = "Comments" },
-                constraints: new { id = @"^[A-Za-z0-9_-]{1,20}", action = @"\w+" });
+                constraints: new { key = @"^[A-Za-z0-9_-]{1,20}", action = @"\w+" });
             routes.MapRoute(
                 name: "Comments",
-                url: "game/{id}/{action}",
+                url: "game/{key}/{action}",
                 defaults: new { controller = "Comments", action = @"Details" },
-                constraints: new { id = @"^[A-Za-z0-9_-]{1,20}" });
+                constraints: new { key = @"^[A-Za-z0-9_-]{1,20}" });
             routes.MapRoute(
                 name: "Games",
                 url: "games/{action}",
@@ -30,6 +30,11 @@ namespace GameStore.Web
                name: "Publishers",
                url: "publisher/{action}",
                defaults: new { controller = "Publishers", action = @"\w+" });
+            routes.MapRoute(
+                name: "Basket",
+                url: "basket/{key}",
+                defaults: new { controller = "Orders", action="AddToBusket", key = @"^[A-Za-z0-9_-]{1,20}" }
+                );
             routes.MapRoute(
                 name: "Default",
                 url: string.Empty,

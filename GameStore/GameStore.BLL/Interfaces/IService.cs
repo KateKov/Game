@@ -24,7 +24,7 @@ namespace GameStore.BLL.Interfaces
         OrderDTO GetBusket(string customerId);
         IEnumerable<OrderDTO> GetOrders(string customerId);
         void AddToBusket(OrderDetailDTO product, string customerId);
-        OrderDetailDTO GetOrderDetail(string gameId, short quantity, string customerId);
+        void GetOrderDetail(string gameId, short quantity, string customerId);
         void DeleteBusket(string customerId);
 
         //Generic methods

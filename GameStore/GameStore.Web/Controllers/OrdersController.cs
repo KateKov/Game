@@ -73,10 +73,9 @@ namespace GameStore.Web.Controllers
         }
 
         [HttpGet]
-        public ActionResult AddToBusket(string gameId, short quantity, string customerId ="")
+        public ActionResult AddToBusket(string gameId, string quantity, string customerId ="")
         {
-            var product = _service.GetOrderDetail(gameId, quantity, customerId);
-            _service.AddToBusket(product, customerId);
+            _service.GetOrderDetail(gameId, Convert.ToInt16(quantity), customerId);
             return RedirectToAction("Basket");
         }
 
