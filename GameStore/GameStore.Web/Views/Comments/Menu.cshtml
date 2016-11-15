@@ -16,7 +16,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-
+<div id="commentsList">
 <ul class="menu">
     @foreach(var mp in Model.Where(p=>p.ParentCommentId ==null))
     {
@@ -38,36 +38,43 @@
         </li>
     }
 </ul>
-
+ </div>
 @helper RenderMenuItem(List<CommentViewModel> menuList, CommentViewModel mi)
 {
 foreach (var cp in menuList.Where(p => p.ParentCommentId == mi.Id))
 {
 
 
-        @:<li>
+    
+            @: <li>
 
 
 
 
 
 
-    if (menuList.Count(p => p.ParentCommentId == mi.Id) > 0)
-    {
-            @:<ul>
-        }
+                if (menuList.Count(p => p.ParentCommentId == mi.Id) > 0)
+                {
+                @:<ul>
+                    }
 
-        @RenderMenuItem(menuList, cp)
+                    @RenderMenuItem(menuList, cp)
 
-    if (menuList.Count(p => p.ParentCommentId == mi.Id) > 0)
-    {
-            @:</ul>
-      }
-    else
-    {
-            @:</li>
-      }
-    }
+                    if (menuList.Count(p => p.ParentCommentId == mi.Id) > 0)
+                    {
+                    @: </ul>
+                }
+                else
+                {
+                @:</li>
+            }
+            }
+       
 }
+@*<style>
+    #commentsList ul { font-size:18px; }
+    #commentsList ul li ul {  padding:5px 0 5px 18px; font-size:15px; }
+    #commentsList ul li ul li { color:#bfe1f1; height:15px; margin-left:10px; }
+</style>*@
 
 

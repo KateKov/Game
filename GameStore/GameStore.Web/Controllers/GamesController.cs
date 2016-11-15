@@ -112,6 +112,13 @@ namespace GameStore.Web.Controllers
 
             _logger.Info($"Game is removed. Id: {game.Id}; Key: {game.Key}");
             return new HttpStatusCodeResult(HttpStatusCode.OK);
-        }  
+        }
+
+        [HttpGet]
+        public ActionResult AddToBasket(string gameId, short unitsInStock, string customerId="")
+        {
+            var basket = new BasketViewModel() {GameId = gameId, CustomerId = customerId, UnitInStock = unitsInStock};
+            return PartialView("AddToBasket", basket);
+        }
     }
 }

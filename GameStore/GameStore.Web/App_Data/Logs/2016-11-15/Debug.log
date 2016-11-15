@@ -176,3 +176,305 @@
 8000273a-0003-f600-b63f-84710c7967bb|2016-11-15 05:17:31.3156|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
 80001989-0002-ee00-b63f-84710c7967bb|2016-11-15 05:17:59.3097|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
 8000109d-0002-e900-b63f-84710c7967bb|2016-11-15 05:18:08.4875|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000002b-0000-e100-b63f-84710c7967bb|2016-11-15 09:46:49.5519|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000009-0003-fb00-b63f-84710c7967bb|2016-11-15 09:47:16.1204|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+8000000b-0003-fb00-b63f-84710c7967bb|2016-11-15 09:47:29.6070|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800004ad-0000-e200-b63f-84710c7967bb|2016-11-15 09:54:49.9633|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800027d9-0002-f000-b63f-84710c7967bb|2016-11-15 09:57:57.3709|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800027e8-0002-f000-b63f-84710c7967bb|2016-11-15 09:59:50.5257|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800000dc-0000-e700-b63f-84710c7967bb|2016-11-15 10:08:02.0603|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800007d9-0001-e700-b63f-84710c7967bb|2016-11-15 10:53:20.8552|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800007dd-0001-e700-b63f-84710c7967bb|2016-11-15 10:53:46.8901|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Sims3_16in1 
+800007df-0001-e700-b63f-84710c7967bb|2016-11-15 10:53:51.9077|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Sims3_16in1. Retured 0 comments
+800007e0-0001-e700-b63f-84710c7967bb|2016-11-15 10:54:21.1119|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Sims3_16in1. Retured 0 comments
+800007e3-0001-e700-b63f-84710c7967bb|2016-11-15 10:54:31.7704|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+800007e5-0001-e700-b63f-84710c7967bb|2016-11-15 10:54:34.4690|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800007e7-0001-e700-b63f-84710c7967bb|2016-11-15 10:56:24.9636|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800008d9-0000-f100-b63f-84710c7967bb|2016-11-15 10:57:26.5918|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800001fe-0002-f300-b63f-84710c7967bb|2016-11-15 10:57:26.5918|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800008e9-0000-f100-b63f-84710c7967bb|2016-11-15 10:57:46.9583|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+8000041c-0000-f900-b63f-84710c7967bb|2016-11-15 10:57:51.4806|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+8000041f-0000-f900-b63f-84710c7967bb|2016-11-15 10:57:57.9281|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800000c1-0000-f200-b63f-84710c7967bb|2016-11-15 10:58:40.0337|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+8000001b-0003-fe00-b63f-84710c7967bb|2016-11-15 10:58:44.3010|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+8000001d-0003-fe00-b63f-84710c7967bb|2016-11-15 10:58:45.7104|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800003d9-0001-ed00-b63f-84710c7967bb|2016-11-15 11:01:29.5386|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000b23-0003-fb00-b63f-84710c7967bb|2016-11-15 11:19:08.1374|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800001fa-0003-f600-b63f-84710c7967bb|2016-11-15 11:19:10.4512|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+800001fc-0003-f600-b63f-84710c7967bb|2016-11-15 11:19:12.0605|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000628-0000-fd00-b63f-84710c7967bb|2016-11-15 11:21:34.1848|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800000a9-0000-ec00-b63f-84710c7967bb|2016-11-15 11:25:11.7026|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800003d1-0001-e200-b63f-84710c7967bb|2016-11-15 11:25:11.7026|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800003d3-0001-e200-b63f-84710c7967bb|2016-11-15 11:25:16.1130|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+800003d5-0001-e200-b63f-84710c7967bb|2016-11-15 11:25:18.0555|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000180e-0000-f600-b63f-84710c7967bb|2016-11-15 11:32:21.6403|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800006ed-0002-f700-b63f-84710c7967bb|2016-11-15 11:32:21.6403|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80001811-0000-f600-b63f-84710c7967bb|2016-11-15 11:32:32.2168|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Sims3_16in1 
+80001813-0000-f600-b63f-84710c7967bb|2016-11-15 11:32:34.2701|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80001815-0000-f600-b63f-84710c7967bb|2016-11-15 11:32:35.6553|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80002254-0001-ee00-b63f-84710c7967bb|2016-11-15 11:34:32.6256|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800018a9-0000-f700-b63f-84710c7967bb|2016-11-15 11:34:32.6256|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80002256-0001-ee00-b63f-84710c7967bb|2016-11-15 11:34:36.8496|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80002258-0001-ee00-b63f-84710c7967bb|2016-11-15 11:34:38.5182|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000002d-0002-e700-b63f-84710c7967bb|2016-11-15 11:36:38.5685|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000398-0000-ea00-b63f-84710c7967bb|2016-11-15 11:36:38.5685|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+8000002f-0002-e700-b63f-84710c7967bb|2016-11-15 11:36:43.3359|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80000031-0002-e700-b63f-84710c7967bb|2016-11-15 11:36:45.0651|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000001c-0002-e900-b63f-84710c7967bb|2016-11-15 11:40:23.6098|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000280-0001-ef00-b63f-84710c7967bb|2016-11-15 11:40:23.6098|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+8000001e-0002-e900-b63f-84710c7967bb|2016-11-15 11:40:27.8555|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80000020-0002-e900-b63f-84710c7967bb|2016-11-15 11:40:29.3491|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000022-0002-e900-b63f-84710c7967bb|2016-11-15 11:40:33.0286|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Sims3_16in1 
+80000024-0002-e900-b63f-84710c7967bb|2016-11-15 11:40:34.0880|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Sims3_16in1. Retured 0 comments
+80001cd1-0000-f400-b63f-84710c7967bb|2016-11-15 11:41:45.8035|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80001cd3-0000-f400-b63f-84710c7967bb|2016-11-15 11:41:47.7259|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80001cd5-0000-f400-b63f-84710c7967bb|2016-11-15 11:41:49.2685|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80001ce0-0000-f400-b63f-84710c7967bb|2016-11-15 11:45:47.9460|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+8000010b-0001-f100-b63f-84710c7967bb|2016-11-15 11:45:47.9460|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+8000010e-0001-f100-b63f-84710c7967bb|2016-11-15 11:45:52.2399|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80000110-0001-f100-b63f-84710c7967bb|2016-11-15 11:45:54.2365|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000066d-0003-f200-b63f-84710c7967bb|2016-11-15 11:46:49.2245|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800005d1-0003-fc00-b63f-84710c7967bb|2016-11-15 11:49:21.0223|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800005d4-0003-fc00-b63f-84710c7967bb|2016-11-15 11:50:29.8644|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800005d9-0003-fc00-b63f-84710c7967bb|2016-11-15 11:51:30.4898|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800005e1-0003-fc00-b63f-84710c7967bb|2016-11-15 11:52:31.1756|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000021-0000-df00-b63f-84710c7967bb|2016-11-15 11:56:19.7697|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000023-0000-df00-b63f-84710c7967bb|2016-11-15 11:56:34.5476|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80000025-0000-df00-b63f-84710c7967bb|2016-11-15 11:56:39.3673|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000027-0000-df00-b63f-84710c7967bb|2016-11-15 11:57:49.0847|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000a9a-0002-f200-b63f-84710c7967bb|2016-11-15 11:59:04.2400|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000027b-0001-fd00-b63f-84710c7967bb|2016-11-15 12:00:09.8648|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000283-0001-fd00-b63f-84710c7967bb|2016-11-15 12:01:55.8882|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000769-0002-fc00-b63f-84710c7967bb|2016-11-15 12:07:01.2479|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000228d-0001-ee00-b63f-84710c7967bb|2016-11-15 12:08:10.3694|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000b4d-0000-f100-b63f-84710c7967bb|2016-11-15 12:08:54.0859|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000013b-0001-f100-b63f-84710c7967bb|2016-11-15 12:09:58.7099|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800009f4-0003-fc00-b63f-84710c7967bb|2016-11-15 12:12:52.1116|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800009f8-0003-fc00-b63f-84710c7967bb|2016-11-15 12:14:25.2342|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800009ff-0003-fc00-b63f-84710c7967bb|2016-11-15 12:15:36.8554|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000a04-0003-fc00-b63f-84710c7967bb|2016-11-15 12:16:38.5562|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80002c88-0002-f000-b63f-84710c7967bb|2016-11-15 12:18:51.6639|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000096c-0000-ee00-b63f-84710c7967bb|2016-11-15 12:19:54.2812|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000096e-0000-ee00-b63f-84710c7967bb|2016-11-15 12:21:36.7908|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000970-0000-ee00-b63f-84710c7967bb|2016-11-15 12:22:37.2233|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800003a0-0003-fa00-b63f-84710c7967bb|2016-11-15 12:56:37.4550|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80003d72-0000-f700-b63f-84710c7967bb|2016-11-15 12:57:14.0578|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000138-0001-f200-b63f-84710c7967bb|2016-11-15 12:57:22.4110|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+8000013a-0001-f200-b63f-84710c7967bb|2016-11-15 12:57:24.1504|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000013b-0001-f200-b63f-84710c7967bb|2016-11-15 12:58:12.7726|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000227-0001-e400-b63f-84710c7967bb|2016-11-15 13:00:24.7756|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80002d70-0003-fb00-b63f-84710c7967bb|2016-11-15 13:00:24.7756|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000158c-0000-e900-b63f-84710c7967bb|2016-11-15 13:16:58.8438|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+8000158e-0000-e900-b63f-84710c7967bb|2016-11-15 13:17:03.0873|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+8000005e-0002-eb00-b63f-84710c7967bb|2016-11-15 13:18:05.9082|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800003d2-0001-f100-b63f-84710c7967bb|2016-11-15 13:20:00.1538|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80003d91-0000-f700-b63f-84710c7967bb|2016-11-15 13:20:00.3670|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000460-0000-ea00-b63f-84710c7967bb|2016-11-15 13:21:01.7596|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800009f2-0000-fa00-b63f-84710c7967bb|2016-11-15 13:21:35.9672|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800009f5-0000-fa00-b63f-84710c7967bb|2016-11-15 13:21:54.1971|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+800084e0-0002-ef00-b63f-84710c7967bb|2016-11-15 13:22:00.9729|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800084ed-0002-ef00-b63f-84710c7967bb|2016-11-15 13:23:10.0325|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800003ec-0000-e800-b63f-84710c7967bb|2016-11-15 13:24:08.3118|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80002356-0000-ed00-b63f-84710c7967bb|2016-11-15 13:24:28.1403|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000660-0000-e200-b63f-84710c7967bb|2016-11-15 13:26:42.6101|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000673-0000-e200-b63f-84710c7967bb|2016-11-15 13:27:42.9394|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000681-0000-e200-b63f-84710c7967bb|2016-11-15 13:27:56.7625|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000110-0001-f500-b63f-84710c7967bb|2016-11-15 13:29:38.1901|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000051-0002-e500-b63f-84710c7967bb|2016-11-15 13:30:53.9150|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000e90-0003-f500-b63f-84710c7967bb|2016-11-15 13:32:31.6862|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000a4b-0003-fc00-b63f-84710c7967bb|2016-11-15 14:59:23.7462|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80002de5-0001-ef00-b63f-84710c7967bb|2016-11-15 14:59:30.2441|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80002de7-0001-ef00-b63f-84710c7967bb|2016-11-15 14:59:32.1368|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80002df1-0001-ef00-b63f-84710c7967bb|2016-11-15 15:01:01.8819|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000050f-0003-f800-b63f-84710c7967bb|2016-11-15 15:14:01.3931|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80002a5b-0001-ea00-b63f-84710c7967bb|2016-11-15 15:14:05.6096|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80002a5d-0001-ea00-b63f-84710c7967bb|2016-11-15 15:14:07.3941|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800002f9-0002-e900-b63f-84710c7967bb|2016-11-15 15:15:27.0167|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000010-0002-e100-b63f-84710c7967bb|2016-11-15 15:15:27.3439|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000012-0002-e100-b63f-84710c7967bb|2016-11-15 15:15:30.7109|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80000014-0002-e100-b63f-84710c7967bb|2016-11-15 15:15:32.3174|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800004c5-0001-f200-b63f-84710c7967bb|2016-11-15 15:18:11.6773|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000142-0000-ec00-b63f-84710c7967bb|2016-11-15 15:19:35.3333|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000b80-0000-f100-b63f-84710c7967bb|2016-11-15 15:21:36.6461|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800006b9-0000-e400-b63f-84710c7967bb|2016-11-15 15:21:36.6461|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+8000138f-0001-fa00-b63f-84710c7967bb|2016-11-15 15:21:40.8589|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+800022c2-0001-ee00-b63f-84710c7967bb|2016-11-15 15:21:42.6273|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80001394-0001-fa00-b63f-84710c7967bb|2016-11-15 15:21:47.9220|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80001394-0001-fa00-b63f-84710c7967bb|2016-11-15 15:21:47.9355|DEBUG|GameStore.BLL.Services.GameStoreService|Adding new comment with Author=dsfs, Id=bfab1ba4-ad63-41fe-93bf-3602e93c80e4 to game with Key=Gta6_ThirdEdition
+800006c2-0000-e400-b63f-84710c7967bb|2016-11-15 15:22:02.4251|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+800006c2-0000-e400-b63f-84710c7967bb|2016-11-15 15:22:02.4436|DEBUG|GameStore.BLL.Services.GameStoreService|Adding new comment with Author=rtertert, Id=863257bc-78ef-485d-adf6-e45cf0833e98 to game with Key=Gta6_ThirdEdition
+80001c27-0001-fd00-b63f-84710c7967bb|2016-11-15 15:23:25.9642|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800020ba-0000-e700-b63f-84710c7967bb|2016-11-15 15:23:29.4439|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80001c2b-0001-fd00-b63f-84710c7967bb|2016-11-15 15:23:30.8573|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800020c1-0000-e700-b63f-84710c7967bb|2016-11-15 15:23:35.5520|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+800020c1-0000-e700-b63f-84710c7967bb|2016-11-15 15:23:35.5680|DEBUG|GameStore.BLL.Services.GameStoreService|Adding new comment with Author=dfgdf, Id=7a6041f1-e4d0-4486-a935-4d569b76ad18 to game with Key=Gta6_ThirdEdition
+80000035-0002-e100-b63f-84710c7967bb|2016-11-15 15:25:23.5654|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 6 comments
+8000a05d-0000-f800-b63f-84710c7967bb|2016-11-15 15:25:33.2570|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+8000a05d-0000-f800-b63f-84710c7967bb|2016-11-15 15:25:33.2750|DEBUG|GameStore.BLL.Services.GameStoreService|Adding new comment with Author=dfgdfg, Id=78c5fc34-f2d3-443c-a71a-6c697cd6cf74 to game with Key=Gta6_ThirdEdition
+8000a063-0000-f800-b63f-84710c7967bb|2016-11-15 15:25:43.8782|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+8000a063-0000-f800-b63f-84710c7967bb|2016-11-15 15:25:43.8782|DEBUG|GameStore.BLL.Services.GameStoreService|Adding new comment with Author=aaaaaaaaaaaa, Id=7efa7b99-cfc3-4adc-8506-97158e82c3a5 to game with Key=Gta6_ThirdEdition
+8000008c-0002-e100-b63f-84710c7967bb|2016-11-15 15:26:16.8803|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+8000008c-0002-e100-b63f-84710c7967bb|2016-11-15 15:26:16.8993|DEBUG|GameStore.BLL.Services.GameStoreService|Adding new comment with Author=dfgdfg, Id=d44b97bf-b2ad-4d52-97a9-021a3c9101c8 to game with Key=Gta6_ThirdEdition
+80000051-0003-ff00-b63f-84710c7967bb|2016-11-15 15:26:23.5891|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 9 comments
+80000a78-0001-fb00-b63f-84710c7967bb|2016-11-15 15:26:56.4589|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80000a78-0001-fb00-b63f-84710c7967bb|2016-11-15 15:26:56.4589|DEBUG|GameStore.BLL.Services.GameStoreService|Adding new comment with Author=sssssssss, Id=2c785895-0a84-4f0e-b18b-02a2338e5beb to game with Key=Gta6_ThirdEdition
+80001040-0001-e400-b63f-84710c7967bb|2016-11-15 15:27:29.0101|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 10 comments
+80000078-0003-ff00-b63f-84710c7967bb|2016-11-15 15:29:36.3961|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800020ca-0000-e700-b63f-84710c7967bb|2016-11-15 15:29:36.4661|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800020cf-0000-e700-b63f-84710c7967bb|2016-11-15 15:29:44.7164|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+800020cf-0000-e700-b63f-84710c7967bb|2016-11-15 15:29:44.7294|DEBUG|GameStore.BLL.Services.GameStoreService|Adding new comment with Author=dfgdf, Id=6a36d84d-401a-41bc-9b7f-f6d9aa499013, ParentId= to game with Key=Gta6_ThirdEdition
+80002390-0000-ed00-b63f-84710c7967bb|2016-11-15 15:31:58.2115|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 6 comments
+8000052e-0003-f800-b63f-84710c7967bb|2016-11-15 15:32:09.9398|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+8000052e-0003-f800-b63f-84710c7967bb|2016-11-15 15:32:09.9398|DEBUG|GameStore.BLL.Services.GameStoreService|Adding new comment with Author=dfgdfg, Id=cd4c6d96-8f7c-4c59-a8da-758c223d1d84, ParentId=d5350151-7df0-4374-885f-100056698d27 to game with Key=Gta6_ThirdEdition
+80001086-0001-e400-b63f-84710c7967bb|2016-11-15 15:32:46.1582|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80001086-0001-e400-b63f-84710c7967bb|2016-11-15 15:32:46.1802|DEBUG|GameStore.BLL.Services.GameStoreService|Adding new comment with Author=dfg, Id=9ba0b197-52cc-4e9f-9625-5773e0c7ae7a, ParentId=6a36d84d-401a-41bc-9b7f-f6d9aa499013 to game with Key=Gta6_ThirdEdition
+800023a3-0000-ed00-b63f-84710c7967bb|2016-11-15 15:32:58.3837|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 8 comments
+800000ec-0000-e100-b63f-84710c7967bb|2016-11-15 15:49:01.1160|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000061-0002-ed00-b63f-84710c7967bb|2016-11-15 15:49:01.9542|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000064-0002-ed00-b63f-84710c7967bb|2016-11-15 15:49:04.9560|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80000066-0002-ed00-b63f-84710c7967bb|2016-11-15 15:49:06.8014|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000050f-0001-e200-b63f-84710c7967bb|2016-11-15 15:50:28.9983|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000c925-0000-f800-b63f-84710c7967bb|2016-11-15 15:50:52.6236|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000042c-0001-f100-b63f-84710c7967bb|2016-11-15 15:52:07.8112|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800013de-0000-f100-b63f-84710c7967bb|2016-11-15 15:53:08.6270|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800013e5-0000-f100-b63f-84710c7967bb|2016-11-15 15:54:13.3339|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000a38-0001-e600-b63f-84710c7967bb|2016-11-15 15:56:05.9879|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80001a26-0001-f500-b63f-84710c7967bb|2016-11-15 15:57:08.1044|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000734-0000-f500-b63f-84710c7967bb|2016-11-15 15:57:08.1344|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000a46-0001-e600-b63f-84710c7967bb|2016-11-15 15:58:05.9683|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80002f9e-0001-ed00-b63f-84710c7967bb|2016-11-15 15:58:07.0526|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000070b-0000-e200-b63f-84710c7967bb|2016-11-15 15:59:17.3297|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000711-0000-e200-b63f-84710c7967bb|2016-11-15 16:00:06.3624|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80000711-0000-e200-b63f-84710c7967bb|2016-11-15 16:00:06.3824|DEBUG|GameStore.BLL.Services.GameStoreService|Adding new comment with Author=dfgdf, Id=e9a1e9e1-7d07-4e7b-8a27-487a0b2d3403, ParentId=c4f12f3d-7db0-4cf6-b366-b83d8a8dc0b7 to game with Key=Gta6_ThirdEdition
+80000737-0003-f200-b63f-84710c7967bb|2016-11-15 16:00:15.0746|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 6 comments
+800006a8-0001-e900-b63f-84710c7967bb|2016-11-15 16:00:32.3398|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+800006a8-0001-e900-b63f-84710c7967bb|2016-11-15 16:00:32.3398|DEBUG|GameStore.BLL.Services.GameStoreService|Adding new comment with Author=aaaaaaaaa, Id=147c161f-d1f4-4fe4-8421-360a9a355922, ParentId=e9a1e9e1-7d07-4e7b-8a27-487a0b2d3403 to game with Key=Gta6_ThirdEdition
+80001d97-0003-fa00-b63f-84710c7967bb|2016-11-15 16:01:10.5320|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80001d97-0003-fa00-b63f-84710c7967bb|2016-11-15 16:01:10.5430|DEBUG|GameStore.BLL.Services.GameStoreService|Adding new comment with Author=dfgdg, Id=2bf19a0a-66e1-4b71-97d9-e046f7bff8ce, ParentId=bb615161-84ab-4dc4-8479-d99c5b370ece to game with Key=Gta6_ThirdEdition
+8000241a-0000-ed00-b63f-84710c7967bb|2016-11-15 16:01:15.6501|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 8 comments
+80001a49-0001-f500-b63f-84710c7967bb|2016-11-15 16:04:36.9666|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000242f-0000-ed00-b63f-84710c7967bb|2016-11-15 16:05:59.3837|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000550-0001-e200-b63f-84710c7967bb|2016-11-15 16:07:51.1866|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80001da3-0001-f900-b63f-84710c7967bb|2016-11-15 16:07:51.2616|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+8000072d-0001-e900-b63f-84710c7967bb|2016-11-15 16:10:59.3983|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800005de-0001-ec00-b63f-84710c7967bb|2016-11-15 16:13:35.5846|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800002e7-0002-e800-b63f-84710c7967bb|2016-11-15 16:13:35.7056|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000748-0003-ec00-b63f-84710c7967bb|2016-11-15 16:16:10.2196|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000f62-0001-e600-b63f-84710c7967bb|2016-11-15 16:16:10.2867|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000a12-0000-fa00-b63f-84710c7967bb|2016-11-15 16:17:06.5504|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000866-0001-e700-b63f-84710c7967bb|2016-11-15 16:17:07.1269|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000089-0002-ed00-b63f-84710c7967bb|2016-11-15 16:21:28.2948|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000dc5-0000-eb00-b63f-84710c7967bb|2016-11-15 16:21:49.3848|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80000dc7-0000-eb00-b63f-84710c7967bb|2016-11-15 16:21:53.6976|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800013ca-0001-e400-b63f-84710c7967bb|2016-11-15 16:22:53.2335|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000f7a-0001-e600-b63f-84710c7967bb|2016-11-15 16:28:26.5352|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000dd2-0000-eb00-b63f-84710c7967bb|2016-11-15 16:29:27.9009|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80001de0-0003-fc00-b63f-84710c7967bb|2016-11-15 16:31:31.4981|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000038b-0002-e100-b63f-84710c7967bb|2016-11-15 16:32:40.8066|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80002856-0000-ed00-b63f-84710c7967bb|2016-11-15 16:33:45.5250|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80001de7-0003-fc00-b63f-84710c7967bb|2016-11-15 16:39:30.7690|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80002322-0001-f400-b63f-84710c7967bb|2016-11-15 16:40:49.4151|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800005f7-0002-ec00-b63f-84710c7967bb|2016-11-15 16:41:52.8987|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80002866-0000-ed00-b63f-84710c7967bb|2016-11-15 16:42:03.3238|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80002866-0000-ed00-b63f-84710c7967bb|2016-11-15 16:42:03.3528|DEBUG|GameStore.BLL.Services.GameStoreService|Adding new comment with Author=rfgtet, Id=7b460e08-475e-4865-a8eb-ec448b78885c, ParentId=58552ae6-4b7f-4323-9737-2b2be32baed9 to game with Key=Gta6_ThirdEdition
+80000595-0003-f800-b63f-84710c7967bb|2016-11-15 16:44:31.0943|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000544-0000-ec00-b63f-84710c7967bb|2016-11-15 16:44:40.0585|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80000544-0000-ec00-b63f-84710c7967bb|2016-11-15 16:44:40.0765|DEBUG|GameStore.BLL.Services.GameStoreService|Adding new comment with Author=gdfg, Id=cee48132-d4a6-4015-b181-476a2a87b8ea, ParentId=fc2c7d07-560c-4d9c-ab98-9dec57786404 to game with Key=Gta6_ThirdEdition
+800005aa-0000-ec00-b63f-84710c7967bb|2016-11-15 16:45:26.8597|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+800005aa-0000-ec00-b63f-84710c7967bb|2016-11-15 16:45:26.8597|DEBUG|GameStore.BLL.Services.GameStoreService|Adding new comment with Author=dfgdfg, Id=5a85672f-2f2c-46d6-a228-f7c3ddf39734, ParentId=fbb7d5b9-e68b-4b84-83cc-15311c735e43 to game with Key=Gta6_ThirdEdition
+800005ab-0000-ec00-b63f-84710c7967bb|2016-11-15 16:45:28.8989|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 7 comments
+80000795-0000-e200-b63f-84710c7967bb|2016-11-15 16:45:38.1110|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80000795-0000-e200-b63f-84710c7967bb|2016-11-15 16:45:38.1336|DEBUG|GameStore.BLL.Services.GameStoreService|Adding new comment with Author=dsfsd, Id=db2629a2-8aae-4e3a-966d-da900cab05a1, ParentId=0432924d-cfba-4393-85e4-e09c483cd294 to game with Key=Gta6_ThirdEdition
+80000681-0002-ec00-b63f-84710c7967bb|2016-11-15 16:45:52.1282|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80000681-0002-ec00-b63f-84710c7967bb|2016-11-15 16:45:52.1470|DEBUG|GameStore.BLL.Services.GameStoreService|Adding new comment with Author=dfgdgdfg, Id=0e832596-36e4-4a20-82ec-f8f28e7584e3, ParentId=fc2c7d07-560c-4d9c-ab98-9dec57786404 to game with Key=Gta6_ThirdEdition
+80000633-0003-eb00-b63f-84710c7967bb|2016-11-15 16:46:18.3207|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80000633-0003-eb00-b63f-84710c7967bb|2016-11-15 16:46:18.3297|DEBUG|GameStore.BLL.Services.GameStoreService|Adding new comment with Author=sdfsdf, Id=772f94de-79ae-42e7-ac8a-af188fdc3539, ParentId=fbb7d5b9-e68b-4b84-83cc-15311c735e43 to game with Key=Gta6_ThirdEdition
+80001b56-0003-f100-b63f-84710c7967bb|2016-11-15 16:46:31.5661|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80001b56-0003-f100-b63f-84710c7967bb|2016-11-15 16:46:31.5661|DEBUG|GameStore.BLL.Services.GameStoreService|Adding new comment with Author=qqqqqqqqq, Id=d4a26130-5a2b-4ed1-aa28-dfd7d2e4aaec, ParentId=5a85672f-2f2c-46d6-a228-f7c3ddf39734 to game with Key=Gta6_ThirdEdition
+80001b57-0003-f100-b63f-84710c7967bb|2016-11-15 16:46:33.6133|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 11 comments
+800036c5-0000-fb00-b63f-84710c7967bb|2016-11-15 17:06:22.1481|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80004ee8-0000-f900-b63f-84710c7967bb|2016-11-15 17:07:27.9952|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80001e54-0003-fc00-b63f-84710c7967bb|2016-11-15 17:08:56.2248|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80001e56-0003-fc00-b63f-84710c7967bb|2016-11-15 17:09:01.6438|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80004612-0000-f200-b63f-84710c7967bb|2016-11-15 17:09:58.2146|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80004614-0000-f200-b63f-84710c7967bb|2016-11-15 17:10:03.1588|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80001536-0000-ee00-b63f-84710c7967bb|2016-11-15 17:10:24.3295|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80004f2c-0000-f900-b63f-84710c7967bb|2016-11-15 17:16:53.0380|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000851c-0002-ef00-b63f-84710c7967bb|2016-11-15 17:16:53.1086|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800063b3-0000-e900-b63f-84710c7967bb|2016-11-15 17:20:11.1600|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80002162-0000-e700-b63f-84710c7967bb|2016-11-15 17:23:00.1244|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000136b-0002-f500-b63f-84710c7967bb|2016-11-15 17:23:00.1614|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+8000136e-0002-f500-b63f-84710c7967bb|2016-11-15 17:23:05.1686|DEBUG|GameStore.BLL.Services.GameStoreService|CommentDTO deleting by Id = 8619733d-6fe0-4d73-b02b-cf02cfc73b80 
+80002165-0000-e700-b63f-84710c7967bb|2016-11-15 17:23:11.1288|DEBUG|GameStore.BLL.Services.GameStoreService|CommentDTO deleting by Id = 0212a732-c425-4e36-8478-f7e6f3e83e85 
+80000ad0-0001-fb00-b63f-84710c7967bb|2016-11-15 17:24:16.3003|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800007cd-0003-f200-b63f-84710c7967bb|2016-11-15 17:24:16.3594|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+8000017e-0000-e100-b63f-84710c7967bb|2016-11-15 17:24:25.4674|DEBUG|GameStore.BLL.Services.GameStoreService|CommentDTO deleting by Id = c256e30e-29ae-4cf1-bd7a-90ae36a545fb 
+8000017f-0000-e100-b63f-84710c7967bb|2016-11-15 17:24:25.4804|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 4 comments
+8000068f-0001-f200-b63f-84710c7967bb|2016-11-15 17:24:28.1101|DEBUG|GameStore.BLL.Services.GameStoreService|CommentDTO deleting by Id = ee3c3887-211a-4b28-a0bb-65cde5a974be 
+80000690-0001-f200-b63f-84710c7967bb|2016-11-15 17:24:28.1261|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 3 comments
+8000339d-0003-fb00-b63f-84710c7967bb|2016-11-15 17:26:22.5488|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000239a-0001-ee00-b63f-84710c7967bb|2016-11-15 17:29:13.6455|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000138e-0000-e400-b63f-84710c7967bb|2016-11-15 17:30:28.3882|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80001b3f-0000-f100-b63f-84710c7967bb|2016-11-15 17:34:54.9615|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80001d1a-0001-fd00-b63f-84710c7967bb|2016-11-15 17:38:03.1397|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800008c6-0001-e700-b63f-84710c7967bb|2016-11-15 17:38:03.1477|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800018f0-0002-fb00-b63f-84710c7967bb|2016-11-15 17:38:03.1477|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800026b9-0000-ee00-b63f-84710c7967bb|2016-11-15 17:38:06.6758|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000e16-0000-df00-b63f-84710c7967bb|2016-11-15 17:43:07.3607|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+8000074b-0001-e200-b63f-84710c7967bb|2016-11-15 17:43:09.3080|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80000374-0002-e300-b63f-84710c7967bb|2016-11-15 17:44:05.1361|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800023e5-0001-f400-b63f-84710c7967bb|2016-11-15 18:11:14.4355|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000afe-0001-fb00-b63f-84710c7967bb|2016-11-15 18:11:26.0084|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+800005f9-0003-f800-b63f-84710c7967bb|2016-11-15 18:11:31.0531|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800006d5-0002-ec00-b63f-84710c7967bb|2016-11-15 18:14:02.1677|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80000685-0001-eb00-b63f-84710c7967bb|2016-11-15 18:14:03.7920|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000853f-0002-ef00-b63f-84710c7967bb|2016-11-15 18:16:03.4696|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80001f07-0001-f600-b63f-84710c7967bb|2016-11-15 18:16:03.4907|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80001f0a-0001-f600-b63f-84710c7967bb|2016-11-15 18:16:06.4344|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+800001ad-0000-e100-b63f-84710c7967bb|2016-11-15 18:25:01.7657|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+8000066a-0003-eb00-b63f-84710c7967bb|2016-11-15 18:26:49.0021|DEBUG|GameStore.BLL.Services.GameStoreService|Getting comments by key = Gta6_ThirdEdition. Retured 5 comments
+80002bb3-0000-fd00-b63f-84710c7967bb|2016-11-15 18:32:05.1627|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+8000067c-0003-eb00-b63f-84710c7967bb|2016-11-15 18:32:11.1561|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80001f2a-0001-f600-b63f-84710c7967bb|2016-11-15 18:33:43.1837|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby id=993a4b49-d38c-4db5-bcf3-3913a9a6b68f 
+80001f2a-0001-f600-b63f-84710c7967bb|2016-11-15 18:33:43.2417|DEBUG|GameStore.BLL.Services.GameStoreService|Adding product with Game 993a4b49-d38c-4db5-bcf3-3913a9a6b68f to the busket of Customer 1 
+80000c39-0002-ed00-b63f-84710c7967bb|2016-11-15 18:37:34.3973|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80003019-0001-ed00-b63f-84710c7967bb|2016-11-15 18:37:39.8665|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000e57-0000-eb00-b63f-84710c7967bb|2016-11-15 18:38:28.2779|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+8000608a-0000-f700-b63f-84710c7967bb|2016-11-15 18:38:28.2779|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+8000855e-0002-ef00-b63f-84710c7967bb|2016-11-15 18:38:50.6406|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Sims3_16in1 
+80002731-0000-ee00-b63f-84710c7967bb|2016-11-15 18:39:18.7238|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80001fe6-0000-ea00-b63f-84710c7967bb|2016-11-15 18:42:07.6007|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000016-0001-de00-b63f-84710c7967bb|2016-11-15 18:42:23.6625|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Sims3_16in1 
+80000016-0001-de00-b63f-84710c7967bb|2016-11-15 18:42:23.7016|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000016-0001-de00-b63f-84710c7967bb|2016-11-15 18:42:23.7466|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+80000016-0001-de00-b63f-84710c7967bb|2016-11-15 18:42:23.7616|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+800015de-0001-e600-b63f-84710c7967bb|2016-11-15 18:43:24.3318|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80003180-0001-ea00-b63f-84710c7967bb|2016-11-15 18:44:44.4671|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000414-0002-e100-b63f-84710c7967bb|2016-11-15 18:48:41.1613|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80002011-0000-ea00-b63f-84710c7967bb|2016-11-15 19:14:50.9949|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80002018-0000-ea00-b63f-84710c7967bb|2016-11-15 19:15:57.1763|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+8000115e-0003-ec00-b63f-84710c7967bb|2016-11-15 19:19:35.4986|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000079-0003-f700-b63f-84710c7967bb|2016-11-15 19:20:42.3239|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80002dea-0002-f700-b63f-84710c7967bb|2016-11-15 19:21:31.9478|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Gta6_ThirdEdition 
+80002dea-0002-f700-b63f-84710c7967bb|2016-11-15 19:21:31.9818|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80002dea-0002-f700-b63f-84710c7967bb|2016-11-15 19:21:32.0318|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+80002dea-0002-f700-b63f-84710c7967bb|2016-11-15 19:21:32.0468|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+80000230-0001-dd00-b63f-84710c7967bb|2016-11-15 19:22:51.3039|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80003074-0003-fa00-b63f-84710c7967bb|2016-11-15 19:23:11.0906|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Sims3_16in1 
+80003074-0003-fa00-b63f-84710c7967bb|2016-11-15 19:23:11.1046|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80003074-0003-fa00-b63f-84710c7967bb|2016-11-15 19:23:11.1436|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+80003074-0003-fa00-b63f-84710c7967bb|2016-11-15 19:23:11.1436|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+80000c7f-0001-ec00-b63f-84710c7967bb|2016-11-15 19:23:13.7710|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 1  Publishers.
+80000c7f-0001-ec00-b63f-84710c7967bb|2016-11-15 19:23:13.7880|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000c7f-0001-ec00-b63f-84710c7967bb|2016-11-15 19:23:13.8380|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 16  Genres.
+8000003f-0001-dc00-b63f-84710c7967bb|2016-11-15 19:23:15.0899|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80002e11-0002-f700-b63f-84710c7967bb|2016-11-15 19:24:47.2305|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80001d14-0000-f100-b63f-84710c7967bb|2016-11-15 19:27:25.0789|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80001dc4-0000-e400-b63f-84710c7967bb|2016-11-15 19:30:05.0358|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80004f63-0000-f900-b63f-84710c7967bb|2016-11-15 19:36:30.7758|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+800062ff-0002-f500-b63f-84710c7967bb|2016-11-15 19:38:11.3377|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+8000205e-0000-ea00-b63f-84710c7967bb|2016-11-15 19:39:17.1628|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80002068-0000-ea00-b63f-84710c7967bb|2016-11-15 19:41:03.6206|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000537-0002-e500-b63f-84710c7967bb|2016-11-15 19:41:52.5881|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80001ad7-0002-fb00-b63f-84710c7967bb|2016-11-15 19:43:25.8259|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.
+80000d09-0001-e700-b63f-84710c7967bb|2016-11-15 19:44:38.9353|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 2  Games.

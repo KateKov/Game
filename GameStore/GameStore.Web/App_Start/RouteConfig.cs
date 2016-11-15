@@ -32,8 +32,8 @@ namespace GameStore.Web
                defaults: new { controller = "Publishers", action = @"\w+" });
             routes.MapRoute(
                 name: "Basket",
-                url: "basket/{key}",
-                defaults: new { controller = "Orders", action="AddToBusket", key = @"^[A-Za-z0-9_-]{1,20}" }
+                url: "basket/{gameId}",
+                defaults: new { controller = "Orders", action="AddToBusket", gameId = @"^[A-Za-z0-9_-]{1,20}" , quantity=@"^(/d){1,3}", customerId= "^[A-Za-z0-9_-]{0,20}" }
                 );
             routes.MapRoute(
                 name: "Default",

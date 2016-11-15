@@ -1,0 +1,27 @@
+﻿@using GameStore.Web.ViewModels
+@model BanViewModel
+
+@{
+    ViewBag.Title = "Ban";
+}
+
+<h2>Ban</h2>
+@using (Ajax.BeginForm("Ban", new AjaxOptions
+{
+    UpdateTargetId = "results"
+
+}))
+{
+   @Html.HiddenFor(m=>m.Name)
+    foreach (var item in BanViewModel.Durations)
+    {
+        <div>
+            @Html.RadioButtonFor(x => x.SelectedDuration, item) @item
+        </div>
+    }
+    <input type="submit" value="Block" />
+}
+<div id="results"></div>
+
+<script src='@Url.Content("~/Scripts/jquery-1.12.4.min.js")' type="text/javascript"></script>
+<script src='@Url.Content("~/Scripts/jquery.unobtrusive-ajax.min.js")' type="text/javascript"></script>

@@ -13,7 +13,6 @@ using NLog;
 
 namespace GameStore.Web.Controllers
 {
-    [OutputCache(Duration = 60, Location = OutputCacheLocation.Server)]
     public class CommentsController : Controller
     {
         private readonly IService _gameService;
@@ -60,29 +59,71 @@ namespace GameStore.Web.Controllers
             }
         }
 
+        [HttpGet]
+        public ActionResult NewComment(string gameKey, string parentId="",  string body="")
+        {
+            if (!string.IsNullOrEmpty(gameKey))
+            {
+                var qoute = body;
+                var comment = new CommentViewModel() {Id = Guid.NewGuid().ToString(), Name = "", Body = "", GameKey = gameKey, ParentCommentId = parentId, Quote = qoute};
+                return PartialView("NewComment", comment);
+            }
+            return RedirectToAction("Comments");
+        }
+
         [HttpPost]
-        public HttpStatusCodeResult NewComment(CommentViewModel newComment, string gameKey)
+        [ValidateAntiForgeryToken]
+        public ActionResult NewComment(CommentViewModel newComment)
         {
             _logger.Info("Request to GameController.NewComment");
-            try
-            {
-                CommentDTO commentDto = Mapper.Map<CommentViewModel, CommentDTO>(newComment);
-               _gameService.AddComment(commentDto, gameKey);
+            if (ModelState.IsValid) { 
+                var commentDto = Mapper.Map<CommentViewModel, CommentDTO>(newComment);
+                commentDto.GameId = _gameService.GetByKey<GameDTO>(commentDto.GameKey).Id;
+               _gameService.AddComment(commentDto, newComment.GameKey);
+                return PartialView("Success");
             }
-            catch (Exception)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-
-            return new HttpStatusCodeResult(HttpStatusCode.OK);
+            return PartialView("NewComment", newComment);
         }
 
         [HttpGet]
         public ActionResult Comments(string key)
         {
             _logger.Info("Request to CommentsController.GetGameComments. Parameters: gameKey = {0}", key);
-             return View(Mapper.Map<IEnumerable<CommentDTO>, IEnumerable<CommentViewModel>>(_gameService.GetCommentsByGameKey(key)));
-           
+             return View(Mapper.Map<IEnumerable<CommentDTO>, IEnumerable<CommentViewModel>>(_gameService.GetCommentsByGameKey(key)));          
+        }
+
+        [HttpGet]
+        public ActionResult Delete(string gameKey, string commentId)
+        {
+            if (!string.IsNullOrEmpty(gameKey) && !string.IsNullOrEmpty(commentId))
+            {
+                _gameService.DeleteById<CommentDTO>(commentId);
+                _logger.Info("Comments is deleted from game: CommentId={0} GameKey ={1} ", commentId, gameKey);
+                return RedirectToAction("Comments");
+            }
+            return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+        }
+
+        public ActionResult NewCommentWithQuote(string gameKey, string commentId)
+        {
+            if (!string.IsNullOrEmpty(gameKey) && !string.IsNullOrEmpty(commentId))
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            return RedirectToAction("Comments");
+        }
+
+        [HttpGet]
+        public ActionResult Ban(string name)
+        {
+            var ban = new BanViewModel {Name = name};
+            return View(ban);
+        }
+
+        [HttpPost]
+        public ActionResult Ban(BanViewModel ban)
+        {
+            return PartialView("BanUser", ban);
         }
     }
 }

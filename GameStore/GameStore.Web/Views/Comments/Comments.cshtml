@@ -1,4 +1,5 @@
 ﻿
+@using System.Activities.Statements
 @using GameStore.Web.ViewModels
 @model IEnumerable<CommentViewModel>
 
@@ -6,11 +7,12 @@
     ViewBag.Title = "Comments";
 }
 
-
+<link href='@Url.Content("~/Content/themes/base/jquery-ui.css")' rel="stylesheet" type="text/css" />
 
 <h2>Comments</h2>
+
 <ul class="menu">
-    @foreach (var mp in Model.Where(p => p.ParentCommentId == null))
+    @foreach (var mp in Model.Where(x => x.ParentCommentId == (new Guid()).ToString()||string.IsNullOrEmpty(x.ParentCommentId)))
     {
 
         <li>
@@ -18,14 +20,14 @@
             @if (Model.Count(p => p.ParentCommentId == mp.Id) > 0)
             {
                 @:<ul>
-        }
+            }
 
             @RenderMenuItem(Model.ToList(), mp)
 
             @if (Model.Count(p => p.ParentCommentId == mp.Id) > 0)
             {
                 @:</ul>
-       }
+            }
 
         </li>
     }
@@ -40,8 +42,6 @@ foreach (var cp in menuList.Where(p => p.ParentCommentId == mi.Id))
         @:<li>
 
 
-
-
             @CreateCommentCard(cp)
     if (menuList.Count(p => p.ParentCommentId == mi.Id) > 0)
     {
@@ -52,70 +52,161 @@ foreach (var cp in menuList.Where(p => p.ParentCommentId == mi.Id))
 
     if (menuList.Count(p => p.ParentCommentId == mi.Id) > 0)
     {
-            @:</ul>
-      }
+            @: </ul>
+    }
     else
     {
-            @:</li>
-      }
+            @: </li>
     }
 }
-
-@helper GetCommentNameById(string id)
-{
-var comment = Model.FirstOrDefault(x => x.Id == id);
-
-if (comment != null)
-{
-        @:[@comment.Name]
-    }
 }
+
+
 
 @helper CreateCommentCard(CommentViewModel comment)
 {
+    <div class="comments">
+        <div class="comment dialog">
 
-    <H3>@comment.Name</H3>
-    <hr />
-    <p>
-        @if (comment.Quote != null)
-        {
-            <blockquote>
-        <p>@comment.Quote</p> </blockquote>
-        }
-        @if (comment.ParentCommentId != null)
-        {
-            @GetCommentNameById(comment.ParentCommentId)
-        }
-        @comment.Body
-        </p>
+            <span>@Html.ActionLink("Answer", "NewComment", "Comments", new { gameKey = Model.First().GameKey, parentId = comment.Id}, new { @class = "viewDialog", data_dialog_title = "Answer for "+comment.Name })</span>
+            <span>@Html.ActionLink("Quote", "NewComment", "Comments", new { gameKey = Model.First().GameKey, parentId = comment.Id,  body = comment.Body }, new { @class = "viewDialog", data_dialog_title = "Answer for " + comment.Name })</span>
+            
+            
 
-        <span>@Ajax.ActionLink("Answer", "NewCommentForParent", "Comments", new { keyOfGame = Model.First().GameKey, commentId = comment.Id }, new AjaxOptions { UpdateTargetId = "form" }, new { @class = "btn btn-info" })</span>
-        <span>@Ajax.ActionLink("Quote", "NewCommentWithQuote", "Comments", new { keyOfGame = Model.First().GameKey, commentId = comment.Id, body = comment.Body }, new AjaxOptions { UpdateTargetId = "form" }, new { @class = "btn btn-info" })</span>
-        <span>@Html.ActionLink("Ban", "Ban", "Comments", null, new { @class = "btn btn-info" })</span>
-        <span>@Html.ActionLink("Delete", "DeleteConfirmed", "Comments", new { keyOfGame = Model.First().GameKey, commentId = comment.Id }, new { @class = "btn btn-info", onclick = "return confirmDelete();" })</span>
+            <span>@Html.ActionLink("Delete", "Delete", "Comments", new { gameKey = Model.First().GameKey, commentId = comment.Id }, new { onclick= "return confirm('Delete this comment?')" })</span>
+
+
+
+            <hr />
+            <p>  <span>@Html.ActionLink("Ban", "Ban", "Comments", new { name = comment.Name })</span></p>
+            <b> @comment.Name</b>
+            
+
+            <p>
+                @if (!string.IsNullOrEmpty(comment.Quote))
+                {
+                    <p>
+
+                        <blockquote>
+                            @comment.Quote
+                        </blockquote>
+                    </p>
+                }
+
+                
+                @if (comment.ParentCommentId != null)
+                {
+                    @comment.ParentCommentName
+                }
+                <p>
+                    @comment.Body
+                </p>
+                </p>
+
+
+            </div>
+        </div>
 
 }
 <h3> @ViewBag.ErrorName  </h3>
 
-<div id="form">
-    @Html.Action("NewComment", new { key = Model.First().GameKey })
-</div>
 
 
+@Html.ActionLink("New Comment", "NewComment", "Comments", new {gameKey=Model.First().GameKey},  new { @class = "viewDialog", data_dialog_title = "New comment" })  
+
+
+
+      
+<script src='@Url.Content("~/Scripts/jquery-1.12.4.min.js")' type="text/javascript"></script>
+<script src='@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")' type="text/javascript"></script>
 <script>
-    function confirmDelete() {
+    $(document)
+        .ready(function() {
 
-        if (confirm("Вы подтверждаете удаление?")) {
+            $.ajaxSetup({ cache: false });
 
-            return true;
+            $(".viewDialog")
+                .on("click",
+                    function(e) {
+                        e.preventDefault();
+                        $("<div id='dialogContent'></div>")
+                            .addClass("dialog")
+                            .appendTo("body")
+                            .load(this.href)
+                            .dialog({
+                                title: $(this).attr("data-dialog-title"),
+                                close: function() { $(this).remove() },
+                                modal: true,
+                                buttons: {
+                                    "Save": function() {
+                                        $.ajax({
+                                            url: "@Url.Action("NewComment", "Comments")",
+                                            type: "POST",
+                                            data: $('form').serialize(),
+                                            datatype: "json",
+                                            success: function(result) {
 
-        } else {
-
-            return false;
-
-        }
-    }
-
+                                                $("#dialogContent").html(result);
+                                            }
+                                        });
+                                    }
+                                }
+                            });
+                        $(".close")
+                            .on("click",
+                                function(e) {
+                                    e.preventDefault();
+                                    $(this).closest(".dialog").dialog("close");
+                                });
+                    });
+        });
 </script>
-<script src="~/scripts/jquery-1.10.2.min.js"> </script>
-<script src="~/scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+
+
+     
+        <script src="~/scripts/jquery.unobtrusive-ajax.min.js"></script>
+        <style>
+            body {
+                background: #f0f0f0;
+            }
+
+            .comments {
+                width: 400px;
+            }
+
+            .comment {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+                .comment p {
+                    margin: 0 0 10px 0;
+                }
+
+            .dialog {
+                position: relative;
+                background: #fff;
+                padding: 20px;
+                color: #222;
+                border-radius: 3px;
+                margin-left: 20px;
+            }
+
+                .dialog::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-top: 8px solid transparent;
+                    border-bottom: 8px solid transparent;
+                    border-right: 15px solid #fff;
+                    left: -15px;
+                    top: 15px;
+                }
+
+            li {
+                list-style-type: none;
+            }
+        </style>

@@ -1,0 +1,17 @@
+﻿@using GameStore.Web.ViewModels
+@using OfficeOpenXml.FormulaParsing.Excel.Functions.Math
+@model BasketViewModel
+
+@using (Html.BeginForm("AddToBusket", "Orders", FormMethod.Get))
+{
+
+    @Html.HiddenFor(x=>x.GameId)
+    @Html.HiddenFor(x=>x.CustomerId)
+    @Html.HiddenFor(x=>x.UnitInStock)
+   
+    <p>Counts:</p>
+    @Html.TextBoxFor(x=>x.Quantity, new {min="1", max=@Model.UnitInStock, value="1", onchange="isright(this);", style="width: 50px"}) 
+    <input type="submit" value="Buy" class="btn btn-info" />
+}
+
+

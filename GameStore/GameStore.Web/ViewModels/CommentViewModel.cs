@@ -13,7 +13,6 @@ namespace GameStore.Web.ViewModels
         [Required(ErrorMessage = "Comment doesn't have Body")]
         [Display(Name = "Body")]
         public string Body { get; set; }
-        [Required(ErrorMessage = "Comment doesn't have Game")]
         [Display(Name = "Game")]
         public string GameId { get; set; }
         public string GameKey { get; set; }

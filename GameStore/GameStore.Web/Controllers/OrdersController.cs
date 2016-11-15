@@ -61,9 +61,7 @@ namespace GameStore.Web.Controllers
         {
             _pay = new Payment(paymentName);
             return _pay.Pay(order, View);
-        }
-
-      
+        }    
 
         [HttpGet]
         public ActionResult IBoxPay(OrderPaymentViewModel order)
@@ -73,9 +71,13 @@ namespace GameStore.Web.Controllers
         }
 
         [HttpGet]
-        public ActionResult AddToBusket(string gameId, string quantity, string customerId ="")
+        public ActionResult AddToBusket(BasketViewModel basket)
         {
-            _service.GetOrderDetail(gameId, Convert.ToInt16(quantity), customerId);
+            if (string.IsNullOrEmpty(basket.GameId))
+            {
+                return HttpNotFound();
+            }
+            _service.GetOrderDetail(basket.GameId,  short.Parse(basket.Quantity.Trim()), "");
             return RedirectToAction("Basket");
         }
 

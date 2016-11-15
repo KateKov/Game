@@ -168,7 +168,7 @@ namespace GameStore.DAL.EF
                     Id = Guid.NewGuid(),
                     Name = "Dmitriy",
                     Body = "Anna, i write you responce",
-                    ParentComment = secondLevelComments[0]
+                    ParentComment= secondLevelComments[0]        
                 }
             };
             var comments = firstLevelComments;

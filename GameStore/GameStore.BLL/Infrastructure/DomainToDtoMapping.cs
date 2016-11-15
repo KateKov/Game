@@ -23,7 +23,9 @@ namespace GameStore.BLL.Infrastructure
         {
             CreateMap<Comment, CommentDTO>()
                 .ForMember(dm => dm.GameId, map => map.MapFrom(dm => dm.Game.Id))
-                .ForMember(dm => dm.GameKey, map => map.MapFrom(dm => dm.Game.Key));
+                .ForMember(dm => dm.GameKey, map => map.MapFrom(dm => dm.Game.Key))
+                .ForMember(dm => dm.ParentCommentId, map => map.MapFrom(dm => dm.ParentComment.Id))
+                .ForMember(dm => dm.ParrentCommentName, map => map.MapFrom(dm => dm.ParentComment.Name));
                
             CreateMap<Genre, GenreDTO>()
                 .ForMember(dm => dm.GamesKey, map => map.MapFrom(dm => dm.Games.Select(x => x.Key).ToList()))

@@ -26,63 +26,71 @@ namespace GameStore.BLL.Services
 
         private object AddEntities<T, TD>(T model, TD dtoModel) where T : class, IEntityBase, new() where TD: class, IDtoBase, new()
         {
-            if (model != null && (model is Game).Equals(true))
+            if (model != null)
             {
-                var objGame =  (object) model;
-                var objGameDto = (object) dtoModel;
-                var game = (Game) objGame;
-                var gameDto = (GameDTO) objGameDto;
-                game.Comments =
-                    _unitOfWork.Repository<Comment>().FindBy(x => gameDto.Comments.Contains(x.Id.ToString())).ToList();
-                game.PlatformTypes =
-                    _unitOfWork.Repository<PlatformType>().FindBy(x => gameDto.TypesName.Contains(x.Name)).ToList();
-                game.Genres =
-                    _unitOfWork.Repository<Genre>().FindBy(x => gameDto.GenresName.Contains(x.Name)).ToList();
-                game.PublisherId =
-                    _unitOfWork.Repository<Publisher>().FindBy(x => gameDto.PublisherName==x.Name).FirstOrDefault().Id;
-                return game;
-            }
-            if (model != null && (model is Genre).Equals(true))
-            {
-                var objGenre = (object)model;
-                var objGenreDto = (object)dtoModel;
-                var genre = (Genre) objGenre;
-                var genreDto = (GenreDTO)objGenreDto;
-                genre.Games =
-                    _unitOfWork.Repository<Game>().FindBy(x => genreDto.GamesKey.Contains(x.Key)).ToList();
-                return genre;
-            }
-            if (model != null && (model is Comment).Equals(true))
-            {
-                var objComment = (object)model;
-                var objCommentDto = (object)dtoModel;
-                var comment = (Comment) objComment;
-                var commentDto = (CommentDTO)objCommentDto;
-                comment.Game =
-                    _unitOfWork.Repository<Game>().FindBy(x => x.Key == commentDto.GameKey).FirstOrDefault();
-                return comment;
-            }
-            if (model != null && (model is PlatformType).Equals(true))
-            {
-                var objType = (object)model;
-                var objTypeDto = (object)dtoModel;
-                var type = (PlatformType)objType;
-                var typeDto = (PlatformTypeDTO)objTypeDto;
-                type.Games =
-                    _unitOfWork.Repository<Game>().FindBy(x => typeDto.GameKey.Contains(x.Key)).ToList();
-                return type;
-            }
-            if (model != null && (model is OrderDetail).Equals(true))
-            {
-                var objOrderDetail = (object)model;
-                var objOrderDetailDto = (object)dtoModel;
-                var orderDetail = (OrderDetail)objOrderDetail;
-                var orderDetailDto = (OrderDetailDTO)objOrderDetailDto;
-                orderDetail.Game =
-                    _unitOfWork.Repository<Game>().GetSingle(Guid.Parse(orderDetailDto.GameId));
-                orderDetail.Order =
-                    _unitOfWork.Repository<Order>().GetSingle(Guid.Parse(orderDetailDto.OrderId));
-                return orderDetail;
+                if ((model is Game).Equals(true))
+                {
+                    var objGame = (object) model;
+                    var objGameDto = (object) dtoModel;
+                    var game = (Game) objGame;
+                    var gameDto = (GameDTO) objGameDto;
+                    game.Comments =
+                        _unitOfWork.Repository<Comment>()
+                            .FindBy(x => gameDto.Comments.Contains(x.Id.ToString()))
+                            .ToList();
+                    game.PlatformTypes =
+                        _unitOfWork.Repository<PlatformType>().FindBy(x => gameDto.TypesName.Contains(x.Name)).ToList();
+                    game.Genres =
+                        _unitOfWork.Repository<Genre>().FindBy(x => gameDto.GenresName.Contains(x.Name)).ToList();
+                    game.PublisherId =
+                        _unitOfWork.Repository<Publisher>()
+                            .FindBy(x => gameDto.PublisherName == x.Name)
+                            .FirstOrDefault()
+                            .Id;
+                    return game;
+                }
+                if ((model is Genre).Equals(true))
+                {
+                    var objGenre = (object) model;
+                    var objGenreDto = (object) dtoModel;
+                    var genre = (Genre) objGenre;
+                    var genreDto = (GenreDTO) objGenreDto;
+                    genre.Games =
+                        _unitOfWork.Repository<Game>().FindBy(x => genreDto.GamesKey.Contains(x.Key)).ToList();
+                    return genre;
+                }
+                if ((model is Comment).Equals(true))
+                {
+                    var objComment = (object) model;
+                    var objCommentDto = (object) dtoModel;
+                    var comment = (Comment) objComment;
+                    var commentDto = (CommentDTO) objCommentDto;
+                    comment.Game =
+                        _unitOfWork.Repository<Game>().FindBy(x => x.Key == commentDto.GameKey).FirstOrDefault();
+                    return comment;
+                }
+               if ((model is PlatformType).Equals(true))
+                {
+                    var objType = (object) model;
+                    var objTypeDto = (object) dtoModel;
+                    var type = (PlatformType) objType;
+                    var typeDto = (PlatformTypeDTO) objTypeDto;
+                    type.Games =
+                        _unitOfWork.Repository<Game>().FindBy(x => typeDto.GameKey.Contains(x.Key)).ToList();
+                    return type;
+                }
+                if ((model is OrderDetail).Equals(true))
+                {
+                    var objOrderDetail = (object) model;
+                    var objOrderDetailDto = (object) dtoModel;
+                    var orderDetail = (OrderDetail) objOrderDetail;
+                    var orderDetailDto = (OrderDetailDTO) objOrderDetailDto;
+                    orderDetail.Game =
+                        _unitOfWork.Repository<Game>().GetSingle(Guid.Parse(orderDetailDto.GameId));
+                    orderDetail.Order =
+                        _unitOfWork.Repository<Order>().GetSingle(Guid.Parse(orderDetailDto.OrderId));
+                    return orderDetail;
+                }
             }
             return model;
         }
@@ -205,16 +213,16 @@ namespace GameStore.BLL.Services
             if (game == null)
                 throw new ValidationException("Cannot find game for creating a comment", string.Empty);
             comment.Game = game;
-            if (commentDto.ParentId != null)
+            if (commentDto.ParentCommentId != null)
             {
-                var parentComment = _unitOfWork.Repository<Comment>().GetSingle(Guid.Parse(commentDto.ParentId));
+                var parentComment = _unitOfWork.Repository<Comment>().GetSingle(Guid.Parse(commentDto.ParentCommentId));
                 if (parentComment == null)
                     throw new ValidationException("Cannot find parent comment for creating a comment", string.Empty);
                 comment.ParentComment = parentComment;
             }
             _unitOfWork.Repository<Comment>().Add(comment);
-            _logger.Debug("Adding new comment with Author={0}, Id={1} to game with Key={2}", commentDto.Name,
-                commentDto.Id, gameKey);
+            _logger.Debug("Adding new comment with Author={0}, Id={1}, ParentId={2} to game with Key={3}", commentDto.Name,
+                commentDto.Id, commentDto.ParentCommentId, gameKey);
         }
 
         public IEnumerable<CommentDTO> GetCommentsByGameId(string gameId)

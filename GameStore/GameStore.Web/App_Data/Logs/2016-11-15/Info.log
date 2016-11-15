@@ -90,3 +90,293 @@
 8000273a-0003-f600-b63f-84710c7967bb|2016-11-15 05:16:47.0227|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
 80001989-0002-ee00-b63f-84710c7967bb|2016-11-15 05:17:58.1168|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
 8000109d-0002-e900-b63f-84710c7967bb|2016-11-15 05:18:08.0236|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000002b-0000-e100-b63f-84710c7967bb|2016-11-15 09:46:44.5978|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000009-0003-fb00-b63f-84710c7967bb|2016-11-15 09:47:16.0454|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+8000000b-0003-fb00-b63f-84710c7967bb|2016-11-15 09:47:29.5820|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800004ad-0000-e200-b63f-84710c7967bb|2016-11-15 09:54:49.7057|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800027d9-0002-f000-b63f-84710c7967bb|2016-11-15 09:57:57.3629|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800027e8-0002-f000-b63f-84710c7967bb|2016-11-15 09:59:50.5257|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800000dc-0000-e700-b63f-84710c7967bb|2016-11-15 10:08:00.3450|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800007d9-0001-e700-b63f-84710c7967bb|2016-11-15 10:53:16.2816|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800007dd-0001-e700-b63f-84710c7967bb|2016-11-15 10:53:46.8184|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Sims3_16in1
+800007df-0001-e700-b63f-84710c7967bb|2016-11-15 10:53:51.8887|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Sims3_16in1
+800007e0-0001-e700-b63f-84710c7967bb|2016-11-15 10:54:21.1119|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Sims3_16in1
+800007e3-0001-e700-b63f-84710c7967bb|2016-11-15 10:54:31.7589|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+800007e5-0001-e700-b63f-84710c7967bb|2016-11-15 10:54:34.4610|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800007e7-0001-e700-b63f-84710c7967bb|2016-11-15 10:56:24.9636|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800008d9-0000-f100-b63f-84710c7967bb|2016-11-15 10:57:26.5713|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800001fe-0002-f300-b63f-84710c7967bb|2016-11-15 10:57:26.5713|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800008e9-0000-f100-b63f-84710c7967bb|2016-11-15 10:57:44.3678|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000041c-0000-f900-b63f-84710c7967bb|2016-11-15 10:57:51.4115|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+8000041f-0000-f900-b63f-84710c7967bb|2016-11-15 10:57:57.8991|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800000c1-0000-f200-b63f-84710c7967bb|2016-11-15 10:58:37.1164|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000001b-0003-fe00-b63f-84710c7967bb|2016-11-15 10:58:44.2359|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+8000001d-0003-fe00-b63f-84710c7967bb|2016-11-15 10:58:45.6884|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800003d9-0001-ed00-b63f-84710c7967bb|2016-11-15 11:01:29.4926|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000b23-0003-fb00-b63f-84710c7967bb|2016-11-15 11:19:02.8541|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800001fa-0003-f600-b63f-84710c7967bb|2016-11-15 11:19:10.3832|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+800001fc-0003-f600-b63f-84710c7967bb|2016-11-15 11:19:12.0369|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000628-0000-fd00-b63f-84710c7967bb|2016-11-15 11:21:34.1848|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800003d1-0001-e200-b63f-84710c7967bb|2016-11-15 11:25:09.2638|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800000a9-0000-ec00-b63f-84710c7967bb|2016-11-15 11:25:09.2638|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800003d3-0001-e200-b63f-84710c7967bb|2016-11-15 11:25:16.0401|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+800003d5-0001-e200-b63f-84710c7967bb|2016-11-15 11:25:18.0245|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000098-0001-e300-b63f-84710c7967bb|2016-11-15 11:30:27.8146|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000024f-0003-fa00-b63f-84710c7967bb|2016-11-15 11:30:27.8146|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800003e3-0001-e200-b63f-84710c7967bb|2016-11-15 11:31:29.8749|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800006ed-0002-f700-b63f-84710c7967bb|2016-11-15 11:32:19.0325|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000180e-0000-f600-b63f-84710c7967bb|2016-11-15 11:32:20.0771|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001811-0000-f600-b63f-84710c7967bb|2016-11-15 11:32:32.1462|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Sims3_16in1
+80001813-0000-f600-b63f-84710c7967bb|2016-11-15 11:32:34.2591|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+80001815-0000-f600-b63f-84710c7967bb|2016-11-15 11:32:35.6238|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80002254-0001-ee00-b63f-84710c7967bb|2016-11-15 11:34:29.9403|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800018a9-0000-f700-b63f-84710c7967bb|2016-11-15 11:34:29.9403|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80002256-0001-ee00-b63f-84710c7967bb|2016-11-15 11:34:36.7855|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+80002258-0001-ee00-b63f-84710c7967bb|2016-11-15 11:34:38.4795|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000398-0000-ea00-b63f-84710c7967bb|2016-11-15 11:36:36.0769|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000002d-0002-e700-b63f-84710c7967bb|2016-11-15 11:36:37.4087|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000002f-0002-e700-b63f-84710c7967bb|2016-11-15 11:36:43.2688|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+80000031-0002-e700-b63f-84710c7967bb|2016-11-15 11:36:45.0319|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000001c-0002-e900-b63f-84710c7967bb|2016-11-15 11:40:21.0228|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000280-0001-ef00-b63f-84710c7967bb|2016-11-15 11:40:21.0228|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000001e-0002-e900-b63f-84710c7967bb|2016-11-15 11:40:27.7634|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+80000020-0002-e900-b63f-84710c7967bb|2016-11-15 11:40:29.3171|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000022-0002-e900-b63f-84710c7967bb|2016-11-15 11:40:33.0136|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Sims3_16in1
+80000024-0002-e900-b63f-84710c7967bb|2016-11-15 11:40:34.0845|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Sims3_16in1
+80001cd1-0000-f400-b63f-84710c7967bb|2016-11-15 11:41:43.3613|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001cd3-0000-f400-b63f-84710c7967bb|2016-11-15 11:41:47.6628|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+80001cd5-0000-f400-b63f-84710c7967bb|2016-11-15 11:41:49.2355|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000010b-0001-f100-b63f-84710c7967bb|2016-11-15 11:45:45.2573|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001ce0-0000-f400-b63f-84710c7967bb|2016-11-15 11:45:45.2573|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000010e-0001-f100-b63f-84710c7967bb|2016-11-15 11:45:52.1729|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+80000110-0001-f100-b63f-84710c7967bb|2016-11-15 11:45:54.2155|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000066d-0003-f200-b63f-84710c7967bb|2016-11-15 11:46:46.9716|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800005d1-0003-fc00-b63f-84710c7967bb|2016-11-15 11:49:21.0143|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800005d4-0003-fc00-b63f-84710c7967bb|2016-11-15 11:50:29.8644|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800005d9-0003-fc00-b63f-84710c7967bb|2016-11-15 11:51:30.4818|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800005e1-0003-fc00-b63f-84710c7967bb|2016-11-15 11:52:31.1696|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800004f2-0000-f900-b63f-84710c7967bb|2016-11-15 11:55:15.4000|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000b35-0000-f100-b63f-84710c7967bb|2016-11-15 11:55:15.4180|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000021-0000-df00-b63f-84710c7967bb|2016-11-15 11:56:16.8147|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000023-0000-df00-b63f-84710c7967bb|2016-11-15 11:56:34.4796|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+80000025-0000-df00-b63f-84710c7967bb|2016-11-15 11:56:39.3393|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000027-0000-df00-b63f-84710c7967bb|2016-11-15 11:57:49.0737|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000a9a-0002-f200-b63f-84710c7967bb|2016-11-15 11:59:04.2209|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000027b-0001-fd00-b63f-84710c7967bb|2016-11-15 12:00:07.4404|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000283-0001-fd00-b63f-84710c7967bb|2016-11-15 12:01:55.8792|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000769-0002-fc00-b63f-84710c7967bb|2016-11-15 12:07:01.0477|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000228d-0001-ee00-b63f-84710c7967bb|2016-11-15 12:08:07.8481|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000b4d-0000-f100-b63f-84710c7967bb|2016-11-15 12:08:51.3957|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000013b-0001-f100-b63f-84710c7967bb|2016-11-15 12:09:56.2227|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800009f4-0003-fc00-b63f-84710c7967bb|2016-11-15 12:12:52.1116|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800009f8-0003-fc00-b63f-84710c7967bb|2016-11-15 12:14:25.2052|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800009ff-0003-fc00-b63f-84710c7967bb|2016-11-15 12:15:36.8414|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000a04-0003-fc00-b63f-84710c7967bb|2016-11-15 12:16:38.5302|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80002c88-0002-f000-b63f-84710c7967bb|2016-11-15 12:18:51.6449|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000096c-0000-ee00-b63f-84710c7967bb|2016-11-15 12:19:51.1826|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000096e-0000-ee00-b63f-84710c7967bb|2016-11-15 12:21:36.7808|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000970-0000-ee00-b63f-84710c7967bb|2016-11-15 12:22:37.2003|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800003a0-0003-fa00-b63f-84710c7967bb|2016-11-15 12:56:31.2210|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+80003d72-0000-f700-b63f-84710c7967bb|2016-11-15 12:57:09.6875|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000138-0001-f200-b63f-84710c7967bb|2016-11-15 12:57:22.3470|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+8000013a-0001-f200-b63f-84710c7967bb|2016-11-15 12:57:24.1229|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000013b-0001-f200-b63f-84710c7967bb|2016-11-15 12:58:12.7726|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000227-0001-e400-b63f-84710c7967bb|2016-11-15 13:00:24.7656|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80002d70-0003-fb00-b63f-84710c7967bb|2016-11-15 13:00:24.7656|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000158c-0000-e900-b63f-84710c7967bb|2016-11-15 13:16:53.6472|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000158e-0000-e900-b63f-84710c7967bb|2016-11-15 13:17:03.0182|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+8000005e-0002-eb00-b63f-84710c7967bb|2016-11-15 13:18:03.0890|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800003d2-0001-f100-b63f-84710c7967bb|2016-11-15 13:19:57.6497|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80003d91-0000-f700-b63f-84710c7967bb|2016-11-15 13:20:00.3489|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000460-0000-ea00-b63f-84710c7967bb|2016-11-15 13:20:59.3359|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800009f2-0000-fa00-b63f-84710c7967bb|2016-11-15 13:21:33.5725|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800009f5-0000-fa00-b63f-84710c7967bb|2016-11-15 13:21:54.1341|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+800084e0-0002-ef00-b63f-84710c7967bb|2016-11-15 13:22:00.9413|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800084ed-0002-ef00-b63f-84710c7967bb|2016-11-15 13:23:07.3697|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800003ec-0000-e800-b63f-84710c7967bb|2016-11-15 13:24:08.3032|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80002356-0000-ed00-b63f-84710c7967bb|2016-11-15 13:24:25.7915|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000660-0000-e200-b63f-84710c7967bb|2016-11-15 13:26:42.6011|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000673-0000-e200-b63f-84710c7967bb|2016-11-15 13:27:42.9264|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000681-0000-e200-b63f-84710c7967bb|2016-11-15 13:27:53.7315|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000110-0001-f500-b63f-84710c7967bb|2016-11-15 13:29:38.1514|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000051-0002-e500-b63f-84710c7967bb|2016-11-15 13:30:53.9000|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000e90-0003-f500-b63f-84710c7967bb|2016-11-15 13:32:31.6752|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000a4b-0003-fc00-b63f-84710c7967bb|2016-11-15 14:59:21.2897|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80002de5-0001-ef00-b63f-84710c7967bb|2016-11-15 14:59:30.1800|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+80002de7-0001-ef00-b63f-84710c7967bb|2016-11-15 14:59:32.1068|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80002df1-0001-ef00-b63f-84710c7967bb|2016-11-15 15:01:01.8819|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000050f-0003-f800-b63f-84710c7967bb|2016-11-15 15:13:56.8188|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80002a5b-0001-ea00-b63f-84710c7967bb|2016-11-15 15:14:05.5446|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+80002a5d-0001-ea00-b63f-84710c7967bb|2016-11-15 15:14:07.3670|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000024c-0002-e800-b63f-84710c7967bb|2016-11-15 15:14:21.0293|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+800002f9-0002-e900-b63f-84710c7967bb|2016-11-15 15:15:24.5643|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000010-0002-e100-b63f-84710c7967bb|2016-11-15 15:15:27.3169|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000012-0002-e100-b63f-84710c7967bb|2016-11-15 15:15:30.6374|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+80000014-0002-e100-b63f-84710c7967bb|2016-11-15 15:15:32.2893|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000017-0002-e100-b63f-84710c7967bb|2016-11-15 15:15:37.2461|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+800004c5-0001-f200-b63f-84710c7967bb|2016-11-15 15:18:11.6683|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000140-0000-ec00-b63f-84710c7967bb|2016-11-15 15:18:19.8590|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80000142-0000-ec00-b63f-84710c7967bb|2016-11-15 15:19:35.3333|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000fb1-0001-e400-b63f-84710c7967bb|2016-11-15 15:19:44.2173|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80000b80-0000-f100-b63f-84710c7967bb|2016-11-15 15:21:33.6269|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800006b9-0000-e400-b63f-84710c7967bb|2016-11-15 15:21:33.6269|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000138f-0001-fa00-b63f-84710c7967bb|2016-11-15 15:21:40.7898|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+800022c2-0001-ee00-b63f-84710c7967bb|2016-11-15 15:21:42.5672|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80001394-0001-fa00-b63f-84710c7967bb|2016-11-15 15:21:47.9004|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+800006c2-0000-e400-b63f-84710c7967bb|2016-11-15 15:22:02.4251|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80001c27-0001-fd00-b63f-84710c7967bb|2016-11-15 15:23:23.5422|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800020ba-0000-e700-b63f-84710c7967bb|2016-11-15 15:23:29.3753|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+80001c2b-0001-fd00-b63f-84710c7967bb|2016-11-15 15:23:30.8293|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800020c1-0000-e700-b63f-84710c7967bb|2016-11-15 15:23:35.5219|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80000035-0002-e100-b63f-84710c7967bb|2016-11-15 15:25:23.5654|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000a05d-0000-f800-b63f-84710c7967bb|2016-11-15 15:25:33.2570|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+8000a063-0000-f800-b63f-84710c7967bb|2016-11-15 15:25:43.8677|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+8000008c-0002-e100-b63f-84710c7967bb|2016-11-15 15:26:16.8803|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80000051-0003-ff00-b63f-84710c7967bb|2016-11-15 15:26:23.5891|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000a78-0001-fb00-b63f-84710c7967bb|2016-11-15 15:26:56.4489|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80001040-0001-e400-b63f-84710c7967bb|2016-11-15 15:27:29.0001|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800020ca-0000-e700-b63f-84710c7967bb|2016-11-15 15:29:33.9792|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000078-0003-ff00-b63f-84710c7967bb|2016-11-15 15:29:33.9992|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800020cf-0000-e700-b63f-84710c7967bb|2016-11-15 15:29:44.6844|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80002390-0000-ed00-b63f-84710c7967bb|2016-11-15 15:31:58.1884|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000052e-0003-f800-b63f-84710c7967bb|2016-11-15 15:32:09.9298|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80001086-0001-e400-b63f-84710c7967bb|2016-11-15 15:32:46.1582|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+800023a3-0000-ed00-b63f-84710c7967bb|2016-11-15 15:32:58.3731|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800000ec-0000-e100-b63f-84710c7967bb|2016-11-15 15:48:56.4741|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000061-0002-ed00-b63f-84710c7967bb|2016-11-15 15:49:01.8106|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000064-0002-ed00-b63f-84710c7967bb|2016-11-15 15:49:04.8839|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+80000066-0002-ed00-b63f-84710c7967bb|2016-11-15 15:49:06.7715|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000050f-0001-e200-b63f-84710c7967bb|2016-11-15 15:50:28.9983|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000c925-0000-f800-b63f-84710c7967bb|2016-11-15 15:50:49.9885|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000042c-0001-f100-b63f-84710c7967bb|2016-11-15 15:52:07.8112|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800013de-0000-f100-b63f-84710c7967bb|2016-11-15 15:53:08.6270|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800013e5-0000-f100-b63f-84710c7967bb|2016-11-15 15:54:13.3264|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000a38-0001-e600-b63f-84710c7967bb|2016-11-15 15:56:05.9799|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000734-0000-f500-b63f-84710c7967bb|2016-11-15 15:57:05.7476|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001a26-0001-f500-b63f-84710c7967bb|2016-11-15 15:57:05.7657|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000a46-0001-e600-b63f-84710c7967bb|2016-11-15 15:58:05.9563|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80002f9e-0001-ed00-b63f-84710c7967bb|2016-11-15 15:58:07.0391|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000070b-0000-e200-b63f-84710c7967bb|2016-11-15 15:59:14.9424|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000711-0000-e200-b63f-84710c7967bb|2016-11-15 16:00:06.2869|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80000737-0003-f200-b63f-84710c7967bb|2016-11-15 16:00:15.0746|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800006a8-0001-e900-b63f-84710c7967bb|2016-11-15 16:00:32.3298|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80001d97-0003-fa00-b63f-84710c7967bb|2016-11-15 16:01:10.5220|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+8000241a-0000-ed00-b63f-84710c7967bb|2016-11-15 16:01:15.6431|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80001a49-0001-f500-b63f-84710c7967bb|2016-11-15 16:04:34.2891|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000dab-0000-eb00-b63f-84710c7967bb|2016-11-15 16:05:30.7984|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+8000242f-0000-ed00-b63f-84710c7967bb|2016-11-15 16:05:59.3682|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800001af-0000-f200-b63f-84710c7967bb|2016-11-15 16:06:05.0232|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80001da3-0001-f900-b63f-84710c7967bb|2016-11-15 16:07:48.7430|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000550-0001-e200-b63f-84710c7967bb|2016-11-15 16:07:48.7620|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000136f-0000-e400-b63f-84710c7967bb|2016-11-15 16:07:58.6375|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+8000072d-0001-e900-b63f-84710c7967bb|2016-11-15 16:10:56.9851|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000c94a-0000-f800-b63f-84710c7967bb|2016-11-15 16:11:16.1191|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80002105-0000-e700-b63f-84710c7967bb|2016-11-15 16:11:49.9211|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+800002e7-0002-e800-b63f-84710c7967bb|2016-11-15 16:13:33.1781|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800005de-0001-ec00-b63f-84710c7967bb|2016-11-15 16:13:33.1971|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800002eb-0002-e800-b63f-84710c7967bb|2016-11-15 16:13:56.2437|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80000f62-0001-e600-b63f-84710c7967bb|2016-11-15 16:16:07.7137|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000748-0003-ec00-b63f-84710c7967bb|2016-11-15 16:16:07.7317|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80001c79-0003-fc00-b63f-84710c7967bb|2016-11-15 16:16:19.3720|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80000a12-0000-fa00-b63f-84710c7967bb|2016-11-15 16:17:03.7530|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000866-0001-e700-b63f-84710c7967bb|2016-11-15 16:17:06.9348|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000086b-0001-e700-b63f-84710c7967bb|2016-11-15 16:17:13.9005|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+8000086c-0001-e700-b63f-84710c7967bb|2016-11-15 16:17:20.5333|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80000089-0002-ed00-b63f-84710c7967bb|2016-11-15 16:21:25.4828|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000dc5-0000-eb00-b63f-84710c7967bb|2016-11-15 16:21:49.3158|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+80000dc7-0000-eb00-b63f-84710c7967bb|2016-11-15 16:21:53.6683|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800013ca-0001-e400-b63f-84710c7967bb|2016-11-15 16:22:50.8188|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000011b-0000-e100-b63f-84710c7967bb|2016-11-15 16:22:58.9690|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80000f7a-0001-e600-b63f-84710c7967bb|2016-11-15 16:28:21.2272|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000413-0000-e800-b63f-84710c7967bb|2016-11-15 16:28:47.1240|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80000dd2-0000-eb00-b63f-84710c7967bb|2016-11-15 16:29:27.8688|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800017d5-0002-f800-b63f-84710c7967bb|2016-11-15 16:29:38.5978|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80001de0-0003-fc00-b63f-84710c7967bb|2016-11-15 16:31:31.4841|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000038b-0002-e100-b63f-84710c7967bb|2016-11-15 16:32:40.7946|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80002856-0000-ed00-b63f-84710c7967bb|2016-11-15 16:33:45.5250|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80001de7-0003-fc00-b63f-84710c7967bb|2016-11-15 16:39:30.5687|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80002322-0001-f400-b63f-84710c7967bb|2016-11-15 16:40:49.4071|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000232f-0001-f400-b63f-84710c7967bb|2016-11-15 16:41:00.1007|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80002330-0001-f400-b63f-84710c7967bb|2016-11-15 16:41:14.3793|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+800005f7-0002-ec00-b63f-84710c7967bb|2016-11-15 16:41:52.7556|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80002865-0000-ed00-b63f-84710c7967bb|2016-11-15 16:41:57.1632|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80002866-0000-ed00-b63f-84710c7967bb|2016-11-15 16:42:03.2177|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80000595-0003-f800-b63f-84710c7967bb|2016-11-15 16:44:28.2467|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000543-0000-ec00-b63f-84710c7967bb|2016-11-15 16:44:37.5700|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80000544-0000-ec00-b63f-84710c7967bb|2016-11-15 16:44:39.9835|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+800005aa-0000-ec00-b63f-84710c7967bb|2016-11-15 16:45:26.8487|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+800005ab-0000-ec00-b63f-84710c7967bb|2016-11-15 16:45:28.8889|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000795-0000-e200-b63f-84710c7967bb|2016-11-15 16:45:38.1110|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80000681-0002-ec00-b63f-84710c7967bb|2016-11-15 16:45:52.1282|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80000633-0003-eb00-b63f-84710c7967bb|2016-11-15 16:46:18.3107|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80001b56-0003-f100-b63f-84710c7967bb|2016-11-15 16:46:31.5341|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.NewComment
+80001b57-0003-f100-b63f-84710c7967bb|2016-11-15 16:46:33.6013|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800036c5-0000-fb00-b63f-84710c7967bb|2016-11-15 17:06:16.9153|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80004ee8-0000-f900-b63f-84710c7967bb|2016-11-15 17:07:27.9802|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80001e54-0003-fc00-b63f-84710c7967bb|2016-11-15 17:08:52.4843|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+80001e56-0003-fc00-b63f-84710c7967bb|2016-11-15 17:09:01.6077|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80004612-0000-f200-b63f-84710c7967bb|2016-11-15 17:09:58.2146|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+80004614-0000-f200-b63f-84710c7967bb|2016-11-15 17:10:03.1588|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80001536-0000-ee00-b63f-84710c7967bb|2016-11-15 17:10:21.6819|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000851c-0002-ef00-b63f-84710c7967bb|2016-11-15 17:16:48.4085|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80004f2c-0000-f900-b63f-84710c7967bb|2016-11-15 17:16:48.4276|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800063b3-0000-e900-b63f-84710c7967bb|2016-11-15 17:20:11.1490|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000136b-0002-f500-b63f-84710c7967bb|2016-11-15 17:22:57.5162|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80002162-0000-e700-b63f-84710c7967bb|2016-11-15 17:22:57.5357|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000136e-0002-f500-b63f-84710c7967bb|2016-11-15 17:23:05.1686|INFO|GameStore.Web.Controllers.CommentsController|Comments is deleted from game: CommentId=8619733d-6fe0-4d73-b02b-cf02cfc73b80 GameKey =Gta6_ThirdEdition 
+80002165-0000-e700-b63f-84710c7967bb|2016-11-15 17:23:11.1288|INFO|GameStore.Web.Controllers.CommentsController|Comments is deleted from game: CommentId=0212a732-c425-4e36-8478-f7e6f3e83e85 GameKey =Gta6_ThirdEdition 
+800007cd-0003-f200-b63f-84710c7967bb|2016-11-15 17:24:13.6980|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000ad0-0001-fb00-b63f-84710c7967bb|2016-11-15 17:24:13.7180|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000017e-0000-e100-b63f-84710c7967bb|2016-11-15 17:24:25.4674|INFO|GameStore.Web.Controllers.CommentsController|Comments is deleted from game: CommentId=c256e30e-29ae-4cf1-bd7a-90ae36a545fb GameKey =Gta6_ThirdEdition 
+8000017f-0000-e100-b63f-84710c7967bb|2016-11-15 17:24:25.4804|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000068f-0001-f200-b63f-84710c7967bb|2016-11-15 17:24:28.1101|INFO|GameStore.Web.Controllers.CommentsController|Comments is deleted from game: CommentId=ee3c3887-211a-4b28-a0bb-65cde5a974be GameKey =Gta6_ThirdEdition 
+80000690-0001-f200-b63f-84710c7967bb|2016-11-15 17:24:28.1101|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000339d-0003-fb00-b63f-84710c7967bb|2016-11-15 17:26:20.0403|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000239a-0001-ee00-b63f-84710c7967bb|2016-11-15 17:29:13.6205|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000138e-0000-e400-b63f-84710c7967bb|2016-11-15 17:30:25.9697|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80001b3f-0000-f100-b63f-84710c7967bb|2016-11-15 17:34:54.9615|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80001d1a-0001-fd00-b63f-84710c7967bb|2016-11-15 17:38:03.1057|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800008c6-0001-e700-b63f-84710c7967bb|2016-11-15 17:38:03.1057|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800018f0-0002-fb00-b63f-84710c7967bb|2016-11-15 17:38:03.1057|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800026b9-0000-ee00-b63f-84710c7967bb|2016-11-15 17:38:06.6513|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000e16-0000-df00-b63f-84710c7967bb|2016-11-15 17:43:04.7589|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+8000074b-0001-e200-b63f-84710c7967bb|2016-11-15 17:43:09.2740|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80000374-0002-e300-b63f-84710c7967bb|2016-11-15 17:44:05.1225|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800023e5-0001-f400-b63f-84710c7967bb|2016-11-15 18:11:11.7809|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000afe-0001-fb00-b63f-84710c7967bb|2016-11-15 18:11:25.9300|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+800005f9-0003-f800-b63f-84710c7967bb|2016-11-15 18:11:31.0180|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800006d5-0002-ec00-b63f-84710c7967bb|2016-11-15 18:13:59.6737|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+80000685-0001-eb00-b63f-84710c7967bb|2016-11-15 18:14:03.7590|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80001f07-0001-f600-b63f-84710c7967bb|2016-11-15 18:16:00.9193|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000853f-0002-ef00-b63f-84710c7967bb|2016-11-15 18:16:02.1019|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+80001f0a-0001-f600-b63f-84710c7967bb|2016-11-15 18:16:06.4004|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+800001ad-0000-e100-b63f-84710c7967bb|2016-11-15 18:25:01.4463|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+8000066a-0003-eb00-b63f-84710c7967bb|2016-11-15 18:26:49.0021|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = Gta6_ThirdEdition
+80002bb3-0000-fd00-b63f-84710c7967bb|2016-11-15 18:32:02.0386|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000067c-0003-eb00-b63f-84710c7967bb|2016-11-15 18:32:11.0911|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Gta6_ThirdEdition
+80000c39-0002-ed00-b63f-84710c7967bb|2016-11-15 18:37:32.0702|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80003019-0001-ed00-b63f-84710c7967bb|2016-11-15 18:37:39.8442|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000608a-0000-f700-b63f-84710c7967bb|2016-11-15 18:38:25.7630|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000e57-0000-eb00-b63f-84710c7967bb|2016-11-15 18:38:25.7630|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000855e-0002-ef00-b63f-84710c7967bb|2016-11-15 18:38:50.5630|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Sims3_16in1
+80002731-0000-ee00-b63f-84710c7967bb|2016-11-15 18:39:15.9764|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001fe6-0000-ea00-b63f-84710c7967bb|2016-11-15 18:42:05.2138|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800015de-0001-e600-b63f-84710c7967bb|2016-11-15 18:43:22.0283|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80003180-0001-ea00-b63f-84710c7967bb|2016-11-15 18:44:41.9550|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000414-0002-e100-b63f-84710c7967bb|2016-11-15 18:48:38.7612|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80002011-0000-ea00-b63f-84710c7967bb|2016-11-15 19:14:46.2093|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80002018-0000-ea00-b63f-84710c7967bb|2016-11-15 19:15:57.1513|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000115e-0003-ec00-b63f-84710c7967bb|2016-11-15 19:19:35.4806|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000079-0003-f700-b63f-84710c7967bb|2016-11-15 19:20:42.3049|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000230-0001-dd00-b63f-84710c7967bb|2016-11-15 19:22:51.2648|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000003f-0001-dc00-b63f-84710c7967bb|2016-11-15 19:23:15.0679|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80002e11-0002-f700-b63f-84710c7967bb|2016-11-15 19:24:47.2145|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001d14-0000-f100-b63f-84710c7967bb|2016-11-15 19:27:22.5287|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001dc4-0000-e400-b63f-84710c7967bb|2016-11-15 19:30:02.3760|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80004f63-0000-f900-b63f-84710c7967bb|2016-11-15 19:36:25.6530|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+800062ff-0002-f500-b63f-84710c7967bb|2016-11-15 19:38:08.8478|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+8000205e-0000-ea00-b63f-84710c7967bb|2016-11-15 19:39:14.8641|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80002068-0000-ea00-b63f-84710c7967bb|2016-11-15 19:41:01.1463|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000537-0002-e500-b63f-84710c7967bb|2016-11-15 19:41:50.0644|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80001ad7-0002-fb00-b63f-84710c7967bb|2016-11-15 19:43:23.4547|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
+80000d09-0001-e700-b63f-84710c7967bb|2016-11-15 19:44:36.3920|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Get
