@@ -6,7 +6,7 @@ using GameStore.DAL.Interfaces;
 
 namespace GameStore.DAL.Entities
 {
-    public class Comment : IEntityBase, IEntityNamed
+    public class Comment : IEntityNamed
     {
         [Key]     
         public Guid Id { get; set; }

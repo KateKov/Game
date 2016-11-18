@@ -3,7 +3,7 @@ using GameStore.BLL.Interfaces;
 
 namespace GameStore.BLL.DTO
 {
-    public class GenreDTO : IDtoBase, IDtoNamed
+    public class GenreDTO : IDtoNamed
     {     
         public string Id { get; set; }
         public string Name { get; set; }

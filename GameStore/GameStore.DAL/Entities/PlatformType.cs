@@ -6,7 +6,7 @@ using GameStore.DAL.Interfaces;
 
 namespace GameStore.DAL.Entities
 {
-    public class PlatformType : IEntityBase, IEntityNamed
+    public class PlatformType : IEntityNamed
     {
         public PlatformType()
         {

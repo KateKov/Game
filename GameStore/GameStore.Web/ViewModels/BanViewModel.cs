@@ -6,7 +6,7 @@ namespace GameStore.Web.ViewModels
     {
         public string Name { get; set; }
 
-        public static ICollection<string> Durations
+        public static IEnumerable<string> Durations
         {
             get { return new List<string> {"1 hour", "1 day", "1 week", "1 month", "permanent"}; }
         }

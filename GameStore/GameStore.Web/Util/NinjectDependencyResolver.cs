@@ -32,6 +32,9 @@ namespace GameStore.Web.Util
         private void AddBindings()
         {
             _kernel.Bind<IService>().To<GameStoreService>();
+            _kernel.Bind<IGameService>().To<GamesService>();
+            _kernel.Bind<ICommentService>().To<CommentsService>();
+            _kernel.Bind<IOrderService>().To<OrdersService>();
             _kernel.Bind<ILogger>().ToMethod(p =>
             {
                 if (p.Request.Target != null && p.Request.Target.Member.DeclaringType != null)

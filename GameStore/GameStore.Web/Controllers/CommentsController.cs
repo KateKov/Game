@@ -16,10 +16,12 @@ namespace GameStore.Web.Controllers
     public class CommentsController : Controller
     {
         private readonly IService _gameService;
+        private readonly ICommentService _commentService;
         private readonly ILogger _logger = LogManager.GetCurrentClassLogger();
-        public CommentsController(IService service)
+        public CommentsController(IService service, ICommentService commentService)
         {
             _gameService = service;
+            _commentService = commentService;
         }
 
         [HttpGet]        
@@ -79,7 +81,7 @@ namespace GameStore.Web.Controllers
             if (ModelState.IsValid) { 
                 var commentDto = Mapper.Map<CommentViewModel, CommentDTO>(newComment);
                 commentDto.GameId = _gameService.GetByKey<GameDTO>(commentDto.GameKey).Id;
-               _gameService.AddComment(commentDto, newComment.GameKey);
+               _commentService.AddComment(commentDto, newComment.GameKey);
                 return PartialView("Success");
             }
             return PartialView("NewComment", newComment);
@@ -88,8 +90,9 @@ namespace GameStore.Web.Controllers
         [HttpGet]
         public ActionResult Comments(string key)
         {
+            ViewBag.GameKey = key;
             _logger.Info("Request to CommentsController.GetGameComments. Parameters: gameKey = {0}", key);
-             return View(Mapper.Map<IEnumerable<CommentDTO>, IEnumerable<CommentViewModel>>(_gameService.GetCommentsByGameKey(key)));          
+             return View(Mapper.Map<IEnumerable<CommentDTO>, IEnumerable<CommentViewModel>>(_commentService.GetCommentsByGameKey(key)));
         }
 
         [HttpGet]

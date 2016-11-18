@@ -7,11 +7,11 @@ using GameStore.DAL.Interfaces;
 
 namespace GameStore.DAL.Entities
 {
-    public class Genre : IEntityBase, IEntityNamed
+    public class Genre : IEntityNamed
     {
         public Genre()
         {
-            ChildGenres=new List<Genre>();
+            ChildGenres = new List<Genre>();
             Games =new List<Game>();
         }
         [Key]

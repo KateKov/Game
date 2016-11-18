@@ -16,5 +16,6 @@ namespace GameStore.Web.ViewModels
         [Display(Name = "Date")]
         public DateTime Date { get; set; }
         public ICollection<OrderDetailViewModel> OrderDetails { get; set; }
+        public ICollection<string> OrderDetailsId { get; set; }
     }
 }

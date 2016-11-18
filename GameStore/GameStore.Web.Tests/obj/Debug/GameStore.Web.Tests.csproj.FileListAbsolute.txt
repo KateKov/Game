@@ -88,3 +88,4 @@ C:\Users\Kateryna_Kovalenko\Downloads\gamestoreNEW\Game\GameStore\GameStore.Web.
 C:\Users\Kateryna_Kovalenko\Downloads\gamestoreNEW\Game\GameStore\GameStore.Web.Tests\bin\Debug\EntityFramework.xml
 C:\Users\Kateryna_Kovalenko\Downloads\gamestoreNEW\Game\GameStore\GameStore.Web.Tests\bin\Debug\Ninject.xml
 C:\Users\Kateryna_Kovalenko\Downloads\gamestoreNEW\Game\GameStore\GameStore.Web.Tests\bin\Debug\Ninject.Web.Common.xml
+C:\Users\Kateryna_Kovalenko\Downloads\GitGame\Game\GameStore\GameStore.Web.Tests\bin\Debug\Rotativa.dll

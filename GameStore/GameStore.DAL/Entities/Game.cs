@@ -6,14 +6,14 @@ using GameStore.DAL.Interfaces;
 
 namespace GameStore.DAL.Entities
 {
-    public class Game : IEntityBase, IEntityNamed, IEntityWithKey
+    public class Game : IEntityNamed, IEntityWithKey
     {
         public Game()
         {
-            OrderDetails=new List<OrderDetail>();
-            Comments=new List<Comment>();
-            Genres=new List<Genre>();
-            PlatformTypes=new List<PlatformType>();
+            OrderDetails = new List<OrderDetail>();
+            Comments = new List<Comment>();
+            Genres = new List<Genre>();
+            PlatformTypes = new List<PlatformType>();
         }
         [Key]
         public Guid Id { get; set; }
@@ -28,9 +28,14 @@ namespace GameStore.DAL.Entities
 
         public string Description { get; set; }
         public decimal Price { get; set; }
+        [Column(TypeName = "SMALLINT")]
         public short UnitsInStock { get; set; }
         public bool Discountinues { get; set; }
         public Guid? PublisherId { get; set; }
+
+        public int Viewing { get; set; }
+
+        public DateTime DateOfAdding { get; set; }
         public virtual Publisher Publisher { get; set; }
         public virtual ICollection<OrderDetail> OrderDetails { get; set; }
         public virtual ICollection<Comment> Comments { get; set; }

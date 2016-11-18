@@ -20,56 +20,57 @@
 
     <div>
 
-        <h4>Автор</h4>
+
 
         <hr />
 
         <dl class="dl-horizontal">
 
             <dt>
-
-                @Html.DisplayNameFor(model => model.Name)
-
+                <p><b>
+                       <b>   @Html.DisplayNameFor(model => model.Name)</b>
+                    </b>
+                </p>
             </dt>
 
 
 
             <dd>
-
-                @Html.DisplayFor(model => model.Name)
-
+                <p><b>
+                    @Html.DisplayFor(model => model.Name)
+                </b></p>
             </dd>
 
 
 
             <dt>
-
-                @Html.DisplayNameFor(model => model.Description)
-
+                <p>
+                    <b>  @Html.DisplayNameFor(model => model.Description)</b>
+                </p>
             </dt>
 
 
 
             <dd>
-
-                @Html.DisplayFor(model => model.Description)
-
+                <p>
+                   @Html.DisplayFor(model => model.Description)
+                </p>
             </dd>
 
 
 
             <dt>
-
-                @Html.DisplayNameFor(model => model.HomePage)
-
+                <p>
+                    <b>  @Html.DisplayNameFor(model => model.HomePage)</b>
+                </p>
             </dt>
 
 
 
             <dd>
-
-                @Html.DisplayFor(model => model.HomePage)
-
+                <p>
+                    @Html.DisplayFor(model => model.HomePage)
+                </p>
             </dd>
 
 
@@ -84,7 +85,7 @@
 
   
 
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Publishers", "Index")
 
 </p>
 

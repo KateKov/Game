@@ -30,17 +30,23 @@
                         <table class="table-heading simpleCart_shelfItem">
 
                             <tr>
-
-                                <th class="table-grid">Товар</th>
-
-
-
                                 <th>@Html.DisplayNameFor(modelItem => Model.Order.CustomerId)</th>
 
                                 <th>@Html.DisplayNameFor(modelItem => Model.Order.Date)</th>
 
                                 <th>@Html.DisplayNameFor(modelItem => Model.Order.Sum)</th>
 
+                            </tr>
+                            <tr>
+                                <th>
+                                    @Html.DisplayFor(model => model.Order.CustomerId)
+                                </th>
+                                <th>
+                                    @Html.DisplayFor(model => model.Order.Date)
+                                </th>
+                                <th>
+                                    @Html.DisplayFor(model => model.Order.Date)
+                                </th>
                             </tr>
 
 
@@ -111,11 +117,11 @@
 
                                             <td>
 
-                                                @Html.ActionLink("Bank", "Pay", new { order= Model.Order, paymentName = "Bank"}) |
+                                                @Html.ActionLink("Bank", "PdfFormat", new { orderId= Model.Order.Id, paymentName = "Bank"}) |
 
-                                                @Html.ActionLink("IBox", "Pay", new { order = Model.Order, paymentName = "IBox" }) |
+                                                @Html.ActionLink("IBox", "Pay", new { orderId = Model.Order.Id, paymentName = "IBox" }) |
 
-                                                @Html.ActionLink("Visa", "Pay", new { order = Model.Order, paymentName = "Visa" })
+                                                @Html.ActionLink("Visa", "Pay", new { orderId = Model.Order.Id, paymentName = "Visa" })
 
                                             </td>
 
@@ -164,7 +170,7 @@
 
                     <div class="content-mid">
 
-                        <h3>The basket is empty</h3>
+                        <h3>There are no orders</h3>
 
                         <label class="line"></label>
 

@@ -1,131 +1,142 @@
-﻿@using GameStore.Web.ViewModels
+﻿
+@using GameStore.Web.ViewModels
 
-@model IEnumerable<GameViewModel>
+@model GameFilteringViewModel
+
+
 
 @{
     ViewBag.Title = "Games";
 }
-<link href='@Url.Content("~/Content/themes/base/jquery-ui.css")' rel="stylesheet" type="text/css" />
+
+<link href='@Url.Content("~/Content/themes/base/jquery-ui.css")' rel="stylesheet" type="text/css"/>
 
 
 <p>
-    <span>@Html.ActionLink("Create New", "New", null, new { @class = "btn btn-info" }) </span>
+    <span>@Html.ActionLink("Create New", "New", null, new {@class = "btn btn-info"}) </span>
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Key)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Description)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Price)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.UnitsInStock)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Discountinues)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.GenresName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TypesName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PublisherName)
-        </th>
-    </tr>
 
-    @foreach (var item in Model)
-    {
+@Html.Partial("Filter", Model.Filter)
+@if (Model.Games.ToList().Count > 0)
+{
+    <table class="table">
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Key)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UnitsInStock)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Discountinues)
-            </td>
-            <td>
-                @foreach (var i in item.GenresName)
-                {
-                    <p>@i</p>
-                }
-            </td>
-            <td>
-                @foreach (var i in item.TypesName)
-                {
-                    <p>@i</p>
-                }
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PublisherName)
-            </td>
-            <td>
-                <span>@Html.ActionLink("Edit", "Update", new { key = item.Key }, new { @class = "btn btn-info" }) </span>
-                <p></p>
-                <span> @Html.ActionLink("Details", "Details", "Comments",  new { key = item.Key }, new { @class = "btn btn-info" }) </span>
-                <p></p>
-              
-                <span>@Html.ActionLink("Buy", "AddToBasket", new {gameId = item.Id, unitsInStock = item.UnitsInStock}, new { @class = "viewDialog", data_dialog_title = "Add game" }) </span>
-                          
-            </td>
+            <th>
+                @Html.DisplayNameFor(model => model.Games.First().Key)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Games.First().Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Games.First().Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Games.First().Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Games.First().UnitsInStock)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Games.First().Discountinues)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Games.First().GenresName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Games.First().PlatformTypesName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Games.First().PublisherName)
+            </th>
         </tr>
-    }
 
-</table>
-<script>
-    
-    function isright(obj)
-    {
-        var value= +obj.value.replace(/\D/g,'')||0;
-        var min = +obj.getAttribute('min');
-        var max = +obj.getAttribute('max');
-        obj.value = Math.min(max, Math.max(min, value));
-    }
-</script>
+        @foreach (var item in Model.Games)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Key)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UnitsInStock)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Discountinues)
+                </td>
+                <td>
+                    @foreach (var i in item.GenresName)
+                    {
+                        <p>@i</p>
+                    }
+                </td>
+                <td>
+                    @foreach (var i in item.PlatformTypesName)
+                    {
+                        <p>@i</p>
+                    }
+                </td>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.PublisherName))
+                    {
+                        @Html.ActionLink(item.PublisherName, "Details", "Publishers", new {companyName = item.PublisherName}, new {@class = "class"})
+                    }
+                </td>
+                <td>
+                    <span>@Html.ActionLink("Edit", "Update", new {key = item.Key}, new {@class = "btn btn-success"}) </span>
+                    <p></p>
+                    <span> @Html.ActionLink("Details", "Details", "Comments", new {key = item.Key}, new {@class = "btn btn-info"}) </span>
+                    <p></p>
+                    <span>@Html.ActionLink("Buy", "AddToBasket", "Games", new {gameId = item.Id, unitsInStock = item.UnitsInStock}, new {@class = "viewDialog btn btn-primary", data_dialog_title = "Add game"}) </span>                         
+                </td>
+            </tr>
+        }
+
+
+    </table>
+}
 <script src='@Url.Content("~/Scripts/jquery-1.12.4.min.js")' type="text/javascript"></script>
 <script src='@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")' type="text/javascript"></script>
 <script>
-    $(document).ready(function () {
+    $.ajaxSetup({ cache: false });
  
-        $.ajaxSetup({ cache: false });
+    $(".viewDialog").on("click", function (e) {
+        e.preventDefault();
  
-        $(".viewDialog").on("click", function (e) {
-            e.preventDefault();
+        $("<div id='dialogContent'></div>")
+        .addClass("dialog")
+        .appendTo("body")
+        .load(this.href)
+        .dialog({
+            title: $(this).attr("data-dialog-title"),
+            close: function () { $(this).remove() },
+            modal: true,
+            buttons: {
+                "Сохранить": function () {
+                    $.ajax({
+                        url: "@Url.Action("AddToBasket", "Orders")",
+                        type: "POST",
+                    data: $('form').serialize(),
+                    datatype: "json",
+                    success: function (result) {
  
-            $("<div></div>")
-                .addClass("dialog")
-                .appendTo("body")
-                .dialog({
-                    width: "200px", 
-                    title: $(this).attr("data-dialog-title"),
-                    close: function () { $(this).remove() },
-                    modal: true
-                })
-                .load(this.href);
-        });
-        $(".close").on("click", function (e) {
-            e.preventDefault();
-            $(this).closest(".dialog").dialog("close");
-        });
+                        $("#dialogContent").html(result);
+                    }
+                });
+    }
+    }
+    });
+    });
+    $(".close").on("click", function (e) {
+        e.preventDefault();
+        $(this).closest(".dialog").dialog("close");
     });
 </script>
 

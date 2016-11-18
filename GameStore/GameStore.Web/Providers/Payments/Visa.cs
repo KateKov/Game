@@ -8,7 +8,8 @@ namespace GameStore.Web.Providers.Payments
     {
         public ActionResult Pay(OrderViewModel order, Func<string, object, ViewResult> viewResult)
         {
-            return viewResult("~/Views/Orders/Visa.cshtml", order);
+            var visa = new VisaViewModel() {Order = order};
+            return viewResult("~/Views/Orders/Visa.cshtml", visa);
         }
     }
 }

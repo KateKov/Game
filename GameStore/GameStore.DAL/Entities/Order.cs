@@ -12,7 +12,7 @@ namespace GameStore.DAL.Entities
     {
         public Order()
         {
-            OrderDetails =new List<OrderDetail>();
+            OrderDetails = new List<OrderDetail>();
         }
         public Guid Id { get; set; }
         public Guid CustomerId { get; set; }

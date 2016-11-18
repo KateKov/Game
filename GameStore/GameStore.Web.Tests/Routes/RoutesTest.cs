@@ -55,7 +55,7 @@ namespace GameStore.Web.Tests.Routes
             Assert.IsNotNull(routeData);
             Assert.AreEqual("Comments", routeData.Values["controller"]);
             Assert.AreEqual("action1", routeData.Values["action"]);
-            Assert.AreEqual("key", routeData.Values["id"]);
+            Assert.AreEqual("key", routeData.Values["key"]);
         }
 
         [Test]
@@ -73,7 +73,7 @@ namespace GameStore.Web.Tests.Routes
             Assert.IsNotNull(routeData);
             Assert.AreEqual("Comments", routeData.Values["controller"]);
             Assert.AreEqual("Download", routeData.Values["action"]);
-            Assert.AreEqual("Gta6_ThirdEdition", routeData.Values["id"]);
+            Assert.AreEqual("Gta6_ThirdEdition", routeData.Values["key"]);
         }
 
         [Test]
@@ -104,7 +104,7 @@ namespace GameStore.Web.Tests.Routes
             Assert.IsNotNull(routeData);
             Assert.AreEqual("Comments", routeData.Values["controller"]);
             Assert.AreEqual("Details", routeData.Values["action"]);
-            Assert.AreEqual("Gta6_ThirdEdition", routeData.Values["id"]);
+            Assert.AreEqual("Gta6_ThirdEdition", routeData.Values["key"]);
         }
 
         [Test]

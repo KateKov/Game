@@ -25,16 +25,10 @@ namespace GameStore.DAL.EF
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
-
             modelBuilder.Entity<Game>()
                 .HasMany(g => g.Comments)
                 .WithRequired(c => c.Game)
                 .WillCascadeOnDelete(true);
-
-            //modelBuilder.Entity<Comment>()
-            //    .HasOptional(c => c.ParentComment)
-            //    .WithMany(c => c.ChildComments)
-            //    .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Genre>()
                 .HasOptional(g => g.ParentGenre)

@@ -10,6 +10,7 @@ namespace GameStore.DAL.Entities
         [Key]
         public Guid Id { get; set; }
         public decimal Price { get; set; }
+        [Column(TypeName = "SMALLINT")]
         public short Quantity { get; set; }
         public float Discount { get; set; }
         [ForeignKey("Order")]

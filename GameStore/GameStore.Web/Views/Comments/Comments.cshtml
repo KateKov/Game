@@ -1,5 +1,6 @@
 ﻿
 @using System.Activities.Statements
+@using System.Diagnostics.Eventing.Reader
 @using GameStore.Web.ViewModels
 @model IEnumerable<CommentViewModel>
 
@@ -111,8 +112,8 @@ foreach (var cp in menuList.Where(p => p.ParentCommentId == mi.Id))
 <h3> @ViewBag.ErrorName  </h3>
 
 
+    @Html.ActionLink("New Comment", "NewComment", "Comments", new {gameKey = ViewBag.GameKey}, new {@class = "viewDialog", data_dialog_title = "New comment"})
 
-@Html.ActionLink("New Comment", "NewComment", "Comments", new {gameKey=Model.First().GameKey},  new { @class = "viewDialog", data_dialog_title = "New comment" })  
 
 
 

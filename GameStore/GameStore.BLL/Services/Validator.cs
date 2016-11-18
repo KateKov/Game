@@ -12,6 +12,7 @@ namespace GameStore.BLL.Services
             var modelName = typeof(T).Name;
             if (model == null)
                 throw new ValidationException("Cannot create " + modelName +" from null", "");
+          
             if ((model is IDtoWithKey).Equals(true) && string.IsNullOrEmpty(((IDtoWithKey)model).Key))
             {
                 throw new ValidationException("Property cannot be empty", "Key");

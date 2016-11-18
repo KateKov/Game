@@ -10,7 +10,7 @@ namespace GameStore.Web.ViewModels
     {
         [Required]
         public string Id { get; set; }
-        [Display(Name = "Name")]
+        [Display(Name = "Price")]
         public decimal Price { get; set; }
         [Display(Name = "Quantity")]
         public short Quantity { get; set; }

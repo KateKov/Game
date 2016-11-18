@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using GameStore.BLL.Infrastructure;
 using GameStore.Web.ViewModels;
 
 namespace GameStore.Web.Providers.Payments
 {
     public class Payment
     {
-        public IPaymentStrategy Payments { private get; set; }
+        private readonly IPaymentStrategy _payments;
+        private static readonly Dictionary<string, IPaymentStrategy> _dictionary;
 
-        public Payment()
+        static Payment()
         {
             _dictionary = new Dictionary<string, IPaymentStrategy>()
             {
@@ -24,14 +26,12 @@ namespace GameStore.Web.Providers.Payments
 
         public Payment(string paymentName)
         {
-            Payments = _dictionary[paymentName];
-        }
-
-        private readonly Dictionary<string, IPaymentStrategy> _dictionary;
+            _payments = _dictionary[paymentName];
+        }      
       
         public ActionResult Pay(OrderViewModel order, Func<string, object, ViewResult> viewResult)
         {
-            return Payments.Pay(order, viewResult);
+            return _payments.Pay(order, viewResult);
         }
     }
 }

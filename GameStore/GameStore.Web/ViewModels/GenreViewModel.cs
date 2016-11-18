@@ -12,6 +12,5 @@ namespace GameStore.Web.ViewModels
         public string Name { get; set; }
         public string ParentId { get; set; }
         public string ParentName { get; set; }
-        public virtual ICollection<GenreViewModel> ChildGenres { get; set; }
     }
 }

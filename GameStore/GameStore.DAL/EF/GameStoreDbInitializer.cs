@@ -168,31 +168,12 @@ namespace GameStore.DAL.EF
                     Id = Guid.NewGuid(),
                     Name = "Dmitriy",
                     Body = "Anna, i write you responce",
-                    ParentComment= secondLevelComments[0]        
+                    ParentComment = secondLevelComments[0]        
                 }
             };
             var comments = firstLevelComments;
             comments.AddRange(secondLevelComments);
-            comments.AddRange(thirdLevelComments);
-            var orderDetails = new List<OrderDetail>
-            {
-                new OrderDetail
-                {
-                    Id = Guid.NewGuid(),
-                    Discount = 15,
-                    Quantity = 4,
-                    Price = 15
-                },
-                new OrderDetail
-                {
-                    Id =Guid.NewGuid(),
-                    Discount = 20,
-                    Quantity = 18,
-                    Price = 20
-                }
-            };
-           
-            db.OrderDetails.AddRange(orderDetails);
+            comments.AddRange(thirdLevelComments);        
             var publishers = new List<Publisher>
             {
                 new Publisher
@@ -224,9 +205,9 @@ namespace GameStore.DAL.EF
                     },
                     Comments = comments,
                     Discountinues = false,
-                    Price=15,
+                    Price = 15,
                     UnitsInStock = 20,
-                    OrderDetails = new List<OrderDetail> {orderDetails[0]}
+                    DateOfAdding = DateTime.UtcNow.AddMonths(-4)
                 },
                 new Game
                 {
@@ -245,24 +226,13 @@ namespace GameStore.DAL.EF
                         genres[4]
                     },
                     Discountinues = false,
-                    Price=15,
+                    Price = 10,
                     UnitsInStock = 20,
-                    OrderDetails = new List<OrderDetail> {orderDetails[1]},
-                    Publisher = publishers[0]
+                    Publisher = publishers[0],
+                    DateOfAdding = DateTime.UtcNow.AddDays(-4)
                 }
             };
             db.Games.AddRange(games);
-            var orders = new List<Order>
-            {
-                new Order
-                {
-                    Id = Guid.NewGuid(),
-                    CustomerId = Guid.NewGuid(),
-                    Date = DateTime.UtcNow,
-                    OrderDetails = new List<OrderDetail> {orderDetails[0], orderDetails[1]}
-                }
-            };
-            db.Orders.AddRange(orders);
             db.SaveChanges();
         }
     }

@@ -36,17 +36,19 @@ namespace GameStore.BLL.Infrastructure
                 .ForMember(dm => dm.GenresName, map => map.MapFrom(dm => dm.Genres.Select(x => x.Name).ToList()))
                 .ForMember(dm => dm.GenresId, map => map.MapFrom(dm => dm.Genres.Select(x => x.Id).ToList()))
                 .ForMember(dm => dm.TypesId, map => map.MapFrom(dm => dm.PlatformTypes.Select(x => x.Id).ToList()))
-                .ForMember(dm => dm.TypesName, map => map.MapFrom(dm => dm.PlatformTypes.Select(x => x.Name).ToList()))
+                .ForMember(dm => dm.PlatformTypesName, map => map.MapFrom(dm => dm.PlatformTypes.Select(x => x.Name).ToList()))
                 .ForMember(dm => dm.Comments, map => map.MapFrom(dm => dm.Comments.Select(x => x.Id).ToList()));
        
             CreateMap<PlatformType, PlatformTypeDTO>()
                   .ForMember(dm => dm.GameKey, map => map.MapFrom(dm => dm.Games.Select(x => x.Key).ToList()))
                 .ForMember(dm => dm.GameId, map => map.MapFrom(dm => dm.Games.Select(x => x.Id).ToList()));
-            CreateMap<Publisher, PublisherDTO>();
+            CreateMap<Publisher, PublisherDTO>()
+                  .ForMember(dm => dm.Games, map => map.MapFrom(dm => dm.Games.Select(x => x.Name).ToList())); ;
             CreateMap<OrderDetail, OrderDetailDTO>()
                 .ForMember(dm => dm.GameId, map => map.MapFrom(dm => dm.Game.Id))
                 .ForMember(dm => dm.GameKey, map => map.MapFrom(dm => dm.Game.Key));
-            CreateMap<Order, OrderDTO>();
+            CreateMap<Order, OrderDTO>()
+                .ForMember(dm=>dm.OrderDetailsId, map=>map.MapFrom(dm=>dm.OrderDetails.Select(x=>x.Id).ToList()));
             CreateMap<CommentDTO, Comment>();
             CreateMap<GenreDTO, Genre>();
             CreateMap<GameDTO, Game>();

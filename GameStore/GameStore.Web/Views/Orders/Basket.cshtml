@@ -1,7 +1,66 @@
-﻿
+﻿@using GameStore.Web.ViewModels
+
+@model OrderViewModel
+
 @{
-    ViewBag.Title = "Busket";
+    ViewBag.Title = "Basket";
 }
+<link href='@Url.Content("~/Content/themes/base/jquery-ui.css")' rel="stylesheet" type="text/css" />
+<h2>Basket</h2>
+@if (Model != null)
+{
+    <p>
+        <span>@Html.ActionLink("Delete Basket", "DeleteBusket", new {key = ""}, new {@class = "btn btn-info"}) </span>
+    </p>
+    <p>
+        <span>@Html.ActionLink("Pay Order", "MakeOrder", new {id = @Model.Id}, new {@class = "btn btn-info"}) </span>
+    </p>
+    @Html.HiddenFor(x => x.Id)
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderDetails.First().Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderDetails.First().GameKey)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderDetails.First().Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderDetails.First().Discount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderDetails.First().Price)
+            </th>
+        </tr>
 
-<h2>Busket</h2>
+        @foreach (var item in Model.OrderDetails)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GameKey)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Discount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
 
+
+            </tr>
+        }
+
+    </table>
+}
+else
+{
+    <p>The basket is epmty</p>
+}

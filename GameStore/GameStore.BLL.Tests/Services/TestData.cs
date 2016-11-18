@@ -1,309 +1,225 @@
-﻿//using System.Collections;
-//using System.Collections.Generic;
-//using GameStore.BLL.DTO;
-//using GameStore.DAL.Entities;
-//using NUnit.Framework;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using GameStore.BLL.DTO;
+using GameStore.DAL.Entities;
+using NUnit.Framework;
 
-//namespace GameStore.BLL.Tests.Services
-//{
-//    public class TestData
-//    {
-//        public static IEnumerable CommentValidNoParent
-//        {
-//            get
-//            {
-//                yield return new TestCaseData(new CommentDTO {Name = "stub-name", Body = "stub-body", GameId = 1},
-//                    new Game {Id = 1, Key = "stub-key", Name = "stub-name"});
-//            }
-//        }
+namespace GameStore.BLL.Tests.Services
+{
+    public class TestData
+    {
+        public static IEnumerable CommentValidNoParent
+        {
+            get
+            {
+                var game = new Game {Id = Guid.NewGuid(), Key = "key", Name = "name"};
+                yield return new TestCaseData(new CommentDTO { Name = "name", Body = "body", GameId = game.Id.ToString(), GameKey = game.Key},
+                    game);
+            }
+        }
 
-//        public static IEnumerable CommentValidWithParent
-//        {
-//            get
-//            {
-//                yield return new TestCaseData(
-//                    new CommentDTO
-//                    {
-//                        Name = "stub-name",
-//                        Body = "stub-body",
-//                        ParentId = 1,
-//                        ParrentComment = "stub-name",
-//                        GameId = 1
-//                    },
-//                    new Comment
-//                    {
-//                        Id = 1,
-//                        Name = "stub-name",
-//                        Body = "stub-body",
-//                        Game = new Game {Id = 1, Key = "stub-key", Name = "stub-name"}
-//                    },
-//                    new Game {Id = 1, Key = "stub-key", Name = "stub-name"});
-//            }
-//        }
+        public static IEnumerable CommentValidWithParent
+        {
+            get
+            {
+                var game = new Game {Id = Guid.NewGuid(), Key = "key", Name = "name"};
+                var parrentComment = new Comment
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "name",
+                    Body = "body",
+                    Game = game
+                };
+                yield return new TestCaseData(
+                    new CommentDTO
+                    {
+                        Name = "stub-name",
+                        Body = "stub-body",
+                        ParentCommentId = parrentComment.Id.ToString(),
+                        ParrentCommentName = "name",
+                        GameId = game.Id.ToString(),
+                        GameKey = game.Key
+                    },
+                    parrentComment, game);
+            }
+        }
 
-//        public static IEnumerable CommentInvalidNoParrent
-//        {
-//            get
-//            {
-//                yield return
-//                    new TestCaseData(new CommentDTO { Name = string.Empty, Body = "stub-body", GameId = 1 },
-//                        new Game { Id = 1, Key = "stub-key", Name = "stub-name" });
-//                yield return
-//                    new TestCaseData(new CommentDTO { Name = "stub-name", Body = string.Empty, GameId = 1 },
-//                        new Game { Id = 1, Key = "stub-key", Name = "stub-name" });
-//                yield return
-//                    new TestCaseData(new CommentDTO { Name = string.Empty, Body = string.Empty, GameId = 1 },
-//                        new Game { Id = 1, Key = "stub-key", Name = "stub-name" });
-//                yield return
-//                    new TestCaseData(new CommentDTO { Name = null, Body = null, GameId = 1 },
-//                        new Game { Id = 1, Key = "stub-key", Name = "stub-name" });
-//                yield return
-//                new TestCaseData(new CommentDTO { Name = null, Body = "stub-body", GameId = 1 },
-//                    new Game { Id = 1, Key = "stub-key", Name = "stub-name" });
-//                yield return
-//                new TestCaseData(new CommentDTO { Name = "stub-name", Body = null, GameId = 1 },
-//                    new Game { Id = 1, Key = "stub-key", Name = "stub-name" });
-//                yield return new TestCaseData(null, new Game { Id = 1, Key = "stub-key", Name = "stub-name" });
-//                yield return
-//                    new TestCaseData(new CommentDTO { Name = "stub-name", Body = "stub-body", GameId = 0 },
-//                        new Game { Id = 1, Key = "stub-key", Name = "stub-name" });
-//            }
-//        }
+        public static IEnumerable CommentInvalidNoParrent
+        {
+            get
+            {
+                var game = new Game {Id = Guid.NewGuid(), Key = "stub-key", Name = "stub-name"};
+                yield return
+                    new TestCaseData(new CommentDTO { Name = string.Empty, Body = "stub-body", GameId = game.Id.ToString(), GameKey = game.Key},
+                       game);
+                yield return
+                    new TestCaseData(new CommentDTO { Name = "stub-name", Body = string.Empty, GameId = game.Id.ToString(), GameKey = game.Key },
+                        game);
+                yield return
+                    new TestCaseData(new CommentDTO { Name = string.Empty, Body = string.Empty, GameId = game.Id.ToString(), GameKey = game.Key },
+                       game);
+                yield return
+                    new TestCaseData(new CommentDTO { Name = null, Body = null, GameId = game.Id.ToString(), GameKey = game.Key },
+                        game);
+                yield return
+                new TestCaseData(new CommentDTO { Name = null, Body = "stub-body", GameId = game.Id.ToString(), GameKey = game.Key },
+                    game);
+                yield return
+                new TestCaseData(new CommentDTO { Name = "stub-name", Body = null, GameId = game.Id.ToString(), GameKey = game.Key },
+                    game);
+                yield return new TestCaseData(null, game);
+                yield return
+                    new TestCaseData(new CommentDTO { Name = "stub-name", Body = "stub-body", GameId = "" },
+                       game);
+            }
+        }
 
-//        public static IEnumerable CommentInvalidWithParrent
-//        {
-//            get
-//            {
-//                yield return new TestCaseData(
-//                    new CommentDTO
-//                    {
-//                        Name = "stub-name",
-//                        Body = "stub-body",
-//                        ParentId = 2,
-//                        ParrentComment = "stub-name",
-//                        GameId = 1
-//                    },
-//                    new Comment
-//                    {
-//                        Id = 1,
-//                        Name = "stub-name",
-//                        Body = "stub-body",
-//                        Game = new Game {Id = 1, Key = "stub-key", Name = "stub-name"}
-//                    },
-//                    new Game {Id = 1, Key = "stub-key", Name = "stub-name"});
-//            }
-//        }
+        public static IEnumerable CommentInvalidWithParrent
+        {
+            get
+            {
+                var game = new Game {Id = Guid.NewGuid(), Key = "key", Name = "name"};
+                var parrentComment = new Comment
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "name",
+                    Body = "body",
+                    Game = game
+                };
+                yield return new TestCaseData(
+                    new CommentDTO
+                    {
+                        Name = "stub-name",
+                        Body = "stub-body",
+                        ParentCommentId = parrentComment.Id.ToString(),
+                        ParrentCommentName = "name",
+                        GameId = game.Id.ToString()
+                    },
+                   parrentComment,game);
+            }
+        }
 
-//        public static IEnumerable GameValidNoLists
-//        {
-//            get
-//            {
-//                yield return new TestCaseData(new GameDTO {Key = "stub-key", Name = "stub-name"});
-//                yield return
-//                    new TestCaseData(new GameDTO
-//                    {
-//                        Key = "stub-key",
-//                        Name = "stub-name",
-//                        Description = "stub-description"
-//                    });
-//            }
-//        }
+        public static IEnumerable GenreValidNoLists
+        {
+            get
+            {
+                yield return new TestCaseData(new GenreDTO { Id=Guid.NewGuid().ToString(), Name = "name" });
+                yield return
+                    new TestCaseData(new GenreDTO
+                    {
+                        Id = Guid.NewGuid().ToString(),
+                        Name = "AnotherName"
+                    });
+            }
+        }
 
-//        public static IEnumerable GameValidWithLists
-//        {
-//            get
-//            {
-//                yield return new TestCaseData(new GameDTO
-//                    {
-//                        Key = "stub-key",
-//                        Name = "stub-name",
-//                        Genres = new List<GenreDTO>
-//                        {
-//                            new GenreDTO {Name = "stub-genre-1"},
-//                            new GenreDTO {Name = "stub-genre-2"}
-//                        },
-//                        PlatformTypes = new List<PlatformTypeDTO>
-//                        {
-//                            new PlatformTypeDTO {Name = "stub-platform-1"},
-//                            new PlatformTypeDTO {Name = "stub-platform-2"}
-//                        }
-//                    },
-//                    new List<Genre>
-//                    {
-//                        new Genre {Name = "stub-genre-1"},
-//                        new Genre {Name = "stub-genre-2"}
-//                    },
-//                    new List<PlatformType>
-//                    {
-//                        new PlatformType {Name = "stub-platform-1"},
-//                        new PlatformType {Name = "stub-platform-2"}
-//                    });
-//                yield return new TestCaseData(new GameDTO
-//                    {
-//                        Key = "stub-key",
-//                        Name = "stub-name",
-//                        Description = "stub-descr",
-//                        Genres = new List<GenreDTO>
-//                        {
-//                            new GenreDTO {Name = "stub-genre-1"}
-//                        }
-//                    },
-//                    new List<Genre>
-//                    {
-//                        new Genre {Name = "stub-genre-1"}
-//                    },
-//                    new List<PlatformType>());
-//                yield return new TestCaseData(new GameDTO
-//                    {
-//                        Key = "stub-key",
-//                        Name = "stub-name",
-//                        Description = "stub-descr",
-//                        PlatformTypes = new List<PlatformTypeDTO>
-//                        {
-//                            new PlatformTypeDTO {Name = "stub-platform-1"},
-//                            new PlatformTypeDTO {Name = "stub-platform-2"}
-//                        }
-//                    },
-//                    new List<Genre>(),
-//                    new List<PlatformType>
-//                    {
-//                        new PlatformType {Name = "stub-platform-1"},
-//                        new PlatformType {Name = "stub-platform-2"}
-//                    });
-//            }
-//        }
+        public static IEnumerable OrderValid
+        {
+            get
+            {
+                yield return new TestCaseData(new OrderDTO
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    CustomerId = "",
+                    Date = DateTime.UtcNow,
+                    IsConfirmed = false
+                });
+            }
+        }
 
-//        public static IEnumerable GameInvalidNoLists
-//        {
-//            get
-//            {
-//                yield return new TestCaseData(new GameDTO());
-//                yield return new TestCaseData(null);
-//                yield return
-//                    new TestCaseData(new GameDTO
-//                    {
-//                        Key = string.Empty,
-//                        Name = "stub-name",
-//                        Description = "stub-description"
-//                    });
-//                yield return
-//                    new TestCaseData(new GameDTO
-//                    {
-//                        Key = string.Empty,
-//                        Name = string.Empty,
-//                        Description = "stub-description"
-//                    });
-//                yield return
-//                    new TestCaseData(new GameDTO {Key = null, Name = "stub-name", Description = "stub-description"});
-//                yield return
-//                    new TestCaseData(new GameDTO {Key = "stub-key", Name = null, Description = "stub-description"});
-//                yield return new TestCaseData(new GameDTO {Key = null, Name = null, Description = "stub-description"});
-//            }
-//        }
+        public static IEnumerable BasketValid
+        {
+            get
+            {
+                yield return new TestCaseData(new List<OrderDTO> {new OrderDTO
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    CustomerId = "",
+                    Date = DateTime.UtcNow,
+                    IsConfirmed = false
+                },new OrderDTO
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    CustomerId = "",
+                    Date = DateTime.UtcNow,
+                    IsConfirmed = true
+                }
+                }
+                );
+            }
+        }
 
-//        public static IEnumerable GameInvalidWithLists
-//        {
-//            get
-//            {
-//                yield return new TestCaseData(new GameDTO
-//                    {
-//                        Key = "stub-key",
-//                        Name = "stub-name",
-//                        Genres = new List<GenreDTO>
-//                        {
-//                            new GenreDTO {Name = "in_db_1"},
-//                            new GenreDTO {Name = "not_in_db"}
-//                        },
-//                        PlatformTypes = new List<PlatformTypeDTO>
-//                        {
-//                            new PlatformTypeDTO {Name = "in_db_1"},
-//                            new PlatformTypeDTO {Name = "in_db_2"}
-//                        }
-//                    },
-//                    new List<Genre>
-//                    {
-//                        new Genre {Name = "in_db_1"}
-//                    },
-//                    new List<PlatformType>
-//                    {
-//                        new PlatformType {Name = "in_db_1"},
-//                        new PlatformType {Name = "in_db_2"}
-//                    });
-//                yield return new TestCaseData(new GameDTO
-//                    {
-//                        Key = "stub-key",
-//                        Name = "stub-name",
-//                        Genres = new List<GenreDTO>
-//                        {
-//                            new GenreDTO {Name = "in_db_1"},
-//                            new GenreDTO {Name = "not_in_db"}
-//                        },
-//                        PlatformTypes = new List<PlatformTypeDTO>
-//                        {
-//                            new PlatformTypeDTO {Name = "not_in_db"}
-//                        }
-//                    },
-//                    new List<Genre>
-//                    {
-//                        new Genre {Name = "in_db_1"}
-//                    },
-//                    new List<PlatformType>
-//                    {
-//                        new PlatformType {Name = "in_db_1"},
-//                        new PlatformType {Name = "not_in_db"}
-//                    });
-//                yield return new TestCaseData(new GameDTO
-//                    {
-//                        Key = "stub-key",
-//                        Name = "stub-name",
-//                        Genres = new List<GenreDTO>
-//                        {
-//                            new GenreDTO {Name = "in_db_1"}
-//                        },
-//                        PlatformTypes = new List<PlatformTypeDTO>
-//                        {
-//                            new PlatformTypeDTO {Name = "not_in_db"}
-//                        }
-//                    },
-//                    new List<Genre>
-//                    {
-//                        new Genre {Name = "in_db_1"}
-//                    },
-//                    new List<PlatformType>());
-//                yield return new TestCaseData(new GameDTO
-//                    {
-//                        Key = "stub-key",
-//                        Name = "stub-name",
-//                        Genres = new List<GenreDTO>(),
-//                        PlatformTypes = new List<PlatformTypeDTO>
-//                        {
-//                            new PlatformTypeDTO {Name = "not_in_db"}
-//                        }
-//                    },
-//                    new List<Genre>
-//                    {
-//                        new Genre {Name = "in_db_1"}
-//                    },
-//                    new List<PlatformType>
-//                    {
-//                        new PlatformType {Name = "in_db_1"}
-//                    });
-//                yield return new TestCaseData(new GameDTO
-//                    {
-//                        Key = "stub-key",
-//                        Name = "stub-name",
-//                        Genres = new List<GenreDTO>
-//                        {
-//                            new GenreDTO {Name = "not_in_db"}
-//                        },
-//                        PlatformTypes = new List<PlatformTypeDTO>()
-//                    },
-//                    new List<Genre>(),
-//                    new List<PlatformType>
-//                    {
-//                        new PlatformType {Name = "in_db_1"}
-//                    });
-//            }
-//        }
-//    }
-//}
+        public static IEnumerable OrderInvalid
+        {
+            get
+            {
+                yield return new TestCaseData(new OrderDTO
+                {
+                    Id = "",
+                    CustomerId = "",
+                    Date = DateTime.UtcNow,
+                    IsConfirmed = false,
+                });
+            }
+        }
+ 
+        public static IEnumerable GameInvalidWithLists
+        {
+            get
+            {
+                var genre = new Genre()
+                { 
+                    Name = "name"
+                };
+                yield return
+                    new TestCaseData(new GameDTO
+                        {
+                            Id = "",
+                            Key = "key",
+                            Name = "name",
+                            Description = "stub-description",
+                            GenresName = new List<string>() {"name"},
+                            PlatformTypesName = new List<string>() {"naame"}
+
+                        }, new List<Genre> { genre},
+                        new List<PlatformType> {new PlatformType()
+                        {
+                            Id = Guid.NewGuid(),
+                            Name = "naame"
+                        } 
+            } );
+            }
+        }
+
+        public static IEnumerable GameInvalidNoLists
+        {
+            get
+            {
+                yield return new TestCaseData(new GameDTO());
+                yield return new TestCaseData(null);
+                yield return
+                    new TestCaseData(new GameDTO
+                    {
+                        Id=Guid.NewGuid().ToString(),
+                        Key = string.Empty,
+                        Name = "stub-name",
+                        Description = "stub-description"
+                    });
+                yield return
+                    new TestCaseData(new GameDTO
+                    {
+                        Id = Guid.NewGuid().ToString(),
+                        Key = string.Empty,
+                        Name = string.Empty,
+                        Description = "stub-description"
+                    });
+                yield return
+                    new TestCaseData(new GameDTO { Id = Guid.NewGuid().ToString(), Key = null, Name = "stub-name", Description = "stub-description" });
+                yield return
+                    new TestCaseData(new GameDTO { Id = Guid.NewGuid().ToString(), Key = "stub-key", Name = null, Description = "stub-description" });
+                yield return new TestCaseData(new GameDTO { Id = Guid.NewGuid().ToString(), Key = null, Name = null, Description = "stub-description" });
+            }
+        }
+    }
+}

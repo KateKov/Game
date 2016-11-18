@@ -52,8 +52,8 @@
   <sourcecode name="CommentsControllerTest.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2016/11/02 10:30:08.643</styleCop>
-      <settingsFile>2016/11/02 16:43:52.124</settingsFile>
-      <sourceFile>2016/11/03 19:00:19.676</sourceFile>
+      <settingsFile>2016/11/15 09:39:43.115</settingsFile>
+      <sourceFile>2016/11/16 18:06:50.129</sourceFile>
       <parser>2016/11/02 10:30:08.643</parser>
       <StyleCop.CSharp.DocumentationRules>2016/11/02 10:30:08.643</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-68147661</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -75,8 +75,8 @@
   <sourcecode name="GamesControllerTest.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2016/11/02 10:30:08.643</styleCop>
-      <settingsFile>2016/11/02 16:43:52.124</settingsFile>
-      <sourceFile>2016/11/03 18:42:25.640</sourceFile>
+      <settingsFile>2016/11/15 09:39:43.115</settingsFile>
+      <sourceFile>2016/11/16 18:06:19.882</sourceFile>
       <parser>2016/11/02 10:30:08.643</parser>
       <StyleCop.CSharp.DocumentationRules>2016/11/02 10:30:08.643</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-68147661</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -93,13 +93,30 @@
       <StyleCop.CSharp.SpacingRules>2016/11/02 10:30:08.643</StyleCop.CSharp.SpacingRules>
       <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
     </timestamps>
-    <violations />
+    <violations>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="CodeMustNotContainMultipleBlankLinesInARow" ruleCheckId="SA1507">
+        <context>The code must not contain multiple blank lines in a row.</context>
+        <line>57</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.SpacingRules" rule="CodeMustNotContainMultipleWhitespaceInARow" ruleCheckId="SA1025">
+        <context>The code contains multiple spaces in a row. Only one space is needed.</context>
+        <line>63</line>
+        <index>1816</index>
+        <endIndex>1817</endIndex>
+        <startLine>63</startLine>
+        <startColumn>28</startColumn>
+        <endLine>63</endLine>
+        <endColumn>29</endColumn>
+        <warning>False</warning>
+      </violation>
+    </violations>
   </sourcecode>
   <sourcecode name="AssemblyInfo.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2016/11/02 10:30:08.643</styleCop>
-      <settingsFile>2016/11/02 16:43:52.124</settingsFile>
-      <sourceFile>2016/11/02 15:46:58.157</sourceFile>
+      <settingsFile>2016/11/15 09:39:43.115</settingsFile>
+      <sourceFile>2016/11/15 09:39:43.115</sourceFile>
       <parser>2016/11/02 10:30:08.643</parser>
       <StyleCop.CSharp.DocumentationRules>2016/11/02 10:30:08.643</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-68147661</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -121,8 +138,8 @@
   <sourcecode name="RoutesTest.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2016/11/02 10:30:08.643</styleCop>
-      <settingsFile>2016/11/02 16:43:52.124</settingsFile>
-      <sourceFile>2016/11/03 18:51:08.443</sourceFile>
+      <settingsFile>2016/11/15 09:39:43.115</settingsFile>
+      <sourceFile>2016/11/16 17:32:01.465</sourceFile>
       <parser>2016/11/02 10:30:08.643</parser>
       <StyleCop.CSharp.DocumentationRules>2016/11/02 10:30:08.643</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-68147661</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -144,8 +161,8 @@
   <sourcecode name="StubHttpContextForRouting.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2016/11/02 10:30:08.643</styleCop>
-      <settingsFile>2016/11/02 16:43:52.124</settingsFile>
-      <sourceFile>2016/11/03 10:39:26.560</sourceFile>
+      <settingsFile>2016/11/15 09:39:43.115</settingsFile>
+      <sourceFile>2016/11/15 09:39:43.115</sourceFile>
       <parser>2016/11/02 10:30:08.643</parser>
       <StyleCop.CSharp.DocumentationRules>2016/11/02 10:30:08.643</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-68147661</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -167,8 +184,8 @@
   <sourcecode name="StubHttpRequestForRouting.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2016/11/02 10:30:08.643</styleCop>
-      <settingsFile>2016/11/02 16:43:52.124</settingsFile>
-      <sourceFile>2016/11/03 14:58:48.669</sourceFile>
+      <settingsFile>2016/11/15 09:39:43.115</settingsFile>
+      <sourceFile>2016/11/15 09:39:43.115</sourceFile>
       <parser>2016/11/02 10:30:08.643</parser>
       <StyleCop.CSharp.DocumentationRules>2016/11/02 10:30:08.643</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-68147661</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -190,8 +207,8 @@
   <sourcecode name="StubHttpResponseForRouting.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2016/11/02 10:30:08.643</styleCop>
-      <settingsFile>2016/11/02 16:43:52.124</settingsFile>
-      <sourceFile>2016/11/03 10:41:13.821</sourceFile>
+      <settingsFile>2016/11/15 09:39:43.115</settingsFile>
+      <sourceFile>2016/11/15 09:39:43.115</sourceFile>
       <parser>2016/11/02 10:30:08.643</parser>
       <StyleCop.CSharp.DocumentationRules>2016/11/02 10:30:08.643</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-68147661</StyleCop.CSharp.DocumentationRules.FilesHashCode>

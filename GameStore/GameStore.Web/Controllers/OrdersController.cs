@@ -8,27 +8,21 @@ using AutoMapper;
 using GameStore.BLL.Interfaces;
 using GameStore.Web.ViewModels;
 using GameStore.BLL.DTO;
+using GameStore.BLL.Infrastructure;
 using GameStore.Web.Providers.Payments;
+using Rotativa;
 
 namespace GameStore.Web.Controllers
 {
     public class OrdersController: Controller
     {
-        private readonly IService _service;
+        private readonly IOrderService _service;
 
         private Payment _pay;
 
-        public OrdersController(IService service)
+        public OrdersController(IOrderService service)
         {
             _service = service;
-        }
-
-        [HttpGet]
-        public ActionResult Payment(string id ="")
-        {
-           var order = Mapper.Map<OrderViewModel>(_service.GetById<OrderDTO>(id));
-           var bank = new Bank();
-            return bank.Pay(order, View);
         }
 
         [HttpGet]
@@ -49,36 +43,38 @@ namespace GameStore.Web.Controllers
         }
 
         [HttpGet]
-        public ActionResult MakeOrder(OrderViewModel basket)
+        public ActionResult MakeOrder(string id)
         {
-            basket.IsConfirmed = true;
-            _service.AddOrUpdate<PublisherDTO>(Mapper.Map<PublisherDTO>(basket), false);
+            _service.ConfirmeOrder(id);
             return RedirectToAction("Order");
         }
 
         [HttpGet]
-        public ActionResult Pay(OrderViewModel order, string paymentName)
+        public ActionResult Pay(string orderId, string paymentName)
         {
+            var order = Mapper.Map<OrderViewModel>(_service.GetOrders(""));
             _pay = new Payment(paymentName);
             return _pay.Pay(order, View);
-        }    
-
-        [HttpGet]
-        public ActionResult IBoxPay(OrderPaymentViewModel order)
-        {
-            var pay = new Payment();
-            return pay.Pay(order.Order, View);
         }
 
-        [HttpGet]
-        public ActionResult AddToBusket(BasketViewModel basket)
+        [HttpPost]
+        public ActionResult Visa(VisaViewModel visa)
         {
-            if (string.IsNullOrEmpty(basket.GameId))
+            if (ModelState.IsValid)
             {
-                return HttpNotFound();
+                return RedirectToAction("Pay", new {orderId="", paymentName="Bank"});
             }
-            _service.GetOrderDetail(basket.GameId,  short.Parse(basket.Quantity.Trim()), "");
-            return RedirectToAction("Basket");
+            return View("~/Views/Orders/Visa.cshtml", visa);
+        }
+        [HttpPost]
+        public ActionResult AddToBasket(BasketViewModel basket)
+        {
+            if (ModelState.IsValid)
+            {
+                _service.GetOrderDetail(basket.GameId, short.Parse(basket.Quantity.Trim()), "");
+                return PartialView("Success");
+            }
+            return PartialView("AddToBasket", basket);
         }
 
         [HttpGet]
@@ -88,6 +84,10 @@ namespace GameStore.Web.Controllers
             return RedirectToAction("Basket");
         }
 
+        public ActionResult PdfFormat(OrderViewModel order, string paymentName)
+        {
+            return new ActionAsPdf("Pay",new { order, paymentName} );
+        }
      
     }
 }

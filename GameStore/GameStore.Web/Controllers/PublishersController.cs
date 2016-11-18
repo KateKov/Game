@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 using GameStore.BLL.DTO;
@@ -30,26 +31,29 @@ namespace GameStore.Web.Controllers
         public ActionResult Details(string companyName)
         {
             var publisher = _service.GetByName<PublisherDTO>(companyName);
-            return View(publisher);
+            return View(Mapper.Map<PublisherViewModel>(publisher));
         }
 
         [HttpGet]
         public ActionResult New()
         {
-            var publisher = new CreatePublisherViewModel()
+            var publisher = new PublisherViewModel()
             {
-                Games = Mapper.Map<List<GameViewModel>>(_service.GetAll<GameDTO>().Where(x=>string.IsNullOrEmpty(x.PublisherId)))
+                Id =Guid.NewGuid().ToString()
             };
             return View(publisher);
         }
 
         [HttpPost]
-        public ActionResult New(CreatePublisherViewModel createPublisher)
+        public ActionResult New(PublisherViewModel createPublisher)
         {
-            var publisher = new PublisherViewModel() { Id = createPublisher.Id, Name=createPublisher.Name,  Description = createPublisher.Description, HomePage = createPublisher.HomePage };
-            var publisherDto = Mapper.Map<PublisherDTO>(publisher);
-            _service.AddOrUpdate(publisherDto, true);
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                var publisherDto = Mapper.Map<PublisherDTO>(createPublisher);
+                _service.AddOrUpdate(publisherDto, true);
+                return RedirectToAction("Index");
+            }
+            return View("New", createPublisher);
         }
     }
 }

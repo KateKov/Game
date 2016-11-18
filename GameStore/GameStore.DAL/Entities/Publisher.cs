@@ -6,7 +6,7 @@ using GameStore.DAL.Interfaces;
 
 namespace GameStore.DAL.Entities
 {
-    public class Publisher : IEntityBase, IEntityNamed
+    public class Publisher : IEntityNamed
     {
         public Publisher()
         {

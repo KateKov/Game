@@ -24,8 +24,8 @@
             {
                
                 @Html.AntiForgeryToken()
+                @Html.HiddenFor(m=>m.Id)
 
-              
                 <div class="form-horizontal">
                  
                     <h4>Game</h4>
@@ -41,7 +41,7 @@
                     <div class="form-group">
                         @Html.NameFor(model => model.Description)
              
-                            @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.TextAreaFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
                             @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
                     
                     </div>
@@ -67,7 +67,7 @@
 
                    
                             @Html.NameFor(model => model.PublisherName)
-                          
+                     
                              
                                 @Html.DropDownListFor(model => model.PublisherName, new SelectList(Model.AllPublishers, "Name", "Name"))
                                 @Html.ValidationMessageFor(model => model.PublisherName, "", new { @class = "text-danger" })
@@ -82,23 +82,25 @@
 
                      
                             @Html.NameFor(model => model.GenresName)
-                            @Html.ListBoxFor(model => model.GenresName, new MultiSelectList(Model.AllGenres, "Name", "Name" ), htmlAttributes: new { @class = "form-control" })
+                        <div>
+                            @Html.ListBoxFor(model => model.GenresName, new MultiSelectList(Model.AllGenres, "Name", "Name"), htmlAttributes: new { @class = "form-control" })
                             @Html.ValidationMessageFor(model => model.GenresName, "", new { @class = "text-danger" })
-                         
 
-                       
 
-                    </div>
+                        </div>
+
+                        </div>
+
                     <div class="form-group">
 
                        
-                            @Html.NameFor(model => model.TypesName)
-                        <div class="col-md-10">
-                            @Html.ListBoxFor(model => model.TypesName, new MultiSelectList(Model.AllTypes, "Name", "Name"), htmlAttributes: new { @class = "form-control" })
+                            @Html.NameFor(model => model.PlatformTypesName)
+                        <div >
+                            @Html.ListBoxFor(model => model.PlatformTypesName, new MultiSelectList(Model.AllTypes, "Name", "Name"), htmlAttributes: new { @class = "form-control" })
 
                       
 
-                            @Html.ValidationMessageFor(model => model.TypesName, "", new { @class = "text-danger" })
+                            @Html.ValidationMessageFor(model => model.PlatformTypesName, "", new { @class = "text-danger" })
                         </div>
 
                        
@@ -107,18 +109,18 @@
                     <div class="form-group">
 
                        
-                            @Html.NameFor(model => model.Discountinues)
+                        @Html.NameFor(model => model.Discountinues)
                           
+                        <div>
+                            @Html.EditorFor(model => model.Discountinues, new { htmlAttributes = new { @class = "form-control" } })
 
-                                @Html.EditorFor(model => model.Discountinues, new { htmlAttributes = new { @class = "form-control" }} )
+                            @Html.ValidationMessageFor(model => model.Discountinues, "", new { @class = "text-danger" })
 
-                               @Html.ValidationMessageFor(model => model.Discountinues, "", new { @class = "text-danger" })
-                          
+
+                        </div>
+
 
                     </div>
-
-
-
 
 
                     <div class="form-group">

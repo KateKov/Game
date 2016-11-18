@@ -27,14 +27,28 @@ namespace GameStore.Web
                 url: "games/{action}",
                 defaults: new { controller = "Games", action = @"\w+" });
             routes.MapRoute(
-               name: "Publishers",
-               url: "publisher/{action}",
-               defaults: new { controller = "Publishers", action = @"\w+" });
+                name: "Publishers",
+                url: "publisher/{action}",
+                defaults: new {controller = "Publishers", action = @"\w+"});
+            routes.MapRoute(
+             name: "Order",
+             url: "order",
+             defaults: new { controller = "Orders", action = "Order" }
+             );
+            routes.MapRoute(
+              name: "Orders",
+              url: "orders/{action}",
+              defaults: new { controller = "Orders", action = @"\w+" });
             routes.MapRoute(
                 name: "Basket",
-                url: "basket/{gameId}",
-                defaults: new { controller = "Orders", action="AddToBusket", gameId = @"^[A-Za-z0-9_-]{1,20}" , quantity=@"^(/d){1,3}", customerId= "^[A-Za-z0-9_-]{0,20}" }
+                url: "basket",
+                defaults: new { controller = "Orders", action = "Basket" }
                 );
+            routes.MapRoute(
+              name: "AddBasket",
+              url: "basket/{action}",
+              defaults: new { controller = "Orders", action = "AddToBasket" }
+              );
             routes.MapRoute(
                 name: "Default",
                 url: string.Empty,

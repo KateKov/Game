@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 
@@ -20,10 +21,13 @@ namespace GameStore.Web.ViewModels
         [Required(ErrorMessage = "Game doesn't have genres")]
         [Display(Name = "Genres")]
         public ICollection<string> GenresName { get; set; }
-
+        [Display(Name = "Viewing")]
+        public int Viewwing { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime DateOfAdding { get; set; }
         [Required(ErrorMessage = "Game doesn't have platform type")]
         [Display(Name = "Platform Types")]
-        public ICollection<string> TypesName { get; set; }
+        public ICollection<string> PlatformTypesName { get; set; }
 
         public string Key { get; set; }
 
