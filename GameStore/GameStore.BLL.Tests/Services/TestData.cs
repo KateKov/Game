@@ -2,7 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using GameStore.BLL.DTO;
+using GameStore.BLL.DTO.Translation;
 using GameStore.DAL.Entities;
+using GameStore.DAL.Entities.Translation;
+using GameStore.DAL.Enums;
 using NUnit.Framework;
 
 namespace GameStore.BLL.Tests.Services
@@ -13,8 +16,8 @@ namespace GameStore.BLL.Tests.Services
         {
             get
             {
-                var game = new Game {Id = Guid.NewGuid(), Key = "key", Name = "name"};
-                yield return new TestCaseData(new CommentDTO { Name = "name", Body = "body", GameId = game.Id.ToString(), GameKey = game.Key},
+                var game = new Game {EntityId = Guid.NewGuid(), Key = "key", Translates = new List<GameTranslate>() {new GameTranslate() {EntityId = Guid.NewGuid(), Language = Language.En, Name = "name"} } };
+                yield return new TestCaseData(new CommentDTO { Name = "name", Body = "body", GameId = game.EntityId.ToString(), GameKey = game.Key},
                     game);
             }
         }
@@ -23,10 +26,10 @@ namespace GameStore.BLL.Tests.Services
         {
             get
             {
-                var game = new Game {Id = Guid.NewGuid(), Key = "key", Name = "name"};
+                var game = new Game {EntityId = Guid.NewGuid(), Key = "key", Translates = new List<GameTranslate>() { new GameTranslate() { EntityId = Guid.NewGuid(), Language = Language.En, Name = "name" } } };
                 var parrentComment = new Comment
                 {
-                    Id = Guid.NewGuid(),
+                    EntityId = Guid.NewGuid(),
                     Name = "name",
                     Body = "body",
                     Game = game
@@ -36,9 +39,9 @@ namespace GameStore.BLL.Tests.Services
                     {
                         Name = "stub-name",
                         Body = "stub-body",
-                        ParentCommentId = parrentComment.Id.ToString(),
+                        ParentCommentId = parrentComment.EntityId.ToString(),
                         ParrentCommentName = "name",
-                        GameId = game.Id.ToString(),
+                        GameId = game.EntityId.ToString(),
                         GameKey = game.Key
                     },
                     parrentComment, game);
@@ -49,24 +52,24 @@ namespace GameStore.BLL.Tests.Services
         {
             get
             {
-                var game = new Game {Id = Guid.NewGuid(), Key = "stub-key", Name = "stub-name"};
+                var game = new Game {EntityId = Guid.NewGuid(), Key = "stub-key", Translates = new List<GameTranslate>() { new GameTranslate() { EntityId = Guid.NewGuid(), Language = Language.En, Name = "name" } } };
                 yield return
-                    new TestCaseData(new CommentDTO { Name = string.Empty, Body = "stub-body", GameId = game.Id.ToString(), GameKey = game.Key},
+                    new TestCaseData(new CommentDTO { Name = string.Empty, Body = "stub-body", GameId = game.EntityId.ToString(), GameKey = game.Key},
                        game);
                 yield return
-                    new TestCaseData(new CommentDTO { Name = "stub-name", Body = string.Empty, GameId = game.Id.ToString(), GameKey = game.Key },
+                    new TestCaseData(new CommentDTO { Name = "stub-name", Body = string.Empty, GameId = game.EntityId.ToString(), GameKey = game.Key },
                         game);
                 yield return
-                    new TestCaseData(new CommentDTO { Name = string.Empty, Body = string.Empty, GameId = game.Id.ToString(), GameKey = game.Key },
+                    new TestCaseData(new CommentDTO { Name = string.Empty, Body = string.Empty, GameId = game.EntityId.ToString(), GameKey = game.Key },
                        game);
                 yield return
-                    new TestCaseData(new CommentDTO { Name = null, Body = null, GameId = game.Id.ToString(), GameKey = game.Key },
+                    new TestCaseData(new CommentDTO { Name = null, Body = null, GameId = game.EntityId.ToString(), GameKey = game.Key },
                         game);
                 yield return
-                new TestCaseData(new CommentDTO { Name = null, Body = "stub-body", GameId = game.Id.ToString(), GameKey = game.Key },
+                new TestCaseData(new CommentDTO { Name = null, Body = "stub-body", GameId = game.EntityId.ToString(), GameKey = game.Key },
                     game);
                 yield return
-                new TestCaseData(new CommentDTO { Name = "stub-name", Body = null, GameId = game.Id.ToString(), GameKey = game.Key },
+                new TestCaseData(new CommentDTO { Name = "stub-name", Body = null, GameId = game.EntityId.ToString(), GameKey = game.Key },
                     game);
                 yield return new TestCaseData(null, game);
                 yield return
@@ -79,10 +82,10 @@ namespace GameStore.BLL.Tests.Services
         {
             get
             {
-                var game = new Game {Id = Guid.NewGuid(), Key = "key", Name = "name"};
+                var game = new Game {EntityId = Guid.NewGuid(), Key = "key", Translates = new List<GameTranslate>() { new GameTranslate() { EntityId = Guid.NewGuid(), Language = Language.En, Name = "name" } } };
                 var parrentComment = new Comment
                 {
-                    Id = Guid.NewGuid(),
+                    EntityId = Guid.NewGuid(),
                     Name = "name",
                     Body = "body",
                     Game = game
@@ -92,9 +95,9 @@ namespace GameStore.BLL.Tests.Services
                     {
                         Name = "stub-name",
                         Body = "stub-body",
-                        ParentCommentId = parrentComment.Id.ToString(),
+                        ParentCommentId = parrentComment.EntityId.ToString(),
                         ParrentCommentName = "name",
-                        GameId = game.Id.ToString()
+                        GameId = game.EntityId.ToString()
                     },
                    parrentComment,game);
             }
@@ -104,12 +107,12 @@ namespace GameStore.BLL.Tests.Services
         {
             get
             {
-                yield return new TestCaseData(new GenreDTO { Id=Guid.NewGuid().ToString(), Name = "name" });
+                yield return new TestCaseData(new GenreDTO { Id=Guid.NewGuid().ToString(), Translates = new List<GenreDTOTranslate>() { new GenreDTOTranslate() { Id = Guid.NewGuid().ToString(), Language = Language.En, Name = "name" } } });
                 yield return
                     new TestCaseData(new GenreDTO
                     {
                         Id = Guid.NewGuid().ToString(),
-                        Name = "AnotherName"
+                        Translates = new List<GenreDTOTranslate>() { new GenreDTOTranslate() { Id = Guid.NewGuid().ToString(), Language = Language.En, Name = "name" } }
                     });
             }
         }
@@ -169,24 +172,22 @@ namespace GameStore.BLL.Tests.Services
             get
             {
                 var genre = new Genre()
-                { 
-                    Name = "name"
+                {
+                    Translates = new List<GenreTranslate>() { new GenreTranslate() { EntityId = Guid.NewGuid(), Language = Language.En, Name = "name" } }
                 };
                 yield return
                     new TestCaseData(new GameDTO
                         {
                             Id = "",
                             Key = "key",
-                            Name = "name",
-                            Description = "stub-description",
+                            Translates = new List<GameDTOTranslate>() { new GameDTOTranslate() { Id = Guid.NewGuid().ToString(), Language = Language.En, Name = "name" ,  Description = "stub-description",
                             GenresName = new List<string>() {"name"},
-                            PlatformTypesName = new List<string>() {"naame"}
-
+                            PlatformTypesName = new List<string>() {"naame"}} }
                         }, new List<Genre> { genre},
                         new List<PlatformType> {new PlatformType()
                         {
-                            Id = Guid.NewGuid(),
-                            Name = "naame"
+                            EntityId = Guid.NewGuid(),
+                           Translates = new List<PlatformTypeTranslate>() { new PlatformTypeTranslate() { EntityId = Guid.NewGuid(), Language = Language.En, Name = "naame" } }
                         } 
             } );
             }
@@ -203,22 +204,20 @@ namespace GameStore.BLL.Tests.Services
                     {
                         Id=Guid.NewGuid().ToString(),
                         Key = string.Empty,
-                        Name = "stub-name",
-                        Description = "stub-description"
+                        Translates = new List<GameDTOTranslate>() { new GameDTOTranslate() { Id = Guid.NewGuid().ToString(), Language = Language.En, Name = "name", Description = "description"} }
                     });
                 yield return
                     new TestCaseData(new GameDTO
                     {
                         Id = Guid.NewGuid().ToString(),
                         Key = string.Empty,
-                        Name = string.Empty,
-                        Description = "stub-description"
+                        Translates = new List<GameDTOTranslate>() { new GameDTOTranslate() { Id = Guid.NewGuid().ToString(), Language = Language.En, Name = string.Empty, Description = "description" } }
                     });
                 yield return
-                    new TestCaseData(new GameDTO { Id = Guid.NewGuid().ToString(), Key = null, Name = "stub-name", Description = "stub-description" });
+                    new TestCaseData(new GameDTO { Id = Guid.NewGuid().ToString(), Key = null, Translates = new List<GameDTOTranslate>() { new GameDTOTranslate() { Id = Guid.NewGuid().ToString(), Language = Language.En, Name = "name", Description = "description" } }});
                 yield return
-                    new TestCaseData(new GameDTO { Id = Guid.NewGuid().ToString(), Key = "stub-key", Name = null, Description = "stub-description" });
-                yield return new TestCaseData(new GameDTO { Id = Guid.NewGuid().ToString(), Key = null, Name = null, Description = "stub-description" });
+                    new TestCaseData(new GameDTO { Id = Guid.NewGuid().ToString(), Key = "stub-key", Translates = new List<GameDTOTranslate>() { new GameDTOTranslate() { Id = Guid.NewGuid().ToString(), Language = Language.En, Name = null, Description = "description" } }});
+                yield return new TestCaseData(new GameDTO { Id = Guid.NewGuid().ToString(), Key = null, Translates = new List<GameDTOTranslate>() { new GameDTOTranslate() { Id = Guid.NewGuid().ToString(), Language = Language.En, Name = null, Description = "description" } }});
             }
         }
     }

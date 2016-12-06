@@ -1,0 +1,948 @@
+80000002-0001-ee00-b63f-84710c7967bb|2016-11-30 10:09:22.2627|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000004-0001-f200-b63f-84710c7967bb|2016-11-30 10:12:16.8852|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000004-0001-f200-b63f-84710c7967bb|2016-11-30 10:12:21.1893|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 4288
+80000004-0001-f200-b63f-84710c7967bb|2016-11-30 10:12:22.4285|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000004-0001-f200-b63f-84710c7967bb|2016-11-30 10:12:22.5005|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000004-0001-f200-b63f-84710c7967bb|2016-11-30 10:12:22.5255|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000004-0001-f200-b63f-84710c7967bb|2016-11-30 10:12:22.5726|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000004-0001-f200-b63f-84710c7967bb|2016-11-30 10:12:22.5726|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 4433
+80000004-0001-f200-b63f-84710c7967bb|2016-11-30 10:12:23.1533|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000004-0001-f200-b63f-84710c7967bb|2016-11-30 10:12:23.4275|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000004-0001-f200-b63f-84710c7967bb|2016-11-30 10:12:23.4275|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 4708
+80000042-0000-ec00-b63f-84710c7967bb|2016-11-30 10:13:37.1164|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000042-0000-ec00-b63f-84710c7967bb|2016-11-30 10:13:40.1558|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3025
+80000042-0000-ec00-b63f-84710c7967bb|2016-11-30 10:13:41.3367|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000042-0000-ec00-b63f-84710c7967bb|2016-11-30 10:13:41.3968|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000042-0000-ec00-b63f-84710c7967bb|2016-11-30 10:13:41.4228|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000042-0000-ec00-b63f-84710c7967bb|2016-11-30 10:13:41.4468|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000042-0000-ec00-b63f-84710c7967bb|2016-11-30 10:13:41.4488|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3136
+80000042-0000-ec00-b63f-84710c7967bb|2016-11-30 10:13:42.0344|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000042-0000-ec00-b63f-84710c7967bb|2016-11-30 10:13:42.3156|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000042-0000-ec00-b63f-84710c7967bb|2016-11-30 10:13:42.3156|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3416
+8000000f-0000-f100-b63f-84710c7967bb|2016-11-30 10:13:43.5222|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+8000000f-0000-f100-b63f-84710c7967bb|2016-11-30 10:13:43.5612|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Orders. Returned 0  Orders.
+80000124-0002-f100-b63f-84710c7967bb|2016-11-30 10:14:31.4059|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000014-0000-f300-b63f-84710c7967bb|2016-11-30 10:14:31.4679|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000124-0002-f100-b63f-84710c7967bb|2016-11-30 10:14:34.0060|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Orders. Returned 0  Orders.
+8000001f-0002-f700-b63f-84710c7967bb|2016-11-30 10:18:55.1860|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+8000001f-0002-f700-b63f-84710c7967bb|2016-11-30 10:18:58.3679|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3168
+8000001f-0002-f700-b63f-84710c7967bb|2016-11-30 10:18:59.5238|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+8000001f-0002-f700-b63f-84710c7967bb|2016-11-30 10:18:59.5975|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+8000001f-0002-f700-b63f-84710c7967bb|2016-11-30 10:18:59.6225|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+8000001f-0002-f700-b63f-84710c7967bb|2016-11-30 10:18:59.6476|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+8000001f-0002-f700-b63f-84710c7967bb|2016-11-30 10:18:59.6476|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3292
+8000001f-0002-f700-b63f-84710c7967bb|2016-11-30 10:19:00.1929|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+8000001f-0002-f700-b63f-84710c7967bb|2016-11-30 10:19:00.4726|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+8000001f-0002-f700-b63f-84710c7967bb|2016-11-30 10:19:00.4726|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3572
+80000021-0002-f700-b63f-84710c7967bb|2016-11-30 10:19:08.7736|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+8000000c-0003-f000-b63f-84710c7967bb|2016-11-30 10:19:55.8509|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000023-0002-ee00-b63f-84710c7967bb|2016-11-30 10:19:55.9190|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000035-0001-f400-b63f-84710c7967bb|2016-11-30 10:22:18.5080|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+8000001f-0001-f800-b63f-84710c7967bb|2016-11-30 10:22:18.6067|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+8000001f-0002-ed00-b63f-84710c7967bb|2016-11-30 10:23:26.8206|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+800002fa-0000-ed00-b63f-84710c7967bb|2016-11-30 10:23:26.8567|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+8000042c-0002-f000-b63f-84710c7967bb|2016-11-30 10:28:19.2075|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000037-0000-f400-b63f-84710c7967bb|2016-11-30 10:28:20.1784|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000013-0000-fb00-b63f-84710c7967bb|2016-11-30 10:29:18.2617|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000326-0000-f600-b63f-84710c7967bb|2016-11-30 10:29:18.2867|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+8000001d-0002-f200-b63f-84710c7967bb|2016-11-30 10:30:32.3860|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000150-0003-fc00-b63f-84710c7967bb|2016-11-30 10:30:32.4460|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+8000003d-0000-f500-b63f-84710c7967bb|2016-11-30 10:32:24.4512|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000032-0002-ed00-b63f-84710c7967bb|2016-11-30 10:32:24.5122|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000031-0002-f200-b63f-84710c7967bb|2016-11-30 10:34:14.5479|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000029-0003-ef00-b63f-84710c7967bb|2016-11-30 10:34:14.6090|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000035-0001-ea00-b63f-84710c7967bb|2016-11-30 10:35:25.9196|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000024-0000-fb00-b63f-84710c7967bb|2016-11-30 10:35:25.9401|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000038-0003-f600-b63f-84710c7967bb|2016-11-30 10:37:42.2404|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+8000004f-0001-f200-b63f-84710c7967bb|2016-11-30 10:37:42.3095|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000453-0002-f000-b63f-84710c7967bb|2016-11-30 10:38:34.0961|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000050-0003-f700-b63f-84710c7967bb|2016-11-30 10:38:34.1832|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+800001d5-0000-eb00-b63f-84710c7967bb|2016-11-30 10:40:01.0478|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+8000022e-0001-ee00-b63f-84710c7967bb|2016-11-30 10:40:01.1148|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+800000c2-0000-ec00-b63f-84710c7967bb|2016-11-30 10:40:58.7764|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000141-0001-e800-b63f-84710c7967bb|2016-11-30 10:40:58.8344|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000038-0000-ea00-b63f-84710c7967bb|2016-11-30 10:42:03.0885|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000083-0002-ee00-b63f-84710c7967bb|2016-11-30 10:42:03.0885|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000083-0002-ee00-b63f-84710c7967bb|2016-11-30 10:42:06.1108|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Orders. Returned 830  Orders.
+80000038-0000-ea00-b63f-84710c7967bb|2016-11-30 10:42:06.1108|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Orders. Returned 830  Orders.
+80000039-0000-fc00-b63f-84710c7967bb|2016-11-30 10:43:24.6587|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002fe-0000-f200-b63f-84710c7967bb|2016-11-30 10:43:24.7207|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000039-0000-fc00-b63f-84710c7967bb|2016-11-30 10:43:27.5003|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Orders. Returned 830  Orders.
+80000302-0000-f200-b63f-84710c7967bb|2016-11-30 10:44:15.2043|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000302-0000-f200-b63f-84710c7967bb|2016-11-30 10:44:18.9282|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3709
+80000302-0000-f200-b63f-84710c7967bb|2016-11-30 10:44:20.0936|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000302-0000-f200-b63f-84710c7967bb|2016-11-30 10:44:20.1646|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000302-0000-f200-b63f-84710c7967bb|2016-11-30 10:44:20.1922|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000302-0000-f200-b63f-84710c7967bb|2016-11-30 10:44:20.2172|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000302-0000-f200-b63f-84710c7967bb|2016-11-30 10:44:20.2172|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3834
+80000302-0000-f200-b63f-84710c7967bb|2016-11-30 10:44:20.7571|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000302-0000-f200-b63f-84710c7967bb|2016-11-30 10:44:21.0431|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000302-0000-f200-b63f-84710c7967bb|2016-11-30 10:44:21.0431|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 4121
+80000304-0000-f200-b63f-84710c7967bb|2016-11-30 10:44:26.3519|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000304-0000-f200-b63f-84710c7967bb|2016-11-30 10:44:26.4189|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Orders. Returned 830  Orders.
+80000009-0000-f700-b63f-84710c7967bb|2016-11-30 11:14:41.0751|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000009-0000-f700-b63f-84710c7967bb|2016-11-30 11:14:47.1175|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 6027
+80000009-0000-f700-b63f-84710c7967bb|2016-11-30 11:14:48.2915|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000009-0000-f700-b63f-84710c7967bb|2016-11-30 11:14:48.3572|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000009-0000-f700-b63f-84710c7967bb|2016-11-30 11:14:48.3843|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000009-0000-f700-b63f-84710c7967bb|2016-11-30 11:14:48.4123|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000009-0000-f700-b63f-84710c7967bb|2016-11-30 11:14:48.4123|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 6148
+80000009-0000-f700-b63f-84710c7967bb|2016-11-30 11:14:48.9740|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000009-0000-f700-b63f-84710c7967bb|2016-11-30 11:14:49.2751|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000009-0000-f700-b63f-84710c7967bb|2016-11-30 11:14:49.2751|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 6450
+80000198-0002-ee00-b63f-84710c7967bb|2016-11-30 11:15:16.0937|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000198-0002-ee00-b63f-84710c7967bb|2016-11-30 11:15:19.8387|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3730
+80000198-0002-ee00-b63f-84710c7967bb|2016-11-30 11:15:19.9874|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000198-0002-ee00-b63f-84710c7967bb|2016-11-30 11:15:20.0445|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000198-0002-ee00-b63f-84710c7967bb|2016-11-30 11:15:20.0695|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000198-0002-ee00-b63f-84710c7967bb|2016-11-30 11:15:20.0945|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000198-0002-ee00-b63f-84710c7967bb|2016-11-30 11:15:20.0945|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3838
+80000198-0002-ee00-b63f-84710c7967bb|2016-11-30 11:15:20.4329|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000198-0002-ee00-b63f-84710c7967bb|2016-11-30 11:15:20.7136|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000198-0002-ee00-b63f-84710c7967bb|2016-11-30 11:15:20.7136|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 4119
+8000028c-0002-f700-b63f-84710c7967bb|2016-11-30 11:15:43.9418|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000293-0002-f700-b63f-84710c7967bb|2016-11-30 11:18:57.7066|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000293-0002-f700-b63f-84710c7967bb|2016-11-30 11:19:01.0431|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3323
+80000293-0002-f700-b63f-84710c7967bb|2016-11-30 11:19:02.2813|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000293-0002-f700-b63f-84710c7967bb|2016-11-30 11:19:02.3473|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000293-0002-f700-b63f-84710c7967bb|2016-11-30 11:19:02.3723|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000293-0002-f700-b63f-84710c7967bb|2016-11-30 11:19:02.3984|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000293-0002-f700-b63f-84710c7967bb|2016-11-30 11:19:02.3984|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3441
+80000293-0002-f700-b63f-84710c7967bb|2016-11-30 11:19:02.9728|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000293-0002-f700-b63f-84710c7967bb|2016-11-30 11:19:03.2506|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000293-0002-f700-b63f-84710c7967bb|2016-11-30 11:19:03.2506|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3718
+80000295-0002-f700-b63f-84710c7967bb|2016-11-30 11:19:09.6466|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000013-0000-e900-b63f-84710c7967bb|2016-11-30 11:21:35.7838|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000013-0000-e900-b63f-84710c7967bb|2016-11-30 11:21:39.5267|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3730
+80000013-0000-e900-b63f-84710c7967bb|2016-11-30 11:21:40.6301|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000013-0000-e900-b63f-84710c7967bb|2016-11-30 11:21:40.7022|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000013-0000-e900-b63f-84710c7967bb|2016-11-30 11:21:40.7317|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000013-0000-e900-b63f-84710c7967bb|2016-11-30 11:21:40.7578|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000013-0000-e900-b63f-84710c7967bb|2016-11-30 11:21:40.7578|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3858
+80000013-0000-e900-b63f-84710c7967bb|2016-11-30 11:21:41.2953|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000013-0000-e900-b63f-84710c7967bb|2016-11-30 11:21:41.5999|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000013-0000-e900-b63f-84710c7967bb|2016-11-30 11:21:41.5999|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 4163
+80000015-0000-e900-b63f-84710c7967bb|2016-11-30 11:21:45.4781|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000015-0000-e900-b63f-84710c7967bb|2016-11-30 11:21:45.5497|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Orders. Returned 830  Orders.
+800001f9-0000-fb00-b63f-84710c7967bb|2016-11-30 11:27:39.7762|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+800001f9-0000-fb00-b63f-84710c7967bb|2016-11-30 11:27:45.7485|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 5957
+800001f9-0000-fb00-b63f-84710c7967bb|2016-11-30 11:27:46.9232|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+800001f9-0000-fb00-b63f-84710c7967bb|2016-11-30 11:27:46.9817|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+800001f9-0000-fb00-b63f-84710c7967bb|2016-11-30 11:27:47.0083|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800001f9-0000-fb00-b63f-84710c7967bb|2016-11-30 11:27:47.0343|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+800001f9-0000-fb00-b63f-84710c7967bb|2016-11-30 11:27:47.0343|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 6069
+800001f9-0000-fb00-b63f-84710c7967bb|2016-11-30 11:27:47.5517|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+800001f9-0000-fb00-b63f-84710c7967bb|2016-11-30 11:27:47.8259|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+800001f9-0000-fb00-b63f-84710c7967bb|2016-11-30 11:27:47.8259|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 6343
+800001fb-0000-fb00-b63f-84710c7967bb|2016-11-30 11:27:58.2490|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+8000009f-0003-fb00-b63f-84710c7967bb|2016-11-30 11:29:04.8125|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+8000009f-0003-fb00-b63f-84710c7967bb|2016-11-30 11:29:08.0665|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3240
+8000009f-0003-fb00-b63f-84710c7967bb|2016-11-30 11:29:09.1253|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+8000009f-0003-fb00-b63f-84710c7967bb|2016-11-30 11:29:09.1924|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+8000009f-0003-fb00-b63f-84710c7967bb|2016-11-30 11:29:09.2194|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+8000009f-0003-fb00-b63f-84710c7967bb|2016-11-30 11:29:09.2454|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+8000009f-0003-fb00-b63f-84710c7967bb|2016-11-30 11:29:09.2454|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3361
+8000009f-0003-fb00-b63f-84710c7967bb|2016-11-30 11:29:09.7572|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+8000009f-0003-fb00-b63f-84710c7967bb|2016-11-30 11:29:10.0603|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+8000009f-0003-fb00-b63f-84710c7967bb|2016-11-30 11:29:10.0603|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3664
+800000a1-0003-fb00-b63f-84710c7967bb|2016-11-30 11:29:20.2090|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000077-0000-fc00-b63f-84710c7967bb|2016-11-30 11:30:43.3573|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000456-0000-f500-b63f-84710c7967bb|2016-11-30 11:30:43.4207|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000456-0000-f500-b63f-84710c7967bb|2016-11-30 11:30:47.3940|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 4020
+80000077-0000-fc00-b63f-84710c7967bb|2016-11-30 11:30:48.4173|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Orders. Returned 830  Orders.
+80000070-0001-e500-b63f-84710c7967bb|2016-11-30 11:32:42.9928|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000070-0001-e500-b63f-84710c7967bb|2016-11-30 11:32:46.1313|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3124
+80000070-0001-e500-b63f-84710c7967bb|2016-11-30 11:32:47.1766|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000070-0001-e500-b63f-84710c7967bb|2016-11-30 11:32:47.2454|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000070-0001-e500-b63f-84710c7967bb|2016-11-30 11:32:47.2714|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000070-0001-e500-b63f-84710c7967bb|2016-11-30 11:32:47.2964|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000070-0001-e500-b63f-84710c7967bb|2016-11-30 11:32:47.2964|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3245
+80000070-0001-e500-b63f-84710c7967bb|2016-11-30 11:32:47.7945|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000070-0001-e500-b63f-84710c7967bb|2016-11-30 11:32:48.0846|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000070-0001-e500-b63f-84710c7967bb|2016-11-30 11:32:48.0846|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3535
+80000072-0001-e500-b63f-84710c7967bb|2016-11-30 11:32:55.2313|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000072-0001-e500-b63f-84710c7967bb|2016-11-30 11:32:56.5887|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Orders. Returned 830  Orders.
+80000072-0001-e500-b63f-84710c7967bb|2016-11-30 11:32:56.6037|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 4905
+80000072-0001-e500-b63f-84710c7967bb|2016-11-30 11:32:56.9630|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000072-0001-e500-b63f-84710c7967bb|2016-11-30 11:32:56.9630|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 4905
+80000074-0001-e500-b63f-84710c7967bb|2016-11-30 11:33:36.4557|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000074-0001-e500-b63f-84710c7967bb|2016-11-30 11:33:37.7549|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Orders. Returned 830  Orders.
+80000074-0001-e500-b63f-84710c7967bb|2016-11-30 11:33:37.7549|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 6207
+80000074-0001-e500-b63f-84710c7967bb|2016-11-30 11:33:41.4282|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000074-0001-e500-b63f-84710c7967bb|2016-11-30 11:33:41.4282|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 6207
+800002d2-0003-f300-b63f-84710c7967bb|2016-11-30 11:34:57.6861|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002d2-0003-f300-b63f-84710c7967bb|2016-11-30 11:34:59.0343|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Orders. Returned 830  Orders.
+800002d2-0003-f300-b63f-84710c7967bb|2016-11-30 11:34:59.0343|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 7556
+800002d2-0003-f300-b63f-84710c7967bb|2016-11-30 11:35:02.4563|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002d2-0003-f300-b63f-84710c7967bb|2016-11-30 11:35:02.7326|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+800002d2-0003-f300-b63f-84710c7967bb|2016-11-30 11:35:02.7336|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 7832
+800002d4-0003-f300-b63f-84710c7967bb|2016-11-30 11:35:16.9720|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002d4-0003-f300-b63f-84710c7967bb|2016-11-30 11:35:18.2854|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Orders. Returned 830  Orders.
+800002d4-0003-f300-b63f-84710c7967bb|2016-11-30 11:35:18.2854|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 9146
+800002d4-0003-f300-b63f-84710c7967bb|2016-11-30 11:35:21.7312|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002d4-0003-f300-b63f-84710c7967bb|2016-11-30 11:35:21.7312|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 9146
+80000462-0000-f500-b63f-84710c7967bb|2016-11-30 11:40:21.7408|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000462-0000-f500-b63f-84710c7967bb|2016-11-30 11:40:28.6235|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 6867
+80000462-0000-f500-b63f-84710c7967bb|2016-11-30 11:40:29.6718|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000462-0000-f500-b63f-84710c7967bb|2016-11-30 11:40:29.7403|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000462-0000-f500-b63f-84710c7967bb|2016-11-30 11:40:29.7653|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000462-0000-f500-b63f-84710c7967bb|2016-11-30 11:40:29.7894|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000462-0000-f500-b63f-84710c7967bb|2016-11-30 11:40:29.7894|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 6985
+80000462-0000-f500-b63f-84710c7967bb|2016-11-30 11:40:30.3398|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000462-0000-f500-b63f-84710c7967bb|2016-11-30 11:40:30.6278|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000462-0000-f500-b63f-84710c7967bb|2016-11-30 11:40:30.6278|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 7273
+80000464-0000-f500-b63f-84710c7967bb|2016-11-30 11:40:37.9777|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+8000030e-0000-ef00-b63f-84710c7967bb|2016-11-30 11:43:06.7835|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+8000037d-0002-f100-b63f-84710c7967bb|2016-11-30 11:43:07.2931|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000298-0001-f400-b63f-84710c7967bb|2016-11-30 11:44:27.4597|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000298-0001-f400-b63f-84710c7967bb|2016-11-30 11:44:30.9942|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3521
+80000e32-0000-f100-b63f-84710c7967bb|2016-11-30 11:44:31.8753|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000197-0001-e800-b63f-84710c7967bb|2016-11-30 11:46:01.8101|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800000ae-0003-fb00-b63f-84710c7967bb|2016-11-30 11:46:01.8691|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+800000ae-0003-fb00-b63f-84710c7967bb|2016-11-30 11:46:05.1323|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3307
+80000197-0001-e800-b63f-84710c7967bb|2016-11-30 11:46:06.2490|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Orders. Returned 830  Orders.
+80000197-0001-e800-b63f-84710c7967bb|2016-11-30 11:46:06.2660|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 3307
+800000ae-0003-fb00-b63f-84710c7967bb|2016-11-30 11:46:06.4517|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+800000ae-0003-fb00-b63f-84710c7967bb|2016-11-30 11:46:06.5137|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+800000ae-0003-fb00-b63f-84710c7967bb|2016-11-30 11:46:06.5618|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800000ae-0003-fb00-b63f-84710c7967bb|2016-11-30 11:46:06.5938|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+800000ae-0003-fb00-b63f-84710c7967bb|2016-11-30 11:46:06.5938|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3450
+80000197-0001-e800-b63f-84710c7967bb|2016-11-30 11:46:07.0892|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800000ae-0003-fb00-b63f-84710c7967bb|2016-11-30 11:46:07.0892|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000197-0001-e800-b63f-84710c7967bb|2016-11-30 11:46:07.4855|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000197-0001-e800-b63f-84710c7967bb|2016-11-30 11:46:07.4855|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 3847
+800000ae-0003-fb00-b63f-84710c7967bb|2016-11-30 11:46:07.4855|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+800000ae-0003-fb00-b63f-84710c7967bb|2016-11-30 11:46:07.4855|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3847
+80000319-0000-ef00-b63f-84710c7967bb|2016-11-30 11:47:24.9784|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000319-0000-ef00-b63f-84710c7967bb|2016-11-30 11:47:26.3075|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Orders. Returned 830  Orders.
+80000319-0000-ef00-b63f-84710c7967bb|2016-11-30 11:47:26.3075|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 5178
+80000319-0000-ef00-b63f-84710c7967bb|2016-11-30 11:47:27.1578|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000319-0000-ef00-b63f-84710c7967bb|2016-11-30 11:47:27.4393|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000319-0000-ef00-b63f-84710c7967bb|2016-11-30 11:47:27.4393|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 5458
+80000ce9-0000-e900-b63f-84710c7967bb|2016-11-30 11:49:03.4326|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000185-0002-ef00-b63f-84710c7967bb|2016-11-30 11:49:03.8258|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000ce9-0000-e900-b63f-84710c7967bb|2016-11-30 11:49:06.8793|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3432
+80000ce9-0000-e900-b63f-84710c7967bb|2016-11-30 11:49:08.1077|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000ce9-0000-e900-b63f-84710c7967bb|2016-11-30 11:49:08.1723|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000ce9-0000-e900-b63f-84710c7967bb|2016-11-30 11:49:08.1975|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000ce9-0000-e900-b63f-84710c7967bb|2016-11-30 11:49:08.2235|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000ce9-0000-e900-b63f-84710c7967bb|2016-11-30 11:49:08.2235|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3550
+80000ce9-0000-e900-b63f-84710c7967bb|2016-11-30 11:49:08.8013|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000ce9-0000-e900-b63f-84710c7967bb|2016-11-30 11:49:09.0902|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000ce9-0000-e900-b63f-84710c7967bb|2016-11-30 11:49:09.0902|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3839
+80000185-0002-ef00-b63f-84710c7967bb|2016-11-30 11:49:09.3539|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Orders. Returned 830  Orders.
+80000185-0002-ef00-b63f-84710c7967bb|2016-11-30 11:49:09.3679|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 3839
+80000185-0002-ef00-b63f-84710c7967bb|2016-11-30 11:49:09.7957|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000185-0002-ef00-b63f-84710c7967bb|2016-11-30 11:49:09.7957|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 3839
+800002ef-0000-f300-b63f-84710c7967bb|2016-11-30 11:51:30.3781|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+8000047f-0000-f500-b63f-84710c7967bb|2016-11-30 11:51:30.4381|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+800001a3-0001-e800-b63f-84710c7967bb|2016-11-30 11:53:14.2492|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000098-0001-ec00-b63f-84710c7967bb|2016-11-30 11:53:14.3402|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000098-0001-ec00-b63f-84710c7967bb|2016-11-30 11:53:17.6490|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3385
+80000098-0001-ec00-b63f-84710c7967bb|2016-11-30 11:53:19.1201|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000098-0001-ec00-b63f-84710c7967bb|2016-11-30 11:53:19.1846|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000098-0001-ec00-b63f-84710c7967bb|2016-11-30 11:53:19.2147|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000098-0001-ec00-b63f-84710c7967bb|2016-11-30 11:53:19.2417|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000098-0001-ec00-b63f-84710c7967bb|2016-11-30 11:53:19.2417|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3507
+80000098-0001-ec00-b63f-84710c7967bb|2016-11-30 11:53:19.7862|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000098-0001-ec00-b63f-84710c7967bb|2016-11-30 11:53:20.1044|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000098-0001-ec00-b63f-84710c7967bb|2016-11-30 11:53:20.1044|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3826
+800001a3-0001-e800-b63f-84710c7967bb|2016-11-30 11:53:20.2034|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Orders. Returned 830  Orders.
+800001a3-0001-e800-b63f-84710c7967bb|2016-11-30 11:53:20.2174|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 3826
+800001a3-0001-e800-b63f-84710c7967bb|2016-11-30 11:53:20.6967|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800001a3-0001-e800-b63f-84710c7967bb|2016-11-30 11:53:20.6967|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 3826
+800001a5-0001-e800-b63f-84710c7967bb|2016-11-30 11:53:59.0679|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800001a5-0001-e800-b63f-84710c7967bb|2016-11-30 11:54:01.6811|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Orders. Returned 830  Orders.
+800001a5-0001-e800-b63f-84710c7967bb|2016-11-30 11:54:01.6811|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 6440
+800001a5-0001-e800-b63f-84710c7967bb|2016-11-30 11:54:04.7105|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800001a5-0001-e800-b63f-84710c7967bb|2016-11-30 11:54:04.7105|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 6440
+80000813-0000-ed00-b63f-84710c7967bb|2016-11-30 12:28:40.9587|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000306-0001-f900-b63f-84710c7967bb|2016-11-30 12:28:40.9587|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000813-0000-ed00-b63f-84710c7967bb|2016-11-30 12:28:46.5353|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 5563
+80000813-0000-ed00-b63f-84710c7967bb|2016-11-30 12:28:47.7737|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000813-0000-ed00-b63f-84710c7967bb|2016-11-30 12:28:47.8508|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000813-0000-ed00-b63f-84710c7967bb|2016-11-30 12:28:47.8768|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000813-0000-ed00-b63f-84710c7967bb|2016-11-30 12:28:47.9013|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000813-0000-ed00-b63f-84710c7967bb|2016-11-30 12:28:47.9013|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 5691
+80000813-0000-ed00-b63f-84710c7967bb|2016-11-30 12:28:48.4553|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000813-0000-ed00-b63f-84710c7967bb|2016-11-30 12:28:48.7574|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000813-0000-ed00-b63f-84710c7967bb|2016-11-30 12:28:48.7574|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 5993
+80000029-0001-e400-b63f-84710c7967bb|2016-11-30 12:30:34.4215|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800004ba-0002-f000-b63f-84710c7967bb|2016-11-30 12:30:34.4215|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+800004ba-0002-f000-b63f-84710c7967bb|2016-11-30 12:30:37.7239|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3287
+800004ba-0002-f000-b63f-84710c7967bb|2016-11-30 12:30:37.8873|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+800004ba-0002-f000-b63f-84710c7967bb|2016-11-30 12:30:37.9497|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+800004ba-0002-f000-b63f-84710c7967bb|2016-11-30 12:30:37.9777|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800004ba-0002-f000-b63f-84710c7967bb|2016-11-30 12:30:38.0023|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+800004ba-0002-f000-b63f-84710c7967bb|2016-11-30 12:30:38.0043|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3403
+800004ba-0002-f000-b63f-84710c7967bb|2016-11-30 12:30:38.3818|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+800004ba-0002-f000-b63f-84710c7967bb|2016-11-30 12:30:38.6785|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+800004ba-0002-f000-b63f-84710c7967bb|2016-11-30 12:30:38.6785|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3700
+800002f0-0001-f800-b63f-84710c7967bb|2016-11-30 12:33:13.3007|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000236-0003-f700-b63f-84710c7967bb|2016-11-30 12:33:13.3007|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000236-0003-f700-b63f-84710c7967bb|2016-11-30 12:33:17.2002|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3884
+80000236-0003-f700-b63f-84710c7967bb|2016-11-30 12:33:18.4626|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000236-0003-f700-b63f-84710c7967bb|2016-11-30 12:33:18.5306|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000236-0003-f700-b63f-84710c7967bb|2016-11-30 12:33:18.5577|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000236-0003-f700-b63f-84710c7967bb|2016-11-30 12:33:18.5837|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000236-0003-f700-b63f-84710c7967bb|2016-11-30 12:33:18.5837|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 4005
+80000236-0003-f700-b63f-84710c7967bb|2016-11-30 12:33:19.1749|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000236-0003-f700-b63f-84710c7967bb|2016-11-30 12:33:19.4722|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000236-0003-f700-b63f-84710c7967bb|2016-11-30 12:33:19.4737|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 4303
+8000081f-0000-ed00-b63f-84710c7967bb|2016-11-30 12:46:18.7406|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000c50-0002-f800-b63f-84710c7967bb|2016-11-30 12:46:23.4759|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+8000081f-0000-ed00-b63f-84710c7967bb|2016-11-30 12:46:25.1601|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 6398
+8000081f-0000-ed00-b63f-84710c7967bb|2016-11-30 12:46:26.4640|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+8000081f-0000-ed00-b63f-84710c7967bb|2016-11-30 12:46:26.5326|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+8000081f-0000-ed00-b63f-84710c7967bb|2016-11-30 12:46:26.5641|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+8000081f-0000-ed00-b63f-84710c7967bb|2016-11-30 12:46:26.5941|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+8000081f-0000-ed00-b63f-84710c7967bb|2016-11-30 12:46:26.5941|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 6528
+8000081f-0000-ed00-b63f-84710c7967bb|2016-11-30 12:46:27.1545|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+8000081f-0000-ed00-b63f-84710c7967bb|2016-11-30 12:46:27.4448|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+8000081f-0000-ed00-b63f-84710c7967bb|2016-11-30 12:46:27.4448|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 6818
+8000021b-0000-ea00-b63f-84710c7967bb|2016-11-30 12:51:21.1739|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800006c5-0000-f400-b63f-84710c7967bb|2016-11-30 12:53:03.1303|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+800001e3-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:05.4033|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800006c5-0000-f400-b63f-84710c7967bb|2016-11-30 12:53:06.7138|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3566
+800006c5-0000-f400-b63f-84710c7967bb|2016-11-30 12:53:07.9996|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+800006c5-0000-f400-b63f-84710c7967bb|2016-11-30 12:53:08.0847|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+800006c5-0000-f400-b63f-84710c7967bb|2016-11-30 12:53:08.1147|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800006c5-0000-f400-b63f-84710c7967bb|2016-11-30 12:53:08.1402|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+800006c5-0000-f400-b63f-84710c7967bb|2016-11-30 12:53:08.1402|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3696
+800006c5-0000-f400-b63f-84710c7967bb|2016-11-30 12:53:08.7142|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+800006c5-0000-f400-b63f-84710c7967bb|2016-11-30 12:53:09.0874|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+800006c5-0000-f400-b63f-84710c7967bb|2016-11-30 12:53:09.0874|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 4069
+800001e3-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:09.2616|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 4069
+800001e3-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:09.5160|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800001e3-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:09.5160|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 4070
+800001e3-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:09.5510|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800001e3-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:09.5510|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 4070
+800001e5-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:31.5821|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800001e5-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:34.2664|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 6753
+800001e5-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:37.3142|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800001e5-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:37.3142|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 6753
+800001e5-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:37.3342|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800001e5-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:37.3352|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 6753
+800001e7-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:41.7483|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?PageSize=20
+800001e7-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:44.4724|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?PageSize=20; Time(ms) = 9477
+800001e7-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:44.4724|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?PageSize=20
+800001e7-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:44.4764|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?PageSize=20; Time(ms) = 9477
+800001e7-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:44.4764|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?PageSize=20
+800001e7-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:44.4764|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?PageSize=20; Time(ms) = 9477
+800001e9-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:51.9226|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?PageSize=100
+800001e9-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:54.5877|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?PageSize=100; Time(ms) = 12141
+800001e9-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:54.5877|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?PageSize=100
+800001e9-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:54.5877|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?PageSize=100; Time(ms) = 12141
+800001e9-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:54.6097|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?PageSize=100
+800001e9-0002-ea00-b63f-84710c7967bb|2016-11-30 12:53:54.6097|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?PageSize=100; Time(ms) = 12141
+800001e4-0003-ed00-b63f-84710c7967bb|2016-11-30 12:56:25.2061|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?PageSize=100
+800001e4-0003-ed00-b63f-84710c7967bb|2016-11-30 12:56:27.8026|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?PageSize=100; Time(ms) = 14738
+800001e4-0003-ed00-b63f-84710c7967bb|2016-11-30 12:56:31.2067|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?PageSize=100
+800001e4-0003-ed00-b63f-84710c7967bb|2016-11-30 12:56:31.2067|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?PageSize=100; Time(ms) = 14738
+800001e4-0003-ed00-b63f-84710c7967bb|2016-11-30 12:56:31.2437|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?PageSize=100
+800001e4-0003-ed00-b63f-84710c7967bb|2016-11-30 12:56:31.5180|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+800001e4-0003-ed00-b63f-84710c7967bb|2016-11-30 12:56:31.5180|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?PageSize=100; Time(ms) = 15011
+800001e6-0003-ed00-b63f-84710c7967bb|2016-11-30 12:57:11.9990|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?PageSize=100
+800001e6-0003-ed00-b63f-84710c7967bb|2016-11-30 12:57:14.6552|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?PageSize=100; Time(ms) = 17666
+800001e6-0003-ed00-b63f-84710c7967bb|2016-11-30 12:57:18.0809|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?PageSize=100
+800001e6-0003-ed00-b63f-84710c7967bb|2016-11-30 12:57:18.0809|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?PageSize=100; Time(ms) = 17666
+800001e6-0003-ed00-b63f-84710c7967bb|2016-11-30 12:57:18.1070|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?PageSize=100
+800001e6-0003-ed00-b63f-84710c7967bb|2016-11-30 12:57:18.1070|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?PageSize=100; Time(ms) = 17666
+80000098-0003-ec00-b63f-84710c7967bb|2016-11-30 12:58:21.1842|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+8000099b-0001-e900-b63f-84710c7967bb|2016-11-30 12:58:21.1842|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+8000099b-0001-e900-b63f-84710c7967bb|2016-11-30 12:58:25.3012|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 4102
+8000099b-0001-e900-b63f-84710c7967bb|2016-11-30 12:58:26.4828|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+8000099b-0001-e900-b63f-84710c7967bb|2016-11-30 12:58:26.5759|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+8000099b-0001-e900-b63f-84710c7967bb|2016-11-30 12:58:26.6029|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+8000099b-0001-e900-b63f-84710c7967bb|2016-11-30 12:58:26.6299|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+8000099b-0001-e900-b63f-84710c7967bb|2016-11-30 12:58:26.6319|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 4249
+8000099b-0001-e900-b63f-84710c7967bb|2016-11-30 12:58:27.1874|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+8000099b-0001-e900-b63f-84710c7967bb|2016-11-30 12:58:27.4995|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+8000099b-0001-e900-b63f-84710c7967bb|2016-11-30 12:58:27.4995|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 4561
+80000098-0003-ec00-b63f-84710c7967bb|2016-11-30 12:58:27.7637|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 4561
+80000098-0003-ec00-b63f-84710c7967bb|2016-11-30 12:58:28.0519|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000098-0003-ec00-b63f-84710c7967bb|2016-11-30 12:58:28.0539|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 4562
+80000098-0003-ec00-b63f-84710c7967bb|2016-11-30 12:58:28.0889|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000098-0003-ec00-b63f-84710c7967bb|2016-11-30 12:58:28.0889|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 4565
+8000009a-0003-ec00-b63f-84710c7967bb|2016-11-30 12:59:21.6367|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2017-09-27&DateTo=
+8000009a-0003-ec00-b63f-84710c7967bb|2016-11-30 12:59:24.2222|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2017-09-27&DateTo=; Time(ms) = 7144
+8000009a-0003-ec00-b63f-84710c7967bb|2016-11-30 12:59:24.2222|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2017-09-27&DateTo=
+8000009a-0003-ec00-b63f-84710c7967bb|2016-11-30 12:59:24.2253|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2017-09-27&DateTo=; Time(ms) = 7144
+8000009a-0003-ec00-b63f-84710c7967bb|2016-11-30 12:59:24.2253|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2017-09-27&DateTo=
+8000009a-0003-ec00-b63f-84710c7967bb|2016-11-30 12:59:24.2253|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2017-09-27&DateTo=; Time(ms) = 7144
+8000009c-0003-ec00-b63f-84710c7967bb|2016-11-30 12:59:27.8247|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2017-09-27&DateTo=&PageSize=0
+8000029c-0002-f400-b63f-84710c7967bb|2016-11-30 12:59:29.4472|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2017-09-27&DateTo=&PageSize=0
+8000009c-0003-ec00-b63f-84710c7967bb|2016-11-30 12:59:30.4656|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2017-09-27&DateTo=&PageSize=0; Time(ms) = 9785
+8000009c-0003-ec00-b63f-84710c7967bb|2016-11-30 12:59:30.4656|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2017-09-27&DateTo=&PageSize=0
+8000009c-0003-ec00-b63f-84710c7967bb|2016-11-30 12:59:30.4656|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2017-09-27&DateTo=&PageSize=0; Time(ms) = 9785
+8000009c-0003-ec00-b63f-84710c7967bb|2016-11-30 12:59:30.4656|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2017-09-27&DateTo=&PageSize=0
+8000009c-0003-ec00-b63f-84710c7967bb|2016-11-30 12:59:30.7462|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+8000009c-0003-ec00-b63f-84710c7967bb|2016-11-30 12:59:30.7462|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2017-09-27&DateTo=&PageSize=0; Time(ms) = 10059
+8000029c-0002-f400-b63f-84710c7967bb|2016-11-30 12:59:32.0866|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2017-09-27&DateTo=&PageSize=0; Time(ms) = 10059
+8000029c-0002-f400-b63f-84710c7967bb|2016-11-30 12:59:32.0866|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2017-09-27&DateTo=&PageSize=0
+8000029c-0002-f400-b63f-84710c7967bb|2016-11-30 12:59:32.0866|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2017-09-27&DateTo=&PageSize=0; Time(ms) = 10059
+8000029c-0002-f400-b63f-84710c7967bb|2016-11-30 12:59:32.0866|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2017-09-27&DateTo=&PageSize=0
+8000029c-0002-f400-b63f-84710c7967bb|2016-11-30 12:59:32.0866|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2017-09-27&DateTo=&PageSize=0; Time(ms) = 10059
+800002a6-0002-f400-b63f-84710c7967bb|2016-11-30 13:02:53.5420|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+800002a6-0002-f400-b63f-84710c7967bb|2016-11-30 13:02:56.7849|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3229
+800002a6-0002-f400-b63f-84710c7967bb|2016-11-30 13:02:57.8295|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+800002a6-0002-f400-b63f-84710c7967bb|2016-11-30 13:02:57.8940|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+800002a6-0002-f400-b63f-84710c7967bb|2016-11-30 13:02:57.9200|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800002a6-0002-f400-b63f-84710c7967bb|2016-11-30 13:02:57.9461|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+800002a6-0002-f400-b63f-84710c7967bb|2016-11-30 13:02:57.9461|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3346
+800002a6-0002-f400-b63f-84710c7967bb|2016-11-30 13:02:58.4828|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+800002a6-0002-f400-b63f-84710c7967bb|2016-11-30 13:02:58.7657|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+800002a6-0002-f400-b63f-84710c7967bb|2016-11-30 13:02:58.7657|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3628
+800002a8-0002-f400-b63f-84710c7967bb|2016-11-30 13:03:07.6905|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002a8-0002-f400-b63f-84710c7967bb|2016-11-30 13:03:10.3159|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 6252
+800002a8-0002-f400-b63f-84710c7967bb|2016-11-30 13:03:13.7598|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002a8-0002-f400-b63f-84710c7967bb|2016-11-30 13:03:13.7598|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 6253
+800002a8-0002-f400-b63f-84710c7967bb|2016-11-30 13:03:13.7898|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002a8-0002-f400-b63f-84710c7967bb|2016-11-30 13:03:13.7898|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 6253
+800002aa-0002-f400-b63f-84710c7967bb|2016-11-30 13:03:25.4161|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2013-01-27&DateTo=
+800002aa-0002-f400-b63f-84710c7967bb|2016-11-30 13:03:27.9638|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2013-01-27&DateTo=; Time(ms) = 8800
+800002aa-0002-f400-b63f-84710c7967bb|2016-11-30 13:03:27.9638|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2013-01-27&DateTo=
+800002aa-0002-f400-b63f-84710c7967bb|2016-11-30 13:03:27.9638|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2013-01-27&DateTo=; Time(ms) = 8800
+800002aa-0002-f400-b63f-84710c7967bb|2016-11-30 13:03:27.9748|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2013-01-27&DateTo=
+800002aa-0002-f400-b63f-84710c7967bb|2016-11-30 13:03:27.9748|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2013-01-27&DateTo=; Time(ms) = 8800
+80000345-0000-ef00-b63f-84710c7967bb|2016-11-30 13:27:25.4152|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000345-0000-ef00-b63f-84710c7967bb|2016-11-30 13:27:29.3950|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3965
+80000345-0000-ef00-b63f-84710c7967bb|2016-11-30 13:27:30.5304|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000345-0000-ef00-b63f-84710c7967bb|2016-11-30 13:27:30.5915|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000345-0000-ef00-b63f-84710c7967bb|2016-11-30 13:27:30.6165|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000345-0000-ef00-b63f-84710c7967bb|2016-11-30 13:27:30.6415|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000345-0000-ef00-b63f-84710c7967bb|2016-11-30 13:27:30.6415|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 4074
+80000345-0000-ef00-b63f-84710c7967bb|2016-11-30 13:27:31.1485|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000345-0000-ef00-b63f-84710c7967bb|2016-11-30 13:27:31.4475|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000345-0000-ef00-b63f-84710c7967bb|2016-11-30 13:27:31.4475|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 4373
+80000347-0000-ef00-b63f-84710c7967bb|2016-11-30 13:27:47.5365|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000347-0000-ef00-b63f-84710c7967bb|2016-11-30 13:27:50.2204|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 7051
+80000347-0000-ef00-b63f-84710c7967bb|2016-11-30 13:27:53.6072|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000347-0000-ef00-b63f-84710c7967bb|2016-11-30 13:27:53.6072|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 7052
+80000347-0000-ef00-b63f-84710c7967bb|2016-11-30 13:27:53.6382|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000347-0000-ef00-b63f-84710c7967bb|2016-11-30 13:27:53.6382|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 7052
+80000349-0000-ef00-b63f-84710c7967bb|2016-11-30 13:28:18.6908|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2018-12-01&DateTo=
+80000349-0000-ef00-b63f-84710c7967bb|2016-11-30 13:28:21.2843|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2018-12-01&DateTo=; Time(ms) = 9645
+80000349-0000-ef00-b63f-84710c7967bb|2016-11-30 13:28:21.2843|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2018-12-01&DateTo=
+80000349-0000-ef00-b63f-84710c7967bb|2016-11-30 13:28:21.2873|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2018-12-01&DateTo=; Time(ms) = 9645
+80000349-0000-ef00-b63f-84710c7967bb|2016-11-30 13:28:21.2873|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2018-12-01&DateTo=
+80000349-0000-ef00-b63f-84710c7967bb|2016-11-30 13:28:21.2873|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2018-12-01&DateTo=; Time(ms) = 9645
+800003e1-0000-eb00-b63f-84710c7967bb|2016-11-30 13:28:43.9390|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800003e1-0000-eb00-b63f-84710c7967bb|2016-11-30 13:28:49.1398|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 14842
+800003e1-0000-eb00-b63f-84710c7967bb|2016-11-30 13:28:49.1398|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800003e1-0000-eb00-b63f-84710c7967bb|2016-11-30 13:28:49.1398|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 14842
+800003e1-0000-eb00-b63f-84710c7967bb|2016-11-30 13:28:49.1508|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800003e1-0000-eb00-b63f-84710c7967bb|2016-11-30 13:28:49.4297|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+800003e1-0000-eb00-b63f-84710c7967bb|2016-11-30 13:28:49.4297|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 15121
+800003e3-0000-eb00-b63f-84710c7967bb|2016-11-30 13:28:56.1842|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2016-01-30&DateTo=
+80000859-0000-ed00-b63f-84710c7967bb|2016-11-30 13:30:15.3123|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+800004eb-0001-fa00-b63f-84710c7967bb|2016-11-30 13:30:15.3123|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000859-0000-ed00-b63f-84710c7967bb|2016-11-30 13:30:18.5175|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3188
+80000859-0000-ed00-b63f-84710c7967bb|2016-11-30 13:30:19.9141|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000859-0000-ed00-b63f-84710c7967bb|2016-11-30 13:30:19.9816|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000859-0000-ed00-b63f-84710c7967bb|2016-11-30 13:30:20.0101|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000859-0000-ed00-b63f-84710c7967bb|2016-11-30 13:30:20.0356|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000859-0000-ed00-b63f-84710c7967bb|2016-11-30 13:30:20.0376|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3310
+80000859-0000-ed00-b63f-84710c7967bb|2016-11-30 13:30:20.5931|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000859-0000-ed00-b63f-84710c7967bb|2016-11-30 13:30:20.8829|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000859-0000-ed00-b63f-84710c7967bb|2016-11-30 13:30:20.8829|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3600
+800004eb-0001-fa00-b63f-84710c7967bb|2016-11-30 13:30:20.9970|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 3600
+800004eb-0001-fa00-b63f-84710c7967bb|2016-11-30 13:30:21.3012|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800004eb-0001-fa00-b63f-84710c7967bb|2016-11-30 13:30:21.3032|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 3601
+800004eb-0001-fa00-b63f-84710c7967bb|2016-11-30 13:30:21.4293|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800004eb-0001-fa00-b63f-84710c7967bb|2016-11-30 13:30:21.4293|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 3601
+800004ed-0001-fa00-b63f-84710c7967bb|2016-11-30 13:30:28.0669|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2018-01-28&DateTo=
+800004ed-0001-fa00-b63f-84710c7967bb|2016-11-30 13:30:30.6365|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2018-01-28&DateTo=; Time(ms) = 6171
+800004ed-0001-fa00-b63f-84710c7967bb|2016-11-30 13:30:30.6365|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2018-01-28&DateTo=
+800004ed-0001-fa00-b63f-84710c7967bb|2016-11-30 13:30:30.6365|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2018-01-28&DateTo=; Time(ms) = 6171
+800004ed-0001-fa00-b63f-84710c7967bb|2016-11-30 13:30:30.6365|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2018-01-28&DateTo=
+800004ed-0001-fa00-b63f-84710c7967bb|2016-11-30 13:30:30.6365|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2018-01-28&DateTo=; Time(ms) = 6171
+8000025c-0002-ec00-b63f-84710c7967bb|2016-11-30 13:33:35.2125|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+8000025c-0002-ec00-b63f-84710c7967bb|2016-11-30 13:33:41.0541|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 5827
+8000025c-0002-ec00-b63f-84710c7967bb|2016-11-30 13:33:45.1238|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+8000025c-0002-ec00-b63f-84710c7967bb|2016-11-30 13:33:45.1238|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 5829
+8000025c-0002-ec00-b63f-84710c7967bb|2016-11-30 13:33:45.6127|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+8000025c-0002-ec00-b63f-84710c7967bb|2016-11-30 13:33:46.0776|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+8000025c-0002-ec00-b63f-84710c7967bb|2016-11-30 13:33:46.0776|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 6294
+8000025e-0002-ec00-b63f-84710c7967bb|2016-11-30 13:33:53.3907|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=&DateTo=
+8000025e-0002-ec00-b63f-84710c7967bb|2016-11-30 13:33:56.0069|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=&DateTo=; Time(ms) = 8903
+8000025e-0002-ec00-b63f-84710c7967bb|2016-11-30 13:33:56.0069|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=&DateTo=
+8000025e-0002-ec00-b63f-84710c7967bb|2016-11-30 13:33:56.0069|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=&DateTo=; Time(ms) = 8903
+8000025e-0002-ec00-b63f-84710c7967bb|2016-11-30 13:33:56.0179|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=&DateTo=
+8000025e-0002-ec00-b63f-84710c7967bb|2016-11-30 13:33:56.0179|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=&DateTo=; Time(ms) = 8903
+800003f2-0000-eb00-b63f-84710c7967bb|2016-11-30 13:39:41.4181|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800003f2-0000-eb00-b63f-84710c7967bb|2016-11-30 13:39:49.7870|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 8354
+800003f2-0000-eb00-b63f-84710c7967bb|2016-11-30 13:39:53.5320|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800003f2-0000-eb00-b63f-84710c7967bb|2016-11-30 13:39:53.5320|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 8357
+800003f2-0000-eb00-b63f-84710c7967bb|2016-11-30 13:39:54.0387|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800003f2-0000-eb00-b63f-84710c7967bb|2016-11-30 13:39:54.4641|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+800003f2-0000-eb00-b63f-84710c7967bb|2016-11-30 13:39:54.4641|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 8783
+800003f4-0000-eb00-b63f-84710c7967bb|2016-11-30 13:40:38.1514|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800003f4-0000-eb00-b63f-84710c7967bb|2016-11-30 13:40:40.7427|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 11372
+800003f4-0000-eb00-b63f-84710c7967bb|2016-11-30 13:40:44.1807|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800003f4-0000-eb00-b63f-84710c7967bb|2016-11-30 13:40:44.1807|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 11372
+800003f4-0000-eb00-b63f-84710c7967bb|2016-11-30 13:40:44.1987|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800003f4-0000-eb00-b63f-84710c7967bb|2016-11-30 13:40:44.1987|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 11373
+80000036-0002-e600-b63f-84710c7967bb|2016-11-30 13:42:54.5358|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000036-0002-e600-b63f-84710c7967bb|2016-11-30 13:43:00.2312|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 5680
+80000036-0002-e600-b63f-84710c7967bb|2016-11-30 13:43:01.2760|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000036-0002-e600-b63f-84710c7967bb|2016-11-30 13:43:01.2760|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 5681
+80000036-0002-e600-b63f-84710c7967bb|2016-11-30 13:43:02.2520|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000036-0002-e600-b63f-84710c7967bb|2016-11-30 13:43:02.6710|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000036-0002-e600-b63f-84710c7967bb|2016-11-30 13:43:02.6710|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 6100
+800013b9-0000-f500-b63f-84710c7967bb|2016-11-30 13:45:50.1377|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000ace-0002-ec00-b63f-84710c7967bb|2016-11-30 13:45:50.1377|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000ace-0002-ec00-b63f-84710c7967bb|2016-11-30 13:45:53.3254|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3173
+80000ace-0002-ec00-b63f-84710c7967bb|2016-11-30 13:45:54.5742|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000ace-0002-ec00-b63f-84710c7967bb|2016-11-30 13:45:54.6482|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000ace-0002-ec00-b63f-84710c7967bb|2016-11-30 13:45:54.6773|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000ace-0002-ec00-b63f-84710c7967bb|2016-11-30 13:45:54.7033|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000ace-0002-ec00-b63f-84710c7967bb|2016-11-30 13:45:54.7033|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3303
+80000ace-0002-ec00-b63f-84710c7967bb|2016-11-30 13:45:55.2745|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000ace-0002-ec00-b63f-84710c7967bb|2016-11-30 13:45:55.6268|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000ace-0002-ec00-b63f-84710c7967bb|2016-11-30 13:45:55.6268|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3655
+800013b9-0000-f500-b63f-84710c7967bb|2016-11-30 13:45:55.8790|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 3655
+800013b9-0000-f500-b63f-84710c7967bb|2016-11-30 13:45:56.2567|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800013b9-0000-f500-b63f-84710c7967bb|2016-11-30 13:45:56.2567|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 3656
+800013b9-0000-f500-b63f-84710c7967bb|2016-11-30 13:45:56.5375|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800013b9-0000-f500-b63f-84710c7967bb|2016-11-30 13:45:56.5395|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 3656
+80000227-0000-ee00-b63f-84710c7967bb|2016-11-30 13:47:38.3978|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+800001cc-0000-fc00-b63f-84710c7967bb|2016-11-30 13:47:41.6555|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000227-0000-ee00-b63f-84710c7967bb|2016-11-30 13:47:42.2197|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3806
+80000227-0000-ee00-b63f-84710c7967bb|2016-11-30 13:47:43.5067|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000227-0000-ee00-b63f-84710c7967bb|2016-11-30 13:47:43.5846|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000227-0000-ee00-b63f-84710c7967bb|2016-11-30 13:47:43.6615|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000227-0000-ee00-b63f-84710c7967bb|2016-11-30 13:47:43.6876|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000227-0000-ee00-b63f-84710c7967bb|2016-11-30 13:47:43.6876|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3985
+80000227-0000-ee00-b63f-84710c7967bb|2016-11-30 13:47:44.2581|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000227-0000-ee00-b63f-84710c7967bb|2016-11-30 13:47:44.6302|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000227-0000-ee00-b63f-84710c7967bb|2016-11-30 13:47:44.6322|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 4357
+800001cc-0000-fc00-b63f-84710c7967bb|2016-11-30 13:47:44.8793|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 4357
+800001cc-0000-fc00-b63f-84710c7967bb|2016-11-30 13:47:45.1295|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800001cc-0000-fc00-b63f-84710c7967bb|2016-11-30 13:47:45.1295|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 4358
+800001cc-0000-fc00-b63f-84710c7967bb|2016-11-30 13:47:45.1615|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800001cc-0000-fc00-b63f-84710c7967bb|2016-11-30 13:47:45.1615|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 4358
+800001ce-0000-fc00-b63f-84710c7967bb|2016-11-30 13:47:57.2564|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2019-03-02&DateTo=
+800001ce-0000-fc00-b63f-84710c7967bb|2016-11-30 13:47:59.8577|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2019-03-02&DateTo=; Time(ms) = 6959
+800001ce-0000-fc00-b63f-84710c7967bb|2016-11-30 13:47:59.8577|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2019-03-02&DateTo=
+800001ce-0000-fc00-b63f-84710c7967bb|2016-11-30 13:47:59.8577|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2019-03-02&DateTo=; Time(ms) = 6959
+800001ce-0000-fc00-b63f-84710c7967bb|2016-11-30 13:47:59.8577|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2019-03-02&DateTo=
+800001ce-0000-fc00-b63f-84710c7967bb|2016-11-30 13:47:59.8577|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2019-03-02&DateTo=; Time(ms) = 6959
+800001f2-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:00.7877|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000290-0003-fa00-b63f-84710c7967bb|2016-11-30 13:49:00.7887|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000290-0003-fa00-b63f-84710c7967bb|2016-11-30 13:49:04.0429|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3237
+80000290-0003-fa00-b63f-84710c7967bb|2016-11-30 13:49:05.2950|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000290-0003-fa00-b63f-84710c7967bb|2016-11-30 13:49:05.3671|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000290-0003-fa00-b63f-84710c7967bb|2016-11-30 13:49:05.3951|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000290-0003-fa00-b63f-84710c7967bb|2016-11-30 13:49:05.4211|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000290-0003-fa00-b63f-84710c7967bb|2016-11-30 13:49:05.4211|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3364
+80000290-0003-fa00-b63f-84710c7967bb|2016-11-30 13:49:05.9985|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000290-0003-fa00-b63f-84710c7967bb|2016-11-30 13:49:06.4520|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000290-0003-fa00-b63f-84710c7967bb|2016-11-30 13:49:06.4520|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3821
+800001f2-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:06.5896|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 3821
+800001f2-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:06.9037|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800001f2-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:06.9037|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 3821
+800001f2-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:06.9432|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800001f2-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:06.9442|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 3822
+800001f4-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:13.0202|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=&DateTo=
+800001f4-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:15.6093|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=&DateTo=; Time(ms) = 6410
+800001f4-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:15.6093|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=&DateTo=
+800001f4-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:15.6093|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=&DateTo=; Time(ms) = 6410
+800001f4-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:15.6193|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=&DateTo=
+800001f4-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:15.6193|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=&DateTo=; Time(ms) = 6410
+800001f6-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:32.4051|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=&DateTo=2014-09-03
+800001f6-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:35.0042|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=&DateTo=2014-09-03; Time(ms) = 9009
+800001f6-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:35.0042|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=&DateTo=2014-09-03
+800001f6-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:35.0072|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=&DateTo=2014-09-03; Time(ms) = 9009
+800001f6-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:35.0072|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=&DateTo=2014-09-03
+800001f6-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:35.0072|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=&DateTo=2014-09-03; Time(ms) = 9009
+800001f8-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:44.6359|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=&DateTo=2021-11-30
+800001f8-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:47.1858|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=&DateTo=2021-11-30; Time(ms) = 11558
+800001f8-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:47.1858|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=&DateTo=2021-11-30
+800001f8-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:47.1858|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=&DateTo=2021-11-30; Time(ms) = 11558
+800001f8-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:47.1963|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=&DateTo=2021-11-30
+800001f8-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:47.1963|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=&DateTo=2021-11-30; Time(ms) = 11558
+800001fa-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:57.1158|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2013-01-28&DateTo=
+800001fa-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:59.6848|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2013-01-28&DateTo=; Time(ms) = 14126
+800001fa-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:59.6848|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2013-01-28&DateTo=
+800001fa-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:59.6848|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2013-01-28&DateTo=; Time(ms) = 14126
+800001fa-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:59.6959|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=2013-01-28&DateTo=
+800001fa-0002-ef00-b63f-84710c7967bb|2016-11-30 13:49:59.6959|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=2013-01-28&DateTo=; Time(ms) = 14126
+80000855-0001-eb00-b63f-84710c7967bb|2016-11-30 13:52:51.4376|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+8000007a-0003-f400-b63f-84710c7967bb|2016-11-30 13:52:51.4376|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000855-0001-eb00-b63f-84710c7967bb|2016-11-30 13:52:55.0030|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3551
+80000855-0001-eb00-b63f-84710c7967bb|2016-11-30 13:52:56.3089|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000855-0001-eb00-b63f-84710c7967bb|2016-11-30 13:52:56.3814|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000855-0001-eb00-b63f-84710c7967bb|2016-11-30 13:52:56.4135|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000855-0001-eb00-b63f-84710c7967bb|2016-11-30 13:52:56.4395|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000855-0001-eb00-b63f-84710c7967bb|2016-11-30 13:52:56.4395|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3681
+80000855-0001-eb00-b63f-84710c7967bb|2016-11-30 13:52:56.9944|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000855-0001-eb00-b63f-84710c7967bb|2016-11-30 13:52:57.3418|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000855-0001-eb00-b63f-84710c7967bb|2016-11-30 13:52:57.3418|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 4028
+8000007a-0003-f400-b63f-84710c7967bb|2016-11-30 13:52:57.4794|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 4028
+8000007a-0003-f400-b63f-84710c7967bb|2016-11-30 13:52:57.8477|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+8000007a-0003-f400-b63f-84710c7967bb|2016-11-30 13:52:57.8477|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 4028
+8000007a-0003-f400-b63f-84710c7967bb|2016-11-30 13:52:57.8797|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+8000007a-0003-f400-b63f-84710c7967bb|2016-11-30 13:52:57.8797|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 4029
+8000007c-0003-f400-b63f-84710c7967bb|2016-11-30 13:53:06.0251|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=&DateTo=
+8000007c-0003-f400-b63f-84710c7967bb|2016-11-30 13:53:08.6904|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=&DateTo=; Time(ms) = 6693
+8000007c-0003-f400-b63f-84710c7967bb|2016-11-30 13:53:08.6904|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=&DateTo=
+8000007c-0003-f400-b63f-84710c7967bb|2016-11-30 13:53:08.6904|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=&DateTo=; Time(ms) = 6693
+8000007c-0003-f400-b63f-84710c7967bb|2016-11-30 13:53:08.7024|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=&DateTo=
+8000007c-0003-f400-b63f-84710c7967bb|2016-11-30 13:53:08.7024|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=&DateTo=; Time(ms) = 6693
+80000085-0003-f400-b63f-84710c7967bb|2016-11-30 13:53:49.4877|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000085-0003-f400-b63f-84710c7967bb|2016-11-30 13:53:53.1229|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3620
+80000085-0003-f400-b63f-84710c7967bb|2016-11-30 13:53:53.2781|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000085-0003-f400-b63f-84710c7967bb|2016-11-30 13:53:53.3431|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000085-0003-f400-b63f-84710c7967bb|2016-11-30 13:53:53.3671|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000085-0003-f400-b63f-84710c7967bb|2016-11-30 13:53:53.3902|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000085-0003-f400-b63f-84710c7967bb|2016-11-30 13:53:53.3902|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3730
+80000085-0003-f400-b63f-84710c7967bb|2016-11-30 13:53:53.7578|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000085-0003-f400-b63f-84710c7967bb|2016-11-30 13:53:54.0445|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000085-0003-f400-b63f-84710c7967bb|2016-11-30 13:53:54.0445|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 4017
+80000088-0003-f400-b63f-84710c7967bb|2016-11-30 13:54:22.9810|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000088-0003-f400-b63f-84710c7967bb|2016-11-30 13:54:25.7307|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 6764
+80000088-0003-f400-b63f-84710c7967bb|2016-11-30 13:54:25.7567|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000088-0003-f400-b63f-84710c7967bb|2016-11-30 13:54:25.7567|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 6764
+80000088-0003-f400-b63f-84710c7967bb|2016-11-30 13:54:25.7887|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000088-0003-f400-b63f-84710c7967bb|2016-11-30 13:54:25.7887|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 6765
+80000082-0002-e600-b63f-84710c7967bb|2016-11-30 13:55:30.8773|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000cec-0002-e900-b63f-84710c7967bb|2016-11-30 13:55:30.8773|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000082-0002-e600-b63f-84710c7967bb|2016-11-30 13:55:37.7660|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 6874
+80000082-0002-e600-b63f-84710c7967bb|2016-11-30 13:55:39.1868|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000082-0002-e600-b63f-84710c7967bb|2016-11-30 13:55:39.2669|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000082-0002-e600-b63f-84710c7967bb|2016-11-30 13:55:39.2939|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000082-0002-e600-b63f-84710c7967bb|2016-11-30 13:55:39.3199|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000082-0002-e600-b63f-84710c7967bb|2016-11-30 13:55:39.3199|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 7005
+80000082-0002-e600-b63f-84710c7967bb|2016-11-30 13:55:39.8648|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000082-0002-e600-b63f-84710c7967bb|2016-11-30 13:55:40.1780|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000082-0002-e600-b63f-84710c7967bb|2016-11-30 13:55:40.1780|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 7318
+80000cec-0002-e900-b63f-84710c7967bb|2016-11-30 13:55:40.1900|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 7318
+80000cec-0002-e900-b63f-84710c7967bb|2016-11-30 13:55:40.5162|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000cec-0002-e900-b63f-84710c7967bb|2016-11-30 13:55:40.5162|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 7319
+80000cec-0002-e900-b63f-84710c7967bb|2016-11-30 13:55:40.5497|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000cec-0002-e900-b63f-84710c7967bb|2016-11-30 13:55:40.5497|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 7319
+80000cee-0002-e900-b63f-84710c7967bb|2016-11-30 13:56:35.0623|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000cee-0002-e900-b63f-84710c7967bb|2016-11-30 13:56:37.8702|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 10126
+80000cee-0002-e900-b63f-84710c7967bb|2016-11-30 13:56:37.8702|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000cee-0002-e900-b63f-84710c7967bb|2016-11-30 13:56:37.8702|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 10126
+80000cee-0002-e900-b63f-84710c7967bb|2016-11-30 13:56:37.8932|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000cee-0002-e900-b63f-84710c7967bb|2016-11-30 13:56:37.8932|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 10126
+80000cf0-0002-e900-b63f-84710c7967bb|2016-11-30 13:56:51.4309|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000cf0-0002-e900-b63f-84710c7967bb|2016-11-30 13:56:54.1448|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 12832
+80000cf0-0002-e900-b63f-84710c7967bb|2016-11-30 13:56:54.1448|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000cf0-0002-e900-b63f-84710c7967bb|2016-11-30 13:56:54.1448|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 12833
+80000cf0-0002-e900-b63f-84710c7967bb|2016-11-30 13:56:54.1553|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000cf0-0002-e900-b63f-84710c7967bb|2016-11-30 13:56:54.4240|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000cf0-0002-e900-b63f-84710c7967bb|2016-11-30 13:56:54.4240|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 13101
+80000cf2-0002-e900-b63f-84710c7967bb|2016-11-30 13:57:32.3067|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000cf2-0002-e900-b63f-84710c7967bb|2016-11-30 13:57:34.9927|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 15787
+80000cf2-0002-e900-b63f-84710c7967bb|2016-11-30 13:57:38.5738|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000cf2-0002-e900-b63f-84710c7967bb|2016-11-30 13:57:38.5738|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 15787
+80000cf2-0002-e900-b63f-84710c7967bb|2016-11-30 13:57:38.8359|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000cf2-0002-e900-b63f-84710c7967bb|2016-11-30 13:57:38.8359|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 15787
+800007d1-0001-ef00-b63f-84710c7967bb|2016-11-30 13:58:31.0377|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800007d1-0001-ef00-b63f-84710c7967bb|2016-11-30 13:58:33.7045|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 18452
+800007d1-0001-ef00-b63f-84710c7967bb|2016-11-30 13:58:37.3894|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800007d1-0001-ef00-b63f-84710c7967bb|2016-11-30 13:58:37.3894|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 18452
+800007d1-0001-ef00-b63f-84710c7967bb|2016-11-30 13:58:37.4120|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800007d1-0001-ef00-b63f-84710c7967bb|2016-11-30 13:58:37.7028|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+800007d1-0001-ef00-b63f-84710c7967bb|2016-11-30 13:58:37.7028|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 18743
+800007d3-0001-ef00-b63f-84710c7967bb|2016-11-30 13:58:57.4567|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000cf4-0002-e900-b63f-84710c7967bb|2016-11-30 13:58:59.7508|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/games
+80000cf4-0002-e900-b63f-84710c7967bb|2016-11-30 13:58:59.9757|DEBUG|performance|Performance info: URI = http://localhost:65078/games; Time(ms) = 21261
+80000cf4-0002-e900-b63f-84710c7967bb|2016-11-30 13:58:59.9967|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/games
+80000cf4-0002-e900-b63f-84710c7967bb|2016-11-30 13:59:00.0378|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000cf4-0002-e900-b63f-84710c7967bb|2016-11-30 13:59:00.0508|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000cf4-0002-e900-b63f-84710c7967bb|2016-11-30 13:59:00.0508|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000cf4-0002-e900-b63f-84710c7967bb|2016-11-30 13:59:00.0508|DEBUG|performance|Performance info: URI = http://localhost:65078/games; Time(ms) = 21320
+80000cf4-0002-e900-b63f-84710c7967bb|2016-11-30 13:59:00.0938|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/games
+80000cf4-0002-e900-b63f-84710c7967bb|2016-11-30 13:59:00.0948|DEBUG|performance|Performance info: URI = http://localhost:65078/games; Time(ms) = 21320
+800007d3-0001-ef00-b63f-84710c7967bb|2016-11-30 13:59:00.1609|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 21320
+800007d3-0001-ef00-b63f-84710c7967bb|2016-11-30 13:59:00.1609|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800007d3-0001-ef00-b63f-84710c7967bb|2016-11-30 13:59:00.1609|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 21320
+800007d3-0001-ef00-b63f-84710c7967bb|2016-11-30 13:59:00.1609|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800007d3-0001-ef00-b63f-84710c7967bb|2016-11-30 13:59:00.1609|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 21321
+80000cf8-0002-e900-b63f-84710c7967bb|2016-11-30 13:59:18.3149|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/publisher/Details?companyName=GamesCorporation
+80000cf8-0002-e900-b63f-84710c7967bb|2016-11-30 13:59:18.3909|DEBUG|GameStore.BLL.Services.GameStoreService|GettingPublisherby name=GamesCorporation 
+80000cf8-0002-e900-b63f-84710c7967bb|2016-11-30 13:59:18.3909|DEBUG|performance|Performance info: URI = http://localhost:65078/publisher/Details?companyName=GamesCorporation; Time(ms) = 21402
+80000cf8-0002-e900-b63f-84710c7967bb|2016-11-30 13:59:21.8414|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/publisher/Details?companyName=GamesCorporation
+80000cf8-0002-e900-b63f-84710c7967bb|2016-11-30 13:59:21.8414|DEBUG|performance|Performance info: URI = http://localhost:65078/publisher/Details?companyName=GamesCorporation; Time(ms) = 21402
+80000cfa-0002-e900-b63f-84710c7967bb|2016-11-30 13:59:23.9247|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/publisher/Index
+80000cfa-0002-e900-b63f-84710c7967bb|2016-11-30 13:59:23.9247|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000cfa-0002-e900-b63f-84710c7967bb|2016-11-30 13:59:23.9397|DEBUG|performance|Performance info: URI = http://localhost:65078/publisher/Index; Time(ms) = 21417
+80000cfa-0002-e900-b63f-84710c7967bb|2016-11-30 13:59:23.9683|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/publisher/Index
+80000cfa-0002-e900-b63f-84710c7967bb|2016-11-30 13:59:23.9683|DEBUG|performance|Performance info: URI = http://localhost:65078/publisher/Index; Time(ms) = 21417
+80000cfc-0002-e900-b63f-84710c7967bb|2016-11-30 14:00:17.0460|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/publisher/Details?companyName=Exotic%20Liquids
+80000cfc-0002-e900-b63f-84710c7967bb|2016-11-30 14:00:17.0640|DEBUG|GameStore.BLL.Services.GameStoreService|GettingPublisherby name=Exotic Liquids 
+80000cfc-0002-e900-b63f-84710c7967bb|2016-11-30 14:00:17.0640|DEBUG|performance|Performance info: URI = http://localhost:65078/publisher/Details?companyName=Exotic%20Liquids; Time(ms) = 21434
+80000cfc-0002-e900-b63f-84710c7967bb|2016-11-30 14:00:17.0640|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/publisher/Details?companyName=Exotic%20Liquids
+80000cfc-0002-e900-b63f-84710c7967bb|2016-11-30 14:00:17.3493|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000cfc-0002-e900-b63f-84710c7967bb|2016-11-30 14:00:17.3493|DEBUG|performance|Performance info: URI = http://localhost:65078/publisher/Details?companyName=Exotic%20Liquids; Time(ms) = 21715
+80000cfe-0002-e900-b63f-84710c7967bb|2016-11-30 14:00:21.8159|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/publisher/Details?companyName=GamesCorporation
+80000cfe-0002-e900-b63f-84710c7967bb|2016-11-30 14:00:21.8159|DEBUG|GameStore.BLL.Services.GameStoreService|GettingPublisherby name=GamesCorporation 
+80000cfe-0002-e900-b63f-84710c7967bb|2016-11-30 14:00:21.8159|DEBUG|performance|Performance info: URI = http://localhost:65078/publisher/Details?companyName=GamesCorporation; Time(ms) = 21723
+80000cfe-0002-e900-b63f-84710c7967bb|2016-11-30 14:00:21.8284|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/publisher/Details?companyName=GamesCorporation
+80000cfe-0002-e900-b63f-84710c7967bb|2016-11-30 14:00:21.8284|DEBUG|performance|Performance info: URI = http://localhost:65078/publisher/Details?companyName=GamesCorporation; Time(ms) = 21723
+80000d00-0002-e900-b63f-84710c7967bb|2016-11-30 14:00:24.2497|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/publisher/Details?companyName=PB%20Kn%C3%A4ckebr%C3%B6d%20AB
+80000d00-0002-e900-b63f-84710c7967bb|2016-11-30 14:00:24.2497|DEBUG|GameStore.BLL.Services.GameStoreService|GettingPublisherby name=PB Knäckebröd AB 
+80000d00-0002-e900-b63f-84710c7967bb|2016-11-30 14:00:24.2497|DEBUG|performance|Performance info: URI = http://localhost:65078/publisher/Details?companyName=PB%20Kn%C3%A4ckebr%C3%B6d%20AB; Time(ms) = 21729
+80000d00-0002-e900-b63f-84710c7967bb|2016-11-30 14:00:24.2497|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/publisher/Details?companyName=PB%20Kn%C3%A4ckebr%C3%B6d%20AB
+80000d00-0002-e900-b63f-84710c7967bb|2016-11-30 14:00:24.2497|DEBUG|performance|Performance info: URI = http://localhost:65078/publisher/Details?companyName=PB%20Kn%C3%A4ckebr%C3%B6d%20AB; Time(ms) = 21729
+80000d02-0002-e900-b63f-84710c7967bb|2016-11-30 14:00:49.7610|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history
+80000d02-0002-e900-b63f-84710c7967bb|2016-11-30 14:00:52.4893|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history; Time(ms) = 24457
+80000d02-0002-e900-b63f-84710c7967bb|2016-11-30 14:00:52.4893|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history
+80000d02-0002-e900-b63f-84710c7967bb|2016-11-30 14:00:52.4893|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history; Time(ms) = 24457
+80000d02-0002-e900-b63f-84710c7967bb|2016-11-30 14:00:52.5073|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history
+80000d02-0002-e900-b63f-84710c7967bb|2016-11-30 14:00:52.5073|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history; Time(ms) = 24457
+80000d04-0002-e900-b63f-84710c7967bb|2016-11-30 14:01:25.3475|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history
+80000d04-0002-e900-b63f-84710c7967bb|2016-11-30 14:01:28.0902|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history; Time(ms) = 27188
+80000d04-0002-e900-b63f-84710c7967bb|2016-11-30 14:01:31.7630|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history
+80000d04-0002-e900-b63f-84710c7967bb|2016-11-30 14:01:31.7630|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history; Time(ms) = 27188
+80000d04-0002-e900-b63f-84710c7967bb|2016-11-30 14:01:31.7860|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history
+80000d04-0002-e900-b63f-84710c7967bb|2016-11-30 14:01:32.0667|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000d04-0002-e900-b63f-84710c7967bb|2016-11-30 14:01:32.0667|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history; Time(ms) = 27468
+80000143-0003-f600-b63f-84710c7967bb|2016-11-30 14:04:36.6273|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000143-0003-f600-b63f-84710c7967bb|2016-11-30 14:04:39.7003|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3058
+80000143-0003-f600-b63f-84710c7967bb|2016-11-30 14:04:40.9269|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000143-0003-f600-b63f-84710c7967bb|2016-11-30 14:04:40.9899|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000143-0003-f600-b63f-84710c7967bb|2016-11-30 14:04:41.0129|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000143-0003-f600-b63f-84710c7967bb|2016-11-30 14:04:41.0380|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000143-0003-f600-b63f-84710c7967bb|2016-11-30 14:04:41.0380|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3170
+80000143-0003-f600-b63f-84710c7967bb|2016-11-30 14:04:41.5722|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000143-0003-f600-b63f-84710c7967bb|2016-11-30 14:04:41.8503|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000143-0003-f600-b63f-84710c7967bb|2016-11-30 14:04:41.8503|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3449
+80000145-0003-f600-b63f-84710c7967bb|2016-11-30 14:04:45.7675|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history
+80000145-0003-f600-b63f-84710c7967bb|2016-11-30 14:04:48.4731|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history; Time(ms) = 6154
+80000145-0003-f600-b63f-84710c7967bb|2016-11-30 14:04:49.0226|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history
+80000145-0003-f600-b63f-84710c7967bb|2016-11-30 14:04:49.0226|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history; Time(ms) = 6154
+80000145-0003-f600-b63f-84710c7967bb|2016-11-30 14:04:49.0546|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history
+80000145-0003-f600-b63f-84710c7967bb|2016-11-30 14:04:49.0546|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history; Time(ms) = 6155
+80000147-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:00.5924|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=17%2F01%2F2001&DateTo=01%2F01%2F0001+00%3A00%3A00
+80000147-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:03.2024|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=17%2F01%2F2001&DateTo=01%2F01%2F0001+00%3A00%3A00; Time(ms) = 8764
+80000147-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:03.2024|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=17%2F01%2F2001&DateTo=01%2F01%2F0001+00%3A00%3A00
+80000147-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:03.2024|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=17%2F01%2F2001&DateTo=01%2F01%2F0001+00%3A00%3A00; Time(ms) = 8764
+80000147-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:03.2024|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=17%2F01%2F2001&DateTo=01%2F01%2F0001+00%3A00%3A00
+80000147-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:03.2024|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=17%2F01%2F2001&DateTo=01%2F01%2F0001+00%3A00%3A00; Time(ms) = 8764
+80000149-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:31.9708|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/publisher/index
+80000149-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:31.9708|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000149-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:31.9893|DEBUG|performance|Performance info: URI = http://localhost:65078/publisher/index; Time(ms) = 8782
+80000149-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:35.5314|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/publisher/index
+80000149-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:35.5314|DEBUG|performance|Performance info: URI = http://localhost:65078/publisher/index; Time(ms) = 8782
+8000014b-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:38.2263|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/publisher/Details?companyName=GamesCorporation
+8000014b-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:38.2918|DEBUG|GameStore.BLL.Services.GameStoreService|GettingPublisherby name=GamesCorporation 
+8000014b-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:38.2918|DEBUG|performance|Performance info: URI = http://localhost:65078/publisher/Details?companyName=GamesCorporation; Time(ms) = 8851
+8000014b-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:38.3078|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/publisher/Details?companyName=GamesCorporation
+8000014b-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:38.3078|DEBUG|performance|Performance info: URI = http://localhost:65078/publisher/Details?companyName=GamesCorporation; Time(ms) = 8851
+8000014d-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:42.3408|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/publisher/Details?companyName=Pavlova
+8000014d-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:42.3519|DEBUG|GameStore.BLL.Services.GameStoreService|GettingPublisherby name=Pavlova 
+8000014d-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:42.3519|DEBUG|performance|Performance info: URI = http://localhost:65078/publisher/Details?companyName=Pavlova; Time(ms) = 8862
+8000014d-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:42.3519|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/publisher/Details?companyName=Pavlova
+8000014d-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:42.6327|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+8000014d-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:42.6327|DEBUG|performance|Performance info: URI = http://localhost:65078/publisher/Details?companyName=Pavlova; Time(ms) = 9140
+8000014f-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:44.9439|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/publisher/Details?companyName=PB%20Kn%C3%A4ckebr%C3%B6d%20AB
+8000014f-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:44.9439|DEBUG|GameStore.BLL.Services.GameStoreService|GettingPublisherby name=PB Knäckebröd AB 
+8000014f-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:44.9439|DEBUG|performance|Performance info: URI = http://localhost:65078/publisher/Details?companyName=PB%20Kn%C3%A4ckebr%C3%B6d%20AB; Time(ms) = 9145
+8000014f-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:44.9439|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/publisher/Details?companyName=PB%20Kn%C3%A4ckebr%C3%B6d%20AB
+8000014f-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:44.9439|DEBUG|performance|Performance info: URI = http://localhost:65078/publisher/Details?companyName=PB%20Kn%C3%A4ckebr%C3%B6d%20AB; Time(ms) = 9145
+80000151-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:52.1688|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/publisher/Details?companyName=Nord-Ost-Fisch%20Handelsgesellschaft%20mbH
+80000151-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:52.1748|DEBUG|GameStore.BLL.Services.GameStoreService|GettingPublisherby name=Nord-Ost-Fisch Handelsgesellschaft mbH 
+80000151-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:52.1748|DEBUG|performance|Performance info: URI = http://localhost:65078/publisher/Details?companyName=Nord-Ost-Fisch%20Handelsgesellschaft%20mbH; Time(ms) = 9151
+80000151-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:52.1748|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/publisher/Details?companyName=Nord-Ost-Fisch%20Handelsgesellschaft%20mbH
+80000151-0003-f600-b63f-84710c7967bb|2016-11-30 14:05:52.1748|DEBUG|performance|Performance info: URI = http://localhost:65078/publisher/Details?companyName=Nord-Ost-Fisch%20Handelsgesellschaft%20mbH; Time(ms) = 9151
+80000153-0003-f600-b63f-84710c7967bb|2016-11-30 14:06:20.9477|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=17%2F01%2F2001&DateTo=01%2F01%2F0001+00%3A00%3A00
+80000153-0003-f600-b63f-84710c7967bb|2016-11-30 14:06:23.5665|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=17%2F01%2F2001&DateTo=01%2F01%2F0001+00%3A00%3A00; Time(ms) = 11768
+80000153-0003-f600-b63f-84710c7967bb|2016-11-30 14:06:23.5665|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=17%2F01%2F2001&DateTo=01%2F01%2F0001+00%3A00%3A00
+80000153-0003-f600-b63f-84710c7967bb|2016-11-30 14:06:23.5665|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=17%2F01%2F2001&DateTo=01%2F01%2F0001+00%3A00%3A00; Time(ms) = 11768
+80000153-0003-f600-b63f-84710c7967bb|2016-11-30 14:06:23.5845|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=17%2F01%2F2001&DateTo=01%2F01%2F0001+00%3A00%3A00
+80000153-0003-f600-b63f-84710c7967bb|2016-11-30 14:06:23.5845|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=17%2F01%2F2001&DateTo=01%2F01%2F0001+00%3A00%3A00; Time(ms) = 11768
+80000734-0000-eb00-b63f-84710c7967bb|2016-11-30 14:11:34.1716|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80002eba-0003-ea00-b63f-84710c7967bb|2016-11-30 14:11:34.7862|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history
+80000734-0000-eb00-b63f-84710c7967bb|2016-11-30 14:11:41.2160|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 7029
+80000734-0000-eb00-b63f-84710c7967bb|2016-11-30 14:11:42.6792|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000734-0000-eb00-b63f-84710c7967bb|2016-11-30 14:11:42.7628|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000734-0000-eb00-b63f-84710c7967bb|2016-11-30 14:11:42.7933|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000734-0000-eb00-b63f-84710c7967bb|2016-11-30 14:11:42.8243|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000734-0000-eb00-b63f-84710c7967bb|2016-11-30 14:11:42.8243|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 7176
+80000734-0000-eb00-b63f-84710c7967bb|2016-11-30 14:11:43.5479|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80002eba-0003-ea00-b63f-84710c7967bb|2016-11-30 14:11:43.7661|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history; Time(ms) = 7392
+80000734-0000-eb00-b63f-84710c7967bb|2016-11-30 14:11:43.9462|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000734-0000-eb00-b63f-84710c7967bb|2016-11-30 14:11:43.9462|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 7392
+80002eba-0003-ea00-b63f-84710c7967bb|2016-11-30 14:11:44.6948|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history
+80002eba-0003-ea00-b63f-84710c7967bb|2016-11-30 14:11:44.6948|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history; Time(ms) = 7392
+80002eba-0003-ea00-b63f-84710c7967bb|2016-11-30 14:11:44.7288|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history
+80002eba-0003-ea00-b63f-84710c7967bb|2016-11-30 14:11:44.7288|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history; Time(ms) = 7393
+80002ebc-0003-ea00-b63f-84710c7967bb|2016-11-30 14:11:54.3005|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=24%2F01%2F2001&DateTo=23%2F01%2F2001
+80002ebc-0003-ea00-b63f-84710c7967bb|2016-11-30 14:11:57.0199|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=24%2F01%2F2001&DateTo=23%2F01%2F2001; Time(ms) = 10111
+80002ebc-0003-ea00-b63f-84710c7967bb|2016-11-30 14:11:57.0199|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=24%2F01%2F2001&DateTo=23%2F01%2F2001
+80002ebc-0003-ea00-b63f-84710c7967bb|2016-11-30 14:11:57.0199|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=24%2F01%2F2001&DateTo=23%2F01%2F2001; Time(ms) = 10111
+80002ebc-0003-ea00-b63f-84710c7967bb|2016-11-30 14:11:57.0339|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=24%2F01%2F2001&DateTo=23%2F01%2F2001
+80002ebc-0003-ea00-b63f-84710c7967bb|2016-11-30 14:11:57.0339|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=24%2F01%2F2001&DateTo=23%2F01%2F2001; Time(ms) = 10111
+80002ebe-0003-ea00-b63f-84710c7967bb|2016-11-30 14:11:59.3941|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=01%2F01%2F0001+00%3A00%3A00&DateTo=01%2F01%2F0001+00%3A00%3A00
+80002ebe-0003-ea00-b63f-84710c7967bb|2016-11-30 14:12:02.1487|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=01%2F01%2F0001+00%3A00%3A00&DateTo=01%2F01%2F0001+00%3A00%3A00; Time(ms) = 12860
+80002ebe-0003-ea00-b63f-84710c7967bb|2016-11-30 14:12:02.1487|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=01%2F01%2F0001+00%3A00%3A00&DateTo=01%2F01%2F0001+00%3A00%3A00
+80002ebe-0003-ea00-b63f-84710c7967bb|2016-11-30 14:12:02.1487|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=01%2F01%2F0001+00%3A00%3A00&DateTo=01%2F01%2F0001+00%3A00%3A00; Time(ms) = 12860
+80002ebe-0003-ea00-b63f-84710c7967bb|2016-11-30 14:12:02.1607|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history?DateFrom=01%2F01%2F0001+00%3A00%3A00&DateTo=01%2F01%2F0001+00%3A00%3A00
+80002ebe-0003-ea00-b63f-84710c7967bb|2016-11-30 14:12:02.1607|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history?DateFrom=01%2F01%2F0001+00%3A00%3A00&DateTo=01%2F01%2F0001+00%3A00%3A00; Time(ms) = 12860
+80002ec0-0003-ea00-b63f-84710c7967bb|2016-11-30 14:12:40.7107|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/basket
+80002ec0-0003-ea00-b63f-84710c7967bb|2016-11-30 14:12:43.5568|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80002ec0-0003-ea00-b63f-84710c7967bb|2016-11-30 14:12:43.5568|DEBUG|performance|Performance info: URI = http://localhost:65078/basket; Time(ms) = 15706
+8000021d-0002-ef00-b63f-84710c7967bb|2016-11-30 14:12:46.4322|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history
+80002ec0-0003-ea00-b63f-84710c7967bb|2016-11-30 14:12:47.5302|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/basket
+80002ec0-0003-ea00-b63f-84710c7967bb|2016-11-30 14:12:47.8353|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80002ec0-0003-ea00-b63f-84710c7967bb|2016-11-30 14:12:47.8353|DEBUG|performance|Performance info: URI = http://localhost:65078/basket; Time(ms) = 17108
+8000021d-0002-ef00-b63f-84710c7967bb|2016-11-30 14:12:49.2764|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history; Time(ms) = 17108
+8000021d-0002-ef00-b63f-84710c7967bb|2016-11-30 14:12:49.2914|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history
+8000021d-0002-ef00-b63f-84710c7967bb|2016-11-30 14:12:49.2914|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history; Time(ms) = 17108
+8000021d-0002-ef00-b63f-84710c7967bb|2016-11-30 14:12:49.3164|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history
+8000021d-0002-ef00-b63f-84710c7967bb|2016-11-30 14:12:49.3164|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history; Time(ms) = 17109
+80000537-0001-f500-b63f-84710c7967bb|2016-11-30 14:15:00.4007|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history
+80000a03-0000-f700-b63f-84710c7967bb|2016-11-30 14:15:00.4007|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000a03-0000-f700-b63f-84710c7967bb|2016-11-30 14:15:03.7559|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3339
+80000a03-0000-f700-b63f-84710c7967bb|2016-11-30 14:15:05.3323|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000a03-0000-f700-b63f-84710c7967bb|2016-11-30 14:15:05.4244|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000a03-0000-f700-b63f-84710c7967bb|2016-11-30 14:15:05.5175|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000a03-0000-f700-b63f-84710c7967bb|2016-11-30 14:15:05.5510|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000a03-0000-f700-b63f-84710c7967bb|2016-11-30 14:15:05.5510|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3555
+80000a03-0000-f700-b63f-84710c7967bb|2016-11-30 14:15:06.2148|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000537-0001-f500-b63f-84710c7967bb|2016-11-30 14:15:06.4710|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history; Time(ms) = 3809
+80000a03-0000-f700-b63f-84710c7967bb|2016-11-30 14:15:06.5891|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000a03-0000-f700-b63f-84710c7967bb|2016-11-30 14:15:06.5891|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3809
+80000537-0001-f500-b63f-84710c7967bb|2016-11-30 14:15:07.2236|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history
+80000537-0001-f500-b63f-84710c7967bb|2016-11-30 14:15:07.2236|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history; Time(ms) = 3809
+80000537-0001-f500-b63f-84710c7967bb|2016-11-30 14:15:07.2597|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/orders/history
+80000537-0001-f500-b63f-84710c7967bb|2016-11-30 14:15:07.2597|DEBUG|performance|Performance info: URI = http://localhost:65078/orders/history; Time(ms) = 3810
+8000001f-0003-e600-b63f-84710c7967bb|2016-11-30 14:18:22.7412|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+8000001f-0003-e600-b63f-84710c7967bb|2016-11-30 14:18:25.5132|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 6579
+8000001f-0003-e600-b63f-84710c7967bb|2016-11-30 14:18:29.2139|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+8000001f-0003-e600-b63f-84710c7967bb|2016-11-30 14:18:29.2139|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 6579
+8000001f-0003-e600-b63f-84710c7967bb|2016-11-30 14:18:29.2420|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+8000001f-0003-e600-b63f-84710c7967bb|2016-11-30 14:18:29.5872|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+8000001f-0003-e600-b63f-84710c7967bb|2016-11-30 14:18:29.6373|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 6973
+80000022-0003-e600-b63f-84710c7967bb|2016-11-30 14:19:40.5487|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000022-0003-e600-b63f-84710c7967bb|2016-11-30 14:19:43.2359|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 9659
+80000022-0003-e600-b63f-84710c7967bb|2016-11-30 14:19:46.7946|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000022-0003-e600-b63f-84710c7967bb|2016-11-30 14:19:46.7946|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 9659
+80000022-0003-e600-b63f-84710c7967bb|2016-11-30 14:19:46.8156|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000022-0003-e600-b63f-84710c7967bb|2016-11-30 14:19:47.1061|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000022-0003-e600-b63f-84710c7967bb|2016-11-30 14:19:47.1061|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 9950
+800008ee-0000-ef00-b63f-84710c7967bb|2016-11-30 14:21:51.7147|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800008ee-0000-ef00-b63f-84710c7967bb|2016-11-30 14:21:54.3719|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 12607
+800008ee-0000-ef00-b63f-84710c7967bb|2016-11-30 14:21:57.8917|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800008ee-0000-ef00-b63f-84710c7967bb|2016-11-30 14:21:57.8917|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 12607
+800008ee-0000-ef00-b63f-84710c7967bb|2016-11-30 14:21:57.9122|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800008ee-0000-ef00-b63f-84710c7967bb|2016-11-30 14:21:58.1830|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+800008ee-0000-ef00-b63f-84710c7967bb|2016-11-30 14:21:58.1830|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 12877
+800008f1-0000-ef00-b63f-84710c7967bb|2016-11-30 14:22:14.0444|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800008f1-0000-ef00-b63f-84710c7967bb|2016-11-30 14:22:16.7107|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 15541
+800008f1-0000-ef00-b63f-84710c7967bb|2016-11-30 14:22:20.4760|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800008f1-0000-ef00-b63f-84710c7967bb|2016-11-30 14:22:20.4760|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 15541
+800008f1-0000-ef00-b63f-84710c7967bb|2016-11-30 14:22:20.4930|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800008f1-0000-ef00-b63f-84710c7967bb|2016-11-30 14:22:20.4930|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 15541
+800002c2-0000-fd00-b63f-84710c7967bb|2016-11-30 14:25:06.6060|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002c2-0000-fd00-b63f-84710c7967bb|2016-11-30 14:25:09.3044|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 18239
+800002c2-0000-fd00-b63f-84710c7967bb|2016-11-30 14:25:12.9245|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002c2-0000-fd00-b63f-84710c7967bb|2016-11-30 14:25:12.9245|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 18239
+800002c2-0000-fd00-b63f-84710c7967bb|2016-11-30 14:25:36.0640|ERROR|errors|Unhandled exception: Templates can be used only with field access, property access, single-dimension array index, or single-parameter custom indexer expressions. | StackTrace:    at System.Web.Mvc.ModelMetadata.FromLambdaExpression[TParameter,TValue](Expression`1 expression, ViewDataDictionary`1 viewData, ModelMetadataProvider metadataProvider)
+   at System.Web.Mvc.ModelMetadata.FromLambdaExpression[TParameter,TValue](Expression`1 expression, ViewDataDictionary`1 viewData)
+   at System.Web.Mvc.Html.InputExtensions.TextBoxFor[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, String format, IDictionary`2 htmlAttributes)
+   at System.Web.Mvc.Html.InputExtensions.TextBoxFor[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, String format, Object htmlAttributes)
+   at System.Web.Mvc.Html.InputExtensions.TextBoxFor[TModel,TProperty](HtmlHelper`1 htmlHelper, Expression`1 expression, Object htmlAttributes)
+   at ASP._Page_Views_Orders_Filter_cshtml.Execute() in C:\Users\Kateryna_Kovalenko\Documents\Migrations\kateryna_kovalenk\GameStore.Web\Views\Orders\Filter.cshtml:line 12
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult) 
+800002c2-0000-fd00-b63f-84710c7967bb|2016-11-30 14:25:40.9495|ERROR|errors|Unhandled exception: Error executing child request for handler 'System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper'. | StackTrace:    at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   at System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage)
+   at System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   at System.Web.HttpServerUtilityWrapper.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   at System.Web.Mvc.Html.ChildActionExtensions.ActionHelper(HtmlHelper htmlHelper, String actionName, String controllerName, RouteValueDictionary routeValues, TextWriter textWriter)
+   at System.Web.Mvc.Html.ChildActionExtensions.Action(HtmlHelper htmlHelper, String actionName, String controllerName, RouteValueDictionary routeValues)
+   at System.Web.Mvc.Html.ChildActionExtensions.Action(HtmlHelper htmlHelper, String actionName, String controllerName, Object routeValues)
+   at ASP._Page_Views_Orders_History_cshtml.Execute() in C:\Users\Kateryna_Kovalenko\Documents\Migrations\kateryna_kovalenk\GameStore.Web\Views\Orders\History.cshtml:line 9
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.StartPage.RunPage()
+   at System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult) 
+800002c3-0000-fd00-b63f-84710c7967bb|2016-11-30 14:25:47.4262|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002c3-0000-fd00-b63f-84710c7967bb|2016-11-30 14:25:50.1029|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 20914
+800002c3-0000-fd00-b63f-84710c7967bb|2016-11-30 14:25:53.6966|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002c3-0000-fd00-b63f-84710c7967bb|2016-11-30 14:25:53.6966|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 20914
+800002c3-0000-fd00-b63f-84710c7967bb|2016-11-30 14:25:53.7186|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002c3-0000-fd00-b63f-84710c7967bb|2016-11-30 14:25:54.0077|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+800002c3-0000-fd00-b63f-84710c7967bb|2016-11-30 14:25:54.0087|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 21202
+800002c5-0000-fd00-b63f-84710c7967bb|2016-11-30 14:26:18.8260|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002c5-0000-fd00-b63f-84710c7967bb|2016-11-30 14:26:21.5861|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 23958
+800002c5-0000-fd00-b63f-84710c7967bb|2016-11-30 14:26:25.4306|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002c5-0000-fd00-b63f-84710c7967bb|2016-11-30 14:26:25.4306|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 23958
+800002c5-0000-fd00-b63f-84710c7967bb|2016-11-30 14:26:25.4532|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002c5-0000-fd00-b63f-84710c7967bb|2016-11-30 14:26:25.4532|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 23959
+800002c7-0000-fd00-b63f-84710c7967bb|2016-11-30 14:26:45.5304|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002c7-0000-fd00-b63f-84710c7967bb|2016-11-30 14:26:48.1954|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 26622
+800002c7-0000-fd00-b63f-84710c7967bb|2016-11-30 14:26:51.8986|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002c7-0000-fd00-b63f-84710c7967bb|2016-11-30 14:26:51.8996|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 26622
+800002c7-0000-fd00-b63f-84710c7967bb|2016-11-30 14:26:51.9176|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002c7-0000-fd00-b63f-84710c7967bb|2016-11-30 14:26:51.9176|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 26622
+800002c9-0000-fd00-b63f-84710c7967bb|2016-11-30 14:27:56.3723|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002c9-0000-fd00-b63f-84710c7967bb|2016-11-30 14:27:59.1520|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 29401
+800002c9-0000-fd00-b63f-84710c7967bb|2016-11-30 14:28:02.7696|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002c9-0000-fd00-b63f-84710c7967bb|2016-11-30 14:28:02.7696|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 29401
+800002c9-0000-fd00-b63f-84710c7967bb|2016-11-30 14:28:02.7917|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002c9-0000-fd00-b63f-84710c7967bb|2016-11-30 14:28:03.0702|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+800002c9-0000-fd00-b63f-84710c7967bb|2016-11-30 14:28:03.0723|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 29679
+800002cb-0000-fd00-b63f-84710c7967bb|2016-11-30 14:28:24.8661|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002cb-0000-fd00-b63f-84710c7967bb|2016-11-30 14:28:27.5045|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 32315
+800002cb-0000-fd00-b63f-84710c7967bb|2016-11-30 14:28:31.2777|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002cb-0000-fd00-b63f-84710c7967bb|2016-11-30 14:28:31.2777|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 32315
+800002cb-0000-fd00-b63f-84710c7967bb|2016-11-30 14:28:31.2952|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+800002cb-0000-fd00-b63f-84710c7967bb|2016-11-30 14:28:31.2952|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 32316
+80000128-0002-e800-b63f-84710c7967bb|2016-11-30 14:31:03.7292|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000128-0002-e800-b63f-84710c7967bb|2016-11-30 14:31:06.4040|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 34988
+80000128-0002-e800-b63f-84710c7967bb|2016-11-30 14:31:10.0567|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000128-0002-e800-b63f-84710c7967bb|2016-11-30 14:31:10.0567|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 34988
+80000128-0002-e800-b63f-84710c7967bb|2016-11-30 14:31:10.0817|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000128-0002-e800-b63f-84710c7967bb|2016-11-30 14:31:10.3499|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000128-0002-e800-b63f-84710c7967bb|2016-11-30 14:31:10.3499|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 35256
+80000e99-0000-e900-b63f-84710c7967bb|2016-11-30 14:41:51.0020|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000e99-0000-e900-b63f-84710c7967bb|2016-11-30 14:41:59.7400|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 8722
+80000e99-0000-e900-b63f-84710c7967bb|2016-11-30 14:42:04.0508|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000e99-0000-e900-b63f-84710c7967bb|2016-11-30 14:42:04.0508|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 8724
+80000e99-0000-e900-b63f-84710c7967bb|2016-11-30 14:42:04.5152|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000e99-0000-e900-b63f-84710c7967bb|2016-11-30 14:42:04.9575|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000e99-0000-e900-b63f-84710c7967bb|2016-11-30 14:42:04.9575|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 9166
+80000ead-0000-e900-b63f-84710c7967bb|2016-11-30 14:50:08.1718|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000bbc-0001-e200-b63f-84710c7967bb|2016-11-30 14:50:08.1718|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000bbc-0001-e200-b63f-84710c7967bb|2016-11-30 14:50:14.9222|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 6733
+80000bbc-0001-e200-b63f-84710c7967bb|2016-11-30 14:50:16.4774|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000bbc-0001-e200-b63f-84710c7967bb|2016-11-30 14:50:16.7866|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000bbc-0001-e200-b63f-84710c7967bb|2016-11-30 14:50:16.8146|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000bbc-0001-e200-b63f-84710c7967bb|2016-11-30 14:50:16.8406|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000bbc-0001-e200-b63f-84710c7967bb|2016-11-30 14:50:16.8406|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 6868
+80000ead-0000-e900-b63f-84710c7967bb|2016-11-30 14:50:17.4100|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 6868
+80000bbc-0001-e200-b63f-84710c7967bb|2016-11-30 14:50:17.5751|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/
+80000ead-0000-e900-b63f-84710c7967bb|2016-11-30 14:50:17.7042|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000ead-0000-e900-b63f-84710c7967bb|2016-11-30 14:50:17.7042|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 6999
+80000ead-0000-e900-b63f-84710c7967bb|2016-11-30 14:50:17.7403|DEBUG|ips|Client info: IP = ::1; URI = http://localhost:65078/Orders/History
+80000bbc-0001-e200-b63f-84710c7967bb|2016-11-30 14:50:17.9344|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000bbc-0001-e200-b63f-84710c7967bb|2016-11-30 14:50:17.9344|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 7193
+80000ead-0000-e900-b63f-84710c7967bb|2016-11-30 14:50:18.0585|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 89  Games.
+80000ead-0000-e900-b63f-84710c7967bb|2016-11-30 14:50:18.0585|DEBUG|performance|Performance info: URI = http://localhost:65078/Orders/History; Time(ms) = 7193

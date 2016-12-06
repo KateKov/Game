@@ -1,0 +1,228 @@
+80000007-0001-fd00-b63f-84710c7967bb|2016-12-02 09:33:38.3462|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000007-0001-fd00-b63f-84710c7967bb|2016-12-02 09:33:38.3722|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000007-0001-fd00-b63f-84710c7967bb|2016-12-02 09:33:38.3962|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000007-0001-fd00-b63f-84710c7967bb|2016-12-02 09:33:39.2210|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 79  Games.
+8000000b-0001-fd00-b63f-84710c7967bb|2016-12-02 09:34:21.1801|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby id=5840609dd0c40ef0df844492 
+8000000b-0001-fd00-b63f-84710c7967bb|2016-12-02 09:34:21.4834|DEBUG|GameStore.BLL.Services.GameStoreService|Add GameDTO with Id: 6c648548-77ca-49eb-8bb2-73b123d4202f
+8000000b-0001-fd00-b63f-84710c7967bb|2016-12-02 09:34:21.5244|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby id=6c648548-77ca-49eb-8bb2-73b123d4202f 
+8000000b-0001-fd00-b63f-84710c7967bb|2016-12-02 09:34:24.2061|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 6c648548-77ca-49eb-8bb2-73b123d4202f to the busket of Customer  
+8000000c-0001-fd00-b63f-84710c7967bb|2016-12-02 09:34:27.9219|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+8000000e-0001-fd00-b63f-84710c7967bb|2016-12-02 09:34:30.7775|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 25  Genres.
+8000000e-0001-fd00-b63f-84710c7967bb|2016-12-02 09:34:30.7775|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+8000000e-0001-fd00-b63f-84710c7967bb|2016-12-02 09:34:30.7963|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 31  Publishers.
+80000010-0001-fd00-b63f-84710c7967bb|2016-12-02 09:34:38.7685|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000018-0000-f100-b63f-84710c7967bb|2016-12-02 11:38:48.2878|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000018-0000-f100-b63f-84710c7967bb|2016-12-02 11:38:48.3161|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000018-0000-f100-b63f-84710c7967bb|2016-12-02 11:38:48.3451|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000018-0000-f100-b63f-84710c7967bb|2016-12-02 11:38:49.1116|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 78  Games.
+80000025-0000-f700-b63f-84710c7967bb|2016-12-02 11:50:15.9181|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000025-0000-f700-b63f-84710c7967bb|2016-12-02 11:50:15.9431|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000025-0000-f700-b63f-84710c7967bb|2016-12-02 11:50:15.9722|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000025-0000-f700-b63f-84710c7967bb|2016-12-02 11:50:16.7572|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 78  Games.
+80000027-0000-f700-b63f-84710c7967bb|2016-12-02 11:50:28.4307|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000027-0000-f700-b63f-84710c7967bb|2016-12-02 11:50:28.4408|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000027-0000-f700-b63f-84710c7967bb|2016-12-02 11:50:28.4408|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000029-0000-f700-b63f-84710c7967bb|2016-12-02 11:50:50.4787|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000029-0000-f700-b63f-84710c7967bb|2016-12-02 11:50:50.4897|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000029-0000-f700-b63f-84710c7967bb|2016-12-02 11:50:50.4967|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+800007ce-0000-f000-b63f-84710c7967bb|2016-12-02 11:52:03.0245|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+800007ce-0000-f000-b63f-84710c7967bb|2016-12-02 11:52:03.0506|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800007ce-0000-f000-b63f-84710c7967bb|2016-12-02 11:52:03.0976|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+800007ce-0000-f000-b63f-84710c7967bb|2016-12-02 11:52:03.8931|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 78  Games.
+800007d0-0000-f000-b63f-84710c7967bb|2016-12-02 11:52:09.9189|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+800007d0-0000-f000-b63f-84710c7967bb|2016-12-02 11:52:09.9189|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800007d0-0000-f000-b63f-84710c7967bb|2016-12-02 11:52:09.9369|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+800007d2-0000-f000-b63f-84710c7967bb|2016-12-02 11:52:16.1873|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+800007d2-0000-f000-b63f-84710c7967bb|2016-12-02 11:52:16.2124|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800007d2-0000-f000-b63f-84710c7967bb|2016-12-02 11:52:16.2459|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+800007d4-0000-f000-b63f-84710c7967bb|2016-12-02 11:52:23.3064|DEBUG|GameStore.BLL.Services.GameStoreService|Add GameDTO with Id: 3d615245-c175-4aca-b609-c309120b5ef7
+800007d5-0000-f000-b63f-84710c7967bb|2016-12-02 11:52:23.6274|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+800007d5-0000-f000-b63f-84710c7967bb|2016-12-02 11:52:23.6395|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800007d5-0000-f000-b63f-84710c7967bb|2016-12-02 11:52:23.6395|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+800007d7-0000-f000-b63f-84710c7967bb|2016-12-02 11:52:28.9438|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=5840609dd0c40ef0df844493 
+800007d7-0000-f000-b63f-84710c7967bb|2016-12-02 11:52:28.9545|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+800007d7-0000-f000-b63f-84710c7967bb|2016-12-02 11:52:28.9653|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800007d7-0000-f000-b63f-84710c7967bb|2016-12-02 11:52:28.9973|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+800007d9-0000-f000-b63f-84710c7967bb|2016-12-02 11:52:33.0027|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+800007d9-0000-f000-b63f-84710c7967bb|2016-12-02 11:52:33.0137|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800007d9-0000-f000-b63f-84710c7967bb|2016-12-02 11:52:33.0437|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000014-0000-ed00-b63f-84710c7967bb|2016-12-02 11:53:45.9823|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000014-0000-ed00-b63f-84710c7967bb|2016-12-02 11:53:46.0484|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000014-0000-ed00-b63f-84710c7967bb|2016-12-02 11:53:46.0740|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000014-0000-ed00-b63f-84710c7967bb|2016-12-02 11:53:46.8855|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 78  Games.
+80000016-0000-ed00-b63f-84710c7967bb|2016-12-02 11:53:53.5987|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=5840609dd0c40ef0df844493 
+80000016-0000-ed00-b63f-84710c7967bb|2016-12-02 11:53:53.6107|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000016-0000-ed00-b63f-84710c7967bb|2016-12-02 11:53:53.6257|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000016-0000-ed00-b63f-84710c7967bb|2016-12-02 11:53:53.6587|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000018-0000-ed00-b63f-84710c7967bb|2016-12-02 11:54:01.1127|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: 5840609dd0c40ef0df844493
+80000019-0000-ed00-b63f-84710c7967bb|2016-12-02 11:54:01.4323|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 25  Genres.
+80000019-0000-ed00-b63f-84710c7967bb|2016-12-02 11:54:01.4433|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000019-0000-ed00-b63f-84710c7967bb|2016-12-02 11:54:01.4523|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 31  Publishers.
+8000001b-0000-ed00-b63f-84710c7967bb|2016-12-02 11:54:11.6489|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 25  Genres.
+8000001b-0000-ed00-b63f-84710c7967bb|2016-12-02 11:54:11.6599|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+8000001b-0000-ed00-b63f-84710c7967bb|2016-12-02 11:54:11.6679|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 31  Publishers.
+8000001f-0000-ed00-b63f-84710c7967bb|2016-12-02 11:54:21.2347|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=5840609dd0c40ef0df844494 
+8000001f-0000-ed00-b63f-84710c7967bb|2016-12-02 11:54:21.2347|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 31  Publishers.
+8000001f-0000-ed00-b63f-84710c7967bb|2016-12-02 11:54:21.2527|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+8000001f-0000-ed00-b63f-84710c7967bb|2016-12-02 11:54:21.2947|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 25  Genres.
+80000021-0000-ed00-b63f-84710c7967bb|2016-12-02 11:54:25.4480|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: 5840609dd0c40ef0df844494
+80000022-0000-ed00-b63f-84710c7967bb|2016-12-02 11:54:25.7359|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 26  Genres.
+80000022-0000-ed00-b63f-84710c7967bb|2016-12-02 11:54:25.7479|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000022-0000-ed00-b63f-84710c7967bb|2016-12-02 11:54:25.7479|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 32  Publishers.
+80000024-0000-ed00-b63f-84710c7967bb|2016-12-02 11:54:33.5366|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 26  Genres.
+80000024-0000-ed00-b63f-84710c7967bb|2016-12-02 11:54:33.5476|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000024-0000-ed00-b63f-84710c7967bb|2016-12-02 11:54:33.5476|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 32  Publishers.
+80000026-0000-ed00-b63f-84710c7967bb|2016-12-02 11:54:40.6093|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 26  Genres.
+80000026-0000-ed00-b63f-84710c7967bb|2016-12-02 11:54:40.6223|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000026-0000-ed00-b63f-84710c7967bb|2016-12-02 11:54:40.6223|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 32  Publishers.
+800003fa-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:06.5485|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+800003fa-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:06.5750|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800003fa-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:06.6180|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+800003fa-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:07.3678|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 76  Games.
+800003fc-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:20.8582|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=5840609dd0c40ef0df844495 
+800003fc-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:20.8732|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+800003fc-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:20.8884|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800003fc-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:20.9214|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+800003fe-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:25.6306|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: 5840609dd0c40ef0df844495
+800003ff-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:25.9271|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 25  Genres.
+800003ff-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:25.9381|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800003ff-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:25.9381|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 31  Publishers.
+80000401-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:41.9837|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=5840609dd0c40ef0df844495 
+80000401-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:41.9837|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 31  Publishers.
+80000401-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:42.0042|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000401-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:42.0353|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 25  Genres.
+80000403-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:45.2971|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: e9decb89-f131-457a-bc58-ac9e8d341631
+80000404-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:45.6127|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 25  Genres.
+80000404-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:45.6222|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000404-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:45.6222|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 31  Publishers.
+80000406-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:50.2861|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=Sims3_16in1 
+80000406-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:50.2941|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 31  Publishers.
+80000406-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:50.2941|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000406-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:50.3449|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 25  Genres.
+80000408-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:52.6121|DEBUG|GameStore.BLL.Services.GameStoreService|Edit GameDTO with Id: 86b1c33d-5050-4f4c-9fdd-62f1404fe3ef
+80000409-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:52.9196|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 25  Genres.
+80000409-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:52.9196|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000409-0000-ec00-b63f-84710c7967bb|2016-12-02 11:56:52.9421|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 31  Publishers.
+8000040b-0000-ec00-b63f-84710c7967bb|2016-12-02 11:57:03.8273|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby key=5840609dd0c40ef0df844496 
+8000040d-0000-ec00-b63f-84710c7967bb|2016-12-02 11:57:08.9478|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 25  Genres.
+8000040d-0000-ec00-b63f-84710c7967bb|2016-12-02 11:57:08.9593|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+8000040d-0000-ec00-b63f-84710c7967bb|2016-12-02 11:57:08.9713|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 31  Publishers.
+8000040d-0000-ec00-b63f-84710c7967bb|2016-12-02 11:57:09.2500|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 76  Games.
+8000040f-0000-ec00-b63f-84710c7967bb|2016-12-02 11:57:17.6193|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 25  Genres.
+8000040f-0000-ec00-b63f-84710c7967bb|2016-12-02 11:57:17.6323|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+8000040f-0000-ec00-b63f-84710c7967bb|2016-12-02 11:57:17.6403|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 31  Publishers.
+80000411-0000-ec00-b63f-84710c7967bb|2016-12-02 11:57:26.1419|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 25  Genres.
+80000411-0000-ec00-b63f-84710c7967bb|2016-12-02 11:57:26.1549|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000411-0000-ec00-b63f-84710c7967bb|2016-12-02 11:57:26.1549|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 31  Publishers.
+80000413-0000-ec00-b63f-84710c7967bb|2016-12-02 11:57:36.6884|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Orders. Returned 830  Orders.
+80000413-0000-ec00-b63f-84710c7967bb|2016-12-02 11:57:39.0060|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+80000415-0000-ec00-b63f-84710c7967bb|2016-12-02 11:57:56.9929|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000417-0000-ec00-b63f-84710c7967bb|2016-12-02 11:58:01.0935|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Orders. Returned 830  Orders.
+80000417-0000-ec00-b63f-84710c7967bb|2016-12-02 11:58:03.4035|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+80000419-0000-ec00-b63f-84710c7967bb|2016-12-02 11:58:06.2958|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 25  Genres.
+80000419-0000-ec00-b63f-84710c7967bb|2016-12-02 11:58:06.3083|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000419-0000-ec00-b63f-84710c7967bb|2016-12-02 11:58:06.3083|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 31  Publishers.
+80000d5f-0001-f100-b63f-84710c7967bb|2016-12-02 11:59:38.9291|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000d5f-0001-f100-b63f-84710c7967bb|2016-12-02 11:59:38.9551|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000d5f-0001-f100-b63f-84710c7967bb|2016-12-02 11:59:38.9791|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000d5f-0001-f100-b63f-84710c7967bb|2016-12-02 11:59:39.5839|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 75  Games.
+80000037-0000-eb00-b63f-84710c7967bb|2016-12-02 12:05:34.6497|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000037-0000-eb00-b63f-84710c7967bb|2016-12-02 12:05:34.6783|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000037-0000-eb00-b63f-84710c7967bb|2016-12-02 12:05:34.7073|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000037-0000-eb00-b63f-84710c7967bb|2016-12-02 12:05:35.3120|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 75  Games.
+80000048-0000-ed00-b63f-84710c7967bb|2016-12-02 12:06:36.6589|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000048-0000-ed00-b63f-84710c7967bb|2016-12-02 12:06:36.6849|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000048-0000-ed00-b63f-84710c7967bb|2016-12-02 12:06:36.7149|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000048-0000-ed00-b63f-84710c7967bb|2016-12-02 12:06:37.4141|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 75  Games.
+80000044-0002-f000-b63f-84710c7967bb|2016-12-02 12:10:39.5992|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000044-0002-f000-b63f-84710c7967bb|2016-12-02 12:10:39.6538|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000044-0002-f000-b63f-84710c7967bb|2016-12-02 12:10:39.6818|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000044-0002-f000-b63f-84710c7967bb|2016-12-02 12:10:40.4699|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 75  Games.
+80001260-0000-ee00-b63f-84710c7967bb|2016-12-02 12:21:08.6098|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80001260-0000-ee00-b63f-84710c7967bb|2016-12-02 12:21:08.6358|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80001260-0000-ee00-b63f-84710c7967bb|2016-12-02 12:21:08.6604|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80001260-0000-ee00-b63f-84710c7967bb|2016-12-02 12:21:09.3255|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 75  Games.
+8000074c-0003-f400-b63f-84710c7967bb|2016-12-02 12:22:03.9057|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+8000074c-0003-f400-b63f-84710c7967bb|2016-12-02 12:22:03.9307|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+8000074c-0003-f400-b63f-84710c7967bb|2016-12-02 12:22:03.9557|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+8000074c-0003-f400-b63f-84710c7967bb|2016-12-02 12:22:04.5993|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 75  Games.
+80000159-0000-f100-b63f-84710c7967bb|2016-12-02 12:34:40.2428|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000159-0000-f100-b63f-84710c7967bb|2016-12-02 12:34:40.2668|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000159-0000-f100-b63f-84710c7967bb|2016-12-02 12:34:40.2918|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+800001f0-0000-eb00-b63f-84710c7967bb|2016-12-02 12:34:40.9800|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 75  Games.
+80000159-0000-f100-b63f-84710c7967bb|2016-12-02 12:34:40.9800|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 75  Games.
+80000121-0000-fb00-b63f-84710c7967bb|2016-12-02 12:36:26.9980|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000121-0000-fb00-b63f-84710c7967bb|2016-12-02 12:36:27.0216|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000121-0000-fb00-b63f-84710c7967bb|2016-12-02 12:36:27.0466|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000153-0001-eb00-b63f-84710c7967bb|2016-12-02 12:36:27.6678|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 75  Games.
+80000121-0000-fb00-b63f-84710c7967bb|2016-12-02 12:36:27.6678|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 75  Games.
+800001f9-0000-eb00-b63f-84710c7967bb|2016-12-02 12:37:15.7393|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+800001f9-0000-eb00-b63f-84710c7967bb|2016-12-02 12:37:15.7648|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800001f9-0000-eb00-b63f-84710c7967bb|2016-12-02 12:37:15.7903|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+800000f6-0000-e700-b63f-84710c7967bb|2016-12-02 12:37:16.4518|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 75  Games.
+800001f9-0000-eb00-b63f-84710c7967bb|2016-12-02 12:37:16.4518|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 75  Games.
+800000a0-0003-fa00-b63f-84710c7967bb|2016-12-02 12:38:42.3347|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+800000a0-0003-fa00-b63f-84710c7967bb|2016-12-02 12:38:42.4088|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800000a0-0003-fa00-b63f-84710c7967bb|2016-12-02 12:38:42.4578|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+800000a0-0003-fa00-b63f-84710c7967bb|2016-12-02 12:38:43.3301|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 75  Games.
+800006d7-0000-f600-b63f-84710c7967bb|2016-12-02 12:39:43.1389|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+800006d7-0000-f600-b63f-84710c7967bb|2016-12-02 12:39:43.1829|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+800006d7-0000-f600-b63f-84710c7967bb|2016-12-02 12:39:43.2260|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+800006d7-0000-f600-b63f-84710c7967bb|2016-12-02 12:39:44.1855|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 75  Games.
+80000090-0001-f300-b63f-84710c7967bb|2016-12-02 12:41:34.8898|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000090-0001-f300-b63f-84710c7967bb|2016-12-02 12:41:34.9158|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000090-0001-f300-b63f-84710c7967bb|2016-12-02 12:41:34.9408|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000090-0001-f300-b63f-84710c7967bb|2016-12-02 12:41:35.5262|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 75  Games.
+80001a40-0000-f900-b63f-84710c7967bb|2016-12-02 12:41:35.5262|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 75  Games.
+80000045-0001-ea00-b63f-84710c7967bb|2016-12-02 12:45:40.0698|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000045-0001-ea00-b63f-84710c7967bb|2016-12-02 12:45:40.0953|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000045-0001-ea00-b63f-84710c7967bb|2016-12-02 12:45:40.1239|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000045-0001-ea00-b63f-84710c7967bb|2016-12-02 12:45:40.9119|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 75  Games.
+8000001d-0000-e300-b63f-84710c7967bb|2016-12-02 12:49:39.3380|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+8000001d-0000-e300-b63f-84710c7967bb|2016-12-02 12:49:39.3650|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+8000001d-0000-e300-b63f-84710c7967bb|2016-12-02 12:49:39.3931|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+8000001d-0000-e300-b63f-84710c7967bb|2016-12-02 12:49:40.1894|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 75  Games.
+80000cf0-0000-f400-b63f-84710c7967bb|2016-12-02 12:59:32.3972|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000cf0-0000-f400-b63f-84710c7967bb|2016-12-02 12:59:32.4236|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000cf0-0000-f400-b63f-84710c7967bb|2016-12-02 12:59:32.4494|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000cf0-0000-f400-b63f-84710c7967bb|2016-12-02 12:59:33.0894|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 75  Games.
+80000cf3-0000-f400-b63f-84710c7967bb|2016-12-02 12:59:39.5327|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby id=057ee9e4-a229-4cd7-ab63-874b226ab6ed 
+80000cf3-0000-f400-b63f-84710c7967bb|2016-12-02 12:59:41.9891|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 057ee9e4-a229-4cd7-ab63-874b226ab6ed to the busket of Customer  
+80000cf4-0000-f400-b63f-84710c7967bb|2016-12-02 12:59:45.4343|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000cf6-0000-f400-b63f-84710c7967bb|2016-12-02 12:59:47.3882|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000cf6-0000-f400-b63f-84710c7967bb|2016-12-02 12:59:47.3882|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000cf6-0000-f400-b63f-84710c7967bb|2016-12-02 12:59:47.4054|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000e00-0001-f800-b63f-84710c7967bb|2016-12-02 13:01:54.5367|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000e00-0001-f800-b63f-84710c7967bb|2016-12-02 13:01:54.5637|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000e00-0001-f800-b63f-84710c7967bb|2016-12-02 13:01:54.5877|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000e00-0001-f800-b63f-84710c7967bb|2016-12-02 13:01:55.3440|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Games. Returned 75  Games.
+80000e03-0001-f800-b63f-84710c7967bb|2016-12-02 13:02:00.2384|DEBUG|GameStore.BLL.Services.GameStoreService|GettingGameby id=364d8872-4c35-41b5-a4a8-2e7a41b686fd 
+80000e03-0001-f800-b63f-84710c7967bb|2016-12-02 13:02:02.7363|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 364d8872-4c35-41b5-a4a8-2e7a41b686fd to the busket of Customer  
+80000e04-0001-f800-b63f-84710c7967bb|2016-12-02 13:02:06.3977|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000e06-0001-f800-b63f-84710c7967bb|2016-12-02 13:02:08.6316|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Genres. Returned 24  Genres.
+80000e06-0001-f800-b63f-84710c7967bb|2016-12-02 13:02:08.6470|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all PlatformTypes. Returned 4  PlatformTypes.
+80000e06-0001-f800-b63f-84710c7967bb|2016-12-02 13:02:08.6540|DEBUG|GameStore.BLL.Services.GameStoreService|Getting all Publishers. Returned 30  Publishers.
+80000034-0001-e200-b63f-84710c7967bb|2016-12-02 15:02:55.9354|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+80000036-0001-e200-b63f-84710c7967bb|2016-12-02 15:02:59.8340|DEBUG|GameStore.BLL.Services.CommentsService|Getting comments by key = Sims3_16in1. Retured 0 comments
+800000f1-0003-fa00-b63f-84710c7967bb|2016-12-02 15:03:07.0952|DEBUG|GameStore.BLL.Services.ModelWithNameService`2|GettingPublisherDTOby name=GamesCorporation 
+80000015-0003-e900-b63f-84710c7967bb|2016-12-02 15:55:53.8989|DEBUG|GameStore.BLL.Services.Service`2|GettingGame_D915C1C9434627404AA3DBF88DA731177341E8D979AEE66EE9F68CDE174D8F73by id=cc89af85-fc6d-4ba9-b7ad-afea31cc85c0 
+80000015-0003-e900-b63f-84710c7967bb|2016-12-02 15:55:56.3673|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game cc89af85-fc6d-4ba9-b7ad-afea31cc85c0 to the busket of Customer  
+80000016-0003-e900-b63f-84710c7967bb|2016-12-02 15:56:02.8329|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+8000001a-0003-e900-b63f-84710c7967bb|2016-12-02 15:56:09.5133|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+8000001f-0003-e900-b63f-84710c7967bb|2016-12-02 15:56:14.7685|DEBUG|GameStore.BLL.Services.Service`2|GettingGame_D915C1C9434627404AA3DBF88DA731177341E8D979AEE66EE9F68CDE174D8F73by id=cc89af85-fc6d-4ba9-b7ad-afea31cc85c0 
+800009a7-0003-fb00-b63f-84710c7967bb|2016-12-02 16:10:22.3759|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+800002c5-0000-f300-b63f-84710c7967bb|2016-12-02 16:18:43.9386|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+800002c7-0000-f300-b63f-84710c7967bb|2016-12-02 16:18:52.0245|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800002cb-0000-f300-b63f-84710c7967bb|2016-12-02 16:19:02.2366|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800002d0-0000-f300-b63f-84710c7967bb|2016-12-02 16:19:07.9878|DEBUG|GameStore.BLL.Services.Service`2|GettingGame_D915C1C9434627404AA3DBF88DA731177341E8D979AEE66EE9F68CDE174D8F73by id=2f80984b-2de3-431d-b11a-588bc8c2ac2a 
+80001ccd-0001-f500-b63f-84710c7967bb|2016-12-02 16:20:13.4640|DEBUG|GameStore.BLL.Services.Service`2|GettingGame_D915C1C9434627404AA3DBF88DA731177341E8D979AEE66EE9F68CDE174D8F73by id=de12dd70-4e7d-423d-a799-421b0d385491 
+80000991-0000-ed00-b63f-84710c7967bb|2016-12-02 16:50:17.5901|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844497 
+80000991-0000-ed00-b63f-84710c7967bb|2016-12-02 16:50:17.6680|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 9a456cab-24f3-488a-9936-3c7988e6de1d
+80000c2c-0000-f800-b63f-84710c7967bb|2016-12-02 16:51:44.0373|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844498 
+80000c2c-0000-f800-b63f-84710c7967bb|2016-12-02 16:51:44.1113|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 88a2820f-c14b-4c8b-9beb-9c9ac5d9ec93
+80000c52-0001-e700-b63f-84710c7967bb|2016-12-02 16:57:08.1700|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844498 
+80000c52-0001-e700-b63f-84710c7967bb|2016-12-02 16:57:08.2446|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 616dd10c-b690-409d-a6e4-83d40605aad4
+80000840-0002-f900-b63f-84710c7967bb|2016-12-02 17:00:08.6549|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844497 
+80000840-0002-f900-b63f-84710c7967bb|2016-12-02 17:00:17.7272|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: bc42750b-ce6b-4699-9f04-6688cf83b8a7
+80000781-0002-e200-b63f-84710c7967bb|2016-12-02 17:01:13.0813|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844498 
+80000781-0002-e200-b63f-84710c7967bb|2016-12-02 17:01:16.2397|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 798c9c45-1ad7-49b0-8d22-7982f3751664

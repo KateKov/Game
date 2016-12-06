@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Web.Mvc;
 using GameStore.BLL.Interfaces;
+using GameStore.BLL.Interfaces.Services;
 using GameStore.BLL.Services;
 using GameStore.DAL.Infrastracture;
 using GameStore.DAL.Interfaces;
@@ -31,9 +32,12 @@ namespace GameStore.Web.Util
 
         private void AddBindings()
         {
-            _kernel.Bind<IService>().To<GameStoreService>();
-            _kernel.Bind<IGameService>().To<GamesService>();
+            _kernel.Bind<IGameStoreService>().To<GameStoreService>();
             _kernel.Bind<ICommentService>().To<CommentsService>();
+            _kernel.Bind(typeof(IService<>)).To(typeof(Service<,>));
+            _kernel.Bind(typeof(INamedService<,>)).To(typeof(ModelWithNameService<,,,>));
+            _kernel.Bind(typeof(IWithKeyService<>)).To(typeof(ModelWithKeyService<,>));
+            _kernel.Bind<IGameService>().To<GamesService>();
             _kernel.Bind<IOrderService>().To<OrdersService>();
             _kernel.Bind<ILogger>().ToMethod(p =>
             {

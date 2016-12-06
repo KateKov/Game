@@ -1,5 +1,9 @@
 ﻿using AutoMapper;
 using GameStore.BLL.Infrastructure;
+using GameStore.DAL.Infrastracture;
+using GameStore.DAL.Interfaces;
+using GameStore.DAL.Mapping;
+using GameStore.DAL.MongoEntities;
 using GameStore.Web.Infrastructure;
 
 namespace GameStore.Web.Infrastracture
@@ -12,6 +16,7 @@ namespace GameStore.Web.Infrastracture
             {
                 x.AddProfile<DtoToViewModelMapping>();
                 x.AddProfile<DomainToDtoMapping>();
+                x.AddProfile<MongoToSql>();
             });
         }
     }

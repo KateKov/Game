@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using GameStore.DAL.EF;
 using GameStore.DAL.Interfaces;
+using AutoMapper;
+using GameStore.DAL.Mapping;
+using GameStore.DAL.MongoEntities;
 
 namespace GameStore.DAL.Infrastracture
 {
@@ -40,7 +44,7 @@ namespace GameStore.DAL.Infrastracture
             _disposed = true;
         }
 
-        public IRepository<T> Repository<T>() where T : class, IEntityBase, new()
+        public IRepository<T> Repository<T>() where T : class, IEntityBase, new() 
         {
             if (repositories == null)
             {
@@ -51,8 +55,9 @@ namespace GameStore.DAL.Infrastracture
 
             if (!repositories.ContainsKey(type))
             {
-                var repositoryType = typeof(Repository<>);
-                var repositoryInstance = new Lazy<IRepository<T>>(() => (IRepository<T>)Activator.CreateInstance(repositoryType.MakeGenericType(typeof(T)), _context)).Value;
+                var mongoType =(GetMongo<T>.IsMongo())?  GetMongo<T>.GetMongoType():  new MongoBase();
+                var repositoryType = typeof(CommonRepository<,>);
+                var repositoryInstance = new Lazy<IRepository<T>>(() => (IRepository<T>)Activator.CreateInstance(repositoryType.MakeGenericType(typeof(T), mongoType.GetType()), _context)).Value;
                 repositories.Add(type, repositoryInstance);
             }
             return (IRepository<T>)repositories[type];

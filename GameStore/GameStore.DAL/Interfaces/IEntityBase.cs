@@ -8,6 +8,7 @@ namespace GameStore.DAL.Interfaces
 {
     public interface IEntityBase
     {
-        Guid Id { get; set; }
+       Guid EntityId { get; set; }
+        string Id { get; set; }
     }
 }

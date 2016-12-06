@@ -1,48 +1,64 @@
-﻿@using GameStore.Web.ViewModels
-
+﻿@using GameStore.Web.Helpers
+@using GameStore.Web.ViewModels
+@using MvcCheckBoxList.Model
 @model FilterViewModel
-
-@using (Html.BeginForm("Filter", "Games", FormMethod.Post)) { 
-    <div class="col col-4">
-        @for (int i = 0; i < Model.ListGenres.Count; i++)
-        {
-
-            @Html.CheckBoxFor(m => m.ListGenres[i].Checked, new { id = "discount" })
-            @Html.DisplayFor(m => m.ListGenres[i].Text)
-            @Html.HiddenFor(m => m.ListGenres[i].Text)
-            <br />
-            <br />
-        }
-      
+@using (Html.BeginForm("Index", "Games", FormMethod.Get))
+{
+    <div class="form-group">
+        @Html.HiddenQueryStringParameters("GameSort", "PageSize")
+        @Html.LabelFor(m => m.Name, new { @class = "control-label" })
+        <div>
+            @Html.TextBoxFor(m => m.Name, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Name, null, new { @class = "help-block" })
+        </div>
     </div>
-    <div class="col col-4">
-        @for (int i = 0; i < Model.ListPublishers.Count; i++)
-        {
-
-            @Html.CheckBoxFor(m => m.ListPublishers[i].Checked, new { id = "discount" })
-            @Html.DisplayFor(m => m.ListPublishers[i].Text)
-            @Html.HiddenFor(m => m.ListPublishers[i].Text)
-            <br />
-            <br />
-        }
-
+                <div class="form-group">
+                    @Html.LabelFor(m => m.MinPrice, new { @class = "control-label" })
+                    <div>
+                        @Html.TextBoxFor(m => m.MinPrice, null, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.MinPrice, null, new { @class = "help-block" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.MaxPrice, new { @class = "control-label" })
+                    <div>
+                        @Html.TextBoxFor(m => m.MaxPrice, null, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.MaxPrice, null, new { @class = "help-block" })
+                    </div>
+                </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.DateOfAdding, new { @class = "control-label" })
+        <div>
+            @Html.EnumDropDownList(m => m.DateOfAdding, new {@class = "form-control"})
+            @Html.ValidationMessageFor(model => model.DateOfAdding, null, new {@class = "help-block"})
+        </div>
     </div>
-    <div class="col col-4">
-        @for (int i = 0; i < Model.ListTypes.Count; i++)
-        {
-
-            @Html.CheckBoxFor(m => m.ListTypes[i].Checked, new { id = "discount" })
-            @Html.DisplayFor(m => m.ListTypes[i].Text)
-            @Html.HiddenFor(m => m.ListTypes[i].Text)
-            <br />
-            <br />
-        }
-
+    <div class="form-group">
+        @Html.LabelFor(m => m.FilterBy, new { @class = "control-label" })
+        <div>
+            @Html.EnumDropDownList(model => model.FilterBy, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.FilterBy, null, new { @class = "help-block" })
+        </div>
     </div>
-    <div class="col col-4">
-        @Html.DropDownListFor(m=>m.SelectedFilter, EnumHelper.GetSelectList(typeof(FilterViewModel.Filter)), "Filter By");
-
-    </div>
-    <input type="submit" value="Send" />
+    <div class="form-group">
+        <h3>Genres:</h3>
+        <div>
+            @Html.CheckBoxListFor(model => model.SelectedGenresName, model => model.ListGenres, model => model.Text, model => model.Text, model => model.SelectedGenres, Position.Horizontal)
+        </div>
+        </div>
+    
+   
+                <div class="form-group">
+                    <h3>Platform types:</h3>
+                    <div>
+                        @Html.CheckBoxListFor(model => model.SelectedTypesName, model => model.ListTypes, model => model.Text, model => model.Text, model => model.SelectedType, Position.Horizontal)
+                </div>
+                         </div>
+                <div class="form-group">
+                    <h3>Publishers:</h3>
+                    <div>
+                   @Html.CheckBoxListFor(model => model.SelectedPublishersName, model => model.ListPublishers, model => model.Text, model => model.Text, model => model.SelectedPublishers, Position.Horizontal)
+                </div>
+                         </div>
+    <input type="submit" value="Filter" />
 }
-

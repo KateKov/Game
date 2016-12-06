@@ -1,28 +1,11 @@
 ﻿@using GameStore.Web.ViewModels
 @model BasketViewModel
-
 @using (Html.BeginForm())
 {
-
-    @Html.HiddenFor(x=>x.GameId)
+    @Html.HiddenFor(x=>x.GameKey)
     @Html.HiddenFor(x=>x.CustomerId)
-    @Html.HiddenFor(x=>x.UnitInStock)
-   
+    @Html.HiddenFor(x=>x.UnitInStock) 
     <p>Counts:</p>
-    @Html.EditorFor(x=>x.Quantity)
-    @Html.ValidationMessageFor(model => model.Quantity, "")
-    @*<input type="text" id="Quantity" name="Quantity" min="1" value="1" max="@Model.UnitInStock"  onchange="isright(this)" style="width: 50px"/>*@
-    
+    <input type="text" id="Quantity" name="Quantity" min="1" value="1" max="@Model.UnitInStock" onchange="isright(this)" style="width: 50px" />
+    @Html.ValidationMessageFor(model => model.Quantity, "")    
 }
-
-
-<script>
-
-    function isright(obj)
-    {
-        var value= +obj.value.replace(/\D/g,'')||0;
-        var min = +obj.getAttribute('min');
-        var max = +obj.getAttribute('max');
-        obj.value = Math.min(max, Math.max(min, value));
-    }
-</script>

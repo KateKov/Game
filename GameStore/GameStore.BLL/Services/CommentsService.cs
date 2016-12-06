@@ -1,15 +1,13 @@
-﻿using AutoMapper;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using AutoMapper;
 using GameStore.BLL.DTO;
 using GameStore.BLL.Infrastructure;
+using GameStore.BLL.Interfaces;
 using GameStore.DAL.Entities;
 using GameStore.DAL.Interfaces;
 using NLog;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using GameStore.BLL.Interfaces;
 
 namespace GameStore.BLL.Services
 {
@@ -38,7 +36,7 @@ namespace GameStore.BLL.Services
             comment.Game = game;
             if (commentDto.ParentCommentId != null)
             {
-                var parentComment = _unitOfWork.Repository<Comment>().GetSingle(Guid.Parse(commentDto.ParentCommentId));
+                var parentComment = _unitOfWork.Repository<Comment>().GetSingle(commentDto.ParentCommentId);
                 if (parentComment == null)
                     throw new ValidationException("Cannot find parent comment for creating a comment", string.Empty);
                 comment.ParentComment = parentComment;

@@ -10,23 +10,33 @@ namespace GameStore.Web.Providers.Payments
 {
     public class Payment
     {
-        private readonly IPaymentStrategy _payments;
-        private static readonly Dictionary<string, IPaymentStrategy> _dictionary;
+        private IPaymentStrategy _payments;
+        private static readonly Dictionary<PaymentTypes, IPaymentStrategy> _dictionary;
+
+        public enum PaymentTypes{
+            Bank,
+            IBox, 
+            Visa
+        }
+
 
         static Payment()
         {
-            _dictionary = new Dictionary<string, IPaymentStrategy>()
+            _dictionary = new Dictionary<PaymentTypes, IPaymentStrategy>()
             {
-                {"Bank", new Bank() },
-                {"IBox", new IBox() },
-                {"Visa", new Visa() }
+                {PaymentTypes.Bank, new Bank() },
+                {PaymentTypes.IBox, new IBox() },
+                {PaymentTypes.Visa, new Visa() }
             };
           
         }
 
-        public Payment(string paymentName)
+        public Payment(PaymentTypes payment)
         {
-            _payments = _dictionary[paymentName];
+            if (payment.HasFlag(PaymentTypes.Bank) || payment.HasFlag(PaymentTypes.IBox) || payment.HasFlag(PaymentTypes.Visa))
+            {
+                _payments = _dictionary[payment];
+            }
         }      
       
         public ActionResult Pay(OrderViewModel order, Func<string, object, ViewResult> viewResult)

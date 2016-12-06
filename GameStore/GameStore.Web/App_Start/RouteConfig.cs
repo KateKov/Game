@@ -16,12 +16,12 @@ namespace GameStore.Web
                 name: "CommentsDefault",
                 url: "game/{key}/{action}",
                 defaults: new { controller = "Comments" },
-                constraints: new { key = @"^[A-Za-z0-9_-]{1,20}", action = @"\w+" });
+                constraints: new { key = @"^[A-Za-z0-9_-]{1,30}", action = @"\w+" });
             routes.MapRoute(
                 name: "Comments",
                 url: "game/{key}/{action}",
                 defaults: new { controller = "Comments", action = @"Details" },
-                constraints: new { key = @"^[A-Za-z0-9_-]{1,20}" });
+                constraints: new { key = @"^[A-Za-z0-9_-]{1,50}" });
             routes.MapRoute(
                 name: "Games",
                 url: "games/{action}",
@@ -31,24 +31,30 @@ namespace GameStore.Web
                 url: "publisher/{action}",
                 defaults: new {controller = "Publishers", action = @"\w+"});
             routes.MapRoute(
+            name: "OrdersHistory",
+            url: "orders/history",
+            defaults: new { controller = "Orders", action = "History" }
+            );
+            routes.MapRoute(
              name: "Order",
              url: "order",
              defaults: new { controller = "Orders", action = "Order" }
              );
             routes.MapRoute(
+            name: "Basket",
+            url: "basket",
+             defaults: new { controller = "Orders", action = "Basket", customerId ="" }
+            );
+            routes.MapRoute(
               name: "Orders",
               url: "orders/{action}",
               defaults: new { controller = "Orders", action = @"\w+" });
             routes.MapRoute(
-                name: "Basket",
-                url: "basket",
-                defaults: new { controller = "Orders", action = "Basket" }
-                );
-            routes.MapRoute(
-              name: "AddBasket",
-              url: "basket/{action}",
-              defaults: new { controller = "Orders", action = "AddToBasket" }
-              );
+         name: "Shipper",
+         url: "shipper",
+          defaults: new { controller = "Shipper", action = "Index", customerId = "" }
+         );
+
             routes.MapRoute(
                 name: "Default",
                 url: string.Empty,

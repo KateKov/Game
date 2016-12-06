@@ -2,6 +2,7 @@
 using GameStore.BLL.DTO;
 using GameStore.BLL.Infrastructure;
 using GameStore.BLL.Interfaces;
+using GameStore.DAL.Interfaces;
 
 namespace GameStore.BLL.Services
 {
@@ -17,9 +18,25 @@ namespace GameStore.BLL.Services
             {
                 throw new ValidationException("Property cannot be empty", "Key");
             }
-            if ((model is IDtoNamed).Equals(true) && string.IsNullOrEmpty(((IDtoNamed)model).Name))
+            if (model is IDtoNamed && string.IsNullOrEmpty((model as IDtoNamed).Name))
             {
                 throw new ValidationException("Property cannot be empty", "Name"); 
+            }
+            if (model is GameDTO && (model as GameDTO).Translates.Any(x => string.IsNullOrEmpty(x.Name)))
+            {
+                throw new ValidationException("Property cannot be empty", "Name");
+            }
+            if (model is GenreDTO && (model as GenreDTO).Translates.Any(x => string.IsNullOrEmpty(x.Name)))
+            {
+                throw new ValidationException("Property cannot be empty", "Name");
+            }
+            if (model is PlatformTypeDTO && (model as PlatformTypeDTO).Translates.Any(x => string.IsNullOrEmpty(x.Name)))
+            {
+                throw new ValidationException("Property cannot be empty", "Name");
+            }
+            if (model is PublisherDTO && (model as GameDTO).Translates.Any(x => string.IsNullOrEmpty(x.Name)))
+            {
+                throw new ValidationException("Property cannot be empty", "Name");
             }
         }
     }

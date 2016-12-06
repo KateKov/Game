@@ -1,0 +1,16 @@
+80000199-0000-f300-b63f-84710c7967bb|2016-11-25 16:48:00.5676|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Chang
+800005d4-0001-f100-b63f-84710c7967bb|2016-11-25 16:48:44.4743|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Game12_Game12
+80000651-0001-ec00-b63f-84710c7967bb|2016-11-25 17:39:46.6244|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Game7_Game7
+80000246-0002-f700-b63f-84710c7967bb|2016-11-25 19:40:48.8880|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Ikura
+80000133-0003-e900-b63f-84710c7967bb|2016-11-25 19:44:18.2138|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = 4
+80000095-0001-fc00-b63f-84710c7967bb|2016-11-25 19:45:46.8173|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = 5835a55b71c151964df0b650
+80000862-0001-ed00-b63f-84710c7967bb|2016-11-25 19:47:35.4088|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Game3
+80000097-0000-fa00-b63f-84710c7967bb|2016-11-25 19:49:19.1396|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Game9_Game9
+800000a1-0001-fc00-b63f-84710c7967bb|2016-11-25 19:49:47.1478|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = 5835a55b71c151964df0b652
+800006d5-0001-e900-b63f-84710c7967bb|2016-11-25 19:50:45.1007|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = 5835a55b71c151964df0b651
+8000005a-0003-ef00-b63f-84710c7967bb|2016-11-25 19:53:53.2693|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = 5835a55b71c151964df0b650
+8000011c-0001-fe00-b63f-84710c7967bb|2016-11-25 19:56:05.3482|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = 5835a55b71c151964df0b64e
+80000aac-0000-f400-b63f-84710c7967bb|2016-11-25 19:58:28.9621|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = 5835a55b71c151964df0b64e
+80000154-0003-e900-b63f-84710c7967bb|2016-11-25 20:04:14.3012|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = 5835a55b71c151964df0b64e
+80000649-0001-f700-b63f-84710c7967bb|2016-11-25 20:05:18.2218|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = 5835a55b71c151964df0b64f
+80000415-0000-e300-b63f-84710c7967bb|2016-11-25 20:06:21.5968|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = 5835a55b71c151964df0b64f

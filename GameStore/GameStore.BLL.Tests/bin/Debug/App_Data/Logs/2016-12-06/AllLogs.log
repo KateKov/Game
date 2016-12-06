@@ -1,0 +1,162 @@
+|2016-12-06 12:10:43.1752|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=name, Id=, ParentId= to game with Key=key
+|2016-12-06 12:10:43.2563|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=stub-name, Id=, ParentId=5f747560-7fe3-4c7c-9eed-7061c92a4541 to game with Key=key
+|2016-12-06 12:10:43.3754|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=stub-name, Id=, ParentId=99a60d75-e33f-4024-a3eb-656f0ef30790 to game with Key=key
+|2016-12-06 12:10:43.4154|DEBUG|GameStore.BLL.Services.OrdersService|Confirming order by id=23a79d96-4c86-4a43-94d3-202d4dade8bc 
+|2016-12-06 12:10:43.6366|DEBUG|GameStore.BLL.Services.OrdersService|Deleting busket by Customer id=00000000-0000-0000-0000-000000000000 
+|2016-12-06 12:10:43.6536|DEBUG|GameStore.BLL.Services.Service`2|Game deleting by Id = 50a2170c-910a-454f-9795-5e3a7901d882 
+|2016-12-06 12:10:43.7732|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+|2016-12-06 12:10:43.7997|DEBUG|GameStore.BLL.Services.CommentsService|Getting comments by key = key. Retured 2 comments
+|2016-12-06 12:10:43.8227|DEBUG|GameStore.BLL.Services.CommentsService|Getting comments by key = key. Retured 0 comments
+|2016-12-06 12:10:43.8337|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=stub-key 
+|2016-12-06 12:10:43.8708|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=stub-key 
+|2016-12-06 12:10:43.8708|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=2c96bcb2-833a-4cbf-80ea-fd389ee89a41 
+|2016-12-06 12:10:44.0139|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=key 
+|2016-12-06 12:10:44.0289|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+|2016-12-06 12:10:44.0409|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+|2016-12-06 12:10:44.0409|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+|2016-12-06 12:17:24.2974|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=name, Id=, ParentId= to game with Key=key
+|2016-12-06 12:17:24.3450|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=stub-name, Id=, ParentId=e9d341ff-8cdc-44e2-92a7-889c896e2d9f to game with Key=key
+|2016-12-06 12:17:24.3980|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=, Id=, ParentId= to game with Key=stub-key
+|2016-12-06 12:17:24.4585|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=, Id=, ParentId= to game with Key=stub-key
+|2016-12-06 12:17:24.5136|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=stub-name, Id=, ParentId=73cea152-93ac-43c2-927b-cf8d60b81bb4 to game with Key=key
+|2016-12-06 12:17:24.5486|DEBUG|GameStore.BLL.Services.OrdersService|Confirming order by id=5c3d8be4-0b02-4e31-9b7b-40ee0386ad6f 
+|2016-12-06 12:17:24.7298|DEBUG|GameStore.BLL.Services.OrdersService|Deleting busket by Customer id=00000000-0000-0000-0000-000000000000 
+|2016-12-06 12:17:24.7443|DEBUG|GameStore.BLL.Services.Service`2|Game deleting by Id = 798f7e9c-7353-4bb8-81f7-26d81184af39 
+|2016-12-06 12:17:24.8536|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+|2016-12-06 12:17:24.8796|DEBUG|GameStore.BLL.Services.CommentsService|Getting comments by key = key. Retured 2 comments
+|2016-12-06 12:17:24.8996|DEBUG|GameStore.BLL.Services.CommentsService|Getting comments by key = key. Retured 0 comments
+|2016-12-06 12:17:24.9096|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=stub-key 
+|2016-12-06 12:17:24.9386|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=stub-key 
+|2016-12-06 12:17:24.9386|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=ca0143ce-1be4-44b4-bdc6-8cd3662b1dd0 
+|2016-12-06 12:17:25.0322|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=key 
+|2016-12-06 12:17:25.0467|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+|2016-12-06 12:17:25.0467|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+|2016-12-06 12:17:25.0467|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+|2016-12-06 12:19:55.6318|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=name, Id=, ParentId= to game with Key=key
+|2016-12-06 12:19:55.6994|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=stub-name, Id=, ParentId=874fafeb-8671-4e66-98cc-95092ba3f2fc to game with Key=key
+|2016-12-06 12:19:55.8245|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=stub-name, Id=, ParentId=3e12c45a-873e-458f-b531-1b92775bee7e to game with Key=key
+|2016-12-06 12:19:55.8621|DEBUG|GameStore.BLL.Services.OrdersService|Confirming order by id=58b0d76e-11f1-44a3-8be8-681017be7661 
+|2016-12-06 12:19:56.0529|DEBUG|GameStore.BLL.Services.OrdersService|Deleting busket by Customer id=00000000-0000-0000-0000-000000000000 
+|2016-12-06 12:19:56.0529|DEBUG|GameStore.BLL.Services.Service`2|Game deleting by Id = 1379a3d8-0a08-4a4f-9156-608fb0010a22 
+|2016-12-06 12:19:56.1875|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+|2016-12-06 12:19:56.2185|DEBUG|GameStore.BLL.Services.CommentsService|Getting comments by key = key. Retured 2 comments
+|2016-12-06 12:19:56.2456|DEBUG|GameStore.BLL.Services.CommentsService|Getting comments by key = key. Retured 0 comments
+|2016-12-06 12:19:56.2546|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=stub-key 
+|2016-12-06 12:19:56.2826|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=stub-key 
+|2016-12-06 12:19:56.2906|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=ad02b328-5faa-40d7-8ebc-e469563db20e 
+|2016-12-06 12:19:56.3805|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=key 
+|2016-12-06 12:19:56.3965|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+|2016-12-06 12:19:56.3965|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+|2016-12-06 12:19:56.4105|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+|2016-12-06 12:21:13.3320|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=name, Id=, ParentId= to game with Key=key
+|2016-12-06 12:21:13.3830|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=stub-name, Id=, ParentId=98428f46-47fd-4741-b034-d573c8c6d9e0 to game with Key=key
+|2016-12-06 12:21:13.4668|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=stub-name, Id=, ParentId=5c4fb722-d428-4521-bd9d-eb536ecbef68 to game with Key=key
+|2016-12-06 12:21:13.5049|DEBUG|GameStore.BLL.Services.OrdersService|Confirming order by id=da09011b-4ef4-4cdf-8a74-e74090dc4b5e 
+|2016-12-06 12:21:13.6820|DEBUG|GameStore.BLL.Services.OrdersService|Deleting busket by Customer id=00000000-0000-0000-0000-000000000000 
+|2016-12-06 12:21:13.6970|DEBUG|GameStore.BLL.Services.Service`2|Game deleting by Id = bc0add69-b123-41a1-90cf-0d19aa7deb38 
+|2016-12-06 12:21:13.7991|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+|2016-12-06 12:21:13.8241|DEBUG|GameStore.BLL.Services.CommentsService|Getting comments by key = key. Retured 2 comments
+|2016-12-06 12:21:13.8441|DEBUG|GameStore.BLL.Services.CommentsService|Getting comments by key = key. Retured 0 comments
+|2016-12-06 12:21:13.8576|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=stub-key 
+|2016-12-06 12:21:13.8872|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=stub-key 
+|2016-12-06 12:21:13.8962|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=745bae84-1d99-4b73-8acd-6effd38d9448 
+|2016-12-06 12:21:13.9852|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=key 
+|2016-12-06 12:21:14.0013|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+|2016-12-06 12:21:14.0083|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+|2016-12-06 12:21:14.0083|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+|2016-12-06 12:23:05.2002|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=name, Id=, ParentId= to game with Key=key
+|2016-12-06 12:23:05.2523|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=stub-name, Id=, ParentId=f12acf79-6c25-4e9d-9f21-a201b521bf1d to game with Key=key
+|2016-12-06 12:23:05.3593|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=stub-name, Id=, ParentId=a70e799a-3087-4c3d-a46d-1e551284107b to game with Key=key
+|2016-12-06 12:23:05.3969|DEBUG|GameStore.BLL.Services.OrdersService|Confirming order by id=0d654c1c-653c-49ac-a886-00450d10df59 
+|2016-12-06 12:23:05.5755|DEBUG|GameStore.BLL.Services.OrdersService|Deleting busket by Customer id=00000000-0000-0000-0000-000000000000 
+|2016-12-06 12:23:05.5885|DEBUG|GameStore.BLL.Services.Service`2|Game deleting by Id = 97804a87-9d5b-4d66-94d2-2e6cdfc33eae 
+|2016-12-06 12:23:05.6986|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+|2016-12-06 12:23:05.7241|DEBUG|GameStore.BLL.Services.CommentsService|Getting comments by key = key. Retured 2 comments
+|2016-12-06 12:23:05.7441|DEBUG|GameStore.BLL.Services.CommentsService|Getting comments by key = key. Retured 0 comments
+|2016-12-06 12:23:05.7552|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=stub-key 
+|2016-12-06 12:23:05.7852|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=stub-key 
+|2016-12-06 12:23:05.7852|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=6ba23623-fb5c-49d2-ab84-fd7a7481f5b1 
+|2016-12-06 12:23:05.8837|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=key 
+|2016-12-06 12:23:05.8993|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+|2016-12-06 12:23:05.9068|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+|2016-12-06 12:23:05.9068|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+|2016-12-06 12:23:30.6327|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=name, Id=, ParentId= to game with Key=key
+|2016-12-06 12:23:30.7743|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=stub-name, Id=, ParentId=4e3a3e63-719d-4a63-ba72-9f47c9ca1837 to game with Key=key
+|2016-12-06 12:23:30.8773|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=stub-name, Id=, ParentId=2ef22210-2473-4832-b819-502a82cb3022 to game with Key=key
+|2016-12-06 12:23:30.9564|DEBUG|GameStore.BLL.Services.OrdersService|Confirming order by id=cb1b47d1-7d42-422f-9103-e7f57e85c328 
+|2016-12-06 12:23:31.2301|DEBUG|GameStore.BLL.Services.OrdersService|Deleting busket by Customer id=00000000-0000-0000-0000-000000000000 
+|2016-12-06 12:23:31.2541|DEBUG|GameStore.BLL.Services.Service`2|Game deleting by Id = a540137f-65ca-4dd7-9fca-8d45ed1a3018 
+|2016-12-06 12:23:31.4067|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+|2016-12-06 12:23:31.4352|DEBUG|GameStore.BLL.Services.CommentsService|Getting comments by key = key. Retured 2 comments
+|2016-12-06 12:23:31.4682|DEBUG|GameStore.BLL.Services.CommentsService|Getting comments by key = key. Retured 0 comments
+|2016-12-06 12:23:31.4877|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=stub-key 
+|2016-12-06 12:23:31.5518|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=stub-key 
+|2016-12-06 12:23:31.5518|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=06cf7504-eb8b-48dd-a2aa-1d58aa4f1db3 
+|2016-12-06 12:23:31.6974|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=key 
+|2016-12-06 12:23:31.7319|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+|2016-12-06 12:23:31.7409|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+|2016-12-06 12:23:31.7514|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+|2016-12-06 12:24:42.1275|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=name, Id=, ParentId= to game with Key=key
+|2016-12-06 12:24:42.1775|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=stub-name, Id=, ParentId=9e849e16-3b96-4ddd-aa41-60c1387ed478 to game with Key=key
+|2016-12-06 12:24:42.2701|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=stub-name, Id=, ParentId=0849cb00-18ca-4d60-ae6d-836a9d07da77 to game with Key=key
+|2016-12-06 12:24:42.3121|DEBUG|GameStore.BLL.Services.OrdersService|Confirming order by id=bb5abc50-d61c-4d34-aaae-4aaf2b1a4396 
+|2016-12-06 12:24:42.4892|DEBUG|GameStore.BLL.Services.OrdersService|Deleting busket by Customer id=00000000-0000-0000-0000-000000000000 
+|2016-12-06 12:24:42.5017|DEBUG|GameStore.BLL.Services.Service`2|Game deleting by Id = 94c9c9f3-3b9a-40eb-b6da-a11252c85e2c 
+|2016-12-06 12:24:42.6083|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+|2016-12-06 12:24:42.6343|DEBUG|GameStore.BLL.Services.CommentsService|Getting comments by key = key. Retured 2 comments
+|2016-12-06 12:24:42.6544|DEBUG|GameStore.BLL.Services.CommentsService|Getting comments by key = key. Retured 0 comments
+|2016-12-06 12:24:42.6544|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=stub-key 
+|2016-12-06 12:24:42.6944|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=stub-key 
+|2016-12-06 12:24:42.7019|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=524c87dd-d9b0-4880-b29d-102954a177bd 
+|2016-12-06 12:24:42.7935|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=key 
+|2016-12-06 12:24:42.8080|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+|2016-12-06 12:24:42.8080|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+|2016-12-06 12:24:42.8232|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+|2016-12-06 12:26:00.7319|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=name, Id=, ParentId= to game with Key=key
+|2016-12-06 12:26:00.7890|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=stub-name, Id=, ParentId=7b6dcba4-9d51-42c7-9bc1-6dfa6cc7ca07 to game with Key=key
+|2016-12-06 12:26:00.8819|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=stub-name, Id=, ParentId=df010833-9702-46db-bc4a-6770f337cc82 to game with Key=key
+|2016-12-06 12:26:00.9220|DEBUG|GameStore.BLL.Services.OrdersService|Confirming order by id=97759232-66dc-4b42-a9dd-ec608cae547f 
+|2016-12-06 12:26:01.1081|DEBUG|GameStore.BLL.Services.OrdersService|Deleting busket by Customer id=00000000-0000-0000-0000-000000000000 
+|2016-12-06 12:26:01.1201|DEBUG|GameStore.BLL.Services.Service`2|Game deleting by Id = 5b71f6a8-c51d-4ee7-84a0-010fa82fe2d1 
+|2016-12-06 12:26:01.2312|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+|2016-12-06 12:26:01.2552|DEBUG|GameStore.BLL.Services.CommentsService|Getting comments by key = key. Retured 2 comments
+|2016-12-06 12:26:01.2752|DEBUG|GameStore.BLL.Services.CommentsService|Getting comments by key = key. Retured 0 comments
+|2016-12-06 12:26:01.2752|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=stub-key 
+|2016-12-06 12:26:01.3143|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=stub-key 
+|2016-12-06 12:26:01.3223|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=21d1543e-2bbd-400f-ae90-30af33f64347 
+|2016-12-06 12:26:01.4163|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=key 
+|2016-12-06 12:26:01.4303|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+|2016-12-06 12:26:01.4303|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+|2016-12-06 12:26:01.4474|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+|2016-12-06 12:26:59.6893|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=name, Id=, ParentId= to game with Key=key
+|2016-12-06 12:26:59.7543|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=stub-name, Id=, ParentId=8698ae2b-34de-4e98-97b2-cb81b62ea132 to game with Key=key
+|2016-12-06 12:26:59.8464|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=stub-name, Id=, ParentId=ae66d53d-5ec5-460e-8802-a98b965f3831 to game with Key=key
+|2016-12-06 12:26:59.8839|DEBUG|GameStore.BLL.Services.OrdersService|Confirming order by id=30bbc8a3-8d31-4895-93d1-e779cb64281a 
+|2016-12-06 12:27:00.0756|DEBUG|GameStore.BLL.Services.OrdersService|Deleting busket by Customer id=00000000-0000-0000-0000-000000000000 
+|2016-12-06 12:27:00.0866|DEBUG|GameStore.BLL.Services.Service`2|Game deleting by Id = 6ac36e0b-bdc5-422e-9ce3-990980e994a2 
+|2016-12-06 12:27:00.2007|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+|2016-12-06 12:27:00.2277|DEBUG|GameStore.BLL.Services.CommentsService|Getting comments by key = key. Retured 2 comments
+|2016-12-06 12:27:00.2487|DEBUG|GameStore.BLL.Services.CommentsService|Getting comments by key = key. Retured 0 comments
+|2016-12-06 12:27:00.2587|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=stub-key 
+|2016-12-06 12:27:00.2917|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=stub-key 
+|2016-12-06 12:27:00.2917|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=0167b505-2a8d-4d7f-95d3-cedc8ce143ea 
+|2016-12-06 12:27:00.4008|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=key 
+|2016-12-06 12:27:00.4188|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+|2016-12-06 12:27:00.4293|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+|2016-12-06 12:27:00.4293|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+|2016-12-06 12:29:07.4110|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=name, Id=, ParentId= to game with Key=key
+|2016-12-06 12:29:07.4581|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=stub-name, Id=, ParentId=34cb6b61-9166-4ae8-b9a6-dfd439ddd15a to game with Key=key
+|2016-12-06 12:29:07.5587|DEBUG|GameStore.BLL.Services.CommentsService|Adding new comment with Author=stub-name, Id=, ParentId=5cc68607-a8b4-4a94-a1aa-a1dee3ca943a to game with Key=key
+|2016-12-06 12:29:07.5987|DEBUG|GameStore.BLL.Services.OrdersService|Confirming order by id=b64a671e-638a-4b8f-80f1-f31651753c0f 
+|2016-12-06 12:29:07.7831|DEBUG|GameStore.BLL.Services.OrdersService|Deleting busket by Customer id=00000000-0000-0000-0000-000000000000 
+|2016-12-06 12:29:07.7961|DEBUG|GameStore.BLL.Services.Service`2|Game deleting by Id = 7f7867df-04a5-4140-bb32-555d70487c3e 
+|2016-12-06 12:29:07.9017|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+|2016-12-06 12:29:07.9257|DEBUG|GameStore.BLL.Services.CommentsService|Getting comments by key = key. Retured 2 comments
+|2016-12-06 12:29:07.9452|DEBUG|GameStore.BLL.Services.CommentsService|Getting comments by key = key. Retured 0 comments
+|2016-12-06 12:29:07.9452|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=stub-key 
+|2016-12-06 12:29:07.9867|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=stub-key 
+|2016-12-06 12:29:07.9957|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=916a255d-3234-4ca0-be0f-0b2f6527519b 
+|2016-12-06 12:29:08.0828|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=key 
+|2016-12-06 12:29:08.0978|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+|2016-12-06 12:29:08.1058|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+|2016-12-06 12:29:08.1058|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 

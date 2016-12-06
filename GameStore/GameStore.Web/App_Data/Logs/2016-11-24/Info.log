@@ -1,0 +1,4 @@
+80000657-0000-f200-b63f-84710c7967bb|2016-11-24 18:11:15.5514|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Sims3_16in1
+800004d4-0000-f400-b63f-84710c7967bb|2016-11-24 19:26:44.1738|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Game11_Game11
+80000050-0002-e300-b63f-84710c7967bb|2016-11-24 20:02:03.1611|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = Game11_Game11
+800000eb-0001-f600-b63f-84710c7967bb|2016-11-24 20:02:47.9574|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = 5835a55b71c151964df0b656

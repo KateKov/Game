@@ -1,0 +1,80 @@
+﻿@using GameStore.Web.Helpers
+@using GameStore.Web.Helpers.Paging
+@using GameStore.Web.ViewModels
+@model OrderFilteringViewModel
+@{
+    ViewBag.Title = "Orders";
+}
+
+@Html.Action("Filters", "Orders", Model.Filter)
+@if (Model.Orders.ToList().Count > 0)
+{
+    <table class="table">
+        <tr>
+            <th>
+                @Html.Label("Order ID")
+            </th>
+            <th>
+                @Html.Label("Customer ID")
+            </th>
+            <th>
+               @Html.Label("Date of Order")
+            </th>
+            <th>
+                @Html.Label("Sum of order")
+            </th>
+            <th>
+                @Html.Label("Order Details:")
+            </th>
+           
+        </tr>
+
+        @foreach (var item in Model.Orders)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CustomerId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sum)
+                </td>
+                <td>
+                    @foreach (var x in item.OrderDetails)
+                    {
+                        <div>Id: @x.Id Price: @x.Price Quantity: @x.Quantity  </div>
+                    }
+                </td>
+               
+            </tr>
+        }
+    </table>
+}
+
+
+<div class="text-center">
+    <ul class="pagination">
+        @Html.Pager(Model.Page, (int)Model.PageSize, Model.TotalItemsCount, "Page").Options(o => o
+        .AddRouteDataValue(Html.QueryStringParametersAsRouteValueDictionaryExceptFor("Page")))
+    </ul>
+</div>
+
+@using (Html.BeginForm("History", "Orders", FormMethod.Get, new { @class = "form-horizontal" }))
+{
+    @Html.HiddenQueryStringParametersExceptFor("PageSize", "Page")
+    <div class="col-lg-3">
+        @Html.EnumDropDownListFor(x => x.PageSize, new { @class = "form-control" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Check</button>
+
+}
+
+
+
+

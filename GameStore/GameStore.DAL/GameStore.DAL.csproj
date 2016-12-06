@@ -30,47 +30,171 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=5.2.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.5.2.0\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AutoMapper.Extensions.Microsoft.DependencyInjection, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.Extensions.Microsoft.DependencyInjection.1.1.2\lib\net451\AutoMapper.Extensions.Microsoft.DependencyInjection.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="FluentValidation, Version=6.2.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FluentValidation.6.2.1.0\lib\Net45\FluentValidation.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.3.0.157, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Bson.2.3.0\lib\net45\MongoDB.Bson.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.3.0.157, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.2.3.0\lib\net45\MongoDB.Driver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.3.0.157, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.Core.2.3.0\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.GridFS, Version=2.3.0.157, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.GridFS.2.3.0\lib\net45\MongoDB.Driver.GridFS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Legacy, Version=2.3.0.157, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\mongocsharpdriver.2.3.0\lib\net45\MongoDB.Driver.Legacy.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
       <HintPath>..\packages\NLog.4.3.10\lib\net45\NLog.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="NLog.Mongo, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.Mongo.4.0.0.43\lib\net45\NLog.Mongo.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StructureMap, Version=4.4.2.472, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\StructureMap.4.4.2\lib\net45\StructureMap.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\..\..\..\Downloads\GitGame\Game\GameStore\GameStore.Web.Tests\bin\Debug\System.Web.Mvc.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EF\GameStoreContext.cs" />
     <Compile Include="EF\GameStoreDbInitializer.cs" />
     <Compile Include="Entities\Comment.cs" />
+    <Compile Include="Entities\EntityWithName.cs" />
     <Compile Include="Entities\Game.cs" />
     <Compile Include="Entities\Genre.cs" />
     <Compile Include="Entities\Order.cs" />
     <Compile Include="Entities\OrderDetail.cs" />
     <Compile Include="Entities\PlatformType.cs" />
     <Compile Include="Entities\Publisher.cs" />
-    <Compile Include="Infrastracture\Repository.cs" />
+    <Compile Include="Entities\Translation\EntityTranslate.cs" />
+    <Compile Include="Entities\Translation\GameTranslate.cs" />
+    <Compile Include="Entities\Translation\GenreTranslate.cs" />
+    <Compile Include="Entities\Translation\PlatformTypeTranslate.cs" />
+    <Compile Include="Entities\Translation\PublisherTranslate.cs" />
+    <Compile Include="Enums\FilterEnums.cs" />
+    <Compile Include="Enums\LanguageEnums.cs" />
+    <Compile Include="Enums\PageEnum.cs" />
+    <Compile Include="Infrastracture\CommonRepository.cs" />
+    <Compile Include="Infrastracture\MongoConnectionHandler.cs" />
+    <Compile Include="Infrastracture\MongoRepository.cs" />
+    <Compile Include="Infrastracture\Query.cs" />
+    <Compile Include="Infrastracture\QueryResult.cs" />
+    <Compile Include="Infrastracture\SQLRepository.cs" />
     <Compile Include="Infrastracture\UnitOfWork.cs" />
     <Compile Include="Interfaces\IEntityBase.cs" />
     <Compile Include="Interfaces\IEntityNamed.cs" />
     <Compile Include="Interfaces\IEntityWithKey.cs" />
+    <Compile Include="Interfaces\IMongoEntity.cs" />
+    <Compile Include="Interfaces\IMongoRepository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Interfaces\ITranslate.cs" />
+    <Compile Include="Interfaces\ITranslateNamed.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
+    <Compile Include="Mapping\GetMongo.cs" />
+    <Compile Include="Mapping\MongoToSql.cs" />
+    <Compile Include="Migrations\201611291139442_InitialCreate.cs" />
+    <Compile Include="Migrations\201611291139442_InitialCreate.Designer.cs">
+      <DependentUpon>201611291139442_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611291254231_initial_migration.cs" />
+    <Compile Include="Migrations\201611291254231_initial_migration.Designer.cs">
+      <DependentUpon>201611291254231_initial_migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611300952340_second_migration.cs" />
+    <Compile Include="Migrations\201611300952340_second_migration.Designer.cs">
+      <DependentUpon>201611300952340_second_migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612051131456_PayedOrder.cs" />
+    <Compile Include="Migrations\201612051131456_PayedOrder.Designer.cs">
+      <DependentUpon>201612051131456_PayedOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612051140320_payedorderdetail.cs" />
+    <Compile Include="Migrations\201612051140320_payedorderdetail.Designer.cs">
+      <DependentUpon>201612051140320_payedorderdetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612061034159_localization.cs" />
+    <Compile Include="Migrations\201612061034159_localization.Designer.cs">
+      <DependentUpon>201612061034159_localization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612061601087_local.cs" />
+    <Compile Include="Migrations\201612061601087_local.Designer.cs">
+      <DependentUpon>201612061601087_local.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="MongoEntities\Category.cs" />
+    <Compile Include="Entities\EntityBase.cs" />
+    <Compile Include="MongoEntities\Logging.cs" />
+    <Compile Include="MongoEntities\MongoBase.cs" />
+    <Compile Include="MongoEntities\OrderDetailMongo.cs" />
+    <Compile Include="MongoEntities\OrderMongo.cs" />
+    <Compile Include="MongoEntities\Product.cs" />
+    <Compile Include="MongoEntities\Shipper.cs" />
+    <Compile Include="MongoEntities\Supplier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201611291139442_InitialCreate.resx">
+      <DependentUpon>201611291139442_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611291254231_initial_migration.resx">
+      <DependentUpon>201611291254231_initial_migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611300952340_second_migration.resx">
+      <DependentUpon>201611300952340_second_migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612051131456_PayedOrder.resx">
+      <DependentUpon>201612051131456_PayedOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612051140320_payedorderdetail.resx">
+      <DependentUpon>201612051140320_payedorderdetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612061034159_localization.resx">
+      <DependentUpon>201612061034159_localization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612061601087_local.resx">
+      <DependentUpon>201612061601087_local.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

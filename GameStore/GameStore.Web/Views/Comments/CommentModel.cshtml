@@ -1,0 +1,33 @@
+﻿@using GameStore.Web.ViewModels
+@model CommentViewModel
+
+<div class="comments">
+    <div class="comment dialog">
+
+        <span>@Html.ActionLink("Answer", "NewComment", "Comments", new { gameKey = Model.GameKey, parentId = Model.Id }, new { @class = "viewDialog", data_dialog_title = "Answer for " + Model.Name })</span>
+        <span>@Html.ActionLink("Quote", "NewComment", "Comments", new { gameKey = Model.GameKey, parentId = Model.Id, body = Model.Body }, new { @class = "viewDialog", data_dialog_title = "Answer for " + Model.Name })</span>
+        <span>@Html.ActionLink("Delete", "Delete", "Comments", new { gameKey = Model.GameKey, commentId = Model.Id }, new { onclick = "return confirm('Delete this comment?')" })</span>
+        <hr />
+        <p>  <span>@Html.ActionLink("Ban", "Ban", "Comments", new { name = Model.Name })</span></p>
+        <b> @Model.Name</b>
+        <p>
+            @if (!string.IsNullOrEmpty(Model.Quote))
+            {
+            <p>
+                <blockquote>
+                    @Model.Quote
+                </blockquote>
+            </p>
+            }
+            @if (Model.ParentCommentId != null)
+            {
+                @Model.ParentCommentName
+            }
+            <p>
+                @Model.Body
+            </p>
+            </p>
+        </div>
+    </div>
+
+

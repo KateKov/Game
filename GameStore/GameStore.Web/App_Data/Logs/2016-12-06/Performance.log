@@ -1,0 +1,6 @@
+80000024-0001-f700-b63f-84710c7967bb|2016-12-06 12:40:12.6210|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 20708
+8000000c-0003-f500-b63f-84710c7967bb|2016-12-06 12:41:46.3810|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 1889
+80000016-0002-f000-b63f-84710c7967bb|2016-12-06 12:56:08.2370|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 3669
+80000027-0000-f400-b63f-84710c7967bb|2016-12-06 14:36:45.3558|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 4895
+80000139-0000-f600-b63f-84710c7967bb|2016-12-06 14:39:58.4314|DEBUG|performance|Performance info: URI = http://localhost:65078/; Time(ms) = 151072
+800001be-0001-fa00-b63f-84710c7967bb|2016-12-06 14:41:14.1437|DEBUG|performance|Performance info: URI = http://localhost:65078/Games/Index; Time(ms) = 4379

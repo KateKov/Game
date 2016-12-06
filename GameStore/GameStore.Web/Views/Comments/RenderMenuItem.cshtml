@@ -1,0 +1,22 @@
+﻿@using GameStore.Web.ViewModels
+@model RenderCommentsMenuItem
+@foreach (var cp in Model.MenuList.Where(p => p.ParentCommentId == Model.Current.Id))
+{
+@:<li>
+    @Html.Partial("CommentModel", cp)
+    if (Model.MenuList.Count(p => p.ParentCommentId == Model.Current.Id) > 0)
+    {
+    @:<ul>
+        }
+
+        @Html.Partial("RenderMenuItem", new RenderCommentsMenuItem { MenuList = Model.MenuList, Current = cp})
+
+        if (Model.MenuList.Count(p => p.ParentCommentId == Model.Current.Id) > 0)
+        {
+        @:</ul>
+    }
+    else
+    {
+    @:</li>
+    }
+}

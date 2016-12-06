@@ -1,91 +1,50 @@
 ﻿@using GameStore.Web.ViewModels
 @model PublisherViewModel
-
-
-
-
 @{
-
     ViewBag.Title = "Details";
-
     Layout = "~/Views/Shared/_Layout.cshtml";
-
 }
-
 <div id="quest_form">
-
     <h2>Details</h2>
-
-
-
-    <div>
-
-
-
+       <div>
         <hr />
-
         <dl class="dl-horizontal">
-
             <dt>
-                <p><b>
+                <p>
                        <b>   @Html.DisplayNameFor(model => model.Name)</b>
-                    </b>
                 </p>
             </dt>
-
-
-
             <dd>
-                <p><b>
-                    @Html.DisplayFor(model => model.Name)
-                </b></p>
+                <p>
+                    <b>@Html.DisplayFor(model => model.Name)</b>
+                </p>
             </dd>
-
-
-
             <dt>
                 <p>
                     <b>  @Html.DisplayNameFor(model => model.Description)</b>
                 </p>
             </dt>
-
-
-
             <dd>
                 <p>
                    @Html.DisplayFor(model => model.Description)
                 </p>
             </dd>
-
-
-
             <dt>
                 <p>
                     <b>  @Html.DisplayNameFor(model => model.HomePage)</b>
                 </p>
             </dt>
-
-
-
             <dd>
                 <p>
                     @Html.DisplayFor(model => model.HomePage)
                 </p>
             </dd>
-
-
-
         </dl>
 
     </div>
 
 </div>
-
-<p>
-
-  
-
+<p> 
     @Html.ActionLink("Publishers", "Index")
-
 </p>
 

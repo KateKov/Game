@@ -1,49 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using GameStore.Web.Providers;
+using GameStore.DAL.Enums;
 
 namespace GameStore.Web.ViewModels
 {
     public class FilterViewModel
     {
-        public List<CheckBox> ListGenres { get; set; }
-        public ICollection<string> SelectedGenres { get; set; }
-        public List<CheckBox> ListTypes { get; set; }
-        public ICollection<string> SelectedType { get; set; }
-        public List<CheckBox> ListPublishers { get; set; }
-        public ICollection<string> SelectedPublishers { get; set; }
+        [DisplayName("Genres")]
+        public IEnumerable<CheckBox> ListGenres { get; set; }
+        public IEnumerable<CheckBox> SelectedGenres { get; set; }
+        public IEnumerable<string> SelectedGenresName { get; set; }
+        [DisplayName("Types")]
+        public IEnumerable<CheckBox> ListTypes { get; set; }
+        public IEnumerable<CheckBox> SelectedType { get; set; }
+        public IEnumerable<string> SelectedTypesName { get; set; }
+        [DisplayName("Publishers")]
+        public IEnumerable<CheckBox> ListPublishers { get; set; }
+        public IEnumerable<CheckBox> SelectedPublishers { get; set; }
+        public IEnumerable<string> SelectedPublishersName { get; set; }
+        public Date DateOfAdding { get; set; }
+        public Filter FilterBy { get; set; }
 
-        public string SelectedFilter { get; set; }
-        public enum Filter
-        {
-            [Display(Name = "Most popular")]
-            Popularity = 1,
-            [Display(Name = "Most commented")]
-            Comments = 2,
-            [Display(Name = "By price ascending")]
-            PriceAsc = 3,
-            [Display(Name = "By price descending")]
-            PriceDesc = 4,
-            [Display(Name = "New")]
-            New
-        }
+        [DisplayName("From price")]
+        [Range(0, 100000, ErrorMessage = "The price from isn't correct")]
+        public decimal? MinPrice { get; set; }
+        [DisplayName("To price")]
+        [Range(0, 100000, ErrorMessage = "The price to isn't correct")]
+        public decimal? MaxPrice { get; set; }
 
-        public decimal priceFrom { get; set; }
-        public decimal priceTo { get; set; }
-
-        public enum Date
-        {
-            [Display(Name = "last week")]
-            week,
-            [Display(Name = "last month")]
-            month,
-            [Display(Name = "2 year")]
-            twoyear,
-            [Display(Name = "3 year")]
-            threeyear
-        };
-
-        public string NameSearch { get; set; }
+        [MaxLength(20, ErrorMessage = "The length of name is invalid")]
+        public string Name { get; set; }
     }
 }

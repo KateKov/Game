@@ -1,87 +1,54 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Net;
 using System.Web.Mvc;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using AutoMapper;
 using GameStore.BLL.DTO;
+using GameStore.BLL.DTO.Translation;
 using GameStore.BLL.Infrastructure;
 using GameStore.BLL.Interfaces;
-using GameStore.DAL.Entities;
+using GameStore.BLL.Interfaces.Services;
+using GameStore.DAL.Enums;
 using GameStore.Web.Providers;
 using GameStore.Web.ViewModels;
 using NLog;
+using WebGrease.Css.Extensions;
+using Filter = GameStore.DAL.Enums.Filter;
 
 namespace GameStore.Web.Controllers
 {
     public class GamesController : Controller
     {
-        private readonly IService _service;
-        private readonly IGameService _gameService;
+        private readonly IGameStoreService _service;
         private readonly ILogger _logger = LogManager.GetCurrentClassLogger();
-        public GamesController(IService service, IGameService gameService)
+        private readonly IGameService _gameService;
+        public GamesController(IGameStoreService service, IGameService gameService)
         {
             _service = service;
             _gameService = gameService;
         }
       
         [HttpGet]   
-        public ActionResult Index()
+        public ActionResult Index(FilterViewModel gameFilterViewModel,  int page = 1,  PageEnum pageSize = PageEnum.Ten)
         {
-            var games = Mapper.Map<IEnumerable<GameViewModel>>(_service.GetAll<GameDTO>());
-            var gamesWithFilter = new GameFilteringViewModel() {Filter = GetDefaultFilters(), Games = games};
-            return View(gamesWithFilter);
-        }
-
-        private FilterViewModel GetDefaultFilters()
-        {
-            var filter = new FilterViewModel()
+            //var filterDto = Mapper.Map<FilterDTO>(gameFilterViewModel);
+            //var filterResult = _gameService.GetAllByFilter(filterDto, page, pageSize);
+            //var gameViewModel = Mapper.Map<IEnumerable<GameViewModel>>(filterResult.Games);
+            var games = _service.GenericService<GameDTO>().GetAll();
+            var gameListViewModel = new GameFilteringViewModel
             {
-                ListGenres = _service.GetAll<GenreDTO>().Select(x => new Providers.CheckBox() { Text = x.Name, Checked = false }).ToList(),
-                ListPublishers = _service.GetAll<PublisherDTO>().Select(x => new Providers.CheckBox() { Text = x.Name, Checked = false }).ToList(),
-                ListTypes = _service.GetAll<PlatformTypeDTO>().Select(x => new Providers.CheckBox() { Text = x.Name, Checked = false }).ToList()
+                //Games = gameViewModel,
+                
+                Games = Mapper.Map<List<GameViewModel>>(games),
+                Filter = gameFilterViewModel,
+                Page = page,
+                PageSize = pageSize,
+                //TotalItemsCount = filterResult.Count
+                TotalItemsCount = 100
             };
-            return filter;
+            return View(gameListViewModel);
         }
 
-        private IEnumerable<GameViewModel> GetValues<T>(IEnumerable<GameViewModel> games, string name) where T : class, IDtoNamed, new()
-        {
-            return Mapper.Map<IEnumerable<GameViewModel>>(
-                _gameService.GetGamesByNameOfProperty<GenreDTO>(
-                    Mapper.Map<IEnumerable<GameDTO>>(games), name));
-        }
-
-        [HttpPost]
-        public ActionResult Filter(FilterViewModel filter)
-        {
-            var games = new List<GameViewModel>();
-            var selectedGenres = filter.ListGenres.Where(x=>x.Checked).Select(x =>x.Text).ToList();
-            var selectedTypes = filter.ListTypes.Where(x => x.Checked).Select(x => x.Text).ToList();
-            var selectedPublishers = filter.ListPublishers.Where(x => x.Checked).Select(x => x.Text).ToList();
-            if (selectedPublishers.Count<1 && selectedPublishers.Count < 1 && selectedGenres.Count < 1 && string.IsNullOrEmpty(filter.SelectedFilter))
-            {
-                games = Mapper.Map<IEnumerable<GameViewModel>>(_service.GetAll<GameDTO>()).ToList();
-            }
-            else
-            {
-                selectedGenres.ForEach(
-                    x =>
-                        games.AddRange(GetValues<GenreDTO>(games,x)));
-                selectedTypes.ForEach(
-                    x =>
-                        games.AddRange(GetValues<PlatformTypeDTO>(games, x)));
-                selectedPublishers.ForEach(
-                    x =>
-                        games.AddRange(GetValues<PublisherDTO>(games, x)));
-                var gamesDto = Mapper.Map<IEnumerable<GameDTO>>(games);
-                games = Mapper.Map<IEnumerable<GameViewModel>>(_gameService.Filter(gamesDto, filter.SelectedFilter)).ToList();
-            }
-            var gamesWithFilters = new GameFilteringViewModel() {Filter = filter, Games = games};
-            return View("Index", gamesWithFilters);
-        }
 
         [HttpGet]
         public ActionResult New()
@@ -101,9 +68,9 @@ namespace GameStore.Web.Controllers
             {
                 var gameViewModel = game;
                 gameViewModel.DateOfAdding = DateTime.UtcNow;
-                gameViewModel.Key = GenerateKey(game.Name, game.PublisherName);
+                gameViewModel.Key = GenerateKey(game.Name);
                 var gameDto = Mapper.Map<GameDTO>(gameViewModel);
-                _service.AddOrUpdate(gameDto, true);
+                _service.GenericService<GameDTO>().AddOrUpdate(gameDto, true);
                 _logger.Info("Game is created. Id {0} Key {1} ", gameViewModel.Id, gameViewModel.Key);
                 return RedirectToAction("Index");
             }
@@ -115,24 +82,27 @@ namespace GameStore.Web.Controllers
         {
             game.AllPublishers =
               Mapper.Map<IEnumerable<PublisherDTO>, IEnumerable<PublisherViewModel>>(
-                  _service.GetAll<PublisherDTO>()).ToList();
+                  _service.GenericService<PublisherDTO>().GetAll()).ToList();
             game.AllTypes =
                 Mapper.Map<IEnumerable<PlatformTypeDTO>, IEnumerable<PlatformTypeViewModel>>(
-                    _service.GetAll<PlatformTypeDTO>()).ToList();
+                    _service.GenericService<PlatformTypeDTO>().GetAll()).ToList();
             game.AllGenres =
-                Mapper.Map<IEnumerable<GenreDTO>, IEnumerable<GenreViewModel>>(_service.GetAll<GenreDTO>()).ToList();
+                Mapper.Map<IEnumerable<GenreDTO>, IEnumerable<GenreViewModel>>(_service.GenericService<GenreDTO>().GetAll()).ToList();
             return game;
         }
 
-        private string GenerateKey(string name, string publisherName)
+        private string GenerateKey(string name)
         {
-            return name+"_"+publisherName;
+            var keyArray = name.Split(' ');
+            string key = "";
+            keyArray.ForEach(x => key += x + "_");
+            return key.Substring(0, key.Length - 2);
         }
 
         [HttpGet]
         public ActionResult Update(string key)
         {
-            var game = _service.GetByKey<GameDTO>(key);
+            var game = _service.KeyService<GameDTO>().GetByKey(key);
             var gameUpdate = Mapper.Map<GameDTO, UpdateGameViewModel>(game);
             gameUpdate = GetModels(gameUpdate);
             return View(gameUpdate);
@@ -144,9 +114,9 @@ namespace GameStore.Web.Controllers
             _logger.Info("Request to GamesController.Update");
             if(ModelState.IsValid)
             {
-                var gameDto = Mapper.Map<UpdateGameViewModel, GameDTO>(game);
-                _service.AddOrUpdate(gameDto, false);
-                 Response.StatusCode=(int) HttpStatusCode.OK;
+                var gameViewModel = game;
+                var gameDto = Mapper.Map<GameDTO>(gameViewModel);
+                _service.GenericService<GameDTO>().AddOrUpdate(gameDto, false);
                 return RedirectToAction("Index");
             }
             game = GetModels(game);
@@ -154,10 +124,62 @@ namespace GameStore.Web.Controllers
         }
               
         [HttpGet]
-        public ActionResult AddToBasket(string gameId, short unitsInStock, string customerId="")
+        public ActionResult AddToBasket(string gameKey, short unitsInStock, string customerId="")
         {
-            var basket = new BasketViewModel() {GameId = gameId, CustomerId = customerId, UnitInStock = unitsInStock};
+            var basket = new BasketViewModel() { GameKey = gameKey, CustomerId = customerId, UnitInStock = unitsInStock };
             return PartialView("AddToBasket", basket);
+        }
+
+        [OutputCache(Duration = 60)]
+        [ChildActionOnly]
+        public ActionResult CountGames()
+        {
+            var count = _service.GenericService<GameDTO>().GetAll().Count();
+            return PartialView("CountGames", count);
+        }
+
+        [ChildActionOnly]
+        public PartialViewResult Filters(FilterViewModel model)
+        {
+            var filterViewModel = GetFilterViewModel(model.SelectedGenresName, model.SelectedTypesName, model.SelectedPublishersName);
+            return PartialView("Filter",filterViewModel);
+        }
+
+        private FilterViewModel GetFilterViewModel(IEnumerable<string> genresName = null, IEnumerable<string> typesName = null, IEnumerable<string> publishersName = null)
+        { 
+            var model = new FilterViewModel()
+            {
+                ListGenres = GetListOfItems<GenreDTOTranslate>(),
+                ListTypes = GetListOfItems<PlatformTypeDTOTranslate>(),
+                ListPublishers = GetListOfItems<PublisherDTOTranslate>()
+            };
+            if (genresName != null)
+            {
+                model.SelectedGenres = model.ListGenres.Where(x => genresName.Contains(x.Text));
+                model.SelectedGenresName = genresName;
+            }
+            if (typesName != null)
+            {
+                model.SelectedType = model.ListTypes.Where(x => typesName.Contains(x.Text));
+                model.SelectedTypesName = typesName;
+            }
+            if (publishersName != null)
+            {
+                model.SelectedPublishers = model.ListPublishers.Where(x => publishersName.Contains(x.Text));
+                model.SelectedPublishersName = publishersName;
+            }
+            return model;
+        }
+
+        private List<CheckBox> GetListOfItems<T>() where T : class, IDtoNamed, new()
+        {
+            var list= new List<CheckBox>();
+            _service.GenericService<T>().GetAll().ToList().ForEach(x => list.Add(new CheckBox()
+            {
+                Text = x.Name,
+                Checked = false
+            }));
+            return list;
         }
     }
 }

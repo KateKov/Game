@@ -1,28 +1,23 @@
-﻿
+﻿@using GameStore.Web.Helpers
+@using GameStore.Web.Helpers.Paging
 @using GameStore.Web.ViewModels
-
 @model GameFilteringViewModel
-
-
-
 @{
     ViewBag.Title = "Games";
 }
-
-<link href='@Url.Content("~/Content/themes/base/jquery-ui.css")' rel="stylesheet" type="text/css"/>
-
-
 <p>
     <span>@Html.ActionLink("Create New", "New", null, new {@class = "btn btn-info"}) </span>
 </p>
-
-@Html.Partial("Filter", Model.Filter)
+@*@Html.Action("Filters", "Games", Model.Filter)*@
 @if (Model.Games.ToList().Count > 0)
 {
     <table class="table">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Games.First().Key)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Games.First().DateOfAdding)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Games.First().Name)
@@ -54,7 +49,11 @@
         {
             <tr>
                 <td>
+                    @Html.HiddenFor(modelItem => item.Id)
                     @Html.DisplayFor(modelItem => item.Key)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateOfAdding)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Name)
@@ -94,49 +93,37 @@
                     <p></p>
                     <span> @Html.ActionLink("Details", "Details", "Comments", new {key = item.Key}, new {@class = "btn btn-info"}) </span>
                     <p></p>
-                    <span>@Html.ActionLink("Buy", "AddToBasket", "Games", new {gameId = item.Id, unitsInStock = item.UnitsInStock}, new {@class = "viewDialog btn btn-primary", data_dialog_title = "Add game"}) </span>                         
+                    @if (item.UnitsInStock > 0)
+                    {
+                        <span>@Html.ActionLink("Buy", "AddToBasket", "Games", new { gameKey = item.Key, unitsInStock = item.UnitsInStock }, new { @class = "viewDialog1 btn btn-primary", data_dialog_title = "Add game" })  </span>
+                    }
+                                       
                 </td>
             </tr>
         }
-
-
     </table>
 }
-<script src='@Url.Content("~/Scripts/jquery-1.12.4.min.js")' type="text/javascript"></script>
-<script src='@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")' type="text/javascript"></script>
-<script>
-    $.ajaxSetup({ cache: false });
- 
-    $(".viewDialog").on("click", function (e) {
-        e.preventDefault();
- 
-        $("<div id='dialogContent'></div>")
-        .addClass("dialog")
-        .appendTo("body")
-        .load(this.href)
-        .dialog({
-            title: $(this).attr("data-dialog-title"),
-            close: function () { $(this).remove() },
-            modal: true,
-            buttons: {
-                "Сохранить": function () {
-                    $.ajax({
-                        url: "@Url.Action("AddToBasket", "Orders")",
-                        type: "POST",
-                    data: $('form').serialize(),
-                    datatype: "json",
-                    success: function (result) {
- 
-                        $("#dialogContent").html(result);
-                    }
-                });
-    }
-    }
-    });
-    });
-    $(".close").on("click", function (e) {
-        e.preventDefault();
-        $(this).closest(".dialog").dialog("close");
-    });
-</script>
 
+
+<div class="text-center">
+    <ul class="pagination">
+        @Html.Pager(Model.Page, (int)Model.PageSize, Model.TotalItemsCount, "Page").Options(o => o
+        .AddRouteDataValue(Html.QueryStringParametersAsRouteValueDictionaryExceptFor("Page")))
+    </ul>
+</div>
+
+@using (Html.BeginForm("Index", "Games", FormMethod.Get, new { @class = "form-horizontal" }))
+{
+    @Html.HiddenQueryStringParametersExceptFor("PageSize", "Page")
+    <div class="col-lg-3">
+        @Html.EnumDropDownListFor(x => x.PageSize, new { @class = "form-control" })
+    </div>
+
+    <button type="submit" class="btn btn-primary" >Check</button>
+
+}
+<script>
+    var AppUrlSettings = {
+        GamesUrl: '@Url.Action("AddToBasket", "Orders")'
+    }
+</script>

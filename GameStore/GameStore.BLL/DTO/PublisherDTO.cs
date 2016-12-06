@@ -1,14 +1,13 @@
 ﻿using System.Collections.Generic;
+using GameStore.BLL.DTO.Translation;
 using GameStore.BLL.Interfaces;
 
 namespace GameStore.BLL.DTO
 {
-    public class PublisherDTO : IDtoNamed
+    public class PublisherDTO : IDtoBase, ITranslateDTONamed<PublisherDTOTranslate>
     {
         public string Id { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
         public string HomePage { get; set; }
-        public ICollection<string> Games { get; set; }
+        public ICollection<PublisherDTOTranslate> Translates { get; set; }
     }
 }

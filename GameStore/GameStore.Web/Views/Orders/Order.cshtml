@@ -1,41 +1,22 @@
 ﻿@using GameStore.Web.ViewModels
-
-
-
 @model OrderPaymentViewModel
-
-
-
 @{
 
     ViewBag.Title = "Order";
 }
-
-
 <div>
 <div id="result">
-
-    @if (Model.Order!=null)
-
+    @if (Model.Order.OrderDetails.Any())
     {
-
         <div class="container">
-
             <div class="check-out">
-
                 <div class="bs-example4" data-example-id="simple-responsive-table">
-
                     <div class="table-responsive">
-
                         <table class="table-heading simpleCart_shelfItem">
-
                             <tr>
                                 <th>@Html.DisplayNameFor(modelItem => Model.Order.CustomerId)</th>
-
                                 <th>@Html.DisplayNameFor(modelItem => Model.Order.Date)</th>
-
                                 <th>@Html.DisplayNameFor(modelItem => Model.Order.Sum)</th>
-
                             </tr>
                             <tr>
                                 <th>
@@ -48,158 +29,68 @@
                                     @Html.DisplayFor(model => model.Order.Date)
                                 </th>
                             </tr>
-
-
                             </table>
-
                                 <table class="table">
-
                                     <tr>
                                         <th>
-
-
-                                            @Html.DisplayNameFor(model => model.Order.OrderDetails.First().GameKey)
-
+                                         @Html.DisplayNameFor(model => model.Order.OrderDetails.First().GameKey)
                                         </th>
                                         <th>
-
-
-                                            @Html.DisplayNameFor(model => model.Order.OrderDetails.First().Discount)
-
+                                           @Html.DisplayNameFor(model => model.Order.OrderDetails.First().Discount)
                                         </th>
-
                                         <th>
-
                                             @Html.DisplayNameFor(model => model.Order.OrderDetails.First().Price)
-
                                         </th>
-
                                         <th>
-
-
                                             @Html.DisplayNameFor(model => model.Order.OrderDetails.First().Quantity)
-
                                         </th>
-
                                         <th></th>
-
                                     </tr>
-
-
-
                                     @foreach (var item in Model.Order.OrderDetails)
                                     {
-
                                         <tr>
                                             <td>
                                                 @Html.HiddenFor(it=> item.Id)
                                                 @Html.HiddenFor(it => item.GameId)
                                                 @Html.DisplayFor(modelItem => item.GameKey)
-
                                             </td>
-                                            <td>
-                                        
+                                            <td>                                       
                                                 @Html.DisplayFor(modelItem => item.Discount)
-
                                             </td>
-
                                             <td>
-
                                                 @Html.DisplayFor(modelItem => item.Price)
-
                                             </td>
-
                                             <td>
-
                                                 @Html.DisplayFor(modelItem => item.Quantity)
-
                                             </td>
-
                                             <td>
-
-                                                @Html.ActionLink("Bank", "PdfFormat", new { orderId= Model.Order.Id, paymentName = "Bank"}) |
-
-                                                @Html.ActionLink("IBox", "Pay", new { orderId = Model.Order.Id, paymentName = "IBox" }) |
-
-                                                @Html.ActionLink("Visa", "Pay", new { orderId = Model.Order.Id, paymentName = "Visa" })
-
+                                            <span class="glyphicons glyphicons-bank">  </span> @Html.ActionLink("Bank", "PdfFormat", new { orderId= Model.Order.Id, paymentName = "Bank"}) |
+                                            <span class="glyphicons glyphicons-inbox-in">  </span> @Html.ActionLink("IBox", "Pay", new { orderId = Model.Order.Id, paymentName = "IBox" }) |
+                                            <span class="glyphicons glyphicons-credit-card"> </span> @Html.ActionLink("Visa", "Pay", new { orderId = Model.Order.Id, paymentName = "Visa" })
                                             </td>
-
                                         </tr>
-
                                     }
-
-
-
                                 </table>
-
-                    
-
-
-
-
-
-
-
-                    
-
-
-
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
-     
-
     }
-
     else
-
     {
-
         <div class="container">
-
             <div class="check-out">
-
                 <div class="bs-example4" data-example-id="simple-responsive-table">
-
                     <div class="content-mid">
-
                         <h3>There are no orders</h3>
-
                         <label class="line"></label>
-
                     </div>
-
-
-
                 </div>
-
             </div>
-
         </div>
-
-
-
     }
-
 </div>
-
-
-
-
-
 <br />
-
 <br />
-
 <br />
-
-
-
 </div>

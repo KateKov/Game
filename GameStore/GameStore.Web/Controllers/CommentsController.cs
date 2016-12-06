@@ -8,6 +8,7 @@ using AutoMapper;
 using GameStore.BLL.DTO;
 using GameStore.BLL.Infrastructure;
 using GameStore.BLL.Interfaces;
+using GameStore.BLL.Interfaces.Services;
 using GameStore.Web.ViewModels;
 using NLog;
 
@@ -15,10 +16,10 @@ namespace GameStore.Web.Controllers
 {
     public class CommentsController : Controller
     {
-        private readonly IService _gameService;
+        private readonly IGameStoreService _gameService;
         private readonly ICommentService _commentService;
         private readonly ILogger _logger = LogManager.GetCurrentClassLogger();
-        public CommentsController(IService service, ICommentService commentService)
+        public CommentsController(IGameStoreService service, ICommentService commentService)
         {
             _gameService = service;
             _commentService = commentService;
@@ -29,36 +30,22 @@ namespace GameStore.Web.Controllers
         {
             _logger.Info("Request to GameController.Index. Parameters: Key = {0}", key);
 
-            var gameDto = _gameService.GetByKey<GameDTO>(key);
+            var gameDto = _gameService.KeyService<GameDTO>().GetByKey(key);
             if(gameDto==null)
                 throw  new Exception();
             return View(Mapper.Map<GameDTO, GameViewModel>(gameDto));
         }
 
         [HttpGet]
-        public FileResult Download(string gameKey)
+        public ActionResult Download(string gameKey)
         {
-            _logger.Info("Request to GamesController.Download. Parameters: gameKey = {0}", gameKey);
-            try
+            if (gameKey == null)
             {
-                _gameService.GetByKey<GameDTO>(gameKey);
-                string filePath = Server.MapPath("~/App_Data/Games/game.txt");
-                string fileType = "application/text/plain";
-                string fileName = "game.txt";
-                var res = File(filePath, fileType, fileName);
-                _logger.Info("Game is downloaded. Key = " + gameKey);
-                return res;
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            catch (ValidationException)
-            {
-                _logger.Warn("Game downloading failed. Game wasn't found. Key = {0} ", gameKey);
-                return null;
-            }
-            catch (IOException)
-            {
-                _logger.Warn("Game downloading failed. Cannot get game file. Key ={0}", gameKey);
-                return null;
-            }
+            var imgArray = new byte[100];
+            _logger.Info("Game {0} was successfully downloaded", gameKey);
+            return File(imgArray, "application/pdf", "test.pdf");
         }
 
         [HttpGet]
@@ -80,7 +67,7 @@ namespace GameStore.Web.Controllers
             _logger.Info("Request to GameController.NewComment");
             if (ModelState.IsValid) { 
                 var commentDto = Mapper.Map<CommentViewModel, CommentDTO>(newComment);
-                commentDto.GameId = _gameService.GetByKey<GameDTO>(commentDto.GameKey).Id;
+                commentDto.GameId = _gameService.KeyService<GameDTO>().GetByKey(commentDto.GameKey).Id;
                _commentService.AddComment(commentDto, newComment.GameKey);
                 return PartialView("Success");
             }
@@ -100,7 +87,7 @@ namespace GameStore.Web.Controllers
         {
             if (!string.IsNullOrEmpty(gameKey) && !string.IsNullOrEmpty(commentId))
             {
-                _gameService.DeleteById<CommentDTO>(commentId);
+                _gameService.GenericService<CommentDTO>().DeleteById(commentId);
                 _logger.Info("Comments is deleted from game: CommentId={0} GameKey ={1} ", commentId, gameKey);
                 return RedirectToAction("Comments");
             }

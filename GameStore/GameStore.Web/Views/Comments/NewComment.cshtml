@@ -1,7 +1,6 @@
 ﻿@using System.Web.UI.WebControls
 @using GameStore.Web.ViewModels
 @model CommentViewModel
-
 <div id="comment_form">
     <div class="review">
         @using (Html.BeginForm("NewComment", "Comments", FormMethod.Post, new {name="newForm", id="newForm"}))
@@ -13,7 +12,6 @@
             @Html.HiddenFor(x=>x.ParentCommentId)
             @Html.HiddenFor(x => x.Quote)
             <div class='form_row'>
-
                 <h3>New comment</h3>
                 @if (Model.Quote != "")
                 {
@@ -23,66 +21,18 @@
                     <strong>@Html.NameFor(x => x.Name)</strong>
                 </label> <br />
                 @Html.EditorFor(x => x.Name, new {onchange="nameOnChange"})
-                @Html.ValidationMessageFor(x => x.Name)
+     
+                    @Html.ValidationMessageFor(x => x.Name)             
             </div>
-
             <div class='form_row'>
                 <label>
                     <strong>@Html.NameFor(x => x.Body)</strong>
-                    @Html.ValidationMessageFor(x => x.Body)
+                  
                 </label> <br />
                 @Html.TextAreaFor(x => x.Body)
-            </div>
-         
+                @Html.ValidationMessageFor(x => x.Body)
+           </div>        
         }
     </div>
     </div>
-    <style>
-        #comment_form .form_row {
-            width: 100%;
-            margin-bottom: 15px;
-        }
-
-
-
-        #comment_form form input {
-            margin-top: 5px;
-            width: 200px;
-            background: #FFFFFF none repeat fixed 0 0;
-            border: 1px solid #CCC;
-        }
-
-        #comment_form .submit_btn {
-            width: 80px;
-            padding: 5px 10px;
-            background: #EEEEEE;
-            border: 1px solid #AAAAAA;
-            color: #666666;
-        }
-
-        .review h2 {
-            text-align: center;
-        }
-    
-
-        textarea{
-
-    background:#FFFFFF none repeat fixed 0 0;
-
-	border: 1px solid #CCC;
-
-	display:block;
-
-	font-size:1.1em;
-
-	height:150px;
-
-	margin-top:5px;
-
-	padding:5px;
-
-	width: 200px;
-
-
-}
-    </style>
+ 

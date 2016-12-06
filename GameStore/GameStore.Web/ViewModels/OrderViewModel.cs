@@ -14,6 +14,7 @@ namespace GameStore.Web.ViewModels
         public decimal Sum { get; set; }
         public bool IsConfirmed { get; set; }
         [Display(Name = "Date")]
+        [DataType(DataType.Date)]
         public DateTime Date { get; set; }
         public ICollection<OrderDetailViewModel> OrderDetails { get; set; }
         public ICollection<string> OrderDetailsId { get; set; }

@@ -10,6 +10,7 @@ namespace GameStore.BLL.DTO
         public string GameKey { get; set; }
         public float Discount { get; set; }
         public string OrderId { get; set; }
+        public bool IsPayed { get; set; }
         public string GameId { get; set; }
     }
 }

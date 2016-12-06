@@ -1,10 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Web.Mvc;
 
 namespace GameStore.Web.ViewModels
 {
     public class BasketViewModel
     {
-        public string GameId { get; set; }
+        [HiddenInput(DisplayValue = false)]
+        public string GameKey { get; set; }
+        [HiddenInput(DisplayValue = false)]
         public string CustomerId { get; set; }
         public short UnitInStock { get; set; }
         [Required]

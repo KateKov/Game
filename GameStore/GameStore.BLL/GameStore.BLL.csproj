@@ -30,8 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoMapper, Version=5.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoMapper.5.1.1\lib\net45\AutoMapper.dll</HintPath>
+    <Reference Include="AutoMapper, Version=5.2.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.5.2.0\lib\net45\AutoMapper.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
@@ -47,28 +47,63 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTO\Comment.DTO.cs" />
+    <Compile Include="DTO\FilterDTO.cs" />
+    <Compile Include="DTO\FilterResultDTO.cs" />
     <Compile Include="DTO\GameDTO.cs" />
     <Compile Include="DTO\GenreDTO.cs" />
     <Compile Include="DTO\OrderDetailDTO.cs" />
     <Compile Include="DTO\OrderDTO.cs" />
+    <Compile Include="DTO\OrderFilterDTO.cs" />
+    <Compile Include="DTO\OrderFilterResultDTO.cs" />
     <Compile Include="DTO\PlatformTypeDTO.cs" />
     <Compile Include="DTO\PublisherDTO.cs" />
-    <Compile Include="Infrastructure\DomainToDtoMapping.cs" />
-    <Compile Include="Infrastructure\DtoToDomain.cs" />
+    <Compile Include="DTO\Translation\DTOTranslate.cs" />
+    <Compile Include="DTO\Translation\GameDTOTranslate.cs" />
+    <Compile Include="DTO\Translation\GenreDTOTranslate.cs" />
+    <Compile Include="DTO\Translation\PlatformTypeDTOTranslate.cs" />
+    <Compile Include="DTO\Translation\PublisherDTOTranslate.cs" />
+    <Compile Include="Interfaces\ITranslateDTONamed.cs" />
+    <Compile Include="Mapping\DomainToDtoMapping.cs" />
+    <Compile Include="Mapping\DtoToDomain.cs" />
+    <Compile Include="Mapping\DtoToEntity.cs" />
+    <Compile Include="Infrastructure\Filters\DateFilter.cs" />
+    <Compile Include="Infrastructure\Filters\FilterBy.cs" />
+    <Compile Include="Infrastructure\Filters\GenreFilter.cs" />
+    <Compile Include="Infrastructure\Filters\MaxPriceFilter.cs" />
+    <Compile Include="Infrastructure\Filters\MinPriceFilter.cs" />
+    <Compile Include="Infrastructure\Filters\PlatformTypeFilter.cs" />
+    <Compile Include="Infrastructure\Filters\PublisherFilter.cs" />
+    <Compile Include="Infrastructure\Filters\SearchNameFilter.cs" />
+    <Compile Include="Infrastructure\OrderFilter\DateFromFilter.cs" />
+    <Compile Include="Infrastructure\OrderFilter\DateToFilter.cs" />
+    <Compile Include="Infrastructure\OrderFilter\FilterBy.cs" />
+    <Compile Include="Infrastructure\Paging\PageFilter.cs" />
+    <Compile Include="Infrastructure\PipeLine.cs" />
+    <Compile Include="Infrastructure\QueryBuilder.cs" />
     <Compile Include="Infrastructure\ValidationException.cs" />
-    <Compile Include="Interfaces\ICommentService.cs" />
+    <Compile Include="Interfaces\Services\ICommentService.cs" />
     <Compile Include="Interfaces\IDtoNamed.cs" />
     <Compile Include="Interfaces\IDtoWithKey.cs" />
     <Compile Include="Interfaces\IDtoBase.cs" />
-    <Compile Include="Interfaces\IGameService.cs" />
-    <Compile Include="Interfaces\IOrderService.cs" />
-    <Compile Include="Interfaces\IService.cs" />
+    <Compile Include="Interfaces\Services\IEntityService.cs" />
+    <Compile Include="Interfaces\IFilterItem.cs" />
+    <Compile Include="Interfaces\Services\IGameService.cs" />
+    <Compile Include="Interfaces\Services\IGameStoreService.cs" />
+    <Compile Include="Interfaces\Services\INamedService.cs" />
+    <Compile Include="Interfaces\IOperation.cs" />
+    <Compile Include="Interfaces\Services\IOrderService.cs" />
+    <Compile Include="Interfaces\IPipeLine.cs" />
+    <Compile Include="Interfaces\IQueryBuilder.cs" />
+    <Compile Include="Interfaces\Services\IService.cs" />
+    <Compile Include="Interfaces\Services\IWithKeyService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CommentsService.cs" />
+    <Compile Include="Services\ModelWithNameService.cs" />
+    <Compile Include="Services\Service.cs" />
     <Compile Include="Services\GamesService.cs" />
     <Compile Include="Services\GameStoreService.cs" />
+    <Compile Include="Services\ModelWithKeyService.cs" />
     <Compile Include="Services\OrdersService.cs" />
-    <Compile Include="Services\PagingService.cs" />
     <Compile Include="Services\Validator.cs" />
   </ItemGroup>
   <ItemGroup>

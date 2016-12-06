@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using GameStore.DAL.Interfaces;
+using GameStore.DAL.MongoEntities;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace GameStore.DAL.Entities
 {
-    public class Comment : IEntityNamed
+
+    public class Comment : EntityBase, IEntityNamed
     {
-        [Key]     
-        public Guid Id { get; set; }
         [Required]
         public string Name { get; set; }
         [Required]

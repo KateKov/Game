@@ -1,141 +1,72 @@
 ﻿@using GameStore.Web.ViewModels
-
 @model UpdateGameViewModel
-
-
-
 @{
     ViewBag.Title = "Update";
 }
-
 <div id="addGame">
     <hr>
     <div class="row">
-
-        <!-- edit form column -->
-        <div class="col-xs-9 personal-info">
-            <div class="alert alert-info alert-dismissable">
-                <a class="panel-close close" data-dismiss="alert">×</a>
-                <i class="fa fa-plus"></i>
-
-                Add game. Make sure you fill all required fields.
-            </div>
+        <div class="col-xs-9 personal-info">       
             @using (Html.BeginForm("Update", "Games", FormMethod.Post))
             {
-
                 @Html.AntiForgeryToken()
-
                 @Html.ValidationSummary(true)
-                @Html.HiddenFor(m => m.Id)
-                @Html.HiddenFor(m => m.Key)
-              
+                @Html.HiddenFor(m=>m.Id)
+                @Html.HiddenFor(m => m.Key)         
                 <div class="form-horizontal">
                     <h4>Game</h4>
                     <hr />
                     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                     <div class="form-group">
                         @Html.NameFor(model => model.Name)
-
                         @Html.EditorFor(a => a.Name, new { htmlAttributes = new { @class = "form-control" } })
                         @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
-
                     </div>
                     <div class="form-group">
                         @Html.NameFor(model => model.Description)
-
                         @Html.TextAreaFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
                         @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
-
                     </div>
-
                     <div class="form-group">
                         @Html.NameFor(model => model.Price)
-
                         @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
                         @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
-
                     </div>
                     <div class="form-group">
                         @Html.NameFor(model => model.UnitsInStock)
-
                         @Html.EditorFor(model => model.UnitsInStock, new { htmlAttributes = new { @class = "form-control" } })
                         @Html.ValidationMessageFor(model => model.UnitsInStock, "", new { @class = "text-danger" })
-
-
                     </div>
-
-
                     <div class="form-group">
-
-
                         @Html.NameFor(model => model.PublisherName)
-
-
                         @Html.DropDownListFor(model => model.PublisherName, new SelectList(Model.AllPublishers, "Name", "Name"))
                         @Html.ValidationMessageFor(model => model.PublisherName, "", new { @class = "text-danger" })
-
-
-
-
-                    </div>
-
-
+                   </div>
                     <div class="form-group">
-
-
                         @Html.NameFor(model => model.GenresName)
                         @Html.ListBoxFor(model => model.GenresName, new MultiSelectList(Model.AllGenres, "Name", "Name"), htmlAttributes: new { @class = "form-control" })
                         @Html.ValidationMessageFor(model => model.GenresName, "", new { @class = "text-danger" })
-
-
-
-
                     </div>
                     <div class="form-group">
-
-
-                        @Html.NameFor(model => model.TypesName)
+                        @Html.NameFor(model => model.PlatformTypesName)
                         <div class="col-md-10">
-                            @Html.ListBoxFor(model => model.TypesName, new MultiSelectList(Model.AllTypes, "Name", "Name"), htmlAttributes: new { @class = "form-control" })
-
-
-
-                            @Html.ValidationMessageFor(model => model.TypesName, "", new { @class = "text-danger" })
+                            @Html.ListBoxFor(model => model.PlatformTypesName, new MultiSelectList(Model.AllTypes, "Name", "Name"), htmlAttributes: new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.PlatformTypesName, "", new { @class = "text-danger" })
                         </div>
-
-
-
                     </div>
+                    @Html.HiddenFor(m => m.DateOfAdding)
                     <div class="form-group">
-
-
                         @Html.NameFor(model => model.Discountinues)
-
-
                         @Html.EditorFor(model => model.Discountinues, new { htmlAttributes = new { @class = "form-control" } })
-
                         @Html.ValidationMessageFor(model => model.Discountinues, "", new { @class = "text-danger" })
-
-
                     </div>
-
-
-
-
-
-                    <div class="form-group">
-
+                  <div class="form-group">
                         <div class="col-md-offset-2 col-md-10">
-
-                            <input type="submit" value="Create" class="btn btn-default" />
-
+                           <input type="submit" value="Edit" class="btn btn-default" />
                         </div>
-
                     </div>
-
                 </div>
             }
-
         </div>
     </div>
     <hr>

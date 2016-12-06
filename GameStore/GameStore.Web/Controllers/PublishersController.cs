@@ -7,15 +7,17 @@ using GameStore.BLL.Interfaces;
 using GameStore.BLL.Services;
 using GameStore.Web.ViewModels;
 using AutoMapper;
+using GameStore.BLL.DTO.Translation;
+using GameStore.BLL.Interfaces.Services;
 
 namespace GameStore.Web.Controllers
 {
     public class PublishersController : Controller
     {
 
-        private readonly IService _service;
+        private readonly IGameStoreService _service;
 
-        public PublishersController(IService service)
+        public PublishersController(IGameStoreService service)
         {
             _service = service;
         }
@@ -23,14 +25,14 @@ namespace GameStore.Web.Controllers
         [HttpGet]
         public ActionResult Index()
         {
-            var publishers = _service.GetAll<PublisherDTO>();
+            var publishers = _service.GenericService<PublisherDTO>().GetAll();
             return View(Mapper.Map<IEnumerable<PublisherViewModel>>(publishers));
         }
 
         [HttpGet]
         public ActionResult Details(string companyName)
         {
-            var publisher = _service.GetByName<PublisherDTO>(companyName);
+            var publisher = _service.NamedService<PublisherDTO, PublisherDTOTranslate>().GetByName(companyName);
             return View(Mapper.Map<PublisherViewModel>(publisher));
         }
 
@@ -50,7 +52,7 @@ namespace GameStore.Web.Controllers
             if (ModelState.IsValid)
             {
                 var publisherDto = Mapper.Map<PublisherDTO>(createPublisher);
-                _service.AddOrUpdate(publisherDto, true);
+                _service.GenericService<PublisherDTO>().AddOrUpdate(publisherDto, true);
                 return RedirectToAction("Index");
             }
             return View("New", createPublisher);

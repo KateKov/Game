@@ -13,5 +13,6 @@ namespace GameStore.BLL.DTO
         public bool IsConfirmed { get; set; }
         public ICollection<OrderDetailDTO> OrderDetails { get; set; }
         public ICollection<string> OrderDetailsId { get; set; }
+        public bool IsPayed { get; set; }
     }
 }

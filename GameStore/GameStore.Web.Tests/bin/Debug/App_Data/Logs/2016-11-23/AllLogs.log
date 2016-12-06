@@ -1,0 +1,128 @@
+|2016-11-23 13:05:58.7807|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-23 13:08:37.2392|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:08:37.3603|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:08:37.3683|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:08:37.3683|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-23 13:08:37.3683|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:08:37.5259|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-23 13:09:19.6742|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:09:19.7923|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:09:19.7923|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:09:19.8103|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-23 13:09:19.8103|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:09:19.9654|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-23 13:10:57.6124|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:10:57.7275|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:10:57.7275|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:10:57.7415|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-23 13:10:57.7415|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:10:57.9082|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-23 13:11:46.4859|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:11:46.6030|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:11:46.6030|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:11:46.6175|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-23 13:11:46.6175|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:11:46.7689|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-23 13:12:07.3545|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:12:07.5156|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:12:07.5351|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:12:07.5496|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-23 13:12:07.5606|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:12:07.8418|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-23 13:20:44.8401|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:20:44.9541|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:20:44.9661|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = name
+|2016-11-23 13:20:45.0212|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:20:45.0212|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-23 13:20:45.0212|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:20:45.1658|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-23 13:22:16.4429|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:22:16.5865|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:22:16.5977|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = name
+|2016-11-23 13:22:16.6207|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:22:16.6207|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-23 13:22:16.6327|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:22:16.7623|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-23 13:23:31.3688|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:23:31.5073|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:23:31.5274|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = 
+|2016-11-23 13:23:31.5394|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:23:31.5394|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-23 13:23:31.5519|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:23:31.6710|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-23 13:23:51.2943|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:23:51.4565|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:23:51.4911|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = 
+|2016-11-23 13:23:51.5126|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:23:51.5246|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-23 13:23:51.5356|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:23:51.7708|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-23 13:26:22.0810|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:26:22.1621|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:26:22.1751|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = 
+|2016-11-23 13:26:22.1751|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:26:22.1961|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-23 13:26:22.1961|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:26:22.3240|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-23 13:26:40.5196|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:26:40.5996|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:26:40.6187|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = 
+|2016-11-23 13:26:40.6317|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:26:40.6317|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-23 13:26:40.6457|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:26:40.7688|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-23 13:26:59.5625|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:26:59.6565|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:26:59.6926|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = 
+|2016-11-23 13:26:59.7236|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:26:59.7236|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-23 13:26:59.7446|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:26:59.9832|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-23 13:30:15.5929|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:30:15.6739|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:30:15.6889|INFO|GameStore.Web.Controllers.CommentsController|Comments is deleted from game: CommentId=id GameKey =key 
+|2016-11-23 13:30:15.7080|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = 
+|2016-11-23 13:30:15.7080|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:30:15.7260|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-23 13:30:15.7260|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:30:15.8521|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-23 13:30:34.8860|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:30:34.9795|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:30:35.0045|INFO|GameStore.Web.Controllers.CommentsController|Comments is deleted from game: CommentId=id GameKey =key 
+|2016-11-23 13:30:35.0386|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = 
+|2016-11-23 13:30:35.0576|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:30:35.0666|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-23 13:30:35.0666|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:30:35.2966|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-23 13:51:00.8159|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:51:00.8970|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:51:00.9120|INFO|GameStore.Web.Controllers.CommentsController|Comments is deleted from game: CommentId=id GameKey =key 
+|2016-11-23 13:51:00.9310|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = 
+|2016-11-23 13:51:00.9420|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:51:00.9420|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-23 13:51:00.9420|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:51:01.0761|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-23 13:51:56.8034|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:51:56.8830|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:51:56.8980|INFO|GameStore.Web.Controllers.CommentsController|Comments is deleted from game: CommentId=id GameKey =key 
+|2016-11-23 13:51:56.9170|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = 
+|2016-11-23 13:51:56.9290|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:51:56.9290|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-23 13:51:56.9420|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:51:57.0621|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-23 13:52:46.5945|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:52:46.6775|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:52:46.6936|INFO|GameStore.Web.Controllers.CommentsController|Comments is deleted from game: CommentId=id GameKey =key 
+|2016-11-23 13:52:46.7116|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = 
+|2016-11-23 13:52:46.7116|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:52:46.7286|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-23 13:52:46.7286|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:52:46.8532|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
+|2016-11-23 13:53:04.9356|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:53:05.0292|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:53:05.0512|INFO|GameStore.Web.Controllers.CommentsController|Comments is deleted from game: CommentId=id GameKey =key 
+|2016-11-23 13:53:05.0833|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = 
+|2016-11-23 13:53:05.1008|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
+|2016-11-23 13:53:05.1008|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
+|2016-11-23 13:53:05.1218|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
+|2016-11-23 13:53:05.3508|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update

@@ -1,0 +1,429 @@
+80000016-0002-e000-b63f-84710c7967bb|2016-12-05 09:01:03.2989|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844496 
+80000016-0002-e000-b63f-84710c7967bb|2016-12-05 09:01:03.3921|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: a8ba3884-7657-4a1b-ae4f-f4247541fd07
+8000002d-0003-fd00-b63f-84710c7967bb|2016-12-05 09:05:40.0640|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844497 
+8000002d-0003-fd00-b63f-84710c7967bb|2016-12-05 09:12:43.3348|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: cebd242d-5acd-41a0-9583-723fbd2a1692
+80000009-0000-f200-b63f-84710c7967bb|2016-12-05 09:18:22.6893|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844497 
+80000009-0000-f200-b63f-84710c7967bb|2016-12-05 09:18:22.7661|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: cb589876-3d20-4baf-890c-fe7369857d0e
+80000009-0000-f200-b63f-84710c7967bb|2016-12-05 09:18:25.9306|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=cb589876-3d20-4baf-890c-fe7369857d0e 
+8000001b-0000-f600-b63f-84710c7967bb|2016-12-05 09:20:12.9687|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844497 
+8000001b-0000-f600-b63f-84710c7967bb|2016-12-05 09:26:58.6349|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 2077bcb3-35de-4f1b-9db7-4579ea455025
+80000025-0000-f600-b63f-84710c7967bb|2016-12-05 09:34:45.1317|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+80000743-0002-e400-b63f-84710c7967bb|2016-12-05 09:37:38.2572|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+8000000d-0002-ed00-b63f-84710c7967bb|2016-12-05 09:40:26.3500|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+800016e6-0000-f700-b63f-84710c7967bb|2016-12-05 09:42:51.1010|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844496 
+800016e6-0000-f700-b63f-84710c7967bb|2016-12-05 09:42:51.1784|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 0099bece-8972-4c71-973d-cef49534f282
+80000019-0001-ec00-b63f-84710c7967bb|2016-12-05 09:43:24.7919|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+80000019-0001-ec00-b63f-84710c7967bb|2016-12-05 09:43:27.3370|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game e963fc6e-b71d-46d6-a53b-0c78346bd785 to the busket of Customer  
+8000001a-0001-ec00-b63f-84710c7967bb|2016-12-05 09:43:34.4082|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800016f4-0000-f700-b63f-84710c7967bb|2016-12-05 09:44:47.1170|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844496 
+800016f4-0000-f700-b63f-84710c7967bb|2016-12-05 09:44:47.1951|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 8b5f3c36-5d25-42dd-b58b-8b364962f19e
+800016f4-0000-f700-b63f-84710c7967bb|2016-12-05 09:44:47.4293|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=8b5f3c36-5d25-42dd-b58b-8b364962f19e 
+80003f60-0001-f300-b63f-84710c7967bb|2016-12-05 09:46:02.2843|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844496 
+80003f60-0001-f300-b63f-84710c7967bb|2016-12-05 09:46:02.3609|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 60623282-d893-4fb1-a1ae-902ec3556c27
+80003f60-0001-f300-b63f-84710c7967bb|2016-12-05 09:46:05.1869|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=60623282-d893-4fb1-a1ae-902ec3556c27 
+8000003c-0000-f900-b63f-84710c7967bb|2016-12-05 09:50:08.6989|DEBUG|GameStore.BLL.Services.Service`2|GettingGame_D915C1C9434627404AA3DBF88DA731177341E8D979AEE66EE9F68CDE174D8F73by id=d3beda39-1dca-4a05-a44c-b4cc7ff1442f 
+8000003c-0000-f900-b63f-84710c7967bb|2016-12-05 09:50:11.1683|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game d3beda39-1dca-4a05-a44c-b4cc7ff1442f to the busket of Customer  
+8000003d-0000-f900-b63f-84710c7967bb|2016-12-05 09:50:14.7533|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800001b5-0001-f900-b63f-84710c7967bb|2016-12-05 10:03:28.7146|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+800001b5-0001-f900-b63f-84710c7967bb|2016-12-05 10:03:37.8855|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game e1960771-1aa3-4e1a-9cb0-ecad1ee65cf6 to the busket of Customer  
+800001b6-0001-f900-b63f-84710c7967bb|2016-12-05 10:03:44.4220|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800001bb-0001-f900-b63f-84710c7967bb|2016-12-05 10:03:52.4647|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844496 
+800001bb-0001-f900-b63f-84710c7967bb|2016-12-05 10:04:04.0532|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 76c22ba1-b6d0-48f2-abe1-97f10d677f24
+800001bb-0001-f900-b63f-84710c7967bb|2016-12-05 10:04:04.2865|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=76c22ba1-b6d0-48f2-abe1-97f10d677f24 
+800003be-0001-e800-b63f-84710c7967bb|2016-12-05 10:05:27.0080|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844496 
+800003be-0001-e800-b63f-84710c7967bb|2016-12-05 10:05:30.1599|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: d6014274-c6e8-41bd-ab29-dfc148a799d5
+800003be-0001-e800-b63f-84710c7967bb|2016-12-05 10:05:30.4015|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844496 
+800003be-0001-e800-b63f-84710c7967bb|2016-12-05 10:05:36.7604|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game d6014274-c6e8-41bd-ab29-dfc148a799d5 to the busket of Customer  
+800003bf-0001-e800-b63f-84710c7967bb|2016-12-05 10:05:43.1295|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800003c4-0001-e800-b63f-84710c7967bb|2016-12-05 10:05:48.6270|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+800003c4-0001-e800-b63f-84710c7967bb|2016-12-05 10:05:53.4049|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 3120792e-88db-42d6-8c26-7ce464b1a625 to the busket of Customer  
+800003c5-0001-e800-b63f-84710c7967bb|2016-12-05 10:05:56.7797|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800003ca-0001-e800-b63f-84710c7967bb|2016-12-05 10:06:09.4240|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844496 
+80000439-0001-f800-b63f-84710c7967bb|2016-12-05 10:07:59.9740|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+80000439-0001-f800-b63f-84710c7967bb|2016-12-05 10:08:02.4096|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game f9d9f2e9-bc2c-44ae-a201-287f49ebc9f6 to the busket of Customer  
+8000043a-0001-f800-b63f-84710c7967bb|2016-12-05 10:08:05.8173|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+8000043f-0001-f800-b63f-84710c7967bb|2016-12-05 10:08:13.0010|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844496 
+8000043f-0001-f800-b63f-84710c7967bb|2016-12-05 10:08:13.0721|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 8a9ac924-d268-4310-a5a4-74a25530f9d2
+8000043f-0001-f800-b63f-84710c7967bb|2016-12-05 10:08:13.3001|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844496 
+8000043f-0001-f800-b63f-84710c7967bb|2016-12-05 10:08:15.6366|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 8a9ac924-d268-4310-a5a4-74a25530f9d2 to the busket of Customer  
+80000440-0001-f800-b63f-84710c7967bb|2016-12-05 10:08:19.0031|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+8000025c-0000-e900-b63f-84710c7967bb|2016-12-05 10:10:15.2552|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844496 
+8000025c-0000-e900-b63f-84710c7967bb|2016-12-05 10:10:15.3657|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 5a564aa1-8128-49e2-8da2-3a3c16fcec53
+8000025c-0000-e900-b63f-84710c7967bb|2016-12-05 10:10:15.6320|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844496 
+8000025c-0000-e900-b63f-84710c7967bb|2016-12-05 10:10:18.0760|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 5a564aa1-8128-49e2-8da2-3a3c16fcec53 to the busket of Customer  
+8000025d-0000-e900-b63f-84710c7967bb|2016-12-05 10:10:21.5479|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000262-0000-e900-b63f-84710c7967bb|2016-12-05 10:10:27.9715|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844498 
+80000262-0000-e900-b63f-84710c7967bb|2016-12-05 10:10:28.0165|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: b8a6150c-cdb8-409e-b8b4-2272b4dabb67
+80000262-0000-e900-b63f-84710c7967bb|2016-12-05 10:10:28.2507|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844498 
+80000262-0000-e900-b63f-84710c7967bb|2016-12-05 10:10:30.5596|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game b8a6150c-cdb8-409e-b8b4-2272b4dabb67 to the busket of Customer  
+80000263-0000-e900-b63f-84710c7967bb|2016-12-05 10:10:33.9263|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+8000026b-0000-e900-b63f-84710c7967bb|2016-12-05 10:11:27.3219|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844496 
+8000026b-0000-e900-b63f-84710c7967bb|2016-12-05 10:11:27.4363|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: a3e59863-3b82-4b81-91fc-9eef8e886cd2
+8000026b-0000-e900-b63f-84710c7967bb|2016-12-05 10:11:27.6786|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844496 
+8000026b-0000-e900-b63f-84710c7967bb|2016-12-05 10:11:30.1619|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game a3e59863-3b82-4b81-91fc-9eef8e886cd2 to the busket of Customer  
+8000026c-0000-e900-b63f-84710c7967bb|2016-12-05 10:11:33.8904|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000271-0000-e900-b63f-84710c7967bb|2016-12-05 10:11:40.7527|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844497 
+80000271-0000-e900-b63f-84710c7967bb|2016-12-05 10:11:40.7797|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 0bddc0c9-2795-4bdb-8a4d-842c29585487
+80000271-0000-e900-b63f-84710c7967bb|2016-12-05 10:11:41.0235|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844497 
+80000271-0000-e900-b63f-84710c7967bb|2016-12-05 10:11:45.7627|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 0bddc0c9-2795-4bdb-8a4d-842c29585487 to the busket of Customer  
+80000272-0000-e900-b63f-84710c7967bb|2016-12-05 10:11:49.1359|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000277-0000-e900-b63f-84710c7967bb|2016-12-05 10:11:55.9242|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844497 
+80000007-0003-e800-b63f-84710c7967bb|2016-12-05 10:13:08.9250|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844496 
+80000007-0003-e800-b63f-84710c7967bb|2016-12-05 10:13:09.0344|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 315b2fdb-fb29-4604-8280-48710dd429df
+80000007-0003-e800-b63f-84710c7967bb|2016-12-05 10:13:09.2714|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844496 
+80000007-0003-e800-b63f-84710c7967bb|2016-12-05 10:13:11.7836|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 315b2fdb-fb29-4604-8280-48710dd429df to the busket of Customer  
+80000008-0003-e800-b63f-84710c7967bb|2016-12-05 10:13:15.1946|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+8000000d-0003-e800-b63f-84710c7967bb|2016-12-05 10:13:19.9901|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844496 
+800002d5-0003-ee00-b63f-84710c7967bb|2016-12-05 10:14:32.1851|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+800002d5-0003-ee00-b63f-84710c7967bb|2016-12-05 10:14:34.6167|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game a9325ec3-3d7b-429e-89a6-1b985211a9e9 to the busket of Customer  
+800002d6-0003-ee00-b63f-84710c7967bb|2016-12-05 10:14:38.0718|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800002db-0003-ee00-b63f-84710c7967bb|2016-12-05 10:14:47.6810|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+800002db-0003-ee00-b63f-84710c7967bb|2016-12-05 10:18:15.1561|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game a9325ec3-3d7b-429e-89a6-1b985211a9e9 to the busket of Customer  
+800002dc-0003-ee00-b63f-84710c7967bb|2016-12-05 10:18:29.5849|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800002e1-0003-ee00-b63f-84710c7967bb|2016-12-05 10:18:36.2238|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+800002e1-0003-ee00-b63f-84710c7967bb|2016-12-05 10:18:42.0657|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game a9325ec3-3d7b-429e-89a6-1b985211a9e9 to the busket of Customer  
+800002e2-0003-ee00-b63f-84710c7967bb|2016-12-05 10:18:45.4243|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800002e7-0003-ee00-b63f-84710c7967bb|2016-12-05 10:18:50.7530|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844496 
+800002e7-0003-ee00-b63f-84710c7967bb|2016-12-05 10:18:50.8228|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 411cc5a0-f84a-4e5d-a594-d7e08246cb23
+800002e7-0003-ee00-b63f-84710c7967bb|2016-12-05 10:18:51.0508|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844496 
+800002e7-0003-ee00-b63f-84710c7967bb|2016-12-05 10:19:11.4561|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 411cc5a0-f84a-4e5d-a594-d7e08246cb23 to the busket of Customer  
+800002e8-0003-ee00-b63f-84710c7967bb|2016-12-05 10:19:14.8189|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800002ee-0003-ee00-b63f-84710c7967bb|2016-12-05 10:19:32.5650|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844496 
+80000122-0002-fb00-b63f-84710c7967bb|2016-12-05 10:20:22.9612|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844497 
+80000122-0002-fb00-b63f-84710c7967bb|2016-12-05 10:20:23.0925|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: ed75de2f-8c76-4ac3-8731-45eaaa50c7a9
+80000122-0002-fb00-b63f-84710c7967bb|2016-12-05 10:20:23.3382|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844497 
+80000122-0002-fb00-b63f-84710c7967bb|2016-12-05 10:20:25.8076|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game ed75de2f-8c76-4ac3-8731-45eaaa50c7a9 to the busket of Customer  
+80000123-0002-fb00-b63f-84710c7967bb|2016-12-05 10:20:29.1952|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000081-0001-eb00-b63f-84710c7967bb|2016-12-05 10:22:23.2801|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844496 
+80000081-0001-eb00-b63f-84710c7967bb|2016-12-05 10:22:23.4252|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 0713b92f-e2b8-497e-b1fe-d81fe8a2deca
+80000081-0001-eb00-b63f-84710c7967bb|2016-12-05 10:22:23.6802|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844496 
+80000081-0001-eb00-b63f-84710c7967bb|2016-12-05 10:22:26.1780|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 0713b92f-e2b8-497e-b1fe-d81fe8a2deca to the busket of Customer  
+80000082-0001-eb00-b63f-84710c7967bb|2016-12-05 10:22:29.5518|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000087-0001-eb00-b63f-84710c7967bb|2016-12-05 10:22:46.1896|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844496 
+800000b9-0000-f200-b63f-84710c7967bb|2016-12-05 10:24:05.8972|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844496 
+800004b9-0000-f600-b63f-84710c7967bb|2016-12-05 10:25:44.2012|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844496 
+800004b9-0000-f600-b63f-84710c7967bb|2016-12-05 10:25:54.0208|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: c6c31ef2-a58a-4693-9fce-5a469868e6a5
+800004b9-0000-f600-b63f-84710c7967bb|2016-12-05 10:25:54.2813|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844496 
+800004b9-0000-f600-b63f-84710c7967bb|2016-12-05 10:25:56.7865|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game c6c31ef2-a58a-4693-9fce-5a469868e6a5 to the busket of Customer  
+800004ba-0000-f600-b63f-84710c7967bb|2016-12-05 10:26:03.3198|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800004bf-0000-f600-b63f-84710c7967bb|2016-12-05 10:26:12.0096|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844496 
+800000c0-0003-f800-b63f-84710c7967bb|2016-12-05 10:33:15.5136|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844497 
+800000c0-0003-f800-b63f-84710c7967bb|2016-12-05 10:33:18.0247|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 5840609dd0c40ef0df844497 to the busket of Customer  
+800000c1-0003-f800-b63f-84710c7967bb|2016-12-05 10:33:21.7883|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800000c6-0003-f800-b63f-84710c7967bb|2016-12-05 10:33:28.3858|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844497 
+800000c6-0003-f800-b63f-84710c7967bb|2016-12-05 10:33:34.7728|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game  to the busket of Customer  
+800000c7-0003-f800-b63f-84710c7967bb|2016-12-05 10:33:38.1414|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000c93-0003-ed00-b63f-84710c7967bb|2016-12-05 10:34:31.7750|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800002e4-0000-e300-b63f-84710c7967bb|2016-12-05 10:40:49.3749|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844497 
+800002e4-0000-e300-b63f-84710c7967bb|2016-12-05 10:40:52.1970|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 39ceec04-40ca-42ae-b174-5e4be0360d79
+800002e4-0000-e300-b63f-84710c7967bb|2016-12-05 10:40:53.3785|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844497 
+800002e4-0000-e300-b63f-84710c7967bb|2016-12-05 10:40:55.8229|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 39ceec04-40ca-42ae-b174-5e4be0360d79 to the busket of Customer  
+800002e5-0000-e300-b63f-84710c7967bb|2016-12-05 10:41:02.3837|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800002ea-0000-e300-b63f-84710c7967bb|2016-12-05 10:41:10.5902|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844497 
+8000047c-0001-f200-b63f-84710c7967bb|2016-12-05 10:43:18.2247|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844498 
+8000047c-0001-f200-b63f-84710c7967bb|2016-12-05 10:43:21.9483|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: d94a5aa8-d85c-4731-ba93-483ffa7d55d0
+8000047c-0001-f200-b63f-84710c7967bb|2016-12-05 10:43:24.4841|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844498 
+8000047c-0001-f200-b63f-84710c7967bb|2016-12-05 10:43:26.9704|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game d94a5aa8-d85c-4731-ba93-483ffa7d55d0 to the busket of Customer  
+8000047d-0001-f200-b63f-84710c7967bb|2016-12-05 10:43:33.3995|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000482-0001-f200-b63f-84710c7967bb|2016-12-05 10:43:39.4503|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844498 
+800000ae-0001-eb00-b63f-84710c7967bb|2016-12-05 10:48:00.2421|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844499 
+800000ae-0001-eb00-b63f-84710c7967bb|2016-12-05 10:48:00.4964|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844499 
+800000ae-0001-eb00-b63f-84710c7967bb|2016-12-05 10:48:00.7321|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844499 
+800000ae-0001-eb00-b63f-84710c7967bb|2016-12-05 10:48:03.1852|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 5840609dd0c40ef0df844499 to the busket of Customer  
+800000af-0001-eb00-b63f-84710c7967bb|2016-12-05 10:48:09.6385|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000549-0002-eb00-b63f-84710c7967bb|2016-12-05 10:53:48.0786|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df84449a 
+80004788-0001-f300-b63f-84710c7967bb|2016-12-05 12:09:41.2469|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844499 
+800000af-0003-f000-b63f-84710c7967bb|2016-12-05 12:11:10.6114|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844499 
+800000af-0003-f000-b63f-84710c7967bb|2016-12-05 12:11:10.7660|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 267cf427-7b84-493f-8060-6554770c13b9
+800000af-0003-f000-b63f-84710c7967bb|2016-12-05 12:11:11.0215|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df844499 
+800000af-0003-f000-b63f-84710c7967bb|2016-12-05 12:11:13.5089|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 267cf427-7b84-493f-8060-6554770c13b9 to the busket of Customer  
+800000b0-0003-f000-b63f-84710c7967bb|2016-12-05 12:11:20.0143|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800000b5-0003-f000-b63f-84710c7967bb|2016-12-05 12:11:30.8881|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+800000b5-0003-f000-b63f-84710c7967bb|2016-12-05 12:11:35.5862|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game b750199c-4166-4160-804f-8a7f8b499fed to the busket of Customer  
+800000b6-0003-f000-b63f-84710c7967bb|2016-12-05 12:11:38.9426|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800000bb-0003-f000-b63f-84710c7967bb|2016-12-05 12:11:47.1237|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df844499 
+800009d3-0000-f300-b63f-84710c7967bb|2016-12-05 12:14:43.5186|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df84449a 
+800009d3-0000-f300-b63f-84710c7967bb|2016-12-05 12:14:43.6530|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 30872bd2-e5ae-48d0-8ee4-b02761a52123
+800009d3-0000-f300-b63f-84710c7967bb|2016-12-05 12:14:43.9070|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df84449a 
+800009d3-0000-f300-b63f-84710c7967bb|2016-12-05 12:14:46.3420|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 30872bd2-e5ae-48d0-8ee4-b02761a52123 to the busket of Customer  
+800009d4-0000-f300-b63f-84710c7967bb|2016-12-05 12:14:52.8454|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800009d9-0000-f300-b63f-84710c7967bb|2016-12-05 12:15:02.9350|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+800009d9-0000-f300-b63f-84710c7967bb|2016-12-05 12:15:07.3692|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 1ad31cca-0b3e-478a-bec5-4a83d2543034 to the busket of Customer  
+800009da-0000-f300-b63f-84710c7967bb|2016-12-05 12:15:10.7251|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800009df-0000-f300-b63f-84710c7967bb|2016-12-05 12:15:16.2855|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df84449a 
+80000009-0001-e500-b63f-84710c7967bb|2016-12-05 12:18:33.1099|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df84449b 
+80000009-0001-e500-b63f-84710c7967bb|2016-12-05 12:18:33.2250|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: d5a5b34b-98e5-486e-abbc-a588fe54cf68
+80000009-0001-e500-b63f-84710c7967bb|2016-12-05 12:18:33.4639|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df84449b 
+80000009-0001-e500-b63f-84710c7967bb|2016-12-05 12:18:35.9469|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game d5a5b34b-98e5-486e-abbc-a588fe54cf68 to the busket of Customer  
+8000000a-0001-e500-b63f-84710c7967bb|2016-12-05 12:18:39.7416|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+8000000f-0001-e500-b63f-84710c7967bb|2016-12-05 12:18:45.3465|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df84449b 
+800000ba-0001-e700-b63f-84710c7967bb|2016-12-05 12:19:59.9799|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df84449b 
+800000ba-0001-e700-b63f-84710c7967bb|2016-12-05 12:20:00.0949|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 3f30188d-ecca-47f2-beca-9e8a9f59dcfe
+800000ba-0001-e700-b63f-84710c7967bb|2016-12-05 12:20:00.3440|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df84449b 
+800000ba-0001-e700-b63f-84710c7967bb|2016-12-05 12:20:02.8322|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 3f30188d-ecca-47f2-beca-9e8a9f59dcfe to the busket of Customer  
+800000bb-0001-e700-b63f-84710c7967bb|2016-12-05 12:20:06.2280|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800000bf-0001-e700-b63f-84710c7967bb|2016-12-05 12:20:19.9229|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800000c4-0001-e700-b63f-84710c7967bb|2016-12-05 12:20:30.5130|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df84449b 
+8000040d-0000-f200-b63f-84710c7967bb|2016-12-05 12:23:11.2688|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df84449b 
+8000040d-0000-f200-b63f-84710c7967bb|2016-12-05 12:23:11.3810|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: cbdff7eb-c5b2-491a-8b94-508e31c28ef5
+8000040d-0000-f200-b63f-84710c7967bb|2016-12-05 12:23:11.6736|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df84449b 
+800003b9-0000-e500-b63f-84710c7967bb|2016-12-05 12:24:36.4324|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+800003b9-0000-e500-b63f-84710c7967bb|2016-12-05 12:24:38.8966|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game b3c2f85e-feef-4be2-9727-d61c10167e9f to the busket of Customer  
+800003ba-0000-e500-b63f-84710c7967bb|2016-12-05 12:24:45.8038|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800003bf-0000-e500-b63f-84710c7967bb|2016-12-05 12:24:51.2261|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df84449b 
+800003bf-0000-e500-b63f-84710c7967bb|2016-12-05 12:24:51.2917|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: c70ac610-3874-4c78-8223-bb5c5105bce5
+800003bf-0000-e500-b63f-84710c7967bb|2016-12-05 12:24:51.5275|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df84449b 
+80000940-0001-ef00-b63f-84710c7967bb|2016-12-05 12:26:11.4551|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+80000940-0001-ef00-b63f-84710c7967bb|2016-12-05 12:26:20.4574|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 62c8f5c8-a47b-4340-832e-5fb7b5dc25a4 to the busket of Customer  
+80000941-0001-ef00-b63f-84710c7967bb|2016-12-05 12:26:23.8935|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000946-0001-ef00-b63f-84710c7967bb|2016-12-05 12:26:29.2065|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df84449b 
+80000525-0003-f000-b63f-84710c7967bb|2016-12-05 12:28:36.5588|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+80000525-0003-f000-b63f-84710c7967bb|2016-12-05 12:28:39.0150|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 8aa06ecc-c241-4d63-94a6-f6cba68d81fb to the busket of Customer  
+80000526-0003-f000-b63f-84710c7967bb|2016-12-05 12:28:42.7564|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+8000052d-0003-f000-b63f-84710c7967bb|2016-12-05 12:28:53.2932|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Game11_Game11 
+8000052d-0003-f000-b63f-84710c7967bb|2016-12-05 12:28:55.6382|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 50e3c59b-d69e-45b5-996b-2a6eea38ae4a to the busket of Customer  
+8000052e-0003-f000-b63f-84710c7967bb|2016-12-05 12:28:59.0095|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000533-0003-f000-b63f-84710c7967bb|2016-12-05 12:29:04.8689|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df84449b 
+80000533-0003-f000-b63f-84710c7967bb|2016-12-05 12:29:04.9429|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 72583e8d-b3f8-454d-97b2-306e8075b680
+80000533-0003-f000-b63f-84710c7967bb|2016-12-05 12:29:05.1813|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df84449b 
+80000533-0003-f000-b63f-84710c7967bb|2016-12-05 12:29:07.5087|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 72583e8d-b3f8-454d-97b2-306e8075b680 to the busket of Customer  
+80000534-0003-f000-b63f-84710c7967bb|2016-12-05 12:29:10.9066|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000584-0001-f900-b63f-84710c7967bb|2016-12-05 12:31:43.3639|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df84449b 
+80000584-0001-f900-b63f-84710c7967bb|2016-12-05 12:31:43.4923|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 39d18948-fb4d-490f-a56c-a10c7a72d171
+80000584-0001-f900-b63f-84710c7967bb|2016-12-05 12:31:43.7483|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df84449b 
+80000584-0001-f900-b63f-84710c7967bb|2016-12-05 12:31:46.1617|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 39d18948-fb4d-490f-a56c-a10c7a72d171 to the busket of Customer  
+80000585-0001-f900-b63f-84710c7967bb|2016-12-05 12:31:52.6502|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+8000058a-0001-f900-b63f-84710c7967bb|2016-12-05 12:32:03.5070|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df84449b 
+8000002b-0001-e500-b63f-84710c7967bb|2016-12-05 12:34:31.1642|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df84449c 
+80000609-0000-e300-b63f-84710c7967bb|2016-12-05 12:35:38.8419|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df84449c 
+80000609-0000-e300-b63f-84710c7967bb|2016-12-05 12:35:38.9524|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 445260d9-cbc1-450f-ab45-2693cdaf532e
+80000609-0000-e300-b63f-84710c7967bb|2016-12-05 12:35:39.1993|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df84449c 
+80000db2-0000-f300-b63f-84710c7967bb|2016-12-05 12:36:57.2494|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+80000db2-0000-f300-b63f-84710c7967bb|2016-12-05 12:36:59.7270|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game ac0c6569-e32d-49aa-a6fb-245e8f69181e to the busket of Customer  
+80000db3-0000-f300-b63f-84710c7967bb|2016-12-05 12:37:06.8587|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000db8-0000-f300-b63f-84710c7967bb|2016-12-05 12:37:12.3765|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df84449c 
+80000db8-0000-f300-b63f-84710c7967bb|2016-12-05 12:37:12.4405|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 50336dd6-6a93-4eb1-8cd9-b45ee75267c7
+80000db8-0000-f300-b63f-84710c7967bb|2016-12-05 12:37:12.6767|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df84449c 
+80000612-0000-e300-b63f-84710c7967bb|2016-12-05 12:46:02.0220|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df84449c 
+80000612-0000-e300-b63f-84710c7967bb|2016-12-05 12:46:02.2777|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df84449c 
+80000612-0000-e300-b63f-84710c7967bb|2016-12-05 12:46:02.2947|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df84449c 
+80000612-0000-e300-b63f-84710c7967bb|2016-12-05 12:46:02.3677|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 2374e920-29bc-4360-81ba-876df29d9354
+80000612-0000-e300-b63f-84710c7967bb|2016-12-05 12:46:02.6176|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df84449c 
+80000612-0000-e300-b63f-84710c7967bb|2016-12-05 12:46:05.0236|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 2374e920-29bc-4360-81ba-876df29d9354 to the busket of Customer  
+80000613-0000-e300-b63f-84710c7967bb|2016-12-05 12:46:08.7211|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000618-0000-e300-b63f-84710c7967bb|2016-12-05 12:46:18.2035|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df84449c 
+80000618-0000-e300-b63f-84710c7967bb|2016-12-05 12:46:18.4579|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df84449c 
+80000618-0000-e300-b63f-84710c7967bb|2016-12-05 12:46:18.6863|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df84449c 
+80000618-0000-e300-b63f-84710c7967bb|2016-12-05 12:46:24.3267|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 2374e920-29bc-4360-81ba-876df29d9354 to the busket of Customer  
+80000619-0000-e300-b63f-84710c7967bb|2016-12-05 12:46:27.7302|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+8000061e-0000-e300-b63f-84710c7967bb|2016-12-05 12:46:33.5691|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+8000061e-0000-e300-b63f-84710c7967bb|2016-12-05 12:46:35.9255|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game ac87ce69-ade6-41c1-9743-bbe9fcafde69 to the busket of Customer  
+8000061f-0000-e300-b63f-84710c7967bb|2016-12-05 12:46:39.2770|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000624-0000-e300-b63f-84710c7967bb|2016-12-05 12:46:51.2493|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df84449f 
+80000624-0000-e300-b63f-84710c7967bb|2016-12-05 12:46:51.4853|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df84449f 
+80000624-0000-e300-b63f-84710c7967bb|2016-12-05 12:46:51.4853|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5840609dd0c40ef0df84449f 
+80000624-0000-e300-b63f-84710c7967bb|2016-12-05 12:46:51.5184|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 4cf0432d-1728-4fc5-b654-edb9e541be20
+80000624-0000-e300-b63f-84710c7967bb|2016-12-05 12:46:51.7525|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5840609dd0c40ef0df84449f 
+80000624-0000-e300-b63f-84710c7967bb|2016-12-05 12:46:54.0758|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 4cf0432d-1728-4fc5-b654-edb9e541be20 to the busket of Customer  
+80000625-0000-e300-b63f-84710c7967bb|2016-12-05 12:46:57.4443|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800006dc-0000-f200-b63f-84710c7967bb|2016-12-05 12:50:18.3398|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 0556b13f-c126-4a56-9328-cbe1eac35835
+800006df-0000-f200-b63f-84710c7967bb|2016-12-05 12:50:22.9647|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+800006e1-0000-f200-b63f-84710c7967bb|2016-12-05 12:50:28.8846|DEBUG|GameStore.BLL.Services.Service`2|Edit Game with Id: c03e0156-416e-4282-ad23-7054f734847b
+800006e5-0000-f200-b63f-84710c7967bb|2016-12-05 12:50:35.6019|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=584545ed28faf51186f3892c 
+800006e5-0000-f200-b63f-84710c7967bb|2016-12-05 12:50:35.8475|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=584545ed28faf51186f3892c 
+800006e5-0000-f200-b63f-84710c7967bb|2016-12-05 12:50:35.8635|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=584545ed28faf51186f3892c 
+800006e5-0000-f200-b63f-84710c7967bb|2016-12-05 12:50:35.9746|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 3b801b49-026b-4f2a-abd7-7eabefc3c056
+800006e5-0000-f200-b63f-84710c7967bb|2016-12-05 12:50:36.2225|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=584545ed28faf51186f3892c 
+800006e5-0000-f200-b63f-84710c7967bb|2016-12-05 12:50:38.5957|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 3b801b49-026b-4f2a-abd7-7eabefc3c056 to the busket of Customer  
+800006e6-0000-f200-b63f-84710c7967bb|2016-12-05 12:50:45.1222|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800006ea-0000-f200-b63f-84710c7967bb|2016-12-05 12:50:50.4207|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000f08-0000-e100-b63f-84710c7967bb|2016-12-05 12:54:35.2567|DEBUG|GameStore.BLL.Services.ModelWithNameService`2|GettingPublisherDTOby name=GamesCorporation 
+80000f0a-0000-e100-b63f-84710c7967bb|2016-12-05 12:54:38.3722|DEBUG|GameStore.BLL.Services.ModelWithNameService`2|GettingPublisherDTOby name=Mayumi's 
+80000f0d-0000-e100-b63f-84710c7967bb|2016-12-05 12:54:44.1422|DEBUG|GameStore.BLL.Services.ModelWithNameService`2|GettingPublisherDTOby name=Aux joyeux ecclésiastiques 
+80000f0f-0000-e100-b63f-84710c7967bb|2016-12-05 12:54:58.4783|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+80000f11-0000-e100-b63f-84710c7967bb|2016-12-05 12:55:09.3459|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000f16-0000-e100-b63f-84710c7967bb|2016-12-05 12:55:44.7847|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=584545ed28faf51186f3892d 
+80000f16-0000-e100-b63f-84710c7967bb|2016-12-05 12:55:45.0337|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=584545ed28faf51186f3892d 
+80000f16-0000-e100-b63f-84710c7967bb|2016-12-05 12:55:45.0527|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=584545ed28faf51186f3892d 
+80000f16-0000-e100-b63f-84710c7967bb|2016-12-05 12:55:45.1357|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: b54e7143-f44d-4ac7-bf77-f74917eef3c6
+80000f16-0000-e100-b63f-84710c7967bb|2016-12-05 12:55:45.3722|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=584545ed28faf51186f3892d 
+80000f16-0000-e100-b63f-84710c7967bb|2016-12-05 12:55:47.8629|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game b54e7143-f44d-4ac7-bf77-f74917eef3c6 to the busket of Customer  
+80000f17-0000-e100-b63f-84710c7967bb|2016-12-05 12:55:51.7647|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000f1c-0000-e100-b63f-84710c7967bb|2016-12-05 12:56:00.8222|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+80000f1c-0000-e100-b63f-84710c7967bb|2016-12-05 12:56:03.1691|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game fcb0820d-3c6d-4d5a-ab94-36ce5fd75c31 to the busket of Customer  
+80000f1d-0000-e100-b63f-84710c7967bb|2016-12-05 12:56:06.4882|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000f1f-0000-e100-b63f-84710c7967bb|2016-12-05 12:56:09.3164|DEBUG|GameStore.BLL.Services.OrdersService|Confirming order by id=01f5fb02-634d-419a-845e-de7663052851 
+80000f20-0000-e100-b63f-84710c7967bb|2016-12-05 12:56:13.9460|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+8000028f-0002-db00-b63f-84710c7967bb|2016-12-05 12:56:18.6751|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+800000fb-0003-ef00-b63f-84710c7967bb|2016-12-05 12:56:25.8678|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+800004ef-0000-e500-b63f-84710c7967bb|2016-12-05 12:56:31.2561|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800004f4-0000-e500-b63f-84710c7967bb|2016-12-05 12:57:02.5190|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+800004f4-0000-e500-b63f-84710c7967bb|2016-12-05 12:57:04.8355|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game fcb0820d-3c6d-4d5a-ab94-36ce5fd75c31 to the busket of Customer  
+800004f5-0000-e500-b63f-84710c7967bb|2016-12-05 12:57:08.1904|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800004f7-0000-e500-b63f-84710c7967bb|2016-12-05 12:57:13.3168|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800004fc-0000-e500-b63f-84710c7967bb|2016-12-05 12:57:48.9494|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=584545ed28faf51186f3892e 
+800004fc-0000-e500-b63f-84710c7967bb|2016-12-05 12:57:49.1897|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=584545ed28faf51186f3892e 
+800004fc-0000-e500-b63f-84710c7967bb|2016-12-05 12:57:49.1897|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=584545ed28faf51186f3892e 
+800004fc-0000-e500-b63f-84710c7967bb|2016-12-05 12:57:49.2240|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: deb2fd3c-122a-48f4-9c50-390afbe82e09
+800004fc-0000-e500-b63f-84710c7967bb|2016-12-05 12:57:49.4572|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=584545ed28faf51186f3892e 
+800004fc-0000-e500-b63f-84710c7967bb|2016-12-05 12:57:51.7342|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game deb2fd3c-122a-48f4-9c50-390afbe82e09 to the busket of Customer  
+800004fd-0000-e500-b63f-84710c7967bb|2016-12-05 12:57:55.0713|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000503-0000-e500-b63f-84710c7967bb|2016-12-05 12:58:53.1644|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: fc64a75e-83a9-4c90-8e98-f970408238b5
+800000b5-0003-e800-b63f-84710c7967bb|2016-12-05 13:32:40.2707|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f39618 
+800000b5-0003-e800-b63f-84710c7967bb|2016-12-05 13:32:40.5286|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f39618 
+800000b5-0003-e800-b63f-84710c7967bb|2016-12-05 13:32:40.5466|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5845488628faf51186f39618 
+800000b5-0003-e800-b63f-84710c7967bb|2016-12-05 13:32:40.6487|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 200ff5ac-cad7-4d71-9fd0-aae783efda63
+800000b5-0003-e800-b63f-84710c7967bb|2016-12-05 13:32:40.8699|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f39618 
+800000b5-0003-e800-b63f-84710c7967bb|2016-12-05 13:32:43.2605|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 200ff5ac-cad7-4d71-9fd0-aae783efda63 to the busket of Customer  
+800000b6-0003-e800-b63f-84710c7967bb|2016-12-05 13:32:49.7919|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800000b8-0003-e800-b63f-84710c7967bb|2016-12-05 13:32:51.7707|DEBUG|GameStore.BLL.Services.OrdersService|Confirming order by id=1302a3a2-6a4b-4691-86a1-6f2f3f6298d8 
+800000b9-0003-e800-b63f-84710c7967bb|2016-12-05 13:32:56.7059|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+800004df-0003-f300-b63f-84710c7967bb|2016-12-05 13:33:01.6536|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+800000be-0003-e800-b63f-84710c7967bb|2016-12-05 13:33:12.6465|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800000c3-0003-e800-b63f-84710c7967bb|2016-12-05 13:33:17.5999|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f39619 
+800000c3-0003-e800-b63f-84710c7967bb|2016-12-05 13:33:17.8301|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f39619 
+800000c3-0003-e800-b63f-84710c7967bb|2016-12-05 13:33:17.8341|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5845488628faf51186f39619 
+800000c3-0003-e800-b63f-84710c7967bb|2016-12-05 13:33:17.8616|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: cc2352f5-0491-4bad-8d6d-234ea39c6300
+800000c3-0003-e800-b63f-84710c7967bb|2016-12-05 13:33:18.0911|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f39619 
+800000c3-0003-e800-b63f-84710c7967bb|2016-12-05 13:33:20.4109|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game cc2352f5-0491-4bad-8d6d-234ea39c6300 to the busket of Customer  
+800000c4-0003-e800-b63f-84710c7967bb|2016-12-05 13:33:23.8016|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800000c9-0003-e800-b63f-84710c7967bb|2016-12-05 13:33:42.2753|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f39618 
+800000c9-0003-e800-b63f-84710c7967bb|2016-12-05 13:33:42.5280|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f39618 
+800000c9-0003-e800-b63f-84710c7967bb|2016-12-05 13:33:42.7601|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f39618 
+8000012a-0000-ef00-b63f-84710c7967bb|2016-12-05 13:42:47.7664|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f3961a 
+8000012a-0000-ef00-b63f-84710c7967bb|2016-12-05 13:42:48.0158|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f3961a 
+8000012a-0000-ef00-b63f-84710c7967bb|2016-12-05 13:42:48.0339|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5845488628faf51186f3961a 
+8000012a-0000-ef00-b63f-84710c7967bb|2016-12-05 13:42:48.1099|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: a2afdec3-5e55-4749-bbd5-915cf5c37278
+8000012a-0000-ef00-b63f-84710c7967bb|2016-12-05 13:42:48.3432|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f3961a 
+8000012a-0000-ef00-b63f-84710c7967bb|2016-12-05 13:42:50.7713|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game a2afdec3-5e55-4749-bbd5-915cf5c37278 to the busket of Customer  
+8000012b-0000-ef00-b63f-84710c7967bb|2016-12-05 13:42:57.3645|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000130-0000-ef00-b63f-84710c7967bb|2016-12-05 13:43:11.2669|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+80000130-0000-ef00-b63f-84710c7967bb|2016-12-05 13:43:13.6606|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 77924def-2c34-41f1-871e-5a9a3b88fd2f to the busket of Customer  
+80000131-0000-ef00-b63f-84710c7967bb|2016-12-05 13:43:17.0420|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000133-0000-ef00-b63f-84710c7967bb|2016-12-05 13:43:18.8227|DEBUG|GameStore.BLL.Services.OrdersService|Confirming order by id=28da2c37-37ab-44f9-946b-d20b83ddd803 
+80000134-0000-ef00-b63f-84710c7967bb|2016-12-05 13:43:23.6073|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+80000089-0002-e500-b63f-84710c7967bb|2016-12-05 13:43:31.5663|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+80000139-0000-ef00-b63f-84710c7967bb|2016-12-05 13:43:45.5945|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+8000013e-0000-ef00-b63f-84710c7967bb|2016-12-05 13:43:49.6881|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+8000013e-0000-ef00-b63f-84710c7967bb|2016-12-05 13:43:52.0208|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 77924def-2c34-41f1-871e-5a9a3b88fd2f to the busket of Customer  
+8000013f-0000-ef00-b63f-84710c7967bb|2016-12-05 13:43:55.4248|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000144-0000-ef00-b63f-84710c7967bb|2016-12-05 13:44:00.2892|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f3961a 
+80000144-0000-ef00-b63f-84710c7967bb|2016-12-05 13:44:00.5335|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f3961a 
+80000144-0000-ef00-b63f-84710c7967bb|2016-12-05 13:44:00.7594|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f3961a 
+80000144-0000-ef00-b63f-84710c7967bb|2016-12-05 13:44:03.0852|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game a2afdec3-5e55-4749-bbd5-915cf5c37278 to the busket of Customer  
+80000145-0000-ef00-b63f-84710c7967bb|2016-12-05 13:44:06.4450|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+8000014a-0000-ef00-b63f-84710c7967bb|2016-12-05 13:44:11.3703|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+8000014a-0000-ef00-b63f-84710c7967bb|2016-12-05 13:44:13.6875|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 77924def-2c34-41f1-871e-5a9a3b88fd2f to the busket of Customer  
+8000014b-0000-ef00-b63f-84710c7967bb|2016-12-05 13:44:17.0730|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000057-0003-eb00-b63f-84710c7967bb|2016-12-05 13:58:10.0547|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+80000057-0003-eb00-b63f-84710c7967bb|2016-12-05 13:58:12.4676|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 77924def-2c34-41f1-871e-5a9a3b88fd2f to the busket of Customer  
+80000058-0003-eb00-b63f-84710c7967bb|2016-12-05 13:58:15.8717|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+8000011c-0003-ef00-b63f-84710c7967bb|2016-12-05 13:59:15.6339|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f3961c 
+8000011c-0003-ef00-b63f-84710c7967bb|2016-12-05 13:59:15.8719|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f3961c 
+8000011c-0003-ef00-b63f-84710c7967bb|2016-12-05 13:59:15.8719|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5845488628faf51186f3961c 
+8000011c-0003-ef00-b63f-84710c7967bb|2016-12-05 13:59:15.9411|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 0fd9b83b-c7de-48a9-9410-aaed0b770f43
+8000011c-0003-ef00-b63f-84710c7967bb|2016-12-05 13:59:16.1738|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f3961c 
+8000011c-0003-ef00-b63f-84710c7967bb|2016-12-05 13:59:18.5054|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 0fd9b83b-c7de-48a9-9410-aaed0b770f43 to the busket of Customer  
+8000011d-0003-ef00-b63f-84710c7967bb|2016-12-05 13:59:21.9552|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80002740-0000-f400-b63f-84710c7967bb|2016-12-05 14:02:55.1741|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f3961e 
+80002740-0000-f400-b63f-84710c7967bb|2016-12-05 14:02:55.4211|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f3961e 
+80002740-0000-f400-b63f-84710c7967bb|2016-12-05 14:02:55.4391|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5845488628faf51186f3961e 
+80002740-0000-f400-b63f-84710c7967bb|2016-12-05 14:02:55.5321|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: be709cd9-29b5-462e-a3a3-c997a3960d21
+80002740-0000-f400-b63f-84710c7967bb|2016-12-05 14:02:55.7699|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f3961e 
+80002740-0000-f400-b63f-84710c7967bb|2016-12-05 14:02:55.8104|DEBUG|GameStore.BLL.Services.Service`2|Edit Game with Id: be709cd9-29b5-462e-a3a3-c997a3960d21
+80002740-0000-f400-b63f-84710c7967bb|2016-12-05 14:02:58.2306|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game be709cd9-29b5-462e-a3a3-c997a3960d21 to the busket of Customer  
+80002741-0000-f400-b63f-84710c7967bb|2016-12-05 14:03:04.7623|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80002748-0000-f400-b63f-84710c7967bb|2016-12-05 14:04:51.7047|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f3961d 
+80002748-0000-f400-b63f-84710c7967bb|2016-12-05 14:04:51.9540|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f3961d 
+80002748-0000-f400-b63f-84710c7967bb|2016-12-05 14:04:51.9540|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5845488628faf51186f3961d 
+80002748-0000-f400-b63f-84710c7967bb|2016-12-05 14:04:51.9930|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: f5eed8d5-c2ae-45fa-82fb-8ef4c6d9310d
+80002748-0000-f400-b63f-84710c7967bb|2016-12-05 14:04:52.2293|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f3961d 
+80002748-0000-f400-b63f-84710c7967bb|2016-12-05 14:04:52.2578|DEBUG|GameStore.BLL.Services.Service`2|Edit Game with Id: f5eed8d5-c2ae-45fa-82fb-8ef4c6d9310d
+80002748-0000-f400-b63f-84710c7967bb|2016-12-05 14:04:54.5891|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game f5eed8d5-c2ae-45fa-82fb-8ef4c6d9310d to the busket of Customer  
+80002749-0000-f400-b63f-84710c7967bb|2016-12-05 14:04:57.9753|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000675-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:00.0300|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+80000675-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:00.1764|DEBUG|GameStore.BLL.Services.Service`2|Edit Game with Id: 07296d36-7651-4193-9e20-98c3b9339278
+80000675-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:02.6031|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 07296d36-7651-4193-9e20-98c3b9339278 to the busket of Customer  
+80000676-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:06.0315|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+8000067b-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:12.3239|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f39620 
+8000067b-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:12.5724|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f39620 
+8000067b-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:12.5905|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5845488628faf51186f39620 
+8000067b-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:12.6536|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 54f66e46-b3e3-4034-97bc-b47ce4b051e3
+8000067b-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:12.9186|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f39620 
+8000067b-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:12.9507|DEBUG|GameStore.BLL.Services.Service`2|Edit Game with Id: 54f66e46-b3e3-4034-97bc-b47ce4b051e3
+8000067b-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:15.2868|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 54f66e46-b3e3-4034-97bc-b47ce4b051e3 to the busket of Customer  
+8000067c-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:18.6676|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+8000067e-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:19.8909|DEBUG|GameStore.BLL.Services.OrdersService|Confirming order by id=d7bf1696-f100-4c93-b9d6-4d0a852ae3d6 
+8000067f-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:24.7344|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+800002af-0002-db00-b63f-84710c7967bb|2016-12-05 14:06:29.0929|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+80000685-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:42.2074|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f39621 
+80000685-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:42.4395|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f39621 
+80000685-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:42.4395|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5845488628faf51186f39621 
+80000685-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:42.4746|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: b04a12bf-09db-469b-9d5a-97b7ab276f2b
+80000685-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:42.7224|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f39621 
+80000685-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:42.7674|DEBUG|GameStore.BLL.Services.Service`2|Edit Game with Id: b04a12bf-09db-469b-9d5a-97b7ab276f2b
+80000685-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:45.1205|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game b04a12bf-09db-469b-9d5a-97b7ab276f2b to the busket of Customer  
+80000686-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:48.5275|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000688-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:52.9435|DEBUG|GameStore.BLL.Services.OrdersService|Deleting busket by Customer id= 
+80000689-0000-f900-b63f-84710c7967bb|2016-12-05 14:06:55.3215|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+8000068b-0000-f900-b63f-84710c7967bb|2016-12-05 14:07:00.4173|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+8000142b-0001-f100-b63f-84710c7967bb|2016-12-05 14:10:48.7486|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+8000142b-0001-f100-b63f-84710c7967bb|2016-12-05 14:10:48.8827|DEBUG|GameStore.BLL.Services.Service`2|Edit Game with Id: cf4e5774-8bdf-452d-9999-2d6dde813637
+8000142b-0001-f100-b63f-84710c7967bb|2016-12-05 14:10:51.2931|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game cf4e5774-8bdf-452d-9999-2d6dde813637 to the busket of Customer  
+8000142c-0001-f100-b63f-84710c7967bb|2016-12-05 14:10:57.9544|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80001430-0001-f100-b63f-84710c7967bb|2016-12-05 14:11:04.0637|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000136-0000-ec00-b63f-84710c7967bb|2016-12-05 14:12:31.7460|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f3961f 
+80000136-0000-ec00-b63f-84710c7967bb|2016-12-05 14:12:32.0077|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f3961f 
+80000136-0000-ec00-b63f-84710c7967bb|2016-12-05 14:12:32.0247|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5845488628faf51186f3961f 
+80000136-0000-ec00-b63f-84710c7967bb|2016-12-05 14:12:32.1403|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: 831e37df-c007-489d-97c8-69842450692e
+80000136-0000-ec00-b63f-84710c7967bb|2016-12-05 14:12:32.3703|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f3961f 
+80000136-0000-ec00-b63f-84710c7967bb|2016-12-05 14:12:32.4123|DEBUG|GameStore.BLL.Services.Service`2|Edit Game with Id: 831e37df-c007-489d-97c8-69842450692e
+80000136-0000-ec00-b63f-84710c7967bb|2016-12-05 14:12:34.9255|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 831e37df-c007-489d-97c8-69842450692e to the busket of Customer  
+80000137-0000-ec00-b63f-84710c7967bb|2016-12-05 14:12:41.4692|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000139-0000-ec00-b63f-84710c7967bb|2016-12-05 14:12:46.6797|DEBUG|GameStore.BLL.Services.OrdersService|Deleting busket by Customer id= 
+8000013a-0000-ec00-b63f-84710c7967bb|2016-12-05 14:12:49.0728|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+8000013f-0000-ec00-b63f-84710c7967bb|2016-12-05 14:12:59.6681|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+8000013f-0000-ec00-b63f-84710c7967bb|2016-12-05 14:12:59.7316|DEBUG|GameStore.BLL.Services.Service`2|Edit Game with Id: 8cd2da6b-a8be-411d-b513-7f78745a78b9
+8000013f-0000-ec00-b63f-84710c7967bb|2016-12-05 14:13:02.0682|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 8cd2da6b-a8be-411d-b513-7f78745a78b9 to the busket of Customer  
+80000140-0000-ec00-b63f-84710c7967bb|2016-12-05 14:13:05.4869|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000142-0000-ec00-b63f-84710c7967bb|2016-12-05 14:13:07.9298|DEBUG|GameStore.BLL.Services.OrdersService|Confirming order by id=894f495c-bb4e-4c06-a7b0-d070c5f3b25d 
+80000143-0000-ec00-b63f-84710c7967bb|2016-12-05 14:13:12.7417|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+80000147-0000-ec00-b63f-84710c7967bb|2016-12-05 14:13:18.1338|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+8000014c-0000-ec00-b63f-84710c7967bb|2016-12-05 14:13:29.0271|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+8000014c-0000-ec00-b63f-84710c7967bb|2016-12-05 14:13:29.0651|DEBUG|GameStore.BLL.Services.Service`2|Edit Game with Id: 8cd2da6b-a8be-411d-b513-7f78745a78b9
+8000014c-0000-ec00-b63f-84710c7967bb|2016-12-05 14:13:31.4285|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 8cd2da6b-a8be-411d-b513-7f78745a78b9 to the busket of Customer  
+8000014d-0000-ec00-b63f-84710c7967bb|2016-12-05 14:13:34.8303|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+8000014f-0000-ec00-b63f-84710c7967bb|2016-12-05 14:13:40.1188|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+80000151-0000-ec00-b63f-84710c7967bb|2016-12-05 14:13:46.8944|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+8000013a-0002-ed00-b63f-84710c7967bb|2016-12-05 14:13:50.8711|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+80000157-0000-ec00-b63f-84710c7967bb|2016-12-05 14:14:00.5097|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+80000157-0000-ec00-b63f-84710c7967bb|2016-12-05 14:14:00.5482|DEBUG|GameStore.BLL.Services.Service`2|Edit Game with Id: 8cd2da6b-a8be-411d-b513-7f78745a78b9
+80000157-0000-ec00-b63f-84710c7967bb|2016-12-05 14:14:02.8954|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 8cd2da6b-a8be-411d-b513-7f78745a78b9 to the busket of Customer  
+80000158-0000-ec00-b63f-84710c7967bb|2016-12-05 14:14:06.3221|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+8000015c-0000-ec00-b63f-84710c7967bb|2016-12-05 14:14:13.3555|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+8000015e-0000-ec00-b63f-84710c7967bb|2016-12-05 14:14:16.9789|DEBUG|GameStore.BLL.Services.OrdersService|Deleting busket by Customer id= 
+8000015f-0000-ec00-b63f-84710c7967bb|2016-12-05 14:14:19.3600|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800005be-0002-dd00-b63f-84710c7967bb|2016-12-05 14:19:42.5374|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+800005c2-0002-dd00-b63f-84710c7967bb|2016-12-05 14:20:22.2074|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800005c4-0002-dd00-b63f-84710c7967bb|2016-12-05 14:20:38.3345|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800005c6-0002-dd00-b63f-84710c7967bb|2016-12-05 14:20:53.7067|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800005c8-0002-dd00-b63f-84710c7967bb|2016-12-05 14:21:10.9367|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800005ca-0002-dd00-b63f-84710c7967bb|2016-12-05 14:21:21.4317|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+800005cf-0002-dd00-b63f-84710c7967bb|2016-12-05 14:21:28.4497|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=Sims3_16in1 
+800005cf-0002-dd00-b63f-84710c7967bb|2016-12-05 14:21:28.5778|DEBUG|GameStore.BLL.Services.Service`2|Edit Game with Id: 826656d2-79d8-47fb-9c0a-00a5fe3a1e28
+800005cf-0002-dd00-b63f-84710c7967bb|2016-12-05 14:21:30.9346|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game 826656d2-79d8-47fb-9c0a-00a5fe3a1e28 to the busket of Customer  
+800005d0-0002-dd00-b63f-84710c7967bb|2016-12-05 14:21:34.3383|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800005d2-0002-dd00-b63f-84710c7967bb|2016-12-05 14:21:36.8662|DEBUG|GameStore.BLL.Services.OrdersService|Confirming order by id=fa64bfbd-3555-49df-8824-1ea6ce6bcb01 
+800005d3-0002-dd00-b63f-84710c7967bb|2016-12-05 14:21:41.6598|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+800005d5-0002-dd00-b63f-84710c7967bb|2016-12-05 14:22:22.9188|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+8000013b-0003-fc00-b63f-84710c7967bb|2016-12-05 14:22:32.8003|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+800005d8-0002-dd00-b63f-84710c7967bb|2016-12-05 14:22:43.1703|DEBUG|GameStore.BLL.Services.OrdersService|Getting order by Customer id={0} 
+800005da-0002-dd00-b63f-84710c7967bb|2016-12-05 14:22:51.1814|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 
+800005e7-0002-dd00-b63f-84710c7967bb|2016-12-05 14:23:40.1692|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f39622 
+800005e7-0002-dd00-b63f-84710c7967bb|2016-12-05 14:23:40.4209|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f39622 
+800005e7-0002-dd00-b63f-84710c7967bb|2016-12-05 14:23:40.4379|DEBUG|GameStore.BLL.Services.Service`2|GettingGameby id=5845488628faf51186f39622 
+800005e7-0002-dd00-b63f-84710c7967bb|2016-12-05 14:23:40.4844|DEBUG|GameStore.BLL.Services.Service`2|Add Game with Id: a82fa1e2-b773-497e-a130-b59132785346
+800005e7-0002-dd00-b63f-84710c7967bb|2016-12-05 14:23:40.7211|DEBUG|GameStore.BLL.Services.ModelWithKeyService`2|GettingGameby key=5845488628faf51186f39622 
+800005e7-0002-dd00-b63f-84710c7967bb|2016-12-05 14:23:40.7511|DEBUG|GameStore.BLL.Services.Service`2|Edit Game with Id: a82fa1e2-b773-497e-a130-b59132785346
+800005e7-0002-dd00-b63f-84710c7967bb|2016-12-05 14:23:43.0954|DEBUG|GameStore.BLL.Services.OrdersService|Adding product with Game a82fa1e2-b773-497e-a130-b59132785346 to the busket of Customer  
+800005e8-0002-dd00-b63f-84710c7967bb|2016-12-05 14:23:46.6689|DEBUG|GameStore.BLL.Services.OrdersService|Getting basket by Customer id= 

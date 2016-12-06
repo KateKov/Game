@@ -5,7 +5,6 @@
 @{
     ViewBag.Title = "Basket";
 }
-<link href='@Url.Content("~/Content/themes/base/jquery-ui.css")' rel="stylesheet" type="text/css" />
 <h2>Basket</h2>
 @if (Model != null)
 {
@@ -53,14 +52,13 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Price)
                 </td>
-
-
             </tr>
         }
-
     </table>
 }
 else
 {
     <p>The basket is epmty</p>
+    <div>  @Html.ActionLink("Orders", "Order", "Orders") </div>
+    <div></div>
 }

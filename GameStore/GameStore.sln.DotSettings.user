@@ -1,11 +1,12 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:Boolean x:Key="/Default/CoverageSessionsPersistenceManagerSettings/SessionPersistentData/=AC411323FDF44510AEE6ADBB4AF2A9AA/@KeyIndexDefined">True</s:Boolean>
-	<s:String x:Key="/Default/CoverageSessionsPersistenceManagerSettings/SessionPersistentData/=AC411323FDF44510AEE6ADBB4AF2A9AA/ProductVersion/@EntryValue">2016.2.2</s:String>
-	<s:String x:Key="/Default/CoverageSessionsPersistenceManagerSettings/SessionPersistentData/=AC411323FDF44510AEE6ADBB4AF2A9AA/SnapshotLocation/@EntryValue">C:\Users\Kateryna_Kovalenko\AppData\Local\Temp\ssm.Vojadev.tmp</s:String>
+	<s:Boolean x:Key="/Default/CoverageSessionsPersistenceManagerSettings/SessionPersistentData/=03B75E3DF7214B9C84E284FE91E38769/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/CoverageSessionsPersistenceManagerSettings/SessionPersistentData/=03B75E3DF7214B9C84E284FE91E38769/ProductVersion/@EntryValue">2016.2.2</s:String>
+	<s:String x:Key="/Default/CoverageSessionsPersistenceManagerSettings/SessionPersistentData/=03B75E3DF7214B9C84E284FE91E38769/SnapshotLocation/@EntryValue">C:\Users\Kateryna_Kovalenko\AppData\Local\Temp\ssm.Fotymuz.tmp</s:String>
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="C:\Users\Kateryna_Kovalenko\Documents\Migrations\kateryna_kovalenk\packages\NLog.Mongo.4.0.0.43\lib\net45\NLog.Mongo.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Users\Kateryna_Kovalenko\Documents\Migrations\kateryna_kovalenk\packages\MongoDB.Driver.2.3.0\lib\net45\MongoDB.Driver.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String>
 	
 	
 	
-	
-	
-	
-	<s:Int64 x:Key="/Default/Environment/SearchAndNavigation/DefaultOccurrencesGroupingIndex/@EntryValue">0</s:Int64></wpf:ResourceDictionary>
+	<s:Int64 x:Key="/Default/Environment/SearchAndNavigation/DefaultOccurrencesGroupingIndex/@EntryValue">2</s:Int64></wpf:ResourceDictionary>
