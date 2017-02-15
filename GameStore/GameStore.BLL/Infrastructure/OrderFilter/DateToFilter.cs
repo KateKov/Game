@@ -1,9 +1,5 @@
-﻿using GameStore.BLL.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using GameStore.BLL.Interfaces;
 using GameStore.DAL.Entities;
 
 namespace GameStore.BLL.Infrastructure.OrderFilter
@@ -11,6 +7,7 @@ namespace GameStore.BLL.Infrastructure.OrderFilter
     public class DateToFilter : IOperation<Order>
     {
         private readonly DateTime _dateTo;
+
         public DateToFilter(DateTime dateTo)
         {
                 _dateTo = dateTo;  

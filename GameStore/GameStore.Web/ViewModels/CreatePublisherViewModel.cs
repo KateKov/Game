@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using GameStore.Web.App_LocalResources;
 
 namespace GameStore.Web.ViewModels
 {
@@ -7,14 +8,19 @@ namespace GameStore.Web.ViewModels
     {
         [Required]
         public string Id { get; set; }
-        [Required]
-        [Display(Name = "Name")]
+
+        [Required(ErrorMessageResourceType = typeof(GlobalRes), ErrorMessageResourceName = "ErrorName")]
+        [Display(ResourceType = typeof(GlobalRes), Name = "Name")]
         public string Name { get; set; }
-        [Display(Name = "Description")]
+
+        [Display(ResourceType = typeof(GlobalRes), Name = "Description")]
         public string Description { get; set; }
-        [Display(Name = "HomePage")]
+
+        [Display(ResourceType = typeof(GlobalRes), Name = "HomePage")]
         public string HomePage { get; set; }
+
         public List<GameViewModel> Games { get; set; }
+
         public List<string> SelectedGames { get; set; }
     }
 }

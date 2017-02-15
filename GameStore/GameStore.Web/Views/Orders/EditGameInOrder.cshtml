@@ -1,0 +1,31 @@
+﻿@model GameStore.Web.ViewModels.OrderDetails.CreateOrderDetail
+@{
+    ViewBag.Title = GlobalRes.Edit;
+}
+<div id="addGame">
+    <hr>
+    <div class="row">
+        <div class="col-xs-9 personal-info">
+            <div class="alert alert-info alert-dismissable">
+                @GlobalRes.OrderDetails
+            </div>
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                @Html.HiddenFor(m => m.Id)
+                @Html.HiddenFor(x => x.GameKey)
+                @Html.HiddenFor(x => x.OrderId)     
+                <p> @GlobalRes.Price:</p>
+                @Html.DisplayFor(x=>x.Price)
+                <p> @GlobalRes.Counts:</p>
+                <input type="text" id="Quantity" name="Quantity" min="1" value="@Model.Quantity" value="1" max="@Model.UnitsInStock" onchange="isright(this)" style="width: 50px" />
+                @Html.ValidationMessageFor(model => model.Quantity, "")
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value=@GlobalRes.Edit class="btn btn-default" />
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

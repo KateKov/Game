@@ -116,8 +116,8 @@
       <HintPath>..\packages\MvcCheckBoxList.1.4.5\lib\net45\MvcCheckBoxList.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.5.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
@@ -148,6 +148,17 @@
       <HintPath>..\packages\Rotativa.1.6.4\lib\net40\Rotativa.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -157,6 +168,18 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
       <Private>True</Private>
@@ -405,11 +428,34 @@
     <Content Include="Content\2013.2.611\Windows7\slider-v.gif" />
     <Content Include="Content\2013.2.611\Windows7\sprite-vertical.png" />
     <Content Include="Content\2013.2.611\Windows7\sprite.png" />
+    <Content Include="Content\app.css" />
+    <Content Include="Content\ban.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Comment.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\images\default.jpg" />
+    <Content Include="Content\images\photo.png" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\proxima-nova\proximanova-bold-webfont.svg" />
+    <Content Include="fonts\proxima-nova\proximanova-light-webfont.svg" />
+    <Content Include="fonts\proxima-nova\proximanova-regular-webfont.svg" />
+    <Content Include="fonts\proxima-nova\proximanova-regularitalic-webfont.svg" />
+    <Content Include="fonts\proxima-nova\proximanova-semibold-webfont.svg" />
+    <Content Include="fonts\proxima-nova\proximanovacond-light-webfont.svg" />
+    <Content Include="fonts\proxima-nova\proximanovacond-regular-webfont.svg" />
+    <Content Include="fonts\proxima-nova\proximanovacond-regularit-webfont.svg" />
+    <Content Include="fonts\proxima-nova\proximanovacond-semibold-webfont.svg" />
+    <Content Include="fonts\proxima-nova\proximanovacond-thin-webfont.svg" />
+    <Content Include="fonts\proxima-nova\proximanovat-thin-webfont.svg" />
+    <Content Include="Content\images\default_1.jpg" />
+    <Content Include="Content\images\mountain.png" />
+    <Content Include="Content\sweetalert\bootstrap-sweetalert.png" />
+    <Content Include="Content\sweetalert\docs.css" />
+    <Content Include="Content\sweetalert\sweet-alert.css" />
+    <Content Include="Content\sweetalert\thumbs-up.jpg" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
     <Content Include="Content\themes\base\autocomplete.css" />
@@ -429,7 +475,6 @@
     <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
     <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
-    <Content Include="Content\themes\base\images\ui-icons_444444_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_555555_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_777620_256x240.png" />
@@ -455,7 +500,6 @@
     <Content Include="scripts\AddToBasket.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
-    <Content Include="scripts\Comment.js" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\StyleSheet.css" />
     <Content Include="Global.asax" />
@@ -463,8 +507,11 @@
     <Content Include="scripts\ai.0.22.19-build00125.js" />
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
     <Content Include="App_Browsers\qt.browser" />
+    <Content Include="scripts\Comment.js" />
+    <Content Include="scripts\CommentLoad.js" />
     <Content Include="scripts\DatePickerReady.js" />
-    <Content Include="scripts\Game.js" />
+    <Content Include="scripts\Delete.js" />
+    <Content Include="scripts\Filter.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -473,7 +520,55 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\sweetalert\sweet-alert.less" />
+    <Content Include="Content\sweetalert\sweet-alert-combine.less" />
+    <Content Include="Content\sweetalert\sweet-alert-animations.less" />
+    <Content Include="Content\bootstrap\variables.less" />
+    <Content Include="Content\bootstrap\mixins.less" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\proxima-nova\proximanova-bold-webfont.eot" />
+    <Content Include="fonts\proxima-nova\proximanova-bold-webfont.ttf" />
+    <Content Include="fonts\proxima-nova\proximanova-bold-webfont.woff" />
+    <Content Include="fonts\proxima-nova\proximanova-light-webfont.eot" />
+    <Content Include="fonts\proxima-nova\proximanova-light-webfont.ttf" />
+    <Content Include="fonts\proxima-nova\proximanova-light-webfont.woff" />
+    <Content Include="fonts\proxima-nova\proximanova-regular-webfont.eot" />
+    <Content Include="fonts\proxima-nova\proximanova-regular-webfont.ttf" />
+    <Content Include="fonts\proxima-nova\proximanova-regular-webfont.woff" />
+    <Content Include="fonts\proxima-nova\proximanova-regularitalic-webfont.eot" />
+    <Content Include="fonts\proxima-nova\proximanova-regularitalic-webfont.ttf" />
+    <Content Include="fonts\proxima-nova\proximanova-regularitalic-webfont.woff" />
+    <Content Include="fonts\proxima-nova\proximanova-semibold-webfont.eot" />
+    <Content Include="fonts\proxima-nova\proximanova-semibold-webfont.ttf" />
+    <Content Include="fonts\proxima-nova\proximanova-semibold-webfont.woff" />
+    <Content Include="fonts\proxima-nova\proximanova-semibold-webfont.woff2" />
+    <Content Include="fonts\proxima-nova\proximanovacond-light-webfont.eot" />
+    <Content Include="fonts\proxima-nova\proximanovacond-light-webfont.ttf" />
+    <Content Include="fonts\proxima-nova\proximanovacond-light-webfont.woff" />
+    <Content Include="fonts\proxima-nova\proximanovacond-regular-webfont.eot" />
+    <Content Include="fonts\proxima-nova\proximanovacond-regular-webfont.ttf" />
+    <Content Include="fonts\proxima-nova\proximanovacond-regular-webfont.woff" />
+    <Content Include="fonts\proxima-nova\proximanovacond-regularit-webfont.eot" />
+    <Content Include="fonts\proxima-nova\proximanovacond-regularit-webfont.ttf" />
+    <Content Include="fonts\proxima-nova\proximanovacond-regularit-webfont.woff" />
+    <Content Include="fonts\proxima-nova\proximanovacond-semibold-webfont.eot" />
+    <Content Include="fonts\proxima-nova\proximanovacond-semibold-webfont.ttf" />
+    <Content Include="fonts\proxima-nova\proximanovacond-semibold-webfont.woff" />
+    <Content Include="fonts\proxima-nova\proximanovacond-thin-webfont.eot" />
+    <Content Include="fonts\proxima-nova\proximanovacond-thin-webfont.ttf" />
+    <Content Include="fonts\proxima-nova\proximanovacond-thin-webfont.woff" />
+    <Content Include="fonts\proxima-nova\proximanovacond-thin-webfont.woff2" />
+    <Content Include="fonts\proxima-nova\proximanovat-thin-webfont.eot" />
+    <Content Include="fonts\proxima-nova\proximanovat-thin-webfont.ttf" />
+    <Content Include="fonts\proxima-nova\proximanovat-thin-webfont.woff" />
+    <Content Include="fonts\proxima-nova\proximanovat-thin-webfont.woff2" />
     <None Include="scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="scripts\Game.js" />
+    <Content Include="scripts\jquery-2.2.4.min.js" />
     <Content Include="scripts\jquery-3.1.1.js" />
     <Content Include="scripts\jquery-3.1.1.min.js" />
     <Content Include="scripts\jquery-3.1.1.slim.js" />
@@ -482,207 +577,72 @@
     <Content Include="scripts\jquery-ui-1.12.1.min.js" />
     <Content Include="scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="scripts\modernizr-2.6.2.js" />
+    <Content Include="scripts\SuccessBasket.js" />
+    <Content Include="scripts\SuccessComment.js" />
+    <Content Include="scripts\sweetalert-dev.js" />
+    <Content Include="scripts\sweetalert.min.js" />
+    <Content Include="Service References\PaymentService\GameStore.Web.PaymentService.AuthorizeUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\PaymentService\GameStore.Web.PaymentService.PaymentStatus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\PaymentService\GameStore.Web.PaymentService.Transfer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\PaymentService\PaymentService.disco" />
+    <None Include="Service References\PaymentService\configuration91.svcinfo" />
+    <None Include="Service References\PaymentService\configuration.svcinfo" />
+    <None Include="Service References\PaymentService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_GlobalResources\EditorLocalization.bg-BG.designer.cs">
+    <Compile Include="Controllers\api\BaseApiController.cs" />
+    <Compile Include="Controllers\api\CommentsController.cs" />
+    <Compile Include="Controllers\api\GamesController.cs" />
+    <Compile Include="Controllers\api\GenresController.cs" />
+    <Compile Include="Controllers\api\OrdersController.cs" />
+    <Compile Include="Controllers\api\PublishersController.cs" />
+    <Compile Include="App_LocalResources\GlobalRes.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>EditorLocalization.bg-BG.resx</DependentUpon>
+      <DependentUpon>GlobalRes.resx</DependentUpon>
     </Compile>
-    <Compile Include="App_GlobalResources\EditorLocalization.da-DK.designer.cs">
+    <Compile Include="App_LocalResources\GlobalRes.ru.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>EditorLocalization.da-DK.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\EditorLocalization.de-DE.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EditorLocalization.de-DE.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\EditorLocalization.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EditorLocalization.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\EditorLocalization.en-US.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EditorLocalization.en-US.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\EditorLocalization.fr-FR.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EditorLocalization.fr-FR.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\EditorLocalization.nl-NL.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EditorLocalization.nl-NL.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\EditorLocalization.pl-PL.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EditorLocalization.pl-PL.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\EditorLocalization.pt-BR.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EditorLocalization.pt-BR.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\EditorLocalization.pt-PT.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EditorLocalization.pt-PT.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\EditorLocalization.ru-RU.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EditorLocalization.ru-RU.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\EditorLocalization.uk-UA.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EditorLocalization.uk-UA.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\EditorLocalization.zh-CN.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EditorLocalization.zh-CN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\GridLocalization.bg-BG.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GridLocalization.bg-BG.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\GridLocalization.da-DK.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GridLocalization.da-DK.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\GridLocalization.de-DE.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GridLocalization.de-DE.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\GridLocalization.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GridLocalization.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\GridLocalization.en-US.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GridLocalization.en-US.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\GridLocalization.es-ES.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GridLocalization.es-ES.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\GridLocalization.fr-FR.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GridLocalization.fr-FR.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\GridLocalization.nl-NL.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GridLocalization.nl-NL.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\GridLocalization.pl-PL.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GridLocalization.pl-PL.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\GridLocalization.pt-BR.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GridLocalization.pt-BR.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\GridLocalization.pt-PT.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GridLocalization.pt-PT.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\GridLocalization.ru-RU.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GridLocalization.ru-RU.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\GridLocalization.uk-UA.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GridLocalization.uk-UA.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\GridLocalization.zh-CN.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GridLocalization.zh-CN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\UploadLocalization.bg-BG.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>UploadLocalization.bg-BG.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\UploadLocalization.da-DK.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>UploadLocalization.da-DK.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\UploadLocalization.en-US.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>UploadLocalization.en-US.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\UploadLocalization.fr-FR.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>UploadLocalization.fr-FR.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\UploadLocalization.nl-NL.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>UploadLocalization.nl-NL.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\UploadLocalization.pl-PL.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>UploadLocalization.pl-PL.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\UploadLocalization.pt-BR.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>UploadLocalization.pt-BR.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\UploadLocalization.pt-PT.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>UploadLocalization.pt-PT.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\UploadLocalization.ru-RU.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>UploadLocalization.ru-RU.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\UploadLocalization.zh-CN.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>UploadLocalization.zh-CN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_Resources\Resource.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resource.resx</DependentUpon>
+      <DependentUpon>GlobalRes.ru.resx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="Providers\GetDate.cs" />
+    <Compile Include="Providers\Payments\CreditCardPayments.cs" />
+    <Compile Include="Service References\PaymentService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Util\HttpHandler.cs" />
+    <Compile Include="Util\NinjectDependencyScope.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Infrastructure\AuthorizeAttribute\ApiUserAuthorize.cs" />
+    <Compile Include="Infrastructure\AuthorizeAttribute\UserAuthorize.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\CommentsController.cs" />
     <Compile Include="Controllers\GamesController.cs" />
+    <Compile Include="Controllers\GenresController.cs" />
     <Compile Include="Controllers\OrdersController.cs" />
+    <Compile Include="Controllers\PlatformTypesController.cs" />
     <Compile Include="Controllers\PublishersController.cs" />
+    <Compile Include="Controllers\RolesController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Filters\ApiExceptionFilter.cs" />
     <Compile Include="Filters\ErrorLoggingFilter.cs" />
     <Compile Include="Filters\LoggingIpFilter.cs" />
     <Compile Include="Filters\PerformanceFilter.cs" />
@@ -694,35 +654,56 @@
     <Compile Include="Helpers\Paging\Pager.cs" />
     <Compile Include="Helpers\Paging\PagingHelper.cs" />
     <Compile Include="Helpers\QueryStringHelper.cs" />
+    <Compile Include="Infrastructure\Authentication\Authentication.cs" />
+    <Compile Include="Infrastructure\Authentication\AuthHttpModule.cs" />
+    <Compile Include="Infrastructure\Authentication\UserIdentity.cs" />
+    <Compile Include="Infrastructure\Authentication\UserModel.cs" />
+    <Compile Include="Infrastructure\Authentication\UserProvider.cs" />
+    <Compile Include="Infrastructure\Authentication\UserRole.cs" />
     <Compile Include="Infrastructure\AutoMapperConfiguration.cs" />
     <Compile Include="Infrastructure\DtoToViewModelMapping.cs" />
+    <Compile Include="Interfaces\IAuthentication.cs" />
+    <Compile Include="Interfaces\IUserProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\CheckBox.cs" />
     <Compile Include="Providers\Payments\Bank.cs" />
     <Compile Include="Providers\Payments\IBox.cs" />
     <Compile Include="Providers\Payments\IPaymentStrategy.cs" />
     <Compile Include="Providers\Payments\Payment.cs" />
-    <Compile Include="Providers\Payments\Visa.cs" />
+    <Compile Include="Providers\Payments\CardPay.cs" />
+    <Compile Include="Util\LanguageUtil.cs" />
     <Compile Include="Util\NinjectDependencyResolver.cs" />
-    <Compile Include="ViewModels\BanViewModel.cs" />
-    <Compile Include="ViewModels\BasketViewModel.cs" />
-    <Compile Include="ViewModels\CommentViewModel.cs" />
-    <Compile Include="ViewModels\CreatePublisherViewModel.cs" />
-    <Compile Include="ViewModels\FilterViewModel.cs" />
-    <Compile Include="ViewModels\GameFilteringViewModel.cs" />
-    <Compile Include="ViewModels\GameViewModel.cs" />
-    <Compile Include="ViewModels\GenreViewModel.cs" />
-    <Compile Include="ViewModels\OrderDetailViewModel.cs" />
-    <Compile Include="ViewModels\OrderFilteringViewModel.cs" />
-    <Compile Include="ViewModels\OrderFilterViewModel.cs" />
-    <Compile Include="ViewModels\OrderPaymentViewModel.cs" />
-    <Compile Include="ViewModels\OrderViewModel.cs" />
-    <Compile Include="ViewModels\PlatformTypeViewModel.cs" />
-    <Compile Include="ViewModels\PublisherViewModel.cs" />
-    <Compile Include="ViewModels\RenderCommentsMenuItem.cs" />
-    <Compile Include="ViewModels\Translation\ViewModelTranslate.cs" />
-    <Compile Include="ViewModels\UpdateGameViewModel.cs" />
-    <Compile Include="ViewModels\VisaViewModel.cs" />
+    <Compile Include="ViewModels\Accounts\LoginViewModel.cs" />
+    <Compile Include="ViewModels\Accounts\RegisterViewModel.cs" />
+    <Compile Include="ViewModels\Accounts\BanViewModel.cs" />
+    <Compile Include="ViewModels\Games\CreateGameViewModel.cs" />
+    <Compile Include="ViewModels\Games\GamePagingViewModel.cs" />
+    <Compile Include="ViewModels\Genres\CreateGenreViewModel.cs" />
+    <Compile Include="ViewModels\OrderDetails\CreateOrderDetail.cs" />
+    <Compile Include="ViewModels\Orders\BasketInfo.cs" />
+    <Compile Include="ViewModels\PlatformTypes\CreatePlatformTypeViewModel.cs" />
+    <Compile Include="ViewModels\Roles\CreateRoleViewModel.cs" />
+    <Compile Include="ViewModels\Roles\RoleViewModel.cs" />
+    <Compile Include="ViewModels\Translates\TranslateViewModel.cs" />
+    <Compile Include="ViewModels\Translates\TranslateViewModelDescription.cs" />
+    <Compile Include="ViewModels\Orders\BasketViewModel.cs" />
+    <Compile Include="ViewModels\Comments\CommentViewModel.cs" />
+    <Compile Include="ViewModels\Publishers\CreatePublisherViewModel.cs" />
+    <Compile Include="ViewModels\Games\FilterViewModel.cs" />
+    <Compile Include="ViewModels\Games\GameFilteringViewModel.cs" />
+    <Compile Include="ViewModels\Games\GameViewModel.cs" />
+    <Compile Include="ViewModels\Genres\GenreViewModel.cs" />
+    <Compile Include="ViewModels\Orders\OrderDetailViewModel.cs" />
+    <Compile Include="ViewModels\Orders\OrderFilteringViewModel.cs" />
+    <Compile Include="ViewModels\Orders\OrderFilterViewModel.cs" />
+    <Compile Include="ViewModels\Orders\OrderPaymentViewModel.cs" />
+    <Compile Include="ViewModels\Orders\OrderViewModel.cs" />
+    <Compile Include="ViewModels\PlatformTypes\PlatformTypeViewModel.cs" />
+    <Compile Include="ViewModels\Publishers\PublisherViewModel.cs" />
+    <Compile Include="ViewModels\Comments\RenderCommentsMenuItem.cs" />
+    <Compile Include="ViewModels\Orders\VisaViewModel.cs" />
+    <Compile Include="ViewModels\Users\CreateUserViewModel.cs" />
+    <Compile Include="ViewModels\Users\UserViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -745,7 +726,7 @@
     <Content Include="Views\Orders\Basket.cshtml" />
     <Content Include="Views\Orders\Order.cshtml" />
     <Content Include="Views\Orders\Pay.cshtml" />
-    <Content Include="Views\Visa\Visa.cshtml" />
+    <Content Include="Views\CardPay\CardPay.cshtml" />
     <Content Include="Views\Publishers\Index.cshtml" />
     <Content Include="Views\Publishers\New.cshtml" />
     <Content Include="Views\Publishers\Details.cshtml" />
@@ -757,8 +738,8 @@
     <Content Include="Views\Comments\Ban.cshtml" />
     <Content Include="Views\Comments\BanUser.cshtml" />
     <Content Include="Views\Games\AddToBasket.cshtml" />
-    <Content Include="Views\Orders\Success.cshtml" />
-    <Content Include="Views\Orders\Visa.cshtml" />
+    <Content Include="Views\Games\Success.cshtml" />
+    <Content Include="Views\Orders\CardPay.cshtml" />
     <Content Include="Views\Games\Filter.cshtml" />
     <Content Include="Views\Comments\CommentModel.cshtml" />
     <Content Include="Views\Comments\RenderMenuItem.cshtml" />
@@ -769,6 +750,48 @@
     <Content Include="scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="scripts\jquery-3.1.1.min.map" />
     <Content Include="Views\Orders\AddToBasket.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Publishers\Update.cshtml" />
+    <Content Include="Views\Genres\Index.cshtml" />
+    <Content Include="Views\Genres\Details.cshtml" />
+    <Content Include="Views\Genres\New.cshtml" />
+    <Content Include="Views\Genres\Update.cshtml" />
+    <Content Include="Views\PlatformTypes\Index.cshtml" />
+    <Content Include="Views\PlatformTypes\Details.cshtml" />
+    <Content Include="Views\PlatformTypes\New.cshtml" />
+    <Content Include="Views\PlatformTypes\Update.cshtml" />
+    <Content Include="Views\Users\Index.cshtml" />
+    <Content Include="Views\Users\Details.cshtml" />
+    <Content Include="Views\Users\New.cshtml" />
+    <Content Include="Views\Users\Update.cshtml" />
+    <Content Include="Views\Roles\Index.cshtml" />
+    <Content Include="Views\Roles\Details.cshtml" />
+    <Content Include="Views\Roles\New.cshtml" />
+    <Content Include="Views\Roles\Update.cshtml" />
+    <Content Include="Views\Comments\Edit.cshtml" />
+    <Content Include="Views\Shared\Ban.cshtml" />
+    <Content Include="Views\Orders\AddGameToOrder.cshtml" />
+    <Content Include="Views\Orders\EditGameInOrder.cshtml" />
+    <Content Include="Views\Orders\OrderHistory.cshtml" />
+    <None Include="Service References\PaymentService\PaymentService.wsdl" />
+    <None Include="Service References\PaymentService\PaymentService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PaymentService\PaymentService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PaymentService\PaymentService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PaymentService\PaymentService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\Games\Games.cshtml" />
+    <Content Include="Views\Orders\BasketInfo.cshtml" />
+    <Content Include="Views\Comments\Delete.cshtml" />
+    <Content Include="Views\Account\ManagerProfile.cshtml" />
+    <None Include="Views\Orders\OrderNew.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -778,6 +801,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Base\" />
+    <Folder Include="Views\CommentsApi\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GameStore.BLL\GameStore.BLL.csproj">
@@ -788,234 +813,28 @@
       <Project>{237ff755-78a1-4912-afb4-73f09cc863d1}</Project>
       <Name>GameStore.DAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GameStore.WcfService\GameStore.WcfService.csproj">
+      <Project>{7F806D1E-1066-43ED-B91B-CEA4930DB4F5}</Project>
+      <Name>GameStore.WcfService</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_GlobalResources\UploadLocalization.zh-CN.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>UploadLocalization.zh-CN.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\UploadLocalization.ru-RU.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>UploadLocalization.ru-RU.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\UploadLocalization.pt-PT.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>UploadLocalization.pt-PT.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\UploadLocalization.pt-BR.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>UploadLocalization.pt-BR.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\UploadLocalization.pl-PL.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>UploadLocalization.pl-PL.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\UploadLocalization.nl-NL.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>UploadLocalization.nl-NL.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\UploadLocalization.fr-FR.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>UploadLocalization.fr-FR.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\UploadLocalization.en-US.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>UploadLocalization.en-US.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\UploadLocalization.da-DK.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>UploadLocalization.da-DK.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\UploadLocalization.bg-BG.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>UploadLocalization.bg-BG.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\GridLocalization.zh-CN.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>GridLocalization.zh-CN.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\GridLocalization.uk-UA.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>GridLocalization.uk-UA.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\GridLocalization.ru-RU.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>GridLocalization.ru-RU.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\GridLocalization.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>GridLocalization.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\GridLocalization.pt-PT.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>GridLocalization.pt-PT.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\GridLocalization.pt-BR.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>GridLocalization.pt-BR.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\GridLocalization.pl-PL.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>GridLocalization.pl-PL.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\GridLocalization.nl-NL.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>GridLocalization.nl-NL.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\GridLocalization.fr-FR.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>GridLocalization.fr-FR.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\GridLocalization.es-ES.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>GridLocalization.es-ES.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\GridLocalization.en-US.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>GridLocalization.en-US.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\GridLocalization.de-DE.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>GridLocalization.de-DE.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\GridLocalization.da-DK.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>GridLocalization.da-DK.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\GridLocalization.bg-BG.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>GridLocalization.bg-BG.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\EditorLocalization.zh-CN.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>EditorLocalization.zh-CN.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\EditorLocalization.uk-UA.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>EditorLocalization.uk-UA.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\EditorLocalization.ru-RU.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>EditorLocalization.ru-RU.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\EditorLocalization.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>EditorLocalization.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\EditorLocalization.pt-PT.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>EditorLocalization.pt-PT.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\EditorLocalization.pt-BR.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>EditorLocalization.pt-BR.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\EditorLocalization.pl-PL.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>EditorLocalization.pl-PL.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\EditorLocalization.nl-NL.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>EditorLocalization.nl-NL.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\EditorLocalization.fr-FR.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>EditorLocalization.fr-FR.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\EditorLocalization.en-US.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>EditorLocalization.en-US.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\EditorLocalization.de-DE.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>EditorLocalization.de-DE.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\EditorLocalization.da-DK.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>EditorLocalization.da-DK.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_GlobalResources\EditorLocalization.bg-BG.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>EditorLocalization.bg-BG.designer.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="App_Resources\Resource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    <EmbeddedResource Include="App_LocalResources\GlobalRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalRes.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_LocalResources\GlobalRes.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalRes.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\PaymentService\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
-using GameStore.Web.ViewModels;
 using System;
+using GameStore.Web.ViewModels.Orders;
 
 namespace GameStore.Web.Providers.Payments
 {

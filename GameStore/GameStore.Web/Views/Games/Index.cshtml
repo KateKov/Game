@@ -1,129 +1,28 @@
 ﻿@using GameStore.Web.Helpers
 @using GameStore.Web.Helpers.Paging
-@using GameStore.Web.ViewModels
-@model GameFilteringViewModel
+@model GameStore.Web.ViewModels.Games.FilterViewModel
 @{
-    ViewBag.Title = "Games";
+    ViewBag.Title = GlobalRes.Games;
 }
-<p>
-    <span>@Html.ActionLink("Create New", "New", null, new {@class = "btn btn-info"}) </span>
-</p>
-@*@Html.Action("Filters", "Games", Model.Filter)*@
-@if (Model.Games.ToList().Count > 0)
-{
-    <table class="table">
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Games.First().Key)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Games.First().DateOfAdding)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Games.First().Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Games.First().Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Games.First().Price)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Games.First().UnitsInStock)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Games.First().Discountinues)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Games.First().GenresName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Games.First().PlatformTypesName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Games.First().PublisherName)
-            </th>
-        </tr>
-
-        @foreach (var item in Model.Games)
-        {
-            <tr>
-                <td>
-                    @Html.HiddenFor(modelItem => item.Id)
-                    @Html.DisplayFor(modelItem => item.Key)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.DateOfAdding)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Description)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Price)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.UnitsInStock)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Discountinues)
-                </td>
-                <td>
-                    @foreach (var i in item.GenresName)
-                    {
-                        <p>@i</p>
-                    }
-                </td>
-                <td>
-                    @foreach (var i in item.PlatformTypesName)
-                    {
-                        <p>@i</p>
-                    }
-                </td>
-                <td>
-                    @if (!string.IsNullOrEmpty(item.PublisherName))
-                    {
-                        @Html.ActionLink(item.PublisherName, "Details", "Publishers", new {companyName = item.PublisherName}, new {@class = "class"})
-                    }
-                </td>
-                <td>
-                    <span>@Html.ActionLink("Edit", "Update", new {key = item.Key}, new {@class = "btn btn-success"}) </span>
-                    <p></p>
-                    <span> @Html.ActionLink("Details", "Details", "Comments", new {key = item.Key}, new {@class = "btn btn-info"}) </span>
-                    <p></p>
-                    @if (item.UnitsInStock > 0)
-                    {
-                        <span>@Html.ActionLink("Buy", "AddToBasket", "Games", new { gameKey = item.Key, unitsInStock = item.UnitsInStock }, new { @class = "viewDialog1 btn btn-primary", data_dialog_title = "Add game" })  </span>
-                    }
-                                       
-                </td>
-            </tr>
-        }
-    </table>
-}
+@Scripts.Render("~/bundles/scripts")
+<script src="~/scripts/Filter.js">
+</script>
 
 
-<div class="text-center">
-    <ul class="pagination">
-        @Html.Pager(Model.Page, (int)Model.PageSize, Model.TotalItemsCount, "Page").Options(o => o
-        .AddRouteDataValue(Html.QueryStringParametersAsRouteValueDictionaryExceptFor("Page")))
-    </ul>
+<div class="row indexGames">
+    <div class="col-sm-12 col-xs-12 col-md-3 sortProduct">
+        <div class="col-xs-12">
+            @Html.Action("Filters", "Games", Model)
+        </div>
+    </div>
+    <div class="gh col-md-9 col-xs-12 text-center" id="gamesList">
+        @Html.Action("Games", new {gameFilterViewModel = Model})
+    </div>
 </div>
 
-@using (Html.BeginForm("Index", "Games", FormMethod.Get, new { @class = "form-horizontal" }))
-{
-    @Html.HiddenQueryStringParametersExceptFor("PageSize", "Page")
-    <div class="col-lg-3">
-        @Html.EnumDropDownListFor(x => x.PageSize, new { @class = "form-control" })
-    </div>
-
-    <button type="submit" class="btn btn-primary" >Check</button>
-
-}
 <script>
     var AppUrlSettings = {
-        GamesUrl: '@Url.Action("AddToBasket", "Orders")'
+        GamesUrl: '@Url.Action("AddToBasket", "Games", FormMethod.Post)',
+        GamesListUrl: '@Url.Action("Games", "Games", FormMethod.Get)'
     }
 </script>

@@ -43,6 +43,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
@@ -57,14 +58,32 @@
     <Compile Include="DTO\OrderFilterResultDTO.cs" />
     <Compile Include="DTO\PlatformTypeDTO.cs" />
     <Compile Include="DTO\PublisherDTO.cs" />
+    <Compile Include="DTO\RoleDTO.cs" />
     <Compile Include="DTO\Translation\DTOTranslate.cs" />
     <Compile Include="DTO\Translation\GameDTOTranslate.cs" />
     <Compile Include="DTO\Translation\GenreDTOTranslate.cs" />
     <Compile Include="DTO\Translation\PlatformTypeDTOTranslate.cs" />
     <Compile Include="DTO\Translation\PublisherDTOTranslate.cs" />
-    <Compile Include="Interfaces\ITranslateDTONamed.cs" />
+    <Compile Include="DTO\Translation\RoleDTOTranslate.cs" />
+    <Compile Include="DTO\Translation\UserDTOTranslate.cs" />
+    <Compile Include="DTO\UserDTO.cs" />
+    <Compile Include="Infrastructure\MailServer\MailNotification.cs" />
+    <Compile Include="Infrastructure\MailServer\MailServer.cs" />
+    <Compile Include="Infrastructure\MailServer\MobileAppNotification.cs" />
+    <Compile Include="Infrastructure\MailServer\SmsNotification.cs" />
+    <Compile Include="Interfaces\IDtoToDomainMapping.cs" />
+    <Compile Include="Interfaces\MailServer\IObservable.cs" />
+    <Compile Include="Interfaces\MailServer\IObserver.cs" />
+    <Compile Include="Interfaces\Services\IEncryptionService.cs" />
+    <Compile Include="Interfaces\Services\ITranslateService.cs" />
+    <Compile Include="Interfaces\Services\IUserService.cs" />
+    <Compile Include="Interfaces\Translates\IDTOTranslate.cs" />
+    <Compile Include="Interfaces\Translates\IDTOTranslateWithDescription.cs" />
+    <Compile Include="Interfaces\Translates\ITranslateDTODescriptioned.cs" />
+    <Compile Include="Interfaces\Translates\ITranslateDTONamed.cs" />
+    <Compile Include="Interfaces\Translates\Translate.cs" />
     <Compile Include="Mapping\DomainToDtoMapping.cs" />
-    <Compile Include="Mapping\DtoToDomain.cs" />
+    <Compile Include="Mapping\DtoToDomainMapping.cs" />
     <Compile Include="Mapping\DtoToEntity.cs" />
     <Compile Include="Infrastructure\Filters\DateFilter.cs" />
     <Compile Include="Infrastructure\Filters\FilterBy.cs" />
@@ -83,27 +102,28 @@
     <Compile Include="Infrastructure\ValidationException.cs" />
     <Compile Include="Interfaces\Services\ICommentService.cs" />
     <Compile Include="Interfaces\IDtoNamed.cs" />
-    <Compile Include="Interfaces\IDtoWithKey.cs" />
     <Compile Include="Interfaces\IDtoBase.cs" />
-    <Compile Include="Interfaces\Services\IEntityService.cs" />
-    <Compile Include="Interfaces\IFilterItem.cs" />
+    <Compile Include="Interfaces\Filters\IFilterItem.cs" />
     <Compile Include="Interfaces\Services\IGameService.cs" />
-    <Compile Include="Interfaces\Services\IGameStoreService.cs" />
     <Compile Include="Interfaces\Services\INamedService.cs" />
-    <Compile Include="Interfaces\IOperation.cs" />
+    <Compile Include="Interfaces\Filters\IOperation.cs" />
     <Compile Include="Interfaces\Services\IOrderService.cs" />
-    <Compile Include="Interfaces\IPipeLine.cs" />
-    <Compile Include="Interfaces\IQueryBuilder.cs" />
+    <Compile Include="Interfaces\Filters\IPipeLine.cs" />
+    <Compile Include="Interfaces\Filters\IQueryBuilder.cs" />
     <Compile Include="Interfaces\Services\IService.cs" />
-    <Compile Include="Interfaces\Services\IWithKeyService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CommentsService.cs" />
-    <Compile Include="Services\ModelWithNameService.cs" />
+    <Compile Include="Services\EncryptionService.cs" />
+    <Compile Include="Services\GenresService.cs" />
+    <Compile Include="Services\PlatformTypesService.cs" />
+    <Compile Include="Services\PublishersService.cs" />
+    <Compile Include="Services\RolesService.cs" />
+    <Compile Include="Services\TranslateService.cs" />
+    <Compile Include="Services\NameService.cs" />
     <Compile Include="Services\Service.cs" />
     <Compile Include="Services\GamesService.cs" />
-    <Compile Include="Services\GameStoreService.cs" />
-    <Compile Include="Services\ModelWithKeyService.cs" />
     <Compile Include="Services\OrdersService.cs" />
+    <Compile Include="Services\UserService.cs" />
     <Compile Include="Services\Validator.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -116,6 +136,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

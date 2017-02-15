@@ -1,11 +1,12 @@
-﻿using GameStore.BLL.DTO;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using GameStore.BLL.DTO;
 
 namespace GameStore.BLL.Interfaces
 {
-    public interface ICommentService
+    public interface ICommentService : IService<CommentDTO>
     {
-        void AddComment(CommentDTO comment, string gameKey);
+        void AddEntity(CommentDTO commentDto, string gameKey);
+        void EditEntity(CommentDTO commentDto, string gameKey);
         IEnumerable<CommentDTO> GetCommentsByGameKey(string gameKey);
     }
 }

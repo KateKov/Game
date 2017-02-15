@@ -1,11 +1,8 @@
-﻿using GameStore.BLL.DTO;
-using GameStore.BLL.Interfaces;
-using GameStore.DAL.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using GameStore.BLL.Interfaces;
+using GameStore.DAL.Entities;
 
 namespace GameStore.BLL.Infrastructure.Filters
 {
@@ -17,8 +14,9 @@ namespace GameStore.BLL.Infrastructure.Filters
             var publisher = selectedPublisher as IList<string> ?? selectedPublisher.ToList();
             if (publisher.Any() == false)
             {
-                throw new ValidationException("There is no publisher", string.Empty);
+                throw new ValidationException("There is no publisher", "Publisher");
             }
+
             _selectedPublisher = publisher;
         }
 

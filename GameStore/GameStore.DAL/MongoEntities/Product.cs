@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
+﻿using MongoDB.Bson.Serialization.Attributes;
 
 namespace GameStore.DAL.MongoEntities
 {
@@ -17,7 +11,7 @@ namespace GameStore.DAL.MongoEntities
 
         public string Key
         {
-            get { return MongoId.ToString(); }
+            get { return Id.ToString(); }
             set { }
         }
         public decimal UnitPrice { get; set; }
@@ -25,10 +19,8 @@ namespace GameStore.DAL.MongoEntities
         public short UnitsOnOrder { get; set; }
         public short UnitsInStock { get; set; }
 
-        //[BsonRepresentation(BsonType.String)]
         public int CategoryID { get; set; }
 
-        //[BsonRepresentation(BsonType.String)]
         public int SupplierID { get; set; }
     }
 }

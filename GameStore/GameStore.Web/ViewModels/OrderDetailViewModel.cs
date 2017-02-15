@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
+using GameStore.Web.App_LocalResources;
 
 namespace GameStore.Web.ViewModels
 {
@@ -10,15 +7,22 @@ namespace GameStore.Web.ViewModels
     {
         [Required]
         public string Id { get; set; }
-        [Display(Name = "Price")]
+
+        [Display(ResourceType = typeof(GlobalRes), Name = "Price")]
         public decimal Price { get; set; }
-        [Display(Name = "Quantity")]
+
+        [Display(ResourceType = typeof(GlobalRes), Name = "Quantity")]
         public short Quantity { get; set; }
-        [Display(Name = "Discount")]
+
+        [Display(ResourceType = typeof(GlobalRes), Name = "Discount")]
         public float Discount { get; set; }
+
         public string OrderId { get; set; }
+
         [Required]
         public string GameId { get; set; }
+
+        [Display(ResourceType = typeof(GlobalRes), Name = "Game_Key")]
         public string GameKey { get; set; }
     }
 }

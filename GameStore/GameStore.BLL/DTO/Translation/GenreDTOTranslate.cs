@@ -2,9 +2,8 @@
 
 namespace GameStore.BLL.DTO.Translation
 {
-    public class GenreDTOTranslate : DTOTranslate, IDtoNamed
+    public class GenreDTOTranslate : DTOTranslate, IDTOTranslate
     {
         public string ParentName { get; set; }
-        public string Name { get; set; }
     }
 }

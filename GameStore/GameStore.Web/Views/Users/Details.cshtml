@@ -1,0 +1,106 @@
+﻿@model GameStore.Web.ViewModels.Users.UserViewModel
+@{
+    ViewBag.Title = GlobalRes.Genres;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="quest_form">
+    <h2>@GlobalRes.Details</h2>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                <p>
+                    <b>  @Html.DisplayNameFor(model => model.Username)</b>
+                </p>
+            </dt>
+            <dd>
+                <p>
+                    @Html.DisplayFor(model => model.Username)
+                </p>
+            </dd>
+            <dt>
+                <p>
+                    <b> @Html.DisplayNameFor(model => model.Email)</b>
+                </p>
+            </dt>
+            <dd>
+                <p>
+                    <b>@Html.DisplayFor(model => model.Email)</b>
+                </p>
+            </dd>
+            <dt>
+                <p>
+                    <b>  @Html.DisplayNameFor(model => model.CreateDate)</b>
+                </p>
+            </dt>
+            <dd>
+                <p>
+                    @Html.DisplayFor(model => model.CreateDate)
+                </p>
+            </dd>
+            <dt>
+                <p>
+                    <b>  @Html.DisplayNameFor(model => model.IsLocked)</b>
+                </p>
+            </dt>
+            <dd>
+                <p>
+                    @Html.DisplayFor(model => model.IsLocked)
+                </p>
+            </dd>
+            <dt>
+                <p>
+                    <b>  @Html.DisplayNameFor(model => model.IsDeleted)</b>
+                </p>
+            </dt>
+            <dd>
+                <p>
+                    @Html.DisplayFor(model => model.IsDeleted)
+                </p>
+            </dd>
+            <dt>
+                <p>
+                    <b>  @Html.DisplayNameFor(model => model.Publisher)</b>
+                </p>
+            </dt>
+            <dd>
+                <p>
+                    @Html.DisplayFor(model => model.Publisher)
+                </p>
+            </dd>
+            <dt>
+                <p>
+                    <b>  @Html.DisplayNameFor(model => model.Bans)</b>
+                </p>
+            </dt>
+            <dd>
+                <p>
+                    @Html.DisplayFor(model => model.Bans)
+                </p>
+            </dd>
+            <dt>
+                <p>
+                    <b>  @Html.DisplayNameFor(model => model.Roles)</b>
+                </p>
+            </dt>
+            <dd>
+                <p>
+                    @Html.DisplayFor(model => model.Roles)
+                </p>
+            </dd>
+            <dt>
+                <p>
+                    <b>  @Html.DisplayNameFor(model => model.Orders)</b>
+                </p>
+            </dt>
+            <dd>
+                <p>
+                    @Html.DisplayFor(model => model.Orders)
+                </p>
+            </dd>
+        </dl>
+    </div>
+</div>
+<p>
+    @Html.ActionLink(GlobalRes.Publishers, "Index")
+</p>

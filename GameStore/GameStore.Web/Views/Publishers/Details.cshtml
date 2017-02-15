@@ -1,17 +1,16 @@
-﻿@using GameStore.Web.ViewModels
-@model PublisherViewModel
+﻿@model GameStore.Web.ViewModels.Publishers.PublisherViewModel
 @{
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div id="quest_form">
-    <h2>Details</h2>
+    <h2>@GlobalRes.Details</h2>
        <div>
         <hr />
         <dl class="dl-horizontal">
             <dt>
                 <p>
-                       <b>   @Html.DisplayNameFor(model => model.Name)</b>
+                  <b>@Html.DisplayNameFor(model => model.Name)</b>
                 </p>
             </dt>
             <dd>
@@ -21,7 +20,7 @@
             </dd>
             <dt>
                 <p>
-                    <b>  @Html.DisplayNameFor(model => model.Description)</b>
+                    <b>@Html.DisplayNameFor(model => model.Description)</b>
                 </p>
             </dt>
             <dd>
@@ -31,7 +30,7 @@
             </dd>
             <dt>
                 <p>
-                    <b>  @Html.DisplayNameFor(model => model.HomePage)</b>
+                    <b>@Html.DisplayNameFor(model => model.HomePage)</b>
                 </p>
             </dt>
             <dd>
@@ -45,6 +44,6 @@
 
 </div>
 <p> 
-    @Html.ActionLink("Publishers", "Index")
+    @Html.ActionLink(GlobalRes.Publishers, "Index")
 </p>
 

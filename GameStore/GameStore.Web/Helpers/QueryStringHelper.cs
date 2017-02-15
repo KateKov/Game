@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Web;
@@ -11,7 +10,6 @@ namespace GameStore.Web.Helpers
 {
     public static class QueryStringHelper
     {
-
         public static MvcHtmlString HiddenQueryStringParametersExceptFor(this HtmlHelper helper, params string[] keysToRemove)
         {
             var queryString = HttpContext.Current.Request.QueryString;
@@ -47,6 +45,7 @@ namespace GameStore.Web.Helpers
             {
                 routeValueDictionary.Add(item.Key, item.Value);
             }
+
             return routeValueDictionary;
         }
 
@@ -63,7 +62,7 @@ namespace GameStore.Web.Helpers
                     {
                         for (int index = 0; index < values.Count(); index++)
                         {
-                            var newKey = string.Format("{0}[{1}]", key, index);
+                            var newKey = $"{key}[{index}]";
                             dictionary.Add(newKey, values[index]);
                         }
                     }

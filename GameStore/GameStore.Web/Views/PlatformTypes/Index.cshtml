@@ -1,0 +1,37 @@
+﻿@model IEnumerable<GameStore.Web.ViewModels.PlatformTypes.PlatformTypeViewModel>
+@{
+    ViewBag.Title = GlobalRes.PlatformTypes;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h3>@GlobalRes.PlatformTypes</h3>
+@if (User.IsInRole("Administrator") || User.IsInRole("Manager"))
+{
+    @Html.ActionLink(GlobalRes.Create, "New")
+}
+<br/>
+<div>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.HiddenFor(model => item.Id)
+                    @Html.ActionLink(item.Name, "Details", new { name = item.Key })
+                </td>
+                @if (User.IsInRole("Administrator") || User.IsInRole("Manager"))
+                {
+                    <td>
+                        <span>@Html.ActionLink(GlobalRes.Edit, "Update", new { name = item.Key }, new { @class = "btn btn-primary" }) </span>
+                        <p></p>
+                        <span>@Html.ActionLink(GlobalRes.Delete, "Delete", new { name = item.Key }, new { @class = "btn btn-warning" }) </span>
+                    </td>
+                }
+            </tr>
+        }
+    </table>
+</div>

@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations;
+using GameStore.DAL.Enums;
+using GameStore.Web.App_LocalResources;
 
 namespace GameStore.Web.ViewModels
 {
@@ -6,11 +8,8 @@ namespace GameStore.Web.ViewModels
     {
         public string Name { get; set; }
 
-        public static IEnumerable<string> Durations
-        {
-            get { return new List<string> {"1 hour", "1 day", "1 week", "1 month", "permanent"}; }
-        }
 
-        public string SelectedDuration { get; set; }
+        [Display(ResourceType = typeof(GlobalRes), Name = "BanOn")]
+        public Duration Duration { get; set; }
     }
 }

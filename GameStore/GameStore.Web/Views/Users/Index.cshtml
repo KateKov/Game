@@ -1,0 +1,54 @@
+﻿@using WebGrease.Css.Extensions
+@model IEnumerable<GameStore.Web.ViewModels.Users.UserViewModel>
+@{
+    ViewBag.Title = GlobalRes.Genres;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h3>@GlobalRes.Users</h3>
+@Html.ActionLink(GlobalRes.Create, "New")
+<br/>
+<div>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsLocked)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Roles)
+            </th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.ActionLink(item.Username, "Details", new { name = item.Username})
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsLocked)
+                </td>
+                <td>
+                    @foreach (var role in item.Roles)
+                    {
+                        <div> @Html.DisplayFor(modelItem => role) </div>
+                    }
+                </td>
+                <td>
+                    <span>@Html.ActionLink(GlobalRes.Edit, "Update", new { name = item.Username }, new { @class = "btn btn-primary" }) </span>
+                    <p></p>
+                    <span>@Html.ActionLink(GlobalRes.Delete, "Delete", new { name = item.Username }, new { @class = "btn btn-warning" }) </span>
+
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+

@@ -1,2 +1,0 @@
-|2016-11-08 17:51:09.1565|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 
-|2016-11-08 17:52:50.6595|WARN|GameStore.Web.Controllers.CommentsController|Game downloading failed. Game wasn't found. Key = invalid-key 

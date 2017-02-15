@@ -1,0 +1,62 @@
+﻿@using System.Web.UI.WebControls
+@model GameStore.Web.ViewModels.Genres.CreateGenreViewModel
+@{
+    ViewBag.Title = GlobalRes.Create;
+}
+@Scripts.Render("~/bundles/scripts")
+<div class="row">
+    <div class="form-style-5">
+        <h2>@GlobalRes.Create</h2>
+        @using (Html.BeginForm())
+            {
+            @Html.AntiForgeryToken()
+            <fieldset>
+                <h4>@GlobalRes.Genre</h4>
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.Id)
+
+                <ul class="nav nav-tabs">
+                    <li class="active"><a aria-expanded="true" href="#en" data-toggle="tab">En</a></li>
+                    <li><a aria-expanded="false" href="#ru" data-toggle="tab">Ru</a></li>
+                </ul>
+                <br />
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade active in" id="en">
+                        <div class="form-group">
+                            @Html.EditorFor(a => a.Name, new { htmlAttributes = new { @class = "form-control", PlaceHolder = @GlobalRes.Name } })
+                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="ru">
+                        @Html.HiddenFor(a => a.Translates[0].Id)
+                        @Html.HiddenFor(a => a.Translates[0].Language)
+                        <div class="form-group">
+                            @Html.EditorFor(a => a.Translates[0].Name, new { htmlAttributes = new { @class = "form-control", PlaceHolder = @GlobalRes.Name } })
+                            @Html.ValidationMessageFor(model => model.Translates[0].Name, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.Label(@GlobalRes.ParentGenre, new { @class = "cols-sm-2 control-label" })
+               
+                        <div class="input-group">
+                            @Html.DropDownListFor(model => model.ParentName, new SelectList(Model.AllGenres, "Name", "Name"))
+                            @Html.ValidationMessageFor(model => model.ParentName, "", new { @class = "text-danger" })
+                        </div>
+           
+                </div>
+        <div class="form-group">
+         <input type="submit" value=@GlobalRes.Create class="btn btn-default" />
+     
+        </div>
+                </fieldset>
+
+        }     
+    </div>
+    <div>
+        @Html.ActionLink(GlobalRes.BackToList, "Index")
+    </div>
+</div>
+

@@ -1,0 +1,33 @@
+﻿@model IEnumerable<GameStore.Web.ViewModels.Roles.RoleViewModel>
+@{
+    ViewBag.Title = GlobalRes.Roles;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h3>@GlobalRes.Roles</h3>
+@Html.ActionLink(GlobalRes.Create, "New")
+<br/>
+<div>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.ActionLink(item.Name, "Details", new { name = item.Key })
+                </td>
+                <td>
+                </td>
+                <td>
+                    <span>@Html.ActionLink(GlobalRes.Edit, "Update", new {name = item.Key}, new {@class = "btn btn-primary" }) </span>
+                    <p></p>
+                    <span>@Html.ActionLink(GlobalRes.Delete, "Delete", new {name = item.Key}, new {@class = "btn btn-warning"}) </span>
+
+                </td>
+            </tr>
+        }
+    </table>
+</div>

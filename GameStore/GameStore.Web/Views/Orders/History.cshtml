@@ -1,7 +1,6 @@
 ﻿@using GameStore.Web.Helpers
 @using GameStore.Web.Helpers.Paging
-@using GameStore.Web.ViewModels
-@model OrderFilteringViewModel
+@model GameStore.Web.ViewModels.Orders.OrderFilteringViewModel
 @{
     ViewBag.Title = "Orders";
 }
@@ -12,19 +11,19 @@
     <table class="table">
         <tr>
             <th>
-                @Html.Label("Order ID")
+                @Html.Label(GlobalRes.Order_OrderId)
             </th>
             <th>
-                @Html.Label("Customer ID")
+                @Html.Label(GlobalRes.Order_CustomerId)
             </th>
             <th>
-               @Html.Label("Date of Order")
+               @Html.Label(GlobalRes.DateOfOrder)
             </th>
             <th>
-                @Html.Label("Sum of order")
+                @Html.Label(GlobalRes.Sum)
             </th>
             <th>
-                @Html.Label("Order Details:")
+                @Html.Label(GlobalRes.OrderDetails)
             </th>
            
         </tr>
@@ -33,7 +32,8 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Id)
+                    @Html.HiddenFor(modelItem => item.Id)
+                    @Html.ActionLink(item.Id, "OrderHistory", new {username = item.CustomerId})
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.CustomerId)
@@ -47,7 +47,7 @@
                 <td>
                     @foreach (var x in item.OrderDetails)
                     {
-                        <div>Id: @x.Id Price: @x.Price Quantity: @x.Quantity  </div>
+                        <div>@GlobalRes.Order_OrderId @x.Id @GlobalRes.Price: @x.Price @GlobalRes.Quantity: @x.Quantity  </div>
                     }
                 </td>
                
@@ -71,10 +71,8 @@
         @Html.EnumDropDownListFor(x => x.PageSize, new { @class = "form-control" })
     </div>
 
-    <button type="submit" class="btn btn-primary">Check</button>
+    <button type="submit" class="btn btn-primary">@GlobalRes.Check</button>
 
 }
-
-
 
 

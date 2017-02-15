@@ -1,10 +1,5 @@
 ﻿using GameStore.BLL.Interfaces;
 using GameStore.DAL.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GameStore.BLL.Infrastructure.Paging
 {
@@ -17,8 +12,9 @@ namespace GameStore.BLL.Infrastructure.Paging
         {
             if (page < 1)
             {
-                throw new ValidationException("Number of page isn't valid", string.Empty);
+                throw new ValidationException("Number of page isn't valid", "Number");
             }
+
             _page = page;
             _pageSize = pageSize;
         }
@@ -30,14 +26,15 @@ namespace GameStore.BLL.Infrastructure.Paging
             {
                 itemsPerPage = (int) _pageSize;
             }
+
             var pageIndex = _page == 0 ? 1 : _page;
             if (itemsPerPage != null)
             {
                 query.Skip(itemsPerPage.Value*(pageIndex - 1));
                 query.Take(itemsPerPage.Value);
             }
-            return query;
 
+            return query;
         }
     }
 }

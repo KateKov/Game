@@ -1,11 +1,11 @@
 ﻿@using GameStore.Web.ViewModels
-@model BasketViewModel
+@model GameStore.Web.ViewModels.Orders.BasketViewModel
 @using (Html.BeginForm())
 {
     @Html.HiddenFor(x=>x.GameKey)
     @Html.HiddenFor(x=>x.CustomerId)
     @Html.HiddenFor(x=>x.UnitInStock) 
-    <p>Counts:</p>
+    <p>@GlobalRes.Counts:</p>
     <input type="text" id="Quantity" name="Quantity" min="1" value="1" max="@Model.UnitInStock" onchange="isright(this)" style="width: 50px" />
     @Html.ValidationMessageFor(model => model.Quantity, "")    
 }

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Routing;
+﻿using System.Web.Routing;
 
 namespace GameStore.Web.Helpers.Paging
 {
@@ -12,6 +8,7 @@ namespace GameStore.Web.Helpers.Paging
        {
             RouteValues = new RouteValueDictionary();
        }
+
        public RouteValueDictionary RouteValues { get; set; }
     }
 
@@ -28,7 +25,5 @@ namespace GameStore.Web.Helpers.Paging
             _page.RouteValues = routeValues;
             return this;
         }
-
-
     }
 }

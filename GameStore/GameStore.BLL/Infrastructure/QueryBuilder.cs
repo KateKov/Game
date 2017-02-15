@@ -1,13 +1,13 @@
-﻿using GameStore.BLL.Interfaces;
+﻿using System;
+using GameStore.BLL.Interfaces;
 using GameStore.DAL.Infrastracture;
-using System;
-
 
 namespace GameStore.BLL.Infrastructure
 {
     public class QueryBuilder<TEntity> : IQueryBuilder<TEntity> where TEntity : class
     {
         private readonly Query<TEntity> _query;
+
         public QueryBuilder()
         {
             _query = new Query<TEntity>();
@@ -24,6 +24,7 @@ namespace GameStore.BLL.Infrastructure
                 var otherConditions = _query.Where;
                 _query.Where = x => otherConditions(x) && where(x);
             }
+
             return this;
         }
 

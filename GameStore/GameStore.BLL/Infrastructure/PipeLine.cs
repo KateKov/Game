@@ -12,6 +12,7 @@ namespace GameStore.BLL.Infrastructure
             _operations.Add(operation);
             return this;
         }
+
         public Query<TEntity> Execute()
         {
             IQueryBuilder<TEntity> queryBuilder = new QueryBuilder<TEntity>();

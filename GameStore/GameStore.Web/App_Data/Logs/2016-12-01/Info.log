@@ -1,7 +1,0 @@
-8000055e-0000-ed00-b63f-84710c7967bb|2016-12-01 14:43:07.5781|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 210e58d6-ff0b-432a-ba3e-6b8abcc6cef0 Key dsfsd 
-80000096-0003-ee00-b63f-84710c7967bb|2016-12-01 14:53:04.5923|INFO|GameStore.Web.Controllers.GamesController|Game is created. Id 10993f32-7605-4c8e-bc4a-f45f2088420d Key dsfds 
-800000a0-0003-ee00-b63f-84710c7967bb|2016-12-01 14:57:40.0630|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
-80000570-0000-ed00-b63f-84710c7967bb|2016-12-01 15:01:21.1152|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
-80000010-0000-fc00-b63f-84710c7967bb|2016-12-01 15:04:12.4385|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
-80000016-0000-fc00-b63f-84710c7967bb|2016-12-01 15:05:48.1161|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update
-80000047-0001-e200-b63f-84710c7967bb|2016-12-01 15:07:05.4562|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update

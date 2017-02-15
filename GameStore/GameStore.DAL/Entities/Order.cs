@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using GameStore.DAL.Interfaces;
-using GameStore.DAL.MongoEntities;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GameStore.DAL.Entities
 {
@@ -12,12 +11,25 @@ namespace GameStore.DAL.Entities
         {
             OrderDetails = new List<OrderDetail>();
         }
-        public string CustomerId { get; set; }
+
         [DataType(DataType.Date)]
         public DateTime Date { get; set; }
+
         public virtual ICollection<OrderDetail> OrderDetails { get; set; }
+
+        public DateTime? ShippedDate { get; set; }
+
+        public bool IsShipped { get; set; }
+
         public bool IsConfirmed { get; set; }
+
+
         public decimal Sum { get; set; }
+
+        [ForeignKey("User")]
+        public Guid UserId { get; set; }
+
+        public virtual User User { get; set; }
 
         public bool IsPayed { get; set; }
     }

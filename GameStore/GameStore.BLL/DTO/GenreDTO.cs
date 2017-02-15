@@ -11,5 +11,6 @@ namespace GameStore.BLL.DTO
         public List<string> GamesKey { get; set; }
         public List<string> GamesId { get; set; }
         public ICollection<GenreDTOTranslate> Translates { get; set; }
+        public bool IsDeleted { get; set; }
     }
 }

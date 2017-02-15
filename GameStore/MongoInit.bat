@@ -1,0 +1,1 @@
+%cd%\Mongo\mongo\mongobin\mongod --dbpath %cd%\Mongo\db

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:64051/Services/PaymentService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/GameStore.WcfService.Models" />
+  <xs:import schemaLocation="http://localhost:64051/Services/PaymentService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/GameStore.WcfService.Enums" />
+  <xs:import schemaLocation="http://localhost:64051/Services/PaymentService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:element name="AuthorizeUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuthorizeUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthorizeUserResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PayByVisa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/GameStore.WcfService.Models" minOccurs="0" name="data" nillable="true" type="q1:PaymentParams" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PayByVisaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/GameStore.WcfService.Enums" minOccurs="0" name="PayByVisaResult" type="q2:PaymentStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PayByMasterCard">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/GameStore.WcfService.Models" minOccurs="0" name="data" nillable="true" type="q3:PaymentParams" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PayByMasterCardResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/GameStore.WcfService.Enums" minOccurs="0" name="PayByMasterCardResult" type="q4:PaymentStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Confirm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="transferId" type="q5:guid" />
+        <xs:element minOccurs="0" name="secureCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/GameStore.WcfService.Enums" minOccurs="0" name="ConfirmResult" type="q6:PaymentStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHistoryByCard">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cardNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHistoryByCardResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/GameStore.WcfService.Models" minOccurs="0" name="GetHistoryByCardResult" nillable="true" type="q7:ArrayOfTransfer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

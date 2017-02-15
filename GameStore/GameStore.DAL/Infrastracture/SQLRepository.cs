@@ -35,31 +35,51 @@ namespace GameStore.DAL.Infrastracture
             return GetAll().Where(where).ToList();
         }
 
-        public QueryResult<T> GetAll(Query<T> query)
+        public int GetTotalNumber(bool isWithDeleted)
         {
-            var models = GetAll().AsQueryable();
+            return (isWithDeleted)?_db.Set<T>().Count() : _db.Set<T>().Count(x=>!x.IsDeleted);
+        }
+
+        public bool IsExist(string id)
+        {
+            return _db.Set<T>().Any(x => x.Id.ToString() == id);
+        }
+
+        public int GetCount(Func<T, bool> where, bool isWithDeleted = false)
+        {
+            return (isWithDeleted) ? _db.Set<T>().Count(where) : _db.Set<T>().Where(x => !x.IsDeleted).Count(where);
+        }
+
+        public QueryResult<T> GetAll(Query<T> query, bool isWithDeleted = false)
+        {
+            var models = (isWithDeleted) ? GetAll().AsQueryable() : GetAll().Where(x => !x.IsDeleted).AsQueryable();
             if (query.Where != null)
             {
                 models = models.Where(query.Where).AsQueryable();
             }
+
             if (query.OrderBy != null)
             {
                 models = models.OrderBy(query.OrderBy).AsQueryable();
             }
+
             var count = models.Count();
             if (query.Skip != null)
             {
                 models = models.Skip(query.Skip.Value);
             }
+
             if (query.Take != null)
             {
                 models = models.Take(query.Take.Value);
             }
+
             var queryResult = new QueryResult<T>
             {
                 List = models,
                 Count = count
             };
+
             return queryResult;
         }
 
@@ -67,16 +87,16 @@ namespace GameStore.DAL.Infrastracture
         {
             try
             {
-                return GetAll().FirstOrDefault(x => x.EntityId.ToString() == id);
+                return GetAll().FirstOrDefault(x => x.Id.ToString() == id);
             }
             catch (Exception)
-            {               
+            {
                 return new T();
             }
         }
 
         public virtual IEnumerable<T> FindBy(Expression<Func<T, bool>> predicate)
-        {     
+        {
             return _db.Set<T>().Where(predicate);
         }
 

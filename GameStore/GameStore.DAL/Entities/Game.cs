@@ -4,11 +4,10 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using GameStore.DAL.Entities.Translation;
 using GameStore.DAL.Interfaces;
-using GameStore.DAL.MongoEntities;
 
 namespace GameStore.DAL.Entities
 {
-    public class Game : EntityBase, IEntityWithKey, ITranslateNamed<GameTranslate>
+    public class Game : EntityBase, ITranslateNamed<GameTranslate>
     {
         [Required]
         [StringLength(65)]
@@ -23,6 +22,7 @@ namespace GameStore.DAL.Entities
         [ForeignKey("Publisher")]
         public Guid? PublisherId { get; set; }
 
+        public string FilePath { get; set; }
         public int Viewing { get; set; }
         public decimal Price { get; set; }
 

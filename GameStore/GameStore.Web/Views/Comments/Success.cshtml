@@ -1,8 +1,10 @@
-﻿<h2>The comment was added</h2>
+﻿@model string
+
+<h2>@GlobalRes.CommentAdded</h2>
+
 <script>
-    $(document).ready(function () {
-        setTimeout(function() {
-            window.location.href = "@Url.Action("Comments", "Comments")";
-        }, 2000);
-    })
+    var AppUrlCommentSettings = {
+        CommentUrl: '@Url.Action("Comments", "Comments")'
+    }
 </script>
+<script src="~/scripts/SuccessComment.js"></script>

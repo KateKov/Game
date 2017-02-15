@@ -1,0 +1,35 @@
+﻿@model GameStore.Web.ViewModels.Comments.CommentViewModel
+<div id="comment_form">
+    <div class="review">
+        @using (Html.BeginForm("NewComment", "Comments", FormMethod.Post, new { name = "newForm", id = "newForm" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(x => x.GameKey)
+            @Html.HiddenFor(x => x.Id)
+            @Html.HiddenFor(x => x.ParentCommentId)
+            @Html.HiddenFor(x => x.Quote)
+            <div class='form_row'>
+                <h3>@GlobalRes.Edit</h3>
+                @if (Model.Quote != "")
+                {
+                    <p>  @Model.Quote</p>
+                }
+                <label>
+                    <strong>@GlobalRes.Name</strong>
+                </label> <br />
+                @Html.EditorFor(x => x.Name, new { onchange = "nameOnChange" })
+
+                @Html.ValidationMessageFor(x => x.Name)
+            </div>
+            <div class='form_row'>
+                <label>
+                    <strong>@GlobalRes.Body</strong>
+
+                </label> <br />
+                @Html.TextAreaFor(x => x.Body)
+                @Html.ValidationMessageFor(x => x.Body)
+            </div> 
+        }
+    </div>
+</div>

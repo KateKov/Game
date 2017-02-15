@@ -92,24 +92,44 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_LocalResources\GlobalRes.Designer.cs">
+      <DependentUpon>GlobalRes.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_LocalResources\GlobalRes.ru.Designer.cs">
+      <DependentUpon>GlobalRes.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="EF\GameStoreContext.cs" />
     <Compile Include="EF\GameStoreDbInitializer.cs" />
+    <Compile Include="Entities\Ban.cs" />
     <Compile Include="Entities\Comment.cs" />
     <Compile Include="Entities\EntityWithName.cs" />
     <Compile Include="Entities\Game.cs" />
     <Compile Include="Entities\Genre.cs" />
+    <Compile Include="Entities\ManagerProfile.cs" />
     <Compile Include="Entities\Order.cs" />
     <Compile Include="Entities\OrderDetail.cs" />
     <Compile Include="Entities\PlatformType.cs" />
     <Compile Include="Entities\Publisher.cs" />
+    <Compile Include="Entities\Role.cs" />
     <Compile Include="Entities\Translation\EntityTranslate.cs" />
     <Compile Include="Entities\Translation\GameTranslate.cs" />
     <Compile Include="Entities\Translation\GenreTranslate.cs" />
     <Compile Include="Entities\Translation\PlatformTypeTranslate.cs" />
     <Compile Include="Entities\Translation\PublisherTranslate.cs" />
+    <Compile Include="Entities\Translation\RoleTranslate.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Enums\BanEnum.cs" />
+    <Compile Include="Enums\CardType.cs" />
     <Compile Include="Enums\FilterEnums.cs" />
     <Compile Include="Enums\LanguageEnums.cs" />
+    <Compile Include="Enums\NotificationEnum.cs" />
     <Compile Include="Enums\PageEnum.cs" />
+    <Compile Include="Enums\PaymentStatus.cs" />
+    <Compile Include="Enums\PaymentTypes.cs" />
     <Compile Include="Infrastracture\CommonRepository.cs" />
     <Compile Include="Infrastracture\MongoConnectionHandler.cs" />
     <Compile Include="Infrastracture\MongoRepository.cs" />
@@ -119,42 +139,23 @@
     <Compile Include="Infrastracture\UnitOfWork.cs" />
     <Compile Include="Interfaces\IEntityBase.cs" />
     <Compile Include="Interfaces\IEntityNamed.cs" />
-    <Compile Include="Interfaces\IEntityWithKey.cs" />
     <Compile Include="Interfaces\IMongoEntity.cs" />
     <Compile Include="Interfaces\IMongoRepository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\ITranslate.cs" />
     <Compile Include="Interfaces\ITranslateNamed.cs" />
+    <Compile Include="Interfaces\ITranslateWithDescription.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
+    <Compile Include="Mapping\ConvertGuid.cs" />
     <Compile Include="Mapping\GetMongo.cs" />
     <Compile Include="Mapping\MongoToSql.cs" />
     <Compile Include="Migrations\201611291139442_InitialCreate.cs" />
     <Compile Include="Migrations\201611291139442_InitialCreate.Designer.cs">
       <DependentUpon>201611291139442_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201611291254231_initial_migration.cs" />
-    <Compile Include="Migrations\201611291254231_initial_migration.Designer.cs">
-      <DependentUpon>201611291254231_initial_migration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611300952340_second_migration.cs" />
-    <Compile Include="Migrations\201611300952340_second_migration.Designer.cs">
-      <DependentUpon>201611300952340_second_migration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201612051131456_PayedOrder.cs" />
-    <Compile Include="Migrations\201612051131456_PayedOrder.Designer.cs">
-      <DependentUpon>201612051131456_PayedOrder.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201612051140320_payedorderdetail.cs" />
-    <Compile Include="Migrations\201612051140320_payedorderdetail.Designer.cs">
-      <DependentUpon>201612051140320_payedorderdetail.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201612061034159_localization.cs" />
-    <Compile Include="Migrations\201612061034159_localization.Designer.cs">
-      <DependentUpon>201612061034159_localization.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201612061601087_local.cs" />
-    <Compile Include="Migrations\201612061601087_local.Designer.cs">
-      <DependentUpon>201612061601087_local.cs</DependentUpon>
+    <Compile Include="Migrations\201701091507221_profile.cs" />
+    <Compile Include="Migrations\201701091507221_profile.Designer.cs">
+      <DependentUpon>201701091507221_profile.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MongoEntities\Category.cs" />
@@ -173,26 +174,19 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="App_LocalResources\GlobalRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_LocalResources\GlobalRes.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalRes.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611291139442_InitialCreate.resx">
       <DependentUpon>201611291139442_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611291254231_initial_migration.resx">
-      <DependentUpon>201611291254231_initial_migration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611300952340_second_migration.resx">
-      <DependentUpon>201611300952340_second_migration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201612051131456_PayedOrder.resx">
-      <DependentUpon>201612051131456_PayedOrder.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201612051140320_payedorderdetail.resx">
-      <DependentUpon>201612051140320_payedorderdetail.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201612061034159_localization.resx">
-      <DependentUpon>201612061034159_localization.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201612061601087_local.resx">
-      <DependentUpon>201612061601087_local.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201701091507221_profile.resx">
+      <DependentUpon>201701091507221_profile.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

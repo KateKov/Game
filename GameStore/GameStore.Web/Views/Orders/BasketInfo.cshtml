@@ -1,0 +1,3 @@
+﻿@model GameStore.Web.ViewModels.Orders.BasketInfo
+    <a href="@Url.Action("Basket", new {controller = "Orders"})" class="btn btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        (@Model.Count) $@Model.Summ</a>

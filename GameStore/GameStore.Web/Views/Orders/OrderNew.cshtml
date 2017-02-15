@@ -1,0 +1,74 @@
+﻿@using GameStore.Web.Helpers
+@using GameStore.Web.Helpers.Paging
+@model GameStore.Web.ViewModels.Orders.OrderFilteringViewModel
+@{
+    ViewBag.Title = "Orders";
+}
+
+@if (Model.Orders.ToList().Count > 0)
+{
+    <table class="table">
+        <tr>
+            <th>
+                @Html.Label(GlobalRes.Order_OrderId)
+            </th>
+            <th>
+                @Html.Label(GlobalRes.Order_CustomerId)
+            </th>
+            <th>
+                @Html.Label(GlobalRes.DateOfOrder)
+            </th>
+            <th>
+                @Html.Label(GlobalRes.Sum)
+            </th>
+            <th>
+                @Html.Label(GlobalRes.OrderDetails)
+            </th>
+
+        </tr>
+
+        @foreach (var item in Model.Orders)
+        {
+            <tr>
+                <td>
+                    @Html.HiddenFor(modelItem => item.Id)
+                    @Html.ActionLink(item.Id, "Order", new { username = item.CustomerId })
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CustomerId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sum)
+                </td>
+                <td>
+                    @foreach (var x in item.OrderDetails)
+                    {
+                        <div>@GlobalRes.Order_OrderId @x.Id @GlobalRes.Price: @x.Price @GlobalRes.Quantity: @x.Quantity  </div>
+                    }
+                </td>
+                @if (User.IsInRole("Administrator") || User.IsInRole("Manager"))
+                {
+                    <td>
+                        <span>@Html.ActionLink(GlobalRes.Delete, "DeleteOrder", new { username = item.CustomerId }, new { @class = "btn btn-success" }) </span>
+                        <p></p>
+                    </td>
+                }
+                          
+            </tr>
+        }
+    </table>
+}
+<div class="text-center">
+    <ul class="pagination">
+        @Html.Pager(Model.Page, (int)Model.PageSize, Model.TotalItemsCount, "Page").Options(o => o
+        .AddRouteDataValue(Html.QueryStringParametersAsRouteValueDictionaryExceptFor("Page")))
+    </ul>
+</div>
+
+
+
+
+

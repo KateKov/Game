@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using GameStore.DAL.Entities.Translation;
 using GameStore.DAL.Interfaces;
-using GameStore.DAL.MongoEntities;
 
 namespace GameStore.DAL.Entities
 {

@@ -1,33 +1,34 @@
-﻿using System.ComponentModel;
+﻿using System.ComponentModel.DataAnnotations;
+using GameStore.DAL.App_LocalResources;
 
 
 namespace GameStore.DAL.Enums
 {
     public enum Date
     {
-        [Description("last week")]
+        [Display(Name = "LastWeek", ResourceType = typeof(GlobalRes))]
         week,
-        [Description("last month")]
+        [Display(Name = "LasMonth", ResourceType = typeof(GlobalRes))]
         month,
-        [Description("last year")]
+        [Display(Name = "LastYear", ResourceType = typeof(GlobalRes))]
         year,
-        [Description("2 year")]
+        [Display(Name = "LastTwoYear", ResourceType = typeof(GlobalRes))]
         twoyear,
-        [Description("3 year")]
+        [Display(Name = "LastThreeYear", ResourceType = typeof(GlobalRes))]
         threeyear
     };
 
     public enum Filter
     {
-        [Description("Most popular")]
+        [Display(Name = "MostPopul", ResourceType = typeof(GlobalRes))]
         Popularity = 1,
-        [Description("Most commented")]
+        [Display(Name = "MostComment", ResourceType = typeof(GlobalRes))]
         Comments = 2,
-        [Description("By price ascending")]
+        [Display(Name = "ByPriceAsc", ResourceType = typeof(GlobalRes))]
         PriceAsc = 3,
-        [Description("By price descending")]
+        [Display(Name = "ByPriceDesc", ResourceType = typeof(GlobalRes))]
         PriceDesc = 4,
-        [Description("New")]
+        [Display(Name = "ByNew", ResourceType = typeof(GlobalRes))]
         New = 5
     }
 }

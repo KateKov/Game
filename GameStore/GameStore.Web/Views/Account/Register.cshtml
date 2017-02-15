@@ -1,0 +1,68 @@
+﻿@model GameStore.Web.ViewModels.Accounts.RegisterViewModel
+@{
+    ViewBag.Title = "fdg";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <div class="row main">
+        <div class="panel-heading">
+            <div class="panel-title text-center">
+                <h1 class="title">@GlobalRes.Register</h1>
+                <hr />
+            </div>
+        </div>
+        <div class="main-login main-center">
+         @using (Html.BeginForm("Register", "Account", new {ViewBag.ReturnUrl}, FormMethod.Post, new {@class = "form-horizontal"}))
+         {
+
+             <div class="form-group">
+                 @Html.LabelFor(m => m.Username, new { @class = "cols-sm-2 control-label" })
+                 <div class="cols-sm-10">
+                     <div class="input-group">
+                         <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                         @Html.TextBoxFor(m => m.Username, null, new { @class = "form-control" })
+                         @Html.ValidationMessageFor(model => model.Username, null, new { @class = "help-block" })
+                     </div>
+                 </div>
+             </div>
+             <div class="form-group">
+                 @Html.LabelFor(m => m.Email, new { @class = "cols-sm-2 control-label" })
+                 <div class="cols-sm-10">
+                     <div class="input-group">
+                         <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                         @Html.TextBoxFor(m => m.Email, null, new { @class = "form-control" })
+                         @Html.ValidationMessageFor(model => model.Email, null, new { @class = "help-block" })
+                     </div>
+                 </div>
+             </div>
+             <div class="form-group">
+                 @Html.LabelFor(m => m.Password, new { @class = "cols-sm-2 control-label" })
+                 <div class="cols-sm-10">
+                     <div class="input-group">
+                         <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                         @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                         @Html.ValidationMessageFor(model => model.Password, null, new { @class = "help-block" })
+                     </div>
+                 </div>
+             </div>
+             <div class="form-group">
+                 @Html.LabelFor(m => m.ConfirmPassword, new { @class = "cols-sm-2 control-label" })
+                 <div class="cols-sm-10">
+                     <div class="input-group">
+                         <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                         @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+                         @Html.ValidationMessageFor(model => model.ConfirmPassword, null, new { @class = "help-block" })  
+                     </div>
+                 </div>
+             </div>
+             <div class="form-group ">
+                 <button type="button" class="btn btn-primary btn-lg btn-block login-button">@GlobalRes.Register</button>
+             </div>
+             <div class="login-register">
+                 <a href=@Url.Action("Login")>Login</a>
+             </div>
+         }
+        </div>
+    </div>
+</div>
+

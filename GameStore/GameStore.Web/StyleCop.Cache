@@ -1216,4 +1216,7 @@
       </violation>
     </violations>
   </sourcecode>
+  <project key="-209117679">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
 </stylecopresultscache>

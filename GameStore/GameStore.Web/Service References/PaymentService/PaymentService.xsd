@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/GameStore.WcfService.Models" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GameStore.WcfService.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:64051/Services/PaymentService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/GameStore.WcfService.Enums" />
+  <xs:import schemaLocation="http://localhost:64051/Services/PaymentService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="PaymentParams">
+    <xs:sequence>
+      <xs:element name="Amount" type="xs:decimal" />
+      <xs:element name="CvvCode" type="xs:int" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element name="ExpirationMonth" type="xs:int" />
+      <xs:element name="ExpirationYear" type="xs:int" />
+      <xs:element name="FromCardNumber" nillable="true" type="xs:string" />
+      <xs:element name="NameSurname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+      <xs:element name="Purpose" nillable="true" type="xs:string" />
+      <xs:element name="ToCardNumber" nillable="true" type="xs:string" />
+      <xs:element name="Token" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaymentParams" nillable="true" type="tns:PaymentParams" />
+  <xs:complexType name="ArrayOfTransfer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Transfer" nillable="true" type="tns:Transfer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTransfer" nillable="true" type="tns:ArrayOfTransfer" />
+  <xs:complexType name="Transfer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AmountOfTransfer" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FromCardNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Purpose" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SecureCode" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/GameStore.WcfService.Enums" minOccurs="0" name="Status" type="q1:PaymentStatus" />
+      <xs:element minOccurs="0" name="ToCardNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TransferId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Transfer" nillable="true" type="tns:Transfer" />
+</xs:schema>

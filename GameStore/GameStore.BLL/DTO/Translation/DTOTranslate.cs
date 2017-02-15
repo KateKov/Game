@@ -6,6 +6,7 @@ namespace GameStore.BLL.DTO.Translation
     public class DTOTranslate : IDtoBase
     {
         public string Id { get; set; }
-        public Language Language;
+        public Language Language { get; set; }
+        public string Name { get; set; }
     }
 }

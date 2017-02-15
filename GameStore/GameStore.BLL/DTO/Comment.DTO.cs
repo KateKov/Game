@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using GameStore.BLL.Interfaces;
+﻿using GameStore.BLL.Interfaces;
 
 namespace GameStore.BLL.DTO
 {

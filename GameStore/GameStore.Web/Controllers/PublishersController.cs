@@ -1,61 +1,109 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Web.Mvc;
 using GameStore.BLL.DTO;
-using GameStore.BLL.Interfaces;
-using GameStore.BLL.Services;
-using GameStore.Web.ViewModels;
 using AutoMapper;
 using GameStore.BLL.DTO.Translation;
 using GameStore.BLL.Interfaces.Services;
+using GameStore.DAL.Enums;
+using GameStore.Web.Infrastructure.Authentication;
+using GameStore.Web.Infrastructure.AuthorizeAttribute;
+using GameStore.Web.ViewModels.Publishers;
+using GameStore.Web.ViewModels.Translates;
+using GameStore.Web.Interfaces;
 
 namespace GameStore.Web.Controllers
 {
-    public class PublishersController : Controller
+    [UserAuthorize(Roles = UserRole.Administrator | UserRole.Manager)]
+    public class PublishersController : BaseController
     {
+        private readonly INamedService<PublisherDTO, PublisherDTOTranslate> _publisherService;
 
-        private readonly IGameStoreService _service;
-
-        public PublishersController(IGameStoreService service)
+        public PublishersController(INamedService<PublisherDTO, PublisherDTOTranslate> publisher, IAuthenticationManager authentication) : base(authentication)
         {
-            _service = service;
+            _publisherService = publisher;
         }
-        
+
         [HttpGet]
         public ActionResult Index()
         {
-            var publishers = _service.GenericService<PublisherDTO>().GetAll();
+            var publishers = _publisherService.GetAll(true);
+
             return View(Mapper.Map<IEnumerable<PublisherViewModel>>(publishers));
         }
 
         [HttpGet]
-        public ActionResult Details(string companyName)
+        public ActionResult Details(string name)
         {
-            var publisher = _service.NamedService<PublisherDTO, PublisherDTOTranslate>().GetByName(companyName);
+            var publisher = _publisherService.GetByName(name);
             return View(Mapper.Map<PublisherViewModel>(publisher));
         }
 
         [HttpGet]
         public ActionResult New()
         {
-            var publisher = new PublisherViewModel()
+            var publisher = new CreatePublisherViewModel
             {
-                Id =Guid.NewGuid().ToString()
+                Id = Guid.NewGuid().ToString(),
+                Translates = new List<TranslateViewModelDescription>
+                {
+                    new TranslateViewModelDescription
+                    {
+                        Id = Guid.NewGuid().ToString(),
+                        Language = Language.ru
+                    }
+                }
             };
+
             return View(publisher);
         }
 
         [HttpPost]
-        public ActionResult New(PublisherViewModel createPublisher)
+        public ActionResult New(CreatePublisherViewModel createPublisher)
         {
             if (ModelState.IsValid)
             {
                 var publisherDto = Mapper.Map<PublisherDTO>(createPublisher);
-                _service.GenericService<PublisherDTO>().AddOrUpdate(publisherDto, true);
+                _publisherService.AddEntity(publisherDto);
                 return RedirectToAction("Index");
             }
+            createPublisher.Translates = new List<TranslateViewModelDescription>
+            {
+                new TranslateViewModelDescription
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    Language = Language.ru
+                }
+            };
             return View("New", createPublisher);
+        }
+
+        [HttpGet]
+        public ActionResult Update(string name)
+        {
+            var publisherDto = _publisherService.GetByName(name);
+            var publisher = Mapper.Map<CreatePublisherViewModel>(publisherDto);
+            return View(publisher);
+        }
+
+        [HttpPost]
+        public ActionResult Update(CreatePublisherViewModel createPublisher)
+        {
+            if (ModelState.IsValid)
+            {
+                var publisherDto = Mapper.Map<PublisherDTO>(createPublisher);
+                _publisherService.EditEntity(publisherDto);
+                return RedirectToAction("Index");
+            }
+
+            return View("Update", createPublisher);
+        }
+
+        [HttpGet]
+        public ActionResult Delete(string name)
+        {
+            _publisherService.DeleteByName(name);
+            return RedirectToAction("Index");
         }
     }
 }

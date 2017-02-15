@@ -1,5 +1,4 @@
-﻿@using GameStore.Web.ViewModels;
-@model OrderViewModel
+﻿@model GameStore.Web.ViewModels.Orders.OrderViewModel
 
 @{
     ViewBag.Title = "IBox";
@@ -8,18 +7,18 @@
 <div class="container">
     <div class="jumbotron">
         <h3 class="media-heading">
-            Number of order: @Model.Id
+            @GlobalRes.Order_OrderId: @Model.Id
         </h3>
         <h3 class="media-heading">
-            CustomerId: @Model.CustomerId
+            @GlobalRes.Order_CustomerId: @Model.CustomerId
         </h3>
         <h3 class="media-heading">
-            Date of order: @Model.Date
+            @GlobalRes.DateOfOrder: @Model.Date
         </h3>
         <h3 class="media-heading">
-            Sum of order: @Model.Sum
+           @GlobalRes.Sum: @Model.Sum
         </h3>
-   
+        @Html.ActionLink(GlobalRes.Games, "Index", "Games")
     </div>
 </div>
 

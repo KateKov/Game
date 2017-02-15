@@ -1,0 +1,36 @@
+﻿@model GameStore.Web.ViewModels.Genres.GenreViewModel
+@{
+    ViewBag.Title = @GlobalRes.Details;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    <h2>@GlobalRes.Details</h2>
+    <div id="quest_form">
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                <p>
+                    <b>   @Html.DisplayNameFor(model => model.Name)</b>
+                </p>
+            </dt>
+            <dd>
+                <p>
+                    <b>@Html.DisplayFor(model => model.Name)</b>
+                </p>
+            </dd>
+            <dt>
+                <p>
+                    <b>  @Html.DisplayNameFor(model => model.ParentName)</b>
+                </p>
+            </dt>
+            <dd>
+                <p>
+                    @Html.DisplayFor(model => model.ParentName)
+                </p>
+            </dd>
+        </dl>
+    </div>
+</div>
+<p>
+    @Html.ActionLink(GlobalRes.Genres, "Index")
+</p>

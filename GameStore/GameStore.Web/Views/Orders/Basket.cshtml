@@ -1,18 +1,18 @@
 ﻿@using GameStore.Web.ViewModels
 
-@model OrderViewModel
+@model GameStore.Web.ViewModels.Orders.OrderViewModel
 
 @{
-    ViewBag.Title = "Basket";
+    ViewBag.Title = GlobalRes.Basket;
 }
-<h2>Basket</h2>
+<h2>@GlobalRes.Basket</h2>
 @if (Model != null)
 {
     <p>
-        <span>@Html.ActionLink("Delete Basket", "DeleteBusket", new {key = ""}, new {@class = "btn btn-info"}) </span>
+        <span>@Html.ActionLink(GlobalRes.Delete, "DeleteBusket", new {username= User.Identity.Name}, new {@class = "btn btn-info"}) </span>
     </p>
     <p>
-        <span>@Html.ActionLink("Pay Order", "MakeOrder", new {id = @Model.Id}, new {@class = "btn btn-info"}) </span>
+        <span>@Html.ActionLink(GlobalRes.Pay, "MakeOrder", new {username=  User.Identity.Name}, new {@class = "btn btn-info"}) </span>
     </p>
     @Html.HiddenFor(x => x.Id)
     <table class="table">
@@ -58,7 +58,7 @@
 }
 else
 {
-    <p>The basket is epmty</p>
-    <div>  @Html.ActionLink("Orders", "Order", "Orders") </div>
+    <p>@GlobalRes.BasketEmpty</p>
+    <div>  @Html.ActionLink(GlobalRes.Orders, "Order", "Orders", new {username = User.Identity.Name}) </div>
     <div></div>
 }

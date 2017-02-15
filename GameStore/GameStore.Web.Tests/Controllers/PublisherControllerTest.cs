@@ -1,44 +1,55 @@
-﻿using GameStore.BLL.Interfaces;
-using GameStore.Web.Infrastracture;
+﻿using GameStore.Web.Infrastracture;
 using Moq;
-using NLog;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web.Mvc;
 using GameStore.BLL.DTO;
 using GameStore.BLL.DTO.Translation;
 using GameStore.Web.Controllers;
-using GameStore.Web.ViewModels;
 using GameStore.BLL.Infrastructure;
 using GameStore.BLL.Interfaces.Services;
+using GameStore.Web.Infrastructure.Authentication;
+using GameStore.Web.Interfaces;
+using GameStore.Web.ViewModels.Publishers;
 
 namespace GameStore.Web.Tests.Controllers
 {
     public class PublisherControllerTest
     {
-        private readonly Mock<ILogger> _loggerMock;
-        private readonly Mock<IGameStoreService> _mock;
+        private readonly Mock<INamedService<PublisherDTO, PublisherDTOTranslate>> _mockPublisher;
+        private readonly Mock<INamedService<GameDTO, GameDTOTranslate>> _mockGame;
+        private readonly Mock<IAuthenticationManager> _mockAuth;
+        private readonly UserModel _user;
+        private readonly PublishersController _controller;
 
         public PublisherControllerTest()
         {
-            _loggerMock = new Mock<ILogger>();
             AutoMapperConfiguration.Configure();
-            _mock = new Mock<IGameStoreService>();
+            _mockPublisher = new Mock<INamedService<PublisherDTO, PublisherDTOTranslate>>();
+            _mockGame = new Mock<INamedService<GameDTO, GameDTOTranslate>>();
+            _mockAuth = new Mock<IAuthenticationManager>();
+            _user = new UserModel { Username = "User", IsBanned = false,
+                Roles =
+                    new List<UserRole>
+                    {
+                        UserRole.Administrator,
+                        UserRole.Guest,
+                        UserRole.Manager,
+                    }
+             };
+            _mockAuth.Setup(x => x.CurrentUser).Returns(new UserProvider(_user));
+            _controller = new PublishersController(_mockPublisher.Object, _mockAuth.Object);
         }
 
         [Test]
         public void GetPublishers_BLLReturnsSomeData()
         {
             // Arrange
-            _mock.Setup(a => a.GenericService<PublisherDTO>().GetAll()).Returns(new List<PublisherDTO>());
-            var sut = new PublishersController(_mock.Object);
+            _mockPublisher.Setup(a => a.GetAll(false)).Returns(new List<PublisherDTO>());
 
             // Act
-            var res = sut.Index();
+            var res = _controller.Index();
 
             // Assert
             Assert.AreEqual(res.GetType(), typeof(ViewResult));
@@ -48,14 +59,13 @@ namespace GameStore.Web.Tests.Controllers
         public void GetPublishers_BLLReturnsNothing_ReturnsEmptyJson()
         {
             // Arrange
-            _mock.Setup(a => a.GenericService<PublisherDTO>().GetAll());
-            var sut = new PublishersController(_mock.Object);
+            _mockPublisher.Setup(a => a.GetAll(false));
 
             // Act
-            var res = sut.Index();
+            var res = _controller.Index();
 
             // Assert
-            Assert.Throws<ArgumentNullException>(() => res.ExecuteResult(sut.ControllerContext));
+            Assert.Throws<ArgumentNullException>(() => res.ExecuteResult(_controller.ControllerContext));
         }
 
 
@@ -63,11 +73,10 @@ namespace GameStore.Web.Tests.Controllers
         public void AddPublisher_GetsInvalidItem_ReturnsStatusCodeBadRequest()
         {
             // Arrange
-            _mock.Setup(a => a.GenericService<PublisherDTO>().AddOrUpdate(It.IsAny<PublisherDTO>(), true)).Throws(new ValidationException(string.Empty, string.Empty)).Verifiable();
-            var sut = new PublishersController(_mock.Object);
+            _mockPublisher.Setup(a => a.AddEntity(It.IsAny<PublisherDTO>())).Throws(new ValidationException(string.Empty, string.Empty)).Verifiable();
 
             // Act
-            var res = sut.New();
+            var res = _controller.New();
 
             // Assert
             Assert.AreEqual(typeof(ViewResult), res.GetType());
@@ -77,15 +86,25 @@ namespace GameStore.Web.Tests.Controllers
         public void DetailPublisher_GetValidItems_ReturnViewResult()
         {
             //Arrange
-            _mock.Setup(a => a.NamedService<PublisherDTO, PublisherDTOTranslate>().GetByName(It.IsAny<string>())).Returns(new PublisherDTO()).Verifiable();
-            var sut = new PublishersController(_mock.Object);
+            _mockPublisher.Setup(a => a.GetByName(It.IsAny<string>())).Returns(new PublisherDTO()).Verifiable();
 
             //Act
-            var res = sut.Details("name");
+            var res = _controller.Details("name");
 
             // Assert
             Assert.AreEqual(typeof(ViewResult), res.GetType());
         }
 
+        [Test]
+        public void UpdatePublisher_GetValidItem_ReturneViewResult()
+        {
+            _mockGame.Setup(a => a.AddEntity(It.IsAny<GameDTO>())).Verifiable();
+            _mockPublisher.Setup(a => a.GetAll(true)).Returns(new List<PublisherDTO>()).Verifiable();
+            _mockPublisher.Setup(a => a.GetByName("name"));
+
+            var res = _controller.Update(new CreatePublisherViewModel());
+
+            Assert.AreEqual(typeof(RedirectToRouteResult), res.GetType());
+        }
     }
 }

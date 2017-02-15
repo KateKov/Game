@@ -2,8 +2,7 @@
 
 namespace GameStore.BLL.DTO.Translation
 {
-    public class PlatformTypeDTOTranslate : DTOTranslate, IDtoNamed
+    public class PlatformTypeDTOTranslate : DTOTranslate, IDTOTranslate
     {
-        public string Name { get; set; }
     }
 }

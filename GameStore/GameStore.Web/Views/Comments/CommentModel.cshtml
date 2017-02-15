@@ -1,23 +1,29 @@
-﻿@using GameStore.Web.ViewModels
-@model CommentViewModel
-
+﻿@model GameStore.Web.ViewModels.Comments.CommentViewModel
 <div class="comments">
     <div class="comment dialog">
 
-        <span>@Html.ActionLink("Answer", "NewComment", "Comments", new { gameKey = Model.GameKey, parentId = Model.Id }, new { @class = "viewDialog", data_dialog_title = "Answer for " + Model.Name })</span>
-        <span>@Html.ActionLink("Quote", "NewComment", "Comments", new { gameKey = Model.GameKey, parentId = Model.Id, body = Model.Body }, new { @class = "viewDialog", data_dialog_title = "Answer for " + Model.Name })</span>
-        <span>@Html.ActionLink("Delete", "Delete", "Comments", new { gameKey = Model.GameKey, commentId = Model.Id }, new { onclick = "return confirm('Delete this comment?')" })</span>
-        <hr />
-        <p>  <span>@Html.ActionLink("Ban", "Ban", "Comments", new { name = Model.Name })</span></p>
+        <span>@Html.ActionLink(GlobalRes.Answer, "NewComment", "Comments", new {gameKey = Model.GameKey, parentId = Model.Id}, new {@class = "viewDialog", data_dialog_title = "Answer for " + Model.Name})</span>
+        <span>@Html.ActionLink(GlobalRes.Quote, "NewComment", "Comments", new {gameKey = Model.GameKey, parentId = Model.Id, body = Model.Body}, new {@class = "viewDialog", data_dialog_title = "Answer for " + Model.Name})</span>
+        @if (User.IsInRole("Administrator") || User.IsInRole("Moderator"))
+        {
+            <input type="hidden" name="CommentValueId" id="CommentValueId" value=@Model.Id />
+           <a href="#" class = "viewDialogDelete" data_dialog_title = @GlobalRes.Delete > @GlobalRes.Delete</a>
+            <span>@Html.ActionLink(GlobalRes.Edit, "Edit", "Comments", new {gameKey = Model.GameKey, commentId = Model.Id}, new {@class = "viewDialog", data_dialog_title = GlobalRes.Edit})</span>
+        }
+        @if (Model.Name != "Anonumous" && Model.Name != "Admin" && Model.Name != "Moderator" && Model.Name != "Manager" && (User.IsInRole("Administrator") || User.IsInRole("Moderator")))
+        {
+            <span>@Html.ActionLink(GlobalRes.Block, "Ban", "Comments", new {name = Model.Name}, new {})</span>
+        }
+        <hr/>
         <b> @Model.Name</b>
         <p>
             @if (!string.IsNullOrEmpty(Model.Quote))
             {
-            <p>
-                <blockquote>
-                    @Model.Quote
-                </blockquote>
-            </p>
+                <p>
+                    <blockquote>
+                        @Model.Quote
+                    </blockquote>
+                </p>
             }
             @if (Model.ParentCommentId != null)
             {
@@ -26,8 +32,6 @@
             <p>
                 @Model.Body
             </p>
-            </p>
-        </div>
+        </p>
     </div>
-
-
+</div>

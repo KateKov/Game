@@ -1,6 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using GameStore.DAL.Interfaces;
-using GameStore.DAL.MongoEntities;
 
 namespace GameStore.DAL.Entities
 {

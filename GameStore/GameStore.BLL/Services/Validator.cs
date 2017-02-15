@@ -1,42 +1,85 @@
 ﻿using System.Linq;
 using GameStore.BLL.DTO;
 using GameStore.BLL.Infrastructure;
-using GameStore.BLL.Interfaces;
-using GameStore.DAL.Interfaces;
 
 namespace GameStore.BLL.Services
 {
-    public static class Validator<T> where T : class, IDtoBase, new()
+    public static class Validator
     {
-        public static void ValidateModel(T model)
+        public static void Validate(GameDTO game)
         {
-            var modelName = typeof(T).Name;
-            if (model == null)
-                throw new ValidationException("Cannot create " + modelName +" from null", "");
-          
-            if ((model is IDtoWithKey).Equals(true) && string.IsNullOrEmpty(((IDtoWithKey)model).Key))
+            if (game == null)
             {
-                throw new ValidationException("Property cannot be empty", "Key");
+                throw new ValidationException("Cannot create game from null", "Game");
             }
-            if (model is IDtoNamed && string.IsNullOrEmpty((model as IDtoNamed).Name))
+            if (string.IsNullOrEmpty(game.Key))
             {
-                throw new ValidationException("Property cannot be empty", "Name"); 
+                throw new ValidationException("Property key cannot be empty: GameDTO", "Key");
             }
-            if (model is GameDTO && (model as GameDTO).Translates.Any(x => string.IsNullOrEmpty(x.Name)))
+
+            if (game.Translates.Any(x => string.IsNullOrEmpty(x.Name)))
             {
-                throw new ValidationException("Property cannot be empty", "Name");
+                throw new ValidationException("Property name cannot be empty: GameDTO", "Name");
             }
-            if (model is GenreDTO && (model as GenreDTO).Translates.Any(x => string.IsNullOrEmpty(x.Name)))
+        }
+
+        public static void Validate(PublisherDTO publisher)
+        {
+            if (publisher == null)
             {
-                throw new ValidationException("Property cannot be empty", "Name");
+                throw new ValidationException("Cannot create publisher from null", "Publisher");
             }
-            if (model is PlatformTypeDTO && (model as PlatformTypeDTO).Translates.Any(x => string.IsNullOrEmpty(x.Name)))
+            if (publisher.Translates.Any(x=>string.IsNullOrEmpty(x.Name)))
             {
-                throw new ValidationException("Property cannot be empty", "Name");
+                throw new ValidationException("Property name cannot be empty: PublisherDTO", "Name");
             }
-            if (model is PublisherDTO && (model as GameDTO).Translates.Any(x => string.IsNullOrEmpty(x.Name)))
+        }
+
+        public static void Validate(GenreDTO genre)
+        {
+            if (genre == null)
             {
-                throw new ValidationException("Property cannot be empty", "Name");
+                throw new ValidationException("Cannot create genre from null", "Genre");
+            }
+            if (genre.Translates.Any(x => string.IsNullOrEmpty(x.Name)))
+            {
+                throw new ValidationException("Property name cannot be empty: GenreDTO", "Name");
+            }
+        }
+
+        public static void Validate(CommentDTO comment)
+        {
+            if (comment == null)
+            {
+                throw new ValidationException("Cannot create comment from null", "Comment");
+            }
+            if (string.IsNullOrEmpty(comment.Name))
+            {
+                throw new ValidationException("Property name cannot be empty: CommentDTO", "Name");
+            }
+        }
+
+        public static void Validate(PlatformTypeDTO type)
+        {
+            if (type == null)
+            {
+                throw new ValidationException("Cannot create type from null", "PlatformType");
+            }
+            if (type.Translates.Any(x => string.IsNullOrEmpty(x.Name)))
+            {
+                throw new ValidationException("Property name cannot be empty: PlatformTypeDTO", "Name");
+            }
+        }
+
+        public static void Validate(RoleDTO role)
+        {
+            if (role == null)
+            {
+                throw new ValidationException("Cannot create role from null", "Role");
+            }
+            if (role.Translates.Any(x => string.IsNullOrEmpty(x.Name)))
+            {
+                throw new ValidationException("Property name cannot be empty:RoleDTO", "Name");
             }
         }
     }

@@ -11,11 +11,9 @@ namespace GameStore.DAL.Infrastracture
             var map = Map();
             if (map != null)
             {
-                const string connectionString = "mongodb://localhost/test";
-                var mongoClient = new MongoClient(connectionString);
+                var mongoClient = new MongoClient("mongodb://localhost/test");
                 var mongoServer = mongoClient.GetServer();
-                const string databaseName = "Northwind";
-                var db = mongoServer.GetDatabase(databaseName);
+                var db = mongoServer.GetDatabase("Northwind");
                 MongoCollection = db.GetCollection<T>(map);
             }
         }

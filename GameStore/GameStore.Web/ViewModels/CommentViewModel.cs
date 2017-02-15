@@ -1,26 +1,32 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using GameStore.Web.App_LocalResources;
 
 namespace GameStore.Web.ViewModels
 {
     public class CommentViewModel
     {
-        [Required(ErrorMessage = "Comment doesn't have ID")]
+        [Required(ErrorMessageResourceType = typeof(GlobalRes), ErrorMessageResourceName = "CommentIdError")]
         public string Id { get; set; }
-        [Required(ErrorMessage = "Comment doesn't have Name")]
-        [Display(Name = "Name")]
+
+        [Required(ErrorMessageResourceType = typeof(GlobalRes), ErrorMessageResourceName = "CommentNameError")]
+        [Display(ResourceType = typeof(GlobalRes), Name = "Name")]
         public string Name { get; set; }
-        [Required(ErrorMessage = "Comment doesn't have Body")]
-        [Display(Name = "Body")]
+
+        [Required(ErrorMessageResourceType = typeof(GlobalRes), ErrorMessageResourceName = "CommentBodyError")]
+        [Display(ResourceType = typeof(GlobalRes), Name = "Body")]
         public string Body { get; set; }
-        [Display(Name = "Game")]
+
+        [Display(ResourceType = typeof(GlobalRes), Name = "Game")]
         public string GameId { get; set; }
+
         public string GameKey { get; set; }
-        [Display(Name = "Parent Name")]
+
         public string ParentCommentName { get; set; }
-        [Display(Name = "Parent")]
+
         public string ParentCommentId { get; set; }
+
         public string Quote { get; set; }
+
         public bool IsDeleted { get; set; }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
+using GameStore.Web.App_LocalResources;
 
 namespace GameStore.Web.ViewModels
 {
@@ -9,44 +10,69 @@ namespace GameStore.Web.ViewModels
     {
         [HiddenInput(DisplayValue = false)]
         public string Id { get; set; }
-        [Required(ErrorMessage = "Game doesn't have Name")]
-        [Display(Name = "Name")]
+
+
+        [Required(ErrorMessageResourceType = typeof(GlobalRes), ErrorMessageResourceName = "ErrorName")]
+        [Display(ResourceType = typeof(GlobalRes), Name = "Name")]
         public string Name { get; set; }
 
-        [Display(Name = "Description")]
+
+
+        [Display(ResourceType = typeof(GlobalRes), Name = "Description")]
         public string Description { get; set; }
+
 
         public ICollection<string> Comments { get; set; }
 
-        [Required(ErrorMessage = "Game doesn't have genres")]
-        [Display(Name = "Genres")]
+
+        [Required(ErrorMessageResourceType = typeof(GlobalRes), ErrorMessageResourceName = "GenresNameError")]
+        [Display(ResourceType = typeof(GlobalRes), Name = "GenresName")]
         public ICollection<string> GenresName { get; set; }
 
-        [Required(ErrorMessage = "Game doesn't have platform type")]
-        [Display(Name = "Platform Types")]
+
+
+        [Required(ErrorMessageResourceType = typeof(GlobalRes), ErrorMessageResourceName = "PlatformTypeError")]
+        [Display(ResourceType = typeof(GlobalRes), Name = "PlatformTypesName")]
         public ICollection<string> PlatformTypesName { get; set; }
-        [Display(Name = "Viewing")]
+
+
+        [Display(ResourceType = typeof(GlobalRes), Name = "Viewing")]
         public int Viewwing { get; set; }
+
+
         [DataType(DataType.Date)]
+        [Display(ResourceType = typeof(GlobalRes), Name = "FilterGame_DateOfAdding")]
         public DateTime DateOfAdding { get; set; }
+
+
+        [Display(ResourceType = typeof(GlobalRes), Name = "Game_Key")]
         public string Key { get; set; }
 
-        [Display(Name = "Price, UAH")]
-        [Required(ErrorMessage = "Game doesn't have Price")]
+
+
+        [Display(ResourceType = typeof(GlobalRes), Name = "Price")]
+        [Required(ErrorMessageResourceType = typeof(GlobalRes), ErrorMessageResourceName = "PriceError")]
         public decimal Price { get; set; }
 
-        [Required(ErrorMessage = "Game doesn't have counts")]
-        [Display(Name = "Units in Stock")]
+
+
+        [Required(ErrorMessageResourceType = typeof(GlobalRes), ErrorMessageResourceName = "UnitInStockError")]
+        [Display(ResourceType = typeof(GlobalRes), Name = "UnitsInStock")]
         public short UnitsInStock { get; set; }
 
-        [Display(Name = "Company Name")]
+
+
+        [Display(ResourceType = typeof(GlobalRes), Name = "CompanyName")]
         public string PublisherName { get; set; }
 
-        [Display(Name = "Publisher")]
+
+
+        [Display(ResourceType = typeof(GlobalRes), Name = "Publisher")]
         public string PublisherId { get; set; }
 
-        [Required(ErrorMessage = "Not specified whether there is game available")]
-        [Display(Name = "Discountinues")]
+
+
+        [Display(ResourceType = typeof(GlobalRes), Name = "Discountinues")]
         public bool Discountinues { get; set; }
 
         public ICollection<string> OrderDetails { get; set; }

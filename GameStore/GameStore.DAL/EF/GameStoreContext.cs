@@ -25,9 +25,20 @@ namespace GameStore.DAL.EF
 
         public DbSet<PlatformTypeTranslate> PlatformTypeTranslates { get; set; }
         public DbSet<PublisherTranslate> PublisherTranslates { get; set; }
-        public GameStoreContext(string connectionString) : base("GameStore") { }
 
-        public GameStoreContext() { }
+        public DbSet<Ban> Bans { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
+        public DbSet<RoleTranslate> RoleTranslates { get; set; }
+
+        public GameStoreContext(string connectionString) : base("GameStore")
+        {
+        }
+
+        public GameStoreContext()
+        {
+        }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
@@ -37,12 +48,15 @@ namespace GameStore.DAL.EF
                 .WithRequired(c => c.Game)
                 .WillCascadeOnDelete(true);
 
+            modelBuilder.Entity<Game>()
+                .HasMany(g => g.OrderDetails)
+                .WithRequired(c => c.Game)
+                .WillCascadeOnDelete(true);
+
             modelBuilder.Entity<Genre>()
                 .HasOptional(g => g.ParentGenre)
                 .WithMany(a => a.ChildGenres)
                 .WillCascadeOnDelete(false);
-
-
 
             modelBuilder.Entity<Game>().HasMany(c => c.Genres)
                 .WithMany(s => s.Games)
@@ -55,11 +69,25 @@ namespace GameStore.DAL.EF
 
             modelBuilder.Entity<Game>().HasMany(c => c.PlatformTypes)
                 .WithMany(s => s.Games)
-                  .Map(t =>
+                .Map(t =>
                 {
                     t.MapLeftKey("GameId");
                     t.MapRightKey("PlatformTypeId");
                     t.ToTable("GamesTypes");
+                });
+
+            modelBuilder.Entity<Ban>()
+           .HasRequired(x => x.User)
+           .WithMany(x => x.Bans);
+
+            modelBuilder.Entity<User>()
+                .HasMany(u => u.Roles)
+                .WithMany(r => r.Users)
+                .Map(m =>
+                {
+                    m.ToTable("UserRoles");
+                    m.MapLeftKey("UserId");
+                    m.MapRightKey("RoleId");
                 });
         }
     }

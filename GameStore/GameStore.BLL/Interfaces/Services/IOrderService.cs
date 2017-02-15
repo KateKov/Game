@@ -2,20 +2,29 @@
 using GameStore.DAL.Entities;
 using GameStore.DAL.Enums;
 
-namespace GameStore.BLL.Interfaces
+namespace GameStore.BLL.Interfaces.Services
 {
-    public interface IOrderService
+    public interface IOrderService : IService<OrderDTO>
     {
+        //Get 
+        OrderDTO GetBasket(string username);
+        OrderDTO GetOrders(string username);
+        OrderDetailDTO GetOrderDetail(string gameKey, short quantity, bool isOrderExist);
+        OrderFilterResultDTO GetOrdersByFilter(OrderFilterDTO filter, bool isHistory, int page, PageEnum pageSize);
+        OrderDetailDTO GetExistedOrderDetail(OrderDetail orderDetailEntity, GameDTO game, short quantity);
+        OrderDetailDTO GetNewOrderDetail(GameDTO game, short quantity);
+
+        //Add
+        void AddOrderDetail(string gameKey, short quantity, string username, bool isBasket);
+        void AddOrder(OrderDetailDTO product, string username, bool isBasket);
+
+        //Delete
+        void DeleteOrder(string username, bool isBasket);
+
+        //Edit
+        void ChangeStatus(string username, bool isShipped);
+        void Pay(string username);
+        void UpdateOrder(string username, OrderDetailDTO product, bool isBasket);
         OrderDTO ConfirmeOrder(string id);
-        OrderDTO GetBusket(string customerId);
-        OrderDTO GetOrders();
-        //void AddToBusket(OrderDetailDTO product, string customerId);
-        void GetOrderDetail(string gameId, short quantity, string customerId);
-        void DeleteBusket(string customerId);
-        OrderFilterResultDTO GetOrdersByFilter(OrderFilterDTO filter, int page, PageEnum pageSize);
-        void AddToBusket(OrderDetailDTO product, string customerId);
-        void AddNewOrderToBasket(OrderDetailDTO product);
-        OrderDetailDTO GetExistingOrder(OrderDetail orderDetailEntity, GameDTO game, short quantity);
-        void PayOrder();
     }
 }

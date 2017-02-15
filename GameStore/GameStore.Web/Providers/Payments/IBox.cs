@@ -1,10 +1,10 @@
 ﻿using System.Web.Mvc;
-using GameStore.Web.ViewModels;
 using System;
+using GameStore.Web.ViewModels.Orders;
 
 namespace GameStore.Web.Providers.Payments
 {
-    public class IBox : IPaymentStrategy
+    public class Box : IPaymentStrategy
     {
         public ActionResult Pay(OrderViewModel order, Func<string, object, ViewResult> viewResult)
         {

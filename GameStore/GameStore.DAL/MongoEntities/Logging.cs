@@ -1,8 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace GameStore.DAL.MongoEntities
 {
+    [BsonIgnoreExtraElements]
     public class Logging : MongoBase
     {
         public DateTime Date { get; set; }

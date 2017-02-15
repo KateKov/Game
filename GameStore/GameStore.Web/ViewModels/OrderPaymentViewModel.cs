@@ -1,7 +1,4 @@
-﻿using System.Web.Mvc;
-using GameStore.Web.Providers.Payments;
-
-namespace GameStore.Web.ViewModels
+﻿namespace GameStore.Web.ViewModels
 {
     public class OrderPaymentViewModel
     {
@@ -10,7 +7,7 @@ namespace GameStore.Web.ViewModels
         public enum Payments
         {
             Bank,
-            IBox,
+            Box,
             Visa
         }
 

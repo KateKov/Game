@@ -6,16 +6,20 @@ namespace GameStore.Web.Tests.Routes
     [TestFixture]
     public class RoutesTests
     {
+        private readonly RouteCollection _routes;
+        public RoutesTests()
+        {
+            _routes = new RouteCollection();
+            RouteConfig.RegisterRoutes(_routes);
+        }
         [Test]
         public void RouteWithController_NoAction_NoId()
         {
             // Arrange
-            var context = new StubHttpContextForRouting(requestUrl: "~/games");
-            var routes = new RouteCollection();
-            RouteConfig.RegisterRoutes(routes);
+            var context = new StubHttpContextForRouting(requestUrl: "~/en/games");
 
             // Act
-            RouteData routeData = routes.GetRouteData(context);
+            RouteData routeData = _routes.GetRouteData(context);
 
             // Assert
             Assert.IsNotNull(routeData);
@@ -27,12 +31,10 @@ namespace GameStore.Web.Tests.Routes
         public void RouteWithController_WithAction_NoId()
         {
             // Arrange
-            var context = new StubHttpContextForRouting(requestUrl: "~/games/action2");
-            var routes = new RouteCollection();
-            RouteConfig.RegisterRoutes(routes);
+            var context = new StubHttpContextForRouting(requestUrl: "~/en/games/action2");
 
             // Act
-            RouteData routeData = routes.GetRouteData(context);
+            RouteData routeData = _routes.GetRouteData(context);
 
             // Assert
             Assert.IsNotNull(routeData);
@@ -44,12 +46,10 @@ namespace GameStore.Web.Tests.Routes
         public void RouteWithController_WithAction_WithId()
         {
             // Arrange
-            var context = new StubHttpContextForRouting(requestUrl: "~/game/key/action1");
-            var routes = new RouteCollection();
-            RouteConfig.RegisterRoutes(routes);
+            var context = new StubHttpContextForRouting(requestUrl: "~/en/game/key/action1");
 
             // Act
-            RouteData routeData = routes.GetRouteData(context);
+            RouteData routeData = _routes.GetRouteData(context);
 
             // Assert
             Assert.IsNotNull(routeData);
@@ -62,12 +62,10 @@ namespace GameStore.Web.Tests.Routes
         public void RouteForDownload()
         {
             // Arrange
-            var context = new StubHttpContextForRouting(requestUrl: "~/game/Gta6_ThirdEdition/Download");
-            var routes = new RouteCollection();
-            RouteConfig.RegisterRoutes(routes);
+            var context = new StubHttpContextForRouting(requestUrl: "~/en/game/Gta6_ThirdEdition/Download");
 
             // Act
-            RouteData routeData = routes.GetRouteData(context);
+            RouteData routeData = _routes.GetRouteData(context);
 
             // Assert
             Assert.IsNotNull(routeData);
@@ -81,10 +79,8 @@ namespace GameStore.Web.Tests.Routes
         {
             // Arrange
             var context = new StubHttpContextForRouting(requestUrl: "~/a/b/c/d");
-            var routes = new RouteCollection();
-            RouteConfig.RegisterRoutes(routes);
             // Act
-            RouteData routeData = routes.GetRouteData(context);
+            RouteData routeData = _routes.GetRouteData(context);
             // Assert
             Assert.IsNull(routeData);
         }
@@ -93,12 +89,10 @@ namespace GameStore.Web.Tests.Routes
         public void RouteForDetails()
         {
             // Arrange
-            var context = new StubHttpContextForRouting(requestUrl: "~/game/Gta6_ThirdEdition");
-            var routes = new RouteCollection();
-            RouteConfig.RegisterRoutes(routes);
+            var context = new StubHttpContextForRouting(requestUrl: "~/en/game/Gta6_ThirdEdition/Details");
 
             // Act
-            RouteData routeData = routes.GetRouteData(context);
+            RouteData routeData = _routes.GetRouteData(context);
 
             // Assert
             Assert.IsNotNull(routeData);
@@ -112,11 +106,9 @@ namespace GameStore.Web.Tests.Routes
         {
             // Arrange
             var context = new StubHttpContextForRouting("~/");
-            var routes = new RouteCollection();
-            RouteConfig.RegisterRoutes(routes);
 
             // Act
-            RouteData routeData = routes.GetRouteData(context);
+            RouteData routeData = _routes.GetRouteData(context);
 
             // Assert
             Assert.IsNotNull(routeData);

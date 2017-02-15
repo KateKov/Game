@@ -1,51 +1,64 @@
-﻿@using System.Data.Entity.Core.Metadata.Edm
-@using GameStore.Web.ViewModels
-@model PublisherViewModel
+﻿@model GameStore.Web.ViewModels.Publishers.CreatePublisherViewModel
 @{
-    ViewBag.Title = "New";
+    ViewBag.Title = GlobalRes.Create;
 }
-<div id="quest_form">
-    <h2>Create</h2>
-    <div id="quest_form">
+@Scripts.Render("~/bundles/scripts")
+<div class="row">
+    <div class="form-style-5">
         @using (Html.BeginForm())
         {
             @Html.AntiForgeryToken()
-            <div class="form-horizontal">
-                <h4>Publisher</h4>
+            <fieldset>
+                <h4>@GlobalRes.Publisher</h4>
                 <hr />
                 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-               @Html.HiddenFor(model=>model.Id)
-                <div class="form-group">
-                    @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
-                    <div class="col-md-10">
-                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
-                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.Id)
+                <ul class="nav nav-tabs">
+                    <li class="active"><a aria-expanded="true" href="#en" data-toggle="tab">En</a></li>
+                    <li><a aria-expanded="false" href="#ru" data-toggle="tab">Ru</a></li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade active in" id="en">
+                        <div class="form-group">
+                            @GlobalRes.Name
+                            @Html.EditorFor(a => a.Name, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            @GlobalRes.Description
+                            @Html.TextAreaFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
-                    <div class="col-md-10">
-                        @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
-                        @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
-                    </div>
-                </div>
-                <div class="form-group">
-                   @Html.LabelFor(model => model.HomePage, htmlAttributes: new { @class = "control-label col-md-2" })
-                    <div class="col-md-10">
-                       @Html.EditorFor(model => model.HomePage, new { htmlAttributes = new { @class = "form-control" } })
-                        @Html.ValidationMessageFor(model => model.HomePage, "", new { @class = "text-danger" })
-                    </div>
-                </div>
-                    <div class="form-group">
-                        <div class="col-md-offset-2 col-md-10">
-                            <input type="submit" value="Create" class="btn btn-default" />
+
+                    <div class="tab-pane fade" id="ru">
+                        @Html.HiddenFor(a => a.Translates[0].Id)
+                        @Html.HiddenFor(a => a.Translates[0].Language)
+                        <div class="form-group">
+                            @GlobalRes.Name
+                            @Html.EditorFor(a => a.Translates[0].Name, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Translates[0].Name, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            @GlobalRes.Description
+                            @Html.TextAreaFor(model => model.Translates[0].Description, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Translates[0].Description, "", new { @class = "text-danger" })
                         </div>
                     </div>
                 </div>
+                <div class="form-group">
+                    @GlobalRes.HomePage
+                    @Html.EditorFor(model => model.HomePage, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.HomePage, "", new { @class = "text-danger" })
+
+                </div>
+                <div class="form-group">
+                        <input type="submit" value=@GlobalRes.Create class="btn btn-default" />
+                </div>
+            </fieldset>
         }
     </div>
     <div>
-        @Html.ActionLink("Back to list", "Index")
+        @Html.ActionLink(GlobalRes.BackToList, "Index")
     </div>
 </div>
-

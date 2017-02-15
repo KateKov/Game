@@ -1,6 +1,11 @@
-﻿@model GameStore.Web.ViewModels.BanViewModel
-<div id="searchresult">
-    <p><b>
-  User @Model.Name was blocked on @Model.SelectedDuration
-     </b>   </p>
-</div>
+﻿@model GameStore.Web.ViewModels.Accounts.BanViewModel
+<body>
+    <div id="searchresult">
+        <p>
+            <b>
+                @Html.Hidden("CurrentLang", GlobalRes.CurrentLang)
+                @Model.Name @GlobalRes.WasBlock
+            </b>
+        </p>
+    </div>
+</body>

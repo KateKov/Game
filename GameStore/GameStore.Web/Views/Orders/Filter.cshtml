@@ -1,24 +1,23 @@
 ﻿@using GameStore.Web.Helpers
 @using GameStore.Web.ViewModels
-@using MvcCheckBoxList.Model
-@model OrderFilterViewModel
-@using (Html.BeginForm("History", "Orders", FormMethod.Get))
+@model GameStore.Web.ViewModels.Orders.OrderFilterViewModel
+@using (Html.BeginForm("OrderNew", "Orders", FormMethod.Get))
 {
     <div class="form-group input-group-sm">
         @Html.HiddenQueryStringParameters("GameSort", "PageSize")
 
         @Html.LabelFor(m => m.DateFrom)
         <div>
-            <input class="datefield" data-val="true" data-val-required="Date is required"
+            <input class="datefield" data-val="true" data-val-required=@GlobalRes.DateRequired
                    id="DateFrom" name="DateFrom" type="date" value=@((@Model.DateFrom == new DateTime())?DateTime.Parse("2010-09-15"): @Model.DateFrom) />  
         </div>
     </div>
     <div class="form-group input-group-sm">
          @Html.LabelFor(m => m.DateTo)
          <div>
-            <input class="datefield" data-val="true" data-val-required="Date is required"
+            <input class="datefield" data-val="true" data-val-required=@GlobalRes.DateRequired
                    id="DateTo" name="DateTo" type="date" value=@((@Model.DateTo == new DateTime())?DateTime.UtcNow: @Model.DateTo) />
          </div>
      </div>
- <input type="submit" value="Filter" />
+ <input type="submit" value=@GlobalRes.Filter />
 }

@@ -1,61 +1,121 @@
-﻿@using GameStore.Web.ViewModels
-
-@model GameViewModel
+﻿@model GameStore.Web.ViewModels.Games.GameViewModel
 
 @{
     ViewBag.Title = "Новая игра";
 }
-<div id="addGame">
-    <hr>
-    <div class="row">
-        <div class="col-xs-9 personal-info">
-            @Html.HiddenFor(m => m.Id)
-            @Html.HiddenFor(m => m.Key)
-                <div class="form-horizontal">
-                    <h4>Игра</h4>
-                    <hr />             
-                    <div class="form-group">
-                        @Html.NameFor(model => model.Name)                 
-                        @Html.DisplayFor(a => a.Name, new { htmlAttributes = new { @class = "form-control" } })
-                    </div>
-                    <div class="form-group">
-                        @Html.NameFor(model => model.Description)
-                        @Html.DisplayFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
-                    </div>
-                    <div class="form-group">
-                        @Html.NameFor(model => model.Price)
-                        @Html.DisplayFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })               
-                    </div>
-                    <div class="form-group">
-                        @Html.NameFor(model => model.UnitsInStock)
-                        @Html.DisplayFor(model => model.UnitsInStock, new { htmlAttributes = new { @class = "form-control" } })
-                    </div>
-                    <div class="form-group">
-                        @Html.NameFor(model => model.PublisherName)
-                        @Html.DisplayFor(model => model.PublisherName, new { htmlAttributes = new { @class = "form-control" } })
-                    </div>
-                    <div class="form-group">
-                        @Html.NameFor(model => model.GenresName)
-                        @foreach (var item in Model.GenresName)
-                        {
-                            <span>@item</span>
-                        }
-                    </div>
-                    <div class="form-group">
-                        @Html.NameFor(model => model.PlatformTypesName)
-                       @foreach(var item in Model.PlatformTypesName)
-                       {
-                           <span>@item</span>
-                       }                       
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        @Html.NameFor(model => model.Discountinues)
-                        @Html.DisplayFor(model => model.Discountinues, new { htmlAttributes = new { @class = "form-control" } })
-                    </div>
-            @Html.ActionLink("Download", "Download", new { gameKey = Model.Key })
-            @Html.ActionLink("Comments", "Comments", new {  key = Model.Key })
-                </div>
-        </div>
+<div id="quest_form">
+    <h2>@GlobalRes.Details</h2>
+    <div>
+        <img src="@Url.Action("GameImageAsync","Games", new {key = Model.Key})" class="gamephoto"/>
+        <hr/>
+        <dl class="dl-horizontal">
+
+            <dt>
+                @Html.HiddenFor(m => m.Id)
+                @Html.HiddenFor(m => m.Key)
+                <p>
+                    <b> @GlobalRes.Name </b>
+                </p>
+            </dt>
+            <dd>
+                <p>
+                    <b>@Html.DisplayFor(a => a.Name, new {htmlAttributes = new {@class = "form-control"}})</b>
+                </p>
+            </dd>
+            <dt>
+                <p>
+                    <b> @GlobalRes.Description</b>
+                </p>
+            </dt>
+            <dd>
+                <p>
+                    @Html.DisplayFor(model => model.Description, new {htmlAttributes = new {@class = "form-control"}})
+                </p>
+            </dd>
+            <dt>
+                <p>
+                    <b>@GlobalRes.IsDeleted </b>
+                </p>
+            </dt>
+            <dd>
+                <p>
+                    <b>@Html.DisplayFor(model => model.IsDeleted, new {htmlAttributes = new {@class = "form-control"}})</b>
+                </p>
+            </dd>
+            <dt>
+                <p>
+                    <b>@GlobalRes.Price</b>
+                </p>
+            </dt>
+            <dd>
+                <p>
+                    @Html.DisplayFor(model => model.Price, new {htmlAttributes = new {@class = "form-control"}})
+                </p>
+            </dd>
+            <dt>
+                <p>
+                    <b> @GlobalRes.UnitsInStock</b>
+                </p>
+            </dt>
+            <dd>
+                <p>
+                    @Html.DisplayFor(model => model.UnitsInStock, new {htmlAttributes = new {@class = "form-control"}})
+                </p>
+            </dd>
+            <dt>
+                <p>
+                    <b>@GlobalRes.PublisherName </b>
+                </p>
+            </dt>
+            <dd>
+                <p>
+                    <b>@Html.DisplayFor(model => model.PublisherName, new {htmlAttributes = new {@class = "form-control"}})</b>
+                </p>
+            </dd>
+            <dt>
+                <p>
+                    <b>@GlobalRes.GenresName</b>
+                </p>
+            </dt>
+            <dd>
+                <p>
+                    @foreach (var item in Model.GenresName)
+                    {
+                        <span>@item</span>
+                    }
+                </p>
+            </dd>
+            <dt>
+                <p>
+                    <b>@GlobalRes.PlatformTypesName</b>
+                </p>
+            </dt>
+            <dd>
+                <p>
+                    @foreach (var item in Model.PlatformTypesName)
+                    {
+                        <span>@item</span>
+                    }
+                </p>
+            </dd>
+        </dl>
     </div>
-    <hr>
+</div>
+
+<hr/>
+@Scripts.Render("~/bundles/scripts")
+<script src="~/scripts/CommentLoad.js"></script>
+<script src="~/scripts/Comment.js"></script>
+<div id="results">
+
+    @Html.ActionLink(GlobalRes.Download, "Download", new { gameKey = Model.Key }, new {@class="btn btn-warning"})
+    <input type="button" class="btn btn-primary" id = "commentslink"  value=@GlobalRes.Comments />
+</div><hr>
+<script>
+    var AppUrlSettings = {
+        CommentAddUrl: '@Url.Action("NewComment","Comments")',
+        CommentLoadUrl: '@Url.Action("Comments","Comments")',
+        CommentDeleteUrl: '@Url.Action("Delete","Comments")'
+    }
+</script>
+

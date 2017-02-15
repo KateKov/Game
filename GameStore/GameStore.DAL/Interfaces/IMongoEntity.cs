@@ -4,8 +4,8 @@ namespace GameStore.DAL.Interfaces
 {
     public interface IMongoEntity
     {
-        ObjectId MongoId { get; set; }
+        ObjectId Id { get; set; }
         bool IsOutdated { get; set; }
-        string Id { get; }
+        bool IsDeleted { get; set; }
     }
 }

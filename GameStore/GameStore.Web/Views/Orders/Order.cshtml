@@ -1,96 +1,124 @@
-﻿@using GameStore.Web.ViewModels
-@model OrderPaymentViewModel
+﻿@using GameStore.DAL.Enums
+@using GameStore.Web.Providers.Payments
+@model GameStore.Web.ViewModels.Orders.OrderPaymentViewModel
 @{
 
     ViewBag.Title = "Order";
 }
 <div>
-<div id="result">
-    @if (Model.Order.OrderDetails.Any())
-    {
-        <div class="container">
-            <div class="check-out">
-                <div class="bs-example4" data-example-id="simple-responsive-table">
-                    <div class="table-responsive">
-                        <table class="table-heading simpleCart_shelfItem">
-                            <tr>
-                                <th>@Html.DisplayNameFor(modelItem => Model.Order.CustomerId)</th>
-                                <th>@Html.DisplayNameFor(modelItem => Model.Order.Date)</th>
-                                <th>@Html.DisplayNameFor(modelItem => Model.Order.Sum)</th>
-                            </tr>
-                            <tr>
-                                <th>
-                                    @Html.DisplayFor(model => model.Order.CustomerId)
-                                </th>
-                                <th>
-                                    @Html.DisplayFor(model => model.Order.Date)
-                                </th>
-                                <th>
-                                    @Html.DisplayFor(model => model.Order.Date)
-                                </th>
-                            </tr>
-                            </table>
-                                <table class="table">
+    <div id="result">
+        @if (User.IsInRole("Administrator") || User.IsInRole("Manager"))
+        {
+            <span>@Html.ActionLink(GlobalRes.Create, "AddGameToOrder", new {username = Model.Order.CustomerId}, new {@class = "btn btn-success"}) </span>
+            <p></p>
+        }
+        @if (Model.Order.OrderDetails.Any())
+        {
+            <div class="container">
+                <div class="check-out">
+                    <div class="form-group">
+                        @GlobalRes.UserName
+                        @Html.DisplayFor(model => model.Order.CustomerId, new {htmlAttributes = new {@class = "form-control"}})
+                    </div>
+                    <div class="form-group">
+                        @GlobalRes.IsConfirmed
+                        @Html.DisplayFor(model => model.Order.IsConfirmed, new {htmlAttributes = new {@class = "form-control"}})
+                    </div>
+                    <div class="form-group">
+                        @GlobalRes.IsShiped
+                        @Html.DisplayFor(model => model.Order.IsShipped, new {htmlAttributes = new {@class = "form-control"}})
+                    </div>
+                    <div class="form-group">
+                        @GlobalRes.Date
+                        @Html.DisplayFor(model => model.Order.Date, new {htmlAttributes = new {@class = "form-control"}})
+                    </div>
+          
+                    @if (User.IsInRole("Administrator") || User.IsInRole("Manager"))
+                    {
+                        <span>@Html.ActionLink((@Model.Order.IsShipped)?GlobalRes.UnShipe:GlobalRes.Shipe, "Shipe", new {username = Model.Order.CustomerId, isShipped = Model.Order.IsShipped}, new {@class = "btn btn-success"}) </span>
+                        <p></p>
+                        <span>@Html.ActionLink(GlobalRes.Confirme, "Pay", new { paymentName = "Bank", username = Model.Order.CustomerId}, new {@class = "btn btn-success"}) </span>
+                        <p></p>
+                    }
+                    <div class="bs-example4" data-example-id="simple-responsive-table">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Order.OrderDetails.First().GameKey)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Order.OrderDetails.First().Discount)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Order.OrderDetails.First().Price)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Order.OrderDetails.First().Quantity)
+                                    </th>
+                                    <th></th>
+                  
+                                </tr>
+                                @foreach (var item in Model.Order.OrderDetails)
+                                {
                                     <tr>
-                                        <th>
-                                         @Html.DisplayNameFor(model => model.Order.OrderDetails.First().GameKey)
-                                        </th>
-                                        <th>
-                                           @Html.DisplayNameFor(model => model.Order.OrderDetails.First().Discount)
-                                        </th>
-                                        <th>
-                                            @Html.DisplayNameFor(model => model.Order.OrderDetails.First().Price)
-                                        </th>
-                                        <th>
-                                            @Html.DisplayNameFor(model => model.Order.OrderDetails.First().Quantity)
-                                        </th>
-                                        <th></th>
+                                        <td>
+                                            @Html.HiddenFor(it => item.Id)
+                                            @Html.HiddenFor(it => item.GameId)
+                                            @Html.DisplayFor(modelItem => item.GameKey)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Discount)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Price)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Quantity)
+                                        </td>
+                            
+                                        <td>
+                                            @if (User.IsInRole("Administrator") || User.IsInRole("Manager"))
+                                            {
+                                                <span>@Html.ActionLink(GlobalRes.Edit, "EditGameInOrder", new { orderDetailId = item.Id }, new { @class = "btn btn-success" }) </span>
+                                                <p></p>
+                                                <span>@Html.ActionLink(GlobalRes.Delete, "DeleteOrderDetail", new { orderDetailId =item.Id, username = Model.Order.CustomerId }, new { @class = "btn btn-success" }) </span>
+                                                <p></p>
+                                            }
+                                            @if (User.IsInRole("User"))
+                                            {<div>
+                                                <span class="glyphicons glyphicons-bank">  </span>
+                                                @Html.ActionLink(GlobalRes.Bank, "PdfFormat", new { payment = PaymentTypes.Bank, username = User.Identity.Name }) |
+                                                 <span class="glyphicons glyphicons-inbox-in">  </span> 
+                                            @Html.ActionLink(GlobalRes.IBox, "Pay", new { payment = PaymentTypes.Box, username = User.Identity.Name }) |
+                                                 <span class="glyphicons glyphicons-credit-card" > </span > 
+                                            @Html.ActionLink(GlobalRes.Pay, "Pay", new { payment = PaymentTypes.CardPay, username = User.Identity.Name })
+                                            </div>
+                                            }
+                                         </td>
                                     </tr>
-                                    @foreach (var item in Model.Order.OrderDetails)
-                                    {
-                                        <tr>
-                                            <td>
-                                                @Html.HiddenFor(it=> item.Id)
-                                                @Html.HiddenFor(it => item.GameId)
-                                                @Html.DisplayFor(modelItem => item.GameKey)
-                                            </td>
-                                            <td>                                       
-                                                @Html.DisplayFor(modelItem => item.Discount)
-                                            </td>
-                                            <td>
-                                                @Html.DisplayFor(modelItem => item.Price)
-                                            </td>
-                                            <td>
-                                                @Html.DisplayFor(modelItem => item.Quantity)
-                                            </td>
-                                            <td>
-                                            <span class="glyphicons glyphicons-bank">  </span> @Html.ActionLink("Bank", "PdfFormat", new { orderId= Model.Order.Id, paymentName = "Bank"}) |
-                                            <span class="glyphicons glyphicons-inbox-in">  </span> @Html.ActionLink("IBox", "Pay", new { orderId = Model.Order.Id, paymentName = "IBox" }) |
-                                            <span class="glyphicons glyphicons-credit-card"> </span> @Html.ActionLink("Visa", "Pay", new { orderId = Model.Order.Id, paymentName = "Visa" })
-                                            </td>
-                                        </tr>
-                                    }
-                                </table>
+                                }
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    }
-    else
-    {
-        <div class="container">
-            <div class="check-out">
-                <div class="bs-example4" data-example-id="simple-responsive-table">
-                    <div class="content-mid">
-                        <h3>There are no orders</h3>
-                        <label class="line"></label>
+        }
+        else
+        {
+            <div class="container">
+                <div class="check-out">
+                    <div class="bs-example4" data-example-id="simple-responsive-table">
+                        <div class="content-mid">
+                            <h3>@GlobalRes.NoOrders</h3>
+                            <label class="line"></label>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    }
-</div>
-<br />
-<br />
-<br />
+        }
+    </div>
+    <br />
+    <br />
+    <br />
 </div>

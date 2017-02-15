@@ -1,0 +1,678 @@
+@font-face {
+    font-family: proxima-nova-regular;
+    src: url('/fonts/proxima-nova/proximanova-regular-webfont.woff');
+}
+@font-face {
+    font-family: proxima-nova-semibold;
+    src: url('/fonts/proxima-nova/proximanova-semibold-webfont.woff');
+}
+@font-face {
+    font-family: proxima-nova-light;
+    src: url('/fonts/proxima-nova/proximanova-regular-webfont.woff');
+}
+@font-face {
+    font-family: proxima-nova-bold;
+    src: url('/fonts/proxima-nova/proximanova-bold-webfont.woff');
+}
+body {
+    font-family: proxima-nova-semibold;
+    background-color: #ecedf1;
+}
+
+.navbar {
+    background-color: transparent;
+    border-color: transparent;
+    padding: 10px 14px 0px 14px;
+    margin-bottom: 0px;
+}
+
+.gameitem {
+}
+.navbar-header {
+    position: relative;
+    width: 100%;
+}
+
+.navbar-ex1-collapse {
+    background-color: transparent;
+}
+
+.navbar .profile-title {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #344d71;
+    font-family: proxima-nova-bold;
+    font-weight: 700;
+}
+
+.navbar .social-buttons .fa {
+    font-size: 24px;
+    color: #1c2f4a;
+}
+
+.navbar .social-buttons .fa:hover {
+    color: rgba(28, 47, 74, 0.8);
+}
+
+.navbar .social-buttons a[disabled] .fa {
+    color: #b4c7e3;
+}
+
+.navbar .email-panel {
+    background-color: #fbfbfb;
+    color: #83969f;
+    height: 100%;
+}
+
+.navbar .email-panel span {
+    padding-right: 30px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.navbar .phone-panel {
+    height: 100%;
+    top: 25%;
+
+    background-color: #344d71;
+    color: white;
+}
+
+.navbar .phone-panel .phone-icon {
+    float: left;
+    background-color: #de9e20;
+    display: inline-block;
+    text-align: center;
+    padding: 13px 20px;
+}
+
+.gamephoto {
+    max-width: 400px;
+    height: auto;
+}
+.sortProduct {
+    height: auto;
+    text-align: left;
+    padding: 25px 10px 0 10px;
+}
+
+h1.title { 
+	font-size: 50px;
+	font-family: 'proxima-nova-bold'; 
+     color: #344d71;
+	font-weight: 400; 
+}
+
+hr{
+	width: 10%;
+	color: #fff;
+}
+
+.form-group{
+	margin-bottom: 15px;
+}
+
+label{
+	margin-bottom: 15px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 11px;
+    padding-top: 3px;
+}
+
+.main-login{
+ 	background-color: #fff;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+.main-center{
+ 	margin-top: 30px;
+ 	margin: 0 auto;
+ 	max-width: 330px;
+    padding: 40px 40px;
+
+}
+
+.login-button{
+	margin-top: 5px;
+}
+
+.login-register{
+	font-size: 11px;
+	text-align: center;
+}
+
+
+.formgame {
+    align-content: center;
+}
+.panel-heading {
+    padding: 5px 15px;
+}
+
+.panel-footer {
+	padding: 1px 15px;
+	color: #A0A0A0;
+}
+
+.profile-img {
+	width: 96px;
+	height: 96px;
+	margin: 0 auto 10px;
+	display: block;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.indexGames {
+    height: auto;
+}
+.navbar .phone-panel .phone-number {
+    float: left;
+    display: inline-block;
+    font-size: 22px;
+    margin: 0;
+    padding: 0 17px;
+    line-height: 50px;
+    color: #fafdfd;
+    font-weight: 700;
+}
+
+.navbar .phone-panel .phone-icon .fa {
+    font-size: 24px;
+}
+
+.navbar .menu-dropdown-title {
+
+}
+
+.low-menu {
+    background-color: #f6b431;
+    color: #fff;
+}
+
+.menu-navbar {
+    background-color: transparent;
+    border-color: transparent;
+    padding: 10px 0px;
+    min-height: 50px;
+}
+
+.menu-navbar .navbar-nav > li > a,
+.menu-navbar .navbar-nav > li > a,
+.menu-navbar .menu-dropdown-body a {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.menu-navbar .navbar-nav > li > a:focus,
+.menu-navbar .navbar-nav > li > a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.menu-navbar .navbar-nav > li > a:hover span.fa {
+    background-color: #467ac0;
+}
+
+.menu-navbar .menu-dropdown-title span.fa {
+    font-size: 14px;
+    padding: 2px;
+    border-radius: 4px;
+    background-color: #3a557c;
+}
+
+.menu-navbar .menu-dropdown-body {
+    background-color: #344d71;
+}
+
+.menu-navbar .dropdown-menu > li > a:focus,
+.menu-navbar .dropdown-menu > li > a:hover {
+    color: white;
+    background-color: #467ac0;
+}
+
+.navbar-default .menu-navbar .navbar-nav > .open > a {
+    background-color: transparent;
+    color: #fff;
+
+}
+
+.mountain-jumbotron {
+    padding: 0px 15px 0px 15px;
+    margin-bottom: 0px;
+    margin-top: -1px;
+    height: auto;
+    position: relative;
+}
+
+.contactus{
+    background-color: #344d71;
+}
+.mountain-jumbotron .call-to-action {
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+    background-color: #f6b431;
+}
+
+.mountain-jumbotron .mountain-img {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    padding-top: 20px;
+}
+
+.message-container {
+    width: 100%;
+}
+
+.message-container-body {
+    position: relative;
+    background-color: #83969f;
+    min-height: 80px;
+}
+
+.message-container-body .message {
+    color: whitesmoke;
+    display: inline-block;
+    font-size: 24px;
+    padding: 10px 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.message-container-body .message a {
+    color: whitesmoke;
+}
+
+.h-55 {
+    height: 55px;
+}
+
+.h-50 {
+    height: 50px;
+}
+
+/*Footer goes here*/
+
+footer {
+    background-color: #253957;
+    min-height: 350px;
+    margin-top: -30px;
+    font-size: 14px;
+    color: whitesmoke;
+    padding: 20px 0 0 0;
+}
+
+.footer-column {
+    margin-top: 50px;
+    padding: 0 36px;
+}
+
+.footer-column p {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.paddingtop-bottom {
+    margin-top: 50px;
+}
+
+.footer-ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 2px;
+}
+
+.footer-ul li a {
+    color: whitesmoke;
+}
+
+.copyright {
+    min-height: 100px;
+    background-color: #344d71;
+}
+
+.copyright p {
+    text-align: left;
+    color: #83969f;
+    padding: 10px 0;
+    margin-bottom: 0px;
+}
+
+.footer-heading {
+    font-size: 18px;
+    font-weight: 600;
+    color: #f6b431;
+    margin-bottom: 22px;
+}
+
+.block {
+
+	background: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    width: auto;
+    height: auto;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.entities {
+    display: inline-block;
+}
+.product {
+    position: relative;
+	display: inline-block;
+}
+.product p {
+    font-size: 18px;
+}
+.product img {
+    position: absolute;
+	width: auto;
+}
+
+.info {
+	display: block;
+	position: relative;
+	padding: 20px;
+}
+table {
+    width: auto;
+    margin: 20px 0 0 0;
+  border: 1px solid #69c;
+}
+th {
+  font-weight: normal;
+  color: #039;
+  padding: 10px;
+}
+td {
+  color: #669;
+  border-top: 1px dashed #fff;
+  padding: 10px;
+  background:#ccddff;
+}
+tr:hover td {
+  background:#99bcff;
+}
+.details {
+	border-top: 1px solid #e5e5e5;
+	padding: 18px 20px;
+}
+
+.buttons {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: rgba(255, 255, 255, .5);
+	opacity: 0;
+	-webkit-transition: opacity .25s ease-in;
+	-ms-transition: opacity .25s ease-in;
+	-moz-transition: opacity .25s ease-in;
+	-o-transition: opacity .25s ease-in;
+	transition: opacity .25s ease-in;
+}
+
+.product:hover .buttons, .product:hover a {
+	opacity: 1;
+}
+
+
+
+a.buy {
+	top: 20%;
+}
+
+a.preview {
+	bottom: 20%;
+}
+
+.info::after {
+	display: block;
+	position: absolute;
+	top: -8px;
+	left: 23px;
+	content: "";
+	width: 15px;
+	height: 15px;
+	background: #fff;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.info h4 {
+	position: relative;
+	padding: 0 0 20px 0;
+	margin: 0 0 20px 0;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	font-size: 19px;
+	line-height: 25px;
+	color: #372f2b;
+	letter-spacing: -1px;
+}
+
+.info h4::after {
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	content: "";
+	width: 40px;
+	height: 2px;
+	background: #3b86c4;
+}
+
+.info .description {
+	display: block;
+	padding-bottom: 20px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	color: #5f5f5f;
+}
+
+.info .price .class{
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	color: #372f2b;
+	line-height: 26px;
+}
+  progress {
+      width: 5%;
+    }
+.bottom-grid {
+  padding: 1em 0 0;
+}
+.gameitems{
+    background-color: #fbfbfb;
+    padding: 0 0 20px 0;
+}
+
+.checkpages {
+    text-align: right;
+}
+.content-bottom h3{
+
+	color:#6d7b82;
+	font-size:1.4em;
+	text-transform:uppercase;
+	font-weight:600;
+	  padding: 2em 0.8em 0;
+}
+.bottom-grid-top{
+	background:#fcfcfc;
+	border: 1px solid #D9D9D9;
+	position:relative;
+    margin: 10px;
+}
+.games-container{
+   padding: 0px 15px 0px 15px;
+}
+.pre{
+	background:#e8e8e8;
+	  padding: 0.5em;
+}
+.pre p{
+	float:left;
+	color:#818181;
+	font-size:1em;
+	  font-weight: 700;
+}
+#quest_form {
+    align-content: center;
+}
+dl {
+    margin: 0 auto;
+    width: 400px;
+}
+dl dt {
+background: #344d71;
+color: #fff;
+float: left;
+font-weight: bold;
+padding: 5px;
+width: 120px;
+}
+dl dd {
+padding: 5px 0;
+}
+
+.paging {
+    align-items: center;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+.pre span{
+	float:right;
+	color:#f6b431;
+	font-size:1em;
+	  font-weight: 700;
+	  display:block;
+}
+
+.form-style-5{
+    max-width: 500px;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    margin: 10px auto;
+    padding: 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-5 fieldset{
+    border: none;
+}
+.form-style-5 legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.form-style-5 label {
+    display: block;
+    margin-bottom: 8px;
+}
+.form-style-5 input[type="text"],
+.form-style-5 input[type="date"],
+.form-style-5 input[type="datetime"],
+.form-style-5 input[type="email"],
+.form-style-5 input[type="number"],
+.form-style-5 input[type="search"],
+.form-style-5 input[type="time"],
+.form-style-5 input[type="url"],
+.form-style-5 textarea,
+.form-style-5 select {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0;
+    outline: 0;
+    height: auto;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+   
+}
+.form-style-5 input[type="text"]:focus,
+.form-style-5 input[type="date"]:focus,
+.form-style-5 input[type="datetime"]:focus,
+.form-style-5 input[type="email"]:focus,
+.form-style-5 input[type="number"]:focus,
+.form-style-5 input[type="search"]:focus,
+.form-style-5 input[type="time"]:focus,
+.form-style-5 input[type="url"]:focus,
+.form-style-5 textarea:focus,
+.form-style-5 select:focus{
+    background: #d2d9dd;
+}
+.form-style-5 select{
+    -webkit-appearance: menulist-button;
+    height: auto;
+}
+.form-style-5 .number {
+    background: #344d71;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 15px 15px 15px 0px;
+}
+
+.form-style-5 input[type="submit"],
+.form-style-5 input[type="button"]
+{
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #344d71;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid #344d71;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+.form-style-5 input[type="submit"]:hover,
+.form-style-5 input[type="button"]:hover
+{
+    background: #344d71;
+}

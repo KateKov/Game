@@ -1,23 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
+using GameStore.DAL.App_LocalResources;
 
 namespace GameStore.DAL.Enums
 {
     public enum PageEnum
     {
-        [Description("PageSize_TenItems")]
+
+       [Display(Name = "Ten", ResourceType = typeof(GlobalRes))]
         Ten = 10,
-        [Description("PageSize_TwentyItems")]
+        [Display(Name = "Twenty", ResourceType = typeof(GlobalRes))]
         Twenty = 20,
-        [Description("PageSize_FiftyItems")]
+        [Display(Name = "Fifty", ResourceType = typeof(GlobalRes))]
         Fifty = 50,
-        [Description("PageSize_OneHundred")]
+        [Display(Name = "Hundred", ResourceType = typeof(GlobalRes))]
         OneHundred = 100,
-        [Description("PageSize_All")]
-        All = 0
+        [Display(Name = "All", ResourceType = typeof(GlobalRes))]
+        All = 0,
     }
 }

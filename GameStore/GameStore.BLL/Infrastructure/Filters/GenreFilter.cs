@@ -1,8 +1,8 @@
-﻿using GameStore.BLL.Interfaces;
-using GameStore.DAL.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using GameStore.BLL.Interfaces;
+using GameStore.DAL.Entities;
 
 namespace GameStore.BLL.Infrastructure.Filters
 {
@@ -14,8 +14,9 @@ namespace GameStore.BLL.Infrastructure.Filters
             var genresName = selectedGenres as IList<string> ?? selectedGenres.ToList();
             if (genresName.Any() == false)
             {
-                throw new ValidationException("There is no genres", string.Empty);
+                throw new ValidationException("There is no genres", "Genres");
             }
+
             _selectedGenres = genresName;
         }
 
@@ -24,6 +25,5 @@ namespace GameStore.BLL.Infrastructure.Filters
             Func<Game, bool> condtion = x => x.Genres.Any(g => g.Translates!=null && _selectedGenres.Any(name => g.Translates.Any(t=>t.Name==name)));
             return query.Where(condtion);
         }
-
     }
 }

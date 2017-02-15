@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
+using GameStore.Web.App_LocalResources;
 
 namespace GameStore.Web.ViewModels
 {
@@ -9,49 +10,65 @@ namespace GameStore.Web.ViewModels
     {
         [HiddenInput(DisplayValue = false)]
         public string Id { get; set; }
-        [Required(ErrorMessage = "Game doesn't have Name")]
-        [Display(Name = "Name")]
-        [MaxLength(20, ErrorMessage ="The name can't be longer than 20 characters")]
+
+
+        [Required(ErrorMessageResourceType = typeof(GlobalRes), ErrorMessageResourceName = "ErrorName")]
+        [Display(ResourceType = typeof(GlobalRes), Name = "Name")]
+        [MaxLength(50, ErrorMessageResourceType = typeof(GlobalRes), ErrorMessageResourceName = "NameRangeError")]
         public string Name { get; set; }
 
-        [Display(Name = "Description")]
-        [MaxLength(1000, ErrorMessage = "The name can't be longer than 1000 characters")]
+
+        [Display(ResourceType = typeof(GlobalRes), Name = "Description")]
+        [MaxLength(1000, ErrorMessageResourceType = typeof(GlobalRes), ErrorMessageResourceName = "DescriptionRangeError")]
         public string Description { get; set; }
 
-        public ICollection<string> Comments { get; set; }
 
-        [Required(ErrorMessage = "Game doesn't have genres")]
-        [Display(Name = "Genres")]
+        [Required(ErrorMessageResourceType = typeof(GlobalRes), ErrorMessageResourceName = "GenresNameError")]
+        [Display(ResourceType = typeof(GlobalRes), Name = "GenresName")]
         public ICollection<string> GenresName { get; set; }
-        [Display(Name = "Viewing")]
-        public int Viewwing { get; set; }
+
+    
+        [Display(ResourceType = typeof(GlobalRes), Name = "Viewing")]
+        public int Viewing { get; set; }
+
+
         [DataType(DataType.Date)]
+        [Display(ResourceType = typeof(GlobalRes), Name = "Date")]
         public DateTime DateOfAdding { get; set; }
-        [Required(ErrorMessage = "Game doesn't have platform type")]
-        [Display(Name = "Platform Types")]
+
+
+        [Required(ErrorMessageResourceType = typeof(GlobalRes), ErrorMessageResourceName = "PlatformTypeError")]
+        [Display(ResourceType = typeof(GlobalRes), Name = "PlatformTypesName")]
         public ICollection<string> PlatformTypesName { get; set; }
 
+
+        [Display(ResourceType = typeof(GlobalRes), Name = "Game_Key")]
+        [RegularExpression(@"^[A-Za-z0-9_-]{1,50}", ErrorMessageResourceType = typeof(GlobalRes), ErrorMessageResourceName = "KeyError")]
         public string Key { get; set; }
 
-        [Display(Name = "Price, UAH")]
-        [Required(ErrorMessage = "Game doesn't have Price")]
-        [Range(1, 100000)]
+
+        [Display(ResourceType = typeof(GlobalRes), Name = "Price")]
+        [Required(ErrorMessageResourceType = typeof(GlobalRes), ErrorMessageResourceName = "PriceError")]
+        [Range(1, 100000, ErrorMessageResourceType = typeof(GlobalRes), ErrorMessageResourceName = "PriceRangeError")]
         public decimal Price { get; set; }
 
-        [Required(ErrorMessage = "Game doesn't have counts")]
-        [Display(Name = "Units in Stock")]
-        [Range(1, 10000)]
+
+        [Required(ErrorMessageResourceType = typeof(GlobalRes), ErrorMessageResourceName = "UnitsInStockError")]
+        [Display(ResourceType = typeof(GlobalRes), Name = "UnitsInStock")]
+        [Range(0, 10000, ErrorMessageResourceType = typeof(GlobalRes), ErrorMessageResourceName = "UnitsInStockError")]
         public short UnitsInStock { get; set; }
 
-        [Display(Name = "Company Name")]
+
+        [Display(ResourceType = typeof(GlobalRes), Name = "CompanyName")]
         public string PublisherName { get; set; }
 
-        [Required(ErrorMessage = "Not specified whether there is game available")]
-        [Display(Name = "Discountinues")]
+
+        [Display(ResourceType = typeof(GlobalRes), Name = "Discountinues")]
         public bool Discountinues { get; set; }
 
-        public List<PublisherViewModel> AllPublishers { get; set; }
-        public List<GenreViewModel> AllGenres { get; set; }
-        public List<PlatformTypeViewModel> AllTypes { get; set; }
+
+        public IEnumerable<PublisherViewModel> AllPublishers { get; set; }
+        public IEnumerable<GenreViewModel> AllGenres { get; set; }
+        public IEnumerable<PlatformTypeViewModel> AllTypes { get; set; }
     }
 }

@@ -1,0 +1,26 @@
+﻿@model GameStore.Web.ViewModels.PlatformTypes.PlatformTypeViewModel
+@{
+    ViewBag.Title = @GlobalRes.Details;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="quest_form">
+    <h2>@GlobalRes.Details</h2>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                <p>
+                    <b>   @Html.DisplayNameFor(model => model.Name)</b>
+                </p>
+            </dt>
+            <dd>
+                <p>
+                    <b>@Html.DisplayFor(model => model.Name)</b>
+                </p>
+            </dd>
+        </dl>
+    </div>
+</div>
+<p>
+    @Html.ActionLink(GlobalRes.PlatformTypes, "Index")
+</p>

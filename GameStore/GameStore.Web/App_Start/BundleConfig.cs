@@ -13,12 +13,11 @@ namespace GameStore.Web
             "~/Scripts/jquery-ui-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/scripts").Include(
-                 "~/Scripts/jquery-3.1.1.min.js",
-                "~/Scripts/jquery-ui-1.12.1.min.js",
-                "~/Scripts/jquery.unobtrusive-ajax.min.js",
+                 "~/Scripts/jquery-3.1.1.js",
+                "~/Scripts/jquery-ui-1.12.1.js",
+                "~/Scripts/jquery.unobtrusive-ajax.js",
                 "~/Scripts/Game.js",
                 "~/scripts/AddToBasket.js" ,
-                "~/scripts/jquery.unobtrusive-ajax.min.js",
                  "~/scripts/Comment.js",
                  "~/scripts/DatePickerReady.js"));
 

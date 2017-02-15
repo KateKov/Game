@@ -1,0 +1,81 @@
+﻿@using GameStore.Web.Helpers
+@using GameStore.Web.Helpers.Paging
+@model GameStore.Web.ViewModels.Games.GamePagingViewModel
+
+@if (User.IsInRole("Administrator") || User.IsInRole("Manager"))
+{
+    <br />
+            <p>
+                <span>@Html.ActionLink(GlobalRes.Create, "New", null, new { @class = "btn btn-primary" }) </span>
+            </p>
+}
+<div id="gamesPosition">  </div>
+    @foreach (var item in Model.Games)
+    {
+        <div class="col-xs-12 col-md-12 col-sm-12">
+            @Html.HiddenFor(modelItem => item.Id)
+            @Html.HiddenFor(modelItem => item.Key)
+
+            <div class="block span3">
+                <div class="info">
+                    <a href=@Url.Action("Details", "Comments", new {key = item.Key})>
+                        <h3>@item.Name</h3>
+                    </a>
+                    <p class="price">@GlobalRes.Price: @item.Price</p>
+                    <div class="entities">
+                        <p>
+                            @GlobalRes.Genres:
+                            @foreach (var i in item.GenresName)
+                            {
+                                <span>  @i </span>
+                            }
+                        </p>
+                    </div>
+                    <p>
+                        @GlobalRes.PlatformTypes:
+                        @foreach (var i in item.PlatformTypesName)
+                        {
+                            <span> @i </span>
+                        }
+                    </p>
+                    <p>
+
+                        @if (!string.IsNullOrEmpty(item.PublisherName) && item.PublisherName != "unknown" && item.PublisherName != "неизвестный")
+                        {
+                            @Html.ActionLink(item.PublisherName, "Details", "Publishers", new {name = item.PublisherName}, new {@class = "class"})
+                        }
+                        else
+                        {
+                            @Html.DisplayFor(modelItem => item.PublisherName, new {@class = "class"})
+                        }
+                    </p>
+                    <p></p>
+                    <span> @Html.ActionLink(GlobalRes.Details, "Details", "Comments", new {key = item.Key}, new {@class = "btn btn-info"}) </span>
+
+                    @if (User.IsInRole("Administrator") || User.IsInRole("Manager"))
+                    {
+                        <span>@Html.ActionLink(GlobalRes.Edit, "Update", new {key = item.Key}, new {@class = "btn btn-warning"}) </span>
+
+                        <span>@Html.ActionLink(GlobalRes.Delete, "Delete", new {key = item.Key}, new {@class = "btn btn-default"}) </span>
+                    }
+                    @if (User.IsInRole("User"))
+                    {
+                        if (item.UnitsInStock > 0)
+                        {
+                           
+                            <span>@Html.ActionLink(GlobalRes.Buy, "AddToBasket", "Games", new {gameKey = item.Key, username = User.Identity.Name, unitsInStock = item.UnitsInStock}, new {@class = "viewDialog1 btn btn-primary", data_dialog_title = "Add game"})  </span>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    }
+
+    <br/>
+    <br/>
+    <div class="text-center">
+        <ul class="pagination">
+            @Html.Pager(Model.Page, (int) Model.PageSize, Model.TotalItemsCount, "Page").Options(o => o
+                .AddRouteDataValue(Html.QueryStringParametersAsRouteValueDictionaryExceptFor("Page")))
+        </ul>
+    </div>

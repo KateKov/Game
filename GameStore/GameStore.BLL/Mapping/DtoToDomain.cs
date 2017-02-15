@@ -4,7 +4,7 @@ using System.Linq;
 using GameStore.BLL.DTO;
 using GameStore.BLL.Interfaces;
 using GameStore.DAL.Entities;
-using GameStore.DAL.Enums;
+using GameStore.DAL.Entities.Translation;
 using GameStore.DAL.Interfaces;
 
 namespace GameStore.BLL.Infrastructure
@@ -18,15 +18,43 @@ namespace GameStore.BLL.Infrastructure
             _unitOfWork = unitOfWork;
         }
 
+        private List<Genre> GetMongoGenres(GameDTO gameDto, List<Genre> genres)
+        {
+            var genre = genres;
+            var mongogenres = _unitOfWork.Repository<Genre>().FindBy(x => x.EntityId == Guid.Empty);
+            foreach (var item in mongogenres)
+            {
+                var genreTranslate = item.Translates.First();
+                if (gameDto.Translates.Any(x => x.GenresName.Any(t => t == genreTranslate.Name)))
+                {
+                    if (!genre.Any(x => x.Translates.Any(t => t.Name.Contains(genreTranslate.Name))))
+                    {
+                        item.EntityId = Guid.NewGuid();
+                        genre.Add(item);
+                        _unitOfWork.Repository<Genre>().Add(item);
+                    }
+                }
+            }
+            return genre;
+        }
+
         private List<Genre> GetGenres(GameDTO gameDto)
         {
-            var genres = _unitOfWork.Repository<Genre>().FindBy(x => gameDto.Translates.Where(z=>z.Language==gameDto.Translates.First().Language).Any(z=>z.GenresName.Contains(x.Translates.First(t => t.Language == z.Language).Name))).ToList();
-            var genre = genres;
-            genre = genre.Where(x => x.EntityId != Guid.Empty).ToList();
-            var mongogenres = genres.Where(x => x.EntityId == Guid.Empty && !genre.Any(z => z.Translates.First(y=>y.Language==Language.En).Name.Contains(x.Translates.First(t=>t.Language==Language.En).Name))).ToList();
-            mongogenres.ForEach(x => x.EntityId = Guid.NewGuid());
-            mongogenres.ForEach(x => genre.Add(x));
-            mongogenres.ForEach(x => _unitOfWork.Repository<Genre>().Add(x));
+            var genresTranslates =
+                _unitOfWork.Repository<GenreTranslate>()
+                    .GetAll().Where(x => gameDto.Translates.Any(t => t.GenresName.Any(z=>z == x.Name)))
+                    .ToList();
+            var genres = new List<Genre>();
+            foreach (var item in genresTranslates)
+            {
+                var entity = _unitOfWork.Repository<Genre>().GetSingle(item.BaseEntityId.ToString());
+                if (genres.FirstOrDefault(x => x.EntityId == entity.EntityId) == null)
+                {
+                    genres.Add(entity);
+                }
+            }
+
+            var genre = GetMongoGenres(gameDto, genres);
             return genre;
         }
 
@@ -34,8 +62,11 @@ namespace GameStore.BLL.Infrastructure
         {
             var game = new Game();
             var publishers =
-               _unitOfWork.Repository<Publisher>().FindBy(x => gameDto.Translates.Where(z=>z.Language==gameDto.Translates.First().Language).Any(z=>z.PublisherName.Contains(x.Translates.First(t=>t.Language==z.Language).Name))).ToList();
-            if (publishers.FirstOrDefault(x => x.EntityId != Guid.Empty) == null)
+                _unitOfWork.Repository<Publisher>()
+                    .GetAll()
+                    .Where(x => gameDto.Translates.Any(z => x.Translates.Any(t => t.Name.Contains(z.PublisherName))))
+                    .ToList();
+            if (publishers.Count>0 && publishers.FirstOrDefault(x => x.EntityId != Guid.Empty) == null)
             {
                 var mongoPublisher = publishers.First();
                 mongoPublisher.EntityId = Guid.NewGuid();
@@ -45,9 +76,10 @@ namespace GameStore.BLL.Infrastructure
             }
             else
             {
-                game.Publisher = publishers.First(x => x.EntityId != Guid.Empty);
-                game.PublisherId = publishers.First(x => x.EntityId != Guid.Empty).EntityId;
+                game.Publisher = publishers.FirstOrDefault(x => x.EntityId != Guid.Empty);
+                game.PublisherId = (publishers.FirstOrDefault(x => x.EntityId != Guid.Empty)!=null)?publishers.First(x=>x.EntityId!=Guid.Empty).EntityId:new Guid();
             }
+
             return game;
         }
 
@@ -64,10 +96,13 @@ namespace GameStore.BLL.Infrastructure
                     .ToList();
             game.PlatformTypes = new List<PlatformType>();
             foreach (
-                var item in
-                _unitOfWork.Repository<PlatformType>().FindBy(x => gameDto.Translates.Where(z => z.Language == gameDto.Translates.First().Language).Any(z => z.PublisherName.Contains(x.Translates.First(t => t.Language == z.Language).Name))).ToList())
+                var item in _unitOfWork.Repository<PlatformTypeTranslate>().GetAll().Where(x=>gameDto.Translates.Any(t=>t.PlatformTypesName.Any(z=>z==x.Name))).ToList())
             {
-                game.PlatformTypes.Add(item);
+                var entity = _unitOfWork.Repository<PlatformType>().GetSingle(item.BaseEntityId.ToString());
+                if (game.PlatformTypes.FirstOrDefault(x => x.EntityId == entity.EntityId) == null)
+                {
+                    game.PlatformTypes.Add(entity);
+                }
             }
 
             game.Genres = GetGenres(gameDto);

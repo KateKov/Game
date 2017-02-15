@@ -7,39 +7,61 @@ using GameStore.BLL.Interfaces;
 using GameStore.BLL.Interfaces.Services;
 using GameStore.Web.Controllers;
 using GameStore.Web.Infrastracture;
-using GameStore.Web.ViewModels;
+using GameStore.Web.Infrastructure.Authentication;
+using GameStore.Web.Interfaces;
 using Moq;
-using NLog;
 using NUnit.Framework;
+using Assert = NUnit.Framework.Assert;
 
 namespace GameStore.Web.Tests.Controllers
 {
     [TestFixture]
     public class CommentsControllerTest
     {
-        private readonly Mock<ILogger> _loggerMock;
-        private readonly Mock<ICommentService> _mockComment;
-        private readonly Mock<IGameStoreService> _mock;
+        private Mock<IGameService> _gameMock;
+        private Mock<ICommentService> _mockComment;
+        private Mock<IUserService> _mockUser;
+        private Mock<IAuthenticationManager> _mockAuth;
+        private CommentsController _controller;
+        private UserModel _user;
 
-        public CommentsControllerTest()
+        [SetUp]
+        public void SetUp()
         {
-            _loggerMock = new Mock<ILogger>();
+            _gameMock = new Mock<IGameService>();
             AutoMapperConfiguration.Configure();
             _mockComment = new Mock<ICommentService>();
-            _mock = new Mock<IGameStoreService>();
+            _mockUser = new Mock<IUserService>();
+            _mockAuth = new Mock<IAuthenticationManager>();
+            _user = new UserModel
+            {
+                Username = "User",
+                IsBanned = false,
+                Roles =
+                    new List<UserRole>
+                    {
+                        UserRole.User,
+                        UserRole.Administrator,
+                        UserRole.Guest,
+                        UserRole.Manager,
+                        UserRole.Moderator
+                    }
+            };
+            _mockAuth.Setup(x => x.CurrentUser).Returns(new UserProvider(_user));
+            _controller = new CommentsController( _gameMock.Object, _mockComment.Object, _mockUser.Object,
+                _mockAuth.Object);
         }
-     
+
         [Test]
         public void Comments_ReturnsCommentsJson_GetsValidGameKey()
         {
             // Arrange 
             _mockComment.Setup(a => a.GetCommentsByGameKey(It.IsAny<string>()))
                 .Returns(new List<CommentDTO> {new CommentDTO(), new CommentDTO()});
-            var sut = new CommentsController(_mock.Object, _mockComment.Object);
             // Act
-            var res = sut.Comments("");
+            var res = _controller.Comments("");
             // Assert
-            Assert.AreEqual(typeof(ViewResult), res.GetType());
+            Assert.AreEqual(typeof(PartialViewResult), res.GetType());
         }
 
         [Test]
@@ -47,42 +69,39 @@ namespace GameStore.Web.Tests.Controllers
         {
             // Arrange
             _mockComment.Setup(a => a.GetCommentsByGameKey(It.IsAny<string>())).Returns(new List<CommentDTO>());
-            var sut = new CommentsController(_mock.Object, _mockComment.Object);
 
             // Act
-            var res = sut.Comments("invalid-key");
+            var res = _controller.Comments("invalid-key");
 
             // Assert
-            Assert.AreEqual(typeof(ViewResult), res.GetType());
+            Assert.AreEqual(typeof(PartialViewResult), res.GetType());
         }
 
         [Test]
         public void Index_ReturnsGameJson_GetsValidGameKey()
         {
             // Arrange
-            _mock.Setup(a => a.KeyService<GameDTO>().GetByKey(It.IsAny<string>())).Returns(new GameDTO());
-            var sut = new CommentsController(_mock.Object, _mockComment.Object);
+            _gameMock.Setup(a => a.GetByKey(It.IsAny<string>())).Returns(new GameDTO());
 
             // Act
-            var res = sut.Comments("valid-key");
+            var res = _controller.Comments("valid-key");
 
             // Assert
-            Assert.AreEqual(typeof(ViewResult), res.GetType());
+            Assert.AreEqual(typeof(PartialViewResult), res.GetType());
         }
 
         [Test]
         public void Index_ReturnsEmptyJson_GetsInvalidGameKey()
         {
             // Arrange
-            _mock.Setup(a => a.KeyService<GameDTO>().GetByKey(It.IsAny<string>()))
+            _gameMock.Setup(a => a.GetByKey(It.IsAny<string>()))
                 .Throws(new ValidationException(string.Empty, string.Empty));
-            var sut = new CommentsController(_mock.Object, _mockComment.Object);
 
             // Act
-            var res = sut.Comments("invalid-key");
+            var res = _controller.Comments("invalid-key");
 
             // Assert
-            Assert.AreEqual(typeof(ViewResult), res.GetType());
+            Assert.AreEqual(typeof(PartialViewResult), res.GetType());
         }
 
         [Test]
@@ -95,21 +114,20 @@ namespace GameStore.Web.Tests.Controllers
         public void DetailGame_GetInvalidItems_ThrowExeption()
         {
             //Arrange
-            _mock.Setup(a => a.KeyService<GameDTO>().GetByKey(It.IsAny<Guid>().ToString())).Returns(new GameDTO() {Id = Guid.NewGuid().ToString(), Key = "name"}).Verifiable();
-            var sut = new CommentsController(_mock.Object, _mockComment.Object);
+            _gameMock.Setup(a => a.GetByKey(It.IsAny<Guid>().ToString()))
+                .Returns(new GameDTO() {Id = Guid.NewGuid().ToString(), Key = "name"})
+                .Verifiable();
 
             //Act&&Assert
-            Assert.Throws<Exception>(() => sut.Details(""));
+            Assert.Throws<ValidationException>(() => _controller.Details(""));
         }
 
         [Test]
         public void AddComment_GetValidItems_ReturnPartialViewResult()
         {
-            //Arrange
-            var sut = new CommentsController(_mock.Object, _mockComment.Object);
-
             // Act
-            var res = sut.NewComment("key");
+
+            var res = _controller.NewComment("key");
 
             // Assert
             Assert.AreEqual(typeof(PartialViewResult), res.GetType());
@@ -119,14 +137,13 @@ namespace GameStore.Web.Tests.Controllers
         public void DeleteComment_GetValidItems_ReturnRedirectToRouteResult()
         {
             //Arrange
-            _mock.Setup(a => a.GenericService<CommentDTO>().DeleteById(It.IsAny<Guid>().ToString()));
-            var sut = new CommentsController(_mock.Object, _mockComment.Object);
+            _mockComment.Setup(a => a.DeleteById(It.IsAny<Guid>().ToString()));
 
             // Act
-            var res = sut.Delete("key", "id");
+            var res = _controller.Delete("key", "id");
 
             // Assert
-            Assert.AreEqual(typeof(RedirectToRouteResult), res.GetType());
+            Assert.AreEqual(typeof(PartialViewResult), res.GetType());
         }
     }
 }

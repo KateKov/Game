@@ -1,80 +1,101 @@
-﻿@using GameStore.Web.ViewModels
-@model UpdateGameViewModel
+﻿@using System.Web.UI.WebControls
+@model GameStore.Web.ViewModels.Games.CreateGameViewModel
 @{
-    ViewBag.Title = "Новая игра";
+    ViewBag.Title = GlobalRes.Create;
 }
-<div id="addGame">
-    <hr>
-    <div class="row">      
-        <div class="col-xs-9 personal-info">
-            <div class="alert alert-info alert-dismissable">
-                <a class="panel-close close" data-dismiss="alert">×</a>
-                <i class="fa fa-plus"></i>            
-                 Add game. Make sure you fill all required fields.
-            </div>
-            @using (Html.BeginForm("New", "Games", FormMethod.Post))
-            {              
+@Scripts.Render("~/bundles/scripts")
+<div class="row">      
+        <div class="form-style-5">
+            @using (Html.BeginForm("New", "Games",  FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
                 @Html.AntiForgeryToken()
-                @Html.HiddenFor(m=>m.Id)
-                <div class="form-horizontal">               
-                    <h4>Game</h4>
-                    <hr />
-                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                    <div class="form-group">
-                        @Html.NameFor(model => model.Name)
+                @Html.HiddenFor(m => m.Id)
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @Html.HiddenFor(x => x.DateOfAdding)
+                <fieldset>
+                    <legend>@GlobalRes.Game</legend>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a aria-expanded="true" href="#en" data-toggle="tab">En</a></li>
+                        <li><a aria-expanded="false" href="#ru" data-toggle="tab">Ru</a></li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade active in" id="en">
+                            <div class="form-group">
+                                @Html.EditorFor(a => a.Name, new { htmlAttributes = new { @class = "form-control", PlaceHolder = @GlobalRes.Name } })
+                                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                @GlobalRes.Description
+                                @Html.TextAreaFor(model => model.Description, new {htmlAttributes = new {@class = "form-control", PlaceHolder = @GlobalRes.Description}})
+                                @Html.ValidationMessageFor(model => model.Description, "", new {@class = "text-danger"})
+                            </div>
+                        </div>
 
-                            @Html.EditorFor(a => a.Name,  new { htmlAttributes = new {  @class = "form-control" }})
-                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })          
-                    </div>
-                    <div class="form-group">
-                        @Html.NameFor(model => model.Description)        
-                            @Html.TextAreaFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })               
-                    </div>                 
-                    <div class="form-group">
-                        @Html.NameFor(model => model.Price)                     
-                            @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })              
-                    </div>
-                    <div class="form-group">
-                        @Html.NameFor(model => model.UnitsInStock)              
-                            @Html.EditorFor(model => model.UnitsInStock, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.UnitsInStock, "", new { @class = "text-danger" })
-                    </div>
-                    <div class="form-group">                 
-                            @Html.NameFor(model => model.PublisherName)                      
-                                @Html.DropDownListFor(model => model.PublisherName, new SelectList(Model.AllPublishers, "Name", "Name"))
-                                @Html.ValidationMessageFor(model => model.PublisherName, "", new { @class = "text-danger" })
-                    </div>
-                    <div class="form-group">                    
-                            @Html.NameFor(model => model.GenresName)
-                        <div>
-                            @Html.ListBoxFor(model => model.GenresName, new MultiSelectList(Model.AllGenres, "Name", "Name"), htmlAttributes: new { @class = "form-control" })
-                            @Html.ValidationMessageFor(model => model.GenresName, "", new { @class = "text-danger" })
-                        </div>
-                        </div>
-                    <div class="form-group">                      
-                            @Html.NameFor(model => model.PlatformTypesName)
-                        <div >
-                            @Html.ListBoxFor(model => model.PlatformTypesName, new MultiSelectList(Model.AllTypes, "Name", "Name"), htmlAttributes: new { @class = "form-control" })
-                            @Html.ValidationMessageFor(model => model.PlatformTypesName, "", new { @class = "text-danger" })
+                        <div class="tab-pane fade" id="ru">
+                            @Html.HiddenFor(a => a.Translates[0].Id)
+                            @Html.HiddenFor(a => a.Translates[0].Language)
+                            <div class="form-group">
+                                @Html.EditorFor(a => a.Translates[0].Name, new { htmlAttributes = new { @class = "form-control", PlaceHolder = @GlobalRes.Name } })
+                                @Html.ValidationMessageFor(model => model.Translates[0].Name, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                @GlobalRes.Description
+                                @Html.TextAreaFor(model => model.Translates[0].Description, new { htmlAttributes = new { @class = "form-control", PlaceHolder = @GlobalRes.Description } })
+                                @Html.ValidationMessageFor(model => model.Translates[0].Description, "", new { @class = "text-danger" })
+                            </div>
                         </div>
                     </div>
-                    <div class="form-group">                     
-                        @Html.NameFor(model => model.Discountinues)                         
+                    <div class="form-group">
+                        @GlobalRes.Price
+                        @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        @GlobalRes.Game_Key
+                        @Html.EditorFor(model => model.Key, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Key, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        @GlobalRes.Picture
+                        <input type="file" name="image" id="image" />
+                        @Html.ValidationMessageFor(model => model.FilePath, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        @GlobalRes.UnitsInStock
+                        @Html.EditorFor(model => model.UnitsInStock, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.UnitsInStock, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        @GlobalRes.Discountinues
                         <div>
                             @Html.EditorFor(model => model.Discountinues, new { htmlAttributes = new { @class = "form-control" } })
                             @Html.ValidationMessageFor(model => model.Discountinues, "", new { @class = "text-danger" })
                         </div>
                     </div>
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                     <div class="form-group">
-                        <div class="col-md-offset-2 col-md-10">
-                            <input type="submit" value="Create" class="btn btn-default" />
-                        </div>
+                        @GlobalRes.PublisherName
+                        @Html.DropDownListFor(model => model.PublisherName, new SelectList(Model.AllPublishers, "Name", "Name"))
+                        @Html.ValidationMessageFor(model => model.PublisherName, "", new { @class = "text-danger" })
                     </div>
-                </div>
-                                }   
+                    <div class="form-group">
+                        @GlobalRes.GenresName
+                        @Html.ListBoxFor(model => model.GenresName, new MultiSelectList(Model.AllGenres, "Name", "Name"), htmlAttributes: new {  })
+                        @Html.ValidationMessageFor(model => model.GenresName, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        @GlobalRes.PlatformTypesName
+
+                        @Html.ListBoxFor(model => model.PlatformTypesName, new MultiSelectList(Model.AllTypes, "Name", "Name"), htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.PlatformTypesName, "", new { @class = "text-danger" })
+
+                    </div>
+
+                    <div class="form-group">
+                            <input type="submit" value=@GlobalRes.Create class="btn btn-default" />
+                    </div>
+                </fieldset>
+            }
+
         </div>
     </div>
-    <hr>
-</div>

@@ -1,0 +1,91 @@
+﻿@model GameStore.Web.ViewModels.Orders.OrderPaymentViewModel
+@{
+    ViewBag.Title = "Order";
+}
+<div>
+    <div id="result">
+        @if (Model.Order.OrderDetails.Any())
+        {
+            <div class="container">
+                <div class="check-out">
+                    <div class="form-group">
+                        @GlobalRes.UserName
+                        @Html.DisplayFor(model => model.Order.CustomerId, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="form-group">
+                        @GlobalRes.IsConfirmed
+                        @Html.DisplayFor(model => model.Order.IsConfirmed, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="form-group">
+                        @GlobalRes.IsShiped
+                        @Html.DisplayFor(model => model.Order.IsShipped, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="form-group">
+                        @GlobalRes.Date
+                        @Html.DisplayFor(model => model.Order.Date, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="form-group">
+                        @GlobalRes.Sum
+                        @Html.DisplayFor(model => model.Order.Sum, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="bs-example4" data-example-id="simple-responsive-table">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Order.OrderDetails.First().GameKey)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Order.OrderDetails.First().Discount)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Order.OrderDetails.First().Price)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Order.OrderDetails.First().Quantity)
+                                    </th>
+                                    <th></th>
+                                </tr>
+                                @foreach (var item in Model.Order.OrderDetails)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.HiddenFor(it => item.Id)
+                                            @Html.HiddenFor(it => item.GameId)
+                                            @Html.DisplayFor(modelItem => item.GameKey)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Discount)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Price)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Quantity)
+                                        </td>
+                                    </tr>
+                                }
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="container">
+                <div class="check-out">
+                    <div class="bs-example4" data-example-id="simple-responsive-table">
+                        <div class="content-mid">
+                            <h3>@GlobalRes.NoOrders</h3>
+                            <label class="line"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <br />
+    <br />
+    <br />
+</div>

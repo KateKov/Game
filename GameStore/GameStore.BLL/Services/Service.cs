@@ -1,70 +1,62 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using AutoMapper;
-using GameStore.BLL.DTO;
 using GameStore.BLL.Infrastructure;
 using GameStore.BLL.Interfaces;
-using GameStore.DAL.Entities;
-using GameStore.DAL.Entities.Translation;
+using GameStore.BLL.Interfaces.Services;
+using GameStore.BLL.Interfaces.Translates;
 using GameStore.DAL.Interfaces;
 using NLog;
 
 namespace GameStore.BLL.Services
 {
-    public class Service<T, TD> : IService<TD> where T: class, IEntityBase, new() where TD: class, IDtoBase, new()
+    public class Service<T, TD> : IService<TD> where T : class, IEntityBase, new() where TD : class, IDtoBase, new()
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly ILogger _logger = LogManager.GetCurrentClassLogger();
-        private readonly DtoToDomain _dtoToDomain;
+        private readonly ITranslateService<T, TD> _translateService;
+        private readonly IDtoToDomainMapping _dtoToDomain;
 
         public Service(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
-            _dtoToDomain = new DtoToDomain(unitOfWork);
+            _translateService = new TranslateService<T, TD>(_unitOfWork);
+            _dtoToDomain = new DtoToDomainMapping(_unitOfWork);
         }
 
-        public void AddEntity(TD model) 
+        public virtual void AddEntity(TD model)
         {
             if (model == null)
-                throw new ValidationException("Cannot find " + typeof(T).Name, string.Empty);
+            {
+                throw new ValidationException($"Cannot find {typeof(T).Name}", "EntityNotFound");
+            }
+
             var entity = Mapper.Map<TD, T>(model);
-            var result = (T)_dtoToDomain.AddEntities(entity, model);
+            var result = (T) _dtoToDomain.AddEntities(entity, model);
+            if (Translate<TD>.IsTranslate())
+            {
+                result = _translateService.AddTranslate(result, model);
+            }
+
             _unitOfWork.Repository<T>().Add(result);
         }
 
-        private void EditGame(Game gameModel, GameDTO model)
-        {
-            var entityGame = gameModel;
-            var game = _unitOfWork.Repository<Game>().GetSingle(model.Id);
-            game.Translates = entityGame.Translates.Select(x=>new GameTranslate() {Description = x.Description, EntityId = x.EntityId, Id = x.Id, Name = x.Name, Language = x.Language}).ToList();        
-            game.Discountinues = entityGame.Discountinues;
-            game.UnitsInStock = entityGame.UnitsInStock;
-            game.DateOfAdding = DateTime.UtcNow;
-            game.Price = entityGame.Price;
-            game.Genres.Clear();
-            game.PlatformTypes.Clear();
-            var result = (Game)_dtoToDomain.AddEntities(game, model);
-            _unitOfWork.Repository<Game>().Edit(result);
-            _unitOfWork.Save();
-        }
-
-        public void EditEntity(TD model)
+        public virtual void EditEntity(TD model)
         {
             if (model == null)
-                throw new ValidationException("Cannot find " + typeof(T).Name, string.Empty);
+            {
+                throw new ValidationException($"Cannot find {typeof(T).Name}", "EntityNotFound");
+            }
             var entity = Mapper.Map<TD, T>(model);
 
-            if ((model is GameDTO).Equals(true))
+            var result = (T)_dtoToDomain.AddEntities(entity, model);
+            _unitOfWork.Repository<T>().Edit(result);
+            if (Translate<TD>.IsTranslate())
             {
-                EditGame(entity as Game, model as GameDTO);
+                _translateService.EditTranslate(entity, model);
             }
-            else
-            {
-                var result = (T)_dtoToDomain.AddEntities(entity, model);
-                _unitOfWork.Repository<T>().Edit(result);
-                _unitOfWork.Save();
-            }
+
+            _unitOfWork.Save();
         }
 
         public TD GetById(string id)
@@ -72,20 +64,34 @@ namespace GameStore.BLL.Services
             var entity = _unitOfWork.Repository<T>().GetSingle(id);
             if (entity == null)
             {
-                throw new ValidationException(typeof(T).Name + " wasn't found", string.Empty);
+                throw new ValidationException($"Cannot find {typeof(T).Name}", "EntityNotFound");
             }
+
             _logger.Debug("Getting" + entity.GetType().Name + "by id={0} ", id);
             return Mapper.Map<TD>(entity);
         }
 
-        public IEnumerable<TD> GetAll()
+        public int GetTotalNumber(bool isWithDeleted = false)
         {
-            var entities =  _unitOfWork.Repository<T>().GetAll().ToList();
+            var count = _unitOfWork.Repository<T>().GetTotalNumber(isWithDeleted);
+            return count;
+        }
+
+        public bool IsExist(string id)
+        {
+            return _unitOfWork.Repository<T>().IsExist(id);
+        }
+
+        public IEnumerable<TD> GetAll(bool isWithDeleted = false)
+        {
+            var entities = (isWithDeleted)
+                ? _unitOfWork.Repository<T>().GetAll().ToList()
+                : _unitOfWork.Repository<T>().GetAll().Where(x=>!x.IsDeleted).ToList();
             if (entities == null)
             {
-                throw new ValidationException(typeof(T).Name + " wasn't found", string.Empty);
+                throw new ValidationException($"Cannot find {typeof(T).Name}", "EntityNotFound");
             }
-            var dto = Mapper.Map<IEnumerable<TD>>(entities);
+
             return Mapper.Map<IEnumerable<TD>>(entities);
         }
 
@@ -93,30 +99,17 @@ namespace GameStore.BLL.Services
         {
             if (string.IsNullOrEmpty(id))
             {
-                throw new ValidationException(typeof(T).Name + " wasn't found", string.Empty);
+                throw new ValidationException("Id isn't exist", "Id");
             }
+
             var entity = _unitOfWork.Repository<T>().GetSingle(id);
             if (entity == null)
             {
-                throw new ValidationException(typeof(T).Name + " wasn't found", string.Empty);
+                throw new ValidationException($"Cannot find {typeof(T).Name}", "EntityNotFound");
             }
-            _unitOfWork.Repository<T>().Delete(entity);
-            _logger.Debug("{0} deleting by Id = {1} ", typeof(T).Name, id);
-        }
 
-        public void AddOrUpdate(TD model, bool isAdding)
-        {
-            var action = isAdding ? "Add" : "Edit";
-            Validator<TD>.ValidateModel(model);
-            if (isAdding)
-            {
-                AddEntity(model);
-            }
-            else
-            {
-                EditEntity(model);
-            }
-            _logger.Debug(action + " " + typeof(T).Name + " with Id: {0}", model.Id);
+            _unitOfWork.Repository<T>().Delete(entity);
+            _logger.Debug($"{typeof(T).Name} deleting by Id = {id} ");
         }
     }
 }

@@ -1,12 +1,9 @@
 ﻿using System.Data.Entity;
-using System.Data.Entity.Migrations;
-using System.Data.Entity.Migrations.Model;
+using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using GameStore.DAL.EF;
-using GameStore.DAL.Interfaces;
-using GameStore.DAL.MongoEntities;
 using GameStore.Web.Infrastracture;
 using GameStore.Web.App_Start;
 
@@ -16,9 +13,10 @@ namespace GameStore.Web
     {
         protected void Application_Start()
         {
+            GlobalConfiguration.Configure(WebApiConfig.Register);
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            //Database.SetInitializer(new GameStoreDbInitializer());
+            Database.SetInitializer(new GameStoreDbInitializer());
             FilterConfig.RegisterFilters(GlobalFilters.Filters);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AutoMapperConfiguration.Configure();

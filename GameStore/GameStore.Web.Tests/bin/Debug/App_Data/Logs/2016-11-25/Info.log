@@ -1,8 +1,0 @@
-|2016-11-25 19:22:43.1052|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
-|2016-11-25 19:22:43.1937|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
-|2016-11-25 19:22:43.2113|INFO|GameStore.Web.Controllers.CommentsController|Comments is deleted from game: CommentId=id GameKey =key 
-|2016-11-25 19:22:43.2368|INFO|GameStore.Web.Controllers.CommentsController|Request to GameController.Index. Parameters: Key = 
-|2016-11-25 19:22:43.2558|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = invalid-key
-|2016-11-25 19:22:43.2558|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = valid-key
-|2016-11-25 19:22:43.2558|INFO|GameStore.Web.Controllers.CommentsController|Request to CommentsController.GetGameComments. Parameters: gameKey = 
-|2016-11-25 19:22:43.4109|INFO|GameStore.Web.Controllers.GamesController|Request to GamesController.Update

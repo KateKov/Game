@@ -1,5 +1,6 @@
 ﻿@using GameStore.Web.ViewModels
-@model RenderCommentsMenuItem
+@using GameStore.Web.ViewModels.Comments
+@model GameStore.Web.ViewModels.Comments.RenderCommentsMenuItem
 @foreach (var cp in Model.MenuList.Where(p => p.ParentCommentId == Model.Current.Id))
 {
 @:<li>

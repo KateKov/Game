@@ -1,21 +1,20 @@
-﻿using GameStore.DAL.Enums;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+using GameStore.DAL.Enums;
+using GameStore.Web.App_LocalResources;
 
 namespace GameStore.Web.ViewModels
 {
     public class OrderFilterViewModel
     {
-        [DisplayName("From Date Of Order")]
+        [Display(ResourceType = typeof(GlobalRes), Name = "FilterOrder_DateFrom")]
         [DataType(DataType.Date)]
         public DateTime DateFrom { get; set; }
-        [DisplayName("To Date Of Order")]
+
+        [Display(ResourceType = typeof(GlobalRes), Name = "FilterOrder_DateTo")]
         [DataType(DataType.Date)]
         public DateTime DateTo { get; set; }
+
         public Filter FilterBy { get; set; }
     }
 }

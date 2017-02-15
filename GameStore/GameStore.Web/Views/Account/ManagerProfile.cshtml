@@ -1,0 +1,32 @@
+﻿@using GameStore.Web.Helpers
+@model GameStore.Web.ViewModels.Users.UserViewModel
+@{
+    ViewBag.Title = "ManagerProfile";
+}
+
+<div class="row">
+    <div class="form-style-5">
+        @using (Html.BeginForm("ManagerProfile", "Account", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(x => x.Username)
+            <fieldset>
+                <legend>@GlobalRes.ManagerProfile</legend>
+               
+                <div class="form-group">
+                    @GlobalRes.NotificationMethod
+                    @Html.EnumDropDownList(model => model.Method, new { @class = "form-control" })
+                </div>
+              
+                <div class="form-group">
+                    <input type="submit" value=@GlobalRes.Save class="btn btn-default" />
+                </div>
+            </fieldset>
+        }
+
+    </div>
+</div>
+
+
+

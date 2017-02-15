@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using GameStore.DAL.Interfaces;
 using GameStore.DAL.MongoEntities;
 
@@ -41,10 +38,11 @@ namespace GameStore.DAL.Mapping
         public static bool IsMongo()
         {
             var name = typeof(T).Name;
-            return (name.Contains("Game") || name.Contains("Genre") || name.Contains("Publisher") ||
+            return (name.Equals("Game") || name.Equals("Genre") || name.Equals("Publisher") ||
                     name.Contains("Order") ||
                     name.Contains("OrderDetail"));
         }
+
         public static IMongoEntity GetMongoType()
         {
             return (IsMongo()) ? _mongoType : null;

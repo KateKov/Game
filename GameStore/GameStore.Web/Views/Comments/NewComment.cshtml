@@ -1,6 +1,4 @@
-﻿@using System.Web.UI.WebControls
-@using GameStore.Web.ViewModels
-@model CommentViewModel
+﻿@model GameStore.Web.ViewModels.Comments.CommentViewModel
 <div id="comment_form">
     <div class="review">
         @using (Html.BeginForm("NewComment", "Comments", FormMethod.Post, new {name="newForm", id="newForm"}))
@@ -11,27 +9,24 @@
             @Html.HiddenFor(x=>x.Id)
             @Html.HiddenFor(x=>x.ParentCommentId)
             @Html.HiddenFor(x => x.Quote)
+            @Html.HiddenFor(x=>x.Name)
             <div class='form_row'>
-                <h3>New comment</h3>
+                <h3>@GlobalRes.NewComment</h3>
                 @if (Model.Quote != "")
                 {
                     <p>  @Model.Quote</p>
                 }
-                <label>
-                    <strong>@Html.NameFor(x => x.Name)</strong>
-                </label> <br />
-                @Html.EditorFor(x => x.Name, new {onchange="nameOnChange"})
-     
-                    @Html.ValidationMessageFor(x => x.Name)             
+                    <strong>@GlobalRes.Name: @Html.DisplayFor(x=>x.Name)</strong>  
+                <p></p>        
             </div>
             <div class='form_row'>
                 <label>
-                    <strong>@Html.NameFor(x => x.Body)</strong>
+                    <strong>@GlobalRes.Body</strong>
                   
                 </label> <br />
                 @Html.TextAreaFor(x => x.Body)
                 @Html.ValidationMessageFor(x => x.Body)
-           </div>        
+           </div>
         }
     </div>
     </div>

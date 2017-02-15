@@ -1,10 +1,8 @@
-﻿
-
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace GameStore.DAL.Interfaces
 {
-    public interface ITranslateNamed<T> : IEntityBase where T : IEntityNamed
+    public interface ITranslateNamed<T> where T : ITranslate
     {
         ICollection<T> Translates { get; set; }
     }

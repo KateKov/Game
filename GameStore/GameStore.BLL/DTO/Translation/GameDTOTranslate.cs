@@ -3,9 +3,8 @@ using GameStore.BLL.Interfaces;
 
 namespace GameStore.BLL.DTO.Translation
 {
-    public class GameDTOTranslate : DTOTranslate, IDtoNamed
+    public class GameDTOTranslate : DTOTranslate, IDTOTranslateWithDescription
     {
-        public string Name { get; set; }
         public string Description { get; set; }
         public string PublisherName { get; set; }
         public ICollection<string> GenresName { get; set; }

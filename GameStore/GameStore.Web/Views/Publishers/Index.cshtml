@@ -1,11 +1,15 @@
-﻿@using GameStore.Web.ViewModels
-@model IEnumerable<PublisherViewModel>
+﻿@using GameStore.Web.Infrastructure.Authentication
+@model IEnumerable<GameStore.Web.ViewModels.Publishers.PublisherViewModel>
 @{
-    ViewBag.Title = "New";
+    ViewBag.Title = GlobalRes.Publisher;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h3>Publishers</h3>
-@Html.ActionLink("Add new", "New")
+<h3>@GlobalRes.Publishers</h3>
+@if (User.IsInRole("Administrator") || User.IsInRole("Manager"))
+{
+    @Html.ActionLink(GlobalRes.Create, "New")
+}
+<br/>
 <div>
     <table class="table">
         <tr>
@@ -18,16 +22,13 @@
             <th>
                 @Html.DisplayNameFor(model => model.HomePage)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Games)
-            </th>
         </tr>
         @foreach (var item in Model)
         {           
             <tr>
                 <td>
                     @Html.HiddenFor(model => item.Id)
-                    @Html.ActionLink(item.Name, "Details", new {companyName=item.Name})
+                    @Html.ActionLink(item.Name, "Details", new {name =item.Key})
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Description)
@@ -36,14 +37,14 @@
 
                     @Html.DisplayFor(modelItem => item.HomePage)
                 </td>
-                <td>
-                    @foreach (var game in item.Games)
-                    {
-                        <div>
-                            @game
-                        </div>
-                    }
-                </td>
+                @if (User.IsInRole("Administrator") || User.IsInRole("Manager"))
+                {
+                    <td>
+                        <span>@Html.ActionLink(GlobalRes.Edit, "Update", new { name = item.Key }, new { @class = "btn btn-primary" }) </span>
+                        <p></p>
+                        <span>@Html.ActionLink(GlobalRes.Delete, "Delete", new { name = item.Key }, new { @class = "btn btn-warning" }) </span>
+                    </td>
+                }
             </tr>
         }
     </table>

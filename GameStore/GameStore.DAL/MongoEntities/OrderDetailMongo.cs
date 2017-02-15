@@ -9,6 +9,6 @@ namespace GameStore.DAL.MongoEntities
         public short Quantity { get; set; }
         public double Discount { get; set; }
         public int OrderID { get; set; }     
-        public int ProductId { get; set; }
+        public int ProductID { get; set; }
     }
 }

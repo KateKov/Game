@@ -1,25 +1,18 @@
-﻿
-@using System.Activities.Statements
-@using System.Diagnostics.Eventing.Reader
-@using GameStore.Web.ViewModels
+﻿@using GameStore.Web.ViewModels.Comments
 @model IEnumerable<CommentViewModel>
 
-@{
-    ViewBag.Title = "Comments";
-}
-<link href='@Url.Content("~/Content/themes/base/jquery-ui.css")' rel="stylesheet" type="text/css" /><link href='@Url.Content("~/Content/Comment.css")' rel="stylesheet" type="text/css" />
-<h2>Comments</h2>
+<link href='@Url.Content("~/Content/Comment.css")' rel="stylesheet" type="text/css" />
+<h2 id="commentPosition">@GlobalRes.Comments</h2>
 <ul class="menu">
-    @foreach (var mp in Model.Where(x => x.ParentCommentId == Guid.Empty.ToString()||string.IsNullOrEmpty(x.ParentCommentId)))
+    @foreach (var mp in Model.Where(x => (x.ParentCommentId == Guid.Empty.ToString()) || string.IsNullOrEmpty(x.ParentCommentId)))
     {
-
         <li>
             @Html.Partial("CommentModel", mp)
             @if (Model.Count(p => p.ParentCommentId == mp.Id) > 0)
             {
                 @:<ul>
             }
-            @Html.Partial("RenderMenuItem", new RenderCommentsMenuItem { MenuList = Model.ToList(), Current = mp })
+            @Html.Partial("RenderMenuItem", new RenderCommentsMenuItem {MenuList = Model.ToList(), Current = mp})
 
             @if (Model.Count(p => p.ParentCommentId == mp.Id) > 0)
             {
@@ -29,12 +22,9 @@
     }
 </ul>
 <h3> @ViewBag.ErrorName  </h3>
-    @Html.ActionLink("New Comment", "NewComment", "Comments", new {gameKey = ViewBag.GameKey}, new {@class = "viewDialog", data_dialog_title = "New comment"})     
-<script >
-    var AppUrlSettings = {
-        CommentUrl: '@Url.Action("NewComment","Comments")'
-    }
-</script>
+<script src="~/scripts/Comment.js"></script>
+ @Html.ActionLink(GlobalRes.NewComment, "NewComment", "Comments", new {gameKey = ViewBag.GameKey}, new {@class = "viewDialog", id ="commentdialog", data_dialog_title = GlobalRes.NewComment})     
+
 
 
 
